@@ -28,7 +28,7 @@ import "./blocks/advance-heading/block";
 // import "./blocks/iconlist/block";
 // import "./blocks/image/block";
 // import "./blocks/image-comparison/block";
-// import './blocks/info-box/block'; 
+import './blocks/info-box/block'; 
 // import "./blocks/map/block";
 // import "./blocks/pie-progress/block";
 // import "./blocks/pricing/block";
