@@ -14,52 +14,53 @@ import './components/renderfield';
 
 // import "./blocks/ct/block";
 
-// import "./blocks/alert/block";
-// import "./blocks/accordion/block";
+import "./blocks/alert/block";
+import "./blocks/accordion/block";
 import "./blocks/advance-heading/block";
-// import "./blocks/advance-list/block";
-// import "./blocks/animated-headline/block";
-// import "./blocks/button/block";
-// import "./blocks/buttongroup/block";
-// import "./blocks/contact-form/block";
-// import "./blocks/counter/block";
-// import "./blocks/divider/block";
-// import "./blocks/icon/block";
-// import "./blocks/iconlist/block";
-// import "./blocks/image/block";
-// import "./blocks/image-comparison/block";
+import "./blocks/advance-list/block";
+import "./blocks/animated-headline/block";
+import "./blocks/button/block";
+import "./blocks/buttongroup/block";
+import "./blocks/contact-form/block";
+import "./blocks/counter/block";
+import "./blocks/divider/block";
+import "./blocks/icon/block";
+import "./blocks/iconlist/block";
+import "./blocks/iconlist-connector/block";
+import "./blocks/image/block";
+import "./blocks/image-comparison/block";
 import './blocks/info-box/block'; 
-// import "./blocks/map/block";
-// import "./blocks/pie-progress/block";
-// import "./blocks/pricing/block";
-// import "./blocks/post-grid/block";
+import "./blocks/map/block";
+import "./blocks/pie-progress/block";
+import "./blocks/pricing/block";
+import "./blocks/post-grid/block";
 import "./blocks/row/block";
 import './blocks/row/column/' 
-// import "./blocks/social-icons/block";
-// import "./blocks/table-of-contents/block";
-// import './blocks/tabs/block';
-// import './blocks/tabs/tab/block';
-// import "./blocks/team/block";
-// import "./blocks/testimonial/block";
-// import "./blocks/text/block";
-// import "./blocks/timeline/block";
+import "./blocks/social-icons/block";
+import "./blocks/table-of-contents/block";
+import './blocks/tabs/block';
+import './blocks/tabs/tab/block';
+import "./blocks/team/block";
+import "./blocks/testimonial/block";
+import "./blocks/text/block";
+import "./blocks/timeline/block";
 
-// import "./blocks/progressbar/block";
-// import "./blocks/video-popup/block";
-// import "./blocks/wrapper/block";
+import "./blocks/progressbar/block";
+import "./blocks/video-popup/block";
+import "./blocks/wrapper/block";
 import "./blocks/flipbox/block";
 import "./blocks/flipbox/face/block";
 
-// import "./blocks/post-carousel/block";
-// import "./blocks/custom-block/block";
+import "./blocks/post-carousel/block";
+import "./blocks/custom-block/block";
 import "./blocks/custom-carousel-2/block";
 import "./blocks/custom-carousel-2/carousel-item/block";
 
 // import "./blocks/custom-carousel/block";
 // import "./blocks/custom-carousel/item/block";
 
-// import "./blocks/grid-blocks/grid-block-cell/block";
-// import "./blocks/grid-blocks/block";
+import "./blocks/grid-blocks/grid-block-cell/block";
+import "./blocks/grid-blocks/block";
 
 
 // import "./simple-blocks/advance-heading/block";
