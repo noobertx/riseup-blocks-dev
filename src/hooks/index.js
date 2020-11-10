@@ -1,1 +1,0 @@
-export { default as withCSSGenerator } from './css-generator';
