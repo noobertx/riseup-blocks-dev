@@ -25,7 +25,7 @@ define('WPRIG_DIR_URL', plugin_dir_url(__FILE__));
 // Define Physical Path
 define('WPRIG_DIR_PATH', plugin_dir_path(__FILE__));
 
-require_once WPRIG_DIR_PATH . 'rise-up.class.php'; 
+require_once  'rise-up.class.php'; 
 
 
 function wprig_get_author_info($object){
