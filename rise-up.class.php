@@ -1,6 +1,6 @@
 <?php
 
-define('WPRIG_VERSION', '1.5.5');
+define('microtime()', '1.5.5');
 
 
 class RiseUp_Blocks {
@@ -21,9 +21,12 @@ class RiseUp_Blocks {
 	 * wprig constructor
 	 */
 	public function __construct() {
+
+		add_action('rest_api_init', array($this,'wprig_register_api_hook'));
+
 		$this->wprig_api_request_body_default = array(
 		'request_from' => 'wprig',
-			// 'request_WPRIG_VERSION'  => WPRIG_VERSION,
+			// 'request_microtime()'  => microtime(),
 		);
 		$this->wprig_api_request_body = apply_filters( 'wprig_api_request_body', array() );
 
@@ -84,6 +87,106 @@ class RiseUp_Blocks {
 
 	}
 
+	public function wprig_blocks_add_orderby( $params ) {
+
+		$params['orderby']['enum'][] = 'rand';
+		$params['orderby']['enum'][] = 'menu_order';
+	
+		return $params;
+	}	
+
+	public function wprig_get_featured_image_url($object){
+		$featured_images = array();
+	if (!isset($object['featured_media'])) {
+		return $featured_images;
+	} else {
+		$image = wp_get_attachment_image_src($object['featured_media'], 'full', false);
+		if (is_array($image)) {
+			$featured_images['full'] = $image;
+			$featured_images['landscape'] = wp_get_attachment_image_src($object['featured_media'], 'wprig_landscape', false);
+			$featured_images['portraits'] = wp_get_attachment_image_src($object['featured_media'], 'wprig_portrait', false);
+			$featured_images['thumbnail'] =  wp_get_attachment_image_src($object['featured_media'], 'wprig_thumbnail', false);
+	
+			$image_sizes = $this->get_all_image_sizes();
+			foreach ($image_sizes as $key => $value) {
+				$size = $value['value'];
+				$featured_images[$size] = wp_get_attachment_image_src(
+					$object['featured_media'],
+					$size,
+					false
+				);
+			}
+			return $featured_images;
+		}
+	}
+	}
+
+	function wprig_get_comment_info($object){
+    $comments_count = wp_count_comments($object['id']);
+    return $comments_count->total_comments;
+}
+
+	public function wprig_register_api_hook(){
+
+		$post_types = get_post_types();
+	
+		foreach ( $post_types as $key => $type ) {
+			add_filter( "rest_{$type}_collection_params", array($this, 'wprig_blocks_add_orderby'), 10, 1 );
+		}
+	
+		register_rest_field(
+			$post_types,
+			'wprig_featured_image_url',
+			array(
+				'get_callback' => array($this,'wprig_get_featured_image_url'),
+				'update_callback' => null,
+				'schema' => array(
+					'description' => __('Different sized featured images'),
+					'type' => 'array',
+				),
+			)
+		);
+	
+	
+		register_rest_field(
+			'post',
+			'wprig_author',
+			array(
+				'get_callback'    => array($this,'wprig_get_author_info'),
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+	
+		
+	
+		
+		register_rest_field(
+			'post',
+			'wprig_comment',
+			array(
+				'get_callback'    => array($this,'wprig_get_comment_info'),
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+	
+		// Category links.
+		register_rest_field(
+			'post',
+			'wprig_category',
+			array(
+				'get_callback' => 'wprig_get_category_list',
+				'update_callback' => null,
+				'schema' => array(
+					'description' => __('Category list links'),
+					'type' => 'string',
+				),
+			)
+		);
+	
+		
+	}
 	/**
 	 * Theme preset activation hook
 	 */
@@ -92,6 +195,12 @@ class RiseUp_Blocks {
 		$settings->activePreset = 'theme';
 		$settings               = json_encode( $settings );
 		update_option( $this->option_keyword, $settings );
+	}
+
+	function wprig_get_author_info($object){
+		$author['display_name'] = get_the_author_meta('display_name', $object['author']);
+		$author['author_link'] = get_author_posts_url($object['author']);
+		return $author;
 	}
 
 	/**
@@ -130,7 +239,8 @@ class RiseUp_Blocks {
 	 * Init dynamic blocks frontend
 	 */
 	public function init_dynamic_blocks() {
-		 require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
+		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
+		require_once WPRIG_DIR_PATH . 'blocks/interactive-banner.php';
 	}
 
 	/**
@@ -139,9 +249,10 @@ class RiseUp_Blocks {
 	 * @since 1.0.0
 	 */
 	public function wprig_editor_assets() {
-		// wp_enqueue_script( 'wprig-blocks-js', WPRIG_DIR_URL . 'assets/js/wprig.dev.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), WPRIG_VERSION, true );
+		// wp_enqueue_script( 'wprig-blocks-js', WPRIG_DIR_URL . 'assets/js/wprig.dev.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), microtime(), true );
+		// echo "The path is at ".WPRIG_DIR_URL.'dist/blocks.build.js';
 
-		wp_enqueue_script( 'wprig-blocks-js', WPRIG_DIR_URL . 'dist/blocks.build.js', array( ), microtime(), true );
+		wp_enqueue_script( 'wprig-blocks-js',  WPRIG_DIR_URL.'dist/blocks.build.js', array(), microtime(), true );
 
 		$palette = get_theme_support( 'wprig-color-palette' );
 		$palette = array_replace( array( '#062040', '#566372', '#2084F9', '#F3F3F3', '#EEEEEE', '#FFFFFF' ), ( $palette ? $palette[0] : array() ) );
@@ -233,20 +344,20 @@ class RiseUp_Blocks {
 		wp_enqueue_script( 'wprig_local_script' );
 
 		#START_REPLACE
-		wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, WPRIG_VERSION );
-		wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, WPRIG_VERSION );
-		wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, WPRIG_VERSION );
+		wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
+		wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
+		wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, microtime() );
 		wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/blocks.editor.min.css', false, microtime() );
 		#END_REPLACE
 
-		wp_enqueue_style( 'font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, WPRIG_VERSION );
-		wp_enqueue_script( 'wprig-magnific-popup', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), WPRIG_VERSION, true );
-		wp_enqueue_script( 'jquery-animatedHeadline', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), WPRIG_VERSION, true );
-		wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), WPRIG_VERSION, true );
-		wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), WPRIG_VERSION, true );
-		wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), WPRIG_VERSION, true );
+		wp_enqueue_style( 'font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, microtime() );
+		wp_enqueue_script( 'wprig-magnific-popup', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime(), true );
+		wp_enqueue_script( 'jquery-animatedHeadline', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
+		wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
+		wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime(), true );
+		wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
 
-		wp_register_style( 'wprig-options', WPRIG_DIR_URL . 'assets/css/options.css', false, WPRIG_VERSION );
+		wp_register_style( 'wprig-options', WPRIG_DIR_URL . 'assets/css/options.css', false, microtime() );
 
 		
 	}
@@ -377,13 +488,13 @@ class RiseUp_Blocks {
 			 */
 
 			#START_REPLACE
-			wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, WPRIG_VERSION );
-			wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, WPRIG_VERSION );
-			wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, WPRIG_VERSION );
-			wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, WPRIG_VERSION );
+			wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
+			wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
+			wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, microtime() );
+			wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, microtime() );
 			#END_REPLACE
 
-			wp_enqueue_style( 'wprig-font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, WPRIG_VERSION );
+			wp_enqueue_style( 'wprig-font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, microtime() );
 		}
 	}
 
@@ -410,27 +521,27 @@ class RiseUp_Blocks {
 			$has_parallax     = $blocks_meta_data['parallax'];
 
 			if ( in_array( 'wprig/animatedheadline', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
 			}
 
 			if ( in_array( 'wprig/map', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
 			}
 
 			if ( in_array( 'wprig/videopopup', $available_blocks ) || in_array( 'wprig/gallery', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime() );
 			}
 
 			if ( in_array( 'wprig/contactform', $available_blocks ) || in_array( 'wprig/form', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime() );
 			}
 
 			if ( in_array( 'wprig/imagecomparison', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), microtime() );
 			}
 
 			if ( $has_interaction ) {
-				wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 			}
 
 			if (
@@ -445,7 +556,7 @@ class RiseUp_Blocks {
 				in_array( 'wprig/verticaltabs', $available_blocks ) ||
 				in_array( 'wprig/postgrid', $available_blocks )
 			) {
-				wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
 			}
 		} else {
 			$post    = null;
@@ -455,26 +566,26 @@ class RiseUp_Blocks {
 			}
 
 			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/animatedheadline' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
 			}
 
 			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/map' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), WPRIG_VERSION, true );
+				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
 			}
 
 			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/videopopup' . ' ' ) || false !== strpos( $post, '<!-- wp:' . 'wprig/gallery' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime() );
 			}
 
 			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/contactform' . ' ' ) || false !== strpos( $post, '<!-- wp:' . 'wprig/form' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime() );
 			}
 			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/imagecomparison' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), WPRIG_VERSION );
+				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), microtime() );
 			}
 
-			wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), WPRIG_VERSION, true );
-			wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), WPRIG_VERSION, true );
+			wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
+			wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 		}
 
 		wp_enqueue_script(
@@ -1032,7 +1143,7 @@ class RiseUp_Blocks {
 			$css_dir_url = trailingslashit( $upload_dir['baseurl'] );
 			$css_url     = $css_dir_url . "wprig/wprig-css-{$post_id}.css";
 			if ( ! $this->is_editor_screen() ) {
-				wp_enqueue_style( "wprig-post-{$post_id}", $css_url, false, WPRIG_VERSION );
+				wp_enqueue_style( "wprig-post-{$post_id}", $css_url, false, microtime() );
 			}
 			$this->add_reusable_css();
 		} else {
@@ -1067,7 +1178,7 @@ class RiseUp_Blocks {
 						foreach ( $css_id as $value ) {
 							$css = $upload_css_dir . "wprig/wprig-css-{$value}.css";
 							if ( file_exists( $upload_css_dir . "wprig/wprig-css-{$value}.css" ) ) {
-								wp_enqueue_style( "wprig-post-{$value}", trailingslashit( $upload_dir['baseurl'] ) . "wprig/wprig-css-{$value}.css", false, WPRIG_VERSION );
+								wp_enqueue_style( "wprig-post-{$value}", trailingslashit( $upload_dir['baseurl'] ) . "wprig/wprig-css-{$value}.css", false, microtime() );
 							}
 						}
 					}
