@@ -23,6 +23,7 @@ class RiseUp_Blocks {
 	public function __construct() {
 
 		add_action('rest_api_init', array($this,'wprig_register_api_hook'));
+		add_action( 'rest_api_init', array( $this,'query_contents' ));
 
 		$this->wprig_api_request_body_default = array(
 		'request_from' => 'wprig',
@@ -85,7 +86,54 @@ class RiseUp_Blocks {
 
 		add_action( 'wprig_active_theme_preset', array( $this, 'active_theme_preset' ) );
 
+
+		add_action( 'wp_body_open', array( $this,'custom_body_open_code' ));
+		
+
 	}
+
+	public function query_contents(){
+		register_rest_route( 'new/v1', 'item', array(
+			'methods' => WP_REST_SERVER::READABLE,
+			'callback' => array($this, 'somePost')
+			)
+		);
+	}
+
+	public function somePost($data){
+		// global $wpdb;
+		// $mainQuery = new \WP_Query(array(
+		// 	'post_id'=> '5',
+		//   'posts_per_page' => 1
+		// ));
+  
+		// $result = array();
+  
+		// while($mainQuery->have_posts()) {
+		//   $mainQuery->the_post();
+		//   array_push($result, array(
+		// 	'ID' => get_the_ID(),
+		// 	'title' => get_the_title(),
+		// 	'permalink' => get_the_permalink(),
+		// 	'excerpt' => get_the_content()
+		//   ));
+		// }
+
+		return do_blocks(get_post(1)->post_content);
+		// $blocks = parse_blocks(get_post(5)->post_content);
+		// return $blocks ;
+		// $str = array();
+		// foreach($blocks  as $block){
+		// 	$str[]= render_block($block);
+		// }
+		// // return json_decode(get_post(5)->post_content);
+		// return join(" ",$str);
+	}
+	
+
+	public function custom_body_open_code( ) { ?>
+		<div class="modal-item-sample"></div>
+	<?php }
 
 	public function wprig_blocks_add_orderby( $params ) {
 
@@ -127,6 +175,7 @@ class RiseUp_Blocks {
 }
 
 	public function wprig_register_api_hook(){
+
 
 		$post_types = get_post_types();
 	
@@ -356,7 +405,7 @@ class RiseUp_Blocks {
 		wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
 		wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime(), true );
 		wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
-
+		
 		wp_register_style( 'wprig-options', WPRIG_DIR_URL . 'assets/css/options.css', false, microtime() );
 
 		
@@ -595,6 +644,8 @@ class RiseUp_Blocks {
 			microtime(),
 			true
 		);
+		wp_enqueue_script( 'wprig-block-misc', WPRIG_DIR_URL . 'assets/js/misc-script.js', array( 'jquery' ), microtime(), true );
+
 	}
 
 	/**
