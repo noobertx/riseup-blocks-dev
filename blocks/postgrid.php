@@ -5,8 +5,7 @@
  *
  * @since 1.1.0
  */
-function register_block_wprig_postgrid()
-{
+function register_block_wprig_postgrid(){
 	// Check if the register function exists.
 	if (!function_exists('register_block_type')) {
 		return;

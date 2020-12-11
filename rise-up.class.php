@@ -301,8 +301,12 @@ class RiseUp_Blocks {
 		// wp_enqueue_script( 'wprig-blocks-js', WPRIG_DIR_URL . 'assets/js/wprig.dev.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), microtime(), true );
 		// echo "The path is at ".WPRIG_DIR_URL.'dist/blocks.build.js';
 
-		wp_enqueue_script( 'wprig-blocks-js',  WPRIG_DIR_URL.'dist/blocks.build.js', array(), microtime(), true );
+		wp_enqueue_style( 'unite-gallery', WPRIG_DIR_URL . 'assets/css/unite-gallery.css', false, microtime() );
 
+		wp_enqueue_script( 'wprig-blocks-js',  WPRIG_DIR_URL.'dist/blocks.build.js', array('media'), microtime(), true );
+		wp_enqueue_script( 'unite-gallery',  WPRIG_DIR_URL.'assets/js/unitegallery.min.js', array(), microtime(), true );
+		wp_enqueue_script( 'unite-tiles',  WPRIG_DIR_URL.'assets/themes/tiles/ug-theme-tiles.js', array(), microtime(), true );
+		
 		$palette = get_theme_support( 'wprig-color-palette' );
 		$palette = array_replace( array( '#062040', '#566372', '#2084F9', '#F3F3F3', '#EEEEEE', '#FFFFFF' ), ( $palette ? $palette[0] : array() ) );
 
@@ -343,6 +347,7 @@ class RiseUp_Blocks {
 	 *
 	 * @since 1.0.0
 	 */
+
 	public function getSvgShapes() {
 		$shape_path = WPRIG_DIR_PATH . 'shape';
 		$shapes     = glob( $shape_path . '/*.svg' );
