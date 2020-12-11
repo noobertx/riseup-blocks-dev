@@ -575,6 +575,12 @@ class RiseUp_Blocks {
 			$has_animation    = $blocks_meta_data['animation'];
 			$has_parallax     = $blocks_meta_data['parallax'];
 
+
+			//gallery-carousel.js
+			if ( in_array( 'wprig/image-carousel', $available_blocks ) ) {
+				wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
+			}
+
 			if ( in_array( 'wprig/animatedheadline', $available_blocks ) ) {
 				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
 			}

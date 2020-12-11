@@ -197,24 +197,44 @@ function render_block_wprig_carousel($att){
     $className 		        = isset($att['className']) ? $att['className'] : '';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
 
-    // $html[] = "<div class=\"wprig-block-$uniqueId $className\">";
-    $html[] = "Hello Worlds";
-    $html[] = "<pre>";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery\" data-slick='{\"slidesToShow\": 4, \"slidesToScroll\": 4}'>";
+    // $html[] = "<pre>";
 
-    $html[] = json_encode ($imageItems);
-    // if(count($imageItems)){
-    //     foreach( $imageItems as $image){
-    //         $html[] = "<div>";
-    //         $html[] = "<img src='".$image['url']."'>";
-    //         $html[] = "</div>";
-    //     }
-    // }
-    $html[] = "</pre>";
-    // $html[] = "</div>";
+    if(count($imageItems)){
+        foreach( $imageItems as $image){
+            $html[] = "<div>";
+            $html[] = "<img src='".$image['thumbnail']."' data-image-url='".$image['url']."'>";
+            $html[] = "</div>";
+        }
+    }
+    // $html[] = "</pre>";
+    $html[] = "</div>";
 
     return implode("",$html);
 
 }
 
 add_action('init', 'register_block_wprig_image_carousel', 100);
+
+function wprig_image_carousel($hook){
+    // echo "Hook is ".$hook;
+
+    $blocks_meta_data = get_post_meta( get_the_ID(), '__wprig_available_blocks', true );
+    $blocks_meta_data = unserialize( $blocks_meta_data );
+    
+    if ( is_array( $blocks_meta_data ) && count( $blocks_meta_data ) ) {
+
+        $available_blocks = $blocks_meta_data['available_blocks'];
+		$has_interaction  = $blocks_meta_data['interaction'];
+		$has_animation    = $blocks_meta_data['animation'];
+        $has_parallax     = $blocks_meta_data['parallax'];
+        
+        if ( in_array( 'wprig/image-carousel', $available_blocks ) ) {
+            wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
+            wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
+            wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
+        }
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wprig_image_carousel' );
 ?>
