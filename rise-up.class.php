@@ -87,7 +87,7 @@ class RiseUp_Blocks {
 		add_action( 'wprig_active_theme_preset', array( $this, 'active_theme_preset' ) );
 
 
-		add_action( 'wp_body_open', array( $this,'custom_body_open_code' ));
+		// add_action( 'wp_body_open', array( $this,'custom_body_open_code' ));
 		
 
 	}

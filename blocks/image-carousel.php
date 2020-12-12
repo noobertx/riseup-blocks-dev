@@ -73,7 +73,7 @@ function register_block_wprig_image_carousel(){
                     ],
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}}.components-modal__screen-overlay,{{WPRIG}}'
+                            'selector' => '{{WPRIG}}.components-modal__screen-overlay'
                         ]
                     ]
                 ],
@@ -195,16 +195,34 @@ function register_block_wprig_image_carousel(){
 function render_block_wprig_carousel($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
+    $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
+    $carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
+        'md' => 3,
+        'sm' => 2,
+        'xs' => 1,
+    );
 
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery\" data-slick='{\"slidesToShow\": 4, \"slidesToScroll\": 4}'>";
+    $slickSettings = (object) array(
+        "slidesToShow" => $carouselItems['md'],
+        "slidesToScroll" => 4
+    );
+
+    $modalSettings = (object) array(
+        'id'=>$uniqueId ,
+        'overlayEffect' => $overlayEffect 
+    );
+
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery\" 
+    data-modal='".json_encode($modalSettings)."'
+    data-slick='".json_encode($slickSettings)."'>";
     // $html[] = "<pre>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
-            $html[] = "<div>";
-            $html[] = "<img src='".$image['thumbnail']."' data-image-url='".$image['url']."'>";
-            $html[] = "</div>";
+            $html[] = "<a href='".$image['url']."'>";
+            $html[] = "<img src='".$image['thumbnail']."'/>";
+            $html[] = "</a>";
         }
     }
     // $html[] = "</pre>";
@@ -237,4 +255,41 @@ function wprig_image_carousel($hook){
     }
 }
 add_action( 'wp_enqueue_scripts', 'wprig_image_carousel' );
+
+
+add_action( 'wp_body_open', 'render_modal_component' );
+function render_modal_component(){
+    if(!is_admin()){
+        ?>
+            <div class="components-modal__screen-overlay">
+                <div class="components-modal__frame wprig-dynamic-modal">
+                    <div class="components-modal__content">
+                        <div class="components-modal__header">
+                            <div class="components-modal__header-heading-container">
+                                <h1 id="components-modal-header-1" class="components-modal__header-heading">
+                                    This is my Modal
+                                </h1>                                
+                                <button type="button" id="close-modal" class="components-button has-icon" aria-label="Close dialog"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+                            </div>                            
+                        </div>
+                        <img src="http://riseup2.local/wp-content/uploads/2020/11/screencapture-kadenceex-local-plungee-2020-11-28-03_26_02.png" id="slick-img">
+                    </div>
+                </div>
+            </div>
+        <?php
+    }
+}
+
+// if(in_array('render_modal_component',get_the_filter('wp_body_open'))){}
+
+function get_the_filter( $hook = '' ) {
+    global $wp_filter;
+    if( empty( $hook ) || !isset( $wp_filter[$hook] ) )
+        return;
+    // print_r((array)$wp_filter[$hook]);
+    return  $wp_filter[$hook]->callbacks ;
+    
+}
+
+// print_r(get_the_fileter('wp_body_open'));
 ?>
