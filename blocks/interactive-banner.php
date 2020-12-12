@@ -445,8 +445,6 @@ function render_block_wprig_interactive_banner($att){
     $html[] = "</div>";
     $html[] = "</div>";
     
-  
-
     /*
     $values = array( 'one', 'two', 'three' );
 $valueList = implode( ', ', $values );

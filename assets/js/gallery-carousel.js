@@ -10,9 +10,15 @@
         
         $(".components-modal__screen-overlay").addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
         $(".components-modal__screen-overlay").find(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
-        $(".components-modal__screen-overlay").find("#slick-img").attr(path)
         $(".components-modal__screen-overlay").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
         
+        $(".components-modal__screen-overlay").find("#slick-img").remove()
+
+        $(".components-modal__content").append($("<img>",{
+            id:"slick-img",
+            src:path
+        }))
+
         setTimeout(function(){     
             $(".components-modal__screen-overlay").addClass("open")
         },200)

@@ -269,8 +269,8 @@ function render_modal_component(){
                                 <h1 id="components-modal-header-1" class="components-modal__header-heading">
                                     This is my Modal
                                 </h1>                                
-                                <button type="button" id="close-modal" class="components-button has-icon" aria-label="Close dialog"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
                             </div>                            
+                            <button type="button" id="close-modal" class="components-button has-icon" aria-label="Close dialog"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
                         </div>
                         <img src="http://riseup2.local/wp-content/uploads/2020/11/screencapture-kadenceex-local-plungee-2020-11-28-03_26_02.png" id="slick-img">
                     </div>
