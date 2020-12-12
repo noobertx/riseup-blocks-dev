@@ -155,7 +155,7 @@ function register_block_wprig_image_carousel(){
                 ],
                 'overlayEffect' => [
                     'type'=>'string',
-                    'default'=>'flip-vertical'
+                    'default'=>'let-me-in'
                 ],
                 
                 'interaction' => array(
