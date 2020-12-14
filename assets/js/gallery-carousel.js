@@ -63,4 +63,31 @@ $(".components-modal__screen-overlay").on("click","#close-modal",function(e){
             $(".components-modal__screen-overlay").addClass("open")
         },200)
     })
+
+    $(".wprig-mosaic-gallery").on("click","a.wprig-gallery-item",function(e){  
+        e.preventDefault();
+        var $el = $(this);
+        var $gallery = $el.closest(".wprig-mosaic-gallery");
+        var galleryData =  $gallery.data();
+        var path = $el.attr("href");
+
+        
+        
+        $(".components-modal__screen-overlay").addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
+        $(".components-modal__screen-overlay").find(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
+        $(".components-modal__screen-overlay").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
+        
+        $(".components-modal__screen-overlay").find("#slick-img").remove()
+
+        $(".components-modal__content").append($("<img>",{
+            id:"slick-img",
+            src:path
+        }))
+
+        setTimeout(function(){     
+            $(".components-modal__screen-overlay").addClass("open")
+        },200)
+    })
+
+    jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
 })(jQuery)
