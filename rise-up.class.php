@@ -404,6 +404,7 @@ class RiseUp_Blocks {
 		wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
 		wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
 		wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, microtime() );
+		wp_enqueue_style( 'wprig-editor-fields-min', WPRIG_DIR_URL . 'assets/css/fields.css', false, microtime() );
 		wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/blocks.editor.min.css', false, microtime() );
 		#END_REPLACE
 
