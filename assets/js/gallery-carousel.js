@@ -89,5 +89,8 @@ $(".components-modal__screen-overlay").on("click","#close-modal",function(e){
         },200)
     })
 
-    jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
+    setTimeout(function(){
+
+        jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
+    },500)
 })(jQuery)
