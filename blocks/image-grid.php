@@ -1,11 +1,11 @@
 <?php
-function register_block_wprig_mosaic_images(){
+function register_block_wprig_image_grid(){
     if (!function_exists('register_block_type')) {
 		return;
     }
 
     register_block_type(
-        'wprig/mosaic-images',
+        'wprig/image-grid',
         [
             'attributes'=>[
                 'uniqueId' => [
@@ -15,7 +15,44 @@ function register_block_wprig_mosaic_images(){
                 'imageItems' => [
                     'type' => 'array',
                     'default' => []
-                ],               
+                ],
+                'columns' => [
+                    'type' => 'number',
+                    'default' => 3,
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}}.wprig-grid-gallery{grid-template-columns: repeat({{columns}},1fr); } '
+                        ]
+                    ]
+                ],
+                'rowGap' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md' => 10,
+                        'sm' => 10,
+                        'xs' => 10,
+                        'unit' => 'px'
+                    ],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}}.wprig-grid-gallery{ row-gap: {{rowGap}}; }'
+                        ]
+                    ]
+                ],
+                'columnGap' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md' => 10,
+                        'sm' => 10,
+                        'xs' => 10,
+                        'unit' => 'px'
+                    ],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}}.wprig-grid-gallery{ column-gap: {{columnGap}}; }'
+                        ]
+                    ]
+                ],
 
                 'modalOverlayBg' => [
                     'type' => 'object',
@@ -109,62 +146,27 @@ function register_block_wprig_mosaic_images(){
                         ]
                     ]
                 ],
-                'enableHoverFx' =>[
-                    'type' => 'boolean',
-					'default' => true,
-                ],
+
                 'overlayEffect' => [
                     'type'=>'string',
                     'default'=>'let-me-in'
                 ],
 
-                'hoverEffect' => [
+                'hoverEffect'=> [
                     'type'=> 'string',
-                    'default'=> 'wprig-box-effect-1'
+                    'default'=> 'wprig-highligh-box-effect-1'
                 ],
-                
-                'hoverEffectDirection' => [
-                    'type' => 'string',  
-                    'default' => 'left-to-right'
-                ],
-
-                'interaction' => array(
-					'type' => 'object',
-					'default' => (object) array(),
-				),
-				'animation' => array(
-					'type' => 'object',
-					'default' => (object) array(),
-				),
-				'globalZindex' => array(
-					'type' => 'string',
-					'default' => '0',
-					'style' => [(object) ['selector' => '{{WPRIG}} {z-index:{{globalZindex}};}']]
-				),
-				'hideTablet' => array(
-					'type' => 'boolean',
-					'default' => false,
-					'style' => [(object) ['selector' => '{{wprig}}{display:none;}']]
-				),
-				'hideMobile' => array(
-					'type' => 'boolean',
-					'default' => false,
-					'style' => [(object) ['selector' => '{{wprig}}{display:none;}']]
-				),
-				'globalCss' => array(
-					'type' => 'string',
-					'default' => '',
-					'style' => [(object) ['selector' => '']]
-				),
-
-
+                'hoverEffectDirection'=> [
+                    'type'=> 'string',
+                    'default'=> ''
+                ]
             ],
-            'render_callback' => 'render_block_wprig_mosaic_images'
+            'render_callback' => 'render_block_wprig_image_grid'
         ]
     );
 }
 
-function render_block_wprig_mosaic_images($att){
+function render_block_wprig_image_grid($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
@@ -175,12 +177,12 @@ function render_block_wprig_mosaic_images($att){
         'overlayEffect' => $overlayEffect 
     );
 
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-mosaic-gallery\"  data-modal='".json_encode($modalSettings)."'>";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery\"  data-modal='".json_encode($modalSettings)."'>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
             $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
-            $html[] = "<img src='".$image['url']."'/>";
+            $html[] = "<img src='".$image['thumbnail']."'/>";
             $html[] = "</a>";
         }
     }
@@ -189,27 +191,5 @@ function render_block_wprig_mosaic_images($att){
     return implode("",$html);
 }
 
-function wprig_image_mosaic_assets($hook){
-    // echo "Hook is ".$hook;
-
-    $blocks_meta_data = get_post_meta( get_the_ID(), '__wprig_available_blocks', true );
-    $blocks_meta_data = unserialize( $blocks_meta_data );
-    
-    if ( is_array( $blocks_meta_data ) && count( $blocks_meta_data ) ) {
-
-        $available_blocks = $blocks_meta_data['available_blocks'];
-		$has_interaction  = $blocks_meta_data['interaction'];
-		$has_animation    = $blocks_meta_data['animation'];
-        $has_parallax     = $blocks_meta_data['parallax'];
-        
-        if ( in_array( 'wprig/mosaic-images', $available_blocks ) ) {
-            // wp_enqueue_style( 'jquery-mo', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
-            wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
-        }
-    }
-}
-
-add_action( 'wp_enqueue_scripts', 'wprig_image_mosaic_assets' );
-
-add_action('init', 'register_block_wprig_mosaic_images', 100);
+add_action('init', 'register_block_wprig_image_grid', 100);
 ?>

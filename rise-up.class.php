@@ -305,6 +305,7 @@ class RiseUp_Blocks {
 		// echo "The path is at ".WPRIG_DIR_URL.'dist/blocks.build.js';
 
 		wp_enqueue_style( 'unite-gallery', WPRIG_DIR_URL . 'assets/css/unite-gallery.css', false, microtime() );
+		wp_enqueue_style( 'wprig-gallery-effects', WPRIG_DIR_URL . 'assets/css/gallery-effects.css', false, microtime() );
 
 		wp_enqueue_script( 'wprig-blocks-js',  WPRIG_DIR_URL.'dist/blocks.build.js', array('media'), microtime(), true );
 		wp_enqueue_script( 'unite-gallery',  WPRIG_DIR_URL.'assets/js/unitegallery.min.js', array(), microtime(), true );

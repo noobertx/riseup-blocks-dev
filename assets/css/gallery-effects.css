@@ -1,0 +1,95 @@
+
+.wprig-gallery.wprig-box-effect-1.bottom-to-top .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    transition: 0.35s all;
+}
+
+.wprig-gallery.wprig-box-effect-1.bottom-to-top .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.wprig-gallery.wprig-box-effect-1.top-to-bottom .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: -100%;
+    left: 0;
+    transition: 0.35s all;
+}
+
+.wprig-gallery.wprig-box-effect-1.top-to-bottom .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-gallery.wprig-box-effect-1.left-to-right .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: -100%;
+    transition: 0.35s all;
+}
+
+.wprig-gallery.wprig-box-effect-1.left-to-right .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-gallery.wprig-box-effect-1.right-to-left .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 100%;
+    transition: 0.35s all;
+}
+
+.wprig-gallery.wprig-box-effect-1.right-to-left .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-gallery.wprig-box-effect-2 .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.35s all;
+    transform:scale(0.5)
+}
+
+.wprig-gallery.wprig-box-effect-2 .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform:scale(1)
+}
+
+.wprig-gallery.wprig-box-effect-3 .jQueryMosaic > .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.35s all;
+    transform:scale(1.5)
+}
+
+.wprig-gallery.wprig-box-effect-3 .jQueryMosaic > .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform:scale(1)
+}
