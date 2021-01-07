@@ -115,7 +115,7 @@ function register_block_wprig_mosaic_images(){
                 ],
                 'overlayEffect' => [
                     'type'=>'string',
-                    'default'=>'let-me-in'
+                    'default'=>'overlay-slidedown'
                 ],
 
                 'hoverEffect' => [
@@ -174,7 +174,8 @@ function render_block_wprig_mosaic_images($att){
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
     );
-
+    
+    $html[] = "<div class='wprig-modal-wrap'>";
     $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-mosaic-gallery\"  data-modal='".json_encode($modalSettings)."'>";
 
     if(count($imageItems)){
@@ -184,6 +185,7 @@ function render_block_wprig_mosaic_images($att){
             $html[] = "</a>";
         }
     }
+    $html[] = "</div>";
     $html[] = "</div>";
 
     return implode("",$html);

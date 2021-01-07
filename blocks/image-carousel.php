@@ -258,10 +258,11 @@ add_action( 'wp_enqueue_scripts', 'wprig_image_carousel' );
 
 
 add_action( 'wp_body_open', 'render_modal_component' );
+add_action('wp_footer', 'render_overlay_block');
 function render_modal_component(){
     if(!is_admin()){
         ?>
-            <div class="components-modal__screen-overlay">
+                
                 <div class="components-modal__frame wprig-dynamic-modal">
                     <div class="components-modal__content">
                         <div class="components-modal__header">
@@ -275,10 +276,14 @@ function render_modal_component(){
                         <img src="http://riseup2.local/wp-content/uploads/2020/11/screencapture-kadenceex-local-plungee-2020-11-28-03_26_02.png" id="slick-img">
                     </div>
                 </div>
-            </div>
-        <?php
+                
+                <?php
     }
 }
+
+function render_overlay_block(){ ?>
+    <div class="components-modal__screen-overlay"></div>    
+<?php }
 
 // if(in_array('render_modal_component',get_the_filter('wp_body_open'))){}
 
