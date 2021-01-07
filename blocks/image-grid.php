@@ -66,7 +66,7 @@ function register_block_wprig_image_grid(){
                     ],
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}}.components-modal__screen-overlay'
+                            'selector' => '{{WPRIG}} ~ .components-modal__screen-overlay'
                         ]
                     ]
                 ],
@@ -154,12 +154,49 @@ function register_block_wprig_image_grid(){
 
                 'hoverEffect'=> [
                     'type'=> 'string',
-                    'default'=> 'wprig-highligh-box-effect-1'
+                    'default'=> 'wprig-box-effect-1'
                 ],
                 'hoverEffectDirection'=> [
                     'type'=> 'string',
                     'default'=> ''
-                ]
+                ],
+                'enableHoverFx' =>[
+                    'type' => 'boolean',
+					'default' => true,
+                ],
+                'overlayEffect' => [
+                    'type'=>'string',
+                    'default'=>'overlay-slidedown'
+                ],
+                'interaction' => array(
+					'type' => 'object',
+					'default' => (object) array(),
+				),
+				'animation' => array(
+					'type' => 'object',
+					'default' => (object) array(),
+				),
+				'globalZindex' => array(
+					'type' => 'string',
+					'default' => '0',
+					'style' => [(object) ['selector' => '{{WPRIG}} {z-index:{{globalZindex}};}']]
+				),
+				'hideTablet' => array(
+					'type' => 'boolean',
+					'default' => false,
+					'style' => [(object) ['selector' => '{{wprig}}{display:none;}']]
+				),
+				'hideMobile' => array(
+					'type' => 'boolean',
+					'default' => false,
+					'style' => [(object) ['selector' => '{{wprig}}{display:none;}']]
+				),
+				'globalCss' => array(
+					'type' => 'string',
+					'default' => '',
+					'style' => [(object) ['selector' => '']]
+				),
+
             ],
             'render_callback' => 'render_block_wprig_image_grid'
         ]
@@ -170,22 +207,30 @@ function render_block_wprig_image_grid($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
+    $hoverEffect 		    = isset($att['hoverEffect']) ? (array) $att['hoverEffect'] : '';
+    $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
-
+    
+    $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
     );
-
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery\"  data-modal='".json_encode($modalSettings)."'>";
+    
+    $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
+            $html[] = "<div class='cells'>";
+            $html[] = "<div class='overlay'></div>";
             $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
-            $html[] = "<img src='".$image['thumbnail']."'/>";
+            $html[] = "<img src='".$image['url']."'/>";
             $html[] = "</a>";
+            $html[] = "</div>";
         }
     }
+    $html[] = "</div>";
     $html[] = "</div>";
 
     return implode("",$html);

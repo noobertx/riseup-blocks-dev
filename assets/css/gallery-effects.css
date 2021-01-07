@@ -1,13 +1,21 @@
+.wprig-modal-wrap{
+    width:100%;
+    overflow: hidden;
+}
+
 
 .wprig-mosaic-gallery{
     overflow: hidden;
 }
+
     
     
+.wprig-grid-gallery img,
 .wprig-mosaic-gallery img{
     width:100%;
 }
 
+.wprig-grid-gallery .cells,
 .wprig-mosaic-gallery .cells{
     position: relative;
     z-index: 6;
@@ -15,6 +23,7 @@
     
 }
 
+.wprig-grid-gallery .overlay ,
 .wprig-mosaic-gallery .overlay {
     position: absolute;
     top: 0;
@@ -28,13 +37,13 @@
     background:rgba(0,0,0,0.5) ;
 }
 
+.wprig-grid-gallery .overlay-content,
 .wprig-mosaic-gallery .overlay-content{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.wprig-box-effect-1.bottom-to-top .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-1.bottom-to-top  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: 100%;
@@ -42,7 +51,7 @@
     transition: 0.35s all;
 }
 
-.wprig-box-effect-1.bottom-to-top .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-1.bottom-to-top  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
@@ -50,7 +59,7 @@
 }
 
 
-.wprig-box-effect-1.top-to-bottom .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-1.top-to-bottom  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: -100%;
@@ -58,14 +67,14 @@
     transition: 0.35s all;
 }
 
-.wprig-box-effect-1.top-to-bottom .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-1.top-to-bottom  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
     left: 0;
 }
 
-.wprig-box-effect-1.left-to-right .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-1.left-to-right  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: 0;
@@ -73,14 +82,14 @@
     transition: 0.35s all;
 }
 
-.wprig-box-effect-1.left-to-right .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-1.left-to-right  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
     left: 0;
 }
 
-.wprig-box-effect-1.right-to-left .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-1.right-to-left  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: 0;
@@ -88,14 +97,14 @@
     transition: 0.35s all;
 }
 
-.wprig-box-effect-1.right-to-left .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-1.right-to-left  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
     left: 0;
 }
 
-.wprig-box-effect-2 .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-2  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: 0;
@@ -104,7 +113,7 @@
     transform:scale(0.5)
 }
 
-.wprig-box-effect-2 .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-2  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
@@ -112,7 +121,7 @@
     transform:scale(1)
 }
 
-.wprig-box-effect-3 .jQueryMosaic > .cells .overlay {
+.wprig-box-effect-3  .cells .overlay {
     z-index: 5;
     opacity: 0;
     top: 0;
@@ -121,7 +130,7 @@
     transform:scale(1.5)
 }
 
-.wprig-box-effect-3 .jQueryMosaic > .cells:hover .overlay {
+.wprig-box-effect-3  .cells:hover .overlay {
     z-index: 5;
     opacity: 1;
     top: 0;
