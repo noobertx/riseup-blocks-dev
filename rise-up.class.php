@@ -545,6 +545,8 @@ class RiseUp_Blocks {
 			/*
 			 * @warning: Don't Remove `START_REPLACE` and `START_REPLACE` comments. These comments are required for gulp build
 			 */
+			wp_enqueue_style( 'wprig-gallery-effects', WPRIG_DIR_URL . 'assets/css/gallery-effects.css', false, microtime() );
+
 
 			#START_REPLACE
 			wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );

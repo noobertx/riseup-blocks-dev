@@ -168,6 +168,8 @@ function render_block_wprig_mosaic_images($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
+    $hoverEffect 		    = isset($att['hoverEffect']) ? (array) $att['hoverEffect'] : '';
+    $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
 
     $modalSettings = (object) array(
@@ -175,14 +177,17 @@ function render_block_wprig_mosaic_images($att){
         'overlayEffect' => $overlayEffect 
     );
     
-    $html[] = "<div class='wprig-modal-wrap'>";
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-mosaic-gallery\"  data-modal='".json_encode($modalSettings)."'>";
+    $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery \"  data-modal='".json_encode($modalSettings)."'>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
+            $html[] = "<div class='cells'>";
+            $html[] = "<div class='overlay'></div>";
             $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
             $html[] = "<img src='".$image['url']."'/>";
             $html[] = "</a>";
+            $html[] = "</div>";
         }
     }
     $html[] = "</div>";
