@@ -1,4 +1,3 @@
-
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -37321,6 +37320,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableHoverFx = _this$props3$attribut.enableHoverFx,
           hoverEffect = _this$props3$attribut.hoverEffect,
           hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
+          modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -37455,6 +37455,21 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayEffect: val
           });
         }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Layout'),
+        value: modalLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'modal-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'modal-layout-2'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalLayout: val
+          });
+        }
       }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
@@ -37473,6 +37488,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
         hoverEffect: hoverEffect,
+        modalLayout: modalLayout,
         hoverEffectDirection: hoverEffectDirection,
         id: "wprig-block-".concat(uniqueId),
         images: imageItems
@@ -37728,6 +37744,7 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
           className = _this$props2.className,
           id = _this$props2.id,
           overlayEffect = _this$props2.overlayEffect,
+          modalLayout = _this$props2.modalLayout,
           enableHoverFx = _this$props2.enableHoverFx,
           hoverEffect = _this$props2.hoverEffect,
           hoverEffectDirection = _this$props2.hoverEffectDirection,
@@ -37745,9 +37762,11 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
         onRequestClose: function onRequestClose() {
           _this4.closeOverlay();
         }
-      }, /*#__PURE__*/React.createElement("img", {
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
         "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
         columnsCount: 4,

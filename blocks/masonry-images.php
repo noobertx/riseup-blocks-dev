@@ -117,7 +117,10 @@ function register_block_wprig_masonry_images(){
                     'type'=>'string',
                     'default'=>'overlay-slidedown'
                 ],
-
+                'modalLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'modal-layout-1'
+                ],
                 'hoverEffect' => [
                     'type'=> 'string',
                     'default'=> 'wprig-box-effect-1'
