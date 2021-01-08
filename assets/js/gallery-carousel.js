@@ -122,5 +122,26 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
     setTimeout(function(){
 
         jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
+        $('.wprig-masonry-gallery').wookmark();
+        
     },500)
+
+    $(document).ready(function() {
+        // var grid = document.querySelector('.wprig-masonry-gallery');
+        // var msnry = new Masonry( grid, {
+        // // options...
+        //     itemSelector: '.cells',
+        //     columnWidth: 150,
+        //     gutter: 10
+        // });
+
+        // console.log(msnry)
+
+        $(".wprig-masonry-gallery").imagesLoaded(function() {
+            $(".wprig-masonry-gallery").masonry({
+                itemSelector: ".cells"
+            });
+        });
+
+    });
 })(jQuery)
