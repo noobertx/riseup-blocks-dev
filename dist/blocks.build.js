@@ -34544,9 +34544,15 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
-          console.log(newImages);
+          var newImgs = newImages.map(function (img) {
+            return {
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.medium.url,
+              title: img.caption
+            };
+          });
           setAttributes({
-            imageItems: newImages
+            imageItems: newImgs
           });
         },
         labels: {
