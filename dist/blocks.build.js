@@ -34168,6 +34168,7 @@ var _wp$data = wp.data,
     withDispatch = _wp$data.withDispatch;
 var _wp$components = wp.components,
     PanelBody = _wp$components.PanelBody,
+    IconButton = _wp$components.IconButton,
     TextControl = _wp$components.TextControl,
     SelectControl = _wp$components.SelectControl,
     Tooltip = _wp$components.Tooltip,
@@ -34180,6 +34181,8 @@ var _wp$element = wp.element,
     createRef = _wp$element.createRef;
 var _wp$blockEditor = wp.blockEditor,
     InspectorControls = _wp$blockEditor.InspectorControls,
+    MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
+    MediaUpload = _wp$blockEditor.MediaUpload,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
@@ -34537,7 +34540,53 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      })), /*#__PURE__*/React.createElement("div", {
+      })), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
+      }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
+        onSelect: function onSelect(newImages) {
+          console.log(newImages);
+          setAttributes({
+            imageItems: newImages
+          });
+        },
+        labels: {
+          title: "Image Slider"
+        },
+        allowedTypes: ["image"],
+        multiple: true
+      }), /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
+        multiple: true,
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(IconButton, {
+            onClick: open,
+            label: __("Edit selection")
+          });
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return captionArray.find(function (c) {
+              return c.id === img.id;
+            }) ? captionArray.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              text: img.caption,
+              url: img.url,
+              thumbnail: img.thumbnail,
+              id: img.id
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
+          });
+        }
+      })) : /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, this.renderCells(imageItems)));
     }
