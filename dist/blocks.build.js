@@ -34331,7 +34331,7 @@ var Edit = /*#__PURE__*/function (_Component) {
     }
   }, {
     key: "renderCells",
-    value: function renderCells(imageItems) {
+    value: function renderCells(imageItems, enableHoverFx) {
       var _this2 = this;
 
       console.log(imageItems);
@@ -34340,7 +34340,18 @@ var Edit = /*#__PURE__*/function (_Component) {
         return imageItems.map(function (el) {
           return /*#__PURE__*/React.createElement("div", {
             "class": "cells"
-          }, /*#__PURE__*/React.createElement("img", {
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          }, "View"), /*#__PURE__*/React.createElement("button", {
+            type: "button"
+          }, "Link"))), /*#__PURE__*/React.createElement("img", {
             src: el.thumbnail,
             "data-image": el.url,
             onClick: function onClick() {
@@ -34593,8 +34604,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       })) : /*#__PURE__*/React.createElement("div", {
-        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
-      }, this.renderCells(imageItems)));
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
+      }, this.renderCells(imageItems, enableHoverFx)));
     }
   }]);
 

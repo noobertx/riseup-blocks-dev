@@ -52,7 +52,7 @@ function register_block_wprig_image_grid(){
                             'selector' => '{{WPRIG}}.wprig-grid-gallery{ column-gap: {{columnGap}}; }'
                         ]
                     ]
-                ],
+                ],               
 
                 'modalOverlayBg' => [
                     'type' => 'object',
