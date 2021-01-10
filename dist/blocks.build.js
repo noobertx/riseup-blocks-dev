@@ -38760,6 +38760,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           className = _this$props4$attribut.className,
           imageItems = _this$props4$attribut.imageItems,
           modalOverlayBg = _this$props4$attribut.modalOverlayBg,
+          modalLayout = _this$props4$attribut.modalLayout,
           overlayEffect = _this$props4$attribut.overlayEffect,
           enableHoverFx = _this$props4$attribut.enableHoverFx,
           hoverEffect = _this$props4$attribut.hoverEffect,
@@ -38790,6 +38791,21 @@ var Edit = /*#__PURE__*/function (_Component) {
         initialOpen: false,
         title: __('Lightbox Settings')
       }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Layout'),
+        value: modalLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'modal-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'modal-layout-2'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalLayout: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
         label: __('Effect'),
         value: overlayEffect,
         options: [{
@@ -38870,6 +38886,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
         hoverEffect: hoverEffect,
+        modalLayout: modalLayout,
         hoverEffectDirection: hoverEffectDirection,
         id: "wprig-block-".concat(uniqueId),
         images: imageItems
@@ -38979,6 +38996,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
       device: 'md',
       openModal: false,
       imageCollection: [],
+      caption: "",
       imageUrl: "",
       openClass: ""
     };
@@ -38989,6 +39007,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
   _createClass(Mosaic, [{
     key: "renderClick",
     value: function renderClick(el) {
+      console.log(el);
       this.setState({
         openModal: true,
         imageUrl: el.url
@@ -39121,6 +39140,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           overlayEffect = _this$props2.overlayEffect,
           enableHoverFx = _this$props2.enableHoverFx,
           hoverEffect = _this$props2.hoverEffect,
+          modalLayout = _this$props2.modalLayout,
           hoverEffectDirection = _this$props2.hoverEffectDirection,
           images = _this$props2.images;
       var doneLoading = this.state.doneLoading;
@@ -39130,15 +39150,17 @@ var Mosaic = /*#__PURE__*/function (_Component) {
       }
 
       return /*#__PURE__*/React.createElement(Fragment, null, this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        title: "This is my modal",
-        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : ''),
-        overlayClassName: "wprig-block-".concat(id, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(id),
         onRequestClose: function onRequestClose() {
           _this4.closeOverlay();
         }
-      }, /*#__PURE__*/React.createElement("img", {
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      })), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
         "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, /*#__PURE__*/React.createElement("div", {
         id: "gallery"

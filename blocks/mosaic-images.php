@@ -127,7 +127,10 @@ function register_block_wprig_mosaic_images(){
                     'type' => 'string',  
                     'default' => 'left-to-right'
                 ],
-
+                'modalLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'modal-layout-1'
+                ],
                 'interaction' => array(
 					'type' => 'object',
 					'default' => (object) array(),
@@ -211,7 +214,7 @@ function wprig_image_mosaic_assets($hook){
         
         if ( in_array( 'wprig/mosaic-images', $available_blocks ) ) {
             // wp_enqueue_style( 'jquery-mo', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
-            wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
+            wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic-elements.js', array( 'jquery' ), microtime() );
         }
     }
 }
