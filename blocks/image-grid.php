@@ -168,6 +168,12 @@ function register_block_wprig_image_grid(){
                     'type'=>'string',
                     'default'=>'overlay-slidedown'
                 ],
+
+                'modalLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'modal-layout-1'
+                ],
+                
                 'interaction' => array(
 					'type' => 'object',
 					'default' => (object) array(),

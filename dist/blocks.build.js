@@ -34395,6 +34395,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableHoverFx = _this$props3$attribut.enableHoverFx,
           hoverEffect = _this$props3$attribut.hoverEffect,
           hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
+          modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -34529,6 +34530,21 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayEffect: val
           });
         }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Layout'),
+        value: modalLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'modal-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'modal-layout-2'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalLayout: val
+          });
+        }
       }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
@@ -34603,9 +34619,20 @@ var Edit = /*#__PURE__*/function (_Component) {
 
           });
         }
-      })) : /*#__PURE__*/React.createElement("div", {
+      })) : /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(uniqueId),
+        onRequestClose: function onRequestClose() {
+          _this3.closeOverlay();
+        }
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, this.renderCells(imageItems, enableHoverFx)));
+      }, this.renderCells(imageItems, enableHoverFx))));
     }
   }]);
 
