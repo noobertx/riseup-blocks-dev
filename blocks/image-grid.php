@@ -52,7 +52,20 @@ function register_block_wprig_image_grid(){
                             'selector' => '{{WPRIG}}.wprig-grid-gallery{ column-gap: {{columnGap}}; }'
                         ]
                     ]
-                ],               
+                ],      
+                
+                'cellHeight' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md'=> 300,
+                        'unit'=> 'px'
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => '{{WPRIG}}.wprig-grid-gallery .cells{ height: {{cellHeight}}; }' 
+                        ]
+                    ]
+                ],
 
                 'modalOverlayBg' => [
                     'type' => 'object',

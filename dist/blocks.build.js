@@ -34390,6 +34390,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           columns = _this$props3$attribut.columns,
           rowGap = _this$props3$attribut.rowGap,
           columnGap = _this$props3$attribut.columnGap,
+          cellHeight = _this$props3$attribut.cellHeight,
           modalOverlayBg = _this$props3$attribut.modalOverlayBg,
           overlayEffect = _this$props3$attribut.overlayEffect,
           enableHoverFx = _this$props3$attribut.enableHoverFx,
@@ -34457,6 +34458,24 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         unit: ['px', 'em', '%', 'vw'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Height'),
+        min: 0,
+        max: 900,
+        value: cellHeight,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cellHeight: val
+          });
+        },
+        unit: ['px', 'em', 'vh'],
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
