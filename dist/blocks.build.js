@@ -38572,6 +38572,7 @@ var _wp$blockEditor = wp.blockEditor,
 var _wp$wprigComponents = wp.wprigComponents,
     TestField = _wp$wprigComponents.TestField,
     Background = _wp$wprigComponents.Background,
+    NumberField = _wp$wprigComponents.NumberField,
     Range = _wp$wprigComponents.Range,
     _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
     globalCustomAttributes = _wp$wprigComponents$g.globalCustomAttributes,
@@ -38773,10 +38774,14 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       var _this$props4 = this.props,
           _this$props4$attribut = _this$props4.attributes,
           uniqueId = _this$props4$attribut.uniqueId,
           className = _this$props4$attribut.className,
+          maxRowHeight = _this$props4$attribut.maxRowHeight,
+          innerGap = _this$props4$attribut.innerGap,
           imageItems = _this$props4$attribut.imageItems,
           modalOverlayBg = _this$props4$attribut.modalOverlayBg,
           modalLayout = _this$props4$attribut.modalLayout,
@@ -38804,6 +38809,38 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             imageItems: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(NumberField, {
+        label: __('Max Row Height'),
+        value: maxRowHeight,
+        onChange: function onChange(val) {
+          return setAttributes({
+            maxRowHeight: val
+          });
+        },
+        unit: ['px', 'em', 'vh'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(NumberField, {
+        label: __('Gap'),
+        value: innerGap,
+        onChange: function onChange(val) {
+          return setAttributes({
+            innerGap: val
+          });
+        },
+        unit: ['px'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
@@ -38902,6 +38939,8 @@ var Edit = /*#__PURE__*/function (_Component) {
         key: 'advance'
       }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_0__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
+        maxRowHeight: maxRowHeight,
+        innerGap: innerGap,
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
         hoverEffect: hoverEffect,
@@ -39065,12 +39104,11 @@ var Mosaic = /*#__PURE__*/function (_Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       var _this$props = this.props,
           className = _this$props.className,
           id = _this$props.id,
-          images = _this$props.images;
+          images = _this$props.images,
+          maxRowHeight = _this$props.maxRowHeight;
       console.log(id);
       var the_id = id;
 
@@ -39079,42 +39117,68 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         //     jQuery("."+the_id).find("#gallery").unitegallery()
         //     console.log("Hello World"+the_id);
         // },5000)
-        var loadImage = function loadImage(image) {
-          return new Promise(function (resolve, reject) {
-            var loadImg = new Image();
-            loadImg.src = image.url; // wait 2 seconds to simulate loading time
-
-            loadImg.onload = function () {
-              return setTimeout(function () {
-                resolve(image.url);
-              }, 2000);
-            };
-
-            loadImg.onerror = function (err) {
-              return reject(err);
-            };
-          });
-        };
-
-        Promise.all(images.map(function (image) {
-          return loadImage(image);
-        })).then(function () {
-          // $("."+id).find("#gallery").unitegallery()
-          console.log("All Images are loaded");
-
-          _this2.setState({
-            doneLoading: true
-          });
-
-          setTimeout(function () {
-            jQuery("#gallery").Mosaic({
-              maxRowHeight: 400
-            });
-          }, 500);
-        })["catch"](function (err) {
-          return console.log("Failed to load images", err);
-        });
+        this.loadMosaicScript();
       }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this$props2 = this.props,
+          innerGap = _this$props2.innerGap,
+          maxRowHeight = _this$props2.maxRowHeight;
+
+      if (prevProps.maxRowHeight != maxRowHeight || prevProps.innerGap != innerGap) {
+        console.log("PreProps = ", prevProps, this.props);
+        this.loadMosaicScript();
+      }
+    }
+  }, {
+    key: "loadMosaicScript",
+    value: function loadMosaicScript() {
+      var _this2 = this;
+
+      var _this$props3 = this.props,
+          className = _this$props3.className,
+          id = _this$props3.id,
+          images = _this$props3.images,
+          maxRowHeight = _this$props3.maxRowHeight,
+          innerGap = _this$props3.innerGap;
+
+      var loadImage = function loadImage(image) {
+        return new Promise(function (resolve, reject) {
+          var loadImg = new Image();
+          loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+          loadImg.onload = function () {
+            return setTimeout(function () {
+              resolve(image.url);
+            }, 2000);
+          };
+
+          loadImg.onerror = function (err) {
+            return reject(err);
+          };
+        });
+      };
+
+      Promise.all(images.map(function (image) {
+        return loadImage(image);
+      })).then(function () {
+        // $("."+id).find("#gallery").unitegallery()
+        _this2.setState({
+          doneLoading: true
+        });
+
+        setTimeout(function () {
+          jQuery("#gallery").Mosaic({
+            maxRowHeight: maxRowHeight.md,
+            innerGap: parseInt(innerGap.md),
+            responsiveWidthThreshold: true
+          });
+        }, 500);
+      })["catch"](function (err) {
+        return console.log("Failed to load images", err);
+      });
     }
   }, {
     key: "renderCells",
@@ -39153,15 +39217,16 @@ var Mosaic = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this4 = this;
 
-      var _this$props2 = this.props,
-          className = _this$props2.className,
-          id = _this$props2.id,
-          overlayEffect = _this$props2.overlayEffect,
-          enableHoverFx = _this$props2.enableHoverFx,
-          hoverEffect = _this$props2.hoverEffect,
-          modalLayout = _this$props2.modalLayout,
-          hoverEffectDirection = _this$props2.hoverEffectDirection,
-          images = _this$props2.images;
+      var _this$props4 = this.props,
+          className = _this$props4.className,
+          id = _this$props4.id,
+          overlayEffect = _this$props4.overlayEffect,
+          enableHoverFx = _this$props4.enableHoverFx,
+          maxRowHeight = _this$props4.maxRowHeight,
+          hoverEffect = _this$props4.hoverEffect,
+          modalLayout = _this$props4.modalLayout,
+          hoverEffectDirection = _this$props4.hoverEffectDirection,
+          images = _this$props4.images;
       var doneLoading = this.state.doneLoading;
 
       if (!doneLoading) {
@@ -56776,6 +56841,197 @@ var Media = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./src/components/fields/numberField.js":
+/*!**********************************************!*\
+  !*** ./src/components/fields/numberField.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _device__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./device */ "./src/components/fields/device.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+var Component = wp.element.Component;
+
+var NumberField = /*#__PURE__*/function (_Component) {
+  _inherits(NumberField, _Component);
+
+  var _super = _createSuper(NumberField);
+
+  function NumberField(props) {
+    var _this;
+
+    _classCallCheck(this, NumberField);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      current: '',
+      device: 'md'
+    };
+    return _this;
+  }
+
+  _createClass(NumberField, [{
+    key: "_filterValue",
+    value: function _filterValue(type) {
+      var _this$props = this.props,
+          value = _this$props.value,
+          responsive = _this$props.responsive;
+
+      if (type == 'unit') {
+        return value ? value.unit || 'px' : 'px';
+      } else {
+        return value ? responsive ? value[window.wprigDevice] || '' : value : '';
+      }
+    }
+  }, {
+    key: "setSettings",
+    value: function setSettings(val, type) {
+      var _this$props2 = this.props,
+          unit = _this$props2.unit,
+          value = _this$props2.value,
+          onChange = _this$props2.onChange,
+          responsive = _this$props2.responsive;
+      var newValue = {};
+
+      if (_typeof(value) === 'object' && Object.keys(value).length > 0) {
+        newValue = JSON.parse(JSON.stringify(value));
+      }
+
+      if (unit && !newValue.hasOwnProperty('unit')) {
+        newValue.unit = 'px';
+      }
+
+      if (type === 'unit' && responsive) {
+        newValue.unit = val;
+      } else {
+        newValue = responsive ? Object.assign(newValue, value, _defineProperty({}, window.wprigDevice, val)) : val;
+      }
+
+      onChange(newValue);
+      this.setState({
+        current: newValue
+      });
+    }
+  }, {
+    key: "_minMax",
+    value: function _minMax(type) {
+      var unit = this._filterValue('unit');
+
+      return this.props[type] && this.props[type] != 0 ? unit == 'em' ? Math.round(this.props[type] / 16) : this.props[type] : 0;
+    }
+  }, {
+    key: "_steps",
+    value: function _steps() {
+      var unit = this._filterValue('unit');
+
+      return unit == 'em' ? .001 : this.props.step || 1;
+    }
+  }, {
+    key: "updateDevice",
+    value: function updateDevice(updatedDevice) {
+      var _this$props3 = this.props,
+          value = _this$props3.value,
+          onChange = _this$props3.onChange,
+          device = _this$props3.device;
+
+      if (typeof device !== 'undefined') {
+        onChange(_objectSpread(_objectSpread({}, value), {}, {
+          device: updatedDevice
+        }));
+      }
+
+      this.setState({
+        device: updatedDevice
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props4 = this.props,
+          unit = _this$props4.unit,
+          label = _this$props4.label,
+          responsive = _this$props4.responsive,
+          device = _this$props4.device,
+          onDeviceChange = _this$props4.onDeviceChange;
+      var responsiveDevice = responsive ? device ? device : this.state.device : window.wprigDevice;
+      return /*#__PURE__*/React.createElement("div", {
+        className: 'wprig-field-range wprig-field ' + (responsive ? 'wprig-responsive' : '')
+      }, (label || unit || responsive) && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-d-flex wprig-align-center wprig-mb-10"
+      }, label && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+        htmlFor: 'input'
+      }, label)), responsive && /*#__PURE__*/React.createElement(_device__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        device: responsiveDevice,
+        commonResponsiveDevice: device,
+        className: "wprig-ml-10",
+        onChange: function onChange(val) {
+          device && onDeviceChange ? onDeviceChange(val) : _this2.updateDevice(val);
+        }
+      }), unit && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-unit-btn-group wprig-ml-auto"
+      }, (_typeof(unit) == 'object' ? unit : ['px', 'em', '%']).map(function (value) {
+        return /*#__PURE__*/React.createElement("button", {
+          className: _this2.props.value && value == _this2.props.value.unit ? 'active' : '',
+          onClick: function onClick() {
+            _this2.setSettings(value, 'unit'); // console.log(this._filterValue())
+            // this.setSettings(this._filterValue(), 'range');
+
+          }
+        }, value);
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: ""
+      }, /*#__PURE__*/React.createElement("div", {
+        className: ""
+      }, /*#__PURE__*/React.createElement("input", {
+        type: "number",
+        value: this._filterValue(),
+        step: this._steps(),
+        onChange: function onChange(e) {
+          return _this2.setSettings(e.target.value, 'range');
+        }
+      }))));
+    }
+  }]);
+
+  return NumberField;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (NumberField);
+
+/***/ }),
+
 /***/ "./src/components/fields/padding.js":
 /*!******************************************!*\
   !*** ./src/components/fields/padding.js ***!
@@ -61648,32 +61904,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fields_borderRadius__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./fields/borderRadius */ "./src/components/fields/borderRadius.js");
 /* harmony import */ var _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./fields/radioAdvanced */ "./src/components/fields/radioAdvanced.js");
 /* harmony import */ var _fields_range__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./fields/range */ "./src/components/fields/range.js");
-/* harmony import */ var _fields_select__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./fields/select */ "./src/components/fields/select.js");
-/* harmony import */ var _fields_shape__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fields/shape */ "./src/components/fields/shape.js");
-/* harmony import */ var _fields_separator__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fields/separator */ "./src/components/fields/separator.js");
-/* harmony import */ var _fields_url__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fields/url */ "./src/components/fields/url.js");
-/* harmony import */ var _fields_padding__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fields/padding */ "./src/components/fields/padding.js");
-/* harmony import */ var _fields_template__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fields/template */ "./src/components/fields/template.js");
-/* harmony import */ var _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
-/* harmony import */ var _fields_iconSelector__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./fields/iconSelector */ "./src/components/fields/iconSelector.js");
-/* harmony import */ var _fields_listSettings__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./fields/listSettings */ "./src/components/fields/listSettings.js");
-/* harmony import */ var _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./fields/wprigbutton */ "./src/components/fields/wprigbutton.js");
-/* harmony import */ var _fields_globalsettings__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./fields/globalsettings */ "./src/components/fields/globalsettings.js");
-/* harmony import */ var _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
-/* harmony import */ var _css_generator__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./css-generator */ "./src/components/css-generator.js");
-/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../hooks */ "./src/hooks/index.js");
-/* harmony import */ var _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./fields/headingToolbar */ "./src/components/fields/headingToolbar/index.js");
-/* harmony import */ var _fields_inline__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./fields/inline */ "./src/components/fields/inline/index.js");
-/* harmony import */ var _InspectorTabs__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./InspectorTabs */ "./src/components/InspectorTabs.js");
-/* harmony import */ var _InspectorTab__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./InspectorTab */ "./src/components/InspectorTab.js");
-/* harmony import */ var _InspectorSections__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./InspectorSections */ "./src/components/InspectorSections.js");
-/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./helpers */ "./src/components/helpers.js");
-/* harmony import */ var _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./fields/buttonSettings */ "./src/components/fields/buttonSettings.js");
-/* harmony import */ var _fields_contextMenu__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./fields/contextMenu */ "./src/components/fields/contextMenu.js");
-/* harmony import */ var _fields_testField__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./fields/testField */ "./src/components/fields/testField.js");
+/* harmony import */ var _fields_numberField__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./fields/numberField */ "./src/components/fields/numberField.js");
+/* harmony import */ var _fields_select__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fields/select */ "./src/components/fields/select.js");
+/* harmony import */ var _fields_shape__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fields/shape */ "./src/components/fields/shape.js");
+/* harmony import */ var _fields_separator__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fields/separator */ "./src/components/fields/separator.js");
+/* harmony import */ var _fields_url__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fields/url */ "./src/components/fields/url.js");
+/* harmony import */ var _fields_padding__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fields/padding */ "./src/components/fields/padding.js");
+/* harmony import */ var _fields_template__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./fields/template */ "./src/components/fields/template.js");
+/* harmony import */ var _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
+/* harmony import */ var _fields_iconSelector__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./fields/iconSelector */ "./src/components/fields/iconSelector.js");
+/* harmony import */ var _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./fields/listSettings */ "./src/components/fields/listSettings.js");
+/* harmony import */ var _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./fields/wprigbutton */ "./src/components/fields/wprigbutton.js");
+/* harmony import */ var _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./fields/globalsettings */ "./src/components/fields/globalsettings.js");
+/* harmony import */ var _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
+/* harmony import */ var _css_generator__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./css-generator */ "./src/components/css-generator.js");
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../hooks */ "./src/hooks/index.js");
+/* harmony import */ var _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./fields/headingToolbar */ "./src/components/fields/headingToolbar/index.js");
+/* harmony import */ var _fields_inline__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./fields/inline */ "./src/components/fields/inline/index.js");
+/* harmony import */ var _InspectorTabs__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./InspectorTabs */ "./src/components/InspectorTabs.js");
+/* harmony import */ var _InspectorTab__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./InspectorTab */ "./src/components/InspectorTab.js");
+/* harmony import */ var _InspectorSections__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./InspectorSections */ "./src/components/InspectorSections.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./helpers */ "./src/components/helpers.js");
+/* harmony import */ var _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./fields/buttonSettings */ "./src/components/fields/buttonSettings.js");
+/* harmony import */ var _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./fields/contextMenu */ "./src/components/fields/contextMenu.js");
+/* harmony import */ var _fields_testField__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./fields/testField */ "./src/components/fields/testField.js");
 var _wp$wprigComponents;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -61725,12 +61983,12 @@ wp.wprigComponents = (_wp$wprigComponents = {
   IconList: _fields_iconList__WEBPACK_IMPORTED_MODULE_10__["default"],
   Border: _fields_border__WEBPACK_IMPORTED_MODULE_2__["default"],
   ContextMenu: {
-    ContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_43__["ContextMenu"],
-    handleContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_43__["handleContextMenu"]
+    ContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__["ContextMenu"],
+    handleContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__["handleContextMenu"]
   },
   wprigList: {
-    listAttributes: _fields_listSettings__WEBPACK_IMPORTED_MODULE_30__["listAttributes"],
-    listSettings: _fields_listSettings__WEBPACK_IMPORTED_MODULE_30__["listSettings"]
+    listAttributes: _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__["listAttributes"],
+    listSettings: _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__["listSettings"]
   },
   Background: _fields_background__WEBPACK_IMPORTED_MODULE_1__["default"],
   ButtonGroup: _fields_buttongroup__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -61738,6 +61996,7 @@ wp.wprigComponents = (_wp$wprigComponents = {
   Color: _fields_color__WEBPACK_IMPORTED_MODULE_13__["default"],
   Dimension: _fields_dimension__WEBPACK_IMPORTED_MODULE_6__["default"],
   Dropdown: _fields_dropdown__WEBPACK_IMPORTED_MODULE_7__["default"],
+  NumberField: _fields_numberField__WEBPACK_IMPORTED_MODULE_22__["default"],
   RadioAdvanced: _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_20__["default"],
   Counter: _fields_counter__WEBPACK_IMPORTED_MODULE_4__["default"],
   Range: _fields_range__WEBPACK_IMPORTED_MODULE_21__["default"],
@@ -61746,49 +62005,49 @@ wp.wprigComponents = (_wp$wprigComponents = {
   Tabs: _fields_tabs__WEBPACK_IMPORTED_MODULE_16__["default"],
   Toggle: _fields_toggle__WEBPACK_IMPORTED_MODULE_15__["default"],
   Typography: _fields_typography__WEBPACK_IMPORTED_MODULE_18__["default"],
-  IconSelector: _fields_iconSelector__WEBPACK_IMPORTED_MODULE_29__["default"],
-  Padding: _fields_padding__WEBPACK_IMPORTED_MODULE_26__["default"],
+  IconSelector: _fields_iconSelector__WEBPACK_IMPORTED_MODULE_30__["default"],
+  Padding: _fields_padding__WEBPACK_IMPORTED_MODULE_27__["default"],
   globalSettings: {
-    globalAttributes: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_32__["globalAttributes"],
-    animationSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_32__["animationSettings"],
-    interactionSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_32__["interactionSettings"],
-    globalSettingsPanel: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_32__["globalSettingsPanel"]
+    globalAttributes: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["globalAttributes"],
+    animationSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["animationSettings"],
+    interactionSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["interactionSettings"],
+    globalSettingsPanel: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["globalSettingsPanel"]
   },
   globalCustomSettings: {
-    globalCustomAttributes: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_33__["globalCustomAttributes"],
-    HoverEXSettings: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_33__["HoverEXSettings"]
+    globalCustomAttributes: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__["globalCustomAttributes"],
+    HoverEXSettings: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__["HoverEXSettings"]
   },
-  ColorAdvanced: _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_28__["default"],
+  ColorAdvanced: _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_29__["default"],
   CssGenerator: {
-    CssGenerator: _css_generator__WEBPACK_IMPORTED_MODULE_34__["CssGenerator"],
-    objectReplace: _css_generator__WEBPACK_IMPORTED_MODULE_34__["objectReplace"],
-    objectAppend: _css_generator__WEBPACK_IMPORTED_MODULE_34__["objectAppend"],
-    singleField: _css_generator__WEBPACK_IMPORTED_MODULE_34__["singleField"]
+    CssGenerator: _css_generator__WEBPACK_IMPORTED_MODULE_35__["CssGenerator"],
+    objectReplace: _css_generator__WEBPACK_IMPORTED_MODULE_35__["objectReplace"],
+    objectAppend: _css_generator__WEBPACK_IMPORTED_MODULE_35__["objectAppend"],
+    singleField: _css_generator__WEBPACK_IMPORTED_MODULE_35__["singleField"]
   },
   Headings: _fields_headings__WEBPACK_IMPORTED_MODULE_8__["default"],
-  HeadingToolbar: _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_36__["default"],
+  HeadingToolbar: _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_37__["default"],
   Media: _fields_media__WEBPACK_IMPORTED_MODULE_11__["default"],
   Margin: _fields_margin__WEBPACK_IMPORTED_MODULE_12__["default"],
   HelperFunction: {
-    _equal: _helpers__WEBPACK_IMPORTED_MODULE_41__["_equal"],
-    animationAttr: _helpers__WEBPACK_IMPORTED_MODULE_41__["animationAttr"],
-    selectValue: _helpers__WEBPACK_IMPORTED_MODULE_41__["selectValue"],
-    isObject: _helpers__WEBPACK_IMPORTED_MODULE_41__["isObject"],
-    isArray: _helpers__WEBPACK_IMPORTED_MODULE_41__["isArray"],
-    setValue: _helpers__WEBPACK_IMPORTED_MODULE_41__["setValue"],
-    videoBackground: _helpers__WEBPACK_IMPORTED_MODULE_41__["videoBackground"],
-    parseResponsiveViewPort: _helpers__WEBPACK_IMPORTED_MODULE_41__["parseResponsiveViewPort"],
-    IsInteraction: _helpers__WEBPACK_IMPORTED_MODULE_41__["IsInteraction"],
-    copyToClipboard: _helpers__WEBPACK_IMPORTED_MODULE_41__["copyToClipboard"]
+    _equal: _helpers__WEBPACK_IMPORTED_MODULE_42__["_equal"],
+    animationAttr: _helpers__WEBPACK_IMPORTED_MODULE_42__["animationAttr"],
+    selectValue: _helpers__WEBPACK_IMPORTED_MODULE_42__["selectValue"],
+    isObject: _helpers__WEBPACK_IMPORTED_MODULE_42__["isObject"],
+    isArray: _helpers__WEBPACK_IMPORTED_MODULE_42__["isArray"],
+    setValue: _helpers__WEBPACK_IMPORTED_MODULE_42__["setValue"],
+    videoBackground: _helpers__WEBPACK_IMPORTED_MODULE_42__["videoBackground"],
+    parseResponsiveViewPort: _helpers__WEBPACK_IMPORTED_MODULE_42__["parseResponsiveViewPort"],
+    IsInteraction: _helpers__WEBPACK_IMPORTED_MODULE_42__["IsInteraction"],
+    copyToClipboard: _helpers__WEBPACK_IMPORTED_MODULE_42__["copyToClipboard"]
   }
-}, _defineProperty(_wp$wprigComponents, "IconList", _fields_iconList__WEBPACK_IMPORTED_MODULE_10__["default"]), _defineProperty(_wp$wprigComponents, "InnerPanel", _fields_innerPanel__WEBPACK_IMPORTED_MODULE_9__["default"]), _defineProperty(_wp$wprigComponents, "Separator", _fields_separator__WEBPACK_IMPORTED_MODULE_24__["default"]), _defineProperty(_wp$wprigComponents, "Select", _fields_select__WEBPACK_IMPORTED_MODULE_22__["default"]), _defineProperty(_wp$wprigComponents, "Shape", _fields_shape__WEBPACK_IMPORTED_MODULE_23__["default"]), _defineProperty(_wp$wprigComponents, "Styles", _fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"]), _defineProperty(_wp$wprigComponents, "Url", _fields_url__WEBPACK_IMPORTED_MODULE_25__["default"]), _defineProperty(_wp$wprigComponents, "Inline", {
-  InlineToolbar: _fields_inline__WEBPACK_IMPORTED_MODULE_37__["InlineToolbar"],
-  InlineSpacer: _fields_inline__WEBPACK_IMPORTED_MODULE_37__["InlineSpacer"],
-  InlineSelector: _fields_inline__WEBPACK_IMPORTED_MODULE_37__["InlineSelector"]
+}, _defineProperty(_wp$wprigComponents, "IconList", _fields_iconList__WEBPACK_IMPORTED_MODULE_10__["default"]), _defineProperty(_wp$wprigComponents, "InnerPanel", _fields_innerPanel__WEBPACK_IMPORTED_MODULE_9__["default"]), _defineProperty(_wp$wprigComponents, "Separator", _fields_separator__WEBPACK_IMPORTED_MODULE_25__["default"]), _defineProperty(_wp$wprigComponents, "Select", _fields_select__WEBPACK_IMPORTED_MODULE_23__["default"]), _defineProperty(_wp$wprigComponents, "Shape", _fields_shape__WEBPACK_IMPORTED_MODULE_24__["default"]), _defineProperty(_wp$wprigComponents, "Styles", _fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"]), _defineProperty(_wp$wprigComponents, "Url", _fields_url__WEBPACK_IMPORTED_MODULE_26__["default"]), _defineProperty(_wp$wprigComponents, "Inline", {
+  InlineToolbar: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineToolbar"],
+  InlineSpacer: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineSpacer"],
+  InlineSelector: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineSelector"]
 }), _defineProperty(_wp$wprigComponents, "wprigButton", {
-  buttonAttributes: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_42__["buttonAttributes"],
-  buttonSettings: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_42__["buttonSettings"]
-}), _defineProperty(_wp$wprigComponents, "Templates", _fields_template__WEBPACK_IMPORTED_MODULE_27__["default"]), _defineProperty(_wp$wprigComponents, "withCSSGenerator", _hooks__WEBPACK_IMPORTED_MODULE_35__["withCSSGenerator"]), _defineProperty(_wp$wprigComponents, "InspectorTabs", _InspectorTabs__WEBPACK_IMPORTED_MODULE_38__["default"]), _defineProperty(_wp$wprigComponents, "InspectorTab", _InspectorTab__WEBPACK_IMPORTED_MODULE_39__["default"]), _defineProperty(_wp$wprigComponents, "InspectorSections", _InspectorSections__WEBPACK_IMPORTED_MODULE_40__["default"]), _defineProperty(_wp$wprigComponents, "WPRigButtonEdit", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_31__["WPRigButtonEdit"]), _defineProperty(_wp$wprigComponents, "WPRigButtonSave", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_31__["WPRigButtonSave"]), _defineProperty(_wp$wprigComponents, "TestField", _fields_testField__WEBPACK_IMPORTED_MODULE_44__["default"]), _wp$wprigComponents);
+  buttonAttributes: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__["buttonAttributes"],
+  buttonSettings: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__["buttonSettings"]
+}), _defineProperty(_wp$wprigComponents, "Templates", _fields_template__WEBPACK_IMPORTED_MODULE_28__["default"]), _defineProperty(_wp$wprigComponents, "withCSSGenerator", _hooks__WEBPACK_IMPORTED_MODULE_36__["withCSSGenerator"]), _defineProperty(_wp$wprigComponents, "InspectorTabs", _InspectorTabs__WEBPACK_IMPORTED_MODULE_39__["default"]), _defineProperty(_wp$wprigComponents, "InspectorTab", _InspectorTab__WEBPACK_IMPORTED_MODULE_40__["default"]), _defineProperty(_wp$wprigComponents, "InspectorSections", _InspectorSections__WEBPACK_IMPORTED_MODULE_41__["default"]), _defineProperty(_wp$wprigComponents, "WPRigButtonEdit", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__["WPRigButtonEdit"]), _defineProperty(_wp$wprigComponents, "WPRigButtonSave", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__["WPRigButtonSave"]), _defineProperty(_wp$wprigComponents, "TestField", _fields_testField__WEBPACK_IMPORTED_MODULE_45__["default"]), _wp$wprigComponents);
 
 /***/ }),
 

@@ -16,7 +16,14 @@ function register_block_wprig_mosaic_images(){
                     'type' => 'array',
                     'default' => []
                 ],               
-
+                'maxRowHeight' => [
+                    'type' => 'number',
+                    'default' => 400
+                ], 
+                'innerGap' => [
+                    'type' => 'number',
+                    'default' => 0
+                ], 
                 'modalOverlayBg' => [
                     'type' => 'object',
                     'default' => [
