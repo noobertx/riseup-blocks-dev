@@ -38523,9 +38523,11 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/mosaic-images/mosaic.js");
-/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery-mosaic/jquery.mosaic.min.js */ "./node_modules/jquery-mosaic/jquery.mosaic.min.js");
-/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/mosaic-images/mosaic.js");
+/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery-mosaic/jquery.mosaic.min.js */ "./node_modules/jquery-mosaic/jquery.mosaic.min.js");
+/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38562,6 +38564,7 @@ var _wp$components = wp.components,
     Button = _wp$components.Button,
     RangeControl = _wp$components.RangeControl,
     FormFileUpload = _wp$components.FormFileUpload;
+
 var _wp$element = wp.element,
     Component = _wp$element.Component,
     Fragment = _wp$element.Fragment,
@@ -38686,11 +38689,9 @@ var Edit = /*#__PURE__*/function (_Component) {
           imageItems = _this$props3$attribut.imageItems;
 
       if (imageItems != nextProps.attributes.imageItems) {
-        setTimeout(function () {
-          // if(!jQuery(".wprig-mosaic-gallery").hasClass("jQueryMosaic")){
-          jQuery(".wprig-mosaic-gallery").Mosaic({
-            maxRowHeight: 400
-          }); // }
+        setTimeout(function () {// if(!jQuery(".wprig-mosaic-gallery").hasClass("jQueryMosaic")){
+          // jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
+          // }
         }, 1500); // console.log(imageItems,"calling mosaic")
       }
     }
@@ -38763,7 +38764,6 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderImages(imageItems) {
       if (imageItems.length > 0) {
         return imageItems.map(function (el) {
-          console.log(el);
           return /*#__PURE__*/React.createElement("a", {
             href: el.url
           }, /*#__PURE__*/React.createElement("img", {
@@ -38777,8 +38777,6 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
-
       var _this$props4 = this.props,
           _this$props4$attribut = _this$props4.attributes,
           uniqueId = _this$props4$attribut.uniqueId,
@@ -38814,38 +38812,24 @@ var Edit = /*#__PURE__*/function (_Component) {
             imageItems: value
           });
         }
-      }), /*#__PURE__*/React.createElement(NumberField, {
-        label: __('Max Row Height'),
-        value: maxRowHeight,
+      }), /*#__PURE__*/React.createElement("label", null, "Max Row Height"), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
+        isShiftStepEnabled: false,
         onChange: function onChange(val) {
           return setAttributes({
             maxRowHeight: val
           });
         },
-        unit: ['px', 'em', 'vh'],
-        responsive: true,
-        device: this.state.device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(NumberField, {
-        label: __('Gap'),
-        value: innerGap,
+        shiftStep: 10,
+        value: maxRowHeight
+      }), /*#__PURE__*/React.createElement("label", null, "Gapt"), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
+        isShiftStepEnabled: false,
         onChange: function onChange(val) {
           return setAttributes({
             innerGap: val
           });
         },
-        unit: ['px'],
-        responsive: true,
-        device: this.state.device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
+        shiftStep: 5,
+        value: innerGap
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
@@ -38992,7 +38976,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
           });
         }
-      })) : /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      })) : /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
         maxRowHeight: maxRowHeight,
         innerGap: innerGap,
@@ -39220,14 +39204,16 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         return loadImage(image);
       })).then(function () {
         // $("."+id).find("#gallery").unitegallery()
+        console.log(_this2.props);
+
         _this2.setState({
           doneLoading: true
         });
 
         setTimeout(function () {
           jQuery("#gallery").Mosaic({
-            maxRowHeight: maxRowHeight.md,
-            innerGap: parseInt(innerGap.md),
+            maxRowHeight: maxRowHeight,
+            innerGap: parseInt(innerGap),
             responsiveWidthThreshold: true
           });
         }, 500);
@@ -68245,6 +68231,17 @@ registerPlugin('wprig-global-settings', {
     return /*#__PURE__*/React.createElement(_global_settings__WEBPACK_IMPORTED_MODULE_0__["default"], null);
   }
 });
+
+/***/ }),
+
+/***/ "@wordpress/components":
+/*!*********************************************!*\
+  !*** external {"this":["wp","components"]} ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = this["wp"]["components"]; }());
 
 /***/ }),
 
