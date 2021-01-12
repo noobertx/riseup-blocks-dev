@@ -38526,8 +38526,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/mosaic-images/mosaic.js");
-/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery-mosaic/jquery.mosaic.min.js */ "./node_modules/jquery-mosaic/jquery.mosaic.min.js");
-/* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38592,8 +38590,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
  // import 'jquery-mosaic/jquery.mosaic.min.css';
-
-
+// import 'jquery-mosaic/jquery.mosaic.min.js';
 
 var Edit = /*#__PURE__*/function (_Component) {
   _inherits(Edit, _Component);
@@ -39156,7 +39153,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         //     jQuery("."+the_id).find("#gallery").unitegallery()
         //     console.log("Hello World"+the_id);
         // },5000)
-        this.loadMosaicScript();
+        this.loadMosaicScript(id);
       }
     }
   }, {
@@ -39164,21 +39161,21 @@ var Mosaic = /*#__PURE__*/function (_Component) {
     value: function componentDidUpdate(prevProps, prevState) {
       var _this$props2 = this.props,
           innerGap = _this$props2.innerGap,
+          id = _this$props2.id,
           maxRowHeight = _this$props2.maxRowHeight;
 
       if (prevProps.maxRowHeight != maxRowHeight || prevProps.innerGap != innerGap) {
         console.log("PreProps = ", prevProps, this.props);
-        this.loadMosaicScript();
+        this.loadMosaicScript(id);
       }
     }
   }, {
     key: "loadMosaicScript",
-    value: function loadMosaicScript() {
+    value: function loadMosaicScript(id) {
       var _this2 = this;
 
       var _this$props3 = this.props,
           className = _this$props3.className,
-          id = _this$props3.id,
           images = _this$props3.images,
           maxRowHeight = _this$props3.maxRowHeight,
           innerGap = _this$props3.innerGap;
@@ -39204,18 +39201,18 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         return loadImage(image);
       })).then(function () {
         // $("."+id).find("#gallery").unitegallery()
-        console.log(_this2.props);
-
+        // console.log(this.props)
         _this2.setState({
           doneLoading: true
         });
 
         setTimeout(function () {
-          jQuery("#gallery").Mosaic({
-            maxRowHeight: maxRowHeight,
-            innerGap: parseInt(innerGap),
-            responsiveWidthThreshold: true
-          });
+          // console.log(jQuery("."mosaicx).find("#gallery"));
+          jQuery(".mosaicx").Mosaic(); // jQuery("."+className).find("#gallery").Mosaic({
+          //     maxRowHeight:maxRowHeight,
+          //     innerGap:parseInt(innerGap),
+          //     responsiveWidthThreshold:true
+          // });
         }, 500);
       })["catch"](function (err) {
         return console.log("Failed to load images", err);
@@ -39254,20 +39251,43 @@ var Mosaic = /*#__PURE__*/function (_Component) {
       }
     }
   }, {
-    key: "render",
-    value: function render() {
-      var _this4 = this;
-
+    key: "renderMosaicBlocks",
+    value: function renderMosaicBlocks() {
       var _this$props4 = this.props,
           className = _this$props4.className,
           id = _this$props4.id,
           overlayEffect = _this$props4.overlayEffect,
           enableHoverFx = _this$props4.enableHoverFx,
           maxRowHeight = _this$props4.maxRowHeight,
+          innerGap = _this$props4.innerGap,
           hoverEffect = _this$props4.hoverEffect,
           modalLayout = _this$props4.modalLayout,
           hoverEffectDirection = _this$props4.hoverEffectDirection,
           images = _this$props4.images;
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+        className: "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
+      }, /*#__PURE__*/React.createElement("div", {
+        "class": "mosaicx",
+        "data-max-row-height": maxRowHeight,
+        "data-inner-gap": innerGap
+      }, this.renderCells(images, enableHoverFx))));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props5 = this.props,
+          className = _this$props5.className,
+          id = _this$props5.id,
+          overlayEffect = _this$props5.overlayEffect,
+          enableHoverFx = _this$props5.enableHoverFx,
+          maxRowHeight = _this$props5.maxRowHeight,
+          innerGap = _this$props5.innerGap,
+          hoverEffect = _this$props5.hoverEffect,
+          modalLayout = _this$props5.modalLayout,
+          hoverEffectDirection = _this$props5.hoverEffectDirection,
+          images = _this$props5.images;
       var doneLoading = this.state.doneLoading;
 
       if (!doneLoading) {
@@ -39285,11 +39305,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), /*#__PURE__*/React.createElement("div", {
-        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, /*#__PURE__*/React.createElement("div", {
-        id: "gallery"
-      }, this.renderCells(images, enableHoverFx))));
+      }))), this.renderMosaicBlocks());
     }
   }]);
 

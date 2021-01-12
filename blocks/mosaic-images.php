@@ -17,11 +17,11 @@ function register_block_wprig_mosaic_images(){
                     'default' => []
                 ],               
                 'maxRowHeight' => [
-                    'type' => 'number',
+                    'type' => 'string',
                     'default' => 400
                 ], 
                 'innerGap' => [
-                    'type' => 'number',
+                    'type' => 'string',
                     'default' => 0
                 ], 
                 'modalOverlayBg' => [
