@@ -22390,8 +22390,7 @@ var Edit = /*#__PURE__*/function (_Component) {
     }
   }, {
     key: "openModal",
-    value: function openModal(el) {
-      console.log(el);
+    value: function openModal(el) {// console.log(el);
     }
   }, {
     key: "openOverlay",
@@ -22437,8 +22436,6 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this2 = this;
 
       //<SwiperSlide>Slide 1</SwiperSlide>
-      console.log(imageItems);
-
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
           return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"], null, /*#__PURE__*/React.createElement("img", {
@@ -22456,7 +22453,6 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderImages(imageItems) {
       if (imageItems.length > 0) {
         return imageItems.map(function (el) {
-          console.log(el);
           return /*#__PURE__*/React.createElement("a", {
             href: el.url
           }, /*#__PURE__*/React.createElement("img", {
@@ -22673,7 +22669,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      })), console.log(imageItems), /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["Swiper"], {
+      })), /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         breakpoints: {
@@ -22964,9 +22960,7 @@ var Edit = /*#__PURE__*/function (_Component) {
     }
   }, {
     key: "openModal",
-    value: function openModal(el) {
-      console.log(el);
-    }
+    value: function openModal(el) {}
   }, {
     key: "openOverlay",
     value: function openOverlay() {
@@ -23010,8 +23004,6 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderCells(imageItems, enableHoverFx) {
       var _this2 = this;
 
-      console.log(imageItems);
-
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
           return /*#__PURE__*/React.createElement("div", {
@@ -23042,7 +23034,6 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderImages(imageItems) {
       if (imageItems.length > 0) {
         return imageItems.map(function (el) {
-          console.log(el);
           return /*#__PURE__*/React.createElement("a", {
             href: el.url
           }, /*#__PURE__*/React.createElement("img", {
@@ -24002,7 +23993,6 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
           className = _this$props.className,
           id = _this$props.id,
           images = _this$props.images;
-      console.log(id);
       var the_id = id;
 
       if (jQuery("." + id).find("#gallery")) {
@@ -24031,8 +24021,6 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
           return loadImage(image);
         })).then(function () {
           // $("."+id).find("#gallery").unitegallery()
-          console.log("All Images are loaded");
-
           _this2.setState({
             doneLoading: true
           });
@@ -24051,8 +24039,6 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
     key: "renderCells",
     value: function renderCells(imageItems, enableHoverFx) {
       var _this3 = this;
-
-      console.log(imageItems);
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -24395,6 +24381,7 @@ var ModalFrame = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this$props = this.props,
           overlayClassName = _this$props.overlayClassName,
+          modalLayout = _this$props.modalLayout,
           contentLabel = _this$props.contentLabel,
           _this$props$aria = _this$props.aria,
           describedby = _this$props$aria.describedby,
@@ -24403,9 +24390,6 @@ var ModalFrame = /*#__PURE__*/function (_Component) {
           className = _this$props.className,
           role = _this$props.role,
           style = _this$props.style;
-      {
-        console.log(wprig_admin);
-      }
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()('components-modal__frame', className),
         style: style,
@@ -24938,9 +24922,7 @@ var Edit = /*#__PURE__*/function (_Component) {
     }
   }, {
     key: "openModal",
-    value: function openModal(el) {
-      console.log(el);
-    }
+    value: function openModal(el) {}
   }, {
     key: "openOverlay",
     value: function openOverlay() {
@@ -24983,8 +24965,6 @@ var Edit = /*#__PURE__*/function (_Component) {
     key: "renderCells",
     value: function renderCells(imageItems) {
       var _this2 = this;
-
-      console.log(imageItems);
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -25565,7 +25545,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
   _createClass(Mosaic, [{
     key: "renderClick",
     value: function renderClick(el) {
-      console.log(el);
       this.setState({
         openModal: true,
         imageUrl: el.url
@@ -25609,7 +25588,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           id = _this$props.id,
           images = _this$props.images,
           maxRowHeight = _this$props.maxRowHeight;
-      console.log(id);
       var the_id = id;
 
       if (jQuery("." + id).find("#gallery")) {
@@ -25629,7 +25607,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           maxRowHeight = _this$props2.maxRowHeight;
 
       if (prevProps.maxRowHeight != maxRowHeight || prevProps.innerGap != innerGap) {
-        console.log("PreProps = ", prevProps, this.props);
         this.loadMosaicScript(id);
       }
     }
@@ -25686,8 +25663,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
     key: "renderCells",
     value: function renderCells(imageItems, enableHoverFx, overlayParams) {
       var _this3 = this;
-
-      console.log(overlayParams);
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
