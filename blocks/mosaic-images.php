@@ -60,6 +60,192 @@ function register_block_wprig_mosaic_images(){
                     'type'=> 'string',
                     'default'=> 'overlay-layout-2'
                 ],
+                'viewIconName' => [
+                    'type'=> 'string',
+                    'default'=> ''
+                ],
+                'viewIconSize' => [
+                    'type'=> 'object',
+                    'default'=> [],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view .wprig-btn-icon {font-size: {{viewIconSize}}}'
+                        ]
+                    ]
+                ],
+                'viewFillType' => [
+                    'type'=> 'string',
+                    'default'=> 'fill'
+                ],
+                'viewButtonColor' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'condition' => [
+                                [
+                                    'key' => 'viewFillType',
+                                    'relation' => '==',
+                                    'value' => "fill",
+                                ]
+                            ],
+                            'selector' => '{{WPRIG}} .view{ color:{{viewButtonColor}}; }' 
+                        ]
+                    ]
+                ],
+                'viewButtonColor2' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'condition' => [
+                                [
+                                    'key' => 'viewFillType',
+                                    'relation' => '!=',
+                                    'value' => "fill",
+                                ]
+                            ],
+                            'selector' => '{{WPRIG}} .view{ color:{{viewButtonColor2}}; }' 
+                        ]
+                    ]
+                ],
+                'viewButtonHoverColor' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'condition' => [
+                                [
+                                    'key' => 'viewFillType',
+                                    'relation' => '==',
+                                    'value' => "fill",
+                                ]
+                            ],
+                            'selector' => '{{WPRIG}} .view:hover{ color:{{viewButtonHoverColor}}; }' 
+                        ]
+                    ]
+                ],
+                'viewButtonHoverColor2' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'condition' => [
+                                [
+                                    'key' => 'viewFillType',
+                                    'relation' => '!=',
+                                    'value' => "fill",
+                                ]
+                            ],
+                            'selector' => '{{WPRIG}} .view:hover{ color:{{viewButtonHoverColor2}}; }' 
+                        ]
+                    ]
+                ],
+                'viewButtonBgColor' => [
+                    'type' => 'object',
+                    'default' => [
+                        'type' => 'color',
+                        'openColor' => 1,
+                        'color' => '#333',
+                        'gradient' => [
+                            'color1'=> 'var(--wprig-color-2)',
+                            'color2'=> 'var(--wprig-color-1)',
+                            'direction'=> 0,
+                            'start'=> 0,
+                            'stop'=> 100,
+                            'type'=> 'linear'
+                        ]
+                    ],
+                    'style' => [
+                        [
+                            'condition' => [
+                                [
+                                    'key' => 'viewFillType',
+                                    'relation' => '==',
+                                    'value' => "fill",
+                                ]
+                            ],
+                            'selector' => '{{WPRIG}} .view' 
+                        ]
+                    ]
+                ],
+                'viewButtonBgColorHover' => [
+                    'type' => 'object',
+                    'default' => [
+                        'type' => 'color',
+                        'openColor' => 1,
+                        'color' => '#333',
+                        'gradient' => [
+                            'color1'=> '#16d03e',
+                            'color2'=> '#1f91f3',
+                            'direction'=> 0,
+                            'start'=> 0,
+                            'stop'=> 100,
+                            'type'=> 'linear'
+                        ]
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => '{{WPRIG}} .view:hover' 
+                        ]
+                    ]
+                ],
+                'viewButtonBorder' => [
+                    'type' => 'object',
+                    'default' => [
+                        'openBorder' => 1,
+                        'widthType' => 'global',
+                        'global' => ['md' => '1' ],
+                        'type' => 'solid',
+                        'color' => 'var(--wprig-color-1)' 
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => '{{WPRIG}} .view' 
+                        ]
+                    ]
+                ],
+                'viewButtonBorderHoverColor' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view:hover{border-color: {{viewButtonBorderHoverColor}};}' 
+                        ]
+                    ]
+                ],
+                'viewButtonBorderRadius' => [
+                    'type' => 'object',
+                    'default' => [
+                        'openBorderRadius'=> 1,
+                        'radiusType'=> 'global',
+                        'global'=> [ 'md'=> 4 ],
+                        'unit'=> 'px',
+                    ],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view' 
+                        ]
+                    ]
+                ],
+                'viewButtonShadow' => [
+                    'type' => 'object',
+                    'default' => [],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view' 
+                        ]
+                    ]
+                ],
+                'viewButtonShadowHover' => [
+                    'type' => 'object',
+                    'default' => [],
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view:hover' 
+                        ]
+                    ]
+                ],
                 'modalOverlayBg' => [
                     'type' => 'object',
                     'default' => [
