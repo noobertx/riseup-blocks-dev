@@ -6736,7 +6736,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        height: 100%; }\n\n.jQueryMosaic {\n  width: 100%;\n  float: left;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.jQueryMosaic > a, .jQueryMosaic > div, .jQueryMosaic > img {\n  float: left; }\n\n.jQueryMosaic > .item {\n  position: relative; }\n\n.jQueryMosaic > .item.withImage {\n  background-size: cover; }\n\n.jQueryMosaic > .item > .overlay {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  transition: opacity .2s ease-in-out;\n  -moz-transition: opacity .2s ease-in-out;\n  -webkit-transition: opacity .2s ease-in-out; }\n\n.jQueryMosaic > .item:hover > .overlay {\n  opacity: 1; }\n\n.jQueryMosaic > .item > .overlay > .texts {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 15pt;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff; }\n\n.jQueryMosaic > .item > .overlay > .texts h1, .jQueryMosaic > .item > .overlay > .texts h2 {\n  margin: 0;\n  line-height: 1.3em; }\n\n.jQueryMosaic > .item > .overlay > .texts h1 {\n  font-size: 17pt; }\n\n.jQueryMosaic > .item > .overlay > .texts h2 {\n  font-size: 13pt; }\n", ""]);
+exports.push([module.i, ".wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        width: 100%;\n        height: 100%; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-1 {\n          justify-content: center;\n          align-items: center; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-2 {\n          justify-content: left;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-3 {\n          justify-content: flex-end;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-4 {\n          justify-content: left;\n          align-items: flex-end; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-5 {\n          justify-content: flex-end;\n          align-items: flex-end; }\n\n.jQueryMosaic {\n  width: 100%;\n  float: left;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.jQueryMosaic > a, .jQueryMosaic > div, .jQueryMosaic > img {\n  float: left; }\n\n.jQueryMosaic > .item {\n  position: relative; }\n\n.jQueryMosaic > .item.withImage {\n  background-size: cover; }\n\n.jQueryMosaic > .item > .overlay {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  transition: opacity .2s ease-in-out;\n  -moz-transition: opacity .2s ease-in-out;\n  -webkit-transition: opacity .2s ease-in-out; }\n\n.jQueryMosaic > .item:hover > .overlay {\n  opacity: 1; }\n\n.jQueryMosaic > .item > .overlay > .texts {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 15pt;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff; }\n\n.jQueryMosaic > .item > .overlay > .texts h1, .jQueryMosaic > .item > .overlay > .texts h2 {\n  margin: 0;\n  line-height: 1.3em; }\n\n.jQueryMosaic > .item > .overlay > .texts h1 {\n  font-size: 17pt; }\n\n.jQueryMosaic > .item > .overlay > .texts h2 {\n  font-size: 13pt; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -38576,6 +38576,7 @@ var _wp$blockEditor = wp.blockEditor,
 var _wp$wprigComponents = wp.wprigComponents,
     TestField = _wp$wprigComponents.TestField,
     Background = _wp$wprigComponents.Background,
+    IconList = _wp$wprigComponents.IconList,
     NumberField = _wp$wprigComponents.NumberField,
     Range = _wp$wprigComponents.Range,
     _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
@@ -38783,11 +38784,31 @@ var Edit = /*#__PURE__*/function (_Component) {
           imageItems = _this$props4$attribut.imageItems,
           modalOverlayBg = _this$props4$attribut.modalOverlayBg,
           modalLayout = _this$props4$attribut.modalLayout,
+          overlayLayout = _this$props4$attribut.overlayLayout,
           overlayEffect = _this$props4$attribut.overlayEffect,
           enableHoverFx = _this$props4$attribut.enableHoverFx,
           hoverEffect = _this$props4$attribut.hoverEffect,
           hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          viewButtonType = _this$props4$attribut.viewButtonType,
+          viewButtonLabel = _this$props4$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props4$attribut.viewButtonIcon,
+          enableLinkButton = _this$props4$attribut.enableLinkButton,
+          linkButtonType = _this$props4$attribut.linkButtonType,
+          linkButtonLabel = _this$props4$attribut.linkButtonLabel,
+          linkButtonIcon = _this$props4$attribut.linkButtonIcon,
           setAttributes = _this$props4.setAttributes;
+      var overlayParams = {
+        enableViewButton: enableViewButton,
+        viewButtonType: viewButtonType,
+        viewButtonLabel: viewButtonLabel,
+        viewButtonIcon: viewButtonIcon,
+        enableLinkButton: enableLinkButton,
+        linkButtonType: linkButtonType,
+        linkButtonLabel: linkButtonLabel,
+        linkButtonIcon: linkButtonIcon,
+        overlayLayout: overlayLayout
+      };
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
@@ -38921,7 +38942,31 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
-      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
@@ -38981,6 +39026,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         enableHoverFx: enableHoverFx,
         hoverEffect: hoverEffect,
         modalLayout: modalLayout,
+        overlayParams: overlayParams,
         hoverEffectDirection: hoverEffectDirection,
         id: "wprig-block-".concat(uniqueId),
         images: imageItems
@@ -39046,6 +39092,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
 /* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery-mosaic/jquery.mosaic.min.js */ "./node_modules/jquery-mosaic/jquery.mosaic.min.js");
 /* harmony import */ var jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery_mosaic_jquery_mosaic_min_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -39072,6 +39119,7 @@ var _wp$element = wp.element,
     Component = _wp$element.Component,
     Fragment = _wp$element.Fragment,
     createRef = _wp$element.createRef;
+
 
 
 
@@ -39220,10 +39268,10 @@ var Mosaic = /*#__PURE__*/function (_Component) {
     }
   }, {
     key: "renderCells",
-    value: function renderCells(imageItems, enableHoverFx) {
+    value: function renderCells(imageItems, enableHoverFx, overlayParams) {
       var _this3 = this;
 
-      console.log(imageItems);
+      console.log(overlayParams);
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -39232,15 +39280,15 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
           }, /*#__PURE__*/React.createElement("div", {
-            className: "overlay-content"
-          }, /*#__PURE__*/React.createElement("button", {
+            className: "overlay-content ".concat(overlayParams.overlayLayout)
+          }, overlayParams.enableViewButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             onClick: function onClick() {
               _this3.renderClick(el);
             }
-          }, "View"), /*#__PURE__*/React.createElement("button", {
+          }, overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
             type: "button"
-          }, "Link"))), /*#__PURE__*/React.createElement("img", {
+          }, overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -39263,6 +39311,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           hoverEffect = _this$props4.hoverEffect,
           modalLayout = _this$props4.modalLayout,
           hoverEffectDirection = _this$props4.hoverEffectDirection,
+          overlayParams = _this$props4.overlayParams,
           images = _this$props4.images;
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         className: "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
@@ -39270,7 +39319,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         "class": "mosaicx",
         "data-max-row-height": maxRowHeight,
         "data-inner-gap": innerGap
-      }, this.renderCells(images, enableHoverFx))));
+      }, this.renderCells(images, enableHoverFx, overlayParams))));
     }
   }, {
     key: "render",

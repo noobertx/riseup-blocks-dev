@@ -23,7 +23,43 @@ function register_block_wprig_mosaic_images(){
                 'innerGap' => [
                     'type' => 'string',
                     'default' => 0
+                ],
+                'enableViewButton' => [
+                    'type' => 'boolean',
+                    'default' => true
                 ], 
+                'viewButtonType' => [
+                    'type' => 'string',
+                    'default' => "text"
+                ], 
+                'viewButtonLabel' => [
+                    'type' => 'string',
+                    'default' => "View Item"
+                ], 
+                'viewButtonIcon' => [
+                    'type' => 'string',
+                    'default' => ""
+                ], 
+                'enableLinkButton' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ], 
+                'linkButtonType' => [
+                    'type' => 'string',
+                    'default' => "text"
+                ], 
+                'linkButtonLabel' => [
+                    'type' => 'string',
+                    'default' => "Links"
+                ], 
+                'linkButtonIcon' => [
+                    'type' => 'string',
+                    'default' => ""
+                ], 
+                'overlayLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'overlay-layout-2'
+                ],
                 'modalOverlayBg' => [
                     'type' => 'object',
                     'default' => [
