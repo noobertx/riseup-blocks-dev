@@ -97,7 +97,6 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         e.preventDefault();
         var $el = $(this);
 
-        console.log($el);
         var $gallery = $el.closest(".wprig-mosaic-gallery");
         var galleryData =  $gallery.data();
         var path = $(this).closest(".cells").find(".wprig-gallery-item").attr("href");

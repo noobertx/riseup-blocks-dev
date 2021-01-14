@@ -6556,7 +6556,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        width: 100%;\n        height: 100%; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-1 {\n          justify-content: center;\n          align-items: center; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-2 {\n          justify-content: left;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-3 {\n          justify-content: flex-end;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-4 {\n          justify-content: left;\n          align-items: flex-end; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-5 {\n          justify-content: flex-end;\n          align-items: flex-end; }\n        .wprig-grids-editor .cells .overlay .overlay-content button {\n          display: flex;\n          flex-direction: column;\n          align-items: center; }\n\n.jQueryMosaic {\n  width: 100%;\n  float: left;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.jQueryMosaic > a, .jQueryMosaic > div, .jQueryMosaic > img {\n  float: left; }\n\n.jQueryMosaic > .item {\n  position: relative; }\n\n.jQueryMosaic > .item.withImage {\n  background-size: cover; }\n\n.jQueryMosaic > .item > .overlay {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  transition: opacity .2s ease-in-out;\n  -moz-transition: opacity .2s ease-in-out;\n  -webkit-transition: opacity .2s ease-in-out; }\n\n.jQueryMosaic > .item:hover > .overlay {\n  opacity: 1; }\n\n.jQueryMosaic > .item > .overlay > .texts {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 15pt;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff; }\n\n.jQueryMosaic > .item > .overlay > .texts h1, .jQueryMosaic > .item > .overlay > .texts h2 {\n  margin: 0;\n  line-height: 1.3em; }\n\n.jQueryMosaic > .item > .overlay > .texts h1 {\n  font-size: 17pt; }\n\n.jQueryMosaic > .item > .overlay > .texts h2 {\n  font-size: 13pt; }\n", ""]);
+exports.push([module.i, ".wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        width: 100%;\n        height: 100%; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-1 {\n          justify-content: center;\n          align-items: center; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-2 {\n          justify-content: left;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-3 {\n          justify-content: flex-end;\n          align-items: flex-start; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-4 {\n          justify-content: left;\n          align-items: flex-end; }\n        .wprig-grids-editor .cells .overlay .overlay-content.overlay-layout-5 {\n          justify-content: flex-end;\n          align-items: flex-end; }\n        .wprig-grids-editor .cells .overlay .overlay-content button {\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          padding: 5px 10px; }\n\n.jQueryMosaic {\n  width: 100%;\n  float: left;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.jQueryMosaic > a, .jQueryMosaic > div, .jQueryMosaic > img {\n  float: left; }\n\n.jQueryMosaic > .item {\n  position: relative; }\n\n.jQueryMosaic > .item.withImage {\n  background-size: cover; }\n\n.jQueryMosaic > .item > .overlay {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  transition: opacity .2s ease-in-out;\n  -moz-transition: opacity .2s ease-in-out;\n  -webkit-transition: opacity .2s ease-in-out; }\n\n.jQueryMosaic > .item:hover > .overlay {\n  opacity: 1; }\n\n.jQueryMosaic > .item > .overlay > .texts {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 15pt;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff; }\n\n.jQueryMosaic > .item > .overlay > .texts h1, .jQueryMosaic > .item > .overlay > .texts h2 {\n  margin: 0;\n  line-height: 1.3em; }\n\n.jQueryMosaic > .item > .overlay > .texts h1 {\n  font-size: 17pt; }\n\n.jQueryMosaic > .item > .overlay > .texts h2 {\n  font-size: 13pt; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -24804,6 +24804,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     IconList = _wp$wprigComponents.IconList,
     Select = _wp$wprigComponents.Select,
     NumberField = _wp$wprigComponents.NumberField,
+    Toggle = _wp$wprigComponents.Toggle,
     Range = _wp$wprigComponents.Range,
     _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
     globalCustomAttributes = _wp$wprigComponents$g.globalCustomAttributes,
@@ -25015,6 +25016,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           hoverEffect = _this$props4$attribut.hoverEffect,
           hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
           enableViewButton = _this$props4$attribut.enableViewButton,
+          viewIconName = _this$props4$attribut.viewIconName,
+          viewIconSize = _this$props4$attribut.viewIconSize,
           viewButtonType = _this$props4$attribut.viewButtonType,
           viewButtonLabel = _this$props4$attribut.viewButtonLabel,
           viewButtonIcon = _this$props4$attribut.viewButtonIcon,
@@ -25031,11 +25034,23 @@ var Edit = /*#__PURE__*/function (_Component) {
           viewButtonShadow = _this$props4$attribut.viewButtonShadow,
           viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
           enableLinkButton = _this$props4$attribut.enableLinkButton,
+          linkIconName = _this$props4$attribut.linkIconName,
+          linkIconSize = _this$props4$attribut.linkIconSize,
           linkButtonType = _this$props4$attribut.linkButtonType,
           linkButtonLabel = _this$props4$attribut.linkButtonLabel,
           linkButtonIcon = _this$props4$attribut.linkButtonIcon,
-          viewIconName = _this$props4$attribut.viewIconName,
-          viewIconSize = _this$props4$attribut.viewIconSize,
+          linkFillType = _this$props4$attribut.linkFillType,
+          linkButtonColor = _this$props4$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props4$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props4$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props4$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props4$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props4$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props4$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props4$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props4$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props4$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
           setAttributes = _this$props4.setAttributes;
       var overlayParams = {
         enableViewButton: enableViewButton,
@@ -25047,6 +25062,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         linkButtonType: linkButtonType,
         linkButtonLabel: linkButtonLabel,
         linkButtonIcon: linkButtonIcon,
+        linkIconName: linkIconName,
         overlayLayout: overlayLayout
       };
       var _this$state = this.state,
@@ -25185,7 +25201,15 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
         title: __('Hover Overlay Content')
-      }, /*#__PURE__*/React.createElement(TextControl, {
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: "Enable View Button",
+        value: enableViewButton,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableViewButton: value
+          });
+        }
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
         label: "View Button Text",
         value: viewButtonLabel,
         onChange: function onChange(value) {
@@ -25194,7 +25218,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), /*#__PURE__*/React.createElement(IconList, {
-        label: __('Icon'),
+        label: __('View Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
           return _this3.props.setAttributes({
@@ -25202,7 +25226,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: __('Size'),
+        label: __('View Icon Size'),
         value: viewIconSize,
         onChange: function onChange(value) {
           return setAttributes({
@@ -25219,7 +25243,49 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
+      }))), /*#__PURE__*/React.createElement(Toggle, {
+        label: "Enable Link Button",
+        value: enableLinkButton,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableLinkButton: value
+          });
+        }
+      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "Link Button Text",
+        value: linkButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(IconList, {
+        label: __('Link Icon'),
+        value: linkIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            linkIconName: value
+          });
+        }
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Link Icon Size'),
+        value: linkIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Hover Overlay Content Design'),
         initialOpen: false
       }, /*#__PURE__*/React.createElement(Styles, {
@@ -25326,6 +25392,122 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Styles, {
+        value: linkFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonColor: value
+          }) : setAttributes({
+            linkButtonColor2: value
+          });
+        }
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: linkButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: linkButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            linkButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: linkButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonHoverColor: value
+          }) : setAttributes({
+            linkButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: linkButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: linkButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: linkButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: linkButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderRadius: value
           });
         },
         min: 0,
@@ -25678,12 +25860,14 @@ var Mosaic = /*#__PURE__*/function (_Component) {
             onClick: function onClick() {
               _this3.renderClick(el);
             }
-          }, /*#__PURE__*/React.createElement("i", {
+          }, /*#__PURE__*/React.createElement("span", {
             className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
           }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "link"
-          }, overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
+          }, /*#__PURE__*/React.createElement("span", {
+            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+          }), overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
