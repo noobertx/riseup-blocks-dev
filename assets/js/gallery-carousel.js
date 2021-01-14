@@ -121,8 +121,8 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
 
     setTimeout(function(){
 
-        jQuery(".wprig-mosaic-gallery").Mosaic({maxRowHeight:400});
-        $('.wprig-masonry-gallery').wookmark();
+        jQuery(".wprig-mosaic-gallery").Mosaic();
+        // $('.wprig-masonry-gallery').wookmark();
         
     },500)
 

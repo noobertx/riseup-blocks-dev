@@ -404,18 +404,42 @@ function render_block_wprig_mosaic_images($att){
     $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
 
+
+    $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
+    $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
+    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
+    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
+    $maxRowHeight 		        = isset($att['maxRowHeight']) ? $att['maxRowHeight'] : "";
+    $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
+
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
     );
     
     $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-    $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery \"  data-modal='".json_encode($modalSettings)."'>";
+
+
+    
+    $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery \" 
+    data-max-row-height= '".$maxRowHeight."' data-inner-gap='".$innerGap ."'
+     data-modal='".json_encode($modalSettings)."'>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
             $html[] = "<div class='cells'>";
-            $html[] = "<div class='overlay'></div>";
+            $html[] = "<div class='overlay'>";
+
+            $html[] = "<div class='overlay-content ".$overlayLayout."'>";
+                if($enableViewButton){
+                    $html[] = "<button type='button' class='view'>";
+                    $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
+                    $html[] = $viewButtonLabel;
+                    $html[] = "</button>";                                      
+                }
+            $html[] = "</div>";
+            $html[] = "</div>";
+
             $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
             $html[] = "<img src='".$image['url']."'/>";
             $html[] = "</a>";
@@ -443,7 +467,7 @@ function wprig_image_mosaic_assets($hook){
         
         if ( in_array( 'wprig/mosaic-images', $available_blocks ) ) {
             // wp_enqueue_style( 'jquery-mo', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
-            wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic-elements.js', array( 'jquery' ), microtime() );
+            wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
         }
     }
 }
