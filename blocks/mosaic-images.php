@@ -602,6 +602,10 @@ function render_block_wprig_mosaic_images($att){
     $maxRowHeight 		        = isset($att['maxRowHeight']) ? $att['maxRowHeight'] : "";
     $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
 
+    $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
+    $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
+    $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
+
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
@@ -625,6 +629,13 @@ function render_block_wprig_mosaic_images($att){
                     $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
                     $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
                     $html[] = $viewButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+
+                if($enableLinkButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$linkIconName."'></i>";
+                    $html[] = $linkButtonLabel;
                     $html[] = "</a>";                                      
                 }
             $html[] = "</div>";

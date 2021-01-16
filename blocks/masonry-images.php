@@ -175,6 +175,13 @@ function render_block_wprig_masonry_images($att){
     $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
 
+    $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
+    $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
+    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : '';
+    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : '';
+
+
+
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
@@ -187,7 +194,9 @@ function render_block_wprig_masonry_images($att){
     if(count($imageItems)){
         foreach( $imageItems as $image){
             $html[] = "<div class='cells mosaic-item'>";
-            $html[] = "<div class='overlay'></div>";
+            $html[] = "<div class='overlay'>"; 
+            
+            $html[] = "</div>";
             $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
             $html[] = "<img src='".$image['url']."'/>";
             $html[] = "</a>";

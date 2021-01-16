@@ -1,5 +1,19 @@
 (function($){
-    $(".wprig-gallery").slick()
+    if($(".wprig-gallery").length){
+        $(".wprig-gallery").slick()
+    }
+
+    setTimeout(function(){
+
+        console.log("Running mosaic")
+
+        jQuery(".wprig-mosaic-gallery").Mosaic();
+        // $('.wprig-masonry-gallery').wookmark();
+        
+    },500)
+   
+
+
     console.log("This script")
     $(".wprig-gallery").on("click","a.slick-slide",function(e){        
         e.preventDefault();
@@ -119,13 +133,7 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
             $(".wprig-dynamic-modal").addClass("open")
         },400)
     })
-
-    setTimeout(function(){
-
-        jQuery(".wprig-mosaic-gallery").Mosaic();
-        // $('.wprig-masonry-gallery').wookmark();
-        
-    },500)
+ 
 
     $(document).ready(function() {
         // var grid = document.querySelector('.wprig-masonry-gallery');
@@ -137,6 +145,8 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         // });
 
         // console.log(msnry)
+
+       
 
         $(".wprig-masonry-gallery").imagesLoaded(function() {
             $(".wprig-masonry-gallery").masonry({
