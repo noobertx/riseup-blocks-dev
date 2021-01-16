@@ -25870,7 +25870,9 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "link"
-          }, overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+          }), overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
