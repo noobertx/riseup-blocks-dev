@@ -25075,18 +25075,40 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
-      }, /*#__PURE__*/React.createElement(TestField, {
-        label: __('Upload Images'),
+      }, /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
         multiple: true,
-        type: ['image'],
-        value: imageItems,
-        panel: true,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageItems: value
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
           });
         }
-      }), /*#__PURE__*/React.createElement("label", null, "Max Row Height"), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
+      }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", null, "Max Row Height")), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
         isShiftStepEnabled: false,
         onChange: function onChange(val) {
           return setAttributes({
@@ -25569,38 +25591,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }), /*#__PURE__*/React.createElement(MediaUpload, {
-        value: imageItems.map(function (img) {
-          return img.id;
-        }),
-        allowedTypes: ["image"],
-        multiple: true,
-        gallery: true,
-        render: function render(_ref) {
-          var open = _ref.open;
-          return /*#__PURE__*/React.createElement(IconButton, {
-            onClick: open,
-            label: __("Edit selection")
-          });
-        },
-        onSelect: function onSelect(newImages) {
-          var newImgs = newImages.map(function (img) {
-            return captionArray.find(function (c) {
-              return c.id === img.id;
-            }) ? captionArray.find(function (c) {
-              return c.id === img.id;
-            }) : {
-              text: img.caption,
-              url: img.url,
-              thumbnail: img.thumbnail,
-              id: img.id
-            };
-          });
-          setAttributes({
-            imageItems: newImgs // descriptions: newCaptionArray,
-
-          });
-        }
       })) : /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
         maxRowHeight: maxRowHeight,
