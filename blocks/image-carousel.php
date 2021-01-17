@@ -61,6 +61,20 @@ function register_block_wprig_image_carousel(){
                         ]
                     ]
                 ],
+
+                'cellHeight' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md'=> 150,
+                        'unit'=> 'px'
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => '{{WPRIG}} .cells{ max-height: {{cellHeight}}; }' 
+                        ]
+                    ]
+                ],
+
                 'modalOverlayBg' => [
                     'type' => 'object',
                     'default' => [

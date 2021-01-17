@@ -22243,11 +22243,13 @@ wp.data.subscribe(function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22283,6 +22285,7 @@ var _wp$components = wp.components,
     Button = _wp$components.Button,
     RangeControl = _wp$components.RangeControl,
     FormFileUpload = _wp$components.FormFileUpload;
+
 var _wp$element = wp.element,
     Component = _wp$element.Component,
     Fragment = _wp$element.Fragment,
@@ -22474,7 +22477,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_2__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
             "class": "cells"
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
@@ -22571,6 +22574,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
           linkIconName = _this$props4$attribut.linkIconName,
           linkIconSize = _this$props4$attribut.linkIconSize,
+          cellHeight = _this$props4$attribut.cellHeight,
           setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -22668,6 +22672,15 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
+      }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", null, "Max Row Height")), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
+        isShiftStepEnabled: false,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cellHeight: val
+          });
+        },
+        shiftStep: 10,
+        value: cellHeight
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
@@ -22801,11 +22814,11 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
       }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
@@ -22959,11 +22972,11 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
       }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
@@ -23090,7 +23103,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
         title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(uniqueId),
@@ -23121,7 +23134,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_2__["Swiper"], {
+      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         breakpoints: {

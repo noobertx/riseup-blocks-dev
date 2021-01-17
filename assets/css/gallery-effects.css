@@ -173,6 +173,11 @@
     transform:scale(1)
 }
 
+.wprig-gallery.slider .cells{
+    max-height: 140px;
+    margin: 10px;
+}
+
 .wprig-gallery.slider img{
     width: 100%;
 }
@@ -182,3 +187,4 @@
     width:100%;
     max-width:86%!important;
 }
+
