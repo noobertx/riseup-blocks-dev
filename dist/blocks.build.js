@@ -22527,6 +22527,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableLinkButton = _this$props4$attribut.enableLinkButton,
           overlayLayout = _this$props4$attribut.overlayLayout,
           enableHoverFx = _this$props4$attribut.enableHoverFx,
+          modalLayout = _this$props4$attribut.modalLayout,
           setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -22572,15 +22573,22 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Number of Columns'),
-        value: columns || '',
+        label: __('Items'),
+        value: carouselItems,
         onChange: function onChange(val) {
           return setAttributes({
-            columns: val
+            carouselItems: val
           });
         },
         min: 1,
-        max: 10
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
       }), /*#__PURE__*/React.createElement(Range, {
         label: __('Row Gap'),
         min: 0,
@@ -22620,24 +22628,7 @@ var Edit = /*#__PURE__*/function (_Component) {
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
-      }, /*#__PURE__*/React.createElement(Range, {
-        label: __('Items'),
-        value: carouselItems,
-        onChange: function onChange(val) {
-          return setAttributes({
-            carouselItems: val
-          });
-        },
-        min: 1,
-        max: 15,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(SelectControl, {
+      }, /*#__PURE__*/React.createElement(SelectControl, {
         label: __('Effect'),
         value: overlayEffect,
         options: [{
@@ -22757,15 +22748,17 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        title: "This is my modal",
-        className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
-        overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(uniqueId),
         onRequestClose: function onRequestClose() {
           _this3.closeOverlay();
         }
-      }, /*#__PURE__*/React.createElement("img", {
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      })), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', "  ")
       }, imageItems.length == 0 ? /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
