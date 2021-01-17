@@ -22244,9 +22244,10 @@ wp.data.subscribe(function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22293,6 +22294,15 @@ var _wp$blockEditor = wp.blockEditor,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    Tab = _wp$wprigComponents.Tab,
+    Tabs = _wp$wprigComponents.Tabs,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    IconList = _wp$wprigComponents.IconList,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
     TestField = _wp$wprigComponents.TestField,
     Background = _wp$wprigComponents.Background,
     Range = _wp$wprigComponents.Range,
@@ -22308,6 +22318,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
+
 
 
 
@@ -22463,7 +22474,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_2__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
             "class": "cells"
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
@@ -22525,11 +22536,28 @@ var Edit = /*#__PURE__*/function (_Component) {
           carouselItems = _this$props4$attribut.carouselItems,
           hoverEffect = _this$props4$attribut.hoverEffect,
           hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
-          enableViewButton = _this$props4$attribut.enableViewButton,
           enableLinkButton = _this$props4$attribut.enableLinkButton,
           overlayLayout = _this$props4$attribut.overlayLayout,
           enableHoverFx = _this$props4$attribut.enableHoverFx,
           modalLayout = _this$props4$attribut.modalLayout,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          viewButtonType = _this$props4$attribut.viewButtonType,
+          viewButtonLabel = _this$props4$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props4$attribut.viewButtonIcon,
+          viewFillType = _this$props4$attribut.viewFillType,
+          viewButtonColor = _this$props4$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props4$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props4$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props4$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props4$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props4$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props4$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props4$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props4$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props4$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
+          viewIconName = _this$props4$attribut.viewIconName,
+          viewIconSize = _this$props4$attribut.viewIconSize,
           setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -22717,7 +22745,157 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableViewButton: val
           });
         }
-      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null), /*#__PURE__*/React.createElement(Toggle, {
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "View Button Text",
+        value: viewButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(IconList, {
+        label: __('Icon'),
+        value: viewIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            viewIconName: value
+          });
+        }
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Size'),
+        value: viewIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Styles, {
+        value: viewFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonColor: value
+          }) : setAttributes({
+            viewButtonColor2: value
+          });
+        }
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: viewButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: viewButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            viewButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: viewButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonHoverColor: value
+          }) : setAttributes({
+            viewButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: viewButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: viewButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: viewButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: viewButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable Link'),
         value: enableLinkButton,
         onChange: function onChange(val) {
@@ -22780,7 +22958,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["Swiper"], {
+      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_2__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         breakpoints: {
