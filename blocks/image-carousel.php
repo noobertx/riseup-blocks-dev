@@ -153,11 +153,51 @@ function register_block_wprig_image_carousel(){
                         ]
                     ]
                 ],
+                'enableViewButton' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ],                 
+                'viewIconName' => [
+                    'type'=> 'string',
+                    'default'=> ''
+                ],
+                'viewButtonLabel' => [
+                    'type' => 'string',
+                    'default' => "View Item"
+                ], 
+                'enableLinkButton' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ], 
+                'linkIconName' => [
+                    'type'=> 'string',
+                    'default'=> ''
+                ],
+                'linkButtonLabel' => [
+                    'type' => 'string',
+                    'default' => "Links"
+                ], 
+                'enableHoverFx' =>[
+                    'type' => 'boolean',
+					'default' => true,
+                ],
+                'overlayLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'overlay-layout-2'
+                ],
+
                 'overlayEffect' => [
                     'type'=>'string',
                     'default'=>'let-me-in'
                 ],
-                
+                'hoverEffect' => [
+                    'type'=> 'string',
+                    'default'=> 'wprig-box-effect-1'
+                ],
+                'hoverEffectDirection' => [
+                    'type' => 'string',  
+                    'default' => 'left-to-right'
+                ],                
                 'interaction' => array(
 					'type' => 'object',
 					'default' => (object) array(),

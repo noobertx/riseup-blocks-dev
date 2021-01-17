@@ -22288,15 +22288,21 @@ var _wp$element = wp.element,
     createRef = _wp$element.createRef;
 var _wp$blockEditor = wp.blockEditor,
     InspectorControls = _wp$blockEditor.InspectorControls,
+    MediaUpload = _wp$blockEditor.MediaUpload,
+    MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
     TestField = _wp$wprigComponents.TestField,
     Background = _wp$wprigComponents.Background,
     Range = _wp$wprigComponents.Range,
-    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
-    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
-    animationSettings = _wp$wprigComponents$g.animationSettings,
+    Toggle = _wp$wprigComponents.Toggle,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
+    globalCustomAttributes = _wp$wprigComponents$g.globalCustomAttributes,
+    HoverEXSettings = _wp$wprigComponents$g.HoverEXSettings,
+    _wp$wprigComponents$g2 = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g2.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g2.animationSettings,
     videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
@@ -22435,16 +22441,52 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderSlides(imageItems) {
       var _this2 = this;
 
-      //<SwiperSlide>Slide 1</SwiperSlide>
+      var _this$props3 = this.props,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          className = _this$props3$attribut.className,
+          columns = _this$props3$attribut.columns,
+          rowGap = _this$props3$attribut.rowGap,
+          columnGap = _this$props3$attribut.columnGap,
+          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
+          overlayEffect = _this$props3$attribut.overlayEffect,
+          carouselItems = _this$props3$attribut.carouselItems,
+          enableHoverFx = _this$props3$attribut.enableHoverFx,
+          overlayLayout = _this$props3$attribut.overlayLayout,
+          viewIconName = _this$props3$attribut.viewIconName,
+          linkIconName = _this$props3$attribut.linkIconName,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          setAttributes = _this$props3.setAttributes;
+
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"], null, /*#__PURE__*/React.createElement("img", {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayLayout)
+          }, /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(viewIconName)
+          }, viewButtonLabel)), /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(linkIconName)
+          }, linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.thumbnail,
             "data-image": el.url,
             onClick: function onClick() {
               _this2.renderClick(el);
             }
-          }));
+          })));
         });
       }
     }
@@ -22459,24 +22501,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             src: el.url,
             "data-image": el.url,
             "data-description": "This is a Lemon Slice"
-          })); //     return (
-          //     <div className={`wprig-grid-image-item`} onClick={this.openModal(el) }>
-          //         <figure>
-          //             <img src = {el.url}/>
-          //             <figcaption>
-          //                 <p>Caption Here</p>
-          //             </figcaption>
-          //         </figure>
-          //         <div className={`wprig-overlay-panel`}>
-          //             <div className={`wprig-panel-actions-wrap`}>
-          //                 <ul className={`wprig-panel-actions`}>
-          //                     <li><a href="#">S</a></li>
-          //                     <li><a href="#">D</a></li>
-          //                 </ul>
-          //             </div>
-          //         </div>
-          //     </div>
-          // )                                                               
+          }));
         });
       }
     }
@@ -22485,18 +22510,24 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this3 = this;
 
-      var _this$props3 = this.props,
-          _this$props3$attribut = _this$props3.attributes,
-          uniqueId = _this$props3$attribut.uniqueId,
-          className = _this$props3$attribut.className,
-          imageItems = _this$props3$attribut.imageItems,
-          columns = _this$props3$attribut.columns,
-          rowGap = _this$props3$attribut.rowGap,
-          columnGap = _this$props3$attribut.columnGap,
-          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
-          overlayEffect = _this$props3$attribut.overlayEffect,
-          carouselItems = _this$props3$attribut.carouselItems,
-          setAttributes = _this$props3.setAttributes;
+      var _this$props4 = this.props,
+          _this$props4$attribut = _this$props4.attributes,
+          uniqueId = _this$props4$attribut.uniqueId,
+          className = _this$props4$attribut.className,
+          imageItems = _this$props4$attribut.imageItems,
+          columns = _this$props4$attribut.columns,
+          rowGap = _this$props4$attribut.rowGap,
+          columnGap = _this$props4$attribut.columnGap,
+          modalOverlayBg = _this$props4$attribut.modalOverlayBg,
+          overlayEffect = _this$props4$attribut.overlayEffect,
+          carouselItems = _this$props4$attribut.carouselItems,
+          hoverEffect = _this$props4$attribut.hoverEffect,
+          hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          enableLinkButton = _this$props4$attribut.enableLinkButton,
+          overlayLayout = _this$props4$attribut.overlayLayout,
+          enableHoverFx = _this$props4$attribut.enableHoverFx,
+          setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
@@ -22507,15 +22538,37 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
-      }, /*#__PURE__*/React.createElement(TestField, {
-        label: __('Upload Images'),
+      }, /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
         multiple: true,
-        type: ['image'],
-        value: imageItems,
-        panel: true,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageItems: value
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
           });
         }
       }), /*#__PURE__*/React.createElement(Range, {
@@ -22660,7 +22713,50 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
-      }))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: true,
+        title: __('Hover Overlay Content')
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable View'),
+        value: enableViewButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableViewButton: val
+          });
+        }
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Link'),
+        value: enableLinkButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableLinkButton: val
+          });
+        }
+      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null)), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
