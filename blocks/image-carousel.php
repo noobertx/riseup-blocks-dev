@@ -185,7 +185,10 @@ function register_block_wprig_image_carousel(){
                     'type'=> 'string',
                     'default'=> 'overlay-layout-2'
                 ],
-
+                'modalLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'modal-layout-1'
+                ],
                 'overlayEffect' => [
                     'type'=>'string',
                     'default'=>'let-me-in'

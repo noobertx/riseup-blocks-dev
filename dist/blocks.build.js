@@ -22457,6 +22457,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkIconName = _this$props3$attribut.linkIconName,
           viewButtonLabel = _this$props3$attribut.viewButtonLabel,
           linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
           setAttributes = _this$props3.setAttributes;
 
       if (imageItems && imageItems.length > 0) {
@@ -22467,7 +22469,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             className: "overlay"
           }, /*#__PURE__*/React.createElement("div", {
             className: "overlay-content ".concat(overlayLayout)
-          }, /*#__PURE__*/React.createElement("button", {
+          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "view",
             onClick: function onClick() {
@@ -22475,7 +22477,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(viewIconName)
-          }, viewButtonLabel)), /*#__PURE__*/React.createElement("button", {
+          }, viewButtonLabel)), enableLinkButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "link"
           }, /*#__PURE__*/React.createElement("i", {
