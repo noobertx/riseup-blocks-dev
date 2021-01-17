@@ -22765,7 +22765,27 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      })), /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["Swiper"], {
+      })), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
+      }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return {
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.medium.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs
+          });
+        },
+        labels: {
+          title: "Select Images"
+        },
+        allowedTypes: ["image"],
+        multiple: true
+      })) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_1__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         breakpoints: {
@@ -23356,7 +23376,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           var newImgs = newImages.map(function (img) {
             return {
               url: img.sizes.full.url,
-              thumbnail: img.sizes.medium.url,
+              thumbnail: img.sizes.thumbnail.url,
               title: img.caption
             };
           });
