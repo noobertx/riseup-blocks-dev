@@ -25694,7 +25694,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           var newImgs = newImages.map(function (img) {
             return {
               url: img.sizes.full.url,
-              thumbnail: img.sizes.medium.url,
+              thumbnail: img.sizes.thumbnail.url,
               title: img.caption
             };
           });
