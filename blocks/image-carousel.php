@@ -634,6 +634,23 @@ function render_block_wprig_carousel($att){
         'xs' => 1,
     );
 
+    $hoverEffect 		    = isset($att['hoverEffect']) ? (array) $att['hoverEffect'] : '';
+    $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
+    $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
+
+
+    $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
+    $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
+    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
+    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
+    $maxRowHeight 		        = isset($att['maxRowHeight']) ? $att['maxRowHeight'] : "";
+    $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
+
+    $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
+    $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
+    $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
+
+
     $slickSettings = (object) array(
         "slidesToShow" => $carouselItems['md'],
         "slidesToScroll" => 4
@@ -644,16 +661,40 @@ function render_block_wprig_carousel($att){
         'overlayEffect' => $overlayEffect 
     );
 
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery\" 
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery slider $hoverEffect[0] $hoverEffectDirection[0] \" 
     data-modal='".json_encode($modalSettings)."'
     data-slick='".json_encode($slickSettings)."'>";
     // $html[] = "<pre>";
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
-            $html[] = "<a href='".$image['url']."'>";
-            $html[] = "<img src='".$image['thumbnail']."'/>";
-            $html[] = "</a>";
+            $html[] = "<div class='cells'>";
+            $html[] = "<div class='overlay'>";
+            $html[] = "<div class='overlay-content ".$overlayLayout."'>";
+                if($enableViewButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
+                    $html[] = $viewButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+
+                if($enableLinkButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$linkIconName."'></i>";
+                    $html[] = $linkButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+            $html[] = "</div>";           
+            $html[] = "</div>";
+                if(!$enableViewButton){
+                        $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
+                        $html[] = "<img src='".$image['url']."'/>";
+                        $html[] = "</a>";
+                }else{
+                    $html[] = "<img src='".$image['url']."'/>";
+                }            
+            $html[] = "</div>";
+
         }
     }
     // $html[] = "</pre>";
