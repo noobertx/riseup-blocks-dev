@@ -23916,6 +23916,8 @@ var _wp$element = wp.element,
     createRef = _wp$element.createRef;
 var _wp$blockEditor = wp.blockEditor,
     InspectorControls = _wp$blockEditor.InspectorControls,
+    MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
+    MediaUpload = _wp$blockEditor.MediaUpload,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
@@ -24132,15 +24134,37 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
-      }, /*#__PURE__*/React.createElement(TestField, {
-        label: __('Upload Images'),
+      }, /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
         multiple: true,
-        type: ['image'],
-        value: imageItems,
-        panel: true,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageItems: value
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
           });
         }
       }), /*#__PURE__*/React.createElement(Range, {
@@ -24283,7 +24307,28 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
-      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
+      }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return {
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption,
+              id: img.id
+            };
+          });
+          setAttributes({
+            imageItems: newImgs
+          });
+        },
+        labels: {
+          title: "Select Images"
+        },
+        allowedTypes: ["image"],
+        multiple: true
+      })) : /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
