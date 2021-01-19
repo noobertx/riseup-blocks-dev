@@ -24602,10 +24602,15 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }))), /*#__PURE__*/React.createElement("div", {
         "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, console.log(columns.md, gutter), /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        columnsCount: columns.md,
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__["ResponsiveMasonry"], {
+        columnsCountBreakPoints: {
+          350: columns.xs,
+          750: columns.sm,
+          900: columns.md
+        }
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
         gutter: gutter
-      }, this.renderCells(images, enableHoverFx))));
+      }, this.renderCells(images, enableHoverFx)))));
     }
   }]);
 
