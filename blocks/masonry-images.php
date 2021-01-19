@@ -15,7 +15,20 @@ function register_block_wprig_masonry_images(){
                 'imageItems' => [
                     'type' => 'array',
                     'default' => []
-                ],               
+                ],
+                'columns' => [
+                    'type' => 'number',
+                    'default' => [
+                        'md' => 3,
+                        'sm' => 2,
+                        'xs' => 1,
+                        'unit' => ''
+                    ],
+                ],
+                'gutter' => [
+                    'type' => 'number',
+                    'default' => 10
+                ],    
 
                 'modalOverlayBg' => [
                     'type' => 'object',

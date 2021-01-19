@@ -24116,7 +24116,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           imageItems = _this$props3$attribut.imageItems,
           columns = _this$props3$attribut.columns,
           rowGap = _this$props3$attribut.rowGap,
-          columnGap = _this$props3$attribut.columnGap,
+          gutter = _this$props3$attribut.gutter,
           modalOverlayBg = _this$props3$attribut.modalOverlayBg,
           overlayEffect = _this$props3$attribut.overlayEffect,
           enableHoverFx = _this$props3$attribut.enableHoverFx,
@@ -24169,25 +24169,15 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }), /*#__PURE__*/React.createElement(Range, {
         label: __('Number of Columns'),
-        value: columns || '',
+        min: 0,
+        max: 15,
+        value: columns,
         onChange: function onChange(val) {
           return setAttributes({
             columns: val
           });
         },
-        min: 1,
-        max: 10
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Row Gap'),
-        min: 0,
-        max: 100,
-        value: rowGap,
-        onChange: function onChange(val) {
-          return setAttributes({
-            rowGap: val
-          });
-        },
-        unit: ['px', 'em', '%', 'vw'],
+        unit: [''],
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
@@ -24196,16 +24186,16 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Column Gap'),
+        label: __('Gutter'),
         min: 0,
         max: 100,
-        value: columnGap,
+        value: gutter,
         onChange: function onChange(val) {
           return setAttributes({
-            columnGap: val
+            gutter: val
           });
         },
-        unit: ['px', 'em', '%', 'vw'],
+        unit: [''],
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
@@ -24330,6 +24320,8 @@ var Edit = /*#__PURE__*/function (_Component) {
         multiple: true
       })) : /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
+        gutter: gutter,
+        columns: columns,
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
         hoverEffect: hoverEffect,
@@ -24588,7 +24580,9 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
           enableHoverFx = _this$props2.enableHoverFx,
           hoverEffect = _this$props2.hoverEffect,
           hoverEffectDirection = _this$props2.hoverEffectDirection,
-          images = _this$props2.images;
+          images = _this$props2.images,
+          columns = _this$props2.columns,
+          gutter = _this$props2.gutter;
       var doneLoading = this.state.doneLoading;
 
       if (!doneLoading) {
@@ -24608,9 +24602,9 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }))), /*#__PURE__*/React.createElement("div", {
         "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        columnsCount: 4,
-        gutter: "10px"
+      }, console.log(columns.md, gutter), /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        columnsCount: columns.md,
+        gutter: gutter
       }, this.renderCells(images, enableHoverFx))));
     }
   }]);
