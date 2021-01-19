@@ -437,6 +437,10 @@ function register_block_wprig_masonry_images(){
                         ]
                     ]
                 ],
+                'overlayLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'overlay-layout-2'
+                ],
 
                 'modalOverlayBg' => [
                     'type' => 'object',

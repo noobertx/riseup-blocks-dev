@@ -24170,6 +24170,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
           linkIconName = _this$props3$attribut.linkIconName,
           linkIconSize = _this$props3$attribut.linkIconSize,
+          overlayLayout = _this$props3$attribut.overlayLayout,
           modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var overlayParams = {
@@ -24182,8 +24183,8 @@ var Edit = /*#__PURE__*/function (_Component) {
         linkButtonType: linkButtonType,
         linkButtonLabel: linkButtonLabel,
         linkButtonIcon: linkButtonIcon,
-        linkIconName: linkIconName // overlayLayout
-
+        linkIconName: linkIconName,
+        overlayLayout: overlayLayout
       };
       var _this$state = this.state,
           device = _this$state.device,
@@ -24641,7 +24642,49 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadowHover: value
           });
         }
-      }))))), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: linkButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      })), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
