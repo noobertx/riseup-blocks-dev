@@ -602,29 +602,65 @@ function render_block_wprig_masonry_images($att){
 
     $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
     $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
-    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : '';
-    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : '';
+    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
+    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
 
+    $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
+    $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
+    $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
+
+    $columns 		        = isset($att['columns']) ? $att['columns'] : 3;
+    $gutter 		        = isset($att['gutter']) ? $att['gutter'] : 10;
+
+
+    /*
+        columns,
+        gutter,
+    */
 
 
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
     );
+
+    $masonrySettings = (object) array(
+        'columns' => $columns,
+        'gutter' => $gutter
+    );
     
     $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery \"   data-modal='".json_encode($modalSettings) . "' >";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery \"   data-modal='".json_encode($modalSettings) . "' data-masonry-prop='".json_encode($masonrySettings)."'>";
     
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
-            $html[] = "<div class='cells mosaic-item'>";
-            $html[] = "<div class='overlay'>"; 
-            
+            $html[] = "<div class='cells'>";
+            $html[] = "<div class='overlay'>";
+
+            $html[] = "<div class='overlay-content ".$overlayLayout."'>";
+                if($enableViewButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
+                    $html[] = $viewButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+
+                if($enableLinkButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$linkIconName."'></i>";
+                    $html[] = $linkButtonLabel;
+                    $html[] = "</a>";                                      
+                }
             $html[] = "</div>";
-            $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
-            $html[] = "<img src='".$image['url']."'/>";
-            $html[] = "</a>";
+            $html[] = "</div>";
+                    if(!$enableViewButton){
+                        $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
+                        $html[] = "<img src='".$image['url']."'/>";
+                        $html[] = "</a>";
+                    }else{
+                        $html[] = "<img src='".$image['url']."'/>";
+                    }
             $html[] = "</div>";
         }
     }

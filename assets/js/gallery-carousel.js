@@ -176,9 +176,13 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
        
 
         $(".wprig-masonry-gallery").imagesLoaded(function() {
-            $(".wprig-masonry-gallery").masonry({
-                itemSelector: ".cells"
-            });
+
+            $(".wprig-masonry-gallery").map(function($el){
+                console.log($el);
+            })
+            // $(".wprig-masonry-gallery").masonry({
+            //     itemSelector: ".cells"
+            // });
         });
 
     });
