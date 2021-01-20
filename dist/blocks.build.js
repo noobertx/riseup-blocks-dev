@@ -10607,7 +10607,7 @@ var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ ".
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _jsxFileName = "/Users/cedricdelpoux/Development/perso/react-responsive-masonry/src/Masonry/index.js";
+var _jsxFileName = "/Users/cedric/Code/react-responsive-masonry/src/Masonry/index.js";
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -10741,110 +10741,87 @@ exports["default"] = _default;
 "use strict";
 
 
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
-var _jsxFileName = "/Users/cedricdelpoux/Development/perso/react-responsive-masonry/src/ResponsiveMasonry/index.js";
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _this = void 0,
+    _jsxFileName = "/Users/cedric/Code/react-responsive-masonry/src/ResponsiveMasonry/index.js";
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
 var DEFAULT_COLUMNS_COUNT = 1;
 
-var MasonryResponsive = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose(MasonryResponsive, _React$Component);
+var getWindowWidth = function getWindowWidth() {
+  if (typeof window === "undefined") return null;
+  return window.innerWidth;
+};
 
-  function MasonryResponsive(props) {
-    var _this;
+var useWindowWidth = function useWindowWidth() {
+  var _useState = (0, _react.useState)(getWindowWidth()),
+      width = _useState[0],
+      setWidth = _useState[1];
 
-    _this = _React$Component.call(this, props) || this;
-    _this.state = {
-      columnsCount: DEFAULT_COLUMNS_COUNT
-    };
-    _this.handleResize = _this.handleResize.bind(_assertThisInitialized(_this));
-    _this.handleRef = _this.handleRef.bind(_assertThisInitialized(_this));
-    return _this;
-  }
+  var hasWindow = typeof window !== "undefined";
+  var handleResize = (0, _react.useCallback)(function () {
+    setWidth(getWindowWidth());
+  }, []);
+  (0, _react.useEffect)(function () {
+    if (hasWindow) {
+      window.addEventListener("resize", handleResize);
+      return function () {
+        return window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, [hasWindow, handleResize]);
+  return width;
+};
 
-  var _proto = MasonryResponsive.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.updateColumnsCount();
-    window.addEventListener("resize", this.handleResize); // eslint-disable-line
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize); // eslint-disable-line
-  };
-
-  _proto.getSortedBreakPoints = function getSortedBreakPoints() {
-    var breakPoints = Object.keys(this.props.columnsCountBreakPoints);
-    return breakPoints.sort(function (a, b) {
+var MasonryResponsive = function MasonryResponsive(_ref) {
+  var columnsCountBreakPoints = _ref.columnsCountBreakPoints,
+      children = _ref.children,
+      className = _ref.className,
+      style = _ref.style;
+  var windowWidth = useWindowWidth();
+  var columnsCount = (0, _react.useMemo)(function () {
+    var breakPoints = Object.keys(columnsCountBreakPoints).sort(function (a, b) {
       return a - b;
     });
-  };
-
-  _proto.updateColumnsCount = function updateColumnsCount() {
-    var columnsCountBreakPoints = this.props.columnsCountBreakPoints;
-    var containerWidth = this.container.offsetWidth;
-    var breakPoints = this.getSortedBreakPoints();
-    var columnsCount = breakPoints.length > 0 ? columnsCountBreakPoints[breakPoints[0]] : DEFAULT_COLUMNS_COUNT;
+    var count = breakPoints.length > 0 ? columnsCountBreakPoints[breakPoints[0]] : DEFAULT_COLUMNS_COUNT;
     breakPoints.forEach(function (breakPoint) {
-      if (breakPoint < containerWidth) {
-        columnsCount = columnsCountBreakPoints[breakPoint];
+      if (breakPoint < windowWidth) {
+        count = columnsCountBreakPoints[breakPoint];
       }
     });
-
-    if (columnsCount && columnsCount !== this.state.columnsCount) {
-      this.setState({
-        columnsCount: columnsCount
-      });
+    return count;
+  }, [windowWidth, columnsCountBreakPoints]);
+  return /*#__PURE__*/_react["default"].createElement("div", {
+    className: className,
+    style: style,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 5
     }
-  };
-
-  _proto.handleResize = function handleResize() {
-    this.updateColumnsCount();
-  };
-
-  _proto.handleRef = function handleRef(ref) {
-    if (!this.container) this.container = ref;
-  };
-
-  _proto.render = function render() {
-    var columnsCount = this.state.columnsCount;
-    var _this$props = this.props,
-        children = _this$props.children,
-        className = _this$props.className,
-        style = _this$props.style;
-    return /*#__PURE__*/_react["default"].createElement("div", {
-      ref: this.handleRef,
-      className: className,
-      style: style,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 64,
-        columnNumber: 7
-      }
-    }, _react["default"].Children.map(children, function (child, index) {
-      return _react["default"].cloneElement(child, {
-        key: index,
-        columnsCount: columnsCount
-      });
-    }));
-  };
-
-  return MasonryResponsive;
-}(_react["default"].Component);
+  }, _react["default"].Children.map(children, function (child, index) {
+    return _react["default"].cloneElement(child, {
+      key: index,
+      columnsCount: columnsCount
+    });
+  }));
+};
 
 MasonryResponsive.propTypes =  true ? {
   children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].node), _propTypes["default"].node]).isRequired,
@@ -41655,9 +41632,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 /* harmony import */ var _buttongroup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./buttongroup */ "./src/components/fields/buttongroup.js");
 /* harmony import */ var _assets_fontList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/fontList */ "./src/components/fields/assets/fontList.js");
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
@@ -42403,6 +42380,8 @@ var Url = /*#__PURE__*/function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WPRigButtonEdit", function() { return WPRigButtonEdit; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WPRigButtonSave", function() { return WPRigButtonSave; });
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -42410,8 +42389,6 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
