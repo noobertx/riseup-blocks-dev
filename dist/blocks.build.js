@@ -6455,6 +6455,24 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ":root {\n  --swiper-navigation-size: 44px;\n  /*\n  --swiper-navigation-color: var(--swiper-theme-color);\n  */ }\n\n.swiper-button-prev,\n.swiper-button-next {\n  position: absolute;\n  top: 50%;\n  width: calc(var(--swiper-navigation-size) / 44 * 27);\n  height: var(--swiper-navigation-size);\n  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);\n  z-index: 10;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--swiper-navigation-color, var(--swiper-theme-color)); }\n  .swiper-button-prev.swiper-button-disabled,\n  .swiper-button-next.swiper-button-disabled {\n    opacity: 0.35;\n    cursor: auto;\n    pointer-events: none; }\n  .swiper-button-prev:after,\n  .swiper-button-next:after {\n    font-family: swiper-icons;\n    font-size: var(--swiper-navigation-size);\n    text-transform: none !important;\n    letter-spacing: 0;\n    text-transform: none;\n    font-variant: initial;\n    line-height: 1; }\n\n.swiper-button-prev,\n.swiper-container-rtl .swiper-button-next {\n  left: 10px;\n  right: auto; }\n  .swiper-button-prev:after,\n  .swiper-container-rtl .swiper-button-next:after {\n    content: 'prev'; }\n\n.swiper-button-next,\n.swiper-container-rtl .swiper-button-prev {\n  right: 10px;\n  left: auto; }\n  .swiper-button-next:after,\n  .swiper-container-rtl .swiper-button-prev:after {\n    content: 'next'; }\n\n.swiper-button-prev.swiper-button-white,\n.swiper-button-next.swiper-button-white {\n  --swiper-navigation-color: #ffffff; }\n\n.swiper-button-prev.swiper-button-black,\n.swiper-button-next.swiper-button-black {\n  --swiper-navigation-color: #000000; }\n\n.swiper-button-lock {\n  display: none; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss ***!
@@ -11320,6 +11338,35 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/navigation/navigation.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/navigation/navigation.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js!../../../sass-loader/dist/cjs.js!./navigation.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -22224,9 +22271,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22302,6 +22352,9 @@ var _wp$wprigComponents = wp.wprigComponents,
 
 
 
+
+
+swiper__WEBPACK_IMPORTED_MODULE_3__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_3__["Navigation"]]);
 
 var Edit = /*#__PURE__*/function (_Component) {
   _inherits(Edit, _Component);
@@ -22454,7 +22507,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_4__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
             "class": "cells"
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
@@ -22519,6 +22572,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           overlayLayout = _this$props4$attribut.overlayLayout,
           enableHoverFx = _this$props4$attribut.enableHoverFx,
           modalLayout = _this$props4$attribut.modalLayout,
+          dotsColor = _this$props4$attribut.dotsColor,
+          arrowColor = _this$props4$attribut.arrowColor,
           enableViewButton = _this$props4$attribut.enableViewButton,
           viewButtonLabel = _this$props4$attribut.viewButtonLabel,
           viewFillType = _this$props4$attribut.viewFillType,
@@ -22658,6 +22713,17 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         shiftStep: 10,
         value: cellHeight
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Carousel')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Arrow Color'),
+        value: arrowColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            arrowColor: value
+          });
+        }
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
@@ -23111,9 +23177,10 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["Swiper"], {
+      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_4__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
+        navigation: true,
         breakpoints: {
           // when window width is >= 640px
           320: {

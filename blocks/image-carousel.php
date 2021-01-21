@@ -167,6 +167,25 @@ function register_block_wprig_image_carousel(){
                         ]
                     ]
                 ],
+
+                'dotsColor' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .view{ color:{{dotsColor}}; }' 
+                        ]
+                    ]
+                ],
+                'arrowColor' => [
+                    'type' => 'string',
+                    'default' => '#47a',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .swiper-button-prev{ color:{{arrowColor}}; }' 
+                        ]
+                    ]
+                ],
                 'enableViewButton' => [
                     'type' => 'boolean',
                     'default' => true
