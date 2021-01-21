@@ -6473,6 +6473,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ":root {\n  /*\n  --swiper-pagination-color: var(--swiper-theme-color);\n  */ }\n\n.swiper-pagination {\n  position: absolute;\n  text-align: center;\n  transition: 300ms opacity;\n  transform: translate3d(0, 0, 0);\n  z-index: 10; }\n  .swiper-pagination.swiper-pagination-hidden {\n    opacity: 0; }\n\n/* Common Styles */\n.swiper-pagination-fraction,\n.swiper-pagination-custom,\n.swiper-container-horizontal > .swiper-pagination-bullets {\n  bottom: 10px;\n  left: 0;\n  width: 100%; }\n\n/* Bullets */\n.swiper-pagination-bullets-dynamic {\n  overflow: hidden;\n  font-size: 0; }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n    transform: scale(0.33);\n    position: relative; }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {\n    transform: scale(1); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {\n    transform: scale(1); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {\n    transform: scale(0.66); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {\n    transform: scale(0.33); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {\n    transform: scale(0.66); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {\n    transform: scale(0.33); }\n\n.swiper-pagination-bullet {\n  width: 8px;\n  height: 8px;\n  display: inline-block;\n  border-radius: 100%;\n  background: #000;\n  opacity: 0.2; }\n  button.swiper-pagination-bullet {\n    border: none;\n    margin: 0;\n    padding: 0;\n    box-shadow: none;\n    appearance: none; }\n  .swiper-pagination-clickable .swiper-pagination-bullet {\n    cursor: pointer; }\n\n.swiper-pagination-bullet-active {\n  opacity: 1;\n  background: var(--swiper-pagination-color, var(--swiper-theme-color)); }\n\n.swiper-container-vertical > .swiper-pagination-bullets {\n  right: 10px;\n  top: 50%;\n  transform: translate3d(0px, -50%, 0); }\n  .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {\n    margin: 6px 0;\n    display: block; }\n  .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n    top: 50%;\n    transform: translateY(-50%);\n    width: 8px; }\n    .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n      display: inline-block;\n      transition: 200ms transform, 200ms top; }\n\n.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {\n  margin: 0 4px; }\n\n.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n  left: 50%;\n  transform: translateX(-50%);\n  white-space: nowrap; }\n  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n    transition: 200ms transform, 200ms left; }\n\n.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  transition: 200ms transform, 200ms right; }\n\n/* Progress */\n.swiper-pagination-progressbar {\n  background: rgba(0, 0, 0, 0.25);\n  position: absolute; }\n  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    background: var(--swiper-pagination-color, var(--swiper-theme-color));\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    transform: scale(0);\n    transform-origin: left top; }\n  .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    transform-origin: right top; }\n  .swiper-container-horizontal > .swiper-pagination-progressbar,\n  .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {\n    width: 100%;\n    height: 4px;\n    left: 0;\n    top: 0; }\n  .swiper-container-vertical > .swiper-pagination-progressbar,\n  .swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {\n    width: 4px;\n    height: 100%;\n    left: 0;\n    top: 0; }\n\n.swiper-pagination-white {\n  --swiper-pagination-color: #ffffff; }\n\n.swiper-pagination-black {\n  --swiper-pagination-color: #000000; }\n\n.swiper-pagination-lock {\n  display: none; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss ***!
@@ -11350,6 +11368,35 @@ module.exports = function (list, options) {
 
 var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js!../../../sass-loader/dist/cjs.js!./navigation.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/pagination/pagination.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/pagination/pagination.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js!../../../sass-loader/dist/cjs.js!./pagination.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss");
 
             content = content.__esModule ? content.default : content;
 
@@ -22277,6 +22324,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
 /* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22354,7 +22403,8 @@ var _wp$wprigComponents = wp.wprigComponents,
 
 
 
-swiper__WEBPACK_IMPORTED_MODULE_3__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_3__["Navigation"]]);
+
+swiper__WEBPACK_IMPORTED_MODULE_3__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_3__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_3__["Pagination"]]);
 
 var Edit = /*#__PURE__*/function (_Component) {
   _inherits(Edit, _Component);
@@ -22722,6 +22772,14 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             arrowColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color'),
+        value: dotsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColor: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
@@ -23181,6 +23239,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         navigation: true,
+        pagination: {
+          clickable: true
+        },
         breakpoints: {
           // when window width is >= 640px
           320: {

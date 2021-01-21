@@ -173,7 +173,7 @@ function register_block_wprig_image_carousel(){
                     'default' => '#fff',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .view{ color:{{dotsColor}}; }' 
+                            'selector' => '{{WPRIG}} .swiper-pagination-bullet{ background-color:{{dotsColor}}; }' 
                         ]
                     ]
                 ],
