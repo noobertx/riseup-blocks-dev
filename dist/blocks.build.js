@@ -22316,31 +22316,16 @@ wp.data.subscribe(function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
-/* harmony import */ var _components_fields_border__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/fields/border */ "./src/components/fields/border.js");
-/* harmony import */ var _components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fields/boxshadow */ "./src/components/fields/boxshadow.js");
-/* harmony import */ var _components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/borderRadius */ "./src/components/fields/borderRadius.js");
-/* harmony import */ var _components_fields_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/color */ "./src/components/fields/color.js");
-/* harmony import */ var _components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
-/* harmony import */ var _components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/fields/iconList */ "./src/components/fields/iconList.js");
-/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
-/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
-/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
-/* harmony import */ var _components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/fields/tabs */ "./src/components/fields/tabs.js");
-/* harmony import */ var _components_fields_tab__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/fields/tab */ "./src/components/fields/tab.js");
-/* harmony import */ var _components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/fields/toggle */ "./src/components/fields/toggle.js");
-/* harmony import */ var _components_fields_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/fields/styles */ "./src/components/fields/styles.js");
-/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
-/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
-/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
-/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22386,11 +22371,32 @@ var _wp$blockEditor = wp.blockEditor,
     MediaUpload = _wp$blockEditor.MediaUpload,
     MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
-    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls; // const { Tab, Tabs, Color,ColorAdvanced, Border ,IconList, BorderRadius , BoxShadow,Styles, TestField,Background,Range,Toggle, globalCustomSettings:{globalCustomAttributes, HoverEXSettings}, globalSettings: { globalSettingsPanel, animationSettings }, HelperFunction: { videoBackground }, CssGenerator: { CssGenerator }, withCSSGenerator, InspectorTabs, InspectorTab } = wp.wprigComponents
-
+    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    Tab = _wp$wprigComponents.Tab,
+    Tabs = _wp$wprigComponents.Tabs,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    IconList = _wp$wprigComponents.IconList,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    TestField = _wp$wprigComponents.TestField,
+    Background = _wp$wprigComponents.Background,
+    Range = _wp$wprigComponents.Range,
+    Toggle = _wp$wprigComponents.Toggle,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
+    globalCustomAttributes = _wp$wprigComponents$g.globalCustomAttributes,
+    HoverEXSettings = _wp$wprigComponents$g.HoverEXSettings,
+    _wp$wprigComponents$g2 = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g2.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g2.animationSettings,
+    videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
-    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
 
 
 
@@ -22398,26 +22404,7 @@ var _wp$wprigComponents = wp.wprigComponents,
 
 
 
-
-
-
-
-
-
-
-
-var globalCustomSettings = {
-  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["globalCustomAttributes"],
-  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"]
-};
-
-
-
-
-
-
-
-swiper__WEBPACK_IMPORTED_MODULE_18__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_18__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_18__["Pagination"]]);
+swiper__WEBPACK_IMPORTED_MODULE_3__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_3__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_3__["Pagination"]]);
 
 var Edit = /*#__PURE__*/function (_Component) {
   _inherits(Edit, _Component);
@@ -22570,7 +22557,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_19__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_4__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
             "class": "cells"
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
@@ -22674,9 +22661,9 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
-      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
         tabs: ['style', 'advance']
-      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
@@ -22714,7 +22701,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Items'),
         value: carouselItems,
         onChange: function onChange(val) {
@@ -22731,7 +22718,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Row Gap'),
         min: 0,
         max: 100,
@@ -22749,7 +22736,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Column Gap'),
         min: 0,
         max: 100,
@@ -22779,7 +22766,7 @@ var Edit = /*#__PURE__*/function (_Component) {
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Carousel')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Arrow Color'),
         value: arrowColor,
         onChange: function onChange(value) {
@@ -22787,7 +22774,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             arrowColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Dots Color'),
         value: dotsColor,
         onChange: function onChange(value) {
@@ -22861,7 +22848,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayEffect: val
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
         label: __('Background'),
@@ -22872,12 +22859,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalOverlayBg: val
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
         title: __('Hover Overlay Content')
-      }, /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable View'),
         value: enableViewButton,
         onChange: function onChange(val) {
@@ -22893,7 +22880,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
@@ -22901,7 +22888,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewIconName: value
           });
         }
-      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Size'),
         value: viewIconSize,
         onChange: function onChange(value) {
@@ -22919,7 +22906,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: viewFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -22928,16 +22915,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
         onChange: function onChange(value) {
@@ -22947,7 +22934,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonColor2: value
           });
         }
-      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColor,
         onChange: function onChange(value) {
@@ -22955,7 +22942,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: viewButtonBorder,
         onChange: function onChange(val) {
@@ -22973,7 +22960,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadow,
         onChange: function onChange(value) {
@@ -22981,9 +22968,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
         onChange: function onChange(value) {
@@ -22993,7 +22980,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColorHover,
         onChange: function onChange(value) {
@@ -23001,7 +22988,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: viewButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -23009,7 +22996,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadowHover,
         onChange: function onChange(value) {
@@ -23017,7 +23004,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadowHover: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
         label: __('Radius'),
         value: viewButtonBorderRadius,
         onChange: function onChange(value) {
@@ -23035,7 +23022,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      })), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable Link'),
         value: enableLinkButton,
         onChange: function onChange(val) {
@@ -23051,7 +23038,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Link Icon'),
         value: linkIconName,
         onChange: function onChange(value) {
@@ -23059,7 +23046,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkIconName: value
           });
         }
-      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Link Icon Size'),
         value: linkIconSize,
         onChange: function onChange(value) {
@@ -23077,7 +23064,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: linkFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -23086,16 +23073,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
         onChange: function onChange(value) {
@@ -23105,7 +23092,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonColor2: value
           });
         }
-      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColor,
         onChange: function onChange(value) {
@@ -23113,7 +23100,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: linkButtonBorder,
         onChange: function onChange(val) {
@@ -23131,7 +23118,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadow,
         onChange: function onChange(value) {
@@ -23139,9 +23126,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
         onChange: function onChange(value) {
@@ -23151,7 +23138,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColorHover,
         onChange: function onChange(value) {
@@ -23159,7 +23146,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: linkButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -23167,7 +23154,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadowHover,
         onChange: function onChange(value) {
@@ -23175,7 +23162,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadowHover: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
         label: __('Radius'),
         value: linkButtonBorderRadius,
         onChange: function onChange(value) {
@@ -23217,7 +23204,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      }), Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
         title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(uniqueId),
@@ -23248,7 +23235,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_19__["Swiper"], {
+      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_4__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         navigation: true,
@@ -23362,17 +23349,9 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
-/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
-/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
-/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
-/* harmony import */ var _components_fields_testField__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/testField */ "./src/components/fields/testField.js");
-/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
-/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
-/* harmony import */ var _components_fields_globalsettings__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/fields/globalsettings */ "./src/components/fields/globalsettings.js");
-/* harmony import */ var _components_helpers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/helpers */ "./src/components/helpers.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23420,39 +23399,21 @@ var _wp$blockEditor = wp.blockEditor,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    TestField = _wp$wprigComponents.TestField,
+    Background = _wp$wprigComponents.Background,
+    Range = _wp$wprigComponents.Range,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    _wp$wprigComponents$g2 = _wp$wprigComponents.globalCustomSettings,
+    globalCustomAttributes = _wp$wprigComponents$g2.globalCustomAttributes,
+    HoverEXSettings = _wp$wprigComponents$g2.HoverEXSettings,
+    videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
-    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
 
-
-
-
-
-
-
-
-
-var globalCustomSettings = {
-  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_6__["globalCustomAttributes"],
-  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_6__["HoverEXSettings"]
-};
-var globalSettings = {
-  globalAttributes: _components_fields_globalsettings__WEBPACK_IMPORTED_MODULE_7__["globalAttributes"],
-  animationSettings: _components_fields_globalsettings__WEBPACK_IMPORTED_MODULE_7__["animationSettings"],
-  interactionSettings: _components_fields_globalsettings__WEBPACK_IMPORTED_MODULE_7__["interactionSettings"],
-  globalSettingsPanel: _components_fields_globalsettings__WEBPACK_IMPORTED_MODULE_7__["globalSettingsPanel"]
-};
-var HelperFunction = {
-  _equal: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["_equal"],
-  animationAttr: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["animationAttr"],
-  selectValue: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["selectValue"],
-  isObject: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["isObject"],
-  isArray: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["isArray"],
-  setValue: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["setValue"],
-  videoBackground: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["videoBackground"],
-  parseResponsiveViewPort: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["parseResponsiveViewPort"],
-  IsInteraction: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["IsInteraction"],
-  copyToClipboard: _components_helpers__WEBPACK_IMPORTED_MODULE_8__["copyToClipboard"]
-};
 
 
 
@@ -23648,14 +23609,14 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
-      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
         tabs: ['style', 'advance']
-      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
-      }, /*#__PURE__*/React.createElement(_components_fields_testField__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, /*#__PURE__*/React.createElement(TestField, {
         label: __('Upload Images'),
         multiple: true,
         type: ['image'],
@@ -23666,7 +23627,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             imageItems: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Number of Columns'),
         value: columns || '',
         onChange: function onChange(val) {
@@ -23676,7 +23637,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         min: 1,
         max: 10
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Row Gap'),
         min: 0,
         max: 100,
@@ -23694,7 +23655,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Column Gap'),
         min: 0,
         max: 100,
@@ -23712,7 +23673,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Height'),
         min: 0,
         max: 900,
@@ -23811,7 +23772,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalLayout: val
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
         label: __('Background'),
@@ -23822,9 +23783,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalOverlayBg: val
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
-      }, Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_6__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
@@ -23983,23 +23944,11 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
-/* harmony import */ var _components_fields_border__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/border */ "./src/components/fields/border.js");
-/* harmony import */ var _components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/fields/boxshadow */ "./src/components/fields/boxshadow.js");
-/* harmony import */ var _components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fields/borderRadius */ "./src/components/fields/borderRadius.js");
-/* harmony import */ var _components_fields_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/color */ "./src/components/fields/color.js");
-/* harmony import */ var _components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
-/* harmony import */ var _components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/iconList */ "./src/components/fields/iconList.js");
-/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
-/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
-/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
-/* harmony import */ var _components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/fields/tabs */ "./src/components/fields/tabs.js");
-/* harmony import */ var _components_fields_tab__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/fields/tab */ "./src/components/fields/tab.js");
-/* harmony import */ var _components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/fields/toggle */ "./src/components/fields/toggle.js");
-/* harmony import */ var _components_fields_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/fields/styles */ "./src/components/fields/styles.js");
-/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
-/* harmony import */ var _image_masonry__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./image-masonry */ "./src/blocks/masonry-image-grid/image-masonry.js");
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var _image_masonry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image-masonry */ "./src/blocks/masonry-image-grid/image-masonry.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24044,31 +23993,35 @@ var _wp$blockEditor = wp.blockEditor,
     MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
     MediaUpload = _wp$blockEditor.MediaUpload,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
-    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls; // const { Tab, Tabs, Color,ColorAdvanced, Border ,Toggle, BorderRadius , BoxShadow, Styles,TestField,Background,IconList,Range, globalSettings: { globalSettingsPanel, animationSettings },globalCustomSettings:{globalCustomAttributes, HoverEXSettings},  HelperFunction: { videoBackground }, CssGenerator: { CssGenerator }, withCSSGenerator, InspectorTabs, InspectorTab } = wp.wprigComponents
-
+    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    Tab = _wp$wprigComponents.Tab,
+    Tabs = _wp$wprigComponents.Tabs,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    Toggle = _wp$wprigComponents.Toggle,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    TestField = _wp$wprigComponents.TestField,
+    Background = _wp$wprigComponents.Background,
+    IconList = _wp$wprigComponents.IconList,
+    Range = _wp$wprigComponents.Range,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    _wp$wprigComponents$g2 = _wp$wprigComponents.globalCustomSettings,
+    globalCustomAttributes = _wp$wprigComponents$g2.globalCustomAttributes,
+    HoverEXSettings = _wp$wprigComponents$g2.HoverEXSettings,
+    videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
-    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var globalCustomSettings = {
-  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["globalCustomAttributes"],
-  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["HoverEXSettings"]
-}; // import Masonry from "react-responsive-masonry"
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+ // import Masonry from "react-responsive-masonry"
 // import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 
 
@@ -24309,9 +24262,9 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
-      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
         tabs: ['style', 'advance']
-      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
@@ -24349,7 +24302,7 @@ var Edit = /*#__PURE__*/function (_Component) {
 
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Number of Columns'),
         min: 0,
         max: 15,
@@ -24367,7 +24320,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), /*#__PURE__*/React.createElement(Range, {
         label: __('Gutter'),
         min: 0,
         max: 100,
@@ -24466,7 +24419,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalLayout: val
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
         label: __('Background'),
@@ -24477,12 +24430,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalOverlayBg: val
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
         title: __('Hover Overlay Content')
-      }, /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable View'),
         value: enableViewButton,
         onChange: function onChange(val) {
@@ -24498,7 +24451,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
@@ -24506,7 +24459,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewIconName: value
           });
         }
-      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Size'),
         value: viewIconSize,
         onChange: function onChange(value) {
@@ -24524,7 +24477,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: viewFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -24533,16 +24486,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
         onChange: function onChange(value) {
@@ -24552,7 +24505,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonColor2: value
           });
         }
-      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColor,
         onChange: function onChange(value) {
@@ -24560,7 +24513,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: viewButtonBorder,
         onChange: function onChange(val) {
@@ -24578,7 +24531,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadow,
         onChange: function onChange(value) {
@@ -24586,9 +24539,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
         onChange: function onChange(value) {
@@ -24598,7 +24551,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColorHover,
         onChange: function onChange(value) {
@@ -24606,7 +24559,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: viewButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -24614,7 +24567,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadowHover,
         onChange: function onChange(value) {
@@ -24622,7 +24575,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadowHover: value
           });
         }
-      })))), /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      })))), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable Link'),
         value: enableLinkButton,
         onChange: function onChange(val) {
@@ -24638,7 +24591,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Link Icon'),
         value: linkIconName,
         onChange: function onChange(value) {
@@ -24646,7 +24599,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkIconName: value
           });
         }
-      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Link Icon Size'),
         value: linkIconSize,
         onChange: function onChange(value) {
@@ -24664,7 +24617,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: linkFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -24673,16 +24626,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
         onChange: function onChange(value) {
@@ -24692,7 +24645,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonColor2: value
           });
         }
-      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColor,
         onChange: function onChange(value) {
@@ -24700,7 +24653,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: linkButtonBorder,
         onChange: function onChange(val) {
@@ -24718,7 +24671,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadow,
         onChange: function onChange(value) {
@@ -24726,9 +24679,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
         onChange: function onChange(value) {
@@ -24738,7 +24691,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColorHover,
         onChange: function onChange(value) {
@@ -24746,7 +24699,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: linkButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -24754,7 +24707,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadowHover,
         onChange: function onChange(value) {
@@ -24762,7 +24715,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadowHover: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
         label: __('Radius'),
         value: linkButtonBorderRadius,
         onChange: function onChange(value) {
@@ -24804,7 +24757,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      })), Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+      })), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
@@ -24825,7 +24778,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      })) : /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      })) : /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
         gutter: gutter,
         columns: columns,
@@ -25764,23 +25717,8 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
-/* harmony import */ var _components_fields_border__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/fields/border */ "./src/components/fields/border.js");
-/* harmony import */ var _components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fields/boxshadow */ "./src/components/fields/boxshadow.js");
-/* harmony import */ var _components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/borderRadius */ "./src/components/fields/borderRadius.js");
-/* harmony import */ var _components_fields_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/color */ "./src/components/fields/color.js");
-/* harmony import */ var _components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
-/* harmony import */ var _components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/fields/iconList */ "./src/components/fields/iconList.js");
-/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
-/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
-/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
-/* harmony import */ var _components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/fields/tabs */ "./src/components/fields/tabs.js");
-/* harmony import */ var _components_fields_tab__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/fields/tab */ "./src/components/fields/tab.js");
-/* harmony import */ var _components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/fields/toggle */ "./src/components/fields/toggle.js");
-/* harmony import */ var _components_fields_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/fields/styles */ "./src/components/fields/styles.js");
-/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
-/* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/mosaic-images/mosaic.js");
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/mosaic-images/mosaic.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25827,30 +25765,34 @@ var _wp$blockEditor = wp.blockEditor,
     MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
     MediaUpload = _wp$blockEditor.MediaUpload,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
-    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls; // const { Tab, Tabs, Color,ColorAdvanced, Border ,Toggle, BorderRadius , BoxShadow, Styles,TestField,Background,IconList,Select,NumberField,Range,globalCustomSettings:{globalCustomAttributes, HoverEXSettings}, globalSettings: { globalSettingsPanel, animationSettings }, HelperFunction: { videoBackground }, CssGenerator: { CssGenerator }, withCSSGenerator, InspectorTabs, InspectorTab } = wp.wprigComponents
-
+    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    Tab = _wp$wprigComponents.Tab,
+    Tabs = _wp$wprigComponents.Tabs,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    Toggle = _wp$wprigComponents.Toggle,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    TestField = _wp$wprigComponents.TestField,
+    Background = _wp$wprigComponents.Background,
+    IconList = _wp$wprigComponents.IconList,
+    Select = _wp$wprigComponents.Select,
+    NumberField = _wp$wprigComponents.NumberField,
+    Range = _wp$wprigComponents.Range,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalCustomSettings,
+    globalCustomAttributes = _wp$wprigComponents$g.globalCustomAttributes,
+    HoverEXSettings = _wp$wprigComponents$g.HoverEXSettings,
+    _wp$wprigComponents$g2 = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g2.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g2.animationSettings,
+    videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
-    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var globalCustomSettings = {
-  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["globalCustomAttributes"],
-  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"]
-};
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
 
  // import 'jquery-mosaic/jquery.mosaic.min.css';
 // import 'jquery-mosaic/jquery.mosaic.min.js';
@@ -26102,9 +26044,9 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
-      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
         tabs: ['style', 'advance']
-      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
@@ -26241,7 +26183,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayEffect: val
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/React.createElement(Background, {
         parallax: true,
         value: modalOverlayBg,
         label: __('Background'),
@@ -26252,12 +26194,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             modalOverlayBg: val
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
         title: __('Hover Overlay Content')
-      }, /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable View'),
         value: enableViewButton,
         onChange: function onChange(val) {
@@ -26273,7 +26215,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
@@ -26281,7 +26223,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewIconName: value
           });
         }
-      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Size'),
         value: viewIconSize,
         onChange: function onChange(value) {
@@ -26299,7 +26241,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: viewFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -26308,16 +26250,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
         onChange: function onChange(value) {
@@ -26327,7 +26269,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonColor2: value
           });
         }
-      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColor,
         onChange: function onChange(value) {
@@ -26335,7 +26277,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: viewButtonBorder,
         onChange: function onChange(val) {
@@ -26353,7 +26295,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadow,
         onChange: function onChange(value) {
@@ -26361,9 +26303,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
         onChange: function onChange(value) {
@@ -26373,7 +26315,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: viewButtonBgColorHover,
         onChange: function onChange(value) {
@@ -26381,7 +26323,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: viewButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -26389,7 +26331,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: viewButtonShadowHover,
         onChange: function onChange(value) {
@@ -26397,7 +26339,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             viewButtonShadowHover: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
         label: __('Radius'),
         value: viewButtonBorderRadius,
         onChange: function onChange(value) {
@@ -26423,7 +26365,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonLabel: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      })), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Enable Link'),
         value: enableLinkButton,
         onChange: function onChange(val) {
@@ -26439,7 +26381,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonLabel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/React.createElement(IconList, {
         label: __('Link Icon'),
         value: linkIconName,
         onChange: function onChange(value) {
@@ -26447,7 +26389,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkIconName: value
           });
         }
-      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Link Icon Size'),
         value: linkIconSize,
         onChange: function onChange(value) {
@@ -26465,7 +26407,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      })), /*#__PURE__*/React.createElement(Styles, {
         value: linkFillType,
         onChange: function onChange(value) {
           return setAttributes({
@@ -26474,16 +26416,16 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         options: [{
           value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
           label: __('Fill')
         }, {
           value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
           label: __('Outline')
         }]
-      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
         onChange: function onChange(value) {
@@ -26493,7 +26435,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonColor2: value
           });
         }
-      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColor,
         onChange: function onChange(value) {
@@ -26501,7 +26443,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/React.createElement(Border, {
         label: __('Border'),
         value: linkButtonBorder,
         onChange: function onChange(val) {
@@ -26519,7 +26461,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadow,
         onChange: function onChange(value) {
@@ -26527,9 +26469,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadow: value
           });
         }
-      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      })), /*#__PURE__*/React.createElement(Tab, {
         tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, /*#__PURE__*/React.createElement(Color, {
         label: __('Text Color'),
         value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
         onChange: function onChange(value) {
@@ -26539,7 +26481,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonHoverColor2: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
         label: __('Background'),
         value: linkButtonBgColorHover,
         onChange: function onChange(value) {
@@ -26547,7 +26489,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBgColorHover: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/React.createElement(Color, {
         label: __('Border Color'),
         value: linkButtonBorderHoverColor,
         onChange: function onChange(value) {
@@ -26555,7 +26497,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonBorderHoverColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
         label: __('Box-Shadow'),
         value: linkButtonShadowHover,
         onChange: function onChange(value) {
@@ -26563,7 +26505,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             linkButtonShadowHover: value
           });
         }
-      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
         label: __('Radius'),
         value: linkButtonBorderRadius,
         onChange: function onChange(value) {
@@ -26605,13 +26547,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      }), Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+      }), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
       }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
         onSelect: function onSelect(newImages) {
           var newImgs = newImages.map(function (img) {
             return {
-              id: img.id,
               url: img.sizes.full.url,
               thumbnail: img.sizes.thumbnail.url,
               title: img.caption
@@ -26626,7 +26567,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      })) : /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      })) : /*#__PURE__*/React.createElement(_mosaic__WEBPACK_IMPORTED_MODULE_1__["default"], {
         className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
         maxRowHeight: maxRowHeight,
         innerGap: innerGap,
@@ -44803,177 +44744,171 @@ var Timeline = /*#__PURE__*/function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fields_alignments__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fields/alignments */ "./src/components/fields/alignments.js");
-/* harmony import */ var _fields_buttongroup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fields/buttongroup */ "./src/components/fields/buttongroup.js");
-/* harmony import */ var _fields_counter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fields/counter */ "./src/components/fields/counter.js");
-/* harmony import */ var _fields_dimension__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fields/dimension */ "./src/components/fields/dimension.js");
-/* harmony import */ var _fields_dropdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fields/dropdown */ "./src/components/fields/dropdown.js");
-/* harmony import */ var _fields_headings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fields/headings */ "./src/components/fields/headings.js");
-/* harmony import */ var _fields_innerPanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fields/innerPanel */ "./src/components/fields/innerPanel.js");
-/* harmony import */ var _fields_media__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fields/media */ "./src/components/fields/media.js");
-/* harmony import */ var _fields_margin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fields/margin */ "./src/components/fields/margin.js");
-/* harmony import */ var _fields_typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./fields/typography */ "./src/components/fields/typography.js");
-/* harmony import */ var _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fields/radioAdvanced */ "./src/components/fields/radioAdvanced.js");
-/* harmony import */ var _fields_numberField__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./fields/numberField */ "./src/components/fields/numberField.js");
-/* harmony import */ var _fields_select__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./fields/select */ "./src/components/fields/select.js");
-/* harmony import */ var _fields_shape__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./fields/shape */ "./src/components/fields/shape.js");
-/* harmony import */ var _fields_separator__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./fields/separator */ "./src/components/fields/separator.js");
-/* harmony import */ var _fields_url__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./fields/url */ "./src/components/fields/url.js");
-/* harmony import */ var _fields_padding__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./fields/padding */ "./src/components/fields/padding.js");
-/* harmony import */ var _fields_template__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./fields/template */ "./src/components/fields/template.js");
-/* harmony import */ var _fields_iconSelector__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./fields/iconSelector */ "./src/components/fields/iconSelector.js");
-/* harmony import */ var _fields_listSettings__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./fields/listSettings */ "./src/components/fields/listSettings.js");
-/* harmony import */ var _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./fields/wprigbutton */ "./src/components/fields/wprigbutton.js");
-/* harmony import */ var _css_generator__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./css-generator */ "./src/components/css-generator.js");
-/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../hooks */ "./src/hooks/index.js");
-/* harmony import */ var _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fields/headingToolbar */ "./src/components/fields/headingToolbar/index.js");
-/* harmony import */ var _fields_inline__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fields/inline */ "./src/components/fields/inline/index.js");
-/* harmony import */ var _InspectorSections__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./InspectorSections */ "./src/components/InspectorSections.js");
-/* harmony import */ var _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fields/buttonSettings */ "./src/components/fields/buttonSettings.js");
-/* harmony import */ var _fields_contextMenu__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fields/contextMenu */ "./src/components/fields/contextMenu.js");
- // import Background from "./fields/background"
-// import Border from "./fields/border"
+/* harmony import */ var _fields_background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fields/background */ "./src/components/fields/background.js");
+/* harmony import */ var _fields_border__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fields/border */ "./src/components/fields/border.js");
+/* harmony import */ var _fields_buttongroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fields/buttongroup */ "./src/components/fields/buttongroup.js");
+/* harmony import */ var _fields_counter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fields/counter */ "./src/components/fields/counter.js");
+/* harmony import */ var _fields_boxshadow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fields/boxshadow */ "./src/components/fields/boxshadow.js");
+/* harmony import */ var _fields_dimension__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fields/dimension */ "./src/components/fields/dimension.js");
+/* harmony import */ var _fields_dropdown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fields/dropdown */ "./src/components/fields/dropdown.js");
+/* harmony import */ var _fields_headings__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fields/headings */ "./src/components/fields/headings.js");
+/* harmony import */ var _fields_innerPanel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./fields/innerPanel */ "./src/components/fields/innerPanel.js");
+/* harmony import */ var _fields_iconList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fields/iconList */ "./src/components/fields/iconList.js");
+/* harmony import */ var _fields_media__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./fields/media */ "./src/components/fields/media.js");
+/* harmony import */ var _fields_margin__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./fields/margin */ "./src/components/fields/margin.js");
+/* harmony import */ var _fields_color__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./fields/color */ "./src/components/fields/color.js");
+/* harmony import */ var _fields_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./fields/styles */ "./src/components/fields/styles.js");
+/* harmony import */ var _fields_toggle__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./fields/toggle */ "./src/components/fields/toggle.js");
+/* harmony import */ var _fields_tabs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./fields/tabs */ "./src/components/fields/tabs.js");
+/* harmony import */ var _fields_tab__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./fields/tab */ "./src/components/fields/tab.js");
+/* harmony import */ var _fields_typography__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./fields/typography */ "./src/components/fields/typography.js");
+/* harmony import */ var _fields_borderRadius__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./fields/borderRadius */ "./src/components/fields/borderRadius.js");
+/* harmony import */ var _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./fields/radioAdvanced */ "./src/components/fields/radioAdvanced.js");
+/* harmony import */ var _fields_range__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./fields/range */ "./src/components/fields/range.js");
+/* harmony import */ var _fields_numberField__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./fields/numberField */ "./src/components/fields/numberField.js");
+/* harmony import */ var _fields_select__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fields/select */ "./src/components/fields/select.js");
+/* harmony import */ var _fields_shape__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fields/shape */ "./src/components/fields/shape.js");
+/* harmony import */ var _fields_separator__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fields/separator */ "./src/components/fields/separator.js");
+/* harmony import */ var _fields_url__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fields/url */ "./src/components/fields/url.js");
+/* harmony import */ var _fields_padding__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fields/padding */ "./src/components/fields/padding.js");
+/* harmony import */ var _fields_template__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./fields/template */ "./src/components/fields/template.js");
+/* harmony import */ var _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
+/* harmony import */ var _fields_iconSelector__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./fields/iconSelector */ "./src/components/fields/iconSelector.js");
+/* harmony import */ var _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./fields/listSettings */ "./src/components/fields/listSettings.js");
+/* harmony import */ var _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./fields/wprigbutton */ "./src/components/fields/wprigbutton.js");
+/* harmony import */ var _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./fields/globalsettings */ "./src/components/fields/globalsettings.js");
+/* harmony import */ var _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
+/* harmony import */ var _css_generator__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./css-generator */ "./src/components/css-generator.js");
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../hooks */ "./src/hooks/index.js");
+/* harmony import */ var _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./fields/headingToolbar */ "./src/components/fields/headingToolbar/index.js");
+/* harmony import */ var _fields_inline__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./fields/inline */ "./src/components/fields/inline/index.js");
+/* harmony import */ var _InspectorTabs__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./InspectorTabs */ "./src/components/InspectorTabs.js");
+/* harmony import */ var _InspectorTab__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./InspectorTab */ "./src/components/InspectorTab.js");
+/* harmony import */ var _InspectorSections__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./InspectorSections */ "./src/components/InspectorSections.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./helpers */ "./src/components/helpers.js");
+/* harmony import */ var _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./fields/buttonSettings */ "./src/components/fields/buttonSettings.js");
+/* harmony import */ var _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./fields/contextMenu */ "./src/components/fields/contextMenu.js");
+/* harmony import */ var _fields_testField__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./fields/testField */ "./src/components/fields/testField.js");
+var _wp$wprigComponents;
 
-
- // import BoxShadow from "./fields/boxshadow"
-
-
-
-
- // import IconList from "./fields/iconList"
-
-
- // import Color from './fields/color'
-// import Styles from './fields/styles'
-// import Toggle from './fields/toggle'
-// import Tabs from './fields/tabs'
-// import Tab from './fields/tab'
-
- // import BorderRadius from './fields/borderRadius'
-
- // import Range from './fields/range'
-
-
-
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
- // import ColorAdvanced from './fields/colorAdvance'
-
-
-
- // import { globalAttributes, globalSettingsPanel, animationSettings, interactionSettings } from './fields/globalsettings'
-// import { globalCustomAttributes, HoverEXSettings} from './fields/globalCustomSettings'
 
 
 
 
- // import InspectorTabs from './InspectorTabs'
-// import InspectorTab from './InspectorTab'
-
- // import {
-//     _equal,
-//     animationAttr,
-//     selectValue,
-//     isObject,
-//     isArray,
-//     setValue,
-//     videoBackground,
-//     parseResponsiveViewPort,
-//     IsInteraction,
-//     copyToClipboard
-// } from './helpers';
 
 
- // import TestField from './fields/testField'
 
-wp.wprigComponents = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wp.wprigComponents = (_wp$wprigComponents = {
   Alignment: _fields_alignments__WEBPACK_IMPORTED_MODULE_0__["default"],
-  // IconList,
-  // Border,
+  IconList: _fields_iconList__WEBPACK_IMPORTED_MODULE_10__["default"],
+  Border: _fields_border__WEBPACK_IMPORTED_MODULE_2__["default"],
   ContextMenu: {
-    ContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_27__["ContextMenu"],
-    handleContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_27__["handleContextMenu"]
+    ContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__["ContextMenu"],
+    handleContextMenu: _fields_contextMenu__WEBPACK_IMPORTED_MODULE_44__["handleContextMenu"]
   },
   wprigList: {
-    listAttributes: _fields_listSettings__WEBPACK_IMPORTED_MODULE_19__["listAttributes"],
-    listSettings: _fields_listSettings__WEBPACK_IMPORTED_MODULE_19__["listSettings"]
+    listAttributes: _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__["listAttributes"],
+    listSettings: _fields_listSettings__WEBPACK_IMPORTED_MODULE_31__["listSettings"]
   },
-  // Background,
-  ButtonGroup: _fields_buttongroup__WEBPACK_IMPORTED_MODULE_1__["default"],
-  // BorderRadius,
-  // Color,
-  Dimension: _fields_dimension__WEBPACK_IMPORTED_MODULE_3__["default"],
-  Dropdown: _fields_dropdown__WEBPACK_IMPORTED_MODULE_4__["default"],
-  NumberField: _fields_numberField__WEBPACK_IMPORTED_MODULE_11__["default"],
-  RadioAdvanced: _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_10__["default"],
-  Counter: _fields_counter__WEBPACK_IMPORTED_MODULE_2__["default"],
-  // Range,
-  // BoxShadow,
-  // Tab,
-  // Tabs,
-  // Toggle,
-  Typography: _fields_typography__WEBPACK_IMPORTED_MODULE_9__["default"],
-  IconSelector: _fields_iconSelector__WEBPACK_IMPORTED_MODULE_18__["default"],
-  Padding: _fields_padding__WEBPACK_IMPORTED_MODULE_16__["default"],
-  // globalSettings: {
-  //     globalAttributes,
-  //     animationSettings,
-  //     interactionSettings,
-  //     globalSettingsPanel,
-  // },
-  // globalCustomSettings:{
-  //     globalCustomAttributes,
-  //     HoverEXSettings
-  // },
-  // ColorAdvanced,
+  Background: _fields_background__WEBPACK_IMPORTED_MODULE_1__["default"],
+  ButtonGroup: _fields_buttongroup__WEBPACK_IMPORTED_MODULE_3__["default"],
+  BorderRadius: _fields_borderRadius__WEBPACK_IMPORTED_MODULE_19__["default"],
+  Color: _fields_color__WEBPACK_IMPORTED_MODULE_13__["default"],
+  Dimension: _fields_dimension__WEBPACK_IMPORTED_MODULE_6__["default"],
+  Dropdown: _fields_dropdown__WEBPACK_IMPORTED_MODULE_7__["default"],
+  NumberField: _fields_numberField__WEBPACK_IMPORTED_MODULE_22__["default"],
+  RadioAdvanced: _fields_radioAdvanced__WEBPACK_IMPORTED_MODULE_20__["default"],
+  Counter: _fields_counter__WEBPACK_IMPORTED_MODULE_4__["default"],
+  Range: _fields_range__WEBPACK_IMPORTED_MODULE_21__["default"],
+  BoxShadow: _fields_boxshadow__WEBPACK_IMPORTED_MODULE_5__["default"],
+  Tab: _fields_tab__WEBPACK_IMPORTED_MODULE_17__["default"],
+  Tabs: _fields_tabs__WEBPACK_IMPORTED_MODULE_16__["default"],
+  Toggle: _fields_toggle__WEBPACK_IMPORTED_MODULE_15__["default"],
+  Typography: _fields_typography__WEBPACK_IMPORTED_MODULE_18__["default"],
+  IconSelector: _fields_iconSelector__WEBPACK_IMPORTED_MODULE_30__["default"],
+  Padding: _fields_padding__WEBPACK_IMPORTED_MODULE_27__["default"],
+  globalSettings: {
+    globalAttributes: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["globalAttributes"],
+    animationSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["animationSettings"],
+    interactionSettings: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["interactionSettings"],
+    globalSettingsPanel: _fields_globalsettings__WEBPACK_IMPORTED_MODULE_33__["globalSettingsPanel"]
+  },
+  globalCustomSettings: {
+    globalCustomAttributes: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__["globalCustomAttributes"],
+    HoverEXSettings: _fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_34__["HoverEXSettings"]
+  },
+  ColorAdvanced: _fields_colorAdvance__WEBPACK_IMPORTED_MODULE_29__["default"],
   CssGenerator: {
-    CssGenerator: _css_generator__WEBPACK_IMPORTED_MODULE_21__["CssGenerator"],
-    objectReplace: _css_generator__WEBPACK_IMPORTED_MODULE_21__["objectReplace"],
-    objectAppend: _css_generator__WEBPACK_IMPORTED_MODULE_21__["objectAppend"],
-    singleField: _css_generator__WEBPACK_IMPORTED_MODULE_21__["singleField"]
+    CssGenerator: _css_generator__WEBPACK_IMPORTED_MODULE_35__["CssGenerator"],
+    objectReplace: _css_generator__WEBPACK_IMPORTED_MODULE_35__["objectReplace"],
+    objectAppend: _css_generator__WEBPACK_IMPORTED_MODULE_35__["objectAppend"],
+    singleField: _css_generator__WEBPACK_IMPORTED_MODULE_35__["singleField"]
   },
-  Headings: _fields_headings__WEBPACK_IMPORTED_MODULE_5__["default"],
-  HeadingToolbar: _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_23__["default"],
-  Media: _fields_media__WEBPACK_IMPORTED_MODULE_7__["default"],
-  Margin: _fields_margin__WEBPACK_IMPORTED_MODULE_8__["default"],
-  // HelperFunction: {
-  //     _equal,
-  //     animationAttr,
-  //     selectValue,
-  //     isObject,
-  //     isArray,
-  //     setValue,
-  //     videoBackground,
-  //     parseResponsiveViewPort,
-  //     IsInteraction,
-  //     copyToClipboard
-  // },
-  // IconList,
-  InnerPanel: _fields_innerPanel__WEBPACK_IMPORTED_MODULE_6__["default"],
-  Separator: _fields_separator__WEBPACK_IMPORTED_MODULE_14__["default"],
-  Select: _fields_select__WEBPACK_IMPORTED_MODULE_12__["default"],
-  Shape: _fields_shape__WEBPACK_IMPORTED_MODULE_13__["default"],
-  // Styles,
-  Url: _fields_url__WEBPACK_IMPORTED_MODULE_15__["default"],
-  Inline: {
-    InlineToolbar: _fields_inline__WEBPACK_IMPORTED_MODULE_24__["InlineToolbar"],
-    InlineSpacer: _fields_inline__WEBPACK_IMPORTED_MODULE_24__["InlineSpacer"],
-    InlineSelector: _fields_inline__WEBPACK_IMPORTED_MODULE_24__["InlineSelector"]
-  },
-  wprigButton: {
-    buttonAttributes: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_26__["buttonAttributes"],
-    buttonSettings: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_26__["buttonSettings"]
-  },
-  Templates: _fields_template__WEBPACK_IMPORTED_MODULE_17__["default"],
-  withCSSGenerator: _hooks__WEBPACK_IMPORTED_MODULE_22__["withCSSGenerator"],
-  // InspectorTabs,
-  // InspectorTab,
-  InspectorSections: _InspectorSections__WEBPACK_IMPORTED_MODULE_25__["default"],
-  WPRigButtonEdit: _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_20__["WPRigButtonEdit"],
-  WPRigButtonSave: _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_20__["WPRigButtonSave"] // TestField
-
-};
+  Headings: _fields_headings__WEBPACK_IMPORTED_MODULE_8__["default"],
+  HeadingToolbar: _fields_headingToolbar__WEBPACK_IMPORTED_MODULE_37__["default"],
+  Media: _fields_media__WEBPACK_IMPORTED_MODULE_11__["default"],
+  Margin: _fields_margin__WEBPACK_IMPORTED_MODULE_12__["default"],
+  HelperFunction: {
+    _equal: _helpers__WEBPACK_IMPORTED_MODULE_42__["_equal"],
+    animationAttr: _helpers__WEBPACK_IMPORTED_MODULE_42__["animationAttr"],
+    selectValue: _helpers__WEBPACK_IMPORTED_MODULE_42__["selectValue"],
+    isObject: _helpers__WEBPACK_IMPORTED_MODULE_42__["isObject"],
+    isArray: _helpers__WEBPACK_IMPORTED_MODULE_42__["isArray"],
+    setValue: _helpers__WEBPACK_IMPORTED_MODULE_42__["setValue"],
+    videoBackground: _helpers__WEBPACK_IMPORTED_MODULE_42__["videoBackground"],
+    parseResponsiveViewPort: _helpers__WEBPACK_IMPORTED_MODULE_42__["parseResponsiveViewPort"],
+    IsInteraction: _helpers__WEBPACK_IMPORTED_MODULE_42__["IsInteraction"],
+    copyToClipboard: _helpers__WEBPACK_IMPORTED_MODULE_42__["copyToClipboard"]
+  }
+}, _defineProperty(_wp$wprigComponents, "IconList", _fields_iconList__WEBPACK_IMPORTED_MODULE_10__["default"]), _defineProperty(_wp$wprigComponents, "InnerPanel", _fields_innerPanel__WEBPACK_IMPORTED_MODULE_9__["default"]), _defineProperty(_wp$wprigComponents, "Separator", _fields_separator__WEBPACK_IMPORTED_MODULE_25__["default"]), _defineProperty(_wp$wprigComponents, "Select", _fields_select__WEBPACK_IMPORTED_MODULE_23__["default"]), _defineProperty(_wp$wprigComponents, "Shape", _fields_shape__WEBPACK_IMPORTED_MODULE_24__["default"]), _defineProperty(_wp$wprigComponents, "Styles", _fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"]), _defineProperty(_wp$wprigComponents, "Url", _fields_url__WEBPACK_IMPORTED_MODULE_26__["default"]), _defineProperty(_wp$wprigComponents, "Inline", {
+  InlineToolbar: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineToolbar"],
+  InlineSpacer: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineSpacer"],
+  InlineSelector: _fields_inline__WEBPACK_IMPORTED_MODULE_38__["InlineSelector"]
+}), _defineProperty(_wp$wprigComponents, "wprigButton", {
+  buttonAttributes: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__["buttonAttributes"],
+  buttonSettings: _fields_buttonSettings__WEBPACK_IMPORTED_MODULE_43__["buttonSettings"]
+}), _defineProperty(_wp$wprigComponents, "Templates", _fields_template__WEBPACK_IMPORTED_MODULE_28__["default"]), _defineProperty(_wp$wprigComponents, "withCSSGenerator", _hooks__WEBPACK_IMPORTED_MODULE_36__["withCSSGenerator"]), _defineProperty(_wp$wprigComponents, "InspectorTabs", _InspectorTabs__WEBPACK_IMPORTED_MODULE_39__["default"]), _defineProperty(_wp$wprigComponents, "InspectorTab", _InspectorTab__WEBPACK_IMPORTED_MODULE_40__["default"]), _defineProperty(_wp$wprigComponents, "InspectorSections", _InspectorSections__WEBPACK_IMPORTED_MODULE_41__["default"]), _defineProperty(_wp$wprigComponents, "WPRigButtonEdit", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__["WPRigButtonEdit"]), _defineProperty(_wp$wprigComponents, "WPRigButtonSave", _fields_wprigbutton__WEBPACK_IMPORTED_MODULE_32__["WPRigButtonSave"]), _defineProperty(_wp$wprigComponents, "TestField", _fields_testField__WEBPACK_IMPORTED_MODULE_45__["default"]), _wp$wprigComponents);
 
 /***/ }),
 

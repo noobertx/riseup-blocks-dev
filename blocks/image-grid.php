@@ -66,6 +66,11 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
+                'enableViewButton' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ],  
+          
 
                 'modalOverlayBg' => [
                     'type' => 'object',
