@@ -23555,7 +23555,10 @@ var Edit = /*#__PURE__*/function (_Component) {
       var _this$props$attribute2 = this.props.attributes,
           enableViewButton = _this$props$attribute2.enableViewButton,
           viewButtonLabel = _this$props$attribute2.viewButtonLabel,
-          viewIconName = _this$props$attribute2.viewIconName;
+          viewIconName = _this$props$attribute2.viewIconName,
+          enableLinkButton = _this$props$attribute2.enableLinkButton,
+          linkButtonLabel = _this$props$attribute2.linkButtonLabel,
+          linkIconName = _this$props$attribute2.linkIconName;
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -23575,7 +23578,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(viewIconName)
-          }), viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+          }), viewButtonLabel), enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(linkIconName)
+          }), linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.thumbnail,
             "data-image": el.url,
             onClick: function onClick() {
@@ -23637,6 +23645,24 @@ var Edit = /*#__PURE__*/function (_Component) {
           viewButtonShadowHover = _this$props3$attribut.viewButtonShadowHover,
           viewIconName = _this$props3$attribut.viewIconName,
           viewIconSize = _this$props3$attribut.viewIconSize,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
+          linkButtonType = _this$props3$attribut.linkButtonType,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          linkButtonIcon = _this$props3$attribut.linkButtonIcon,
+          linkFillType = _this$props3$attribut.linkFillType,
+          linkButtonColor = _this$props3$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props3$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props3$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props3$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props3$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props3$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props3$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props3$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props3$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props3$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
+          linkIconName = _this$props3$attribut.linkIconName,
+          linkIconSize = _this$props3$attribut.linkIconSize,
           modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var _this$state = this.state,
@@ -23967,6 +23993,164 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Link'),
+        value: enableLinkButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableLinkButton: val
+          });
+        }
+      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "link Button Text",
+        value: linkButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(IconList, {
+        label: __('Link Icon'),
+        value: linkIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            linkIconName: value
+          });
+        }
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Link Icon Size'),
+        value: linkIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Styles, {
+        value: linkFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonColor: value
+          }) : setAttributes({
+            linkButtonColor2: value
+          });
+        }
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: linkButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: linkButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            linkButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: linkButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonHoverColor: value
+          }) : setAttributes({
+            linkButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: linkButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: linkButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: linkButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: linkButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderRadius: value
           });
         },
         min: 0,
