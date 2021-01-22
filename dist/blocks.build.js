@@ -6491,6 +6491,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/masonry-image-grid/style.scss":
+/*!*******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/masonry-image-grid/style.scss ***!
+  \*******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        height: 100%; }\n\n.wprig-masonry-gallery {\n  text-align: center;\n  max-width: 100vw;\n  margin: 2.5vw auto; }\n  .wprig-masonry-gallery .cells {\n    padding: 5px;\n    box-sizing: border-box;\n    display: inline;\n    max-width: 25%; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss":
 /*!******************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss ***!
@@ -10549,6 +10567,293 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-masonry/es/Masonry/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/react-responsive-masonry/es/Masonry/index.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _jsxFileName = "/Users/cedric/Code/react-responsive-masonry/src/Masonry/index.js";
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+var Masonry = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose(Masonry, _React$Component);
+
+  function Masonry() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Masonry.prototype;
+
+  _proto.getColumns = function getColumns() {
+    var _this$props = this.props,
+        children = _this$props.children,
+        columnsCount = _this$props.columnsCount;
+    var columns = Array.from({
+      length: columnsCount
+    }, function () {
+      return [];
+    });
+
+    _react["default"].Children.forEach(children, function (child, index) {
+      columns[index % columnsCount].push(child);
+    });
+
+    return columns;
+  };
+
+  _proto.renderColumn = function renderColumn(column) {
+    var _this = this;
+
+    var gutter = this.props.gutter;
+    return column.map(function (item, i) {
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        key: i,
+        style: {
+          marginTop: i > 0 ? gutter : undefined
+        },
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 7
+        }
+      }, item);
+    });
+  };
+
+  _proto.renderColumns = function renderColumns() {
+    var _this2 = this;
+
+    var gutter = this.props.gutter;
+    return this.getColumns().map(function (column, i) {
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        key: i,
+        style: {
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignContent: "stretch",
+          flex: 1,
+          width: 0,
+          marginLeft: i > 0 ? gutter : undefined
+        },
+        __self: _this2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 7
+        }
+      }, _this2.renderColumn(column));
+    });
+  };
+
+  _proto.render = function render() {
+    var _this$props2 = this.props,
+        className = _this$props2.className,
+        style = _this$props2.style;
+    return /*#__PURE__*/_react["default"].createElement("div", {
+      style: _extends({
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignContent: "stretch",
+        boxSizing: "border-box",
+        width: "100%"
+      }, style),
+      className: className,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 7
+      }
+    }, this.renderColumns());
+  };
+
+  return Masonry;
+}(_react["default"].Component);
+
+Masonry.propTypes =  true ? {
+  children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].node), _propTypes["default"].node]).isRequired,
+  columnsCount: _propTypes["default"].number,
+  gutter: _propTypes["default"].string,
+  className: _propTypes["default"].string,
+  style: _propTypes["default"].object
+} : undefined;
+Masonry.defaultProps = {
+  columnsCount: 3,
+  gutter: "0",
+  className: null,
+  style: {}
+};
+var _default = Masonry;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-masonry/es/ResponsiveMasonry/index.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/react-responsive-masonry/es/ResponsiveMasonry/index.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _this = void 0,
+    _jsxFileName = "/Users/cedric/Code/react-responsive-masonry/src/ResponsiveMasonry/index.js";
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var DEFAULT_COLUMNS_COUNT = 1;
+
+var getWindowWidth = function getWindowWidth() {
+  if (typeof window === "undefined") return null;
+  return window.innerWidth;
+};
+
+var useWindowWidth = function useWindowWidth() {
+  var _useState = (0, _react.useState)(getWindowWidth()),
+      width = _useState[0],
+      setWidth = _useState[1];
+
+  var hasWindow = typeof window !== "undefined";
+  var handleResize = (0, _react.useCallback)(function () {
+    setWidth(getWindowWidth());
+  }, []);
+  (0, _react.useEffect)(function () {
+    if (hasWindow) {
+      window.addEventListener("resize", handleResize);
+      return function () {
+        return window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, [hasWindow, handleResize]);
+  return width;
+};
+
+var MasonryResponsive = function MasonryResponsive(_ref) {
+  var columnsCountBreakPoints = _ref.columnsCountBreakPoints,
+      children = _ref.children,
+      className = _ref.className,
+      style = _ref.style;
+  var windowWidth = useWindowWidth();
+  var columnsCount = (0, _react.useMemo)(function () {
+    var breakPoints = Object.keys(columnsCountBreakPoints).sort(function (a, b) {
+      return a - b;
+    });
+    var count = breakPoints.length > 0 ? columnsCountBreakPoints[breakPoints[0]] : DEFAULT_COLUMNS_COUNT;
+    breakPoints.forEach(function (breakPoint) {
+      if (breakPoint < windowWidth) {
+        count = columnsCountBreakPoints[breakPoint];
+      }
+    });
+    return count;
+  }, [windowWidth, columnsCountBreakPoints]);
+  return /*#__PURE__*/_react["default"].createElement("div", {
+    className: className,
+    style: style,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 5
+    }
+  }, _react["default"].Children.map(children, function (child, index) {
+    return _react["default"].cloneElement(child, {
+      key: index,
+      columnsCount: columnsCount
+    });
+  }));
+};
+
+MasonryResponsive.propTypes =  true ? {
+  children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].node), _propTypes["default"].node]).isRequired,
+  columnsCountBreakPoints: _propTypes["default"].object,
+  className: _propTypes["default"].string,
+  style: _propTypes["default"].object
+} : undefined;
+MasonryResponsive.defaultProps = {
+  columnsCountBreakPoints: {
+    350: 1,
+    750: 2,
+    900: 3
+  },
+  className: null,
+  style: null
+};
+var _default = MasonryResponsive;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-masonry/es/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-responsive-masonry/es/index.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "ResponsiveMasonry", {
+  enumerable: true,
+  get: function get() {
+    return _ResponsiveMasonry["default"];
+  }
+});
+exports["default"] = void 0;
+
+var _Masonry = _interopRequireDefault(__webpack_require__(/*! ./Masonry */ "./node_modules/react-responsive-masonry/es/Masonry/index.js"));
+
+var _ResponsiveMasonry = _interopRequireDefault(__webpack_require__(/*! ./ResponsiveMasonry */ "./node_modules/react-responsive-masonry/es/ResponsiveMasonry/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var _default = _Masonry["default"];
+exports["default"] = _default;
 
 /***/ }),
 
@@ -21780,10 +22085,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_renderfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/renderfield */ "./src/components/renderfield.js");
 /* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
 /* harmony import */ var _blocks_mosaic_images_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/mosaic-images/block */ "./src/blocks/mosaic-images/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_masonry_image_grid_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/masonry-image-grid/block */ "./src/blocks/masonry-image-grid/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -21826,8 +22132,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/image-carousel/block";
 
 
- // import "./blocks/masonry-image-grid/block";
-// import "./blocks/text/block";
+
+ // import "./blocks/text/block";
 // import "./blocks/timeline/block";
 // import "./blocks/progressbar/block";
 // import "./blocks/modal/block";
@@ -21878,7 +22184,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_5__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_6__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -22488,6 +22794,1196 @@ registerBlockType('wprig/image-grid', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/image-grid/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/masonry-image-grid/Edit.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/masonry-image-grid/Edit.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
+/* harmony import */ var _components_fields_border__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/border */ "./src/components/fields/border.js");
+/* harmony import */ var _components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/fields/boxshadow */ "./src/components/fields/boxshadow.js");
+/* harmony import */ var _components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fields/borderRadius */ "./src/components/fields/borderRadius.js");
+/* harmony import */ var _components_fields_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/color */ "./src/components/fields/color.js");
+/* harmony import */ var _components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
+/* harmony import */ var _components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/iconList */ "./src/components/fields/iconList.js");
+/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
+/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
+/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
+/* harmony import */ var _components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/fields/tabs */ "./src/components/fields/tabs.js");
+/* harmony import */ var _components_fields_tab__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/fields/tab */ "./src/components/fields/tab.js");
+/* harmony import */ var _components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/fields/toggle */ "./src/components/fields/toggle.js");
+/* harmony import */ var _components_fields_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/fields/styles */ "./src/components/fields/styles.js");
+/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
+/* harmony import */ var _image_masonry__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./image-masonry */ "./src/blocks/masonry-image-grid/image-masonry.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var compose = wp.compose.compose;
+var _wp$data = wp.data,
+    select = _wp$data.select,
+    withDispatch = _wp$data.withDispatch;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    TextControl = _wp$components.TextControl,
+    SelectControl = _wp$components.SelectControl,
+    Tooltip = _wp$components.Tooltip,
+    Button = _wp$components.Button,
+    RangeControl = _wp$components.RangeControl,
+    FormFileUpload = _wp$components.FormFileUpload;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
+    MediaUpload = _wp$blockEditor.MediaUpload,
+    InnerBlocks = _wp$blockEditor.InnerBlocks,
+    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls; // const { Tab, Tabs, Color,ColorAdvanced, Border ,Toggle, BorderRadius , BoxShadow, Styles,TestField,Background,IconList,Range, globalSettings: { globalSettingsPanel, animationSettings },globalCustomSettings:{globalCustomAttributes, HoverEXSettings},  HelperFunction: { videoBackground }, CssGenerator: { CssGenerator }, withCSSGenerator, InspectorTabs, InspectorTab } = wp.wprigComponents
+
+var _wp$wprigComponents = wp.wprigComponents,
+    CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var globalCustomSettings = {
+  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["globalCustomAttributes"],
+  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["HoverEXSettings"]
+}; // import Masonry from "react-responsive-masonry"
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      openModal: false,
+      imageCollection: [],
+      imageUrl: "",
+      openClass: ""
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          _this$props$attribute = _this$props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          imageItems = _this$props$attribute.imageItems;
+      var imageCollection = this.state.imageCollection;
+
+      var _select = select('core/block-editor'),
+          getBlockRootClientId = _select.getBlockRootClientId;
+
+      var parentClientId = getBlockRootClientId(clientId);
+
+      if (parentClientId) {
+        this.setState({
+          hideRowSettings: true
+        });
+      }
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client,
+          childRow: parentClientId ? true : false
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client,
+          childRow: parentClientId ? true : false
+        });
+      }
+
+      this.setState({
+        imageCollection: imageItems
+      });
+
+      if (jQuery(this.el).find("#gallery")) {// jQuery(this.el).find("#gallery").unitegallery().destroy()
+        // jQuery(this.el).find("#gallery").unitegallery()
+      }
+    }
+  }, {
+    key: "componentWillUpdate",
+    value: function componentWillUpdate(nextProps, nextState) {
+      var _this$props2 = this.props,
+          setAttributes = _this$props2.setAttributes,
+          clientId = _this$props2.clientId,
+          _this$props2$attribut = _this$props2.attributes,
+          uniqueId = _this$props2$attribut.uniqueId,
+          imageItems = _this$props2$attribut.imageItems;
+
+      if (imageItems != nextProps.attributes.imageItems) {
+        this.setState({
+          imageCollection: imageItems
+        });
+      }
+    }
+  }, {
+    key: "openModal",
+    value: function openModal(el) {
+      console.log(el);
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      this.setState({
+        openClass: "open"
+      });
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.setState({
+        openModal: false,
+        imageUrl: ""
+      });
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      this.setState({
+        openClass: ""
+      });
+      var t = this;
+      setTimeout(function () {
+        t.closeModal();
+      }, 250);
+    }
+  }, {
+    key: "renderClick",
+    value: function renderClick(el) {
+      console.log(this);
+      this.setState({
+        openModal: true,
+        imageUrl: el.url
+      });
+      var t = this;
+      setTimeout(function () {
+        t.openOverlay();
+      }, 250);
+    }
+  }, {
+    key: "renderCells",
+    value: function renderCells(imageItems) {
+      var _this2 = this;
+
+      console.log(imageItems);
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("div", {
+            "class": ""
+          }, /*#__PURE__*/React.createElement("img", {
+            src: el.thumbnail,
+            "data-image": el.url,
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          }));
+        });
+      }
+    }
+  }, {
+    key: "renderImages",
+    value: function renderImages(imageItems) {
+      if (imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          console.log(el);
+          return /*#__PURE__*/React.createElement("a", {
+            href: el.url
+          }, /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            "data-description": "This is a Lemon Slice"
+          }));
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$props3 = this.props,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          className = _this$props3$attribut.className,
+          imageItems = _this$props3$attribut.imageItems,
+          columns = _this$props3$attribut.columns,
+          rowGap = _this$props3$attribut.rowGap,
+          gutter = _this$props3$attribut.gutter,
+          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
+          overlayEffect = _this$props3$attribut.overlayEffect,
+          enableHoverFx = _this$props3$attribut.enableHoverFx,
+          hoverEffect = _this$props3$attribut.hoverEffect,
+          hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          viewButtonType = _this$props3$attribut.viewButtonType,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props3$attribut.viewButtonIcon,
+          viewFillType = _this$props3$attribut.viewFillType,
+          viewButtonColor = _this$props3$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props3$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props3$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props3$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props3$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props3$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props3$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props3$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props3$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props3$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props3$attribut.viewButtonShadowHover,
+          viewIconName = _this$props3$attribut.viewIconName,
+          viewIconSize = _this$props3$attribut.viewIconSize,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
+          linkButtonType = _this$props3$attribut.linkButtonType,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          linkButtonIcon = _this$props3$attribut.linkButtonIcon,
+          linkFillType = _this$props3$attribut.linkFillType,
+          linkButtonColor = _this$props3$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props3$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props3$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props3$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props3$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props3$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props3$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props3$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props3$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props3$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
+          linkIconName = _this$props3$attribut.linkIconName,
+          linkIconSize = _this$props3$attribut.linkIconSize,
+          overlayLayout = _this$props3$attribut.overlayLayout,
+          modalLayout = _this$props3$attribut.modalLayout,
+          setAttributes = _this$props3.setAttributes;
+      var overlayParams = {
+        enableViewButton: enableViewButton,
+        viewButtonType: viewButtonType,
+        viewButtonLabel: viewButtonLabel,
+        viewButtonIcon: viewButtonIcon,
+        viewIconName: viewIconName,
+        enableLinkButton: enableLinkButton,
+        linkButtonType: linkButtonType,
+        linkButtonLabel: linkButtonLabel,
+        linkButtonIcon: linkButtonIcon,
+        linkIconName: linkIconName,
+        overlayLayout: overlayLayout
+      };
+      var _this$state = this.state,
+          device = _this$state.device,
+          imageCollection = _this$state.imageCollection;
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Grid Settings')
+      }, /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
+        multiple: true,
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        label: __('Number of Columns'),
+        min: 0,
+        max: 15,
+        value: columns,
+        onChange: function onChange(val) {
+          return setAttributes({
+            columns: val
+          });
+        },
+        unit: [''],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        label: __('Gutter'),
+        min: 0,
+        max: 100,
+        value: gutter,
+        onChange: function onChange(val) {
+          return setAttributes({
+            gutter: val
+          });
+        },
+        unit: [''],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Lightbox Settings')
+      }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Effect'),
+        value: overlayEffect,
+        options: [{
+          label: 'Fade in Scale',
+          value: 'fade-in-scale'
+        }, {
+          label: 'Newspaper',
+          value: 'news-paper'
+        }, {
+          label: 'Fall',
+          value: 'fall'
+        }, {
+          label: 'Side Fall',
+          value: 'side-fall'
+        }, {
+          label: 'Sticky Up',
+          value: 'sticky-up'
+        }, {
+          label: '3D Flip Horizontal',
+          value: 'flip-horizontal'
+        }, {
+          label: '3D Flip Vertical',
+          value: 'flip-vertical'
+        }, {
+          label: '3D Sign',
+          value: 'sign'
+        }, {
+          label: 'Super Scaled',
+          value: 'super-scaled'
+        }, {
+          label: 'Just ME',
+          value: 'just-me'
+        }, {
+          label: '3D Split',
+          value: 'split'
+        }, {
+          label: '3D Rotate Bottom',
+          value: 'rotate-bottom'
+        }, {
+          label: '3D Rotate In Left Bottom',
+          value: 'rotate-in-left'
+        }, {
+          label: 'Slip From Top',
+          value: 'slip-from-top'
+        }, {
+          label: 'Slide Down',
+          value: 'overlay-slidedown'
+        }, {
+          label: 'Slide Up',
+          value: 'overlay-slideup'
+        }, {
+          label: 'Slide Left',
+          value: 'overlay-slideleft'
+        }, {
+          label: 'Slide Right',
+          value: 'overlay-slideright'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayEffect: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Layout'),
+        value: modalLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'modal-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'modal-layout-2'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalLayout: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        parallax: true,
+        value: modalOverlayBg,
+        label: __('Background'),
+        externalImage: true,
+        sources: ['image', 'gradient', 'video'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalOverlayBg: val
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        key: 'advance'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: true,
+        title: __('Hover Overlay Content')
+      }, /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        label: __('Enable View'),
+        value: enableViewButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableViewButton: val
+          });
+        }
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "View Button Text",
+        value: viewButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Icon'),
+        value: viewIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            viewIconName: value
+          });
+        }
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        label: __('Size'),
+        value: viewIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        value: viewFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonColor: value
+          }) : setAttributes({
+            viewButtonColor2: value
+          });
+        }
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Background'),
+        value: viewButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        label: __('Border'),
+        value: viewButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            viewButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Box-Shadow'),
+        value: viewButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonHoverColor: value
+          }) : setAttributes({
+            viewButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Background'),
+        value: viewButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Border Color'),
+        value: viewButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Box-Shadow'),
+        value: viewButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadowHover: value
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        label: __('Enable Link'),
+        value: enableLinkButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableLinkButton: val
+          });
+        }
+      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "link Button Text",
+        value: linkButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Link Icon'),
+        value: linkIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            linkIconName: value
+          });
+        }
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        label: __('Link Icon Size'),
+        value: linkIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        value: linkFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_16__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonColor: value
+          }) : setAttributes({
+            linkButtonColor2: value
+          });
+        }
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Background'),
+        value: linkButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        label: __('Border'),
+        value: linkButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            linkButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Box-Shadow'),
+        value: linkButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonHoverColor: value
+          }) : setAttributes({
+            linkButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Background'),
+        value: linkButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Border Color'),
+        value: linkButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Box-Shadow'),
+        value: linkButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: __('Radius'),
+        value: linkButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      })), Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_14__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), imageItems.length == 0 ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId)
+      }, /*#__PURE__*/React.createElement(MediaPlaceholder, {
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return {
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption,
+              id: img.id
+            };
+          });
+          setAttributes({
+            imageItems: newImgs
+          });
+        },
+        labels: {
+          title: "Select Images"
+        },
+        allowedTypes: ["image"],
+        multiple: true
+      })) : /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_15__["default"], {
+        className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
+        gutter: gutter,
+        columns: columns,
+        overlayEffect: overlayEffect,
+        enableHoverFx: enableHoverFx,
+        hoverEffect: hoverEffect,
+        modalLayout: modalLayout,
+        overlayParams: overlayParams,
+        hoverEffectDirection: hoverEffectDirection,
+        id: "wprig-block-".concat(uniqueId),
+        images: imageItems
+      }));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/masonry-image-grid/block.js":
+/*!************************************************!*\
+  !*** ./src/blocks/masonry-image-grid/block.js ***!
+  \************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit */ "./src/blocks/masonry-image-grid/Edit.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/masonry-image-grid/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+var InnerBlocks = wp.blockEditor.InnerBlocks;
+registerBlockType('wprig/masonry-image-grid', {
+  title: __('Masonry-Image Grid'),
+  category: 'wprig-blocks',
+  description: 'Image Grid',
+  icon: 'universal-access-alt',
+  supports: {
+    align: ['wide', 'center', 'full'],
+    html: false
+  },
+  keywords: [__('image', 'image grid')],
+  // attributes,
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_0__["default"],
+  save: function save(props) {
+    return null;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/masonry-image-grid/image-masonry.js":
+/*!********************************************************!*\
+  !*** ./src/blocks/masonry-image-grid/image-masonry.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-responsive-masonry */ "./node_modules/react-responsive-masonry/es/index.js");
+/* harmony import */ var react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+
+
+
+var ImageMasonry = /*#__PURE__*/function (_Component) {
+  _inherits(ImageMasonry, _Component);
+
+  var _super = _createSuper(ImageMasonry);
+
+  function ImageMasonry(props) {
+    var _this;
+
+    _classCallCheck(this, ImageMasonry);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      openModal: false,
+      imageCollection: [],
+      imageUrl: "",
+      openClass: "",
+      caption: "",
+      description: ""
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(ImageMasonry, [{
+    key: "renderClick",
+    value: function renderClick(el) {
+      this.setState({
+        openModal: true,
+        imageUrl: el.url,
+        caption: el.caption,
+        description: el.description
+      });
+      var t = this;
+      setTimeout(function () {
+        t.openOverlay();
+      }, 250);
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      this.setState({
+        openClass: "open"
+      });
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.setState({
+        openModal: false,
+        imageUrl: "",
+        caption: "",
+        description: ""
+      });
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      this.setState({
+        openClass: ""
+      });
+      var t = this;
+      setTimeout(function () {
+        t.closeModal();
+      }, 250);
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          className = _this$props.className,
+          id = _this$props.id,
+          images = _this$props.images;
+      var the_id = id;
+
+      if (jQuery("." + id).find("#gallery")) {
+        // setTimeout(function(){
+        //     jQuery("."+the_id).find("#gallery").unitegallery()
+        //     console.log("Hello World"+the_id);
+        // },5000)
+        var loadImage = function loadImage(image) {
+          return new Promise(function (resolve, reject) {
+            var loadImg = new Image();
+            loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+            loadImg.onload = function () {
+              return setTimeout(function () {
+                resolve(image.url);
+              }, 2000);
+            };
+
+            loadImg.onerror = function (err) {
+              return reject(err);
+            };
+          });
+        };
+
+        Promise.all(images.map(function (image) {
+          return loadImage(image);
+        })).then(function () {
+          // $("."+id).find("#gallery").unitegallery()
+          _this2.setState({
+            doneLoading: true
+          });
+
+          setTimeout(function () {
+            jQuery("#gallery").Mosaic({
+              maxRowHeight: 400
+            });
+          }, 500);
+        })["catch"](function (err) {
+          return console.log("Failed to load images", err);
+        });
+      }
+    }
+  }, {
+    key: "renderCells",
+    value: function renderCells(imageItems, enableHoverFx, overlayParams) {
+      var _this3 = this;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayParams.overlayLayout)
+          }, overlayParams.enableViewButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this3.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
+          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+          }), overlayParams.linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            onClick: function onClick() {
+              !enableHoverFx ? _this3.renderClick(el) : '';
+            }
+          }));
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props2 = this.props,
+          className = _this$props2.className,
+          id = _this$props2.id,
+          overlayEffect = _this$props2.overlayEffect,
+          modalLayout = _this$props2.modalLayout,
+          enableHoverFx = _this$props2.enableHoverFx,
+          hoverEffect = _this$props2.hoverEffect,
+          hoverEffectDirection = _this$props2.hoverEffectDirection,
+          overlayParams = _this$props2.overlayParams,
+          images = _this$props2.images,
+          columns = _this$props2.columns,
+          gutter = _this$props2.gutter;
+      var doneLoading = this.state.doneLoading;
+
+      if (!doneLoading) {
+        return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, "Gallery is loading"));
+      }
+
+      return /*#__PURE__*/React.createElement(Fragment, null, this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(id),
+        onRequestClose: function onRequestClose() {
+          _this4.closeOverlay();
+        }
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
+        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__["ResponsiveMasonry"], {
+        columnsCountBreakPoints: {
+          350: columns.xs,
+          750: columns.sm,
+          900: columns.md
+        }
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        gutter: gutter
+      }, this.renderCells(images, enableHoverFx, overlayParams)))));
+    }
+  }]);
+
+  return ImageMasonry;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageMasonry);
+
+/***/ }),
+
+/***/ "./src/blocks/masonry-image-grid/style.scss":
+/*!**************************************************!*\
+  !*** ./src/blocks/masonry-image-grid/style.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/masonry-image-grid/style.scss");
 
             content = content.__esModule ? content.default : content;
 
