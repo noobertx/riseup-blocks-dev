@@ -491,6 +491,11 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
+                'overlayLayout' => [
+                    'type'=> 'string',
+                    'default'=> 'overlay-layout-2'
+                ],
+
                 'enableBannerOverlay' => [
                     'type' => 'boolean',
                     'default' => false

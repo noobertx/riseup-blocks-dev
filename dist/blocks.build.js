@@ -23558,7 +23558,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           viewIconName = _this$props$attribute2.viewIconName,
           enableLinkButton = _this$props$attribute2.enableLinkButton,
           linkButtonLabel = _this$props$attribute2.linkButtonLabel,
-          linkIconName = _this$props$attribute2.linkIconName;
+          linkIconName = _this$props$attribute2.linkIconName,
+          overlayLayout = _this$props$attribute2.overlayLayout;
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -23569,7 +23570,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           }, /*#__PURE__*/React.createElement("div", {
             className: "overlay-content"
           }, /*#__PURE__*/React.createElement("div", {
-            className: "overlay-content overlay-layout-1"
+            className: "overlay-content ".concat(overlayLayout)
           }, enableViewButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "view",
@@ -23663,6 +23664,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
           linkIconName = _this$props3$attribut.linkIconName,
           linkIconSize = _this$props3$attribut.linkIconSize,
+          overlayLayout = _this$props3$attribut.overlayLayout,
           modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var _this$state = this.state,
@@ -24163,7 +24165,31 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }))), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      })), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      })), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
