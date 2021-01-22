@@ -6455,6 +6455,42 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ":root {\n  --swiper-navigation-size: 44px;\n  /*\n  --swiper-navigation-color: var(--swiper-theme-color);\n  */ }\n\n.swiper-button-prev,\n.swiper-button-next {\n  position: absolute;\n  top: 50%;\n  width: calc(var(--swiper-navigation-size) / 44 * 27);\n  height: var(--swiper-navigation-size);\n  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);\n  z-index: 10;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--swiper-navigation-color, var(--swiper-theme-color)); }\n  .swiper-button-prev.swiper-button-disabled,\n  .swiper-button-next.swiper-button-disabled {\n    opacity: 0.35;\n    cursor: auto;\n    pointer-events: none; }\n  .swiper-button-prev:after,\n  .swiper-button-next:after {\n    font-family: swiper-icons;\n    font-size: var(--swiper-navigation-size);\n    text-transform: none !important;\n    letter-spacing: 0;\n    text-transform: none;\n    font-variant: initial;\n    line-height: 1; }\n\n.swiper-button-prev,\n.swiper-container-rtl .swiper-button-next {\n  left: 10px;\n  right: auto; }\n  .swiper-button-prev:after,\n  .swiper-container-rtl .swiper-button-next:after {\n    content: 'prev'; }\n\n.swiper-button-next,\n.swiper-container-rtl .swiper-button-prev {\n  right: 10px;\n  left: auto; }\n  .swiper-button-next:after,\n  .swiper-container-rtl .swiper-button-prev:after {\n    content: 'next'; }\n\n.swiper-button-prev.swiper-button-white,\n.swiper-button-next.swiper-button-white {\n  --swiper-navigation-color: #ffffff; }\n\n.swiper-button-prev.swiper-button-black,\n.swiper-button-next.swiper-button-black {\n  --swiper-navigation-color: #000000; }\n\n.swiper-button-lock {\n  display: none; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ":root {\n  /*\n  --swiper-pagination-color: var(--swiper-theme-color);\n  */ }\n\n.swiper-pagination {\n  position: absolute;\n  text-align: center;\n  transition: 300ms opacity;\n  transform: translate3d(0, 0, 0);\n  z-index: 10; }\n  .swiper-pagination.swiper-pagination-hidden {\n    opacity: 0; }\n\n/* Common Styles */\n.swiper-pagination-fraction,\n.swiper-pagination-custom,\n.swiper-container-horizontal > .swiper-pagination-bullets {\n  bottom: 10px;\n  left: 0;\n  width: 100%; }\n\n/* Bullets */\n.swiper-pagination-bullets-dynamic {\n  overflow: hidden;\n  font-size: 0; }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n    transform: scale(0.33);\n    position: relative; }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {\n    transform: scale(1); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {\n    transform: scale(1); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {\n    transform: scale(0.66); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {\n    transform: scale(0.33); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {\n    transform: scale(0.66); }\n  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {\n    transform: scale(0.33); }\n\n.swiper-pagination-bullet {\n  width: 8px;\n  height: 8px;\n  display: inline-block;\n  border-radius: 100%;\n  background: #000;\n  opacity: 0.2; }\n  button.swiper-pagination-bullet {\n    border: none;\n    margin: 0;\n    padding: 0;\n    box-shadow: none;\n    appearance: none; }\n  .swiper-pagination-clickable .swiper-pagination-bullet {\n    cursor: pointer; }\n\n.swiper-pagination-bullet-active {\n  opacity: 1;\n  background: var(--swiper-pagination-color, var(--swiper-theme-color)); }\n\n.swiper-container-vertical > .swiper-pagination-bullets {\n  right: 10px;\n  top: 50%;\n  transform: translate3d(0px, -50%, 0); }\n  .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {\n    margin: 6px 0;\n    display: block; }\n  .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n    top: 50%;\n    transform: translateY(-50%);\n    width: 8px; }\n    .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n      display: inline-block;\n      transition: 200ms transform, 200ms top; }\n\n.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {\n  margin: 0 4px; }\n\n.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n  left: 50%;\n  transform: translateX(-50%);\n  white-space: nowrap; }\n  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n    transition: 200ms transform, 200ms left; }\n\n.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  transition: 200ms transform, 200ms right; }\n\n/* Progress */\n.swiper-pagination-progressbar {\n  background: rgba(0, 0, 0, 0.25);\n  position: absolute; }\n  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    background: var(--swiper-pagination-color, var(--swiper-theme-color));\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    transform: scale(0);\n    transform-origin: left top; }\n  .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    transform-origin: right top; }\n  .swiper-container-horizontal > .swiper-pagination-progressbar,\n  .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {\n    width: 100%;\n    height: 4px;\n    left: 0;\n    top: 0; }\n  .swiper-container-vertical > .swiper-pagination-progressbar,\n  .swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {\n    width: 4px;\n    height: 100%;\n    left: 0;\n    top: 0; }\n\n.swiper-pagination-white {\n  --swiper-pagination-color: #ffffff; }\n\n.swiper-pagination-black {\n  --swiper-pagination-color: #000000; }\n\n.swiper-pagination-lock {\n  display: none; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss ***!
@@ -6467,6 +6503,24 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../css-loader/dist/run
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, "@font-face {\n  font-family: 'swiper-icons';\n  src: url(\"data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal; }\n\n:root {\n  --swiper-theme-color: #007aff; }\n\n.swiper-container {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  /* Fix of Webkit flickering */\n  z-index: 1; }\n\n.swiper-container-vertical > .swiper-wrapper {\n  flex-direction: column; }\n\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: flex;\n  transition-property: transform;\n  box-sizing: content-box; }\n\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  transform: translate3d(0px, 0, 0); }\n\n.swiper-container-multirow > .swiper-wrapper {\n  flex-wrap: wrap; }\n\n.swiper-container-multirow-column > .swiper-wrapper {\n  flex-wrap: wrap;\n  flex-direction: column; }\n\n.swiper-container-free-mode > .swiper-wrapper {\n  transition-timing-function: ease-out;\n  margin: 0 auto; }\n\n.swiper-slide {\n  flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition-property: transform; }\n\n.swiper-slide-invisible-blank {\n  visibility: hidden; }\n\n/* Auto Height */\n.swiper-container-autoheight,\n.swiper-container-autoheight .swiper-slide {\n  height: auto; }\n\n.swiper-container-autoheight .swiper-wrapper {\n  align-items: flex-start;\n  transition-property: transform, height; }\n\n/* 3D Effects */\n.swiper-container-3d {\n  perspective: 1200px; }\n  .swiper-container-3d .swiper-wrapper,\n  .swiper-container-3d .swiper-slide,\n  .swiper-container-3d .swiper-slide-shadow-left,\n  .swiper-container-3d .swiper-slide-shadow-right,\n  .swiper-container-3d .swiper-slide-shadow-top,\n  .swiper-container-3d .swiper-slide-shadow-bottom,\n  .swiper-container-3d .swiper-cube-shadow {\n    transform-style: preserve-3d; }\n  .swiper-container-3d .swiper-slide-shadow-left,\n  .swiper-container-3d .swiper-slide-shadow-right,\n  .swiper-container-3d .swiper-slide-shadow-top,\n  .swiper-container-3d .swiper-slide-shadow-bottom {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n    z-index: 10; }\n  .swiper-container-3d .swiper-slide-shadow-left {\n    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }\n  .swiper-container-3d .swiper-slide-shadow-right {\n    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }\n  .swiper-container-3d .swiper-slide-shadow-top {\n    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }\n  .swiper-container-3d .swiper-slide-shadow-bottom {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }\n\n/* CSS Mode */\n.swiper-container-css-mode > .swiper-wrapper {\n  overflow: auto;\n  scrollbar-width: none;\n  /* For Firefox */\n  -ms-overflow-style: none;\n  /* For Internet Explorer and Edge */ }\n  .swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {\n    display: none; }\n\n.swiper-container-css-mode > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: start start; }\n\n.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {\n  scroll-snap-type: x mandatory; }\n\n.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {\n  scroll-snap-type: y mandatory; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/image-carousel/style.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/image-carousel/style.scss ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-grid-image {\n  display: grid; }\n\n.wprig-flexbuttons {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0 !important;\n  justify-content: space-evenly; }\n  .wprig-flexbuttons li {\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    .wprig-flexbuttons li a {\n      text-decoration: none; }\n\n.wprig-grid-image-item {\n  position: relative; }\n  .wprig-grid-image-item figure {\n    position: relative; }\n    .wprig-grid-image-item figure figcaption {\n      position: absolute;\n      top: 0;\n      left: 0; }\n      .wprig-grid-image-item figure figcaption p {\n        background: #333;\n        padding: 10px;\n        margin: 20px 10px;\n        color: #fff;\n        font-size: 12px; }\n  .wprig-grid-image-item .wprig-overlay-panel {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    opacity: 0;\n    transition: 0.35s opacity; }\n    .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions {\n      list-style: none;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      justify-content: flex-end; }\n      .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions a {\n        padding: 10px;\n        text-decoration: none;\n        color: #fff;\n        background: #000;\n        margin: 0 5px;\n        display: block;\n        padding: 10px 20px; }\n  .wprig-grid-image-item:hover .wprig-overlay-panel {\n    opacity: 1; }\n\n.wprig-gallery .slick-slide img {\n  margin: auto; }\n\n.swiper-container {\n  max-width: 100%; }\n  .swiper-container .swiper-pagination {\n    bottom: 0px; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11302,6 +11356,64 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/navigation/navigation.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/navigation/navigation.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js!../../../sass-loader/dist/cjs.js!./navigation.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/navigation/navigation.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/pagination/pagination.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/pagination/pagination.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js!../../../sass-loader/dist/cjs.js!./pagination.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/components/pagination/pagination.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -22083,13 +22195,14 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_renderfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/renderfield */ "./src/components/renderfield.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_mosaic_images_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/mosaic-images/block */ "./src/blocks/mosaic-images/block.js");
-/* harmony import */ var _blocks_masonry_image_grid_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/masonry-image-grid/block */ "./src/blocks/masonry-image-grid/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_image_carousel_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/image-carousel/block */ "./src/blocks/image-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_mosaic_images_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/mosaic-images/block */ "./src/blocks/mosaic-images/block.js");
+/* harmony import */ var _blocks_masonry_image_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/masonry-image-grid/block */ "./src/blocks/masonry-image-grid/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -22129,7 +22242,7 @@ __webpack_require__.r(__webpack_exports__);
 // import './blocks/tabs/tab/block';
 // import "./blocks/team/block";
 // import "./blocks/testimonial/block";
-// import "./blocks/image-carousel/block";
+
 
 
 
@@ -22184,11 +22297,1058 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_6__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_7__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/blocks/image-carousel/Edit.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/image-carousel/Edit.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_fields_background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/fields/background */ "./src/components/fields/background.js");
+/* harmony import */ var _components_fields_border__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/fields/border */ "./src/components/fields/border.js");
+/* harmony import */ var _components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fields/boxshadow */ "./src/components/fields/boxshadow.js");
+/* harmony import */ var _components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/fields/borderRadius */ "./src/components/fields/borderRadius.js");
+/* harmony import */ var _components_fields_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/fields/color */ "./src/components/fields/color.js");
+/* harmony import */ var _components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/fields/colorAdvance */ "./src/components/fields/colorAdvance.js");
+/* harmony import */ var _components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/fields/iconList */ "./src/components/fields/iconList.js");
+/* harmony import */ var _components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/InspectorTabs */ "./src/components/InspectorTabs.js");
+/* harmony import */ var _components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/InspectorTab */ "./src/components/InspectorTab.js");
+/* harmony import */ var _components_fields_range__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/fields/range */ "./src/components/fields/range.js");
+/* harmony import */ var _components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/fields/tabs */ "./src/components/fields/tabs.js");
+/* harmony import */ var _components_fields_tab__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/fields/tab */ "./src/components/fields/tab.js");
+/* harmony import */ var _components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/fields/toggle */ "./src/components/fields/toggle.js");
+/* harmony import */ var _components_fields_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/fields/styles */ "./src/components/fields/styles.js");
+/* harmony import */ var _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/fields/globalCustomSettings */ "./src/components/fields/globalCustomSettings.js");
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_22__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var compose = wp.compose.compose;
+var _wp$data = wp.data,
+    select = _wp$data.select,
+    withDispatch = _wp$data.withDispatch;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    TextControl = _wp$components.TextControl,
+    SelectControl = _wp$components.SelectControl,
+    Tooltip = _wp$components.Tooltip,
+    Button = _wp$components.Button,
+    RangeControl = _wp$components.RangeControl,
+    FormFileUpload = _wp$components.FormFileUpload;
+
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    MediaUpload = _wp$blockEditor.MediaUpload,
+    MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
+    InnerBlocks = _wp$blockEditor.InnerBlocks,
+    InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls; // const { Tab, Tabs, Color,ColorAdvanced, Border ,IconList, BorderRadius , BoxShadow,Styles, TestField,Background,Range,Toggle, globalCustomSettings:{globalCustomAttributes, HoverEXSettings}, globalSettings: { globalSettingsPanel, animationSettings }, HelperFunction: { videoBackground }, CssGenerator: { CssGenerator }, withCSSGenerator, InspectorTabs, InspectorTab } = wp.wprigComponents
+
+var _wp$wprigComponents = wp.wprigComponents,
+    CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var globalCustomSettings = {
+  globalCustomAttributes: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["globalCustomAttributes"],
+  HoverEXSettings: _components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"]
+};
+
+
+
+
+
+
+
+swiper__WEBPACK_IMPORTED_MODULE_18__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_18__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_18__["Pagination"]]);
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      openModal: false,
+      imageCollection: [],
+      imageUrl: "",
+      openClass: ""
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          _this$props$attribute = _this$props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          imageItems = _this$props$attribute.imageItems;
+      var imageCollection = this.state.imageCollection;
+
+      var _select = select('core/block-editor'),
+          getBlockRootClientId = _select.getBlockRootClientId;
+
+      var parentClientId = getBlockRootClientId(clientId);
+
+      if (parentClientId) {
+        this.setState({
+          hideRowSettings: true
+        });
+      }
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client,
+          childRow: parentClientId ? true : false
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client,
+          childRow: parentClientId ? true : false
+        });
+      }
+
+      this.setState({
+        imageCollection: imageItems
+      });
+
+      if (jQuery(this.el).find("#gallery")) {// jQuery(this.el).find("#gallery").unitegallery().destroy()
+        // jQuery(this.el).find("#gallery").unitegallery()
+      }
+    }
+  }, {
+    key: "componentWillUpdate",
+    value: function componentWillUpdate(nextProps, nextState) {
+      var _this$props2 = this.props,
+          setAttributes = _this$props2.setAttributes,
+          clientId = _this$props2.clientId,
+          _this$props2$attribut = _this$props2.attributes,
+          uniqueId = _this$props2$attribut.uniqueId,
+          imageItems = _this$props2$attribut.imageItems;
+
+      if (imageItems != nextProps.attributes.imageItems) {
+        this.setState({
+          imageCollection: imageItems
+        });
+      }
+    }
+  }, {
+    key: "openModal",
+    value: function openModal(el) {// console.log(el);
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      this.setState({
+        openClass: "open"
+      });
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.setState({
+        openModal: false,
+        imageUrl: ""
+      });
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      this.setState({
+        openClass: ""
+      });
+      var t = this;
+      setTimeout(function () {
+        t.closeModal();
+      }, 250);
+    }
+  }, {
+    key: "renderClick",
+    value: function renderClick(el) {
+      this.setState({
+        openModal: true,
+        imageUrl: el.url
+      });
+      var t = this;
+      setTimeout(function () {
+        t.openOverlay();
+      }, 250);
+    }
+  }, {
+    key: "renderSlides",
+    value: function renderSlides(imageItems) {
+      var _this2 = this;
+
+      var _this$props3 = this.props,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          className = _this$props3$attribut.className,
+          columns = _this$props3$attribut.columns,
+          rowGap = _this$props3$attribut.rowGap,
+          columnGap = _this$props3$attribut.columnGap,
+          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
+          overlayEffect = _this$props3$attribut.overlayEffect,
+          carouselItems = _this$props3$attribut.carouselItems,
+          enableHoverFx = _this$props3$attribut.enableHoverFx,
+          overlayLayout = _this$props3$attribut.overlayLayout,
+          viewIconName = _this$props3$attribut.viewIconName,
+          linkIconName = _this$props3$attribut.linkIconName,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
+          setAttributes = _this$props3.setAttributes;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_19__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayLayout)
+          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(viewIconName)
+          }, viewButtonLabel)), enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(linkIconName)
+          }, linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.thumbnail,
+            "data-image": el.url,
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          })));
+        });
+      }
+    }
+  }, {
+    key: "renderImages",
+    value: function renderImages(imageItems) {
+      if (imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("a", {
+            href: el.url
+          }, /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            "data-description": "This is a Lemon Slice"
+          }));
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$props4 = this.props,
+          _this$props4$attribut = _this$props4.attributes,
+          uniqueId = _this$props4$attribut.uniqueId,
+          className = _this$props4$attribut.className,
+          imageItems = _this$props4$attribut.imageItems,
+          columns = _this$props4$attribut.columns,
+          rowGap = _this$props4$attribut.rowGap,
+          columnGap = _this$props4$attribut.columnGap,
+          modalOverlayBg = _this$props4$attribut.modalOverlayBg,
+          overlayEffect = _this$props4$attribut.overlayEffect,
+          carouselItems = _this$props4$attribut.carouselItems,
+          hoverEffect = _this$props4$attribut.hoverEffect,
+          hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
+          overlayLayout = _this$props4$attribut.overlayLayout,
+          enableHoverFx = _this$props4$attribut.enableHoverFx,
+          modalLayout = _this$props4$attribut.modalLayout,
+          dotsColor = _this$props4$attribut.dotsColor,
+          arrowColor = _this$props4$attribut.arrowColor,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          viewButtonLabel = _this$props4$attribut.viewButtonLabel,
+          viewFillType = _this$props4$attribut.viewFillType,
+          viewButtonColor = _this$props4$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props4$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props4$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props4$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props4$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props4$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props4$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props4$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props4$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props4$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
+          viewIconName = _this$props4$attribut.viewIconName,
+          viewIconSize = _this$props4$attribut.viewIconSize,
+          enableLinkButton = _this$props4$attribut.enableLinkButton,
+          linkButtonLabel = _this$props4$attribut.linkButtonLabel,
+          linkFillType = _this$props4$attribut.linkFillType,
+          linkButtonColor = _this$props4$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props4$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props4$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props4$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props4$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props4$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props4$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props4$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props4$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props4$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
+          linkIconName = _this$props4$attribut.linkIconName,
+          linkIconSize = _this$props4$attribut.linkIconSize,
+          cellHeight = _this$props4$attribut.cellHeight,
+          setAttributes = _this$props4.setAttributes;
+      var _this$state = this.state,
+          device = _this$state.device,
+          imageCollection = _this$state.imageCollection;
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(_components_InspectorTabs__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Grid Settings')
+      }, /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
+        multiple: true,
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        label: __('Items'),
+        value: carouselItems,
+        onChange: function onChange(val) {
+          return setAttributes({
+            carouselItems: val
+          });
+        },
+        min: 1,
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        label: __('Row Gap'),
+        min: 0,
+        max: 100,
+        value: rowGap,
+        onChange: function onChange(val) {
+          return setAttributes({
+            rowGap: val
+          });
+        },
+        unit: ['px', 'em', '%', 'vw'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        label: __('Column Gap'),
+        min: 0,
+        max: 100,
+        value: columnGap,
+        onChange: function onChange(val) {
+          return setAttributes({
+            columnGap: val
+          });
+        },
+        unit: ['px', 'em', '%', 'vw'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", null, "Max Row Height")), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__["__experimentalNumberControl"], {
+        isShiftStepEnabled: false,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cellHeight: val
+          });
+        },
+        shiftStep: 10,
+        value: cellHeight
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Carousel')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Arrow Color'),
+        value: arrowColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            arrowColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Dots Color'),
+        value: dotsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColor: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Lightbox Settings')
+      }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Effect'),
+        value: overlayEffect,
+        options: [{
+          label: 'Fade in Scale',
+          value: 'fade-in-scale'
+        }, {
+          label: 'Newspaper',
+          value: 'news-paper'
+        }, {
+          label: 'Fall',
+          value: 'fall'
+        }, {
+          label: 'Side Fall',
+          value: 'side-fall'
+        }, {
+          label: 'Sticky Up',
+          value: 'sticky-up'
+        }, {
+          label: '3D Flip Horizontal',
+          value: 'flip-horizontal'
+        }, {
+          label: '3D Flip Vertical',
+          value: 'flip-vertical'
+        }, {
+          label: '3D Sign',
+          value: 'sign'
+        }, {
+          label: 'Super Scaled',
+          value: 'super-scaled'
+        }, {
+          label: 'Just ME',
+          value: 'just-me'
+        }, {
+          label: '3D Split',
+          value: 'split'
+        }, {
+          label: '3D Rotate Bottom',
+          value: 'rotate-bottom'
+        }, {
+          label: '3D Rotate In Left Bottom',
+          value: 'rotate-in-left'
+        }, {
+          label: 'Slip From Top',
+          value: 'slip-from-top'
+        }, {
+          label: 'Slide Down',
+          value: 'overlay-slidedown'
+        }, {
+          label: 'Slide Up',
+          value: 'overlay-slideup'
+        }, {
+          label: 'Slide Left',
+          value: 'overlay-slideleft'
+        }, {
+          label: 'Slide Right',
+          value: 'overlay-slideright'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayEffect: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_background__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        parallax: true,
+        value: modalOverlayBg,
+        label: __('Background'),
+        externalImage: true,
+        sources: ['image', 'gradient', 'video'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            modalOverlayBg: val
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(_components_InspectorTab__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        key: 'advance'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: true,
+        title: __('Hover Overlay Content')
+      }, /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        label: __('Enable View'),
+        value: enableViewButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableViewButton: val
+          });
+        }
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "View Button Text",
+        value: viewButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        label: __('Icon'),
+        value: viewIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            viewIconName: value
+          });
+        }
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        label: __('Size'),
+        value: viewIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        value: viewFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonColor: value
+          }) : setAttributes({
+            viewButtonColor2: value
+          });
+        }
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Background'),
+        value: viewButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Border'),
+        value: viewButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            viewButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: __('Box-Shadow'),
+        value: viewButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonHoverColor: value
+          }) : setAttributes({
+            viewButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Background'),
+        value: viewButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Border Color'),
+        value: viewButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: __('Box-Shadow'),
+        value: viewButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Radius'),
+        value: viewButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_toggle__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        label: __('Enable Link'),
+        value: enableLinkButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableLinkButton: val
+          });
+        }
+      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "link Button Text",
+        value: linkButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_iconList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        label: __('Link Icon'),
+        value: linkIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            linkIconName: value
+          });
+        }
+      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_components_fields_range__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        label: __('Link Icon Size'),
+        value: linkIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_styles__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        value: linkFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_17__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(_components_fields_tabs__WEBPACK_IMPORTED_MODULE_11__["default"], null, /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonColor: value
+          }) : setAttributes({
+            linkButtonColor2: value
+          });
+        }
+      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Background'),
+        value: linkButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_border__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: __('Border'),
+        value: linkButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            linkButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: __('Box-Shadow'),
+        value: linkButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(_components_fields_tab__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Text Color'),
+        value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
+        onChange: function onChange(value) {
+          return linkFillType == 'fill' ? setAttributes({
+            linkButtonHoverColor: value
+          }) : setAttributes({
+            linkButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_colorAdvance__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        label: __('Background'),
+        value: linkButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_color__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        label: __('Border Color'),
+        value: linkButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(_components_fields_boxshadow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        label: __('Box-Shadow'),
+        value: linkButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(_components_fields_borderRadius__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        label: __('Radius'),
+        value: linkButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            linkButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Overlay Layout'),
+        value: overlayLayout,
+        options: [{
+          label: 'Layout 1',
+          value: 'overlay-layout-1'
+        }, {
+          label: 'Layout 2',
+          value: 'overlay-layout-2'
+        }, {
+          label: 'Layout 3',
+          value: 'overlay-layout-3'
+        }, {
+          label: 'Layout 4',
+          value: 'overlay-layout-4'
+        }, {
+          label: 'Layout 5',
+          value: 'overlay-layout-5'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayLayout: val
+          });
+        }
+      }), Object(_components_fields_globalCustomSettings__WEBPACK_IMPORTED_MODULE_15__["HoverEXSettings"])(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(uniqueId),
+        onRequestClose: function onRequestClose() {
+          _this3.closeOverlay();
+        }
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', "  ")
+      }, imageItems.length == 0 ? /*#__PURE__*/React.createElement(MediaPlaceholder, {
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return {
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs
+          });
+        },
+        labels: {
+          title: "Select Images"
+        },
+        allowedTypes: ["image"],
+        multiple: true
+      }) : /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_19__["Swiper"], {
+        spaceBetween: 50,
+        slidesPerView: "".concat(carouselItems.md),
+        navigation: true,
+        pagination: {
+          clickable: true
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          320: {
+            width: 320,
+            slidesPerView: carouselItems.xs
+          },
+          640: {
+            width: 640,
+            slidesPerView: carouselItems.sm
+          },
+          // when window width is >= 768px
+          1000: {
+            width: 1000,
+            slidesPerView: carouselItems.md
+          }
+        },
+        onSlideChange: function onSlideChange() {
+          return console.log('slide change');
+        },
+        onSwiper: function onSwiper(swiper) {
+          return console.log(swiper);
+        }
+      }, this.renderSlides(imageItems))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/image-carousel/block.js":
+/*!********************************************!*\
+  !*** ./src/blocks/image-carousel/block.js ***!
+  \********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit */ "./src/blocks/image-carousel/Edit.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/image-carousel/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+var InnerBlocks = wp.blockEditor.InnerBlocks;
+registerBlockType('wprig/image-carousel', {
+  title: __('Image Carousel'),
+  category: 'wprig-blocks',
+  description: 'Image Carousel',
+  icon: 'universal-access-alt',
+  supports: {
+    align: ['wide', 'center', 'full'],
+    html: false
+  },
+  keywords: [__('carousel')],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_0__["default"],
+  save: function save(props) {
+    return null;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/image-carousel/style.scss":
+/*!**********************************************!*\
+  !*** ./src/blocks/image-carousel/style.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/image-carousel/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
