@@ -6538,7 +6538,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-grid-gallery {\n  display: grid; }\n  .wprig-grid-gallery img {\n    width: 100%; }\n", ""]);
+exports.push([module.i, ".wprig-grid-gallery {\n  display: grid; }\n  .wprig-grid-gallery img {\n    width: 100%; }\n\n.wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        height: 100%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -23349,9 +23349,7 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23399,6 +23397,16 @@ var _wp$blockEditor = wp.blockEditor,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     InspectorAdvancedControls = _wp$blockEditor.InspectorAdvancedControls;
 var _wp$wprigComponents = wp.wprigComponents,
+    Tab = _wp$wprigComponents.Tab,
+    Tabs = _wp$wprigComponents.Tabs,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    Toggle = _wp$wprigComponents.Toggle,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    IconList = _wp$wprigComponents.IconList,
     TestField = _wp$wprigComponents.TestField,
     Background = _wp$wprigComponents.Background,
     Range = _wp$wprigComponents.Range,
@@ -23413,7 +23421,6 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
-
 
 
 
@@ -23545,6 +23552,11 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderCells(imageItems, enableHoverFx) {
       var _this2 = this;
 
+      var _this$props$attribute2 = this.props.attributes,
+          enableViewButton = _this$props$attribute2.enableViewButton,
+          viewButtonLabel = _this$props$attribute2.viewButtonLabel,
+          viewIconName = _this$props$attribute2.viewIconName;
+
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
           return /*#__PURE__*/React.createElement("div", {
@@ -23553,14 +23565,17 @@ var Edit = /*#__PURE__*/function (_Component) {
             className: "overlay"
           }, /*#__PURE__*/React.createElement("div", {
             className: "overlay-content"
-          }, /*#__PURE__*/React.createElement("button", {
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content overlay-layout-1"
+          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
+            className: "view",
             onClick: function onClick() {
               _this2.renderClick(el);
             }
-          }, "View"), /*#__PURE__*/React.createElement("button", {
-            type: "button"
-          }, "Link"))), /*#__PURE__*/React.createElement("img", {
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(viewIconName)
+          }), viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.thumbnail,
             "data-image": el.url,
             onClick: function onClick() {
@@ -23604,6 +23619,24 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableHoverFx = _this$props3$attribut.enableHoverFx,
           hoverEffect = _this$props3$attribut.hoverEffect,
           hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          viewButtonType = _this$props3$attribut.viewButtonType,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props3$attribut.viewButtonIcon,
+          viewFillType = _this$props3$attribut.viewFillType,
+          viewButtonColor = _this$props3$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props3$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props3$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props3$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props3$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props3$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props3$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props3$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props3$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props3$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props3$attribut.viewButtonShadowHover,
+          viewIconName = _this$props3$attribut.viewIconName,
+          viewIconSize = _this$props3$attribut.viewIconSize,
           modalLayout = _this$props3$attribut.modalLayout,
           setAttributes = _this$props3.setAttributes;
       var _this$state = this.state,
@@ -23785,7 +23818,168 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
-      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: true,
+        title: __('Hover Overlay Content')
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable View'),
+        value: enableViewButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableViewButton: val
+          });
+        }
+      }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "View Button Text",
+        value: viewButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(IconList, {
+        label: __('Icon'),
+        value: viewIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            viewIconName: value
+          });
+        }
+      }), viewIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Size'),
+        value: viewIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Styles, {
+        value: viewFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonColor : viewButtonColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonColor: value
+          }) : setAttributes({
+            viewButtonColor2: value
+          });
+        }
+      }), viewFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: viewButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: viewButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            viewButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: viewButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: viewFillType == 'fill' ? viewButtonHoverColor : viewButtonHoverColor2,
+        onChange: function onChange(value) {
+          return viewFillType == 'fill' ? setAttributes({
+            viewButtonHoverColor: value
+          }) : setAttributes({
+            viewButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: viewButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: viewButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: viewButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: viewButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }))), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
