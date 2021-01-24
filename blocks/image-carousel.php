@@ -182,7 +182,7 @@ function register_block_wprig_image_carousel(){
                     'default' => '#47a',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .swiper-button-prev{ color:{{arrowColor}}; }' 
+                            'selector' => '{{WPRIG}} .swiper-button-next,{{WPRIG}} .swiper-button-prev{ color:{{arrowColor}}; }' 
                         ]
                     ]
                 ],
