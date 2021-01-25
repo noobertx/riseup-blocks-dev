@@ -655,10 +655,31 @@ function render_block_wprig_image_grid($att){
     if(count($imageItems)){
         foreach( $imageItems as $image){
             $html[] = "<div class='cells'>";
-            $html[] = "<div class='overlay'></div>";
-            $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
-            $html[] = "<img src='".$image['url']."'/>";
-            $html[] = "</a>";
+            $html[] = "<div class='overlay'>";
+
+            $html[] = "<div class='overlay-content ".$overlayLayout."'>";
+                if($enableViewButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
+                    $html[] = $viewButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+
+                if($enableLinkButton){
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<i class='wprig-btn-icon ".$linkIconName."'></i>";
+                    $html[] = $linkButtonLabel;
+                    $html[] = "</a>";                                      
+                }
+            $html[] = "</div>";
+            $html[] = "</div>";
+                    if(!$enableViewButton){
+                        $html[] = "<a href='".$image['url']."' class='wprig-gallery-item'>";
+                        $html[] = "<img src='".$image['url']."'/>";
+                        $html[] = "</a>";
+                    }else{
+                        $html[] = "<img src='".$image['url']."'/>";
+                    }
             $html[] = "</div>";
         }
     }
