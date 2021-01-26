@@ -6520,7 +6520,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-grid-image {\n  display: grid; }\n\n.wprig-flexbuttons {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0 !important;\n  justify-content: space-evenly; }\n  .wprig-flexbuttons li {\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    .wprig-flexbuttons li a {\n      text-decoration: none; }\n\n.wprig-grid-image-item {\n  position: relative; }\n  .wprig-grid-image-item figure {\n    position: relative; }\n    .wprig-grid-image-item figure figcaption {\n      position: absolute;\n      top: 0;\n      left: 0; }\n      .wprig-grid-image-item figure figcaption p {\n        background: #333;\n        padding: 10px;\n        margin: 20px 10px;\n        color: #fff;\n        font-size: 12px; }\n  .wprig-grid-image-item .wprig-overlay-panel {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    opacity: 0;\n    transition: 0.35s opacity; }\n    .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions {\n      list-style: none;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      justify-content: flex-end; }\n      .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions a {\n        padding: 10px;\n        text-decoration: none;\n        color: #fff;\n        background: #000;\n        margin: 0 5px;\n        display: block;\n        padding: 10px 20px; }\n  .wprig-grid-image-item:hover .wprig-overlay-panel {\n    opacity: 1; }\n\n.wprig-gallery .slick-slide img {\n  margin: auto; }\n\n.swiper-container {\n  max-width: 100%; }\n  .swiper-container .swiper-pagination {\n    bottom: 0px; }\n", ""]);
+exports.push([module.i, ".wprig-grid-image {\n  display: grid; }\n\n.wprig-flexbuttons {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0 !important;\n  justify-content: space-evenly; }\n  .wprig-flexbuttons li {\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    .wprig-flexbuttons li a {\n      text-decoration: none; }\n\n.wprig-grid-image-item {\n  position: relative; }\n  .wprig-grid-image-item figure {\n    position: relative; }\n    .wprig-grid-image-item figure figcaption {\n      position: absolute;\n      top: 0;\n      left: 0; }\n      .wprig-grid-image-item figure figcaption p {\n        background: #333;\n        padding: 10px;\n        margin: 20px 10px;\n        color: #fff;\n        font-size: 12px; }\n  .wprig-grid-image-item .wprig-overlay-panel {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    opacity: 0;\n    transition: 0.35s opacity; }\n    .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions {\n      list-style: none;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      justify-content: flex-end; }\n      .wprig-grid-image-item .wprig-overlay-panel ul.wprig-panel-actions a {\n        padding: 10px;\n        text-decoration: none;\n        color: #fff;\n        background: #000;\n        margin: 0 5px;\n        display: block;\n        padding: 10px 20px; }\n  .wprig-grid-image-item:hover .wprig-overlay-panel {\n    opacity: 1; }\n\n.wprig-gallery .slick-slide img {\n  margin: auto; }\n\n.edit-post-visual-editor .swiper-container {\n  max-width: 890px; }\n  .edit-post-visual-editor .swiper-container .swiper-pagination {\n    bottom: 0px; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -6538,7 +6538,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-grid-gallery {\n  display: grid; }\n  .wprig-grid-gallery img {\n    width: 100%; }\n\n.wprig-grids-editor {\n  overflow: hidden; }\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        height: 100%; }\n", ""]);
+exports.push([module.i, ".wprig-grid-gallery {\n  display: grid; }\n  .wprig-grid-gallery img {\n    width: 100%; }\n\n.swiper-slide,\n.wprig-grids-editor {\n  overflow: hidden; }\n  .swiper-slide .cells,\n  .wprig-grids-editor .cells {\n    position: relative;\n    z-index: 6;\n    overflow: hidden; }\n    .swiper-slide .cells .overlay,\n    .wprig-grids-editor .cells .overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      display: flex;\n      width: 100%;\n      height: 100%;\n      align-items: center;\n      background: rgba(255, 0, 0, 0.57); }\n      .swiper-slide .cells .overlay .overlay-content,\n      .wprig-grids-editor .cells .overlay .overlay-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        height: 100%; }\n    .swiper-slide .cells img,\n    .wprig-grids-editor .cells img {\n      width: 100%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -23350,6 +23350,14 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23423,6 +23431,12 @@ var _wp$wprigComponents = wp.wprigComponents,
     InspectorTab = _wp$wprigComponents.InspectorTab;
 
 
+
+
+
+
+
+swiper__WEBPACK_IMPORTED_MODULE_2__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_2__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_2__["Pagination"]]);
 
 var Edit = /*#__PURE__*/function (_Component) {
   _inherits(Edit, _Component);
@@ -23595,6 +23609,54 @@ var Edit = /*#__PURE__*/function (_Component) {
       }
     }
   }, {
+    key: "renderSlides",
+    value: function renderSlides(imageItems) {
+      var _this3 = this;
+
+      var _this$props3 = this.props,
+          _this$props3$attribut = _this$props3.attributes,
+          enableHoverFx = _this$props3$attribut.enableHoverFx,
+          overlayLayout = _this$props3$attribut.overlayLayout,
+          viewIconName = _this$props3$attribut.viewIconName,
+          linkIconName = _this$props3$attribut.linkIconName,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
+          setAttributes = _this$props3.setAttributes;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["SwiperSlide"], null, /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayLayout)
+          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this3.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(viewIconName)
+          }, viewButtonLabel)), enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(linkIconName)
+          }, linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.thumbnail,
+            "data-image": el.url,
+            onClick: function onClick() {
+              _this3.renderClick(el);
+            }
+          })));
+        });
+      }
+    }
+  }, {
     key: "renderImages",
     value: function renderImages(imageItems) {
       if (imageItems.length > 0) {
@@ -23612,61 +23674,63 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
-      var _this$props3 = this.props,
-          _this$props3$attribut = _this$props3.attributes,
-          uniqueId = _this$props3$attribut.uniqueId,
-          className = _this$props3$attribut.className,
-          imageItems = _this$props3$attribut.imageItems,
-          columns = _this$props3$attribut.columns,
-          rowGap = _this$props3$attribut.rowGap,
-          columnGap = _this$props3$attribut.columnGap,
-          cellHeight = _this$props3$attribut.cellHeight,
-          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
-          overlayEffect = _this$props3$attribut.overlayEffect,
-          enableHoverFx = _this$props3$attribut.enableHoverFx,
-          hoverEffect = _this$props3$attribut.hoverEffect,
-          hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
-          enableViewButton = _this$props3$attribut.enableViewButton,
-          viewButtonType = _this$props3$attribut.viewButtonType,
-          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
-          viewButtonIcon = _this$props3$attribut.viewButtonIcon,
-          viewFillType = _this$props3$attribut.viewFillType,
-          viewButtonColor = _this$props3$attribut.viewButtonColor,
-          viewButtonColor2 = _this$props3$attribut.viewButtonColor2,
-          viewButtonHoverColor = _this$props3$attribut.viewButtonHoverColor,
-          viewButtonHoverColor2 = _this$props3$attribut.viewButtonHoverColor2,
-          viewButtonBgColor = _this$props3$attribut.viewButtonBgColor,
-          viewButtonBgColorHover = _this$props3$attribut.viewButtonBgColorHover,
-          viewButtonBorder = _this$props3$attribut.viewButtonBorder,
-          viewButtonBorderHoverColor = _this$props3$attribut.viewButtonBorderHoverColor,
-          viewButtonBorderRadius = _this$props3$attribut.viewButtonBorderRadius,
-          viewButtonShadow = _this$props3$attribut.viewButtonShadow,
-          viewButtonShadowHover = _this$props3$attribut.viewButtonShadowHover,
-          viewIconName = _this$props3$attribut.viewIconName,
-          viewIconSize = _this$props3$attribut.viewIconSize,
-          enableLinkButton = _this$props3$attribut.enableLinkButton,
-          linkButtonType = _this$props3$attribut.linkButtonType,
-          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
-          linkButtonIcon = _this$props3$attribut.linkButtonIcon,
-          linkFillType = _this$props3$attribut.linkFillType,
-          linkButtonColor = _this$props3$attribut.linkButtonColor,
-          linkButtonColor2 = _this$props3$attribut.linkButtonColor2,
-          linkButtonHoverColor = _this$props3$attribut.linkButtonHoverColor,
-          linkButtonHoverColor2 = _this$props3$attribut.linkButtonHoverColor2,
-          linkButtonBgColor = _this$props3$attribut.linkButtonBgColor,
-          linkButtonBgColorHover = _this$props3$attribut.linkButtonBgColorHover,
-          linkButtonBorder = _this$props3$attribut.linkButtonBorder,
-          linkButtonBorderHoverColor = _this$props3$attribut.linkButtonBorderHoverColor,
-          linkButtonBorderRadius = _this$props3$attribut.linkButtonBorderRadius,
-          linkButtonShadow = _this$props3$attribut.linkButtonShadow,
-          linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
-          linkIconName = _this$props3$attribut.linkIconName,
-          linkIconSize = _this$props3$attribut.linkIconSize,
-          overlayLayout = _this$props3$attribut.overlayLayout,
-          modalLayout = _this$props3$attribut.modalLayout,
-          setAttributes = _this$props3.setAttributes;
+      var _this$props4 = this.props,
+          _this$props4$attribut = _this$props4.attributes,
+          uniqueId = _this$props4$attribut.uniqueId,
+          className = _this$props4$attribut.className,
+          imageItems = _this$props4$attribut.imageItems,
+          columns = _this$props4$attribut.columns,
+          rowGap = _this$props4$attribut.rowGap,
+          columnGap = _this$props4$attribut.columnGap,
+          cellHeight = _this$props4$attribut.cellHeight,
+          modalOverlayBg = _this$props4$attribut.modalOverlayBg,
+          overlayEffect = _this$props4$attribut.overlayEffect,
+          enableHoverFx = _this$props4$attribut.enableHoverFx,
+          hoverEffect = _this$props4$attribut.hoverEffect,
+          hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
+          skin = _this$props4$attribut.skin,
+          carouselItems = _this$props4$attribut.carouselItems,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          viewButtonType = _this$props4$attribut.viewButtonType,
+          viewButtonLabel = _this$props4$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props4$attribut.viewButtonIcon,
+          viewFillType = _this$props4$attribut.viewFillType,
+          viewButtonColor = _this$props4$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props4$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props4$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props4$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props4$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props4$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props4$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props4$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props4$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props4$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
+          viewIconName = _this$props4$attribut.viewIconName,
+          viewIconSize = _this$props4$attribut.viewIconSize,
+          enableLinkButton = _this$props4$attribut.enableLinkButton,
+          linkButtonType = _this$props4$attribut.linkButtonType,
+          linkButtonLabel = _this$props4$attribut.linkButtonLabel,
+          linkButtonIcon = _this$props4$attribut.linkButtonIcon,
+          linkFillType = _this$props4$attribut.linkFillType,
+          linkButtonColor = _this$props4$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props4$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props4$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props4$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props4$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props4$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props4$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props4$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props4$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props4$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
+          linkIconName = _this$props4$attribut.linkIconName,
+          linkIconSize = _this$props4$attribut.linkIconSize,
+          overlayLayout = _this$props4$attribut.overlayLayout,
+          modalLayout = _this$props4$attribut.modalLayout,
+          setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
@@ -23677,7 +23741,45 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
-      }, /*#__PURE__*/React.createElement(TestField, {
+      }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Skin'),
+        value: skin,
+        options: [{
+          label: 'Image Grid',
+          value: ''
+        }, {
+          label: 'Carousel',
+          value: 'carousel'
+        }, {
+          label: 'Mosaic',
+          value: 'mosaic'
+        }, {
+          label: 'Masonry',
+          value: 'masonry'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            skin: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Items'),
+        value: carouselItems,
+        onChange: function onChange(val) {
+          return setAttributes({
+            carouselItems: val
+          });
+        },
+        min: 1,
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this4.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(TestField, {
         label: __('Upload Images'),
         multiple: true,
         type: ['image'],
@@ -23712,7 +23814,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -23730,7 +23832,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -23748,7 +23850,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -23869,7 +23971,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         label: __('Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
-          return _this3.props.setAttributes({
+          return _this4.props.setAttributes({
             viewIconName: value
           });
         }
@@ -23887,7 +23989,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -23941,7 +24043,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -24003,7 +24105,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -24027,7 +24129,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         label: __('Link Icon'),
         value: linkIconName,
         onChange: function onChange(value) {
-          return _this3.props.setAttributes({
+          return _this4.props.setAttributes({
             linkIconName: value
           });
         }
@@ -24045,7 +24147,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -24099,7 +24201,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -24161,7 +24263,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -24194,7 +24296,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
         onRequestClose: function onRequestClose() {
-          _this3.closeOverlay();
+          _this4.closeOverlay();
         }
       }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
@@ -24255,15 +24357,44 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(uniqueId),
         onRequestClose: function onRequestClose() {
-          _this3.closeOverlay();
+          _this4.closeOverlay();
         }
       }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), /*#__PURE__*/React.createElement("div", {
+      }))), skin == "" && /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, this.renderCells(imageItems, enableHoverFx))));
+      }, this.renderCells(imageItems, enableHoverFx)), console.log(skin), skin == "carousel" && /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["Swiper"], {
+        spaceBetween: 50,
+        slidesPerView: "".concat(carouselItems.md),
+        navigation: true,
+        pagination: {
+          clickable: true
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          320: {
+            width: 320,
+            slidesPerView: carouselItems.xs
+          },
+          640: {
+            width: 640,
+            slidesPerView: carouselItems.sm
+          },
+          // when window width is >= 768px
+          1000: {
+            width: 1000,
+            slidesPerView: carouselItems.md
+          }
+        },
+        onSlideChange: function onSlideChange() {
+          return console.log('slide change');
+        },
+        onSwiper: function onSwiper(swiper) {
+          return console.log(swiper);
+        }
+      }, this.renderSlides(imageItems))));
     }
   }]);
 

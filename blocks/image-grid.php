@@ -16,6 +16,18 @@ function register_block_wprig_image_grid(){
                     'type' => 'array',
                     'default' => []
                 ],
+                'skin' => [
+                    'type' => 'string',
+                    'default' => ""
+                ], 
+                'carouselItems' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md' => 3,
+                        'sm' => 2,
+                        'xs' => 1,
+                    ]
+                ],
                 'columns' => [
                     'type' => 'number',
                     'default' => 3,
