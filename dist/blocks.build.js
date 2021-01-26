@@ -23361,6 +23361,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
 /* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _mosaic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mosaic */ "./src/blocks/image-grid/mosaic.js");
+/* harmony import */ var _image_masonry__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./image-masonry */ "./src/blocks/image-grid/image-masonry.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23432,6 +23433,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
+
 
 
 
@@ -23699,6 +23701,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           carouselItems = _this$props4$attribut.carouselItems,
           maxRowHeight = _this$props4$attribut.maxRowHeight,
           innerGap = _this$props4$attribut.innerGap,
+          gutter = _this$props4$attribut.gutter,
           enableViewButton = _this$props4$attribut.enableViewButton,
           viewButtonType = _this$props4$attribut.viewButtonType,
           viewButtonLabel = _this$props4$attribut.viewButtonLabel,
@@ -23892,6 +23895,24 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         shiftStep: 5,
         value: innerGap
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Gutter'),
+        min: 0,
+        max: 100,
+        value: gutter,
+        onChange: function onChange(val) {
+          return setAttributes({
+            gutter: val
+          });
+        },
+        unit: [''],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this4.setState({
+            device: value
+          });
+        }
       })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
@@ -24446,6 +24467,18 @@ var Edit = /*#__PURE__*/function (_Component) {
         hoverEffectDirection: hoverEffectDirection,
         id: "wprig-block-".concat(uniqueId),
         images: imageItems
+      }), skin == "masonry" && /*#__PURE__*/React.createElement(_image_masonry__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        className: "wprig-grids-editor wprig-gallery wprig-mosaic-gallery",
+        gutter: gutter,
+        columns: columns,
+        overlayEffect: overlayEffect,
+        enableHoverFx: enableHoverFx,
+        hoverEffect: hoverEffect,
+        modalLayout: modalLayout,
+        overlayParams: overlayParams,
+        hoverEffectDirection: hoverEffectDirection,
+        id: "wprig-block-".concat(uniqueId),
+        images: imageItems
       })));
     }
   }]);
@@ -24490,6 +24523,257 @@ registerBlockType('wprig/image-grid', {
     return null;
   }
 });
+
+/***/ }),
+
+/***/ "./src/blocks/image-grid/image-masonry.js":
+/*!************************************************!*\
+  !*** ./src/blocks/image-grid/image-masonry.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../modal */ "./src/blocks/modal/index.js");
+/* harmony import */ var react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-responsive-masonry */ "./node_modules/react-responsive-masonry/es/index.js");
+/* harmony import */ var react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+
+
+
+var ImageMasonry = /*#__PURE__*/function (_Component) {
+  _inherits(ImageMasonry, _Component);
+
+  var _super = _createSuper(ImageMasonry);
+
+  function ImageMasonry(props) {
+    var _this;
+
+    _classCallCheck(this, ImageMasonry);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      openModal: false,
+      imageCollection: [],
+      imageUrl: "",
+      openClass: "",
+      caption: "",
+      description: ""
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(ImageMasonry, [{
+    key: "renderClick",
+    value: function renderClick(el) {
+      this.setState({
+        openModal: true,
+        imageUrl: el.url,
+        caption: el.caption,
+        description: el.description
+      });
+      var t = this;
+      setTimeout(function () {
+        t.openOverlay();
+      }, 250);
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      this.setState({
+        openClass: "open"
+      });
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.setState({
+        openModal: false,
+        imageUrl: "",
+        caption: "",
+        description: ""
+      });
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      this.setState({
+        openClass: ""
+      });
+      var t = this;
+      setTimeout(function () {
+        t.closeModal();
+      }, 250);
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          className = _this$props.className,
+          id = _this$props.id,
+          images = _this$props.images;
+      var the_id = id;
+
+      if (jQuery("." + id).find("#gallery")) {
+        // setTimeout(function(){
+        //     jQuery("."+the_id).find("#gallery").unitegallery()
+        //     console.log("Hello World"+the_id);
+        // },5000)
+        var loadImage = function loadImage(image) {
+          return new Promise(function (resolve, reject) {
+            var loadImg = new Image();
+            loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+            loadImg.onload = function () {
+              return setTimeout(function () {
+                resolve(image.url);
+              }, 2000);
+            };
+
+            loadImg.onerror = function (err) {
+              return reject(err);
+            };
+          });
+        };
+
+        Promise.all(images.map(function (image) {
+          return loadImage(image);
+        })).then(function () {
+          // $("."+id).find("#gallery").unitegallery()
+          _this2.setState({
+            doneLoading: true
+          });
+
+          setTimeout(function () {
+            jQuery("#gallery").Mosaic({
+              maxRowHeight: 400
+            });
+          }, 500);
+        })["catch"](function (err) {
+          return console.log("Failed to load images", err);
+        });
+      }
+    }
+  }, {
+    key: "renderCells",
+    value: function renderCells(imageItems, enableHoverFx, overlayParams) {
+      var _this3 = this;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayParams.overlayLayout)
+          }, overlayParams.enableViewButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this3.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
+          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+          }), overlayParams.linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            onClick: function onClick() {
+              !enableHoverFx ? _this3.renderClick(el) : '';
+            }
+          }));
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props2 = this.props,
+          className = _this$props2.className,
+          id = _this$props2.id,
+          overlayEffect = _this$props2.overlayEffect,
+          modalLayout = _this$props2.modalLayout,
+          enableHoverFx = _this$props2.enableHoverFx,
+          hoverEffect = _this$props2.hoverEffect,
+          hoverEffectDirection = _this$props2.hoverEffectDirection,
+          overlayParams = _this$props2.overlayParams,
+          images = _this$props2.images,
+          columns = _this$props2.columns,
+          gutter = _this$props2.gutter;
+      var doneLoading = this.state.doneLoading;
+
+      if (!doneLoading) {
+        return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, "Gallery is loading"));
+      }
+
+      return /*#__PURE__*/React.createElement(Fragment, null, this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(id),
+        onRequestClose: function onRequestClose() {
+          _this4.closeOverlay();
+        }
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
+        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1__["ResponsiveMasonry"], {
+        columnsCountBreakPoints: {
+          350: columns.xs,
+          750: columns.sm,
+          900: columns.md
+        }
+      }, /*#__PURE__*/React.createElement(react_responsive_masonry__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        gutter: gutter
+      }, this.renderCells(images, enableHoverFx, overlayParams)))));
+    }
+  }]);
+
+  return ImageMasonry;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageMasonry);
 
 /***/ }),
 

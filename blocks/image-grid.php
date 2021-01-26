@@ -86,6 +86,11 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
+
+                'gutter' => [
+                    'type' => 'number',
+                    'default' => 10
+                ],
                 'enableViewButton' => [
                     'type' => 'boolean',
                     'default' => true
