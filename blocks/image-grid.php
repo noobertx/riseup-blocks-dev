@@ -700,7 +700,9 @@ function render_block_wprig_image_grid($att){
     );
     $slickSettings = (object) array(
         "slidesToShow" => $carouselItems['md'],
-        "slidesToScroll" => 4
+        "slidesToScroll" => 1,
+        "dots"=> true,
+        "arrows"=> true,
     );
 
     $modalSettings = (object) array(
@@ -715,12 +717,12 @@ function render_block_wprig_image_grid($att){
    
 
     if($skin=="carousel"){
-        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery slider $hoverEffect[0] $hoverEffectDirection[0] \" 
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider $hoverEffect[0] $hoverEffectDirection[0] \" 
         data-modal='".json_encode($modalSettings)."'
         data-slick='".json_encode($slickSettings)."'>";
     }else{
         $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
     }
 
     enqueue_skin_additional_assets($skin);
