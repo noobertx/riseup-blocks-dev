@@ -5,9 +5,9 @@
 
     setTimeout(function(){
 
-        console.log("Running mosaic")
 
-        jQuery(".wprig-mosaic-gallery").Mosaic();
+        
+        // jQuery(".wprig-mosaic-gallery").Mosaic();
         // $('.wprig-masonry-gallery').wookmark();
         
     },500)

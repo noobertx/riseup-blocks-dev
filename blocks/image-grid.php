@@ -660,6 +660,20 @@ function register_block_wprig_image_grid(){
     );
 }
 
+function enqueue_skin_additional_assets($skin){
+    
+    if($skin =="carousel" ){
+        wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
+        wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
+        wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
+    }
+    
+    if($skin !="" ){
+        wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
+    }
+
+}
+
 function render_block_wprig_image_grid($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
@@ -667,7 +681,7 @@ function render_block_wprig_image_grid($att){
     $hoverEffect 		    = isset($att['hoverEffect']) ? (array) $att['hoverEffect'] : '';
     $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
-    
+
     $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
     $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
     $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
@@ -678,13 +692,38 @@ function render_block_wprig_image_grid($att){
     $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
 
     $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
+
+    $carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
+        'md' => 3,
+        'sm' => 2,
+        'xs' => 1,
+    );
+    $slickSettings = (object) array(
+        "slidesToShow" => $carouselItems['md'],
+        "slidesToScroll" => 4
+    );
+
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
     );
+
+    $skin 		        = isset($att['skin']) ? $att['skin'] : '';
+
+
     
-    $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-    $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
+   
+
+    if($skin=="carousel"){
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-gallery slider $hoverEffect[0] $hoverEffectDirection[0] \" 
+        data-modal='".json_encode($modalSettings)."'
+        data-slick='".json_encode($slickSettings)."'>";
+    }else{
+        $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
+    }
+
+    enqueue_skin_additional_assets($skin);
 
     if(count($imageItems)){
         foreach( $imageItems as $image){
@@ -718,7 +757,9 @@ function render_block_wprig_image_grid($att){
         }
     }
     $html[] = "</div>";
+    if($skin==""){
     $html[] = "</div>";
+    }
 
     return implode("",$html);
 }
