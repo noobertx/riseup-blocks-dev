@@ -668,6 +668,15 @@ function render_block_wprig_image_grid($att){
     $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
     
+    $overlayLayout 		        = isset($att['overlayLayout']) ? $att['overlayLayout'] : 'overlay-layout-2';
+    $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
+    $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
+    $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
+
+    $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
+    $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
+    $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
+
     $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
     $modalSettings = (object) array(
         'id'=>$uniqueId ,
