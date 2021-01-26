@@ -24365,7 +24365,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }))), skin == "" && /*#__PURE__*/React.createElement("div", {
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, this.renderCells(imageItems, enableHoverFx)), console.log(skin), skin == "carousel" && /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["Swiper"], {
+      }, this.renderCells(imageItems, enableHoverFx)), console.log(skin), skin == "carousel" && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
+      }, /*#__PURE__*/React.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["Swiper"], {
         spaceBetween: 50,
         slidesPerView: "".concat(carouselItems.md),
         navigation: true,
@@ -24394,7 +24396,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         onSwiper: function onSwiper(swiper) {
           return console.log(swiper);
         }
-      }, this.renderSlides(imageItems))));
+      }, this.renderSlides(imageItems)))));
     }
   }]);
 
