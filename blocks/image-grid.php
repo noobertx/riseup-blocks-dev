@@ -28,6 +28,14 @@ function register_block_wprig_image_grid(){
                         'xs' => 1,
                     ]
                 ],
+                'maxRowHeight' => [
+                    'type' => 'string',
+                    'default' => 400
+                ], 
+                'innerGap' => [
+                    'type' => 'string',
+                    'default' => 0
+                ],
                 'columns' => [
                     'type' => 'number',
                     'default' => 3,
