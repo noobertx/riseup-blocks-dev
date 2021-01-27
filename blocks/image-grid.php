@@ -696,6 +696,7 @@ function render_block_wprig_image_grid($att){
     $uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
     $className 		        = isset($att['className']) ? $att['className'] : '';
     $imageItems 		    = isset($att['imageItems']) ? (array) $att['imageItems'] : '';
+    $enableHoverFx 		        = isset($att['enableHoverFx']) ? $att['enableHoverFx'] : false;
     $hoverEffect 		    = isset($att['hoverEffect']) ? (array) $att['hoverEffect'] : '';
     $hoverEffectDirection 		    = isset($att['hoverEffectDirection']) ? (array) $att['hoverEffectDirection'] : '';
     $overlayEffect 		        = isset($att['overlayEffect']) ? $att['overlayEffect'] : 'fall';
@@ -706,6 +707,7 @@ function render_block_wprig_image_grid($att){
     $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
 
     $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
+    
     $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
     $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
 
@@ -730,17 +732,20 @@ function render_block_wprig_image_grid($att){
 
     $skin 		        = isset($att['skin']) ? $att['skin'] : '';
 
-
-    
+    $hoverParams = "";
+    if( $enableHoverFx ){
+        $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ;
+    }
    
 
     if($skin=="carousel"){
-        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider $hoverEffect[0] $hoverEffectDirection[0] \" 
+
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider $hoverParams \" 
         data-modal='".json_encode($modalSettings)."'
         data-slick='".json_encode($slickSettings)."'>";
     }else{
-        $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery \"  data-modal='".json_encode($modalSettings)."'>";
+        $html[] = "<div class='wprig-modal-wrap '>";
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery $hoverParams \"  data-modal='".json_encode($modalSettings)."'>";
     }
 
     enqueue_skin_additional_assets($skin);
