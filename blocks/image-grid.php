@@ -82,7 +82,7 @@ function register_block_wprig_image_grid(){
                     ],
                     'style' => [
                         [                            
-                            'selector' => '{{WPRIG}}.wprig-grid-gallery .cells{ max-height: {{cellHeight}}; }' 
+                            'selector' => ' {{WPRIG}}.slider .cells,{{WPRIG}}.wprig-grid-gallery .cells{ height: {{cellHeight}}; }' 
                         ]
                     ]
                 ],
