@@ -22638,6 +22638,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
           linkIconName = _this$props4$attribut.linkIconName,
           linkIconSize = _this$props4$attribut.linkIconSize,
+          dotsColor = _this$props4$attribut.dotsColor,
+          arrowColor = _this$props4$attribut.arrowColor,
           overlayLayout = _this$props4$attribut.overlayLayout,
           modalLayout = _this$props4$attribut.modalLayout,
           setAttributes = _this$props4.setAttributes;
@@ -22683,23 +22685,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(val) {
           return setAttributes({
             skin: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Items'),
-        value: carouselItems,
-        onChange: function onChange(val) {
-          return setAttributes({
-            carouselItems: val
-          });
-        },
-        min: 1,
-        max: 15,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
-            device: value
           });
         }
       }), /*#__PURE__*/React.createElement(TestField, {
@@ -22811,6 +22796,42 @@ var Edit = /*#__PURE__*/function (_Component) {
         onDeviceChange: function onDeviceChange(value) {
           return _this4.setState({
             device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Carousel')
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Items'),
+        value: carouselItems,
+        onChange: function onChange(val) {
+          return setAttributes({
+            carouselItems: val
+          });
+        },
+        min: 1,
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this4.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Arrow Color'),
+        value: arrowColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            arrowColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color'),
+        value: dotsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColor: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {

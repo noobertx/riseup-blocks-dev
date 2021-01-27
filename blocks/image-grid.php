@@ -597,6 +597,24 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
+                'dotsColor' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .slick-dots li.slick-active button:before, {{WPRIG}} .swiper-pagination-bullet{ color:{{dotsColor}}!important; }' 
+                        ]
+                    ]
+                ], //slick-dots
+                'arrowColor' => [
+                    'type' => 'string',
+                    'default' => '#47a',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .slick-arrow:before,{{WPRIG}} .swiper-button-next,{{WPRIG}} .swiper-button-prev{ color:{{arrowColor}}; }' 
+                        ]
+                    ]
+                ],
 
                 'overlayEffect' => [
                     'type'=>'string',
