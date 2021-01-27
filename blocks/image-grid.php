@@ -601,15 +601,24 @@ function register_block_wprig_image_grid(){
                     'type' => 'boolean',
                     'default' => true
                 ], 
+                'dotsColorActive' => [
+                    'type' => 'string',
+                    'default' => '#fff',
+                    'style' => [
+                        [
+                            'selector' => '{{WPRIG}} .slick-dots li.slick-active button:before{ color:{{dotsColorActive}}!important; }' 
+                        ]
+                    ]
+                ], //slick-dots
                 'dotsColor' => [
                     'type' => 'string',
                     'default' => '#fff',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .slick-dots li.slick-active button:before, {{WPRIG}} .swiper-pagination-bullet{ color:{{dotsColor}}!important; }' 
+                            'selector' => '{{WPRIG}} .slick-dots li button:before{ color:{{dotsColor}}!important; }' 
                         ]
                     ]
-                ], //slick-dots
+                ], 
                 'enableArrows' => [
                     'type' => 'boolean',
                     'default' => true

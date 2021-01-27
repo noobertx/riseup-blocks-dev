@@ -9759,6 +9759,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkIconSize = _this$props3$attribut.linkIconSize,
           enableDots = _this$props3$attribut.enableDots,
           dotsColor = _this$props3$attribut.dotsColor,
+          dotsColorActive = _this$props3$attribut.dotsColorActive,
           enableArrows = _this$props3$attribut.enableArrows,
           arrowColor = _this$props3$attribut.arrowColor,
           overlayLayout = _this$props3$attribut.overlayLayout,
@@ -9985,7 +9986,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             arrowColor: value
           });
         }
-      }), enableDots && /*#__PURE__*/React.createElement(Color, {
+      }), enableDots && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
         label: __('Dots Color'),
         value: dotsColor,
         onChange: function onChange(value) {
@@ -9993,7 +9994,15 @@ var Edit = /*#__PURE__*/function (_Component) {
             dotsColor: value
           });
         }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color Active'),
+        value: dotsColorActive,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColorActive: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Lightbox Settings')
       }, /*#__PURE__*/React.createElement(SelectControl, {

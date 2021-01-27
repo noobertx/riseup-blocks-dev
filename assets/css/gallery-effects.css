@@ -186,6 +186,7 @@
 .wprig-gallery.slider,
 .wprig-modal-wrap {
     width:100%;
-    max-width:86%!important;
+    max-width: 90%!important;
+    margin: auto;
 }
 
