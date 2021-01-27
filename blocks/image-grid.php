@@ -597,6 +597,10 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
+                'enableDots' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ], 
                 'dotsColor' => [
                     'type' => 'string',
                     'default' => '#fff',
@@ -606,6 +610,10 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ], //slick-dots
+                'enableArrows' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ], 
                 'arrowColor' => [
                     'type' => 'string',
                     'default' => '#47a',

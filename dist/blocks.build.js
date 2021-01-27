@@ -22639,7 +22639,9 @@ var Edit = /*#__PURE__*/function (_Component) {
           linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
           linkIconName = _this$props4$attribut.linkIconName,
           linkIconSize = _this$props4$attribut.linkIconSize,
+          enableDots = _this$props4$attribut.enableDots,
           dotsColor = _this$props4$attribut.dotsColor,
+          enableArrows = _this$props4$attribut.enableArrows,
           arrowColor = _this$props4$attribut.arrowColor,
           overlayLayout = _this$props4$attribut.overlayLayout,
           modalLayout = _this$props4$attribut.modalLayout,
@@ -22841,7 +22843,23 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      }), /*#__PURE__*/React.createElement(Color, {
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Arrows'),
+        value: enableArrows,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableArrows: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Dots'),
+        value: enableDots,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableDots: val
+          });
+        }
+      }), enableArrows && /*#__PURE__*/React.createElement(Color, {
         label: __('Arrow Color'),
         value: arrowColor,
         onChange: function onChange(value) {
@@ -22849,7 +22867,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             arrowColor: value
           });
         }
-      }), /*#__PURE__*/React.createElement(Color, {
+      }), enableDots && /*#__PURE__*/React.createElement(Color, {
         label: __('Dots Color'),
         value: dotsColor,
         onChange: function onChange(value) {
