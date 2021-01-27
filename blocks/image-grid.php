@@ -293,7 +293,10 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],
-
+                'enableModal' => [
+                    'type' => 'boolean',
+                    'default' => true
+                ], 
                 'modalOverlayBg' => [
                     'type' => 'object',
                     'default' => [
@@ -738,6 +741,7 @@ function render_block_wprig_image_grid($att){
 
     $enableDots 		        = isset($att['enableDots']) ? $att['enableDots'] : false;
     $enableArrows 		        = isset($att['enableArrows']) ? $att['enableArrows'] : false;
+    $enableModal 		        = isset($att['enableModal']) ? $att['enableModal'] : false;
     $slickSettings = (object) array(
         "slidesToShow" => $carouselItems['md'],
         "slidesToScroll" => 1,
@@ -765,10 +769,10 @@ function render_block_wprig_image_grid($att){
         ]
     );
 
-    $modalSettings = (object) array(
+    $modalSettings = ($enableModal) ? (object) array(
         'id'=>$uniqueId ,
         'overlayEffect' => $overlayEffect 
-    );
+    ): (object) array();
 
     $skin 		        = isset($att['skin']) ? $att['skin'] : '';
 
@@ -796,7 +800,7 @@ function render_block_wprig_image_grid($att){
             $html[] = "<div class='overlay'>";
 
             $html[] = "<div class='overlay-content ".$overlayLayout."'>";
-                if($enableViewButton){
+                if($enableViewButton && $enableModal){
                     $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
                     $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
                     $html[] = $viewButtonLabel;
