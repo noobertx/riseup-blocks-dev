@@ -735,11 +735,14 @@ function render_block_wprig_image_grid($att){
         'sm' => 2,
         'xs' => 1,
     );
+
+    $enableDots 		        = isset($att['enableDots']) ? $att['enableDots'] : false;
+    $enableArrows 		        = isset($att['enableArrows']) ? $att['enableArrows'] : false;
     $slickSettings = (object) array(
         "slidesToShow" => $carouselItems['md'],
         "slidesToScroll" => 1,
-        "dots"=> true,
-        "arrows"=> true,
+        "dots"=> $enableDots,
+        "arrows"=> $enableArrows,
         "responsive" => [
             [
                 "breakpoint" => 1000,

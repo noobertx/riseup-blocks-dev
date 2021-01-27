@@ -184,10 +184,17 @@
     height: 100%;
 }
 
-.wprig-gallery.slider,
+
+
+    .wprig-gallery.slider{
+        width:100%;
+        max-width: 840px!important;
+        margin: auto;
+    }
+    
+
 .wprig-modal-wrap {
     width:100%;
     max-width: 90%!important;
     margin: auto;
 }
-
