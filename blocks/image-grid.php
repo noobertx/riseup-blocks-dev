@@ -740,6 +740,26 @@ function render_block_wprig_image_grid($att){
         "slidesToScroll" => 1,
         "dots"=> true,
         "arrows"=> true,
+        "responsive" => [
+            [
+                "breakpoint" => 1000,
+                "settings" => [
+                    "slidesToShow" => $carouselItems['md'],
+                ]
+            ],
+            [
+                "breakpoint" => 800,
+                "settings" => [
+                    "slidesToShow" => $carouselItems['sm'],
+                ]
+            ],
+            [
+                "breakpoint" => 500,
+                "settings" => [
+                    "slidesToShow" => $carouselItems['xs'],
+                ]
+            ]
+        ]
     );
 
     $modalSettings = (object) array(

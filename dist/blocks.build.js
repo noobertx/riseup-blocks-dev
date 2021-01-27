@@ -9621,6 +9621,55 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, 250);
     }
   }, {
+    key: "renderCells",
+    value: function renderCells(imageItems, enableHoverFx) {
+      var _this2 = this;
+
+      var _this$props3 = this.props,
+          _this$props3$attribut = _this$props3.attributes,
+          enableViewButton = _this$props3$attribut.enableViewButton,
+          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
+          viewIconName = _this$props3$attribut.viewIconName,
+          enableLinkButton = _this$props3$attribut.enableLinkButton,
+          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
+          linkIconName = _this$props3$attribut.linkIconName,
+          overlayLayout = _this$props3$attribut.overlayLayout,
+          setAttributes = _this$props3.setAttributes;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayLayout)
+          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this2.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(viewIconName)
+          }), viewButtonLabel), enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "link"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(linkIconName)
+          }), linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            onClick: function onClick() {
+              !enableHoverFx ? _this2.renderClick(el) : '';
+            }
+          }));
+        });
+      }
+    }
+  }, {
     key: "renderImages",
     value: function renderImages(imageItems) {
       if (imageItems.length > 0) {
@@ -9700,71 +9749,71 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
-      var _this$props3 = this.props,
-          _this$props3$attribut = _this$props3.attributes,
-          uniqueId = _this$props3$attribut.uniqueId,
-          className = _this$props3$attribut.className,
-          imageItems = _this$props3$attribut.imageItems,
-          columns = _this$props3$attribut.columns,
-          rowGap = _this$props3$attribut.rowGap,
-          columnGap = _this$props3$attribut.columnGap,
-          cellHeight = _this$props3$attribut.cellHeight,
-          modalOverlayBg = _this$props3$attribut.modalOverlayBg,
-          overlayEffect = _this$props3$attribut.overlayEffect,
-          enableHoverFx = _this$props3$attribut.enableHoverFx,
-          hoverEffect = _this$props3$attribut.hoverEffect,
-          hoverEffectDirection = _this$props3$attribut.hoverEffectDirection,
-          skin = _this$props3$attribut.skin,
-          carouselItems = _this$props3$attribut.carouselItems,
-          maxRowHeight = _this$props3$attribut.maxRowHeight,
-          innerGap = _this$props3$attribut.innerGap,
-          gutter = _this$props3$attribut.gutter,
-          enableViewButton = _this$props3$attribut.enableViewButton,
-          viewButtonType = _this$props3$attribut.viewButtonType,
-          viewButtonLabel = _this$props3$attribut.viewButtonLabel,
-          viewButtonIcon = _this$props3$attribut.viewButtonIcon,
-          viewFillType = _this$props3$attribut.viewFillType,
-          viewButtonColor = _this$props3$attribut.viewButtonColor,
-          viewButtonColor2 = _this$props3$attribut.viewButtonColor2,
-          viewButtonHoverColor = _this$props3$attribut.viewButtonHoverColor,
-          viewButtonHoverColor2 = _this$props3$attribut.viewButtonHoverColor2,
-          viewButtonBgColor = _this$props3$attribut.viewButtonBgColor,
-          viewButtonBgColorHover = _this$props3$attribut.viewButtonBgColorHover,
-          viewButtonBorder = _this$props3$attribut.viewButtonBorder,
-          viewButtonBorderHoverColor = _this$props3$attribut.viewButtonBorderHoverColor,
-          viewButtonBorderRadius = _this$props3$attribut.viewButtonBorderRadius,
-          viewButtonShadow = _this$props3$attribut.viewButtonShadow,
-          viewButtonShadowHover = _this$props3$attribut.viewButtonShadowHover,
-          viewIconName = _this$props3$attribut.viewIconName,
-          viewIconSize = _this$props3$attribut.viewIconSize,
-          enableLinkButton = _this$props3$attribut.enableLinkButton,
-          linkButtonType = _this$props3$attribut.linkButtonType,
-          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
-          linkButtonIcon = _this$props3$attribut.linkButtonIcon,
-          linkFillType = _this$props3$attribut.linkFillType,
-          linkButtonColor = _this$props3$attribut.linkButtonColor,
-          linkButtonColor2 = _this$props3$attribut.linkButtonColor2,
-          linkButtonHoverColor = _this$props3$attribut.linkButtonHoverColor,
-          linkButtonHoverColor2 = _this$props3$attribut.linkButtonHoverColor2,
-          linkButtonBgColor = _this$props3$attribut.linkButtonBgColor,
-          linkButtonBgColorHover = _this$props3$attribut.linkButtonBgColorHover,
-          linkButtonBorder = _this$props3$attribut.linkButtonBorder,
-          linkButtonBorderHoverColor = _this$props3$attribut.linkButtonBorderHoverColor,
-          linkButtonBorderRadius = _this$props3$attribut.linkButtonBorderRadius,
-          linkButtonShadow = _this$props3$attribut.linkButtonShadow,
-          linkButtonShadowHover = _this$props3$attribut.linkButtonShadowHover,
-          linkIconName = _this$props3$attribut.linkIconName,
-          linkIconSize = _this$props3$attribut.linkIconSize,
-          enableDots = _this$props3$attribut.enableDots,
-          dotsColor = _this$props3$attribut.dotsColor,
-          dotsColorActive = _this$props3$attribut.dotsColorActive,
-          enableArrows = _this$props3$attribut.enableArrows,
-          arrowColor = _this$props3$attribut.arrowColor,
-          overlayLayout = _this$props3$attribut.overlayLayout,
-          modalLayout = _this$props3$attribut.modalLayout,
-          setAttributes = _this$props3.setAttributes;
+      var _this$props4 = this.props,
+          _this$props4$attribut = _this$props4.attributes,
+          uniqueId = _this$props4$attribut.uniqueId,
+          className = _this$props4$attribut.className,
+          imageItems = _this$props4$attribut.imageItems,
+          columns = _this$props4$attribut.columns,
+          rowGap = _this$props4$attribut.rowGap,
+          columnGap = _this$props4$attribut.columnGap,
+          cellHeight = _this$props4$attribut.cellHeight,
+          modalOverlayBg = _this$props4$attribut.modalOverlayBg,
+          overlayEffect = _this$props4$attribut.overlayEffect,
+          enableHoverFx = _this$props4$attribut.enableHoverFx,
+          hoverEffect = _this$props4$attribut.hoverEffect,
+          hoverEffectDirection = _this$props4$attribut.hoverEffectDirection,
+          skin = _this$props4$attribut.skin,
+          carouselItems = _this$props4$attribut.carouselItems,
+          maxRowHeight = _this$props4$attribut.maxRowHeight,
+          innerGap = _this$props4$attribut.innerGap,
+          gutter = _this$props4$attribut.gutter,
+          enableViewButton = _this$props4$attribut.enableViewButton,
+          viewButtonType = _this$props4$attribut.viewButtonType,
+          viewButtonLabel = _this$props4$attribut.viewButtonLabel,
+          viewButtonIcon = _this$props4$attribut.viewButtonIcon,
+          viewFillType = _this$props4$attribut.viewFillType,
+          viewButtonColor = _this$props4$attribut.viewButtonColor,
+          viewButtonColor2 = _this$props4$attribut.viewButtonColor2,
+          viewButtonHoverColor = _this$props4$attribut.viewButtonHoverColor,
+          viewButtonHoverColor2 = _this$props4$attribut.viewButtonHoverColor2,
+          viewButtonBgColor = _this$props4$attribut.viewButtonBgColor,
+          viewButtonBgColorHover = _this$props4$attribut.viewButtonBgColorHover,
+          viewButtonBorder = _this$props4$attribut.viewButtonBorder,
+          viewButtonBorderHoverColor = _this$props4$attribut.viewButtonBorderHoverColor,
+          viewButtonBorderRadius = _this$props4$attribut.viewButtonBorderRadius,
+          viewButtonShadow = _this$props4$attribut.viewButtonShadow,
+          viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
+          viewIconName = _this$props4$attribut.viewIconName,
+          viewIconSize = _this$props4$attribut.viewIconSize,
+          enableLinkButton = _this$props4$attribut.enableLinkButton,
+          linkButtonType = _this$props4$attribut.linkButtonType,
+          linkButtonLabel = _this$props4$attribut.linkButtonLabel,
+          linkButtonIcon = _this$props4$attribut.linkButtonIcon,
+          linkFillType = _this$props4$attribut.linkFillType,
+          linkButtonColor = _this$props4$attribut.linkButtonColor,
+          linkButtonColor2 = _this$props4$attribut.linkButtonColor2,
+          linkButtonHoverColor = _this$props4$attribut.linkButtonHoverColor,
+          linkButtonHoverColor2 = _this$props4$attribut.linkButtonHoverColor2,
+          linkButtonBgColor = _this$props4$attribut.linkButtonBgColor,
+          linkButtonBgColorHover = _this$props4$attribut.linkButtonBgColorHover,
+          linkButtonBorder = _this$props4$attribut.linkButtonBorder,
+          linkButtonBorderHoverColor = _this$props4$attribut.linkButtonBorderHoverColor,
+          linkButtonBorderRadius = _this$props4$attribut.linkButtonBorderRadius,
+          linkButtonShadow = _this$props4$attribut.linkButtonShadow,
+          linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
+          linkIconName = _this$props4$attribut.linkIconName,
+          linkIconSize = _this$props4$attribut.linkIconSize,
+          enableDots = _this$props4$attribut.enableDots,
+          dotsColor = _this$props4$attribut.dotsColor,
+          dotsColorActive = _this$props4$attribut.dotsColorActive,
+          enableArrows = _this$props4$attribut.enableArrows,
+          arrowColor = _this$props4$attribut.arrowColor,
+          overlayLayout = _this$props4$attribut.overlayLayout,
+          modalLayout = _this$props4$attribut.modalLayout,
+          setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
           imageCollection = _this$state.imageCollection;
@@ -9866,7 +9915,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -9884,7 +9933,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -9902,7 +9951,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -9938,11 +9987,11 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
+      })), skin == "carousel" && /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Carousel')
       }, /*#__PURE__*/React.createElement(Range, {
@@ -9958,7 +10007,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10119,7 +10168,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         label: __('Icon'),
         value: viewIconName,
         onChange: function onChange(value) {
-          return _this2.props.setAttributes({
+          return _this3.props.setAttributes({
             viewIconName: value
           });
         }
@@ -10137,7 +10186,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10191,7 +10240,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10253,7 +10302,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10277,7 +10326,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         label: __('Link Icon'),
         value: linkIconName,
         onChange: function onChange(value) {
-          return _this2.props.setAttributes({
+          return _this3.props.setAttributes({
             linkIconName: value
           });
         }
@@ -10295,7 +10344,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10349,7 +10398,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10411,7 +10460,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -10444,7 +10493,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
         onRequestClose: function onRequestClose() {
-          _this2.closeOverlay();
+          _this3.closeOverlay();
         }
       }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
@@ -10474,7 +10523,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(uniqueId),
         onRequestClose: function onRequestClose() {
-          _this2.closeOverlay();
+          _this3.closeOverlay();
         }
       }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
@@ -10622,7 +10671,8 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
       imageUrl: "",
       openClass: "",
       caption: "",
-      description: ""
+      description: "",
+      doneLoading: ""
     };
     _this.wprigContextMenu = createRef();
     return _this;
@@ -10678,6 +10728,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
           id = _this$props.id,
           images = _this$props.images;
       var the_id = id;
+      this.loadCarousel();
     }
   }, {
     key: "componentDidUpdate",
@@ -10695,6 +10746,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
           images = _this$props2.images,
           id = _this$props2.id,
           carouselParams = _this$props2.carouselParams;
+      console.log(this.state.doneLoading);
 
       var loadImage = function loadImage(image) {
         return new Promise(function (resolve, reject) {
@@ -10720,6 +10772,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
           doneLoading: true
         });
 
+        console.log(_this2.state.doneLoading);
         setTimeout(function () {
           console.log(id, carouselParams);
           jQuery("." + id).slick(carouselParams); //
@@ -10735,13 +10788,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
 
       var _this$props3 = this.props,
           enableHoverFx = _this$props3.enableHoverFx,
-          overlayLayout = _this$props3.overlayLayout,
-          viewIconName = _this$props3.viewIconName,
-          linkIconName = _this$props3.linkIconName,
-          viewButtonLabel = _this$props3.viewButtonLabel,
-          linkButtonLabel = _this$props3.linkButtonLabel,
-          enableViewButton = _this$props3.enableViewButton,
-          enableLinkButton = _this$props3.enableLinkButton;
+          overlayParams = _this$props3.overlayParams;
 
       if (imageItems && imageItems.length > 0) {
         return imageItems.map(function (el) {
@@ -10750,25 +10797,27 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
           }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
             className: "overlay"
           }, /*#__PURE__*/React.createElement("div", {
-            className: "overlay-content ".concat(overlayLayout)
-          }, enableViewButton && /*#__PURE__*/React.createElement("button", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayParams.overlayLayout)
+          }, overlayParams.enableViewButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "view",
             onClick: function onClick() {
               _this3.renderClick(el);
             }
           }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(viewIconName)
-          }, viewButtonLabel)), enableLinkButton && /*#__PURE__*/React.createElement("button", {
+            className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
+          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
             type: "button",
             className: "link"
           }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(linkIconName)
-          }, linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
-            src: el.thumbnail,
+            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+          }), overlayParams.linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+            src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
-              _this3.renderClick(el);
+              !enableHoverFx ? _this3.renderClick(el) : '';
             }
           }));
         });
