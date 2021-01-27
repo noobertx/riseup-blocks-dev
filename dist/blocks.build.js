@@ -22299,6 +22299,7 @@ var _wp$components = wp.components,
     PanelBody = _wp$components.PanelBody,
     IconButton = _wp$components.IconButton,
     TextControl = _wp$components.TextControl,
+    Button = _wp$components.Button,
     SelectControl = _wp$components.SelectControl;
 var _wp$element = wp.element,
     Component = _wp$element.Component,
@@ -22687,15 +22688,37 @@ var Edit = /*#__PURE__*/function (_Component) {
             skin: val
           });
         }
-      }), /*#__PURE__*/React.createElement(TestField, {
-        label: __('Upload Images'),
+      }), /*#__PURE__*/React.createElement(MediaUpload, {
+        value: imageItems.map(function (img) {
+          return img.id;
+        }),
+        allowedTypes: ["image"],
         multiple: true,
-        type: ['image'],
-        value: imageItems,
-        panel: true,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageItems: value
+        gallery: true,
+        render: function render(_ref) {
+          var open = _ref.open;
+          return /*#__PURE__*/React.createElement(Button, {
+            icon: "edit",
+            onClick: open,
+            isPrimary: "true"
+          }, "Edit Gallery Selection");
+        },
+        onSelect: function onSelect(newImages) {
+          var newImgs = newImages.map(function (img) {
+            return imageItems.find(function (c) {
+              return c.id === img.id;
+            }) ? imageItems.find(function (c) {
+              return c.id === img.id;
+            }) : {
+              id: img.id,
+              url: img.sizes.full.url,
+              thumbnail: img.sizes.thumbnail.url,
+              title: img.caption
+            };
+          });
+          setAttributes({
+            imageItems: newImgs // descriptions: newCaptionArray,
+
           });
         }
       }), /*#__PURE__*/React.createElement(Range, {
@@ -23286,6 +23309,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         onSelect: function onSelect(newImages) {
           var newImgs = newImages.map(function (img) {
             return {
+              id: img.id,
               url: img.sizes.full.url,
               thumbnail: img.sizes.thumbnail.url,
               title: img.caption
@@ -23300,38 +23324,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         allowedTypes: ["image"],
         multiple: true
-      }), /*#__PURE__*/React.createElement(MediaUpload, {
-        value: imageItems.map(function (img) {
-          return img.id;
-        }),
-        allowedTypes: ["image"],
-        multiple: true,
-        gallery: true,
-        render: function render(_ref) {
-          var open = _ref.open;
-          return /*#__PURE__*/React.createElement(IconButton, {
-            onClick: open,
-            label: __("Edit selection")
-          });
-        },
-        onSelect: function onSelect(newImages) {
-          var newImgs = newImages.map(function (img) {
-            return captionArray.find(function (c) {
-              return c.id === img.id;
-            }) ? captionArray.find(function (c) {
-              return c.id === img.id;
-            }) : {
-              text: img.caption,
-              url: img.url,
-              thumbnail: img.thumbnail,
-              id: img.id
-            };
-          });
-          setAttributes({
-            imageItems: newImgs // descriptions: newCaptionArray,
-
-          });
-        }
       })) : /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
         title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
