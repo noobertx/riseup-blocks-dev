@@ -11257,8 +11257,8 @@ var Mosaic = /*#__PURE__*/function (_Component) {
       var _this$props2 = this.props,
           innerGap = _this$props2.innerGap,
           id = _this$props2.id,
-          maxRowHeight = _this$props2.maxRowHeight;
-      console.log(this.props.maxRowHeight, prevProps.id); // if(prevProps.maxRowHeight!=this.props.maxRowHeight ){
+          maxRowHeight = _this$props2.maxRowHeight; // console.log(this.props.id, prevProps.id)
+      // if(prevProps.maxRowHeight!=this.props.maxRowHeight ){
       // this.loadMosaicScript(id);
       // }
     }
@@ -11351,6 +11351,8 @@ var Mosaic = /*#__PURE__*/function (_Component) {
   }, {
     key: "renderMosaicBlocks",
     value: function renderMosaicBlocks() {
+      var _this4 = this;
+
       var _this$props4 = this.props,
           className = _this$props4.className,
           id = _this$props4.id,
@@ -11360,21 +11362,50 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           innerGap = _this$props4.innerGap,
           hoverEffect = _this$props4.hoverEffect,
           modalLayout = _this$props4.modalLayout,
+          imageItems = _this$props4.imageItems,
           hoverEffectDirection = _this$props4.hoverEffectDirection,
           overlayParams = _this$props4.overlayParams,
           images = _this$props4.images;
+      console.log("renderMosaicBlocks");
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         className: "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, /*#__PURE__*/React.createElement("div", {
         "class": "mosaicx",
         "data-max-row-height": maxRowHeight,
         "data-inner-gap": innerGap
-      }, this.renderCells(images, enableHoverFx, overlayParams))));
+      }, imageItems && imageItems.length > 0 && imageItems.map(function (el) {
+        return /*#__PURE__*/React.createElement("div", {
+          "class": "cells"
+        }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+          className: "overlay"
+        }, /*#__PURE__*/React.createElement("div", {
+          className: "overlay-content ".concat(overlayParams.overlayLayout)
+        }, overlayParams.enableViewButton && overlayParams.enableModal && /*#__PURE__*/React.createElement("button", {
+          type: "button",
+          className: "view",
+          onClick: function onClick() {
+            _this4.renderClick(el);
+          }
+        }, /*#__PURE__*/React.createElement("i", {
+          className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
+        }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
+          type: "button",
+          className: "link"
+        }, /*#__PURE__*/React.createElement("i", {
+          className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
+        }), overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
+          src: el.url,
+          "data-image": el.url,
+          onClick: function onClick() {
+            !enableHoverFx ? _this4.renderClick(el) : '';
+          }
+        }));
+      }))));
     }
   }, {
     key: "render",
     value: function render() {
-      var _this4 = this;
+      var _this5 = this;
 
       var _this$props5 = this.props,
           className = _this$props5.className,
@@ -11386,7 +11417,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           hoverEffect = _this$props5.hoverEffect,
           modalLayout = _this$props5.modalLayout,
           hoverEffectDirection = _this$props5.hoverEffectDirection,
-          overlayParams = _this$props5.overlayParams,
           images = _this$props5.images;
       var doneLoading = this.state.doneLoading;
 
@@ -11399,19 +11429,13 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(id),
         onRequestClose: function onRequestClose() {
-          _this4.closeOverlay();
+          _this5.closeOverlay();
         }
       }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), /*#__PURE__*/React.createElement("div", {
-        className: "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, /*#__PURE__*/React.createElement("div", {
-        "class": "mosaicx",
-        "data-max-row-height": maxRowHeight,
-        "data-inner-gap": innerGap
-      }, this.renderCells(images, enableHoverFx, overlayParams))));
+      }))), this.renderMosaicBlocks());
     }
   }]);
 
