@@ -73,7 +73,30 @@ function register_block_wprig_image_grid(){
                         ]
                     ]
                 ],      
-                
+                'cellWidth' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md'=> 250,
+                        'unit'=> 'px'
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => ' {{WPRIG}}.wprig-masonry-gallery .cells{ width: {{cellWidth}}; }' 
+                        ]
+                    ]
+                ],
+                'cellMargin' => [
+                    'type' => 'object',
+                    'default' => [
+                        'md'=> 5,
+                        'unit'=> 'px'
+                    ],
+                    'style' => [
+                        [                            
+                            'selector' => ' {{WPRIG}}.wprig-masonry-gallery .cells{ margin: {{cellMargin}}; }' 
+                        ]
+                    ]
+                ],
                 'cellHeight' => [
                     'type' => 'object',
                     'default' => [
@@ -708,6 +731,11 @@ function enqueue_skin_additional_assets($skin){
 
     if($skin =="mosaic" ){
         wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
+    }
+
+    if($skin =="masonry" ){
+        wp_enqueue_script( 'images-loaded', WPRIG_DIR_URL . 'vendors/imagesloaded.pkgd.min.js', array( 'jquery' ), microtime() );
+        wp_enqueue_script( 'jquery-masonry-2', WPRIG_DIR_URL . 'vendors/masonry.pkgd.min.js', array( 'jquery' ), microtime() );
     }
     
     if($skin !="" ){
