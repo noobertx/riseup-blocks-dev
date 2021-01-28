@@ -4,17 +4,17 @@
  * for WordPress themes and plugins. Developed with WordPress coding
  * standards and PHP best practices in mind.
  *
- * Plugin Name:     RiseUp Blocks
+ * Plugin Name:     RiseUp Gallery Blocks
  * Plugin URI:      http://wordpress.org/plugins/riseup-blocks
  * Author:          Robert Talavera
  * Author URI:      http://robert-talavera.com
- * Version:         1.0.0.0
- * Text Domain:     rise-up-block
+ * Version:         1.0.0
+ * Text Domain:     rise-up-gallery-block
  * License:         GPLv3 or later
  * License URI:     http://www.gnu.org/licenses/gpl-3.0.txt
  * Provides:        RiseUp Blocks
  *
- * @package         RiseUp Blocks
+ * @package         RiseUp Gallery Blocks
  * @author          Robert Talavera
  */
 
