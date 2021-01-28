@@ -9879,11 +9879,10 @@ var Edit = /*#__PURE__*/function (_Component) {
             };
           });
           setAttributes({
-            imageItems: newImgs // descriptions: newCaptionArray,
-
+            imageItems: newImgs
           });
         }
-      }), skin != "mosaic" && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+      }), skin != "mosaic" && skin != "masonry" && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
         label: __('Number of Columns'),
         value: columns || '',
         onChange: function onChange(val) {
@@ -10596,6 +10595,8 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-grids-editor wprig-gallery wprig-masonry-gallery",
         overlayEffect: overlayEffect,
         enableHoverFx: enableHoverFx,
+        cellWidth: cellWidth,
+        cellMargin: cellMargin,
         hoverEffect: hoverEffect,
         modalLayout: modalLayout,
         overlayParams: overlayParams,
@@ -11009,53 +11010,67 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
       }, 250);
     }
   }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this$props = this.props,
+          cellWidth = _this$props.cellWidth,
+          id = _this$props.id,
+          cellMargin = _this$props.cellMargin; // console.log(this.props.id, prevProps.id)
+
+      if (prevProps.id != this.props.id || prevProps.cellWidth != cellWidth || prevProps.cellMargin != cellMargin) {
+        this.setState({
+          doneLoading: false
+        });
+        this.loadMasonryScript(id);
+      }
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          className = _this$props.className,
-          id = _this$props.id,
-          images = _this$props.images;
-      var the_id = id;
+      var id = this.props.id;
 
       if (jQuery("." + id).find("#gallery")) {
-        // setTimeout(function(){
-        //     jQuery("."+the_id).find("#gallery").unitegallery()
-        //     console.log("Hello World"+the_id);
-        // },5000)
-        var loadImage = function loadImage(image) {
-          return new Promise(function (resolve, reject) {
-            var loadImg = new Image();
-            loadImg.src = image.url; // wait 2 seconds to simulate loading time
-
-            loadImg.onload = function () {
-              return setTimeout(function () {
-                resolve(image.url);
-              }, 2000);
-            };
-
-            loadImg.onerror = function (err) {
-              return reject(err);
-            };
-          });
-        };
-
-        Promise.all(images.map(function (image) {
-          return loadImage(image);
-        })).then(function () {
-          // $("."+id).find("#gallery").unitegallery()
-          _this2.setState({
-            doneLoading: true
-          });
-
-          setTimeout(function () {
-            jQuery(".wprig-masonry-gallery").masonry();
-          }, 500);
-        })["catch"](function (err) {
-          return console.log("Failed to load images", err);
-        });
+        this.loadMasonryScript(id);
       }
+    }
+  }, {
+    key: "loadMasonryScript",
+    value: function loadMasonryScript(id) {
+      var _this2 = this;
+
+      var images = this.props.images;
+
+      var loadImage = function loadImage(image) {
+        return new Promise(function (resolve, reject) {
+          var loadImg = new Image();
+          loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+          loadImg.onload = function () {
+            return setTimeout(function () {
+              resolve(image.url);
+            }, 2000);
+          };
+
+          loadImg.onerror = function (err) {
+            return reject(err);
+          };
+        });
+      };
+
+      Promise.all(images.map(function (image) {
+        return loadImage(image);
+      })).then(function () {
+        // $("."+id).find("#gallery").unitegallery()
+        _this2.setState({
+          doneLoading: true
+        });
+
+        setTimeout(function () {
+          jQuery(".wprig-masonry-gallery").masonry();
+        }, 500);
+      })["catch"](function (err) {
+        return console.log("Failed to load images", err);
+      });
     }
   }, {
     key: "renderCells",
