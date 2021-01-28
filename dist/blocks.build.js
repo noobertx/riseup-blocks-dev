@@ -9823,9 +9823,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         overlayLayout: overlayLayout
       };
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
-        tabs: ['style', 'advance']
+        tabs: ['content', 'hover', 'advance']
       }, /*#__PURE__*/React.createElement(InspectorTab, {
-        key: 'style'
+        key: 'content'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Grid Settings')
@@ -10179,6 +10179,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       })))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'hover'
+      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
@@ -10523,7 +10525,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      })), HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }))))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
@@ -11145,8 +11147,7 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
       }))), /*#__PURE__*/React.createElement("div", {
-        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " "),
-        "data-masonry-prop": "\".json_encode($masonrySettings).\""
+        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, this.renderCells(images, enableHoverFx, overlayParams)));
     }
   }]);
@@ -12515,6 +12516,7 @@ var _wp$element2 = wp.element,
     CONTENT = 'content',
     QUERY = 'query',
     STYLE = 'style',
+    HOVER = 'hover',
     ADVANCE = 'advance';
 
 var InspectorTabs = function InspectorTabs(props) {
@@ -12586,7 +12588,16 @@ var InspectorTabs = function InspectorTabs(props) {
     onClick: function onClick() {
       return _onTabChange(STYLE);
     }
-  }, /*#__PURE__*/React.createElement("h5", null, __('Content')))), tabs.indexOf(STYLE) > -1 && /*#__PURE__*/React.createElement(Tooltip, {
+  }, /*#__PURE__*/React.createElement("h5", null, __('Content')))), tabs.indexOf(HOVER) > -1 && /*#__PURE__*/React.createElement(Tooltip, {
+    text: __('Hover')
+  }, /*#__PURE__*/React.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+      'wprig-active': currentTab === HOVER
+    }),
+    onClick: function onClick() {
+      return _onTabChange(HOVER);
+    }
+  }, /*#__PURE__*/React.createElement("h5", null, __('Hover')))), tabs.indexOf(STYLE) > -1 && /*#__PURE__*/React.createElement(Tooltip, {
     text: __('Style')
   }, /*#__PURE__*/React.createElement("button", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()({
