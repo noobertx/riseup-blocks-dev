@@ -9416,6 +9416,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _image_carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./image-carousel */ "./src/blocks/image-grid/image-carousel.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -10536,9 +10538,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), skin == "" && /*#__PURE__*/React.createElement("div", {
+      }))), skin == "" && /*#__PURE__*/React.createElement("div", _extends({
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
-      }, this.renderCells(imageItems, enableHoverFx)), skin == "carousel" && /*#__PURE__*/React.createElement(_image_carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, animationAttr(animation)), this.renderCells(imageItems, enableHoverFx)), skin == "carousel" && /*#__PURE__*/React.createElement(_image_carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
         className: "wprig-custom-gallery wprig-gallery slider",
         gutter: gutter,
         carouselParams: this.getCarouselParams(),
