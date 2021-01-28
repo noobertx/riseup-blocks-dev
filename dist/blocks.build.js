@@ -10756,8 +10756,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
       var _this$props2 = this.props,
           images = _this$props2.images,
           id = _this$props2.id,
-          carouselParams = _this$props2.carouselParams;
-      console.log(this.state.doneLoading);
+          carouselParams = _this$props2.carouselParams; // console.log(this.state.doneLoading);
 
       var loadImage = function loadImage(image) {
         return new Promise(function (resolve, reject) {
@@ -10781,11 +10780,11 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
       })).then(function () {
         _this2.setState({
           doneLoading: true
-        });
+        }); //   console.log(this.state.doneLoading);
 
-        console.log(_this2.state.doneLoading);
+
         setTimeout(function () {
-          console.log(id, carouselParams);
+          // console.log(id,carouselParams);
           jQuery("." + id).slick(carouselParams); //
         }, 500);
       })["catch"](function (err) {
@@ -10868,7 +10867,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
         src: "".concat(this.state.imageUrl)
       }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), console.log(id), /*#__PURE__*/React.createElement("div", {
+      }))), /*#__PURE__*/React.createElement("div", {
         "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, this.renderSlides(images)));
     }
@@ -11258,9 +11257,13 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           innerGap = _this$props2.innerGap,
           id = _this$props2.id,
           maxRowHeight = _this$props2.maxRowHeight; // console.log(this.props.id, prevProps.id)
-      // if(prevProps.maxRowHeight!=this.props.maxRowHeight ){
-      // this.loadMosaicScript(id);
-      // }
+
+      if (prevProps != this.props) {
+        this.setState({
+          doneLoading: false
+        });
+        this.loadMosaicScript(id);
+      }
     }
   }, {
     key: "loadMosaicScript",
@@ -11294,15 +11297,15 @@ var Mosaic = /*#__PURE__*/function (_Component) {
         return loadImage(image);
       })).then(function () {
         // $("."+id).find("#gallery").unitegallery()
-        // console.log(this.props)
+        // console.log("Doing Mosaic")
         _this2.setState({
           doneLoading: true
         });
 
         setTimeout(function () {
           // console.log(jQuery("."mosaicx).find("#gallery"));
-          jQuery(".mosaicx").Mosaic();
-          console.log(id); // jQuery("."+className).find("#gallery").Mosaic({
+          jQuery("." + id + " >.mosaicx").Mosaic(); // console.log(id);
+          // jQuery("."+className).find("#gallery").Mosaic({
           //     maxRowHeight:maxRowHeight,
           //     innerGap:parseInt(innerGap),
           //     responsiveWidthThreshold:true
@@ -11365,15 +11368,15 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           imageItems = _this$props4.imageItems,
           hoverEffectDirection = _this$props4.hoverEffectDirection,
           overlayParams = _this$props4.overlayParams,
-          images = _this$props4.images;
-      console.log("renderMosaicBlocks");
+          images = _this$props4.images; // console.log("renderMosaicBlocks");
+
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         className: "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, /*#__PURE__*/React.createElement("div", {
         "class": "mosaicx",
         "data-max-row-height": maxRowHeight,
         "data-inner-gap": innerGap
-      }, imageItems && imageItems.length > 0 && imageItems.map(function (el) {
+      }, images && images.length > 0 && images.map(function (el) {
         return /*#__PURE__*/React.createElement("div", {
           "class": "cells"
         }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
