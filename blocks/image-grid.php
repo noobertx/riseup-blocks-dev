@@ -558,19 +558,26 @@ function register_block_wprig_image_grid(){
                     'type' => 'boolean',
                     'default' => false
                 ],
+                'bannerBg' => [
+                    'type' => 'object',
+                    'default' => [
+                        'bgimgPosition' => 'center center',
+                        'bgimgSize' => 'cover',
+                        'bgimgRepeat' => 'no-repeat',
+                        'bgDefaultColor' => '',
+                        'bgimageSource' => 'local',
+                        'externalImageUrl' => []
+                    ],
+                    'style' => [
+                        ['selector' => '{{WPRIG}} .overlay' ]
+                    ]
+                ],
                 'bannerOverlay' => [
                     'type' => 'object',
                     'default' => [],
                     'style' => [
                         [
-                            'condition' => [
-                                [
-                                    'key' => 'enableBannerOverlay',
-                                    'relation' => '==',
-                                    'value' => true,
-                                ]
-                            ],
-                            'selector' => '{{WPRIG}} .wprig-block-info-box' 
+                            'selector' => '{{WPRIG}} .overlay' 
                         ]
                     ]
                 ],
@@ -579,7 +586,7 @@ function register_block_wprig_image_grid(){
                     'default' => '',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .wprig-info-box-media-overlay { mix-blend-mode: {{bannerBlend}}; }' 
+                            'selector' => '{{WPRIG}} .overlay { mix-blend-mode: {{bannerBlend}}; }' 
                         ]
                     ]
                 ],
@@ -588,7 +595,7 @@ function register_block_wprig_image_grid(){
                     'default' => '0.8',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .wprig-info-box-media-overlay { mix-blend-mode: {{bannerOpacity}}; }' 
+                            'selector' => '{{WPRIG}} .overlay { opacity: {{bannerOpacity}}; }' 
                         ]
                     ]
                 ],
@@ -617,7 +624,7 @@ function register_block_wprig_image_grid(){
                     'default' => '',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .wprig-info-box-media-overlay { mix-blend-mode: {{bannerBlendHover}}; }' 
+                            'selector' => '{{WPRIG}} .overlay { mix-blend-mode: {{bannerBlendHover}}; }' 
                         ]
                     ]
                 ],
@@ -626,7 +633,7 @@ function register_block_wprig_image_grid(){
                     'default' => '0.8',
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}} .wprig-info-box-media-overlay { mix-blend-mode: {{bannerOpacityHover}}; }' 
+                            'selector' => '{{WPRIG}} .overlay { mix-blend-mode: {{bannerOpacityHover}}; }' 
                         ]
                     ]
                 ],
