@@ -9472,7 +9472,9 @@ var _wp$wprigComponents = wp.wprigComponents,
     _wp$wprigComponents$g2 = _wp$wprigComponents.globalCustomSettings,
     globalCustomAttributes = _wp$wprigComponents$g2.globalCustomAttributes,
     HoverEXSettings = _wp$wprigComponents$g2.HoverEXSettings,
-    videoBackground = _wp$wprigComponents.HelperFunction.videoBackground,
+    _wp$wprigComponents$H = _wp$wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction,
     CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
@@ -9700,40 +9702,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           }
         }]
       };
-    } // loadCarousel(id,carouselParams){
-    //     const {
-    //         attributes:{
-    //             uniqueId,
-    //             className,
-    //             images,
-    //             imageItems,
-    //             maxRowHeight  ,
-    //             innerGap
-    //         }
-    //     }  = this.props;
-    //     const loadImage = image => {
-    //         return new Promise((resolve, reject) => {
-    //           const loadImg = new Image()
-    //           loadImg.src = image.url
-    //           // wait 2 seconds to simulate loading time
-    //           loadImg.onload = () =>
-    //             setTimeout(() => {
-    //               resolve(image.url)
-    //             }, 2000)
-    //           loadImg.onerror = err => reject(err)
-    //         })
-    //       }
-    //             Promise.all(imageItems.map(image => loadImage(image))).then(() => {
-    //                 // $("."+id).find("#gallery").unitegallery()
-    //                 // console.log(this.props)
-    //                 this.setState({doneLoading:true})
-    //                 setTimeout(function(){
-    //                     jQuery("."+id).slick(carouselParams);
-    //                     console.log(id,carouselParams);
-    //             },500)
-    //             }).catch(err => console.log("Failed to load images", err))
-    // }
-
+    }
   }, {
     key: "render",
     value: function render() {
@@ -9804,6 +9773,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           arrowColor = _this$props4$attribut.arrowColor,
           overlayLayout = _this$props4$attribut.overlayLayout,
           modalLayout = _this$props4$attribut.modalLayout,
+          animation = _this$props4$attribut.animation,
           setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -10180,9 +10150,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       })))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'hover'
-      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes)), /*#__PURE__*/React.createElement(InspectorTab, {
-        key: 'advance'
-      }, /*#__PURE__*/React.createElement(PanelBody, {
+      }, HoverEXSettings(uniqueId, enableHoverFx, hoverEffect, hoverEffectDirection, setAttributes), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: true,
         title: __('Hover Overlay Content')
       }, enableModal && /*#__PURE__*/React.createElement(Toggle, {
@@ -10525,7 +10493,9 @@ var Edit = /*#__PURE__*/function (_Component) {
             overlayLayout: val
           });
         }
-      }))))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes)))), this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
         title: "This is my modal",
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
         overlayClassName: "wprig-block-".concat(uniqueId, " ").concat(overlayEffect, " ").concat(this.state.openClass, " "),
@@ -12586,7 +12556,7 @@ var InspectorTabs = function InspectorTabs(props) {
       'wprig-active': currentTab === CONTENT
     }),
     onClick: function onClick() {
-      return _onTabChange(STYLE);
+      return _onTabChange(CONTENT);
     }
   }, /*#__PURE__*/React.createElement("h5", null, __('Content')))), tabs.indexOf(HOVER) > -1 && /*#__PURE__*/React.createElement(Tooltip, {
     text: __('Hover')
