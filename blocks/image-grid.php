@@ -705,10 +705,16 @@ function enqueue_skin_additional_assets($skin){
         wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
         wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
     }
+
+    if($skin =="mosaic" ){
+        wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
+    }
     
     if($skin !="" ){
         wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
     }
+
+
 
 }
 
@@ -776,6 +782,9 @@ function render_block_wprig_image_grid($att){
 
     $skin 		        = isset($att['skin']) ? $att['skin'] : '';
 
+    $maxRowHeight 		        = isset($att['maxRowHeight']) ? $att['maxRowHeight'] : "";
+    $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
+
     $hoverParams = "";
     if( $enableHoverFx ){
         $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ;
@@ -787,6 +796,10 @@ function render_block_wprig_image_grid($att){
         $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider $hoverParams \" 
         data-modal='".json_encode($modalSettings)."'
         data-slick='".json_encode($slickSettings)."'>";
+    }else if($skin=="mosaic"){
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery  $hoverParams  \" 
+        data-max-row-height= '".$maxRowHeight."' data-inner-gap='".$innerGap ."'
+         data-modal='".json_encode($modalSettings)."'>";
     }else{
         $html[] = "<div class='wprig-modal-wrap '>";
         $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery $hoverParams \"  data-modal='".json_encode($modalSettings)."'>";

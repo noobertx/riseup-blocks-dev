@@ -198,3 +198,9 @@
     max-width: 90%!important;
     margin: auto;
 }
+
+.jQueryMosaic {
+    width: 100%!important;
+    max-width: 100%!important;
+    margin: auto;
+}

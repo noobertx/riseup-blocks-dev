@@ -7,14 +7,12 @@
 
 
         
-        // jQuery(".wprig-mosaic-gallery").Mosaic();
+        jQuery(".wprig-mosaic-gallery").Mosaic();
         // $('.wprig-masonry-gallery').wookmark();
         
     },500)
    
 
-
-    console.log("This script")
     $(".wprig-gallery").on("click","a.slick-slide",function(e){        
         e.preventDefault();
         var $el = $(this);

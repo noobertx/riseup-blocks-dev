@@ -11258,7 +11258,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           id = _this$props2.id,
           maxRowHeight = _this$props2.maxRowHeight; // console.log(this.props.id, prevProps.id)
 
-      if (prevProps != this.props) {
+      if (prevProps.id != this.props.id || prevProps.maxRowHeight != this.props.maxRowHeight || prevProps.innerGap != this.props.innerGap) {
         this.setState({
           doneLoading: false
         });
