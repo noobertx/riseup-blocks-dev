@@ -53,32 +53,6 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         },700)
     })
 
-    // $(".wprig-grid-gallery").on("click","a.wprig-gallery-item",function(e){  
-    //     e.preventDefault();
-    //     var $el = $(this);
-    //     var $gallery = $el.closest(".wprig-grid-gallery");
-    //     var galleryData =  $gallery.data();
-    //     var path = $el.attr("href");
-
-        
-        
-    //     $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
-    //     $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
-    //     $(".components-modal__screen-overlay").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
-        
-    //     $(".wprig-dynamic-modal").find("#slick-img").remove()
-
-      
-
-    //     setTimeout(function(){     
-    //         $(".wprig-dynamic-modal").addClass("open")
-    //         $(".components-modal__content").append($("<img>",{
-    //             id:"slick-img",
-    //             src:path
-    //         }))
-    //     },200)
-    // })
-
     $(".wprig-grid-gallery").on("click",".overlay,a.wprig-gallery-item",function(e){  
         e.preventDefault();
         var $el = $(this);
@@ -161,27 +135,12 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
  
 
     $(document).ready(function() {
-        // var grid = document.querySelector('.wprig-masonry-gallery');
-        // var msnry = new Masonry( grid, {
-        // // options...
-        //     itemSelector: '.cells',
-        //     columnWidth: 150,
-        //     gutter: 10
-        // });
-
-        // console.log(msnry)
-
-       
-
-        $(".wprig-masonry-gallery").imagesLoaded(function() {
-
-            $(".wprig-masonry-gallery").map(function($el){
-                console.log($el);
-            })
-            $(".wprig-masonry-gallery").masonry({
-                // itemSelector: ".cells"
-            });
-        });
-
+            if($(".wprig-masonry-gallery").imagesLoaded){
+                $(".wprig-masonry-gallery").imagesLoaded(function() {
+                    $(".wprig-masonry-gallery").masonry({
+                    });
+                });
+            }
+            
     });
 })(jQuery)

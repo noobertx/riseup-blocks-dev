@@ -300,12 +300,9 @@ class RiseUp_Blocks {
 		// wp_enqueue_script( 'wprig-blocks-js', WPRIG_DIR_URL . 'assets/js/wprig.dev.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), microtime(), true );
 		// echo "The path is at ".WPRIG_DIR_URL.'dist/blocks.build.js';
 
-		wp_enqueue_style( 'unite-gallery', WPRIG_DIR_URL . 'assets/css/unite-gallery.css', false, microtime() );
 		wp_enqueue_style( 'wprig-gallery-effects', WPRIG_DIR_URL . 'assets/css/gallery-effects.css', false, microtime() );
 
 		wp_enqueue_script( 'wprig-blocks-js',  WPRIG_DIR_URL.'dist/blocks.build.js', array('media'), microtime(), true );
-		wp_enqueue_script( 'unite-gallery',  WPRIG_DIR_URL.'assets/js/unitegallery.min.js', array(), microtime(), true );
-		wp_enqueue_script( 'unite-tiles',  WPRIG_DIR_URL.'assets/themes/tiles/ug-theme-tiles.js', array(), microtime(), true );
 		
 		$palette = get_theme_support( 'wprig-color-palette' );
 		$palette = array_replace( array( '#062040', '#566372', '#2084F9', '#F3F3F3', '#EEEEEE', '#FFFFFF' ), ( $palette ? $palette[0] : array() ) );
@@ -400,17 +397,12 @@ class RiseUp_Blocks {
 		#START_REPLACE
 		wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
 		wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
-		wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, microtime() );
 		wp_enqueue_style( 'wprig-editor-fields-min', WPRIG_DIR_URL . 'assets/css/fields.css', false, microtime() );
 		wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/blocks.editor.min.css', false, microtime() );
 		#END_REPLACE
 
 		wp_enqueue_style( 'font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, microtime() );
-		wp_enqueue_script( 'wprig-magnific-popup', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime(), true );
 		wp_enqueue_script( 'jquery-animatedHeadline', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
-		wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
-		wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime(), true );
-		wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
 		
 		wp_register_style( 'wprig-options', WPRIG_DIR_URL . 'assets/css/options.css', false, microtime() );
 
@@ -547,7 +539,6 @@ class RiseUp_Blocks {
 			#START_REPLACE
 			wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
 			wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
-			wp_enqueue_style( 'wprig-magnific-popup-style', WPRIG_DIR_URL . 'assets/css/magnific-popup.css', false, microtime() );
 			wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, microtime() );
 			#END_REPLACE
 
@@ -591,18 +582,6 @@ class RiseUp_Blocks {
 				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
 			}
 
-			if ( in_array( 'wprig/map', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
-			}
-
-			if ( in_array( 'wprig/videopopup', $available_blocks ) || in_array( 'wprig/gallery', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime() );
-			}
-
-			if ( in_array( 'wprig/contactform', $available_blocks ) || in_array( 'wprig/form', $available_blocks ) ) {
-				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime() );
-			}
-
 			if ( in_array( 'wprig/imagecomparison', $available_blocks ) ) {
 				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), microtime() );
 			}
@@ -611,20 +590,6 @@ class RiseUp_Blocks {
 				wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 			}
 
-			if (
-				$has_interaction ||
-				$has_parallax ||
-				$has_animation ||
-				in_array( 'wprig/accordion', $available_blocks ) ||
-				in_array( 'wprig/pieprogress', $available_blocks ) ||
-				in_array( 'wprig/counter', $available_blocks ) ||
-				in_array( 'wprig/tabs', $available_blocks ) ||
-				in_array( 'wprig/table-of-contents', $available_blocks ) ||
-				in_array( 'wprig/verticaltabs', $available_blocks ) ||
-				in_array( 'wprig/postgrid', $available_blocks )
-			) {
-				wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
-			}
 		} else {
 			$post    = null;
 			$wp_post = get_post( $post );
@@ -632,37 +597,11 @@ class RiseUp_Blocks {
 				$post = $wp_post->post_content;
 			}
 
-			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/animatedheadline' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-animated-headline-script', WPRIG_DIR_URL . 'assets/js/jquery.animatedheadline.js', array( 'jquery' ), microtime(), true );
-			}
 
-			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/map' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-map', WPRIG_DIR_URL . 'assets/js/blocks/map.js', array( 'jquery' ), microtime(), true );
-			}
-
-			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/videopopup' . ' ' ) || false !== strpos( $post, '<!-- wp:' . 'wprig/gallery' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-magnific-popup-script', WPRIG_DIR_URL . 'assets/js/wprig.magnific-popup.js', array( 'jquery' ), microtime() );
-			}
-
-			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/contactform' . ' ' ) || false !== strpos( $post, '<!-- wp:' . 'wprig/form' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-contactform', WPRIG_DIR_URL . 'assets/js/blocks/contactform.js', array( 'jquery' ), microtime() );
-			}
-			if ( false !== strpos( $post, '<!-- wp:' . 'wprig/imagecomparison' . ' ' ) ) {
-				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), microtime() );
-			}
-
-			wp_enqueue_script( 'wprig-block-common', WPRIG_DIR_URL . 'assets/js/common-script.js', array( 'jquery' ), microtime(), true );
 			wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 		}
 
-		wp_enqueue_script(
-			'custom-block-slick',
-			get_template_directory_uri(). '/inc/My_Blocks/assets/js/script.js' ,
-			['jquery'],
-			microtime(),
-			true
-		);
-		wp_enqueue_script( 'wprig-block-misc', WPRIG_DIR_URL . 'assets/js/misc-script.js', array( 'jquery' ), microtime(), true );
+
 
 	}
 
