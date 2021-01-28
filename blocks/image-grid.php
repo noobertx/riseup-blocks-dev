@@ -103,8 +103,15 @@ function register_block_wprig_image_grid(){
                         'md'=> 300,
                         'unit'=> 'px'
                     ],
-                    'style' => [
-                        [                            
+                    'style' => [                        
+                        [       
+                            'condition' => [
+                                [
+                                    'key' => 'skin',
+                                    'relation' => '!=',
+                                    'value' => "masonry",
+                                ]
+                            ],                     
                             'selector' => ' {{WPRIG}}.slider .cells,{{WPRIG}}.wprig-grid-gallery .cells{ height: {{cellHeight}}; }' 
                         ]
                     ]
@@ -810,6 +817,11 @@ function render_block_wprig_image_grid($att){
 
     $skin 		        = isset($att['skin']) ? $att['skin'] : '';
 
+    $masonrySettings = (object) array(
+        'columns' => $columns,
+        'gutter' => $gutter
+    );
+
     $maxRowHeight 		        = isset($att['maxRowHeight']) ? $att['maxRowHeight'] : "";
     $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
 
@@ -817,7 +829,7 @@ function render_block_wprig_image_grid($att){
     if( $enableHoverFx ){
         $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ;
     }
-   
+
 
     if($skin=="carousel"){
 
@@ -828,6 +840,8 @@ function render_block_wprig_image_grid($att){
         $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery  $hoverParams  \" 
         data-max-row-height= '".$maxRowHeight."' data-inner-gap='".$innerGap ."'
          data-modal='".json_encode($modalSettings)."'>";
+    }else if ($skin=="masonry"){
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery $hoverParams  \"   data-modal='".json_encode($modalSettings) ."'>";
     }else{
         $html[] = "<div class='wprig-modal-wrap '>";
         $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery $hoverParams \"  data-modal='".json_encode($modalSettings)."'>";

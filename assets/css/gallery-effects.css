@@ -207,6 +207,6 @@
 
 .wprig-masonry-gallery {
     width: 100%;
-    max-width: 80%;
-    margin: auto;
+    max-width: 95%!important;
+    margin: auto!important;
 }

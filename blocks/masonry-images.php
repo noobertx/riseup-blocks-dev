@@ -630,7 +630,7 @@ function render_block_wprig_masonry_images($att){
     );
     
     $html[] = "<div class='wprig-modal-wrap  $hoverEffect[0] $hoverEffectDirection[0] '>";
-    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery \"   data-modal='".json_encode($modalSettings) . "' data-masonry-prop='".json_encode($masonrySettings)."'>";
+    $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery \"   data-modal='".json_encode($modalSettings) ."'>";
     
 
     if(count($imageItems)){
