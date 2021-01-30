@@ -9505,6 +9505,8 @@ var Edit = /*#__PURE__*/function (_Component) {
       device: 'md',
       openModal: false,
       imageCollection: [],
+      title: "",
+      description: "",
       imageUrl: "",
       openClass: ""
     };
@@ -9606,9 +9608,12 @@ var Edit = /*#__PURE__*/function (_Component) {
     value: function renderClick(el) {
       this.setState({
         openModal: true,
-        imageUrl: el.url
+        imageUrl: el.url,
+        title: el.caption,
+        description: el.description
       });
       var t = this;
+      console.log(t);
       setTimeout(function () {
         t.openOverlay();
       }, 250);
@@ -10402,17 +10407,25 @@ var Edit = /*#__PURE__*/function (_Component) {
         allowedTypes: ["image"],
         multiple: true
       })) : /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        title: "".concat(this.state.title ? this.state.title : "No Title", "  "),
         className: "wprig-dynamic-modal wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
         overlayClassName: "wprig-block-".concat(uniqueId),
         onRequestClose: function onRequestClose() {
           _this3.closeOverlay();
         }
-      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("figure", {
+        className: "modal-layout-1"
+      }, /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+      }), /*#__PURE__*/React.createElement("figcaption", {
+        className: "description"
+      }, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")))), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("figure", {
+        className: "modal-layout-2"
+      }, /*#__PURE__*/React.createElement("figcaption", {
+        className: "description"
+      }, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), /*#__PURE__*/React.createElement("img", {
         src: "".concat(this.state.imageUrl)
-      }))), skin == "" && /*#__PURE__*/React.createElement("div", _extends({
+      })))), skin == "" && /*#__PURE__*/React.createElement("div", _extends({
         className: "wprig-grids-editor wprig-grid-gallery wprig-block-".concat(uniqueId, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " ")
       }, animationAttr(animation)), this.renderCells(imageItems, enableHoverFx)), skin == "carousel" && /*#__PURE__*/React.createElement(_image_carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
         className: "wprig-custom-gallery wprig-gallery slider",
