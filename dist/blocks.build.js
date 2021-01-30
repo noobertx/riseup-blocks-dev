@@ -9455,6 +9455,7 @@ var _wp$blockEditor = wp.blockEditor,
     MediaPlaceholder = _wp$blockEditor.MediaPlaceholder,
     MediaUpload = _wp$blockEditor.MediaUpload;
 var _wp$wprigComponents = wp.wprigComponents,
+    Url = _wp$wprigComponents.Url,
     Tab = _wp$wprigComponents.Tab,
     Tabs = _wp$wprigComponents.Tabs,
     Select = _wp$wprigComponents.Select,
@@ -9622,7 +9623,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableViewButton = _this$props3$attribut.enableViewButton,
           viewButtonLabel = _this$props3$attribut.viewButtonLabel,
           viewIconName = _this$props3$attribut.viewIconName,
-          enableLinkButton = _this$props3$attribut.enableLinkButton,
           linkButtonLabel = _this$props3$attribut.linkButtonLabel,
           linkIconName = _this$props3$attribut.linkIconName,
           overlayLayout = _this$props3$attribut.overlayLayout,
@@ -9647,12 +9647,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(viewIconName)
-          }), viewButtonLabel), enableLinkButton && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "link"
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(linkIconName)
-          }), linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+          }), viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -9753,24 +9748,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
           viewIconName = _this$props4$attribut.viewIconName,
           viewIconSize = _this$props4$attribut.viewIconSize,
-          enableLinkButton = _this$props4$attribut.enableLinkButton,
-          linkButtonType = _this$props4$attribut.linkButtonType,
-          linkButtonLabel = _this$props4$attribut.linkButtonLabel,
-          linkButtonIcon = _this$props4$attribut.linkButtonIcon,
-          linkFillType = _this$props4$attribut.linkFillType,
-          linkButtonColor = _this$props4$attribut.linkButtonColor,
-          linkButtonColor2 = _this$props4$attribut.linkButtonColor2,
-          linkButtonHoverColor = _this$props4$attribut.linkButtonHoverColor,
-          linkButtonHoverColor2 = _this$props4$attribut.linkButtonHoverColor2,
-          linkButtonBgColor = _this$props4$attribut.linkButtonBgColor,
-          linkButtonBgColorHover = _this$props4$attribut.linkButtonBgColorHover,
-          linkButtonBorder = _this$props4$attribut.linkButtonBorder,
-          linkButtonBorderHoverColor = _this$props4$attribut.linkButtonBorderHoverColor,
-          linkButtonBorderRadius = _this$props4$attribut.linkButtonBorderRadius,
-          linkButtonShadow = _this$props4$attribut.linkButtonShadow,
-          linkButtonShadowHover = _this$props4$attribut.linkButtonShadowHover,
-          linkIconName = _this$props4$attribut.linkIconName,
-          linkIconSize = _this$props4$attribut.linkIconSize,
           enableDots = _this$props4$attribut.enableDots,
           dotsColor = _this$props4$attribut.dotsColor,
           dotsColorActive = _this$props4$attribut.dotsColorActive,
@@ -9782,6 +9759,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           overlayLayout = _this$props4$attribut.overlayLayout,
           modalLayout = _this$props4$attribut.modalLayout,
           animation = _this$props4$attribut.animation,
+          linkButtonURL = _this$props4$attribut.linkButtonURL,
           setAttributes = _this$props4.setAttributes;
       var _this$state = this.state,
           device = _this$state.device,
@@ -9792,12 +9770,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         viewButtonLabel: viewButtonLabel,
         viewButtonIcon: viewButtonIcon,
         viewIconName: viewIconName,
-        enableLinkButton: enableLinkButton,
-        linkButtonType: linkButtonType,
         enableModal: enableModal,
-        linkButtonLabel: linkButtonLabel,
-        linkButtonIcon: linkButtonIcon,
-        linkIconName: linkIconName,
         overlayLayout: overlayLayout
       };
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
@@ -10339,164 +10312,6 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Enable Link'),
-        value: enableLinkButton,
-        onChange: function onChange(val) {
-          return setAttributes({
-            enableLinkButton: val
-          });
-        }
-      }), enableLinkButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
-        label: "link Button Text",
-        value: linkButtonLabel,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonLabel: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(IconList, {
-        label: __('Link Icon'),
-        value: linkIconName,
-        onChange: function onChange(value) {
-          return _this3.props.setAttributes({
-            linkIconName: value
-          });
-        }
-      }), linkIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: __('Link Icon Size'),
-        value: linkIconSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkIconSize: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 5,
-        max: 48,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Styles, {
-        value: linkFillType,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkFillType: value
-          });
-        },
-        options: [{
-          value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
-          label: __('Fill')
-        }, {
-          value: 'outline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
-          label: __('Outline')
-        }]
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Text Color'),
-        value: linkFillType == 'fill' ? linkButtonColor : linkButtonColor2,
-        onChange: function onChange(value) {
-          return linkFillType == 'fill' ? setAttributes({
-            linkButtonColor: value
-          }) : setAttributes({
-            linkButtonColor2: value
-          });
-        }
-      }), linkFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: linkButtonBgColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonBgColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: linkButtonBorder,
-        onChange: function onChange(val) {
-          return setAttributes({
-            linkButtonBorder: val
-          });
-        },
-        min: 0,
-        max: 10,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: linkButtonShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonShadow: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Text Color'),
-        value: linkFillType == 'fill' ? linkButtonHoverColor : linkButtonHoverColor2,
-        onChange: function onChange(value) {
-          return linkFillType == 'fill' ? setAttributes({
-            linkButtonHoverColor: value
-          }) : setAttributes({
-            linkButtonHoverColor2: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: linkButtonBgColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonBgColorHover: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Border Color'),
-        value: linkButtonBorderHoverColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonBorderHoverColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: linkButtonShadowHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonShadowHover: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: linkButtonBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            linkButtonBorderRadius: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
       }))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Hover Overlay'),
         initialOpen: true
@@ -10875,12 +10690,7 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
-          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "link"
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
-          }), overlayParams.linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+          }), overlayParams.viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -11128,12 +10938,7 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
-          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "link"
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
-          }), overlayParams.linkButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+          }), overlayParams.viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -11398,12 +11203,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
-          }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "link"
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
-          }), overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
+          }), overlayParams.viewButtonLabel))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -11453,12 +11253,7 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           }
         }, /*#__PURE__*/React.createElement("i", {
           className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
-        }), overlayParams.viewButtonLabel), overlayParams.enableLinkButton && /*#__PURE__*/React.createElement("button", {
-          type: "button",
-          className: "link"
-        }, /*#__PURE__*/React.createElement("i", {
-          className: "wprig-btn-icon ".concat(overlayParams.linkIconName)
-        }), overlayParams.linkButtonLabel))), /*#__PURE__*/React.createElement("img", {
+        }), overlayParams.viewButtonLabel))), /*#__PURE__*/React.createElement("img", {
           src: el.url,
           "data-image": el.url,
           onClick: function onClick() {
