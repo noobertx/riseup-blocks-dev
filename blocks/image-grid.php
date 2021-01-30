@@ -36,12 +36,31 @@ function register_block_wprig_image_grid(){
                     'type' => 'string',
                     'default' => 0
                 ],
+                'columnsTablet' => [
+                    'type' => 'object',
+                    'default' => 2,
+                    'style' => [
+                        [
+                            'selector' => '@media(min-width:480px) { {{WPRIG}}.wprig-grid-gallery{grid-template-columns: repeat({{columnsTablet}},1fr); } }'
+                        ]
+                    ]
+                ],
                 'columns' => [
-                    'type' => 'number',
+                    'type' => 'object',
                     'default' => 3,
                     'style' => [
                         [
-                            'selector' => '{{WPRIG}}.wprig-grid-gallery{grid-template-columns: repeat({{columns}},1fr); } '
+                            'selector' => '@media(min-width:1200px) { {{WPRIG}}.wprig-grid-gallery{grid-template-columns: repeat({{columns}},1fr); } }'
+                        ]
+                    ]
+                ],
+                
+                'columnsPhone' => [
+                    'type' => 'object',
+                    'default' => 1,
+                    'style' => [
+                        [
+                            'selector' => '@media(max-width:480px) { {{WPRIG}}.wprig-grid-gallery{grid-template-columns: repeat({{columnsPhone}},1fr); } }'
                         ]
                     ]
                 ],

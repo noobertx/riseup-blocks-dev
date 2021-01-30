@@ -9717,6 +9717,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           className = _this$props4$attribut.className,
           imageItems = _this$props4$attribut.imageItems,
           columns = _this$props4$attribut.columns,
+          columnsTablet = _this$props4$attribut.columnsTablet,
+          columnsPhone = _this$props4$attribut.columnsPhone,
           rowGap = _this$props4$attribut.rowGap,
           columnGap = _this$props4$attribut.columnGap,
           cellHeight = _this$props4$attribut.cellHeight,
@@ -9859,11 +9861,31 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), skin != "mosaic" && skin != "masonry" && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: __('Number of Columns'),
+        label: __('Columns'),
         value: columns || '',
         onChange: function onChange(val) {
           return setAttributes({
             columns: val
+          });
+        },
+        min: 1,
+        max: 10
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Columns Tablet'),
+        value: columnsTablet || '',
+        onChange: function onChange(val) {
+          return setAttributes({
+            columnsTablet: val
+          });
+        },
+        min: 1,
+        max: 10
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Columns Mobile'),
+        value: columnsPhone || '',
+        onChange: function onChange(val) {
+          return setAttributes({
+            columnsPhone: val
           });
         },
         min: 1,
