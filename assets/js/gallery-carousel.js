@@ -13,12 +13,14 @@
     },500)
    
 
-    $(".wprig-gallery").on("click","a.slick-slide",function(e){        
+    $(".wprig-custom-gallery").on("click","a.slick-slide",function(e){        
         e.preventDefault();
         var $el = $(this);
-        var $gallery = $el.closest(".wprig-gallery");
+        var $gallery = $el.closest(".wprig-custom-gallery");
         var galleryData =  $gallery.data();
         var path = $el.attr("href");
+
+        console.log(path);
         
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
@@ -26,10 +28,10 @@
         
         $(".wprig-dynamic-modal").find("#slick-img").remove()
 
-        // $(".components-modal__content").append($("<img>",{
-        //     id:"slick-img",
-        //     src:path
-        // }))
+        $(".components-modal__content").append($("<img>",{
+            id:"slick-img",
+            src:path
+        }))
 
         setTimeout(function(){     
             $(".wprig-dynamic-modal").addClass("open")
@@ -113,6 +115,7 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         var $gallery = $el.closest(".wprig-gallery");
         var galleryData =  $gallery.data();
         var path = $(this).closest(".cells").find(".wprig-gallery-item").attr("href");
+
 
         if(galleryData.modal.overlayEffect=="let-me-in"){
             $("body").addClass("has-perspective")

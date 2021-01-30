@@ -756,11 +756,11 @@ function register_block_wprig_image_grid(){
 
 function enqueue_skin_additional_assets($skin){
     
-    if($skin =="carousel" ){
+    // if($skin =="carousel" ){
         wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
         wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
         wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
-    }
+    // }
 
     if($skin =="mosaic" ){
         wp_enqueue_script( 'jquery-mosaic', WPRIG_DIR_URL . 'vendors/jquery-mosaic/jquery.mosaic.min.js', array( 'jquery' ), microtime() );
@@ -771,9 +771,9 @@ function enqueue_skin_additional_assets($skin){
         wp_enqueue_script( 'jquery-masonry-2', WPRIG_DIR_URL . 'vendors/masonry.pkgd.min.js', array( 'jquery' ), microtime() );
     }
     
-    if($skin !="" ){
+    // if($skin !="" ){
         wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
-    }
+    // }
 
 
 
@@ -889,7 +889,7 @@ function render_block_wprig_image_grid($att){
                 }
 
                 if($enableLinkButton){
-                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<a href='".$image['url']."' class='link wprig-gallery-item'>";
                     $html[] = "<i class='wprig-btn-icon ".$linkIconName."'></i>";
                     $html[] = $linkButtonLabel;
                     $html[] = "</a>";                                      
@@ -915,4 +915,31 @@ function render_block_wprig_image_grid($att){
 }
 
 add_action('init', 'register_block_wprig_image_grid', 100);
+
+add_action( 'wp_body_open', 'render_modal_component' );
+add_action('wp_footer', 'render_overlay_block');
+function render_modal_component(){
+    if(!is_admin()){
+        ?>
+                
+                <div class="components-modal__frame wprig-dynamic-modal">
+                    <div class="components-modal__content">
+                        <div class="components-modal__header">
+                            <div class="components-modal__header-heading-container">
+                                <h1 id="components-modal-header-1" class="components-modal__header-heading">
+                                    This is my Modal
+                                </h1>                                
+                            </div>                            
+                            <button type="button" id="close-modal" class="components-button has-icon" aria-label="Close dialog"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <?php
+    }
+}
+
+function render_overlay_block(){ ?>
+    <div class="components-modal__screen-overlay"></div>    
+<?php }
 ?>
