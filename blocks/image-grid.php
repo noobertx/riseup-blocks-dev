@@ -678,7 +678,7 @@ function render_block_wprig_image_grid($att){
 
             $html[] = "<div class='overlay-content ".$overlayLayout."'>";
                 if($enableViewButton && $enableModal){
-                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'>";
+                    $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'  data-id='".$image['id']."'>";
                     $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
                     $html[] = $viewButtonLabel;
                     $html[] = "</a>";                                      

@@ -20,7 +20,6 @@
         var galleryData =  $gallery.data();
         var path = $el.attr("href");
 
-        console.log(path);
         
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
@@ -57,10 +56,13 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
 
     $(".wprig-grid-gallery").on("click",".overlay,a.wprig-gallery-item",function(e){  
         e.preventDefault();
+        e.stopPropagation();
         var $el = $(this);
         var $gallery = $el.closest(".wprig-grid-gallery");
         var galleryData =  $gallery.data();
         var path = $(this).closest(".cells").find(".wprig-gallery-item").attr("href");
+        var id = $(this).data("id")
+        // console.log();
 
         if(galleryData.modal.overlayEffect=="let-me-in"){
             $("body").addClass("has-perspective")
@@ -71,6 +73,10 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         $(".wprig-dynamic-modal").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
         
         $(".wprig-dynamic-modal").find("#slick-img").remove()
+
+        $.fetch(wprig_gallery.ajax_url,{action:"get_media",id:id},function(data){
+            console.log(data)
+        })
         $(".components-modal__content").append($("<img>",{
             id:"slick-img",
             src:path
@@ -88,6 +94,8 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         var $gallery = $el.closest(".wprig-mosaic-gallery");
         var galleryData =  $gallery.data();
         var path = $(this).closest(".cells").find(".wprig-gallery-item").attr("href");
+
+        console.log(location.origin+"?p="+$(this).data("id"));
 
         if(galleryData.modal.overlayEffect=="let-me-in"){
             $("body").addClass("has-perspective")
@@ -116,6 +124,8 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         var galleryData =  $gallery.data();
         var path = $(this).closest(".cells").find(".wprig-gallery-item").attr("href");
 
+
+        console.log(location.origin+"?p="+$(this).data("id"));
 
         if(galleryData.modal.overlayEffect=="let-me-in"){
             $("body").addClass("has-perspective")
