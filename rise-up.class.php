@@ -568,10 +568,9 @@ class RiseUp_Blocks {
 			$has_animation    = $blocks_meta_data['animation'];
 			$has_parallax     = $blocks_meta_data['parallax'];
 
-
-			//gallery-carousel.js
 			// if ( in_array( 'wprig/image-carousel', $available_blocks ) ) {
-				wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
+				wp_enqueue_script( 'riseup-gallery', WPRIG_DIR_URL . 'assets/js/riseup-gallery.js', array( 'jquery' ), microtime(), true );
+				wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/front.js', array( 'jquery' ), microtime(), true );
 			// }
 
 			wp_localize_script( 'gallery-carousel', 'wprig_gallery',

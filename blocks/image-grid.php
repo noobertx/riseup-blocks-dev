@@ -566,7 +566,8 @@ function enqueue_skin_additional_assets($skin){
     }
     
     // if($skin !="" ){
-        wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/gallery-carousel.js', array( 'jquery' ), microtime(), true );
+        wp_enqueue_script( 'riseup-gallery', WPRIG_DIR_URL . 'assets/js/riseup-gallery.js', array( 'jquery' ), microtime(), true );
+        wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/front.js', array( 'jquery' ), microtime(), true );
     // }
 
 
@@ -655,18 +656,18 @@ function render_block_wprig_image_grid($att){
 
     if($skin=="carousel"){
 
-        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider $hoverParams \" 
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-custom-gallery wprig-gallery slider riseup-gallery $hoverParams \" 
         data-modal='".json_encode($modalSettings)."'
         data-slick='".json_encode($slickSettings)."'>";
     }else if($skin=="mosaic"){
-        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery  $hoverParams  \" 
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-mosaic-gallery riseup-gallery $hoverParams  \" 
         data-max-row-height= '".$maxRowHeight."' data-inner-gap='".$innerGap ."'
          data-modal='".json_encode($modalSettings)."'>";
     }else if ($skin=="masonry"){
-        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery $hoverParams  \"   data-modal='".json_encode($modalSettings) ."'>";
+        $html[] = "<div class=\"wprig-block-$uniqueId $className wprig-grid-gallery wprig-masonry-gallery riseup-gallery $hoverParams  \"   data-modal='".json_encode($modalSettings) ."'>";
     }else{
         $html[] = "<div class='wprig-modal-wrap '>";
-        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery $hoverParams \"  data-modal='".json_encode($modalSettings)."'>";
+        $html[] = "<div class=\"wprig-block-$uniqueId $className  wprig-custom-gallery wprig-grid-gallery riseup-gallery $hoverParams \"  data-modal='".json_encode($modalSettings)."'>";
     }
 
     enqueue_skin_additional_assets($skin);
