@@ -3,15 +3,6 @@
         $(".wprig-gallery").slick()
     }
 
-    setTimeout(function(){
-
-
-        
-        jQuery(".wprig-mosaic-gallery").Mosaic();
-        // $('.wprig-masonry-gallery').wookmark();
-        
-    },500)
-
 $(".components-modal__frame").on("click","#close-modal",function(e){
     e.preventDefault();
         var $el = $(this);
@@ -31,6 +22,9 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
 
     })
 
+    
+    // }
+
 
     $(document).ready(function() {
 
@@ -38,6 +32,12 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
             modalClass: '.wprig-dynamic-modal',
             toggleClass : 'a.wprig-gallery-item'
         });
+
+
+        if($(".wprig-mosaic-gallery").length){
+            $(".wprig-mosaic-gallery").Mosaic();
+        }
+
 
             if($(".wprig-masonry-gallery").imagesLoaded){
                 $(".wprig-masonry-gallery").imagesLoaded(function() {
