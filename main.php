@@ -1,7 +1,6 @@
 <?php // phpcs:ignore Squiz.Commenting.FileComment.Missing
 /**
- * Redux, a simple, truly extensible and fully responsive options framework
- * for WordPress themes and plugins. Developed with WordPress coding
+ * Riseup Gallery Blocks, a simple, truly extensible Gallery . Developed with WordPress coding
  * standards and PHP best practices in mind.
  *
  * Plugin Name:     RiseUp Gallery Blocks
