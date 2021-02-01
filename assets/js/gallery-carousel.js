@@ -42,7 +42,7 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         var $el = $(this);
         var modalData = $(".wprig-dynamic-modal").data();
         
-            $(".wprig-dynamic-modal").removeClass("open")                    
+        $(".wprig-dynamic-modal").removeClass("open")                    
 
         setTimeout(function(){  
             $(".wprig-dynamic-modal")
@@ -51,7 +51,9 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
             .removeData("id")
             .removeData("overlayEffect") 
             $("body").removeClass("has-perspective")        
+            
         },700)
+
     })
 
     $(".wprig-grid-gallery").on("click",".overlay,a.wprig-gallery-item",function(e){  
@@ -72,15 +74,21 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
         $(".wprig-dynamic-modal").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
         
-        $(".wprig-dynamic-modal").find("#slick-img").remove()
-
-        $.fetch(wprig_gallery.ajax_url,{action:"get_media",id:id},function(data){
-            console.log(data)
+        $(".components-modal__content").find("figure").remove();
+        $.getJSON(location.origin+"/wp-json/riseup/get_media?item="+id,function(data){
+            $("#components-modal-header-1").html(data.post_title)
+            $(".components-modal__content").append($("<figure>").html(
+                $("<img>",{
+                    id:"slick-img",
+                    src:data.guid
+                })
+            ).append(
+                $("<figcaption>").html(
+                    $("<p>").html(data.post_content)
+                )
+            ))          
         })
-        $(".components-modal__content").append($("<img>",{
-            id:"slick-img",
-            src:path
-        }))
+        
 
         setTimeout(function(){
             $(".wprig-dynamic-modal").addClass("open")
@@ -105,11 +113,20 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
         $(".wprig-dynamic-modal").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
         
-        $(".wprig-dynamic-modal").find("#slick-img").remove()
-        $(".components-modal__content").append($("<img>",{
-            id:"slick-img",
-            src:path
-        }))
+        $(".components-modal__content").find("figure").remove();
+        $.getJSON(location.origin+"/wp-json/riseup/get_media?item="+id,function(data){
+            $("#components-modal-header-1").html(data.post_title)
+            $(".components-modal__content").append($("<figure>").html(
+                $("<img>",{
+                    id:"slick-img",
+                    src:data.guid
+                })
+            ).append(
+                $("<figcaption>").html(
+                    $("<p>").html(data.post_content)
+                )
+            ))          
+        })
 
         setTimeout(function(){
             $(".wprig-dynamic-modal").addClass("open")
@@ -135,11 +152,20 @@ $(".components-modal__frame").on("click","#close-modal",function(e){
         $(".wprig-dynamic-modal").addClass("wprig-block-"+galleryData.modal.id)
         $(".wprig-dynamic-modal").data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
         
-        $(".wprig-dynamic-modal").find("#slick-img").remove()
-        $(".components-modal__content").append($("<img>",{
-            id:"slick-img",
-            src:path
-        }))
+        $(".components-modal__content").find("figure").remove();
+        $.getJSON(location.origin+"/wp-json/riseup/get_media?item="+id,function(data){
+            $("#components-modal-header-1").html(data.post_title)
+            $(".components-modal__content").append($("<figure>").html(
+                $("<img>",{
+                    id:"slick-img",
+                    src:data.guid
+                })
+            ).append(
+                $("<figcaption>").html(
+                    $("<p>").html(data.post_content)
+                )
+            ))          
+        })
 
         setTimeout(function(){
             $(".wprig-dynamic-modal").addClass("open")

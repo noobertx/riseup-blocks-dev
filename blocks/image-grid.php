@@ -731,4 +731,22 @@ function render_modal_component(){
 function render_overlay_block(){ ?>
     <div class="components-modal__screen-overlay"></div>    
 <?php }
+
+add_action('rest_api_init', 'getImageMedia');
+function getImageMedia() {
+  register_rest_route('riseup', 'get_media', array(
+    'methods' => WP_REST_SERVER::READABLE,
+    'callback' => 'getMediaItem'
+  ));
+}
+
+function getMediaItem($data){
+    if(!isset($data['item']))
+        return "Item Not Found";
+        
+    $id = sanitize_text_field($data['item']);
+    $post = get_post($id);
+    return $post;
+    // return "Hello World";
+}
 ?>
