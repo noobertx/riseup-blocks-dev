@@ -21,15 +21,33 @@
             plugin.settings = $.extend({}, defaults, options);
             // code goes here
 
-            foo_private_method(plugin.settings);
+            initializeGallery(plugin.settings);
         }
 
         // plugin.foo_public_method = function() {
         //     // code goes here
         // }
 
-        var foo_private_method = function(settings) {
-            // console.log($element,plugin.settings)
+        var initializeGallery = function(settings) {
+            $(settings.modalClass).on("click","#close-modal",function(e){
+                e.preventDefault();
+                    var $el = $(this);
+                    var modalData = $(".wprig-dynamic-modal").data();
+                    
+                    $(".wprig-dynamic-modal").removeClass("open")                    
+            
+                    setTimeout(function(){  
+                        $(".wprig-dynamic-modal")
+                        .removeClass("wprig-block-"+modalData.id)
+                        .removeClass(modalData.overlayEffect)
+                        .removeData("id")
+                        .removeData("overlayEffect") 
+                        $("body").removeClass("has-perspective")        
+                        
+                    },700)
+            
+                })
+
             $element.on("click",settings.toggleClass,function(e){  
                 e.preventDefault();
                 var $el = $(this);
