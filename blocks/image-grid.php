@@ -11,6 +11,7 @@ class Riseup_Gallery_Block{
         if (!function_exists('register_block_type')) {
             return;
         }
+        
     
         register_block_type(
             'wprig/image-grid',
