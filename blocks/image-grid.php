@@ -3,9 +3,9 @@
 class Riseup_Gallery_Block{
     function __construct(){
         add_action('init', [$this,'register_block_wprig_image_grid'], 100);
-        add_action( 'wp_body_open', [$this,'render_modal_component'] );
         add_action('wp_footer', [$this,'render_overlay_block']);
         add_action('rest_api_init', [$this,'getImageMedia']);
+        add_action( 'wp_body_open', [$this,'render_modal_component'] );
     }
     function register_block_wprig_image_grid(){
         if (!function_exists('register_block_type')) {
@@ -600,6 +600,7 @@ class Riseup_Gallery_Block{
         $enableDots 		        = isset($att['enableDots']) ? $att['enableDots'] : false;
         $enableArrows 		        = isset($att['enableArrows']) ? $att['enableArrows'] : false;
         $enableModal 		        = isset($att['enableModal']) ? $att['enableModal'] : false;
+        $modalLayout 		        = isset($att['modalLayout']) ? $att['modalLayout'] : 'modal-layout-1';
         $slickSettings = (object) array(
             "slidesToShow" => $carouselItems['md'],
             "slidesToScroll" => 1,
@@ -629,7 +630,8 @@ class Riseup_Gallery_Block{
     
         $modalSettings = ($enableModal) ? (object) array(
             'id'=>$uniqueId ,
-            'overlayEffect' => $overlayEffect 
+            'overlayEffect' => $overlayEffect ,
+            'modalLayout' => $modalLayout
         ): (object) array();
     
         $skin 		        = isset($att['skin']) ? $att['skin'] : '';
@@ -646,7 +648,7 @@ class Riseup_Gallery_Block{
         if( $enableHoverFx ){
             $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ;
         }
-    
+
     
         if($skin=="carousel"){
     
@@ -702,16 +704,17 @@ class Riseup_Gallery_Block{
             ?>
                     
                     <div class="components-modal__frame wprig-dynamic-modal">
-                        <div class="components-modal__content">
-                            <div class="components-modal__header">
-                                <div class="components-modal__header-heading-container">
-                                    <h1 id="components-modal-header-1" class="components-modal__header-heading">
+                        <div class="components-modal__header">
+                            <div class="components-modal__header-heading-container">
+                                <h3 id="components-modal-header-1" class="components-modal__header-heading">
                                         This is my Modal
-                                    </h1>                                
+                                    </h3>                                
                                 </div>                            
                                 <button type="button" id="close-modal" class="components-button has-icon" aria-label="Close dialog"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
                             </div>
-                        </div>
+                            <div class="components-modal__content">                                
+
+                            </div>
                     </div>
                     
                     <?php
@@ -735,6 +738,7 @@ class Riseup_Gallery_Block{
         return $post;
         // return "Hello World";
     }
+
 };
 
 new Riseup_Gallery_Block();

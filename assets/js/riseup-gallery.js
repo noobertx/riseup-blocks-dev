@@ -15,7 +15,8 @@
         plugin.settings = {}
 
         var $element = $(element),
-             element = element;
+             element = element,
+             elementData = $element.data();
 
         plugin.init = function() {
             plugin.settings = $.extend({}, defaults, options);
@@ -31,15 +32,15 @@
         var initializeGallery = function(settings) {
             $(settings.modalClass).on("click","#close-modal",function(e){
                 e.preventDefault();
-                    var $el = $(this);
-                    var modalData = $(".wprig-dynamic-modal").data();
+                    var $el = $(this);                    
                     
                     $(".wprig-dynamic-modal").removeClass("open")                    
             
                     setTimeout(function(){  
                         $(".wprig-dynamic-modal")
-                        .removeClass("wprig-block-"+modalData.id)
-                        .removeClass(modalData.overlayEffect)
+                        .removeClass("wprig-block-"+elementData.modal.id)
+                        .removeClass(elementData.modal.overlayEffect)
+                        .removeClass(elementData.modal.modalLayout)
                         .removeData("id")
                         .removeData("overlayEffect") 
                         $("body").removeClass("has-perspective")        
@@ -62,22 +63,40 @@
                 $(settings.modalClass).addClass("wprig-block-"+galleryData.modal.id+" "+galleryData.modal.overlayEffect);
                 $(settings.modalClass).addClass("wprig-block-"+galleryData.modal.id)
                 $(settings.modalClass).data({ "id": galleryData.modal.id ,"overlayEffect": galleryData.modal.overlayEffect});
+                $(settings.modalClass).addClass(elementData.modal.modalLayout)
 
                 var id = $(this).data("id")
+                console.log(elementData.modal);
                 
                 $(".components-modal__content").find("figure").remove();
                 $.getJSON(location.origin+"/wp-json/riseup/get_media?item="+id,function(data){
-                    $("#components-modal-header-1").html(data.post_title)
-                    $(".components-modal__content").append($("<figure>").html(
-                        $("<img>",{
-                            id:"slick-img",
-                            src:data.guid
-                        })
-                    ).append(
-                        $("<figcaption>").html(
-                            $("<p>").html(data.post_content)
-                        )
-                    ))          
+                    if(elementData.modal.modalLayout=="modal-layout-1"){
+
+                        $("#components-modal-header-1").html(data.post_title)
+                        $(".components-modal__content").append($("<figure>").html(
+                            $("<img>",{
+                                id:"slick-img",
+                                src:data.guid
+                            })
+                            ).append(
+                                $("<figcaption>").html(
+                                    $("<p>").html(data.post_content)
+                                    )
+                        ))          
+                    }else{
+                        $("#components-modal-header-1").html("")
+                        $(".components-modal__content").append($("<figure>").html(
+                            $("<img>",{
+                                id:"slick-img",
+                                src:data.guid
+                            })
+                            ).append(
+                                $("<figcaption>").html(
+                                    $("<h3>").html(data.post_title)
+                                   
+                                ).append( $("<p>").html(data.post_content))
+                            ))  
+                    }
                 })
         
                 setTimeout(function(){
