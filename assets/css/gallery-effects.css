@@ -74,8 +74,8 @@
 }
 .wprig-gallery.slick-slider .overlay-content button,
 .wprig-mosaic-gallery .overlay-content button{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
 }
 
