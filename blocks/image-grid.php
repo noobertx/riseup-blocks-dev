@@ -376,7 +376,7 @@ class Riseup_Gallery_Block{
                         'default'=> [],
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .share .wprig-btn-icon {font-size: {{shareIconSize}}}'
+                                'selector' => '{{WPRIG}} .share .tool-tip a,{{WPRIG}} .share .wprig-btn-icon {font-size: {{shareIconSize}}}'
                             ]
                         ]
                     ],
@@ -396,7 +396,7 @@ class Riseup_Gallery_Block{
                                         'value' => "fill",
                                     ]
                                 ],
-                                'selector' => '{{WPRIG}} .share{ color:{{shareButtonColor}}; }' 
+                                'selector' => '{{WPRIG}} .share,{{WPRIG}} .share .tool-tip a{ color:{{shareButtonColor}}; }' 
                             ]
                         ]
                     ],
@@ -412,7 +412,7 @@ class Riseup_Gallery_Block{
                                         'value' => "fill",
                                     ]
                                 ],
-                                'selector' => '{{WPRIG}} .share{ color:{{shareButtonColor2}}; }' 
+                                'selector' => '{{WPRIG}} .share , {{WPRIG}} .share .tool-tip a{ color:{{shareButtonColor2}}; }' 
                             ]
                         ]
                     ],
@@ -428,7 +428,7 @@ class Riseup_Gallery_Block{
                                         'value' => "fill",
                                     ]
                                 ],
-                                'selector' => '{{WPRIG}} .share:hover{ color:{{shareButtonHoverColor}}; }' 
+                                'selector' => '{{WPRIG}} .share:hover, {{WPRIG}} .share .tool-top a:hover{ color:{{shareButtonHoverColor}}; }' 
                             ]
                         ]
                     ],
@@ -444,7 +444,7 @@ class Riseup_Gallery_Block{
                                         'value' => "fill",
                                     ]
                                 ],
-                                'selector' => '{{WPRIG}} .share:hover{ color:{{shareButtonHoverColor2}}; }' 
+                                'selector' => '{{WPRIG}} .share:hover,{{WPRIG}} .share .tool-tip a:hover { color:{{shareButtonHoverColor2}}; }' 
                             ]
                         ]
                     ],
@@ -472,7 +472,7 @@ class Riseup_Gallery_Block{
                                         'value' => "fill",
                                     ]
                                 ],
-                                'selector' => '{{WPRIG}} .share' 
+                                'selector' => '{{WPRIG}} .share , {{WPRIG}} .share .tool-tip a' 
                             ]
                         ]
                     ],
@@ -493,7 +493,7 @@ class Riseup_Gallery_Block{
                         ],
                         'style' => [
                             [                            
-                                'selector' => '{{WPRIG}} .share:hover' 
+                                'selector' => '{{WPRIG}} .share:hover, {{WPRIG}} .share .tool-tip a:hover' 
                             ]
                         ]
                     ],
@@ -508,7 +508,7 @@ class Riseup_Gallery_Block{
                         ],
                         'style' => [
                             [                            
-                                'selector' => '{{WPRIG}} .share' 
+                                'selector' => '{{WPRIG}} .share,{{WPRIG}} .share .tool-tip a:hover' 
                             ]
                         ]
                     ],
@@ -517,7 +517,7 @@ class Riseup_Gallery_Block{
                         'default' => '#fff',
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .share:hover{border-color: {{shareButtonBorderHoverColor}};}' 
+                                'selector' => '{{WPRIG}} .share:hover,{{WPRIG}} .share .tool-tip a:hover{border-color: {{shareButtonBorderHoverColor}};}' 
                             ]
                         ]
                     ],
@@ -531,7 +531,7 @@ class Riseup_Gallery_Block{
                         ],
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .share' 
+                                'selector' => '{{WPRIG}} .share,{{WPRIG}} .share .tool-tip a' 
                             ]
                         ]
                     ],
@@ -540,7 +540,7 @@ class Riseup_Gallery_Block{
                         'default' => [],
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .share' 
+                                'selector' => '{{WPRIG}} .share,{{WPRIG}} .share .tool-tip a' 
                             ]
                         ]
                     ],
@@ -549,7 +549,7 @@ class Riseup_Gallery_Block{
                         'default' => [],
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .share:hover' 
+                                'selector' => '{{WPRIG}} .share:hover,{{WPRIG}} .share .tool-tip a:hover' 
                             ]
                         ]
                     ],
