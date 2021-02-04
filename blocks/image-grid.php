@@ -554,6 +554,18 @@ class Riseup_Gallery_Block{
                             ]
                         ]
                     ],
+                    'enableFacebook' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
+                    'enableTwitter' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
+                    'enableInstagram' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
                     'enableModal' => [
                         'type' => 'boolean',
                         'default' => true
@@ -790,6 +802,10 @@ class Riseup_Gallery_Block{
         $enableShareButton 		        = isset($att['enableShareButton']) ? $att['enableShareButton'] : true;
         $shareIconName 		        = isset($att['shareIconName']) ? $att['shareIconName'] : '';
         $shareButtonLabel 		        = isset($att['shareButtonLabel']) ? $att['shareButtonLabel'] : '';
+
+        $enableFacebook 		        = isset($att['enableFacebook']) ? $att['enableFacebook'] : true;
+        $enableTwitter 		        = isset($att['enableTwitter']) ? $att['enableTwitter'] : true;
+        $enableInstagram 		        = isset($att['enableInstagram']) ? $att['enableInstagram'] : true;
     
         $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
         $carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
@@ -886,23 +902,30 @@ class Riseup_Gallery_Block{
                         $html[] = "<button href='#' class='share'>";
                         $html[] = "<i class='wprig-btn-icon ".$shareIconName."'></i>";
                         $html[] = $shareButtonLabel;
-                        $html[] = "<ul class='tool-tip'>
-                                        <li>
+                        $html[] = "<ul class='tool-tip'>";
+
+                        if($enableFacebook){
+                            $html [] = "<li>
                                             <a href='#'>
                                                 <span class='fab fa-facebook'></span>
                                             </a>
-                                        </li>
-                                        <li>
+                                        </li>";
+                        }
+                        if($enableInstagram){
+                            $html [] = "<li>
                                             <a href='#'>
                                                 <span class='fab fa-instagram'></span>
                                             </a>
-                                        </li>
-                                        <li>
+                                        </li>";
+                        }
+                        if($enableTwitter){
+                            $html [] = "<li>
                                             <a href='#'>
                                                 <span class='fab fa-twitter'></span>
                                             </a>
-                                        </li>
-                                    </ul>";
+                                        </li>";
+                        }
+                        $html[] = "</ul>";
                         $html[] = "</button>";
                     }
                 $html[] = "</div>";
