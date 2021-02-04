@@ -6,7 +6,7 @@
 
         $('.riseup-gallery').riseupGallery({
             modalClass: '.wprig-dynamic-modal',
-            toggleClass : 'a.wprig-gallery-item'
+            toggleClass : 'button.wprig-gallery-item'
         });
 
         if($(".wprig-mosaic-gallery").length){

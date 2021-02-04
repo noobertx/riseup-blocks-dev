@@ -6,6 +6,7 @@ class Riseup_Gallery_Block{
         add_action('wp_footer', [$this,'render_overlay_block']);
         add_action('rest_api_init', [$this,'getImageMedia']);
         add_action( 'wp_body_open', [$this,'render_modal_component'] );
+        add_action( 'print_tooltip', [$this,'renderTooltip'] );
     }
     function register_block_wprig_image_grid(){
         if (!function_exists('register_block_type')) {
@@ -785,15 +786,12 @@ class Riseup_Gallery_Block{
         $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
         $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
         
-        $linkButtonURL 		        = isset($att['linkButtonURL']) ? $att['linkButtonURL'] : "";
-    
-        $enableLinkButton 		        = isset($att['enableLinkButton']) ? $att['enableLinkButton'] : false;
         
-        $linkIconName 		        = isset($att['linkIconName']) ? $att['linkIconName'] : '';
-        $linkButtonLabel 		        = isset($att['linkButtonLabel']) ? $att['linkButtonLabel'] : '';
+        $enableShareButton 		        = isset($att['enableShareButton']) ? $att['enableShareButton'] : true;
+        $shareIconName 		        = isset($att['shareIconName']) ? $att['shareIconName'] : '';
+        $shareButtonLabel 		        = isset($att['shareButtonLabel']) ? $att['shareButtonLabel'] : '';
     
         $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
-    
         $carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
             'md' => 3,
             'sm' => 2,
@@ -878,10 +876,34 @@ class Riseup_Gallery_Block{
     
                 $html[] = "<div class='overlay-content ".$overlayLayout."'>";
                     if($enableViewButton && $enableModal){
-                        $html[] = "<a href='".$image['url']."' class='view wprig-gallery-item'  data-id='".$image['id']."'>";
+                        $html[] = "<button href='".$image['url']."' class='view wprig-gallery-item'  data-id='".$image['id']."'>";
                         $html[] = "<i class='wprig-btn-icon ".$viewIconName."'></i>";
                         $html[] = $viewButtonLabel;
-                        $html[] = "</a>";                                      
+                        $html[] = "</button>";                                      
+                    }
+
+                    if($enableShareButton){
+                        $html[] = "<button href='#' class='share'>";
+                        $html[] = "<i class='wprig-btn-icon ".$shareIconName."'></i>";
+                        $html[] = $shareButtonLabel;
+                        $html[] = "<ul class='tool-tip'>
+                                        <li>
+                                            <a href='#'>
+                                                <span class='fab fa-facebook'></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href='#'>
+                                                <span class='fab fa-instagram'></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href='#'>
+                                                <span class='fab fa-twitter'></span>
+                                            </a>
+                                        </li>
+                                    </ul>";
+                        $html[] = "</button>";
                     }
                 $html[] = "</div>";
                 $html[] = "</div>";
@@ -901,6 +923,27 @@ class Riseup_Gallery_Block{
         }
     
         return implode("",$html);
+    }
+
+    function renderTooltip(){
+        return  "<ul class='tool-tip'>
+        <li>
+            <a href='#'>
+                <span class='fab fa-facebook'></span>
+            </a>
+        </li>
+        <li>
+            <a href='#'>
+                <span class='fab fa-instagram'></span>
+            </a>
+        </li>
+        <li>
+            <a href='#'>
+                <span class='fab fa-twitter'></span>
+            </a>
+        </li>
+    </ul>";
+        
     }
     function render_modal_component(){
         if(!is_admin()){

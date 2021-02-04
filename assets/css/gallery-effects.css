@@ -210,3 +210,28 @@
     max-width: 95%!important;
     margin: auto!important;
 }
+
+.overlay ul.tool-tip {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overlay-content button {
+    font-size: 20px;
+}
+
+.overlay-content .share {
+    position: relative;
+}
+
+.overlay-content .tool-tip{
+    top :50px;
+    left: 0;
+}
+.overlay-content .tool-tip a {
+    padding: 5px;
+    margin : 0 5px;
+}
