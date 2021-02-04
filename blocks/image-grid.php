@@ -351,6 +351,208 @@ class Riseup_Gallery_Block{
                             ]
                         ]
                     ],
+                    'enableShareButton' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
+                    'shareButtonType' => [
+                        'type' => 'string',
+                        'default' => "text"
+                    ], 
+                    'shareButtonLabel' => [
+                        'type' => 'string',
+                        'default' => "Share Item"
+                    ], 
+                    'shareButtonIcon' => [
+                        'type' => 'string',
+                        'default' => ""
+                    ],                 
+                    'shareIconName' => [
+                        'type'=> 'string',
+                        'default'=> ''
+                    ],
+                    'shareIconSize' => [
+                        'type'=> 'object',
+                        'default'=> [],
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .share .wprig-btn-icon {font-size: {{shareIconSize}}}'
+                            ]
+                        ]
+                    ],
+                    'shareFillType' => [
+                        'type'=> 'string',
+                        'default'=> 'fill'
+                    ],
+                    'shareButtonColor' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'condition' => [
+                                    [
+                                        'key' => 'shareFillType',
+                                        'relation' => '==',
+                                        'value' => "fill",
+                                    ]
+                                ],
+                                'selector' => '{{WPRIG}} .share{ color:{{shareButtonColor}}; }' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonColor2' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'condition' => [
+                                    [
+                                        'key' => 'shareFillType',
+                                        'relation' => '!=',
+                                        'value' => "fill",
+                                    ]
+                                ],
+                                'selector' => '{{WPRIG}} .share{ color:{{shareButtonColor2}}; }' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonHoverColor' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'condition' => [
+                                    [
+                                        'key' => 'shareFillType',
+                                        'relation' => '==',
+                                        'value' => "fill",
+                                    ]
+                                ],
+                                'selector' => '{{WPRIG}} .share:hover{ color:{{shareButtonHoverColor}}; }' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonHoverColor2' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'condition' => [
+                                    [
+                                        'key' => 'shareFillType',
+                                        'relation' => '!=',
+                                        'value' => "fill",
+                                    ]
+                                ],
+                                'selector' => '{{WPRIG}} .share:hover{ color:{{shareButtonHoverColor2}}; }' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonBgColor' => [
+                        'type' => 'object',
+                        'default' => [
+                            'type' => 'color',
+                            'openColor' => 1,
+                            'color' => '#333',
+                            'gradient' => [
+                                'color1'=> 'var(--wprig-color-2)',
+                                'color2'=> 'var(--wprig-color-1)',
+                                'direction'=> 0,
+                                'start'=> 0,
+                                'stop'=> 100,
+                                'type'=> 'linear'
+                            ]
+                        ],
+                        'style' => [
+                            [
+                                'condition' => [
+                                    [
+                                        'key' => 'shareFillType',
+                                        'relation' => '==',
+                                        'value' => "fill",
+                                    ]
+                                ],
+                                'selector' => '{{WPRIG}} .share' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonBgColorHover' => [
+                        'type' => 'object',
+                        'default' => [
+                            'type' => 'color',
+                            'openColor' => 1,
+                            'color' => '#333',
+                            'gradient' => [
+                                'color1'=> '#16d03e',
+                                'color2'=> '#1f91f3',
+                                'direction'=> 0,
+                                'start'=> 0,
+                                'stop'=> 100,
+                                'type'=> 'linear'
+                            ]
+                        ],
+                        'style' => [
+                            [                            
+                                'selector' => '{{WPRIG}} .share:hover' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonBorder' => [
+                        'type' => 'object',
+                        'default' => [
+                            'openBorder' => 1,
+                            'widthType' => 'global',
+                            'global' => ['md' => '1' ],
+                            'type' => 'solid',
+                            'color' => 'var(--wprig-color-1)' 
+                        ],
+                        'style' => [
+                            [                            
+                                'selector' => '{{WPRIG}} .share' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonBorderHoverColor' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .share:hover{border-color: {{shareButtonBorderHoverColor}};}' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonBorderRadius' => [
+                        'type' => 'object',
+                        'default' => [
+                            'openBorderRadius'=> 1,
+                            'radiusType'=> 'global',
+                            'global'=> [ 'md'=> 4 ],
+                            'unit'=> 'px',
+                        ],
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .share' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonShadow' => [
+                        'type' => 'object',
+                        'default' => [],
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .share' 
+                            ]
+                        ]
+                    ],
+                    'shareButtonShadowHover' => [
+                        'type' => 'object',
+                        'default' => [],
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .share:hover' 
+                            ]
+                        ]
+                    ],
                     'enableModal' => [
                         'type' => 'boolean',
                         'default' => true

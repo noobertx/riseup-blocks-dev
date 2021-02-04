@@ -10032,8 +10032,9 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableViewButton = _this$props3$attribut.enableViewButton,
           viewButtonLabel = _this$props3$attribut.viewButtonLabel,
           viewIconName = _this$props3$attribut.viewIconName,
-          linkButtonLabel = _this$props3$attribut.linkButtonLabel,
-          linkIconName = _this$props3$attribut.linkIconName,
+          enableShareButton = _this$props3$attribut.enableShareButton,
+          shareButtonLabel = _this$props3$attribut.shareButtonLabel,
+          shareIconName = _this$props3$attribut.shareIconName,
           overlayLayout = _this$props3$attribut.overlayLayout,
           enableModal = _this$props3$attribut.enableModal,
           setAttributes = _this$props3.setAttributes;
@@ -10056,7 +10057,12 @@ var Edit = /*#__PURE__*/function (_Component) {
             }
           }, /*#__PURE__*/React.createElement("i", {
             className: "wprig-btn-icon ".concat(viewIconName)
-          }), viewButtonLabel)))), /*#__PURE__*/React.createElement("img", {
+          }), viewButtonLabel), enableShareButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "share"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(shareIconName)
+          }), shareButtonLabel)))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
             onClick: function onClick() {
@@ -10157,6 +10163,24 @@ var Edit = /*#__PURE__*/function (_Component) {
           viewButtonShadowHover = _this$props4$attribut.viewButtonShadowHover,
           viewIconName = _this$props4$attribut.viewIconName,
           viewIconSize = _this$props4$attribut.viewIconSize,
+          enableShareButton = _this$props4$attribut.enableShareButton,
+          shareButtonType = _this$props4$attribut.shareButtonType,
+          shareButtonLabel = _this$props4$attribut.shareButtonLabel,
+          shareButtonIcon = _this$props4$attribut.shareButtonIcon,
+          shareFillType = _this$props4$attribut.shareFillType,
+          shareButtonColor = _this$props4$attribut.shareButtonColor,
+          shareButtonColor2 = _this$props4$attribut.shareButtonColor2,
+          shareButtonHoverColor = _this$props4$attribut.shareButtonHoverColor,
+          shareButtonHoverColor2 = _this$props4$attribut.shareButtonHoverColor2,
+          shareButtonBgColor = _this$props4$attribut.shareButtonBgColor,
+          shareButtonBgColorHover = _this$props4$attribut.shareButtonBgColorHover,
+          shareButtonBorder = _this$props4$attribut.shareButtonBorder,
+          shareButtonBorderHoverColor = _this$props4$attribut.shareButtonBorderHoverColor,
+          shareButtonBorderRadius = _this$props4$attribut.shareButtonBorderRadius,
+          shareButtonShadow = _this$props4$attribut.shareButtonShadow,
+          shareButtonShadowHover = _this$props4$attribut.shareButtonShadowHover,
+          shareIconName = _this$props4$attribut.shareIconName,
+          shareIconSize = _this$props4$attribut.shareIconSize,
           enableDots = _this$props4$attribut.enableDots,
           dotsColor = _this$props4$attribut.dotsColor,
           dotsColorActive = _this$props4$attribut.dotsColorActive,
@@ -10179,6 +10203,11 @@ var Edit = /*#__PURE__*/function (_Component) {
         viewButtonLabel: viewButtonLabel,
         viewButtonIcon: viewButtonIcon,
         viewIconName: viewIconName,
+        enableShareButton: enableShareButton,
+        shareButtonType: shareButtonType,
+        shareButtonLabel: shareButtonLabel,
+        shareButtonIcon: shareButtonIcon,
+        shareIconName: shareIconName,
         enableModal: enableModal,
         overlayLayout: overlayLayout
       };
@@ -10571,6 +10600,14 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableViewButton: val
           });
         }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Share'),
+        value: enableShareButton,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableShareButton: val
+          });
+        }
       }), enableViewButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
         label: "View Button Text",
         value: viewButtonLabel,
@@ -10709,6 +10746,156 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             viewButtonBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), enableShareButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: "View Button Text",
+        value: shareButtonLabel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonLabel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(IconList, {
+        label: __('Icon'),
+        value: shareIconName,
+        onChange: function onChange(value) {
+          return _this3.props.setAttributes({
+            shareIconName: value
+          });
+        }
+      }), shareIconName && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Size'),
+        value: shareIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareIconSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 5,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Styles, {
+        value: shareFillType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareFillType: value
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_2__["default"].btn_outline,
+          label: __('Outline')
+        }]
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: shareFillType == 'fill' ? shareButtonColor : shareButtonColor2,
+        onChange: function onChange(value) {
+          return shareFillType == 'fill' ? setAttributes({
+            shareButtonColor: value
+          }) : setAttributes({
+            shareButtonColor2: value
+          });
+        }
+      }), shareFillType == 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: shareButtonBgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonBgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: shareButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            shareButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: shareButtonShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: shareFillType == 'fill' ? shareButtonHoverColor : shareButtonHoverColor2,
+        onChange: function onChange(value) {
+          return shareFillType == 'fill' ? setAttributes({
+            shareButtonHoverColor: value
+          }) : setAttributes({
+            shareButtonHoverColor2: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: shareButtonBgColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonBgColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: shareButtonBorderHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonBorderHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: shareButtonShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonShadowHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: shareButtonBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shareButtonBorderRadius: value
           });
         },
         min: 0,
