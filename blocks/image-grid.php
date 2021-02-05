@@ -558,14 +558,6 @@ class Riseup_Gallery_Block{
                         'type' => 'boolean',
                         'default' => true
                     ], 
-                    'enableTwitter' => [
-                        'type' => 'boolean',
-                        'default' => true
-                    ], 
-                    'enableInstagram' => [
-                        'type' => 'boolean',
-                        'default' => true
-                    ], 
                     'enableModal' => [
                         'type' => 'boolean',
                         'default' => true
@@ -804,8 +796,6 @@ class Riseup_Gallery_Block{
         $shareButtonLabel 		        = isset($att['shareButtonLabel']) ? $att['shareButtonLabel'] : '';
 
         $enableFacebook 		        = isset($att['enableFacebook']) ? $att['enableFacebook'] : true;
-        $enableTwitter 		        = isset($att['enableTwitter']) ? $att['enableTwitter'] : true;
-        $enableInstagram 		        = isset($att['enableInstagram']) ? $att['enableInstagram'] : true;
     
         $modalOverlayBg 		    = isset($att['modalOverlayBg']) ? (array) $att['modalOverlayBg'] : '';
         $carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
@@ -908,20 +898,6 @@ class Riseup_Gallery_Block{
                             $html [] = "<li>
                                             <a href='#'>
                                                 <span class='fab fa-facebook'></span>
-                                            </a>
-                                        </li>";
-                        }
-                        if($enableInstagram){
-                            $html [] = "<li>
-                                            <a href='#'>
-                                                <span class='fab fa-instagram'></span>
-                                            </a>
-                                        </li>";
-                        }
-                        if($enableTwitter){
-                            $html [] = "<li>
-                                            <a href='#'>
-                                                <span class='fab fa-twitter'></span>
                                             </a>
                                         </li>";
                         }

@@ -10068,14 +10068,6 @@ var Edit = /*#__PURE__*/function (_Component) {
             href: "#"
           }, /*#__PURE__*/React.createElement("span", {
             className: "fab fa-facebook"
-          }))), enableInstagram && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-instagram"
-          }))), enableTwitter && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-twitter"
           })))))))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
@@ -10196,8 +10188,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           shareIconName = _this$props4$attribut.shareIconName,
           shareIconSize = _this$props4$attribut.shareIconSize,
           enableFacebook = _this$props4$attribut.enableFacebook,
-          enableTwitter = _this$props4$attribut.enableTwitter,
-          enableInstagram = _this$props4$attribut.enableInstagram,
           enableDots = _this$props4$attribut.enableDots,
           dotsColor = _this$props4$attribut.dotsColor,
           dotsColorActive = _this$props4$attribut.dotsColorActive,
@@ -10226,8 +10216,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         shareButtonIcon: shareButtonIcon,
         shareIconName: shareIconName,
         enableFacebook: enableFacebook,
-        enableTwitter: enableTwitter,
-        enableInstagram: enableInstagram,
         enableModal: enableModal,
         overlayLayout: overlayLayout
       };
@@ -11349,14 +11337,6 @@ var ImageCarousel = /*#__PURE__*/function (_Component) {
             href: "#"
           }, /*#__PURE__*/React.createElement("span", {
             className: "fab fa-facebook"
-          }))), overlayParams.enableInstagram && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-instagram"
-          }))), overlayParams.enableTwitter && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-twitter"
           })))))))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
@@ -11616,14 +11596,6 @@ var ImageMasonry = /*#__PURE__*/function (_Component) {
             href: "#"
           }, /*#__PURE__*/React.createElement("span", {
             className: "fab fa-facebook"
-          }))), overlayParams.enableInstagram && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-instagram"
-          }))), overlayParams.enableTwitter && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-twitter"
           })))))))), /*#__PURE__*/React.createElement("img", {
             src: el.url,
             "data-image": el.url,
@@ -11950,14 +11922,6 @@ var Mosaic = /*#__PURE__*/function (_Component) {
           href: "#"
         }, /*#__PURE__*/React.createElement("span", {
           className: "fab fa-facebook"
-        }))), overlayParams.enableInstagram && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-          href: "#"
-        }, /*#__PURE__*/React.createElement("span", {
-          className: "fab fa-instagram"
-        }))), overlayParams.enableTwitter && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-          href: "#"
-        }, /*#__PURE__*/React.createElement("span", {
-          className: "fab fa-twitter"
         }))))))), /*#__PURE__*/React.createElement("img", {
           src: el.url,
           "data-image": el.url,
