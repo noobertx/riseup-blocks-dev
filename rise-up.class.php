@@ -528,6 +528,7 @@ class RiseUp_Blocks {
 	 * @since 1.0.0
 	 */
 	public function wprig_enqueue_style() {
+		wp_enqueue_style( 'wprig-frontbase', WPRIG_DIR_URL . 'assets/css/frontbase.css', false, microtime() );
 		if ( get_post_meta( get_the_ID(), '_wprig_css', true ) != '' ) {
 
 			/*

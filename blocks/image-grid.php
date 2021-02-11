@@ -923,7 +923,6 @@ class Riseup_Gallery_Block{
     
         return implode("",$html);
     }
-
     function renderTooltip(){
         return  "<ul class='tool-tip'>
         <li>
