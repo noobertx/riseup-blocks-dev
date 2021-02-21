@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Registers the `wprig/product_carousel` block on server.
+ * Registers the `wprig/product-carousel` block on server.
  *
  * @since 1.1.0
  */
@@ -164,7 +164,7 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'style', 'relation' => '!=', 'value' => 4],
 									(object) ['key' => 'badgePosition', 'relation' => '!=', 'value' => 'default'],
 								],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-post-grid-wrapper .wprig-product_carousel-cat-position'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-post-grid-wrapper .wprig-product-carousel-cat-position'
 							]
 						]
 					),
@@ -232,7 +232,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination {text-align: {{pageAlignment}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination {text-align: {{pageAlignment}};}'
 						]]
 					),
 					'paginationTypography' => array(
@@ -242,7 +242,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pagesColor' => array(
@@ -252,7 +252,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *{color: {{pagesColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *{color: {{pagesColor}};}'
 						]]
 					),
 					'pagesHoverColor' => array(
@@ -262,8 +262,8 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > a:hover, ' .
-								'{{WPRIG}} .wprig-product_carousel-pagination > button:hover{color: {{pagesHoverColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > a:hover, ' .
+								'{{WPRIG}} .wprig-product-carousel-pagination > button:hover{color: {{pagesHoverColor}};}'
 						]]
 					),
 					'pagesActiveColor' => array(
@@ -273,7 +273,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *.current{color: {{pagesActiveColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *.current{color: {{pagesActiveColor}};}'
 						]]
 					),
 	
@@ -284,7 +284,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pagesbgHoverColor' => array(
@@ -294,8 +294,8 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination a:hover, ' .
-								'{{WPRIG}} .wprig-product_carousel-pagination button:hover'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination a:hover, ' .
+								'{{WPRIG}} .wprig-product-carousel-pagination button:hover'
 						]]
 					),
 					'pagesbgActiveColor' => array(
@@ -305,7 +305,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > .current'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > .current'
 						]]
 					),
 	
@@ -316,7 +316,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pagesHoverBorder' => array(
@@ -326,8 +326,8 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > a:hover, ' .
-								'{{WPRIG}} .wprig-product_carousel-pagination > button:hover'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > a:hover, ' .
+								'{{WPRIG}} .wprig-product-carousel-pagination > button:hover'
 						]]
 					),
 					'pagesActiveBorder' => array(
@@ -337,7 +337,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *.current '
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *.current '
 						]]
 					),
 					'pagesShadow' => array(
@@ -347,7 +347,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pagesHoverShadow' => array(
@@ -357,8 +357,8 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > a:hover, ' .
-								'{{WPRIG}} .wprig-product_carousel-pagination > button:hover'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > a:hover, ' .
+								'{{WPRIG}} .wprig-product-carousel-pagination > button:hover'
 						]]
 					),
 					'pagesActiveShadow' => array(
@@ -368,7 +368,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *.current'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *.current'
 						]]
 					),
 					'pagesBorderRadius' => array(
@@ -378,7 +378,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pagePadding' => array(
@@ -395,7 +395,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					'pageMargin' => array(
@@ -412,7 +412,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'enablePagination', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-pagination > *'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-pagination > *'
 						]]
 					),
 					//Seperator
@@ -429,7 +429,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'style', 'relation' => '==', 'value' => 1],
 								(object) ['key' => 'showSeparator', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-1:not(:last-child) {border-bottom-color: {{separatorColor}};}'
+							'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-1:not(:last-child) {border-bottom-color: {{separatorColor}};}'
 						]]
 					),
 	
@@ -445,7 +445,7 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'showSeparator', 'relation' => '==', 'value' => true]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-1:not(:last-child){border-bottom-style: solid;border-bottom-width: {{separatorHeight}};}'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-1:not(:last-child){border-bottom-style: solid;border-bottom-width: {{separatorHeight}};}'
 							],
 						],
 					),
@@ -462,7 +462,7 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'showSeparator', 'relation' => '==', 'value' => true]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-1:not(:last-child){padding-bottom: {{separatorSpace}};margin-bottom: {{separatorSpace}};}'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-1:not(:last-child){padding-bottom: {{separatorSpace}};margin-bottom: {{separatorSpace}};}'
 							],
 						],
 					),
@@ -475,7 +475,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-2'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-2'
 							]
 						]
 					),
@@ -491,7 +491,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-2'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-2'
 							]
 						]
 					),
@@ -508,7 +508,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-2'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-2'
 							]
 						]
 					),
@@ -521,7 +521,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-2:not(:last-child) {margin-bottom: {{cardSpace}};}'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-2:not(:last-child) {margin-bottom: {{cardSpace}};}'
 							]
 						]
 					),
@@ -536,7 +536,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-2'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-2'
 							]
 						]
 					),
@@ -554,7 +554,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 2]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-2'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-2'
 							]
 						]
 					),
@@ -569,14 +569,14 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
 							],
 							(object) [
 								'condition' => [
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 2],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product_carousel-style-3 .wprig-post-grid-content'
+								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product-carousel-style-3 .wprig-post-grid-content'
 							]
 						]
 					),
@@ -596,14 +596,14 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
 							],
 							(object) [
 								'condition' => [
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 2],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product_carousel-style-3 .wprig-post-grid-content'
+								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product-carousel-style-3 .wprig-post-grid-content'
 							]
 						]
 					),
@@ -617,7 +617,7 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 2],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product_carousel-style-3 .wprig-post-grid-img + .wprig-post-grid-content {width: {{stackWidth}};}'
+								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product-carousel-style-3 .wprig-post-grid-img + .wprig-post-grid-content {width: {{stackWidth}};}'
 							]
 						]
 					),
@@ -633,7 +633,7 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-3:not(:last-child) {margin-bottom: {{stackSpace}};}'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-3:not(:last-child) {margin-bottom: {{stackSpace}};}'
 							]
 						]
 	
@@ -652,14 +652,14 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
 							],
 							(object) [
 								'condition' => [
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 2],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product_carousel-style-3 .wprig-post-grid-wrapper .wprig-post-grid-content'
+								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product-carousel-style-3 .wprig-post-grid-wrapper .wprig-post-grid-content'
 							]
 						]
 					),
@@ -680,14 +680,14 @@ class WPRIG_Product_Carousel{
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 1],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-3 .wprig-post-list-wrapper .wprig-post-list-content'
 							],
 							(object) [
 								'condition' => [
 									(object) ['key' => 'layout', 'relation' => '==', 'value' => 2],
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 3]
 								],
-								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product_carousel-style-3 .wprig-post-grid-content'
+								'selector' => '{{WPRIG}} .wprig-post-grid-view.wprig-product-carousel-style-3 .wprig-post-grid-content'
 							]
 						]
 					),
@@ -703,7 +703,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showTitle', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-title'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-title'
 						]]
 					),
 					'metaTypography' => array(
@@ -719,7 +719,7 @@ class WPRIG_Product_Carousel{
 							(object) ['key' => 'showDates', 'relation' => '==', 'value' => true],
 							(object) ['key' => 'showComment', 'relation' => '==', 'value' => true]
 						],
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-meta']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-meta']]
 					),
 					'excerptTypography' => array(
 						'type' => 'object',
@@ -731,7 +731,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-intro, {{WPRIG}} .wprig-product_carousel-intro p'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-intro, {{WPRIG}} .wprig-product-carousel-intro p'
 						]]
 					),
 					'categoryTypography' => array(
@@ -744,7 +744,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '!=', 'value' => 'none']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a'
 						]]
 					),
 	
@@ -809,7 +809,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill'],
 								(object) ['key' => 'readmoreSize', 'relation' => '==', 'value' => 'custom']
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn-wrapper .wprig-product_carousel-btn.wprig-button-fill.is-custom'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn-wrapper .wprig-product-carousel-btn.wprig-button-fill.is-custom'
 						]]
 					),
 	
@@ -823,7 +823,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showTitle', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
 					'readmoreColor' => array(
@@ -834,7 +834,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true],
 								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel a.wprig-product_carousel-btn {color: {{readmoreColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{readmoreColor}};}'
 						]]
 	
 					),
@@ -846,7 +846,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true],
 								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'outline']
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel a.wprig-product_carousel-btn {color: {{readmoreColor2}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{readmoreColor2}};}'
 						]]
 	
 					),
@@ -855,7 +855,7 @@ class WPRIG_Product_Carousel{
 						'default' => '',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel a.wprig-product_carousel-btn:hover {color: {{readmoreHoverColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn:hover {color: {{readmoreHoverColor}};}'
 						]]
 	
 					),
@@ -876,7 +876,7 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
 					'readmoreHoverBg' => array(
@@ -884,7 +884,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn:hover'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn:hover'
 						]]
 					),
 					'readmoreBorder' => array(
@@ -892,7 +892,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
 					'readmoreBorderRadius' => array(
@@ -907,7 +907,7 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
 					'readmoreBoxShadow' => array(
@@ -915,7 +915,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-product_carousel-btn'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
 	
@@ -932,13 +932,13 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'badge']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a'
 						]]
 					),
 					'contentPadding' => array(
 						'type' => 'object',
 						'default' => (object) array(),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-post-grid-content,{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-post-list-content']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-post-grid-content,{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-post-list-content']]
 					),
 					'categoryRadius' => array(
 						'type' => 'object',
@@ -950,7 +950,7 @@ class WPRIG_Product_Carousel{
 								'md' => 2,
 							),
 						),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-category a']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-category a']]
 					),
 					'titleColor' => array(
 						'type'    => 'string',
@@ -960,7 +960,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'style', 'relation' => '!=', 'value' => 4],
 								(object) ['key' => 'showTitle', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-title a {color: {{titleColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-title a {color: {{titleColor}};}'
 						]]
 					),
 					'titleOverlayColor' => array(
@@ -971,7 +971,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'style', 'relation' => '==', 'value' => 4],
 								(object) ['key' => 'showTitle', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-title a {color: {{titleOverlayColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-title a {color: {{titleOverlayColor}};}'
 						]]
 					),
 					'titleHoverColor' => array(
@@ -979,7 +979,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#FF0096',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showTitle', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-title a:hover {color: {{titleHoverColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-title a:hover {color: {{titleHoverColor}};}'
 						]]
 					),
 					'categoryColor' => array(
@@ -987,7 +987,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#FF0096',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'default']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a {color: {{categoryColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a {color: {{categoryColor}};}'
 						]]
 					),
 					'categoryColor2' => array(
@@ -995,7 +995,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#fff',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'badge']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a {color: {{categoryColor2}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a {color: {{categoryColor2}};}'
 						]]
 					),
 					'categoryHoverColor' => array(
@@ -1003,7 +1003,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#FF0096',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'default']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a:hover {color: {{categoryHoverColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a:hover {color: {{categoryHoverColor}};}'
 						]]
 					),
 					'categoryBackground' => array(
@@ -1011,7 +1011,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#FF0096',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'badge']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a {background: {{categoryBackground}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a {background: {{categoryBackground}};}'
 						]]
 					),
 					'categoryHoverBackground' => array(
@@ -1019,7 +1019,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#e00e89',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'badge']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a:hover {background: {{categoryHoverBackground}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a:hover {background: {{categoryHoverBackground}};}'
 						]]
 					),
 	
@@ -1028,7 +1028,7 @@ class WPRIG_Product_Carousel{
 						'default' => '#fff',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'badge']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category a:hover {color: {{categoryHoverColor2}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category a:hover {color: {{categoryHoverColor2}};}'
 						]]
 					),
 					'metaColor' => array(
@@ -1038,7 +1038,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'style', 'relation' => '!=', 'value' => 4]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-meta a {color: {{metaColor}};} {{WPRIG}} .wprig-product_carousel-meta {color: {{metaColor}};} {{WPRIG}} .wprig-product_carousel-meta span:before {background: {{metaColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-meta a {color: {{metaColor}};} {{WPRIG}} .wprig-product-carousel-meta {color: {{metaColor}};} {{WPRIG}} .wprig-product-carousel-meta span:before {background: {{metaColor}};}'
 						]]
 					),
 					'metaOverlayColor' => array(
@@ -1048,7 +1048,7 @@ class WPRIG_Product_Carousel{
 							'condition' => [
 								(object) ['key' => 'style', 'relation' => '==', 'value' => 4]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-meta a {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product_carousel-meta {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product_carousel-meta span:before {background: {{metaOverlayColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-meta a {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product-carousel-meta {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product-carousel-meta span:before {background: {{metaOverlayColor}};}'
 						]]
 					),
 					'excerptColor' => array(
@@ -1059,7 +1059,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'style', 'relation' => '!=', 'value' => 4],
 								(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-intro {color: {{excerptColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-intro {color: {{excerptColor}};}'
 						]]
 					),
 					'excerptColor2' => array(
@@ -1070,7 +1070,7 @@ class WPRIG_Product_Carousel{
 								(object) ['key' => 'style', 'relation' => '==', 'value' => 4],
 								(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]
 							],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-intro {color: {{excerptColor2}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-intro {color: {{excerptColor2}};}'
 						]]
 					),
 	
@@ -1096,7 +1096,7 @@ class WPRIG_Product_Carousel{
 						'default' => '',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel .wprig-post-list-content {color: {{color}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-post-list-content {color: {{color}};}'
 						]]
 					),
 					'bgColor' => array(
@@ -1104,7 +1104,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper'
 						]]
 					),
 					'border' => array(
@@ -1112,7 +1112,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper'
 						]]
 					),
 					'borderRadius' => array(
@@ -1120,7 +1120,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper'
 						]]
 					),
 					'padding' => array(
@@ -1128,7 +1128,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper'
 						]]
 					),
 					'boxShadow' => array(
@@ -1136,7 +1136,7 @@ class WPRIG_Product_Carousel{
 						'default' => (object) array(),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 1]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-wrapper'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper'
 						]]
 					),
 	
@@ -1158,7 +1158,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 4]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-style-4:before'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-style-4:before'
 						]]
 					),
 					'overlayHoverBg' => array(
@@ -1178,7 +1178,7 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 4]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-style-4:hover:before'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-style-4:hover:before'
 						]]
 					),
 					'overlayBorderRadius' => array(
@@ -1194,7 +1194,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 4]],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-4'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-4'
 							]
 						]
 					),
@@ -1207,7 +1207,7 @@ class WPRIG_Product_Carousel{
 						'style' => [
 							(object) [
 								'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 4]],
-								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product_carousel-style-4:not(:last-child) {margin-bottom: {{overlaySpace}};}'
+								'selector' => '{{WPRIG}} .wprig-post-list-view.wprig-product-carousel-style-4:not(:last-child) {margin-bottom: {{overlaySpace}};}'
 							]
 						]
 					),
@@ -1222,7 +1222,7 @@ class WPRIG_Product_Carousel{
 								'condition' => [
 									(object) ['key' => 'style', 'relation' => '==', 'value' => 4]
 								],
-								'selector' => '{{WPRIG}} .wprig-product_carousel-style-4 {height: {{overlayHeight}};}'
+								'selector' => '{{WPRIG}} .wprig-product-carousel-style-4 {height: {{overlayHeight}};}'
 							]
 						]
 					),
@@ -1231,7 +1231,7 @@ class WPRIG_Product_Carousel{
 						'default' => '',
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'style', 'relation' => '==', 'value' => 4]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel.wprig-post-list-view.wprig-product_carousel-style-4:before {mix-blend-mode: {{overlayBlend}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel.wprig-post-list-view.wprig-product-carousel-style-4:before {mix-blend-mode: {{overlayBlend}};}'
 						]]
 					),
 					//Spacing
@@ -1243,7 +1243,7 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'layout', 'relation' => '==', 'value' => 2]],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-column {grid-column-gap: {{columnGap}};}, {{WPRIG}} .wprig-product_carousel-column {grid-row-gap: {{columnGap}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-column {grid-column-gap: {{columnGap}};}, {{WPRIG}} .wprig-product-carousel-column {grid-row-gap: {{columnGap}};}'
 						]]
 					),
 					'titleSpace' => array(
@@ -1252,7 +1252,7 @@ class WPRIG_Product_Carousel{
 							'md' => 10,
 							'unit' => 'px'
 						),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-title {padding-bottom: {{titleSpace}};}']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-title {padding-bottom: {{titleSpace}};}']]
 					),
 					'categorySpace' => array(
 						'type' => 'object',
@@ -1262,7 +1262,7 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) [
 							'condition' => [(object) ['key' => 'showCategory', 'relation' => '==', 'value' => 'default']],
-							'selector' => '{{WPRIG}} .wprig-product_carousel-category {display:inline-block;padding-bottom: {{categorySpace}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-category {display:inline-block;padding-bottom: {{categorySpace}};}'
 						]]
 					),
 					'metaSpace' => array(
@@ -1271,7 +1271,7 @@ class WPRIG_Product_Carousel{
 							'md' => 10,
 							'unit' => 'px'
 						),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-meta {padding-bottom: {{metaSpace}};}']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-meta {padding-bottom: {{metaSpace}};}']]
 					),
 					'excerptSpace' => array(
 						'type' => 'object',
@@ -1279,7 +1279,7 @@ class WPRIG_Product_Carousel{
 							'md' => 10,
 							'unit' => 'px'
 						),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-intro {padding-bottom: {{excerptSpace}};}']]
+						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-intro {padding-bottom: {{excerptSpace}};}']]
 					),
 					'postSpace' => array(
 						'type' => 'object',
@@ -1287,7 +1287,7 @@ class WPRIG_Product_Carousel{
 							'md' => 10,
 							'unit' => 'px'
 						),
-						// 'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product_carousel-wrapper .wprig-product_carousel']]
+						// 'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel']]
 					),
 					'interaction' => array(
 						'type' => 'object',
@@ -1459,11 +1459,11 @@ class WPRIG_Product_Carousel{
 	
 		//column
 		if ($layout == 2) {
-			$col = (' wprig-product_carousel wprig-product_carousel-column wprig-product_carousel-column-md' . $column['md'] . ' wprig-product_carousel-column-sm' . $column['sm'] . ' wprig-product_carousel-column-xs' . $column['xs']);
+			$col = (' wprig-product-carousel wprig-product-carousel-column wprig-product-carousel-column-md' . $column['md'] . ' wprig-product-carousel-column-sm' . $column['sm'] . ' wprig-product-carousel-column-xs' . $column['xs']);
 		} else {
-			$col = "wprig-product_carousel";
+			$col = "wprig-product-carousel";
 		}
-		$class = 'wp-block-wprig-product_carousel wprig-block-' . $uniqueId;
+		$class = 'wp-block-wprig-product-carousel wprig-block-' . $uniqueId;
 		if (isset($att['align'])) {
 			$class .= ' align' . $att['align'];
 		}
@@ -1473,26 +1473,26 @@ class WPRIG_Product_Carousel{
 	
 		if ($query->have_posts()) {
 			$html .= '<div class="' . $class . '">';
-			$html .= '<div class="wprig-product_carousel-wrapper ' . $interaction . ' wprig-product_carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
+			$html .= '<div class="wprig-product-carousel-wrapper ' . $interaction . ' wprig-product-carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
 			while ($query->have_posts()) {
 				$query->the_post();
 				$id = get_post_thumbnail_id();
 				$src = wp_get_attachment_image_src($id, $imgSize);
 				$image = '<img class="wprig-post-image" src="' . esc_url($src[0]) . '" alt="' . get_the_title() . '"/>';
-				$title = '<h3 class="wprig-product_carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
-				$category = '<span class="wprig-product_carousel-category">' . get_the_category_list(' ') . '</span>';
+				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
+				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';
 				$meta = ($showAuthor == 1) ? '<span><i class="fas fa-user"></i> ' . __('By ', 'wprig') . get_the_author_posts_link() . '</span>' : '';
 				$meta .= ($showDates == 1) ? '<span><i class="far fa-calendar-alt"></i> ' . get_the_date() . '</span>' : '';
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
-				$btn = '<div class="wprig-product_carousel-btn-wrapper"><a class="wprig-product_carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
-				$excerpt = '<div class="wprig-product_carousel-intro">' . wprig_excerpt_max_charlength(esc_attr($limit)) . '</div>';
+				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
+				$excerpt = '<div class="wprig-product-carousel-intro">' . wprig_excerpt_max_charlength(esc_attr($limit)) . '</div>';
 	
 				if ($layout === 1) {
-					$html .= '<div class="wprig-product_carousel wprig-post-list-view wprig-product_carousel-style-' . esc_attr($style) . '">';
+					$html .= '<div class="wprig-product-carousel wprig-post-list-view wprig-product-carousel-style-' . esc_attr($style) . '">';
 					$html .= '<div class="wprig-post-list-wrapper wprig-post-list-' .  esc_attr(($layout == 2 && $style === 3) ? $contentPosition : $girdContentPosition)  . '">';
 					if (($showImages == 1) && has_post_thumbnail()) {
 						if ($showCategory == 'badge'  && $style == 4) {
-							$html .= '<div class="wprig-product_carousel-cat-position wprig-product_carousel-cat-position-' . esc_attr($categoryPosition) . '">';
+							$html .= '<div class="wprig-product-carousel-cat-position wprig-product-carousel-cat-position-' . esc_attr($categoryPosition) . '">';
 							$html .= $category;
 							$html .= '</div>';
 						}
@@ -1501,7 +1501,7 @@ class WPRIG_Product_Carousel{
 						$html .= $image;
 						$html .= '</a>';
 						if ($showCategory == 'badge'  && $style != 4) {
-							$html .= '<div class="wprig-product_carousel-cat-position wprig-product_carousel-cat-position-' . esc_attr($categoryPosition) . '">';
+							$html .= '<div class="wprig-product-carousel-cat-position wprig-product-carousel-cat-position-' . esc_attr($categoryPosition) . '">';
 							$html .= $category;
 							$html .= '</div>';
 						}
@@ -1515,7 +1515,7 @@ class WPRIG_Product_Carousel{
 						$html .= $title;
 					}
 					if (($showAuthor == 1) || ($showDates == 1) || ($showComment == 1)) {
-						$html .= '<div class="wprig-product_carousel-meta">';
+						$html .= '<div class="wprig-product-carousel-meta">';
 						$html .= $meta;
 						$html .= '</div>';
 					}
@@ -1530,10 +1530,10 @@ class WPRIG_Product_Carousel{
 					}
 					$html .= '</div>'; //wprig-post-list-content
 					$html .= '</div>'; //wprig-post-list-wrap
-					$html .= '</div>'; //wprig-product_carousel
+					$html .= '</div>'; //wprig-product-carousel
 				}
 				if ($layout === 2) {
-					$html .= '<div class="wprig-product_carousel wprig-post-grid-view wprig-product_carousel-style-' . esc_attr($style) . '">';
+					$html .= '<div class="wprig-product-carousel wprig-post-grid-view wprig-product-carousel-style-' . esc_attr($style) . '">';
 					$html .= '<div class="wprig-post-grid-wrapper wprig-post-grid-' . esc_attr(($layout == 2 && $style === 3) ? $contentPosition : $girdContentPosition)  . '">';
 					if (($showImages == 1) && has_post_thumbnail()) {
 						$html .= '<div class="wprig-post-grid-img wprig-post-img wprig-post-img-' . esc_attr($imageAnimation) . '">';
@@ -1541,7 +1541,7 @@ class WPRIG_Product_Carousel{
 						$html .= $image;
 						$html .= '</a>';
 						if ($showCategory == 'badge'  && $style != 4) {
-							$html .= '<div class="wprig-product_carousel-cat-position wprig-product_carousel-cat-position-' . esc_attr($categoryPosition) . '">';
+							$html .= '<div class="wprig-product-carousel-cat-position wprig-product-carousel-cat-position-' . esc_attr($categoryPosition) . '">';
 							$html .= $category;
 							$html .= '</div>';
 						}
@@ -1552,7 +1552,7 @@ class WPRIG_Product_Carousel{
 						$html .= $category;
 					}
 					if ($showCategory == 'badge'  && $style == 4) {
-						$html .= '<div class="wprig-product_carousel-cat-position wprig-product_carousel-cat-position-' . esc_attr($categoryPosition) . '">';
+						$html .= '<div class="wprig-product-carousel-cat-position wprig-product-carousel-cat-position-' . esc_attr($categoryPosition) . '">';
 						$html .= $category;
 						$html .= '</div>';
 					}
@@ -1560,7 +1560,7 @@ class WPRIG_Product_Carousel{
 						$html .= $title;
 					}
 					if (($showAuthor == 1) || ($showDates == 1) || ($showComment == 1)) {
-						$html .= '<div class="wprig-product_carousel-meta">';
+						$html .= '<div class="wprig-product-carousel-meta">';
 						$html .= $meta;
 						$html .= '</div>';
 					}
@@ -1575,7 +1575,7 @@ class WPRIG_Product_Carousel{
 					}
 					$html .= '</div>'; //wprig-post-grid-content
 					$html .= '</div>'; //wprig-post-grid-wrap
-					$html .= '</div>'; //wprig-product_carousel
+					$html .= '</div>'; //wprig-product-carousel
 				}
 			}
 			$html .= '</div>';

@@ -4,8 +4,8 @@
             $(".wprig-gallery").slick()
         }
 
-        if($(".wprig-product_carousel").length){
-            $(".wprig-product_carousel").slick()
+        if($(".wprig-product-carousel").length){
+            $(".wprig-product-carousel").slick()
         }
 
         $('.riseup-gallery').riseupGallery({
