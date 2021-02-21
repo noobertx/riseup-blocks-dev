@@ -1260,7 +1260,11 @@ function register_block_wprig_product_carousel(){
 	);
 }
 
-
+function enqueue_skin_additional_assets(){
+	wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
+    wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
+    wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
+}
 
 function render_block_wprig_product_carousel($att)
 {
@@ -1356,6 +1360,8 @@ function render_block_wprig_product_carousel($att)
 			return $excerpt;
 		}
 	endif;
+
+	$this->enqueue_skin_additional_assets();
 
 	//column
 	if ($layout == 2) {
