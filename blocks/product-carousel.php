@@ -62,7 +62,7 @@ class WPRIG_Product_Carousel{
 					//layout
 					'layout' => array(
 						'type' => 'number',
-						'default' => 1
+						'default' => 2
 					),
 					'style' => array(
 						'type' => 'number',
