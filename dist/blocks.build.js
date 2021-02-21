@@ -7198,7 +7198,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n", ""]);
+exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n\n.wprig-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 60.56vw;\n  transition: 0.5s opacity; }\n  .wprig-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -15019,9 +15019,7 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
-      var attributes = prevProps.attributes;
-
-      if (prevProps.attributes.clientId != this.props.clientId) {
+      if (prevProps.posts != this.posts) {
         this.loadCarousel();
       }
     }
@@ -15042,47 +15040,16 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "loadCarousel",
     value: function loadCarousel() {
-      var _this3 = this;
-
       var _this$props2 = this.props,
           posts = _this$props2.posts,
-          uniqueId = _this$props2.attributes.uniqueId; // console.log(this.state.doneLoading);
+          uniqueId = _this$props2.attributes.uniqueId;
 
-      var loadImage = function loadImage(image) {
-        return new Promise(function (resolve, reject) {
-          var loadImg = new Image();
-          loadImg.src = image.url; // wait 2 seconds to simulate loading time
-
-          loadImg.onload = function () {
-            return setTimeout(function () {
-              resolve(image.url);
-            }, 2000);
-          };
-
-          loadImg.onerror = function (err) {
-            return reject(err);
-          };
-        });
-      };
-
-      var images = document.querySelectorAll(".wprig-block-" + uniqueId + " div img");
-
-      if (images.length > 0) {
-        console.log(images.map);
-        Promise.all(images.map(function (image) {
-          return loadImage(image);
-        })).then(function () {
-          _this3.setState({
-            doneLoading: true
-          }); //   console.log(this.state.doneLoading);
-
-
-          setTimeout(function () {
-            jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(this.getCarouselParams()); //
-          }, 500);
-        })["catch"](function (err) {
-          return console.log("Failed to load images", err);
-        });
+      if (posts && posts.length > 0) {
+        console.log(posts);
+        var carouselParams = this.getCarouselParams();
+        setTimeout(function () {
+          jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(carouselParams);
+        }, 500);
       }
     }
   }, {
@@ -15117,7 +15084,7 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this4 = this;
+      var _this3 = this;
 
       var _this$props3 = this.props,
           setAttributes = _this$props3.setAttributes,
@@ -15304,7 +15271,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15333,7 +15300,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15359,7 +15326,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15377,7 +15344,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15395,7 +15362,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15429,7 +15396,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15447,7 +15414,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15465,7 +15432,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15483,7 +15450,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15509,7 +15476,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15527,7 +15494,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15545,7 +15512,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15600,7 +15567,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15618,7 +15585,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15636,7 +15603,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15654,7 +15621,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15696,7 +15663,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15714,7 +15681,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15734,7 +15701,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15877,7 +15844,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15913,7 +15880,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -15957,7 +15924,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16001,7 +15968,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16022,7 +15989,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         unit: ['px', 'em', '%'],
         value: pagesBorderRadius,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         },
@@ -16045,7 +16012,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16063,7 +16030,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16100,7 +16067,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16127,7 +16094,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16273,7 +16240,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16287,7 +16254,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16345,7 +16312,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16363,7 +16330,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16412,7 +16379,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16455,7 +16422,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16473,7 +16440,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16491,7 +16458,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16558,7 +16525,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16576,7 +16543,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16594,7 +16561,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16612,7 +16579,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16630,7 +16597,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16647,7 +16614,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16661,7 +16628,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16675,7 +16642,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
+          return _this3.setState({
             device: value
           });
         }
@@ -16742,7 +16709,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
           }, /*#__PURE__*/React.createElement("div", {
             className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
-          }, showImages && post.wprig_featured_image_url && _this4.renderFeaturedImage(post), _this4.renderCardContent(post)));
+          }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
         } else return null;
       })), /*#__PURE__*/React.createElement("div", {
         ref: this.wprigContextMenu,
