@@ -4,6 +4,10 @@
             $(".wprig-gallery").slick()
         }
 
+        if($(".wprig-product_carousel").length){
+            $(".wprig-product_carousel").slick()
+        }
+
         $('.riseup-gallery').riseupGallery({
             modalClass: '.wprig-dynamic-modal',
             toggleClass : 'button.wprig-gallery-item'

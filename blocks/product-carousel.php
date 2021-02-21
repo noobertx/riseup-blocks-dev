@@ -1357,11 +1357,46 @@ class WPRIG_Product_Carousel{
 		$categories             = $att['categories'];
 		$tags                   = $att['tags'];
 		$taxonomy               = $att['taxonomy'];
-	
+
+		$enableDots 		        = isset($att['enableDots']) ? $att['enableDots'] : false;
+        $enableArrows 		        = isset($att['enableArrows']) ? $att['enableArrows'] : false;
+		$carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
+            'md' => 3,
+            'sm' => 2,
+            'xs' => 1,
+        );
+
+		$slickSettings = (object) array(
+            "slidesToShow" => $carouselItems['md'],
+            "slidesToScroll" => 1,
+            "dots"=> $enableDots,
+            "arrows"=> $enableArrows,
+            "responsive" => [
+                [
+                    "breakpoint" => 1000,
+                    "settings" => [
+                        "slidesToShow" => $carouselItems['md'],
+                    ]
+                ],
+                [
+                    "breakpoint" => 800,
+                    "settings" => [
+                        "slidesToShow" => $carouselItems['sm'],
+                    ]
+                ],
+                [
+                    "breakpoint" => 500,
+                    "settings" => [
+                        "slidesToShow" => $carouselItems['xs'],
+                    ]
+                ]
+            ]
+        );
+
 		$enablePagination 		= isset($att['enablePagination']) ? $att['enablePagination'] : '';
 	
 		$animation 		        = isset($att['animation']) ? (count((array) $att['animation']) > 0 &&  $att['animation']['animation'] ? 'data-wpriganimation="' . htmlspecialchars(json_encode($att['animation']), ENT_QUOTES, 'UTF-8') . '"' : '') : '';
-	
+		
 	
 		$interaction = '';
 		if (isset($att['interaction'])) {
@@ -1386,7 +1421,7 @@ class WPRIG_Product_Carousel{
 		}
 	
 		$args = array(
-			'post_type' 		=> 'post',
+			'post_type' 		=> 'product',
 			'posts_per_page' 	=> esc_attr($numbers),
 			'order' 			=> esc_attr($order),
 			'orderby' 			=> esc_attr($orderBy),
@@ -1438,7 +1473,7 @@ class WPRIG_Product_Carousel{
 	
 		if ($query->have_posts()) {
 			$html .= '<div class="' . $class . '">';
-			$html .= '<div class="wprig-product_carousel-wrapper ' . $interaction . ' wprig-product_carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . '>';
+			$html .= '<div class="wprig-product_carousel-wrapper ' . $interaction . ' wprig-product_carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
 			while ($query->have_posts()) {
 				$query->the_post();
 				$id = get_post_thumbnail_id();
