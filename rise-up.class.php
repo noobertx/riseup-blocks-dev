@@ -291,6 +291,7 @@ class RiseUp_Blocks {
 		require_once WPRIG_DIR_PATH . 'blocks/image-grid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-grid.php';
+		require_once WPRIG_DIR_PATH . 'blocks/product-carousel.php';
 	}
 
 	/**
