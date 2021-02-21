@@ -15175,37 +15175,6 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
-        title: "",
-        initialOpen: true
-      }, /*#__PURE__*/React.createElement(Styles, {
-        options: [{
-          value: 1,
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_1,
-          label: __('')
-        }, {
-          value: 2,
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_2,
-          label: __('')
-        }, {
-          value: 3,
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_3,
-          label: __('')
-        }, {
-          value: 4,
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_4,
-          label: __('')
-        }, {
-          value: 5,
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_5,
-          label: __('')
-        }],
-        value: layout,
-        onChange: function onChange(val) {
-          return setAttributes({
-            layout: val
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Post Design'),
         initialOpen: true
       }, /*#__PURE__*/React.createElement(Styles, {
