@@ -76,6 +76,20 @@ class WPRIG_Product_Carousel{
                             ]
                         ]
                     ],
+					'carouselItemMargin' => array(
+						'type' => 'object',
+						'default' => (object) [
+							'openMargin' => 1,
+							'marginType' => 'custom',
+							'custom' => [
+								'md' => '0 0 0 10',
+							],
+							'unit' => 'px'
+						],
+						'style' => [(object) [
+							'selector' => '{{WPRIG}} .wprig-product-carousel.slick-slide'
+						]]
+					),					
 					'taxonomy' => array(
 						'type' => 'string',
 						'default' => 'categories',
