@@ -14960,7 +14960,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         dangerouslySetInnerHTML: {
           __html: post.wprig_category
         }
-      })), showTitle && titlePosition == true && title, showTitle && titlePosition == false && title, showExcerpt && /*#__PURE__*/React.createElement("div", {
+      })), showTitle && titlePosition == true && title, showTitle && titlePosition == false && title, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-meta"
+      }, "Price $ ", parseInt(post.product_info.get_price).toFixed(2)), showExcerpt && /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-intro",
         dangerouslySetInnerHTML: {
           __html: _this.truncate(post.excerpt.rendered, excerptLimit)
