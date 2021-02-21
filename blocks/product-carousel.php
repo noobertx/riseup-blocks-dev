@@ -33,6 +33,49 @@ class WPRIG_Product_Carousel{
 						'type' => 'string',
 						'default' => 'Posts',
 					),
+					'carouselItems' => [
+                        'type' => 'object',
+                        'default' => [
+                            'md' => 3,
+                            'sm' => 2,
+                            'xs' => 1,
+                        ]
+                    ],
+					'enableDots' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
+                    'dotsColorActive' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .slick-dots li.slick-active button:before{ color:{{dotsColorActive}}!important; }' 
+                            ]
+                        ]
+                    ], //slick-dots
+                    'dotsColor' => [
+                        'type' => 'string',
+                        'default' => '#fff',
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .slick-dots li button:before{ color:{{dotsColor}}!important; }' 
+                            ]
+                        ]
+                    ], 
+                    'enableArrows' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 
+                    'arrowColor' => [
+                        'type' => 'string',
+                        'default' => '#47a',
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .slick-arrow:before,{{WPRIG}} .swiper-button-next,{{WPRIG}} .swiper-button-prev{ color:{{arrowColor}}; }' 
+                            ]
+                        ]
+                    ],
 					'taxonomy' => array(
 						'type' => 'string',
 						'default' => 'categories',

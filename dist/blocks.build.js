@@ -14790,6 +14790,7 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var _post_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./post-carousel */ "./src/blocks/product-carousel/post-carousel.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -14881,6 +14882,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
+
 
 var CATEGORIES_LIST_QUERY = {
   per_page: -1
@@ -15015,6 +15017,15 @@ var Edit = /*#__PURE__*/function (_Component) {
       }
     }
   }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var attributes = prevProps.attributes;
+
+      if (prevProps.attributes.clientId != this.props.clientId) {
+        this.loadCarousel();
+      }
+    }
+  }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
       this.isStillMounted = false;
@@ -15029,143 +15040,224 @@ var Edit = /*#__PURE__*/function (_Component) {
       return value;
     }
   }, {
-    key: "render",
-    value: function render() {
+    key: "loadCarousel",
+    value: function loadCarousel() {
       var _this3 = this;
 
       var _this$props2 = this.props,
-          setAttributes = _this$props2.setAttributes,
           posts = _this$props2.posts,
-          name = _this$props2.name,
-          clientId = _this$props2.clientId,
-          attributes = _this$props2.attributes,
-          taxonomyList = _this$props2.taxonomyList,
-          _this$props2$attribut = _this$props2.attributes,
-          uniqueId = _this$props2$attribut.uniqueId,
-          className = _this$props2$attribut.className,
-          taxonomy = _this$props2$attribut.taxonomy,
-          categories = _this$props2$attribut.categories,
-          tags = _this$props2$attribut.tags,
-          order = _this$props2$attribut.order,
-          orderBy = _this$props2$attribut.orderBy,
-          postsToShow = _this$props2$attribut.postsToShow,
-          enablePagination = _this$props2$attribut.enablePagination,
-          page = _this$props2$attribut.page,
-          paginationType = _this$props2$attribut.paginationType,
-          pageAlignment = _this$props2$attribut.pageAlignment,
-          paginationTypography = _this$props2$attribut.paginationTypography,
-          pagesColor = _this$props2$attribut.pagesColor,
-          pagesHoverColor = _this$props2$attribut.pagesHoverColor,
-          pagesActiveColor = _this$props2$attribut.pagesActiveColor,
-          pagesbgColor = _this$props2$attribut.pagesbgColor,
-          pagesbgHoverColor = _this$props2$attribut.pagesbgHoverColor,
-          pagesbgActiveColor = _this$props2$attribut.pagesbgActiveColor,
-          pagesBorder = _this$props2$attribut.pagesBorder,
-          pagesHoverBorder = _this$props2$attribut.pagesHoverBorder,
-          pagesActiveBorder = _this$props2$attribut.pagesActiveBorder,
-          pagesShadow = _this$props2$attribut.pagesShadow,
-          pagesHoverShadow = _this$props2$attribut.pagesHoverShadow,
-          pagesActiveShadow = _this$props2$attribut.pagesActiveShadow,
-          pagesBorderRadius = _this$props2$attribut.pagesBorderRadius,
-          pagePadding = _this$props2$attribut.pagePadding,
-          pageMargin = _this$props2$attribut.pageMargin,
-          showImages = _this$props2$attribut.showImages,
-          imgSize = _this$props2$attribut.imgSize,
-          enableFixedHeight = _this$props2$attribut.enableFixedHeight,
-          fixedHeight = _this$props2$attribut.fixedHeight,
-          imageRadius = _this$props2$attribut.imageRadius,
-          imageAnimation = _this$props2$attribut.imageAnimation,
-          cardBackground = _this$props2$attribut.cardBackground,
-          cardBorder = _this$props2$attribut.cardBorder,
-          cardBorderRadius = _this$props2$attribut.cardBorderRadius,
-          cardPadding = _this$props2$attribut.cardPadding,
-          cardBoxShadow = _this$props2$attribut.cardBoxShadow,
-          cardSpace = _this$props2$attribut.cardSpace,
-          stackBg = _this$props2$attribut.stackBg,
-          stackWidth = _this$props2$attribut.stackWidth,
-          stackSpace = _this$props2$attribut.stackSpace,
-          stackBorderRadius = _this$props2$attribut.stackBorderRadius,
-          stackPadding = _this$props2$attribut.stackPadding,
-          stackBoxShadow = _this$props2$attribut.stackBoxShadow,
-          readmoreStyle = _this$props2$attribut.readmoreStyle,
-          buttonText = _this$props2$attribut.buttonText,
-          readmoreSize = _this$props2$attribut.readmoreSize,
-          readmoreCustomSize = _this$props2$attribut.readmoreCustomSize,
-          readmoreTypography = _this$props2$attribut.readmoreTypography,
-          readmoreBg = _this$props2$attribut.readmoreBg,
-          readmoreHoverBg = _this$props2$attribut.readmoreHoverBg,
-          readmoreBorder = _this$props2$attribut.readmoreBorder,
-          readmoreBorderRadius = _this$props2$attribut.readmoreBorderRadius,
-          readmoreBoxShadow = _this$props2$attribut.readmoreBoxShadow,
-          readmoreColor = _this$props2$attribut.readmoreColor,
-          readmoreColor2 = _this$props2$attribut.readmoreColor2,
-          readmoreHoverColor = _this$props2$attribut.readmoreHoverColor,
-          layout = _this$props2$attribut.layout,
-          style = _this$props2$attribut.style,
-          column = _this$props2$attribut.column,
-          showDates = _this$props2$attribut.showDates,
-          showComment = _this$props2$attribut.showComment,
-          showAuthor = _this$props2$attribut.showAuthor,
-          showCategory = _this$props2$attribut.showCategory,
-          categoryPosition = _this$props2$attribut.categoryPosition,
-          showExcerpt = _this$props2$attribut.showExcerpt,
-          excerptLimit = _this$props2$attribut.excerptLimit,
-          showReadMore = _this$props2$attribut.showReadMore,
-          showTitle = _this$props2$attribut.showTitle,
-          titlePosition = _this$props2$attribut.titlePosition,
-          showSeparator = _this$props2$attribut.showSeparator,
-          separatorColor = _this$props2$attribut.separatorColor,
-          separatorHeight = _this$props2$attribut.separatorHeight,
-          separatorSpace = _this$props2$attribut.separatorSpace,
-          titleTypography = _this$props2$attribut.titleTypography,
-          metaTypography = _this$props2$attribut.metaTypography,
-          excerptTypography = _this$props2$attribut.excerptTypography,
-          categoryTypography = _this$props2$attribut.categoryTypography,
-          titleColor = _this$props2$attribut.titleColor,
-          titleOverlayColor = _this$props2$attribut.titleOverlayColor,
-          metaColor = _this$props2$attribut.metaColor,
-          metaOverlayColor = _this$props2$attribut.metaOverlayColor,
-          titleHoverColor = _this$props2$attribut.titleHoverColor,
-          excerptColor = _this$props2$attribut.excerptColor,
-          excerptColor2 = _this$props2$attribut.excerptColor2,
-          categoryColor = _this$props2$attribut.categoryColor,
-          categoryColor2 = _this$props2$attribut.categoryColor2,
-          categoryHoverColor = _this$props2$attribut.categoryHoverColor,
-          categoryHoverColor2 = _this$props2$attribut.categoryHoverColor2,
-          categoryBackground = _this$props2$attribut.categoryBackground,
-          categoryHoverBackground = _this$props2$attribut.categoryHoverBackground,
-          categoryRadius = _this$props2$attribut.categoryRadius,
-          categoryPadding = _this$props2$attribut.categoryPadding,
-          badgePosition = _this$props2$attribut.badgePosition,
-          badgePadding = _this$props2$attribut.badgePadding,
-          bgColor = _this$props2$attribut.bgColor,
-          border = _this$props2$attribut.border,
-          borderRadius = _this$props2$attribut.borderRadius,
-          padding = _this$props2$attribut.padding,
-          boxShadow = _this$props2$attribut.boxShadow,
-          contentPosition = _this$props2$attribut.contentPosition,
-          girdContentPosition = _this$props2$attribut.girdContentPosition,
-          overlayBg = _this$props2$attribut.overlayBg,
-          overlayHoverBg = _this$props2$attribut.overlayHoverBg,
-          overlayBlend = _this$props2$attribut.overlayBlend,
-          overlayHeight = _this$props2$attribut.overlayHeight,
-          overlaySpace = _this$props2$attribut.overlaySpace,
-          overlayBorderRadius = _this$props2$attribut.overlayBorderRadius,
-          columnGap = _this$props2$attribut.columnGap,
-          contentPadding = _this$props2$attribut.contentPadding,
-          titleSpace = _this$props2$attribut.titleSpace,
-          categorySpace = _this$props2$attribut.categorySpace,
-          metaSpace = _this$props2$attribut.metaSpace,
-          excerptSpace = _this$props2$attribut.excerptSpace,
-          animation = _this$props2$attribut.animation,
-          globalZindex = _this$props2$attribut.globalZindex,
-          enablePosition = _this$props2$attribut.enablePosition,
-          selectPosition = _this$props2$attribut.selectPosition,
-          positionXaxis = _this$props2$attribut.positionXaxis,
-          positionYaxis = _this$props2$attribut.positionYaxis,
-          hideTablet = _this$props2$attribut.hideTablet,
-          hideMobile = _this$props2$attribut.hideMobile,
-          globalCss = _this$props2$attribut.globalCss;
+          uniqueId = _this$props2.attributes.uniqueId; // console.log(this.state.doneLoading);
+
+      var loadImage = function loadImage(image) {
+        return new Promise(function (resolve, reject) {
+          var loadImg = new Image();
+          loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+          loadImg.onload = function () {
+            return setTimeout(function () {
+              resolve(image.url);
+            }, 2000);
+          };
+
+          loadImg.onerror = function (err) {
+            return reject(err);
+          };
+        });
+      };
+
+      var images = document.querySelectorAll(".wprig-block-" + uniqueId + " div img");
+
+      if (images.length > 0) {
+        console.log(images.map);
+        Promise.all(images.map(function (image) {
+          return loadImage(image);
+        })).then(function () {
+          _this3.setState({
+            doneLoading: true
+          }); //   console.log(this.state.doneLoading);
+
+
+          setTimeout(function () {
+            jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(this.getCarouselParams()); //
+          }, 500);
+        })["catch"](function (err) {
+          return console.log("Failed to load images", err);
+        });
+      }
+    }
+  }, {
+    key: "getCarouselParams",
+    value: function getCarouselParams() {
+      var _this$props$attribute3 = this.props.attributes,
+          carouselItems = _this$props$attribute3.carouselItems,
+          enableDots = _this$props$attribute3.enableDots,
+          enableArrows = _this$props$attribute3.enableArrows;
+      return {
+        dots: enableDots,
+        slidesToShow: parseInt(carouselItems.md),
+        arrows: enableArrows,
+        responsive: [{
+          breakpoint: 900,
+          settings: {
+            slidesToShow: parseInt(carouselItems.md)
+          }
+        }, {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: carouselItems.sm
+          }
+        }, {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: carouselItems.xs
+          }
+        }]
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props3 = this.props,
+          setAttributes = _this$props3.setAttributes,
+          posts = _this$props3.posts,
+          name = _this$props3.name,
+          clientId = _this$props3.clientId,
+          attributes = _this$props3.attributes,
+          taxonomyList = _this$props3.taxonomyList,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          className = _this$props3$attribut.className,
+          carouselItems = _this$props3$attribut.carouselItems,
+          enableDots = _this$props3$attribut.enableDots,
+          dotsColor = _this$props3$attribut.dotsColor,
+          dotsColorActive = _this$props3$attribut.dotsColorActive,
+          enableArrows = _this$props3$attribut.enableArrows,
+          arrowColor = _this$props3$attribut.arrowColor,
+          taxonomy = _this$props3$attribut.taxonomy,
+          categories = _this$props3$attribut.categories,
+          tags = _this$props3$attribut.tags,
+          order = _this$props3$attribut.order,
+          orderBy = _this$props3$attribut.orderBy,
+          postsToShow = _this$props3$attribut.postsToShow,
+          enablePagination = _this$props3$attribut.enablePagination,
+          page = _this$props3$attribut.page,
+          paginationType = _this$props3$attribut.paginationType,
+          pageAlignment = _this$props3$attribut.pageAlignment,
+          paginationTypography = _this$props3$attribut.paginationTypography,
+          pagesColor = _this$props3$attribut.pagesColor,
+          pagesHoverColor = _this$props3$attribut.pagesHoverColor,
+          pagesActiveColor = _this$props3$attribut.pagesActiveColor,
+          pagesbgColor = _this$props3$attribut.pagesbgColor,
+          pagesbgHoverColor = _this$props3$attribut.pagesbgHoverColor,
+          pagesbgActiveColor = _this$props3$attribut.pagesbgActiveColor,
+          pagesBorder = _this$props3$attribut.pagesBorder,
+          pagesHoverBorder = _this$props3$attribut.pagesHoverBorder,
+          pagesActiveBorder = _this$props3$attribut.pagesActiveBorder,
+          pagesShadow = _this$props3$attribut.pagesShadow,
+          pagesHoverShadow = _this$props3$attribut.pagesHoverShadow,
+          pagesActiveShadow = _this$props3$attribut.pagesActiveShadow,
+          pagesBorderRadius = _this$props3$attribut.pagesBorderRadius,
+          pagePadding = _this$props3$attribut.pagePadding,
+          pageMargin = _this$props3$attribut.pageMargin,
+          showImages = _this$props3$attribut.showImages,
+          imgSize = _this$props3$attribut.imgSize,
+          enableFixedHeight = _this$props3$attribut.enableFixedHeight,
+          fixedHeight = _this$props3$attribut.fixedHeight,
+          imageRadius = _this$props3$attribut.imageRadius,
+          imageAnimation = _this$props3$attribut.imageAnimation,
+          cardBackground = _this$props3$attribut.cardBackground,
+          cardBorder = _this$props3$attribut.cardBorder,
+          cardBorderRadius = _this$props3$attribut.cardBorderRadius,
+          cardPadding = _this$props3$attribut.cardPadding,
+          cardBoxShadow = _this$props3$attribut.cardBoxShadow,
+          cardSpace = _this$props3$attribut.cardSpace,
+          stackBg = _this$props3$attribut.stackBg,
+          stackWidth = _this$props3$attribut.stackWidth,
+          stackSpace = _this$props3$attribut.stackSpace,
+          stackBorderRadius = _this$props3$attribut.stackBorderRadius,
+          stackPadding = _this$props3$attribut.stackPadding,
+          stackBoxShadow = _this$props3$attribut.stackBoxShadow,
+          readmoreStyle = _this$props3$attribut.readmoreStyle,
+          buttonText = _this$props3$attribut.buttonText,
+          readmoreSize = _this$props3$attribut.readmoreSize,
+          readmoreCustomSize = _this$props3$attribut.readmoreCustomSize,
+          readmoreTypography = _this$props3$attribut.readmoreTypography,
+          readmoreBg = _this$props3$attribut.readmoreBg,
+          readmoreHoverBg = _this$props3$attribut.readmoreHoverBg,
+          readmoreBorder = _this$props3$attribut.readmoreBorder,
+          readmoreBorderRadius = _this$props3$attribut.readmoreBorderRadius,
+          readmoreBoxShadow = _this$props3$attribut.readmoreBoxShadow,
+          readmoreColor = _this$props3$attribut.readmoreColor,
+          readmoreColor2 = _this$props3$attribut.readmoreColor2,
+          readmoreHoverColor = _this$props3$attribut.readmoreHoverColor,
+          layout = _this$props3$attribut.layout,
+          style = _this$props3$attribut.style,
+          column = _this$props3$attribut.column,
+          showDates = _this$props3$attribut.showDates,
+          showComment = _this$props3$attribut.showComment,
+          showAuthor = _this$props3$attribut.showAuthor,
+          showCategory = _this$props3$attribut.showCategory,
+          categoryPosition = _this$props3$attribut.categoryPosition,
+          showExcerpt = _this$props3$attribut.showExcerpt,
+          excerptLimit = _this$props3$attribut.excerptLimit,
+          showReadMore = _this$props3$attribut.showReadMore,
+          showTitle = _this$props3$attribut.showTitle,
+          titlePosition = _this$props3$attribut.titlePosition,
+          showSeparator = _this$props3$attribut.showSeparator,
+          separatorColor = _this$props3$attribut.separatorColor,
+          separatorHeight = _this$props3$attribut.separatorHeight,
+          separatorSpace = _this$props3$attribut.separatorSpace,
+          titleTypography = _this$props3$attribut.titleTypography,
+          metaTypography = _this$props3$attribut.metaTypography,
+          excerptTypography = _this$props3$attribut.excerptTypography,
+          categoryTypography = _this$props3$attribut.categoryTypography,
+          titleColor = _this$props3$attribut.titleColor,
+          titleOverlayColor = _this$props3$attribut.titleOverlayColor,
+          metaColor = _this$props3$attribut.metaColor,
+          metaOverlayColor = _this$props3$attribut.metaOverlayColor,
+          titleHoverColor = _this$props3$attribut.titleHoverColor,
+          excerptColor = _this$props3$attribut.excerptColor,
+          excerptColor2 = _this$props3$attribut.excerptColor2,
+          categoryColor = _this$props3$attribut.categoryColor,
+          categoryColor2 = _this$props3$attribut.categoryColor2,
+          categoryHoverColor = _this$props3$attribut.categoryHoverColor,
+          categoryHoverColor2 = _this$props3$attribut.categoryHoverColor2,
+          categoryBackground = _this$props3$attribut.categoryBackground,
+          categoryHoverBackground = _this$props3$attribut.categoryHoverBackground,
+          categoryRadius = _this$props3$attribut.categoryRadius,
+          categoryPadding = _this$props3$attribut.categoryPadding,
+          badgePosition = _this$props3$attribut.badgePosition,
+          badgePadding = _this$props3$attribut.badgePadding,
+          bgColor = _this$props3$attribut.bgColor,
+          border = _this$props3$attribut.border,
+          borderRadius = _this$props3$attribut.borderRadius,
+          padding = _this$props3$attribut.padding,
+          boxShadow = _this$props3$attribut.boxShadow,
+          contentPosition = _this$props3$attribut.contentPosition,
+          girdContentPosition = _this$props3$attribut.girdContentPosition,
+          overlayBg = _this$props3$attribut.overlayBg,
+          overlayHoverBg = _this$props3$attribut.overlayHoverBg,
+          overlayBlend = _this$props3$attribut.overlayBlend,
+          overlayHeight = _this$props3$attribut.overlayHeight,
+          overlaySpace = _this$props3$attribut.overlaySpace,
+          overlayBorderRadius = _this$props3$attribut.overlayBorderRadius,
+          columnGap = _this$props3$attribut.columnGap,
+          contentPadding = _this$props3$attribut.contentPadding,
+          titleSpace = _this$props3$attribut.titleSpace,
+          categorySpace = _this$props3$attribut.categorySpace,
+          metaSpace = _this$props3$attribut.metaSpace,
+          excerptSpace = _this$props3$attribut.excerptSpace,
+          animation = _this$props3$attribut.animation,
+          globalZindex = _this$props3$attribut.globalZindex,
+          enablePosition = _this$props3$attribut.enablePosition,
+          selectPosition = _this$props3$attribut.selectPosition,
+          positionXaxis = _this$props3$attribut.positionXaxis,
+          positionYaxis = _this$props3$attribut.positionYaxis,
+          hideTablet = _this$props3$attribut.hideTablet,
+          hideMobile = _this$props3$attribut.hideMobile,
+          globalCss = _this$props3$attribut.globalCss;
       var device = this.state.device;
       var pages = Math.ceil(wprig_admin.publishedPosts / postsToShow);
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
@@ -15212,7 +15304,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15241,7 +15333,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15267,7 +15359,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15285,7 +15377,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15303,7 +15395,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15337,7 +15429,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15355,7 +15447,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15373,7 +15465,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15391,7 +15483,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15417,7 +15509,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15435,7 +15527,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15453,7 +15545,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15508,7 +15600,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15526,7 +15618,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15544,7 +15636,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15562,7 +15654,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15604,7 +15696,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15622,8 +15714,68 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Carousel')
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Items'),
+        value: carouselItems,
+        onChange: function onChange(val) {
+          return setAttributes({
+            carouselItems: val
+          });
+        },
+        min: 1,
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this4.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Arrows'),
+        value: enableArrows,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableArrows: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Dots'),
+        value: enableDots,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableDots: val
+          });
+        }
+      }), enableArrows && /*#__PURE__*/React.createElement(Color, {
+        label: __('Arrow Color'),
+        value: arrowColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            arrowColor: value
+          });
+        }
+      }), enableDots && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color'),
+        value: dotsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color Active'),
+        value: dotsColorActive,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColorActive: value
           });
         }
       }))), /*#__PURE__*/React.createElement(PanelBody, {
@@ -15725,7 +15877,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15761,7 +15913,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15805,7 +15957,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15849,7 +16001,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15870,7 +16022,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         unit: ['px', 'em', '%'],
         value: pagesBorderRadius,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         },
@@ -15893,7 +16045,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15911,7 +16063,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15948,7 +16100,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -15975,7 +16127,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16121,7 +16273,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16135,7 +16287,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16193,7 +16345,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16211,7 +16363,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16260,7 +16412,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16303,7 +16455,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16321,7 +16473,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16339,7 +16491,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16406,7 +16558,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16424,7 +16576,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16442,7 +16594,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16460,7 +16612,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16478,7 +16630,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16495,7 +16647,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16509,7 +16661,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16523,7 +16675,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16590,7 +16742,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
           }, /*#__PURE__*/React.createElement("div", {
             className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
-          }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
+          }, showImages && post.wprig_featured_image_url && _this4.renderFeaturedImage(post), _this4.renderCardContent(post)));
         } else return null;
       })), /*#__PURE__*/React.createElement("div", {
         ref: this.wprigContextMenu,
@@ -16716,6 +16868,267 @@ registerBlockType('wprig/productcarousel', {
     return null;
   }
 });
+
+/***/ }),
+
+/***/ "./src/blocks/product-carousel/post-carousel.js":
+/*!******************************************************!*\
+  !*** ./src/blocks/product-carousel/post-carousel.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modal */ "./src/blocks/modal/index.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+
+
+var ImageCarousel = /*#__PURE__*/function (_Component) {
+  _inherits(ImageCarousel, _Component);
+
+  var _super = _createSuper(ImageCarousel);
+
+  function ImageCarousel(props) {
+    var _this;
+
+    _classCallCheck(this, ImageCarousel);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      openModal: false,
+      imageCollection: [],
+      imageUrl: "",
+      openClass: "",
+      caption: "",
+      description: "",
+      doneLoading: ""
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(ImageCarousel, [{
+    key: "renderClick",
+    value: function renderClick(el) {
+      this.setState({
+        openModal: true,
+        imageUrl: el.url,
+        caption: el.caption,
+        description: el.description
+      });
+      var t = this;
+      setTimeout(function () {
+        t.openOverlay();
+      }, 250);
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      this.setState({
+        openClass: "open"
+      });
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.setState({
+        openModal: false,
+        imageUrl: "",
+        caption: "",
+        description: ""
+      });
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      this.setState({
+        openClass: ""
+      });
+      var t = this;
+      setTimeout(function () {
+        t.closeModal();
+      }, 250);
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          className = _this$props.className,
+          id = _this$props.id,
+          images = _this$props.images;
+      var the_id = id;
+      this.loadCarousel();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (prevProps.id != this.props.id) {
+        this.loadCarousel();
+      }
+    }
+  }, {
+    key: "loadCarousel",
+    value: function loadCarousel() {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          images = _this$props2.images,
+          id = _this$props2.id,
+          carouselParams = _this$props2.carouselParams; // console.log(this.state.doneLoading);
+
+      var loadImage = function loadImage(image) {
+        return new Promise(function (resolve, reject) {
+          var loadImg = new Image();
+          loadImg.src = image.url; // wait 2 seconds to simulate loading time
+
+          loadImg.onload = function () {
+            return setTimeout(function () {
+              resolve(image.url);
+            }, 2000);
+          };
+
+          loadImg.onerror = function (err) {
+            return reject(err);
+          };
+        });
+      };
+
+      Promise.all(images.map(function (image) {
+        return loadImage(image);
+      })).then(function () {
+        _this2.setState({
+          doneLoading: true
+        }); //   console.log(this.state.doneLoading);
+
+
+        setTimeout(function () {
+          // console.log(id,carouselParams);
+          jQuery("." + id).slick(carouselParams); //
+        }, 500);
+      })["catch"](function (err) {
+        return console.log("Failed to load images", err);
+      });
+    }
+  }, {
+    key: "renderSlides",
+    value: function renderSlides(imageItems) {
+      var _this3 = this;
+
+      var _this$props3 = this.props,
+          enableHoverFx = _this$props3.enableHoverFx,
+          overlayParams = _this$props3.overlayParams;
+
+      if (imageItems && imageItems.length > 0) {
+        return imageItems.map(function (el) {
+          return /*#__PURE__*/React.createElement("div", {
+            "class": "cells"
+          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
+            className: "overlay"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content"
+          }, /*#__PURE__*/React.createElement("div", {
+            className: "overlay-content ".concat(overlayParams.overlayLayout)
+          }, overlayParams.enableViewButton && overlayParams.enableModal && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "view",
+            onClick: function onClick() {
+              _this3.renderClick(el);
+            }
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
+          }), overlayParams.viewButtonLabel), overlayParams.enableShareButton && /*#__PURE__*/React.createElement("button", {
+            type: "button",
+            className: "share"
+          }, /*#__PURE__*/React.createElement("i", {
+            className: "wprig-btn-icon ".concat(overlayParams.shareIconName)
+          }), overlayParams.shareButtonLabel, /*#__PURE__*/React.createElement("ul", {
+            className: "tool-tip"
+          }, overlayParams.enableFacebook && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+            href: "#"
+          }, /*#__PURE__*/React.createElement("span", {
+            className: "fab fa-facebook"
+          })))))))), /*#__PURE__*/React.createElement("img", {
+            src: el.url,
+            "data-image": el.url,
+            onClick: function onClick() {
+              !enableHoverFx ? _this3.renderClick(el) : '';
+            }
+          }));
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props4 = this.props,
+          className = _this$props4.className,
+          id = _this$props4.id,
+          overlayEffect = _this$props4.overlayEffect,
+          modalLayout = _this$props4.modalLayout,
+          enableHoverFx = _this$props4.enableHoverFx,
+          hoverEffect = _this$props4.hoverEffect,
+          hoverEffectDirection = _this$props4.hoverEffectDirection,
+          overlayParams = _this$props4.overlayParams,
+          images = _this$props4.images,
+          columns = _this$props4.columns,
+          gutter = _this$props4.gutter;
+      var doneLoading = this.state.doneLoading;
+
+      if (!doneLoading) {
+        return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, "Gallery is loading"));
+      }
+
+      return /*#__PURE__*/React.createElement(Fragment, null, this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
+        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
+        overlayClassName: "wprig-block-".concat(id),
+        onRequestClose: function onRequestClose() {
+          _this4.closeOverlay();
+        }
+      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
+        src: "".concat(this.state.imageUrl)
+      }))), /*#__PURE__*/React.createElement("div", {
+        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " "),
+        "data-masonry": "{ \"itemSelector\": \".grid-item\", \"columnWidth\": 200 }"
+      }, this.renderSlides(images)));
+    }
+  }]);
+
+  return ImageCarousel;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageCarousel);
 
 /***/ }),
 
