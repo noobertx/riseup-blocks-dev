@@ -1260,7 +1260,7 @@ function register_block_wprig_product_carousel(){
 	);
 }
 
-function enqueue_skin_additional_assets(){
+ function product_enqueue_skin_additional_assets(){
 	wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
     wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
     wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
@@ -1345,7 +1345,7 @@ function render_block_wprig_product_carousel($att)
 	$query = new WP_Query($args);
 
 	# The Loop.
-	$html = '';
+	$html = ' Prodict carousel here';
 	//excerpt;
 	if (!function_exists('wprig_excerpt_max_charlength')) :
 		function wprig_excerpt_max_charlength($limit)
@@ -1361,13 +1361,13 @@ function render_block_wprig_product_carousel($att)
 		}
 	endif;
 
-	$this->enqueue_skin_additional_assets();
+	product_enqueue_skin_additional_assets();
 
 	//column
 	if ($layout == 2) {
-		$col = (' wprig-product_carousel-column wprig-product_carousel-column-md' . $column['md'] . ' wprig-product_carousel-column-sm' . $column['sm'] . ' wprig-product_carousel-column-xs' . $column['xs']);
+		$col = (' wprig-product_carousel wprig-product_carousel-column wprig-product_carousel-column-md' . $column['md'] . ' wprig-product_carousel-column-sm' . $column['sm'] . ' wprig-product_carousel-column-xs' . $column['xs']);
 	} else {
-		$col = "";
+		$col = "wprig-product_carousel";
 	}
 	$class = 'wp-block-wprig-product_carousel wprig-block-' . $uniqueId;
 	if (isset($att['align'])) {
