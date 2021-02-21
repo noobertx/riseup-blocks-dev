@@ -92,6 +92,9 @@ class RiseUp_Blocks {
 
 	}
 
+
+
+
 	public function query_contents(){
 		register_rest_route( 'new/v1', 'item', array(
 			'methods' => WP_REST_SERVER::READABLE,
@@ -142,7 +145,15 @@ class RiseUp_Blocks {
 	
 		return $params;
 	}	
-
+	public function wprig_get_product_info($object){
+		// if(!function_exists('wc_get_product')) return [];
+		return array(
+			'sku' => wc_get_product($object['id'])->get_sku(),
+			'get_regular_price' => wc_get_product($object['id'])->get_regular_price(),
+			'get_sale_price' => wc_get_product($object['id'])->get_sale_price(),
+			'get_price' => wc_get_product($object['id'])->get_price()
+		);
+	}
 	public function wprig_get_featured_image_url($object){
 		$featured_images = array();
 	if (!isset($object['featured_media'])) {
@@ -188,6 +199,19 @@ class RiseUp_Blocks {
 			'wprig_featured_image_url',
 			array(
 				'get_callback' => array($this,'wprig_get_featured_image_url'),
+				'update_callback' => null,
+				'schema' => array(
+					'description' => __('Different sized featured images'),
+					'type' => 'array',
+				),
+			)
+		);
+
+		register_rest_field(
+			"product",
+			'product_info',
+			array(
+				'get_callback' => array($this,'wprig_get_product_info'),
 				'update_callback' => null,
 				'schema' => array(
 					'description' => __('Different sized featured images'),
