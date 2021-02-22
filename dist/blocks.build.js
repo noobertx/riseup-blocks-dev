@@ -14936,7 +14936,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           showReadMore = _this$props$attribute2.showReadMore,
           buttonText = _this$props$attribute2.buttonText,
           readmoreSize = _this$props$attribute2.readmoreSize,
-          enablePrice = _this$props$attribute2.enablePrice;
+          enablePrice = _this$props$attribute2.enablePrice,
+          enableRegularPrice = _this$props$attribute2.enableRegularPrice;
       var title = /*#__PURE__*/React.createElement("h3", {
         className: "wprig-product-carousel-title"
       }, /*#__PURE__*/React.createElement("a", null, post.title.rendered));
@@ -14956,9 +14957,11 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       })), showTitle && titlePosition == true && title, /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-meta"
-      }, enablePrice && /*#__PURE__*/React.createElement("span", {
+      }, enableRegularPrice && /*#__PURE__*/React.createElement("span", {
+        className: "item-regular-price"
+      }, " ", /*#__PURE__*/React.createElement("strike", null, "$", parseInt(post.product_info.get_regular_price).toFixed(2))), enablePrice && /*#__PURE__*/React.createElement("span", {
         className: "item-price"
-      }, " Price $ ", parseInt(post.product_info.get_price).toFixed(2)), showComment && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("i", {
+      }, " $", parseInt(post.product_info.get_price).toFixed(2)), showComment && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("i", {
         className: "fas fa-comment"
       }), " ", post.wprig_comment ? post.wprig_comment : '0')), showTitle && titlePosition == false && title, showReadMore && /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-btn-wrapper"
@@ -15175,6 +15178,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           showTitle = _this$props3$attribut.showTitle,
           titlePosition = _this$props3$attribut.titlePosition,
           enablePrice = _this$props3$attribut.enablePrice,
+          enableRegularPrice = _this$props3$attribut.enableRegularPrice,
           showSeparator = _this$props3$attribut.showSeparator,
           separatorColor = _this$props3$attribut.separatorColor,
           separatorHeight = _this$props3$attribut.separatorHeight,
@@ -15697,6 +15701,14 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             enablePrice: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Regular Price'),
+        value: enableRegularPrice,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableRegularPrice: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
