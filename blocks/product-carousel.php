@@ -93,6 +93,10 @@ class WPRIG_Product_Carousel{
 					'enablePrice' => [
                         'type' => 'boolean',
                         'default' => true
+                    ],
+					'enableRegularPrice' => [
+                        'type' => 'boolean',
+                        'default' => true
                     ], 		
 					'taxonomy' => array(
 						'type' => 'string',
@@ -1300,7 +1304,8 @@ class WPRIG_Product_Carousel{
         );
 
 		$enablePrice 		        = isset($att['enablePrice']) ? $att['enablePrice'] : false;
-
+		$enableRegularPrice 		        = isset($att['enableRegularPrice']) ? $att['enableRegularPrice'] : false;
+		// $html = "";
 		$slickSettings = (object) array(
             "slidesToShow" => $carouselItems['md'],
             "slidesToScroll" => 1,
@@ -1376,7 +1381,7 @@ class WPRIG_Product_Carousel{
 		
 	
 		$this->enqueue_skin_additional_assets();
-	
+		$html = "";
 		//column
 		if ($layout == 2) {
 			$col = (' wprig-product-carousel wprig-product-carousel-column wprig-product-carousel-column-md' . $column['md'] . ' wprig-product-carousel-column-sm' . $column['sm'] . ' wprig-product-carousel-column-xs' . $column['xs']);
@@ -1390,7 +1395,6 @@ class WPRIG_Product_Carousel{
 		if (isset($att['className'])) {
 			$class .= $att['className'];
 		}
-	
 		if ($query->have_posts()) {
 			$html .= '<div class="' . $class . '">';
 			$html .= '<div class="wprig-product-carousel-wrapper ' . $interaction . ' wprig-product-carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
@@ -1401,7 +1405,13 @@ class WPRIG_Product_Carousel{
 				$image = '<img class="wprig-post-image" src="' . esc_url($src[0]) . '" alt="' . get_the_title() . '"/>';
 				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
 				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';
-				$meta = ($enablePrice )? '<span>Price $ '. number_format( wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
+				if($enableRegularPrice ){
+					$meta = '<span>Price ';
+				} 
+				$meta .= ($enablePrice) ? '<strike>$ '. number_format((float) wc_get_product(get_the_ID())->get_regular_price(), 2, '.', ',').'</strike>' :'$'.number_format((float) wc_get_product(get_the_ID())->get_regular_price(), 2, '.', ',');
+				$meta .= '</span><br>';
+		
+				$meta .= ($enablePrice )? '<span>Price $ '. number_format( (float)wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
 		
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
 				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
@@ -1433,6 +1443,7 @@ class WPRIG_Product_Carousel{
 					if (($showTitle == 1) && ($titlePosition == 1)) {
 						$html .= $title;
 					}
+
 					if (($showDates == 1) || ($showComment == 1)) {
 						$html .= '<div class="wprig-product-carousel-meta">';
 						$html .= $meta;
@@ -1475,9 +1486,15 @@ class WPRIG_Product_Carousel{
 					}
 					if (($showTitle == 1) && ($titlePosition == 1)) {
 						$html .= $title;
+						$html .= '<div class="wprig-product-carousel-meta">';
+						$html .= $meta;
+						$html .= '</div>';
 					}
 					if (($showTitle === 1) || ($titlePosition == 0)) {
 						$html .= $title;
+						$html .= '<div class="wprig-product-carousel-meta">';
+						$html .= $meta;
+						$html .= '</div>';
 					}
 					if ($showReadMore == 1) {
 						$html .= $btn;
