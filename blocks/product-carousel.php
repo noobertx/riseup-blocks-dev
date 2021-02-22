@@ -184,9 +184,9 @@ class WPRIG_Product_Carousel{
 						'type' => 'boolean',
 						'default' => true
 					),
-					'showReadMore' => array(
+					'showcartButton' => array(
 						'type' => 'boolean',
-						'default' => false
+						'default' => true
 					),
 					'verticalAlignment' => array(
 						'type'    => 'string',
@@ -757,20 +757,20 @@ class WPRIG_Product_Carousel{
 						'default' => 'zoom-out'
 					),
 	
-					//readmore link
-					'buttonText' => array(
+					//cartButton link
+					'cartButtonText' => array(
 						'type' => 'string',
-						'default' => 'Read More'
+						'default' => 'Add To Cart'
 					),
-					'readmoreStyle' => array(
+					'cartButtonStyle' => array(
 						'type' => 'string',
 						'default' => 'fill'
 					),
-					'readmoreSize' => array(
+					'cartButtonSize' => array(
 						'type' => 'string',
 						'default' => 'small'
 					),
-					'readmoreCustomSize' => array(
+					'cartButtonCustomSize' => array(
 						'type' => 'object',
 						'default' => (object) [
 							'openPadding' => 1,
@@ -780,14 +780,14 @@ class WPRIG_Product_Carousel{
 						],
 						'style' => [(object) [
 							'condition' => [
-								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill'],
-								(object) ['key' => 'readmoreSize', 'relation' => '==', 'value' => 'custom']
+								(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill'],
+								(object) ['key' => 'cartButtonSize', 'relation' => '==', 'value' => 'custom']
 							],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn-wrapper .wprig-product-carousel-btn.wprig-button-fill.is-custom'
 						]]
 					),
 	
-					'readmoreTypography' => array(
+					'cartButtonTypography' => array(
 						'type' => 'object',
 						'default' => (object) [
 							'openTypography' => 1,
@@ -800,40 +800,40 @@ class WPRIG_Product_Carousel{
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
-					'readmoreColor' => array(
+					'cartButtonColor' => array(
 						'type'    => 'string',
 						'default' => '#fff',
 						'style' => [(object) [
 							'condition' => [
-								(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true],
-								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']
+								(object) ['key' => 'showcartButton', 'relation' => '==', 'value' => true],
+								(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']
 							],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{readmoreColor}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{cartButtonColor}};}'
 						]]
 	
 					),
-					'readmoreColor2' => array(
+					'cartButtonColor2' => array(
 						'type'    => 'string',
 						'default' => '#2184F9',
 						'style' => [(object) [
 							'condition' => [
-								(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true],
-								(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'outline']
+								(object) ['key' => 'showcartButton', 'relation' => '==', 'value' => true],
+								(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'outline']
 							],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{readmoreColor2}};}'
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn {color: {{cartButtonColor2}};}'
 						]]
 	
 					),
-					'readmoreHoverColor' => array(
+					'cartButtonHoverColor' => array(
 						'type'    => 'string',
 						'default' => '',
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'showReadMore', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn:hover {color: {{readmoreHoverColor}};}'
+							'condition' => [(object) ['key' => 'showcartButton', 'relation' => '==', 'value' => true]],
+							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel a.wprig-product-carousel-btn:hover {color: {{cartButtonHoverColor}};}'
 						]]
 	
 					),
-					'readmoreBg' => array(
+					'cartButtonBg' => array(
 						'type' => 'object',
 						'default' => (object) array(
 							'openColor' => 1,
@@ -849,27 +849,27 @@ class WPRIG_Product_Carousel{
 							],
 						),
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
+							'condition' => [(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
-					'readmoreHoverBg' => array(
+					'cartButtonHoverBg' => array(
 						'type' => 'object',
 						'default' => (object) array(),
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
+							'condition' => [(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn:hover'
 						]]
 					),
-					'readmoreBorder' => array(
+					'cartButtonBorder' => array(
 						'type' => 'object',
 						'default' => (object) array(),
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
+							'condition' => [(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
-					'readmoreBorderRadius' => array(
+					'cartButtonBorderRadius' => array(
 						'type' => 'object',
 						'default' => (object) array(
 							'unit' => 'px',
@@ -880,15 +880,15 @@ class WPRIG_Product_Carousel{
 							),
 						),
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
+							'condition' => [(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
-					'readmoreBoxShadow' => array(
+					'cartButtonBoxShadow' => array(
 						'type' => 'object',
 						'default' => (object) array(),
 						'style' => [(object) [
-							'condition' => [(object) ['key' => 'readmoreStyle', 'relation' => '==', 'value' => 'fill']],
+							'condition' => [(object) ['key' => 'cartButtonStyle', 'relation' => '==', 'value' => 'fill']],
 							'selector' => '{{WPRIG}} .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn'
 						]]
 					),
@@ -1284,11 +1284,11 @@ class WPRIG_Product_Carousel{
 		$showTitle 		        = isset($att['showTitle']) ? $att['showTitle'] : 1;
 		$showDates 		        = isset($att['showDates']) ? $att['showDates'] : 1;
 		$showComment 		    = isset($att['showComment']) ? $att['showComment'] : 1;
-		$showReadMore 		    = isset($att['showReadMore']) ? $att['showReadMore'] : 1;
+		$showcartButton 		    = isset($att['showcartButton']) ? $att['showcartButton'] : 1;
 		$titlePosition 		    = isset($att['titlePosition']) ? $att['titlePosition'] : 1;
-		$buttonText 		    = isset($att['buttonText']) ? $att['buttonText'] : 'Read More';
-		$readmoreSize 		    = isset($att['readmoreSize']) ? $att['readmoreSize'] : 'small';
-		$readmoreStyle 		    = isset($att['readmoreStyle']) ? $att['readmoreStyle'] : 'fill';
+		$cartButtonText 		    = isset($att['cartButtonText']) ? $att['cartButtonText'] : 'Read More';
+		$cartButtonSize 		    = isset($att['cartButtonSize']) ? $att['cartButtonSize'] : 'small';
+		$cartButtonStyle 		    = isset($att['cartButtonStyle']) ? $att['cartButtonStyle'] : 'fill';
 		$showImages 		    = isset($att['showImages']) ? $att['showImages'] : 1;
 		$imgSize 		        = isset($att['imgSize']) ? $att['imgSize'] : 'large';
 		$showBadge 		        = isset($att['showBadge']) ? $att['showBadge'] : 1;
@@ -1437,7 +1437,7 @@ class WPRIG_Product_Carousel{
 				$meta .= ($enablePrice )? '<span>Price $ '. number_format( (float)wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
 		
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
-				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
+				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($cartButtonStyle) . ' is-' . esc_attr($cartButtonSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($cartButtonText) . '</a></div>';
 				
 				if ($layout === 1) {
 					$html .= '<div class="wprig-product-carousel wprig-post-list-view wprig-product-carousel-style-' . esc_attr($style) . '">';
@@ -1476,7 +1476,7 @@ class WPRIG_Product_Carousel{
 						$html .= $title;
 					}
 
-					if ($showReadMore == 1) {
+					if ($showcartButton == 1) {
 						$html .= $btn;
 					}
 					$html .= '</div>'; //wprig-post-list-content
@@ -1519,7 +1519,7 @@ class WPRIG_Product_Carousel{
 						$html .= $meta;
 						$html .= '</div>';
 					}
-					if ($showReadMore == 1) {
+					if ($showcartButton == 1) {
 						$html .= $btn;
 					}
 					$html .= '</div>'; //wprig-post-grid-content
