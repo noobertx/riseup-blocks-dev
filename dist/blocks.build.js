@@ -14939,7 +14939,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           excerptLimit = _this$props$attribute2.excerptLimit,
           showReadMore = _this$props$attribute2.showReadMore,
           buttonText = _this$props$attribute2.buttonText,
-          readmoreSize = _this$props$attribute2.readmoreSize;
+          readmoreSize = _this$props$attribute2.readmoreSize,
+          enablePrice = _this$props$attribute2.enablePrice;
       var title = /*#__PURE__*/React.createElement("h3", {
         className: "wprig-product-carousel-title"
       }, /*#__PURE__*/React.createElement("a", null, post.title.rendered));
@@ -14962,7 +14963,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         }
       })), showTitle && titlePosition == true && title, showTitle && titlePosition == false && title, /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-meta"
-      }, "Price $ ", parseInt(post.product_info.get_price).toFixed(2)), showExcerpt && /*#__PURE__*/React.createElement("div", {
+      }, enablePrice && /*#__PURE__*/React.createElement("span", {
+        className: "item-price"
+      }, " Price $ ", parseInt(post.product_info.get_price).toFixed(2))), showExcerpt && /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-intro",
         dangerouslySetInnerHTML: {
           __html: _this.truncate(post.excerpt.rendered, excerptLimit)
@@ -15181,6 +15184,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           showReadMore = _this$props3$attribut.showReadMore,
           showTitle = _this$props3$attribut.showTitle,
           titlePosition = _this$props3$attribut.titlePosition,
+          enablePrice = _this$props3$attribut.enablePrice,
           showSeparator = _this$props3$attribut.showSeparator,
           separatorColor = _this$props3$attribut.separatorColor,
           separatorHeight = _this$props3$attribut.separatorHeight,
@@ -15695,6 +15699,17 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }))), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Product Item')
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Price'),
+        value: enablePrice,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enablePrice: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Carousel')
       }, /*#__PURE__*/React.createElement(Range, {

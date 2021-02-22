@@ -89,7 +89,11 @@ class WPRIG_Product_Carousel{
 						'style' => [(object) [
 							'selector' => '{{WPRIG}} .wprig-product-carousel.slick-slide'
 						]]
-					),					
+					),
+					'enablePrice' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ], 		
 					'taxonomy' => array(
 						'type' => 'string',
 						'default' => 'categories',
