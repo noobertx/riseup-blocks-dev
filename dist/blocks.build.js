@@ -14792,6 +14792,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -16810,14 +16812,37 @@ var Edit = /*#__PURE__*/function (_Component) {
       carouselItems = _props$attributes.carouselItems,
       enableDots = _props$attributes.enableDots,
       enableArrows = _props$attributes.enableArrows;
-  var allTaxonomy = wprig_admin.all_taxonomy;
-  var seletedTaxonomy = taxonomy === 'categories' ? 'categories' : 'tags';
-  var activeTaxes = taxonomy === 'categories' ? categories : tags;
+  var allTaxonomy = wprig_admin.all_taxonomy; // let seletedTaxonomy = taxonomy === 'categories' ? 'categories' : 'tags'
+  // let activeTaxes = taxonomy === 'categories' ? categories : tags
+
+  var tax_query = [];
+  tax_query["relation"] = "AND";
+
+  var _iterator = _createForOfIteratorHelper(categories),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var cat = _step.value;
+      tax_query.push({
+        taxonomy: taxonomy,
+        field: 'slug',
+        terms: cat.value
+      });
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
   var query = {
     order: order,
     orderby: orderBy,
     page: page,
-    per_page: postsToShow
+    per_page: postsToShow,
+    taxonomy: taxonomy,
+    tax_query: tax_query
   };
   return {
     posts: getEntityRecords('postType', 'product', query),
