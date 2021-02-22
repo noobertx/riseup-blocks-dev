@@ -1409,12 +1409,12 @@ class WPRIG_Product_Carousel{
 			if (!empty((array) $att['interaction'])) {
 				if (isset($att['interaction']['while_scroll_into_view'])) {
 					if ($att['interaction']['while_scroll_into_view']['enable']) {
-						$interaction = 'qubley-block-interaction';
+						$interaction = 'wprig-block-interaction';
 					}
 				}
 				if (isset($att['interaction']['mouse_movement'])) {
 					if ($att['interaction']['mouse_movement']['enable']) {
-						$interaction = 'qubley-block-interaction';
+						$interaction = 'wprig-block-interaction';
 					}
 				}
 			}
@@ -1444,22 +1444,7 @@ class WPRIG_Product_Carousel{
 	
 		$query = new WP_Query($args);
 	
-		# The Loop.
-		$html = ' Prodict carousel here';
-		//excerpt;
-		if (!function_exists('wprig_excerpt_max_charlength')) :
-			function wprig_excerpt_max_charlength($limit)
-			{
-				$excerpt = get_the_excerpt();
-				if (str_word_count($excerpt, 0) > $limit) {
-					$words = str_word_count($excerpt, 2);
-					$pos = array_keys($words);
-					$text = substr($excerpt, 0, $pos[$limit]);
-					return $text;
-				}
-				return $excerpt;
-			}
-		endif;
+		
 	
 		$this->enqueue_skin_additional_assets();
 	
@@ -1488,12 +1473,10 @@ class WPRIG_Product_Carousel{
 				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
 				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';
 				$meta = ($enablePrice )? '<span>Price $ '. number_format( wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
-				$meta .= ($showAuthor == 1) ? '<span><i class="fas fa-user"></i> ' . __('By ', 'wprig') . get_the_author_posts_link() . '</span>' : '';
-				$meta .= ($showDates == 1) ? '<span><i class="far fa-calendar-alt"></i> ' . get_the_date() . '</span>' : '';
+		
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
 				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
-				$excerpt = '<div class="wprig-product-carousel-intro">' . wprig_excerpt_max_charlength(esc_attr($limit)) . '</div>';
-	
+				
 				if ($layout === 1) {
 					$html .= '<div class="wprig-product-carousel wprig-post-list-view wprig-product-carousel-style-' . esc_attr($style) . '">';
 					$html .= '<div class="wprig-post-list-wrapper wprig-post-list-' .  esc_attr(($layout == 2 && $style === 3) ? $contentPosition : $girdContentPosition)  . '">';
@@ -1529,9 +1512,7 @@ class WPRIG_Product_Carousel{
 					if (($showTitle === 1) || ($titlePosition == 0)) {
 						$html .= $title;
 					}
-					if ($showExcerpt == 1) {
-						$html .= $excerpt;
-					}
+
 					if ($showReadMore == 1) {
 						$html .= $btn;
 					}
