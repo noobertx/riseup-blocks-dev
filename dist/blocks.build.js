@@ -14932,11 +14932,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           categoryPosition = _this$props$attribute2.categoryPosition,
           showTitle = _this$props$attribute2.showTitle,
           titlePosition = _this$props$attribute2.titlePosition,
-          showAuthor = _this$props$attribute2.showAuthor,
-          showDates = _this$props$attribute2.showDates,
           showComment = _this$props$attribute2.showComment,
-          showExcerpt = _this$props$attribute2.showExcerpt,
-          excerptLimit = _this$props$attribute2.excerptLimit,
           showReadMore = _this$props$attribute2.showReadMore,
           buttonText = _this$props$attribute2.buttonText,
           readmoreSize = _this$props$attribute2.readmoreSize,
@@ -14944,9 +14940,6 @@ var Edit = /*#__PURE__*/function (_Component) {
       var title = /*#__PURE__*/React.createElement("h3", {
         className: "wprig-product-carousel-title"
       }, /*#__PURE__*/React.createElement("a", null, post.title.rendered));
-      {
-        console.log(post);
-      }
       return /*#__PURE__*/React.createElement("div", {
         className: "".concat(layout === 1 ? 'wprig-post-list-content' : 'wprig-post-grid-content')
       }, showCategory === 'default' && /*#__PURE__*/React.createElement("span", {
@@ -14961,16 +14954,13 @@ var Edit = /*#__PURE__*/function (_Component) {
         dangerouslySetInnerHTML: {
           __html: post.wprig_category
         }
-      })), showTitle && titlePosition == true && title, showTitle && titlePosition == false && title, /*#__PURE__*/React.createElement("div", {
+      })), showTitle && titlePosition == true && title, /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-meta"
       }, enablePrice && /*#__PURE__*/React.createElement("span", {
         className: "item-price"
-      }, " Price $ ", parseInt(post.product_info.get_price).toFixed(2))), showExcerpt && /*#__PURE__*/React.createElement("div", {
-        className: "wprig-product-carousel-intro",
-        dangerouslySetInnerHTML: {
-          __html: _this.truncate(post.excerpt.rendered, excerptLimit)
-        }
-      }), showReadMore && /*#__PURE__*/React.createElement("div", {
+      }, " Price $ ", parseInt(post.product_info.get_price).toFixed(2)), showComment && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("i", {
+        className: "fas fa-comment"
+      }), " ", post.wprig_comment ? post.wprig_comment : '0')), showTitle && titlePosition == false && title, showReadMore && /*#__PURE__*/React.createElement("div", {
         className: "wprig-product-carousel-btn-wrapper"
       }, /*#__PURE__*/React.createElement("a", {
         className: "wprig-product-carousel-btn wprig-button-".concat(readmoreStyle, " is-").concat(readmoreSize)
@@ -15053,7 +15043,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           uniqueId = _this$props2.attributes.uniqueId;
 
       if (posts && posts.length > 0) {
-        console.log(posts);
         var carouselParams = this.getCarouselParams();
         setTimeout(function () {
           jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(carouselParams);
@@ -15174,13 +15163,9 @@ var Edit = /*#__PURE__*/function (_Component) {
           layout = _this$props3$attribut.layout,
           style = _this$props3$attribut.style,
           column = _this$props3$attribut.column,
-          showDates = _this$props3$attribut.showDates,
           showComment = _this$props3$attribut.showComment,
-          showAuthor = _this$props3$attribut.showAuthor,
           showCategory = _this$props3$attribut.showCategory,
           categoryPosition = _this$props3$attribut.categoryPosition,
-          showExcerpt = _this$props3$attribut.showExcerpt,
-          excerptLimit = _this$props3$attribut.excerptLimit,
           showReadMore = _this$props3$attribut.showReadMore,
           showTitle = _this$props3$attribut.showTitle,
           titlePosition = _this$props3$attribut.titlePosition,
@@ -16179,25 +16164,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Show Excerpt'),
-        value: showExcerpt,
-        onChange: function onChange(value) {
-          return setAttributes({
-            showExcerpt: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(RangeControl, {
-        label: __('Excerpt Limit'),
-        min: 1,
-        max: 100,
-        step: 1,
-        value: excerptLimit,
-        onChange: function onChange(val) {
-          return setAttributes({
-            excerptLimit: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Title Below Meta'),
         value: titlePosition,
         onChange: function onChange(value) {
@@ -16206,27 +16172,11 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Show date'),
-        value: showDates,
-        onChange: function onChange(value) {
-          return setAttributes({
-            showDates: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
         label: __('Show Comment'),
         value: showComment,
         onChange: function onChange(value) {
           return setAttributes({
             showComment: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Show Author'),
-        value: showAuthor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            showAuthor: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {

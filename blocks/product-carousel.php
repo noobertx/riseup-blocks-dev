@@ -172,25 +172,9 @@ class WPRIG_Product_Carousel{
 							]
 						]
 					),
-					'showDates' => array(
-						'type' => 'boolean',
-						'default' => true
-					),
 					'showComment' => array(
 						'type' => 'boolean',
 						'default' => true
-					),
-					'showAuthor' => array(
-						'type' => 'boolean',
-						'default' => true
-					),
-					'showExcerpt' => array(
-						'type' => 'boolean',
-						'default' => true
-					),
-					'excerptLimit' => array(
-						'type' => 'number',
-						'default' => 20
 					),
 					'showReadMore' => array(
 						'type' => 'boolean',
@@ -204,17 +188,9 @@ class WPRIG_Product_Carousel{
 						'type' => 'number',
 						'default' => 2,
 					),
-					'excerptCharLength' => array(
-						'type' => 'number',
-						'default' => 45,
-					),
 					'postsToShow' => array(
 						'type' => 'number',
 						'default' => 4,
-					),
-					'excerptLength' => array(
-						'type'    => 'number',
-						'default' => 55,
 					),
 					//pagination
 					'enablePagination' => array(
@@ -719,24 +695,10 @@ class WPRIG_Product_Carousel{
 							'size' => (object) ['md' => 12, 'unit' => 'px'],
 						],
 						'condition' => [
-							(object) ['key' => 'showAuthor', 'relation' => '==', 'value' => true],
 							(object) ['key' => 'showDates', 'relation' => '==', 'value' => true],
 							(object) ['key' => 'showComment', 'relation' => '==', 'value' => true]
 						],
 						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-meta']]
-					),
-					'excerptTypography' => array(
-						'type' => 'object',
-						'default' => (object) [
-							'openTypography' => 1,
-							'family' => "Roboto",
-							'type' => "sans-serif",
-							'size' => (object) ['md' => 16, 'unit' => 'px'],
-						],
-						'style' => [(object) [
-							'condition' => [(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-intro, {{WPRIG}} .wprig-product-carousel-intro p'
-						]]
 					),
 					'categoryTypography' => array(
 						'type' => 'object',
@@ -1055,28 +1017,6 @@ class WPRIG_Product_Carousel{
 							'selector' => '{{WPRIG}} .wprig-product-carousel-meta a {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product-carousel-meta {color: {{metaOverlayColor}};} {{WPRIG}} .wprig-product-carousel-meta span:before {background: {{metaOverlayColor}};}'
 						]]
 					),
-					'excerptColor' => array(
-						'type'    => 'string',
-						'default' => '#9B9B9B',
-						'style' => [(object) [
-							'condition' => [
-								(object) ['key' => 'style', 'relation' => '!=', 'value' => 4],
-								(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]
-							],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-intro {color: {{excerptColor}};}'
-						]]
-					),
-					'excerptColor2' => array(
-						'type'    => 'string',
-						'default' => '#fff',
-						'style' => [(object) [
-							'condition' => [
-								(object) ['key' => 'style', 'relation' => '==', 'value' => 4],
-								(object) ['key' => 'showExcerpt', 'relation' => '==', 'value' => true]
-							],
-							'selector' => '{{WPRIG}} .wprig-product-carousel-intro {color: {{excerptColor2}};}'
-						]]
-					),
 	
 					//design
 					'spacer' => 	array(
@@ -1277,14 +1217,6 @@ class WPRIG_Product_Carousel{
 						),
 						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-meta {padding-bottom: {{metaSpace}};}']]
 					),
-					'excerptSpace' => array(
-						'type' => 'object',
-						'default' => (object) array(
-							'md' => 10,
-							'unit' => 'px'
-						),
-						'style' => [(object) ['selector' => '{{WPRIG}} .wprig-product-carousel-intro {padding-bottom: {{excerptSpace}};}']]
-					),
 					'postSpace' => array(
 						'type' => 'object',
 						'default' => (object) array(
@@ -1337,16 +1269,13 @@ class WPRIG_Product_Carousel{
 		$style 		            = isset($att['style']) ? $att['style'] : 3;
 		$column 		        = isset($att['column']) ? $att['column'] : 3;
 		$numbers 		        = isset($att['postsToShow']) ? $att['postsToShow'] : 3;
-		$limit 		            = isset($att['excerptLimit']) ? $att['excerptLimit'] : 3;
 		$showCategory 		    = isset($att['showCategory']) ? $att['showCategory'] : 'default';
 		$categoryPosition 		= isset($att['categoryPosition']) ? $att['categoryPosition'] : 'leftTop';
 		$contentPosition 		= isset($att['contentPosition']) ? $att['contentPosition'] : 'center';
 		$girdContentPosition 	= isset($att['girdContentPosition']) ? $att['girdContentPosition'] : 'center';
 		$showTitle 		        = isset($att['showTitle']) ? $att['showTitle'] : 1;
-		$showAuthor 		    = isset($att['showAuthor']) ? $att['showAuthor'] : 1;
 		$showDates 		        = isset($att['showDates']) ? $att['showDates'] : 1;
 		$showComment 		    = isset($att['showComment']) ? $att['showComment'] : 1;
-		$showExcerpt 		    = isset($att['showExcerpt']) ? $att['showExcerpt'] : 1;
 		$showReadMore 		    = isset($att['showReadMore']) ? $att['showReadMore'] : 1;
 		$titlePosition 		    = isset($att['titlePosition']) ? $att['titlePosition'] : 1;
 		$buttonText 		    = isset($att['buttonText']) ? $att['buttonText'] : 'Read More';
@@ -1504,7 +1433,7 @@ class WPRIG_Product_Carousel{
 					if (($showTitle == 1) && ($titlePosition == 1)) {
 						$html .= $title;
 					}
-					if (($showAuthor == 1) || ($showDates == 1) || ($showComment == 1)) {
+					if (($showDates == 1) || ($showComment == 1)) {
 						$html .= '<div class="wprig-product-carousel-meta">';
 						$html .= $meta;
 						$html .= '</div>';
@@ -1547,16 +1476,8 @@ class WPRIG_Product_Carousel{
 					if (($showTitle == 1) && ($titlePosition == 1)) {
 						$html .= $title;
 					}
-					if (($showAuthor == 1) || ($showDates == 1) || ($showComment == 1)) {
-						$html .= '<div class="wprig-product-carousel-meta">';
-						$html .= $meta;
-						$html .= '</div>';
-					}
 					if (($showTitle === 1) || ($titlePosition == 0)) {
 						$html .= $title;
-					}
-					if ($showExcerpt == 1) {
-						$html .= $excerpt;
 					}
 					if ($showReadMore == 1) {
 						$html .= $btn;
