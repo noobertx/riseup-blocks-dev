@@ -15821,7 +15821,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         initialOpen: false
       }, /*#__PURE__*/React.createElement(ButtonGroup, {
         label: __('Taxonomy'),
-        options: [[__('Categories'), 'categories'], [__('Tags'), 'tags']],
+        options: [[__('Categories'), 'product_cat'], [__('Tags'), 'tags']],
         value: taxonomy,
         onChange: function onChange(value) {
           return setAttributes({
