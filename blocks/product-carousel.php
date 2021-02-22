@@ -1437,7 +1437,7 @@ class WPRIG_Product_Carousel{
 				$meta .= ($enablePrice )? '<span>Price $ '. number_format( (float)wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
 		
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
-				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($cartButtonStyle) . ' is-' . esc_attr($cartButtonSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($cartButtonText) . '</a></div>';
+				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="button product_type_simple add_to_cart_button ajax_add_to_cart wprig-product-carousel-btn wprig-button-' . esc_attr($cartButtonStyle) . ' is-' . esc_attr($cartButtonSize) . '" href="?add-to-cart=' . get_the_ID() . '" data-product-ID="'.get_the_ID().'" aria-label="Add '.get_the_title().'to your cart" rel="nofolow">' . esc_attr($cartButtonText) . '</a></div>';
 				
 				if ($layout === 1) {
 					$html .= '<div class="wprig-product-carousel wprig-post-list-view wprig-product-carousel-style-' . esc_attr($style) . '">';
