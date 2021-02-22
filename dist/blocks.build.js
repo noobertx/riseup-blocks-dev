@@ -15068,6 +15068,8 @@ var Edit = /*#__PURE__*/function (_Component) {
         dots: enableDots,
         slidesToShow: parseInt(carouselItems.md),
         arrows: enableArrows,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
         responsive: [{
           breakpoint: 900,
           settings: {
