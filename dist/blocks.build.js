@@ -15017,6 +15017,7 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
+      // console.log(prevProps,this)
       if (prevProps.posts != this.posts) {
         this.loadCarousel();
       }
@@ -15043,10 +15044,14 @@ var Edit = /*#__PURE__*/function (_Component) {
           uniqueId = _this$props2.attributes.uniqueId;
 
       if (posts && posts.length > 0) {
-        var carouselParams = this.getCarouselParams();
-        setTimeout(function () {
-          jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(carouselParams);
-        }, 500);
+        if (jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").hasClass("slick-initialized")) {
+          jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick('unslick').slick("reinit");
+        } else {
+          var carouselParams = this.props.carouselParams;
+          setTimeout(function () {
+            jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(carouselParams);
+          }, 500, this);
+        }
       }
     }
   }, {
@@ -16780,7 +16785,10 @@ var Edit = /*#__PURE__*/function (_Component) {
       orderBy = _props$attributes.orderBy,
       categories = _props$attributes.categories,
       tags = _props$attributes.tags,
-      postsToShow = _props$attributes.postsToShow;
+      postsToShow = _props$attributes.postsToShow,
+      carouselItems = _props$attributes.carouselItems,
+      enableDots = _props$attributes.enableDots,
+      enableArrows = _props$attributes.enableArrows;
   var allTaxonomy = wprig_admin.all_taxonomy;
   var seletedTaxonomy = taxonomy === 'categories' ? 'categories' : 'tags';
   var activeTaxes = taxonomy === 'categories' ? categories : tags;
@@ -16792,7 +16800,30 @@ var Edit = /*#__PURE__*/function (_Component) {
   };
   return {
     posts: getEntityRecords('postType', 'product', query),
-    taxonomyList: [] // taxonomyList: allTaxonomy.product.terms ? allTaxonomy.product.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] ? allTaxonomy.post.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] : [] : [],
+    taxonomyList: [],
+    carouselParams: {
+      dots: enableDots,
+      slidesToShow: parseInt(carouselItems.md),
+      arrows: enableArrows,
+      prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
+      responsive: [{
+        breakpoint: 900,
+        settings: {
+          slidesToShow: parseInt(carouselItems.md)
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: carouselItems.sm
+        }
+      }, {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: carouselItems.xs
+        }
+      }]
+    } // taxonomyList: allTaxonomy.product.terms ? allTaxonomy.product.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] ? allTaxonomy.post.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] : [] : [],
 
   };
 }), withCSSGenerator()])(Edit));
