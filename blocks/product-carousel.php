@@ -1417,17 +1417,19 @@ class WPRIG_Product_Carousel{
 
 			
 			while ($query->have_posts()) {
+				$meta = "";
 				$query->the_post();
 				$id = get_post_thumbnail_id();
 				$src = wp_get_attachment_image_src($id, $imgSize);
 				if($enableOnSale && wc_get_product(get_the_ID())->is_on_sale()){
-					$html .= "<span class='onsale'>Sale!</span>";
+					$meta .= "<span class='onsale'>Sale!</span>";
 				}
 				$image = '<img class="wprig-post-image" src="' . esc_url($src[0]) . '" alt="' . get_the_title() . '"/>';
 				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
+				
 				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';
 				if($enableRegularPrice ){
-					$meta = '<span>Price ';
+					$meta .= '<span>Price ';
 				} 
 				$meta .= ($enablePrice) ? '<strike>$ '. number_format((float) wc_get_product(get_the_ID())->get_regular_price(), 2, '.', ',').'</strike>' :'$'.number_format((float) wc_get_product(get_the_ID())->get_regular_price(), 2, '.', ',');
 				$meta .= '</span><br>';
