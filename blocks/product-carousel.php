@@ -9,11 +9,16 @@
 class WPRIG_Product_Carousel{
 	function __construct(){
 		add_action('init', [$this,'register_block_wprig_product_carousel'], 100);
+		add_action('wp_ajax_wprig_woocommerce_ajax_add_to_cart',[$this, 'wprig_woocommerce_ajax_add_to_cart']); 
+		add_action('wp_ajax_nopriv_wprig_woocommerce_ajax_add_to_cart',[$this, 'wprig_woocommerce_ajax_add_to_cart']); 
 	}
 	function enqueue_skin_additional_assets(){
 		wp_enqueue_style( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.css', false, microtime() );
 		wp_enqueue_style( 'slick-theme', WPRIG_DIR_URL . 'vendors/slick-carousel/slick-theme.css', false, microtime() );
 		wp_enqueue_script( 'slick', WPRIG_DIR_URL . 'vendors/slick-carousel/slick.min.js', array( 'jquery' ), microtime() );
+		wp_enqueue_script( 'wprig-add-to-cart', WPRIG_DIR_URL . 'vendors/add-to-cart.js', array( 'jquery' ), microtime() );
+		wp_localize_script( 'wprig-add-to-cart', 'wprig_admin',
+            array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 	}
 	function register_block_wprig_product_carousel(){
 		// Check if the register function exists.
@@ -1413,7 +1418,7 @@ class WPRIG_Product_Carousel{
 		}
 		if ($query->have_posts()) {
 			$html .= '<div class="' . $class . '">';
-			$html .= '<div class="wprig-product-carousel-wrapper ' . $interaction . ' wprig-product-carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
+			$html .= '<div class="wprig-product wprig-product-carousel-wrapper ' . $interaction . ' wprig-product-carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
 
 			
 			while ($query->have_posts()) {
@@ -1532,6 +1537,15 @@ class WPRIG_Product_Carousel{
 			wp_reset_postdata();
 		}
 		return $html;
+	}
+
+	function wprig_woocommerce_ajax_add_to_cart(){
+		$product_id = sanitize_text_field($_POST['id']);
+		$quantity = sanitize_text_field($_POST['qty']);
+
+		$status = WC()->cart->add_to_cart($product_id, $quantity);
+		// $status = WC_Cart::add_to_cart($product_id, $quantity);
+		return wp_send_json_success($status);
 	}
 };
 
