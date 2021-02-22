@@ -104,7 +104,7 @@ class WPRIG_Product_Carousel{
                     ],	
 					'taxonomy' => array(
 						'type' => 'string',
-						'default' => 'categories',
+						'default' => 'product_cat',
 					),
 					'categories' => array(
 						'type' => 'array',
@@ -1373,14 +1373,25 @@ class WPRIG_Product_Carousel{
 			'status' 			=> 'publish',
 			'paged'             => $paged
 		);
+
+		$tax_query = ["relation"=>'AND'];
+		foreach($categories as $cat){
+			array_push($tax_query,[
+				'taxonomy'=>$taxonomy,
+				'field'=>'slug',
+				'terms'=>$cat['value']
+			]);
+		}
+
 	
 		$active_taxonomy_array = $att['taxonomy'] == 'categories' ? $categories : $tags;
 		$active_taxonomy_name = $att['taxonomy'] == 'categories' ? 'category__in' : 'tag__in';
 	
-		if (is_array($active_taxonomy_array) && count($active_taxonomy_array) > 0) {
-			$args[$active_taxonomy_name] = array_column($active_taxonomy_array, 'value');
-		}
-	
+		// if (is_array($active_taxonomy_array) && count($active_taxonomy_array) > 0) {
+		// 	$args[$active_taxonomy_name] = array_column($active_taxonomy_array, 'value');
+		// }
+
+		$args['tax_query'] = $tax_query;
 		$query = new WP_Query($args);
 	
 		
