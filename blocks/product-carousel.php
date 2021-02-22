@@ -1370,6 +1370,8 @@ class WPRIG_Product_Carousel{
             'xs' => 1,
         );
 
+		$enablePrice 		        = isset($att['enablePrice']) ? $att['enablePrice'] : false;
+
 		$slickSettings = (object) array(
             "slidesToShow" => $carouselItems['md'],
             "slidesToScroll" => 1,
@@ -1485,7 +1487,8 @@ class WPRIG_Product_Carousel{
 				$image = '<img class="wprig-post-image" src="' . esc_url($src[0]) . '" alt="' . get_the_title() . '"/>';
 				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
 				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';
-				$meta = ($showAuthor == 1) ? '<span><i class="fas fa-user"></i> ' . __('By ', 'wprig') . get_the_author_posts_link() . '</span>' : '';
+				$meta = ($enablePrice )? '<span>Price $ '. number_format( wc_get_product(get_the_ID())->get_price(), 2, '.', ',').'</span><br>' :'';
+				$meta .= ($showAuthor == 1) ? '<span><i class="fas fa-user"></i> ' . __('By ', 'wprig') . get_the_author_posts_link() . '</span>' : '';
 				$meta .= ($showDates == 1) ? '<span><i class="far fa-calendar-alt"></i> ' . get_the_date() . '</span>' : '';
 				$meta .= ($showComment == 1) ? '<span><i class="fas fa-comment"></i> ' . get_comments_number('0', '1', '%') . '</span>' : '';
 				$btn = '<div class="wprig-product-carousel-btn-wrapper"><a class="wprig-product-carousel-btn wprig-button-' . esc_attr($readmoreStyle) . ' is-' . esc_attr($readmoreSize) . '" href="' . esc_url(get_the_permalink()) . '">' . esc_attr($buttonText) . '</a></div>';
