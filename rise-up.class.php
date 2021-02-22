@@ -24,6 +24,7 @@ class RiseUp_Blocks {
 
 		add_action('rest_api_init', array($this,'wprig_register_api_hook'));
 		add_action( 'rest_api_init', array( $this,'query_contents' ));
+		add_action( 'rest_api_init', array( $this,'product_categories' ));
 
 		$this->wprig_api_request_body_default = array(
 		'request_from' => 'wprig',
@@ -94,7 +95,72 @@ class RiseUp_Blocks {
 
 
 
+	public function product_categories(){
+		register_rest_route( 'wprig/products', 'categories', array(
+			'methods' => WP_REST_SERVER::READABLE,
+			'callback' => array($this, 'fetchProductCategories')
+			)
+		);
+	}
+	public function fetchProductCategories(){
+		$taxonomy     = 'product_cat';
+		$orderby      = 'name';  
+		$show_count   = 0;      // 1 for yes, 0 for no
+		$pad_counts   = 0;      // 1 for yes, 0 for no
+		$hierarchical = 1;      // 1 for yes, 0 for no  
+		$title        = '';  
+		$empty        = 0;
+		$terms_collected = [];
+	  
+		$args = array(
+			   'taxonomy'     => $taxonomy,
+			   'orderby'      => $orderby,
+			   'show_count'   => $show_count,
+			   'pad_counts'   => $pad_counts,
+			   'hierarchical' => $hierarchical,
+			   'title_li'     => $title,
+			   'hide_empty'   => $empty
+		);
+	   $all_categories = get_categories( $args );
+	   foreach ($all_categories as $cat) {
+		  if($cat->category_parent == 0) {
+			  $category_id = $cat->term_id;   
+				$terms_collected[] = [
+					'term_id' => $cat->term_id,
+					'name'	=> $cat->name,
+					'slug'	=> $cat->slug,
+					'label'	=> $cat->name,
+					'value'	=> $cat->slug,
+					'term_taxonomy_id' => $cat->term_taxonomy_id,
+					'taxonomy'	=> $cat->taxonomy,
+					'description' => $cat->description,
+					'parent'		=> $cat->parent,
+					'count'			=> $cat->count,					
 
+				];
+			  $args2 = array(
+					  'taxonomy'     => $taxonomy,
+					  'child_of'     => 0,
+					  'parent'       => $category_id,
+					  'orderby'      => $orderby,
+					  'show_count'   => $show_count,
+					  'pad_counts'   => $pad_counts,
+					  'hierarchical' => $hierarchical,
+					  'title_li'     => $title,
+					  'hide_empty'   => $empty
+			  );
+			  $sub_cats = get_categories( $args2 );
+			  if($sub_cats) {
+				  foreach($sub_cats as $sub_category) {
+					// $terms_collected[] = $sub_category;
+					//get_term_link($sub_category->slug, 'product_cat')
+					//   echo  $sub_category->name ;
+				  }   
+			  }
+		  }       
+	  }
+	  return $terms_collected;
+	}
 	public function query_contents(){
 		register_rest_route( 'new/v1', 'item', array(
 			'methods' => WP_REST_SERVER::READABLE,
@@ -102,6 +168,7 @@ class RiseUp_Blocks {
 			)
 		);
 	}
+
 
 	public function somePost($data){
 		// global $wpdb;
@@ -351,6 +418,7 @@ class RiseUp_Blocks {
 				'pro_enable'                  => defined( 'wprig_PRO_VERSION' ) ? true : false,
 				'shapes'                      => $this->getSvgShapes(),
 				'all_taxonomy'                => $this->get_all_taxonomy(),
+				'woocommerce_taxonomy'		  => $this-> fetchProductCategories(),
 				'image_sizes'                 => $this->get_all_image_sizes(),
 				'palette'                     => $palette,
 				'overwriteTheme'              => true,

@@ -31,7 +31,7 @@ class WPRIG_Product_Carousel{
 					//general
 					'postType' => array(
 						'type' => 'string',
-						'default' => 'Posts',
+						'default' => 'Products',
 					),
 					'carouselItems' => [
                         'type' => 'object',

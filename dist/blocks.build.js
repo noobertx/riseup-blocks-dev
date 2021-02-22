@@ -16821,7 +16821,7 @@ var Edit = /*#__PURE__*/function (_Component) {
   };
   return {
     posts: getEntityRecords('postType', 'product', query),
-    taxonomyList: [],
+    taxonomyList: wprig_admin.woocommerce_taxonomy,
     carouselParams: {
       dots: enableDots,
       slidesToShow: parseInt(carouselItems.md),
