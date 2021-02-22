@@ -151,7 +151,8 @@ class RiseUp_Blocks {
 			'sku' => wc_get_product($object['id'])->get_sku(),
 			'get_regular_price' => wc_get_product($object['id'])->get_regular_price(),
 			'get_sale_price' => wc_get_product($object['id'])->get_sale_price(),
-			'get_price' => wc_get_product($object['id'])->get_price()
+			'get_price' => wc_get_product($object['id'])->get_price(),
+			'onSale' => wc_get_product($object['id'])->is_on_sale()
 		);
 	}
 	public function wprig_get_featured_image_url($object){

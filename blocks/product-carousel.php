@@ -97,7 +97,11 @@ class WPRIG_Product_Carousel{
 					'enableRegularPrice' => [
                         'type' => 'boolean',
                         'default' => true
-                    ], 		
+                    ], 	
+					'enableOnSale' => [
+                        'type' => 'boolean',
+                        'default' => true
+                    ],	
 					'taxonomy' => array(
 						'type' => 'string',
 						'default' => 'categories',
@@ -1305,6 +1309,7 @@ class WPRIG_Product_Carousel{
 
 		$enablePrice 		        = isset($att['enablePrice']) ? $att['enablePrice'] : false;
 		$enableRegularPrice 		        = isset($att['enableRegularPrice']) ? $att['enableRegularPrice'] : false;
+		$enableOnSale 		        = isset($att['enableOnSale']) ? $att['enableOnSale'] : false;
 		// $html = "";
 		$slickSettings = (object) array(
             "slidesToShow" => $carouselItems['md'],
@@ -1398,10 +1403,15 @@ class WPRIG_Product_Carousel{
 		if ($query->have_posts()) {
 			$html .= '<div class="' . $class . '">';
 			$html .= '<div class="wprig-product-carousel-wrapper ' . $interaction . ' wprig-product-carousel-layout-' . esc_attr($layout) . esc_attr($col) . '" ' . $animation . " data-slick='".json_encode($slickSettings)."'". ' >';
+
+			
 			while ($query->have_posts()) {
 				$query->the_post();
 				$id = get_post_thumbnail_id();
 				$src = wp_get_attachment_image_src($id, $imgSize);
+				if($enableOnSale && wc_get_product(get_the_ID())->is_on_sale()){
+					$html .= "<span class='onsale'>Sale!</span>";
+				}
 				$image = '<img class="wprig-post-image" src="' . esc_url($src[0]) . '" alt="' . get_the_title() . '"/>';
 				$title = '<h3 class="wprig-product-carousel-title"><a href="' . esc_url(get_the_permalink()) . '">' . get_the_title() . '</a></h3>';
 				$category = '<span class="wprig-product-carousel-category">' . get_the_category_list(' ') . '</span>';

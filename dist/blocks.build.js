@@ -7198,7 +7198,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n\n.is-sidebar-opened .wprig-product-carousel-wrapper {\n  max-width: 60.56vw; }\n\n.wprig-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-next {\n      right: 0;\n      z-index: 9; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-prev {\n      left: 0;\n      z-index: 9; }\n", ""]);
+exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n\n.is-sidebar-opened .wprig-product-carousel-wrapper {\n  max-width: 60.56vw; }\n\n.wprig-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-next {\n      right: 0;\n      z-index: 9; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-prev {\n      left: 0;\n      z-index: 9; }\n  .wprig-product-carousel-wrapper .wprig-product-carousel {\n    position: relative; }\n    .wprig-product-carousel-wrapper .wprig-product-carousel .onsale {\n      min-height: 3.236em;\n      min-width: 3.236em;\n      padding: .202em;\n      font-size: 1em;\n      font-weight: 700;\n      position: absolute;\n      text-align: center;\n      line-height: 3.236;\n      top: 0;\n      right: 0;\n      margin: 0;\n      border-radius: 100%;\n      background-color: #77a464;\n      color: #fff;\n      font-size: .857em;\n      z-index: 9; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -14790,7 +14790,6 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
-/* harmony import */ var _post_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./post-carousel */ "./src/blocks/product-carousel/post-carousel.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -14882,7 +14881,6 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
-
 
 var CATEGORIES_LIST_QUERY = {
   per_page: -1
@@ -15179,6 +15177,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           titlePosition = _this$props3$attribut.titlePosition,
           enablePrice = _this$props3$attribut.enablePrice,
           enableRegularPrice = _this$props3$attribut.enableRegularPrice,
+          enableOnSale = _this$props3$attribut.enableOnSale,
           showSeparator = _this$props3$attribut.showSeparator,
           separatorColor = _this$props3$attribut.separatorColor,
           separatorHeight = _this$props3$attribut.separatorHeight,
@@ -15709,6 +15708,14 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             enableRegularPrice: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable On Sale'),
+        value: enableOnSale,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableOnSale: value
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
@@ -16734,7 +16741,9 @@ var Edit = /*#__PURE__*/function (_Component) {
         if (post) {
           return /*#__PURE__*/React.createElement("div", {
             className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
-          }, /*#__PURE__*/React.createElement("div", {
+          }, post.product_info.onSale && enableOnSale && /*#__PURE__*/React.createElement("span", {
+            className: "onsale"
+          }, "Sale!"), /*#__PURE__*/React.createElement("div", {
             className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
           }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
         } else return null;
@@ -16882,267 +16891,6 @@ registerBlockType('wprig/productcarousel', {
     return null;
   }
 });
-
-/***/ }),
-
-/***/ "./src/blocks/product-carousel/post-carousel.js":
-/*!******************************************************!*\
-  !*** ./src/blocks/product-carousel/post-carousel.js ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modal */ "./src/blocks/modal/index.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var _wp$element = wp.element,
-    Component = _wp$element.Component,
-    Fragment = _wp$element.Fragment,
-    createRef = _wp$element.createRef;
-
-
-var ImageCarousel = /*#__PURE__*/function (_Component) {
-  _inherits(ImageCarousel, _Component);
-
-  var _super = _createSuper(ImageCarousel);
-
-  function ImageCarousel(props) {
-    var _this;
-
-    _classCallCheck(this, ImageCarousel);
-
-    _this = _super.call(this, props);
-    _this.state = {
-      device: 'md',
-      openModal: false,
-      imageCollection: [],
-      imageUrl: "",
-      openClass: "",
-      caption: "",
-      description: "",
-      doneLoading: ""
-    };
-    _this.wprigContextMenu = createRef();
-    return _this;
-  }
-
-  _createClass(ImageCarousel, [{
-    key: "renderClick",
-    value: function renderClick(el) {
-      this.setState({
-        openModal: true,
-        imageUrl: el.url,
-        caption: el.caption,
-        description: el.description
-      });
-      var t = this;
-      setTimeout(function () {
-        t.openOverlay();
-      }, 250);
-    }
-  }, {
-    key: "openOverlay",
-    value: function openOverlay() {
-      this.setState({
-        openClass: "open"
-      });
-    }
-  }, {
-    key: "closeModal",
-    value: function closeModal() {
-      this.setState({
-        openModal: false,
-        imageUrl: "",
-        caption: "",
-        description: ""
-      });
-    }
-  }, {
-    key: "closeOverlay",
-    value: function closeOverlay() {
-      this.setState({
-        openClass: ""
-      });
-      var t = this;
-      setTimeout(function () {
-        t.closeModal();
-      }, 250);
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this$props = this.props,
-          className = _this$props.className,
-          id = _this$props.id,
-          images = _this$props.images;
-      var the_id = id;
-      this.loadCarousel();
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps, prevState) {
-      if (prevProps.id != this.props.id) {
-        this.loadCarousel();
-      }
-    }
-  }, {
-    key: "loadCarousel",
-    value: function loadCarousel() {
-      var _this2 = this;
-
-      var _this$props2 = this.props,
-          images = _this$props2.images,
-          id = _this$props2.id,
-          carouselParams = _this$props2.carouselParams; // console.log(this.state.doneLoading);
-
-      var loadImage = function loadImage(image) {
-        return new Promise(function (resolve, reject) {
-          var loadImg = new Image();
-          loadImg.src = image.url; // wait 2 seconds to simulate loading time
-
-          loadImg.onload = function () {
-            return setTimeout(function () {
-              resolve(image.url);
-            }, 2000);
-          };
-
-          loadImg.onerror = function (err) {
-            return reject(err);
-          };
-        });
-      };
-
-      Promise.all(images.map(function (image) {
-        return loadImage(image);
-      })).then(function () {
-        _this2.setState({
-          doneLoading: true
-        }); //   console.log(this.state.doneLoading);
-
-
-        setTimeout(function () {
-          // console.log(id,carouselParams);
-          jQuery("." + id).slick(carouselParams); //
-        }, 500);
-      })["catch"](function (err) {
-        return console.log("Failed to load images", err);
-      });
-    }
-  }, {
-    key: "renderSlides",
-    value: function renderSlides(imageItems) {
-      var _this3 = this;
-
-      var _this$props3 = this.props,
-          enableHoverFx = _this$props3.enableHoverFx,
-          overlayParams = _this$props3.overlayParams;
-
-      if (imageItems && imageItems.length > 0) {
-        return imageItems.map(function (el) {
-          return /*#__PURE__*/React.createElement("div", {
-            "class": "cells"
-          }, enableHoverFx && /*#__PURE__*/React.createElement("div", {
-            className: "overlay"
-          }, /*#__PURE__*/React.createElement("div", {
-            className: "overlay-content"
-          }, /*#__PURE__*/React.createElement("div", {
-            className: "overlay-content ".concat(overlayParams.overlayLayout)
-          }, overlayParams.enableViewButton && overlayParams.enableModal && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "view",
-            onClick: function onClick() {
-              _this3.renderClick(el);
-            }
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(overlayParams.viewIconName)
-          }), overlayParams.viewButtonLabel), overlayParams.enableShareButton && /*#__PURE__*/React.createElement("button", {
-            type: "button",
-            className: "share"
-          }, /*#__PURE__*/React.createElement("i", {
-            className: "wprig-btn-icon ".concat(overlayParams.shareIconName)
-          }), overlayParams.shareButtonLabel, /*#__PURE__*/React.createElement("ul", {
-            className: "tool-tip"
-          }, overlayParams.enableFacebook && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-            href: "#"
-          }, /*#__PURE__*/React.createElement("span", {
-            className: "fab fa-facebook"
-          })))))))), /*#__PURE__*/React.createElement("img", {
-            src: el.url,
-            "data-image": el.url,
-            onClick: function onClick() {
-              !enableHoverFx ? _this3.renderClick(el) : '';
-            }
-          }));
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this4 = this;
-
-      var _this$props4 = this.props,
-          className = _this$props4.className,
-          id = _this$props4.id,
-          overlayEffect = _this$props4.overlayEffect,
-          modalLayout = _this$props4.modalLayout,
-          enableHoverFx = _this$props4.enableHoverFx,
-          hoverEffect = _this$props4.hoverEffect,
-          hoverEffectDirection = _this$props4.hoverEffectDirection,
-          overlayParams = _this$props4.overlayParams,
-          images = _this$props4.images,
-          columns = _this$props4.columns,
-          gutter = _this$props4.gutter;
-      var doneLoading = this.state.doneLoading;
-
-      if (!doneLoading) {
-        return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, "Gallery is loading"));
-      }
-
-      return /*#__PURE__*/React.createElement(Fragment, null, this.state.openModal && /*#__PURE__*/React.createElement(_modal__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        title: "".concat(this.state.caption ? this.state.caption : "No Title", "  "),
-        className: "wprig-dynamic-modal wprig-block-".concat(id).concat(className ? " ".concat(className) : '', " ").concat(overlayEffect, " ").concat(this.state.openClass),
-        overlayClassName: "wprig-block-".concat(id),
-        onRequestClose: function onRequestClose() {
-          _this4.closeOverlay();
-        }
-      }, modalLayout == 'modal-layout-1' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("img", {
-        src: "".concat(this.state.imageUrl)
-      }), /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description")), modalLayout == 'modal-layout-2' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("p", null, this.state.description ? this.state.description : "No Description"), /*#__PURE__*/React.createElement("img", {
-        src: "".concat(this.state.imageUrl)
-      }))), /*#__PURE__*/React.createElement("div", {
-        "class": "".concat(className, "  ").concat(id, " ").concat(enableHoverFx ? hoverEffect + ' ' + hoverEffectDirection : ' ', " "),
-        "data-masonry": "{ \"itemSelector\": \".grid-item\", \"columnWidth\": 200 }"
-      }, this.renderSlides(images)));
-    }
-  }]);
-
-  return ImageCarousel;
-}(Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (ImageCarousel);
 
 /***/ }),
 
