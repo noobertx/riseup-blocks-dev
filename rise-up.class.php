@@ -127,15 +127,8 @@ class RiseUp_Blocks {
 			  $category_id = $cat->term_id;   
 				$terms_collected[] = [
 					'term_id' => $cat->term_id,
-					'name'	=> $cat->name,
-					'slug'	=> $cat->slug,
 					'label'	=> $cat->name,
-					'value'	=> $cat->slug,
-					'term_taxonomy_id' => $cat->term_taxonomy_id,
-					'taxonomy'	=> $cat->taxonomy,
-					'description' => $cat->description,
-					'parent'		=> $cat->parent,
-					'count'			=> $cat->count,					
+					'value'	=> $cat->slug,			
 
 				];
 			  $args2 = array(
@@ -152,9 +145,14 @@ class RiseUp_Blocks {
 			  $sub_cats = get_categories( $args2 );
 			  if($sub_cats) {
 				  foreach($sub_cats as $sub_category) {
-					// $terms_collected[] = $sub_category;
-					//get_term_link($sub_category->slug, 'product_cat')
-					//   echo  $sub_category->name ;
+
+					$terms_collected[] = [
+						'term_id' => $sub_category->term_id,
+						'label'	=> $sub_category->name,
+						'value'	=> $sub_category->slug,				
+	
+					];
+
 				  }   
 			  }
 		  }       
