@@ -16550,8 +16550,9 @@ var Edit = /*#__PURE__*/function (_Component) {
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
-      // console.log(prevProps,this)
-      if (prevProps.posts != this.posts) {
+      console.log(prevProps.posts, this.posts);
+
+      if (prevProps.posts && prevProps.posts != this.posts) {
         this.loadCarousel();
       }
     }
@@ -16619,9 +16620,33 @@ var Edit = /*#__PURE__*/function (_Component) {
       };
     }
   }, {
+    key: "renderCarouselContent",
+    value: function renderCarouselContent(posts) {
+      var _this3 = this;
+
+      var _this$props$attribute4 = this.props.attributes,
+          layout = _this$props$attribute4.layout,
+          contentPosition = _this$props$attribute4.contentPosition,
+          enableOnSale = _this$props$attribute4.enableOnSale,
+          girdContentPosition = _this$props$attribute4.girdContentPosition,
+          style = _this$props$attribute4.style,
+          showImages = _this$props$attribute4.showImages;
+      return posts.map(function (post) {
+        if (post) {
+          return /*#__PURE__*/React.createElement("div", {
+            className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
+          }, post.product_info.onSale && enableOnSale && /*#__PURE__*/React.createElement("span", {
+            className: "onsale"
+          }, "Sale!"), /*#__PURE__*/React.createElement("div", {
+            className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
+          }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
+        } else return null;
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
       var _this$props3 = this.props,
           setAttributes = _this$props3.setAttributes,
@@ -16788,7 +16813,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16817,7 +16842,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16843,7 +16868,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16861,7 +16886,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16879,7 +16904,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16913,7 +16938,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16931,7 +16956,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16949,7 +16974,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16967,7 +16992,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -16993,7 +17018,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17011,7 +17036,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17029,7 +17054,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17084,7 +17109,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17102,7 +17127,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17120,7 +17145,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17138,7 +17163,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17180,7 +17205,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17198,7 +17223,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17246,7 +17271,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: this.state.device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17263,7 +17288,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17321,7 +17346,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17426,7 +17451,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17453,7 +17478,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17564,7 +17589,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17578,7 +17603,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17636,7 +17661,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17654,7 +17679,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17703,7 +17728,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17746,7 +17771,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17764,7 +17789,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17782,7 +17807,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17849,7 +17874,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17867,7 +17892,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17885,7 +17910,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17903,7 +17928,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17921,7 +17946,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17938,7 +17963,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17952,7 +17977,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -17966,7 +17991,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         },
         device: device,
         onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
+          return _this4.setState({
             device: value
           });
         }
@@ -18027,17 +18052,7 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, posts && posts.length ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         // onContextMenu={event => handleContextMenu(event, this.wprigContextMenu.current)}
         className: "wprig-product-carousel-wrapper wprig-product-carousel-layout-".concat(layout, " ").concat(layout === 2 ? 'wprig-product-carousel-column wprig-product-carousel-column-md' + column.md + ' ' + 'wprig-product-carousel-column-sm' + column.sm + ' ' + 'wprig-product-carousel-column-xs' + column.xs : '')
-      }, posts && posts.map(function (post) {
-        if (post) {
-          return /*#__PURE__*/React.createElement("div", {
-            className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
-          }, post.product_info.onSale && enableOnSale && /*#__PURE__*/React.createElement("span", {
-            className: "onsale"
-          }, "Sale!"), /*#__PURE__*/React.createElement("div", {
-            className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
-          }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
-        } else return null;
-      })), /*#__PURE__*/React.createElement("div", {
+      }, posts && this.renderCarouselContent(posts)), /*#__PURE__*/React.createElement("div", {
         ref: this.wprigContextMenu,
         className: "wprig-context-menu-wraper"
       }, /*#__PURE__*/React.createElement(ContextMenu, {
