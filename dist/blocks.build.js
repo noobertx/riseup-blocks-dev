@@ -18156,7 +18156,7 @@ var __ = wp.i18n.__;
 var registerBlockType = wp.blocks.registerBlockType;
 registerBlockType('wprig/productcarousel', {
   title: __('Product Carousel'),
-  description: 'Fetch blog posts and display them beautifully in grid or list views with wprig product-carousel Block.',
+  description: 'Fetch products and display them beautifully with wprig product-carousel Block.',
   icon: 'universal-access-alt',
   category: 'wprig-blocks',
   supports: {
