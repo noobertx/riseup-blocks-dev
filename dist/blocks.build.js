@@ -10892,7 +10892,6 @@ var _wp$components = wp.components,
     PanelBody = _wp$components.PanelBody,
     SelectControl = _wp$components.SelectControl,
     RangeControl = _wp$components.RangeControl,
-    Select = _wp$components.Select,
     Tooltip = _wp$components.Tooltip;
 var _wp$wprigComponents = wp.wprigComponents,
     Background = _wp$wprigComponents.Background,
@@ -10903,6 +10902,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     Range = _wp$wprigComponents.Range,
     Separator = _wp$wprigComponents.Separator,
+    Select = _wp$wprigComponents.Select,
     Toggle = _wp$wprigComponents.Toggle,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
@@ -11255,21 +11255,21 @@ var attributes = _objectSpread(_objectSpread({
         relation: '==',
         value: true
       }],
-      selector: '{{WPRIG}} >.wprig-overlay'
+      selector: '{{WPRIG}} >.wprig-row-overlay'
     }]
   },
   blend: {
     type: 'string',
     "default": '',
     style: [{
-      selector: '{{WPRIG}} >.wprig-overlay { mix-blend-mode: {{blend}}; }'
+      selector: '{{WPRIG}} >.wprig-row-overlay { mix-blend-mode: {{blend}}; }'
     }]
   },
   opacity: {
     type: 'number',
     "default": '.8',
     style: [{
-      selector: '{{WPRIG}} >.wprig-overlay {opacity: {{opacity}}; }'
+      selector: '{{WPRIG}} >.wprig-row-overlay {opacity: {{opacity}}; }'
     }]
   },
   border: {
