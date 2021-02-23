@@ -10635,7 +10635,7 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": '#F5F5F5',
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body {background-color: {{bodyBg}};}'
+      selector: '{{WPRIG}} .wprig-highlight-box-body {background-color: {{bodyBg}};}'
     }]
   },
   heightOptions: {
@@ -10679,7 +10679,7 @@ var attributes = _objectSpread(_objectSpread({
       unit: 'px'
     },
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body'
+      selector: '{{WPRIG}} .wprig-highlight-box-body'
     }]
   },
   bodyBorder: {
@@ -10688,7 +10688,7 @@ var attributes = _objectSpread(_objectSpread({
       borderType: 'global'
     },
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body'
+      selector: '{{WPRIG}} .wprig-highlight-box-body'
     }]
   },
   bodyShadow: {
@@ -10700,7 +10700,7 @@ var attributes = _objectSpread(_objectSpread({
       spread: '0'
     },
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body'
+      selector: '{{WPRIG}} .wprig-highlight-box-body'
     }]
   },
   bodyBorderRadius: {
@@ -10709,7 +10709,7 @@ var attributes = _objectSpread(_objectSpread({
       radiusType: 'global'
     },
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body'
+      selector: '{{WPRIG}} .wprig-highlight-box-body'
     }]
   },
   bodySeparatorHeight: {
@@ -10719,19 +10719,19 @@ var attributes = _objectSpread(_objectSpread({
       unit: 'px'
     },
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body {border-top: {{bodySeparatorHeight}} solid transparent;}'
+      selector: '{{WPRIG}} .wprig-highlight-box-body {border-top: {{bodySeparatorHeight}} solid transparent;}'
     }]
   },
   bodySeparatorColor: {
     type: 'string',
     "default": '#e5e5e5',
     style: [{
-      selector: '{{WPRIG}} .wprig-highligh-box-body'
+      selector: '{{WPRIG}} .wprig-highlight-box-body'
     }]
   },
   hoverEffect: {
     type: 'string',
-    "default": 'wprig-highligh-box-effect-1'
+    "default": 'wprig-highlight-box-effect-1'
   },
   direction: {
     type: 'string',
@@ -10744,7 +10744,7 @@ var attributes = _objectSpread(_objectSpread({
       relation: '!=',
       value: '3'
     }],
-    "default": ''
+    "default": 'bottom-to-top'
   },
   shapeTop: {
     type: 'object',
