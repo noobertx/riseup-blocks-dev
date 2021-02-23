@@ -7162,7 +7162,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".wprig-highlight-box-body .wprig-primary {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center; }\n\n.wprig-highlight-box-body .wprig-secondary {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center; }\n\n.wprig-highlight-box-body .wprig-primary img {\n  width: 100%; }\n\n.wprig-highlight-box-body .wprig-top-shape {\n  position: absolute;\n  top: 0px;\n  width: 100%;\n  z-index: 1; }\n\n.wprig-highlight-box-body .wprig-bottom-shape {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  transform: rotate(180deg); }\n\n.wp-block-wprig-highlight-box-face {\n  display: flex; }\n\n.wprig-highlight-box {\n  overflow: hidden; }\n  .wprig-highlight-box:hover {\n    cursor: pointer; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.bottom-to-top .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 100%;\n  left: 0;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.bottom-to-top:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.top-to-bottom .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: -100%;\n  left: 0;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.top-to-bottom:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.left-to-right .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: -100%;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.left-to-right:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.right-to-left .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 100%;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.right-to-left:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-2 .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 0;\n  transition: 0.35s all;\n  transform: scale(0.5); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-2:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0;\n  transform: scale(1); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-3 .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 0;\n  transition: 0.35s all;\n  transform: scale(1.5); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-3:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0;\n  transform: scale(1); }\n", ""]);
+exports.push([module.i, ".wprig-highlight-box-body .wprig-primary {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center; }\n\n.wprig-highlight-box-body .wprig-secondary {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center; }\n\n.wprig-highlight-box-body .wprig-primary img {\n  width: 100%; }\n\n.wprig-highlight-box-body .wprig-top-shape {\n  position: absolute;\n  top: 0px;\n  width: 100%;\n  z-index: 1; }\n\n.wprig-highlight-box-body .wprig-bottom-shape {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  transform: rotate(180deg); }\n\n.wp-block-wprig-highlight-box-face {\n  display: flex; }\n\n.wprig-highlight-box {\n  overflow: hidden; }\n  .wprig-highlight-box:hover {\n    cursor: pointer; }\n\n.wprig-secondary .wprig-row-overlay {\n  width: 100%;\n  height: 100%; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.bottom-to-top .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 100%;\n  left: 0;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.bottom-to-top:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.top-to-bottom .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: -100%;\n  left: 0;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.top-to-bottom:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.left-to-right .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: -100%;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.left-to-right:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.right-to-left .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 100%;\n  transition: 0.35s all; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-1.right-to-left:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0; }\n\n.wprig-highlight-box.wprig-highlight-box-effect-2 .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 0;\n  transition: 0.35s all;\n  transform: scale(0.5); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-2:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0;\n  transform: scale(1); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-3 .wprig-secondary {\n  z-index: 5;\n  opacity: 0;\n  top: 0;\n  left: 0;\n  transition: 0.35s all;\n  transform: scale(1.5); }\n\n.wprig-highlight-box.wprig-highlight-box-effect-3:hover .wprig-secondary {\n  z-index: 5;\n  opacity: 1;\n  top: 0;\n  left: 0;\n  transform: scale(1); }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -7253,6 +7253,24 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/tm-product-carousel/style.scss":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/tm-product-carousel/style.scss ***!
+  \********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-productgrid-is-loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 200px; }\n\n.wprig-post-list-wrapper {\n  display: block;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n  .wprig-post-list-wrapper .wprig-post-list-img {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    overflow: hidden; }\n  .wprig-post-list-wrapper .wprig-post-list-content {\n    -ms-flex: 0 0 100%;\n    flex: 0 0 100%;\n    max-width: 100%;\n    position: relative;\n    width: 100%;\n    min-height: 1px;\n    padding-left: 20px; }\n\n@media screen and (min-width: 767px) {\n  .wprig-post-list-wrapper {\n    display: -ms-flexbox;\n    display: flex; }\n    .wprig-post-list-wrapper .wprig-post-list-img {\n      -ms-flex: 0 0 40%;\n      flex: 0 0 40%;\n      max-width: 40%; }\n    .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n      -ms-flex: 0 0 60%;\n      flex: 0 0 60%;\n      max-width: 60%; } }\n\n.wprig-productgrid-style-4 {\n  position: relative;\n  overflow: hidden; }\n  .wprig-productgrid-style-4 .wprig-post-grid-img,\n  .wprig-productgrid-style-4 .wprig-post-list-img {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    -webkit-background-size: cover;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    overflow: hidden; }\n    .wprig-productgrid-style-4 .wprig-post-grid-img img,\n    .wprig-productgrid-style-4 .wprig-post-list-img img {\n      position: absolute;\n      width: auto;\n      height: auto;\n      min-width: 100%;\n      max-width: none;\n      left: 50%;\n      top: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      min-height: 100%; }\n  .wprig-productgrid-style-4 .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-list-content {\n    opacity: 1;\n    position: relative;\n    z-index: 10;\n    overflow: hidden;\n    width: 100%;\n    max-width: 100%;\n    padding: 20px; }\n  .wprig-productgrid-style-4 > div .wprig-post-grid-img,\n  .wprig-productgrid-style-4 > div .wprig-post-list-img {\n    width: 100%;\n    max-width: 100%; }\n  .wprig-productgrid-style-4:before {\n    position: absolute;\n    content: \"\";\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 3;\n    transition: 400ms; }\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-top .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-top .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-start; }\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-center .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-center .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: center; }\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-list-bottom .wprig-post-grid-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-list-content,\n  .wprig-productgrid-style-4 .wprig-post-grid-bottom .wprig-post-grid-content {\n    top: 0;\n    height: 100%;\n    position: absolute;\n    display: grid;\n    align-content: flex-end; }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-out .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1.2); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-zoom-in .wprig-post-image {\n  transition: transform 0.35s;\n  transform: scale(1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-bottom .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, 20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-top .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(0, -20px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-right .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:not(.wprig-productgrid-style-4) .wprig-post-img.wprig-post-img-slide-left .wprig-post-image {\n  transition: transform 0.35s;\n  transform: translate3d(-20px, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-out .wprig-post-image {\n  transform: scale(1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-zoom-in .wprig-post-image {\n  transform: scale(1.2); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-bottom .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-top .wprig-post-image {\n  transform: translate3d(0, 0px, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-right .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid:hover:not(.wprig-productgrid-style-4) .wprig-post-img-slide-left .wprig-post-image {\n  transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1); }\n\n.wprig-productgrid {\n  position: relative; }\n  .wprig-productgrid img {\n    display: block; }\n  .wprig-productgrid .wprig-productgrid-title {\n    margin: 0 !important;\n    line-height: 1; }\n    .wprig-productgrid .wprig-productgrid-title a {\n      text-decoration: none !important; }\n      .wprig-productgrid .wprig-productgrid-title a:hover {\n        text-decoration: none; }\n  .wprig-productgrid .wprig-productgrid-intro,\n  .wprig-productgrid .wprig-productgrid-intro p {\n    font-size: 15px;\n    line-height: 24px;\n    margin: 0; }\n  .wprig-productgrid .wprig-productgrid-meta {\n    font-size: 14px;\n    line-height: 22px; }\n  .wprig-productgrid .wprig-productgrid-btn {\n    display: inline-block;\n    text-decoration: none !important; }\n    .wprig-productgrid .wprig-productgrid-btn:hover {\n      text-decoration: none !important; }\n  .wprig-productgrid .wprig-button-fill.is-small {\n    padding: 5px 10px;\n    font-size: 14px; }\n  .wprig-productgrid .wprig-button-fill.is-medium {\n    padding: 8px 15px;\n    font-size: 16px; }\n  .wprig-productgrid .wprig-button-fill.is-large {\n    padding: 13px 20px;\n    font-size: 18px; }\n\n.wprig-post-img {\n  position: relative;\n  overflow: hidden; }\n  .wprig-post-img .wprig-productgrid-cat-position {\n    position: absolute; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftTop {\n      top: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightTop {\n      top: 20px;\n      right: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-leftBottom {\n      bottom: 20px;\n      left: 20px; }\n    .wprig-post-img .wprig-productgrid-cat-position.wprig-productgrid-cat-position-rightBottom {\n      bottom: 20px;\n      right: 20px; }\n\n.wprig-productgrid-category a {\n  transition: 400ms !important;\n  text-decoration: none !important; }\n  .wprig-productgrid-category a:hover {\n    text-decoration: none !important; }\n\n.wprig-productgrid-category.wprig-backend a {\n  pointer-events: none;\n  cursor: default; }\n\n.wprig-productgrid-meta span {\n  padding-left: 12px;\n  position: relative;\n  padding-right: 12px; }\n  .wprig-productgrid-meta span i {\n    font-style: normal;\n    margin-right: 3px; }\n  .wprig-productgrid-meta span:before {\n    position: absolute;\n    content: \"\";\n    background: #d8d8d8;\n    left: -1px;\n    top: 50%;\n    width: 2px;\n    height: 2px;\n    border-radius: 20px;\n    margin-top: -1px; }\n  .wprig-productgrid-meta span:first-child {\n    padding-left: 0; }\n    .wprig-productgrid-meta span:first-child:before {\n      display: none; }\n\n.wprig-productgrid-meta a {\n  text-decoration: none !important; }\n  .wprig-productgrid-meta a:hover {\n    text-decoration: none !important; }\n\n.wprig-post-list-center.wprig-post-list-wrapper {\n  align-items: center; }\n\n.wprig-post-list-top.wprig-post-list-wrapper {\n  align-items: flex-start; }\n\n.wprig-post-list-bottom.wprig-post-list-wrapper {\n  align-items: flex-end; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-content {\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  z-index: 1; }\n\n.wprig-post-list-view.wprig-productgrid-style-3 .wprig-post-list-wrapper .wprig-post-list-img + .wprig-post-list-content {\n  margin-left: -40px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-content {\n  background: #fff;\n  position: relative;\n  z-index: 1;\n  padding: 20px; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-img + .wprig-post-grid-content {\n  margin: -80px auto 0;\n  width: 90%; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-left .wprig-post-grid-content {\n  float: left; }\n\n.wprig-post-grid-view.wprig-productgrid-style-3 .wprig-post-grid-right .wprig-post-grid-content {\n  float: right; }\n\n.wprig-productgrid-layout-4 {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px;\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-layout-4 .wprig-post-4-wrap {\n    display: grid;\n    grid-column-gap: 30px;\n    grid-row-gap: 30px;\n    grid-template-columns: 0.5fr 1fr; }\n  .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    grid-row-end: 6; }\n    .wprig-productgrid-layout-4 .wprig-productgrid:nth-child(1) .wprig-post-4-wrap {\n      grid-template-columns: 1fr; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-layout-4 {\n    grid-template-columns: 1fr 1fr; } }\n\n@media screen and (max-width: 992px) {\n  .wprig-post-list-center.wprig-post-list-wrapper {\n    align-items: flex-start; }\n  .wprig-post-list-view.wprig-productgrid-style-3\n.wprig-post-list-wrapper\n.wprig-post-list-img\n+ .wprig-post-list-content {\n    margin-left: 0; } }\n\n.wprig-productgrid-column {\n  display: grid;\n  grid-column-gap: 30px;\n  grid-row-gap: 30px; }\n\n.wprig-productgrid-column-xs1 {\n  grid-template-columns: 1fr; }\n  .wprig-productgrid-column-xs1.wprig-productgrid-layout-5 {\n    column-count: 1; }\n\n.wprig-productgrid-column-xs2 {\n  grid-template-columns: 1fr 1fr; }\n  .wprig-productgrid-column-xs2.wprig-productgrid-layout-5 {\n    column-count: 2; }\n\n.wprig-productgrid-column-xs3 {\n  grid-template-columns: 1fr 1fr 1fr; }\n  .wprig-productgrid-column-xs3.wprig-productgrid-layout-5 {\n    column-count: 3; }\n\n@media (min-width: 767px) {\n  .wprig-productgrid-column-sm1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-sm1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-sm2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-sm2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-sm3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-sm3.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 992px) {\n  .wprig-productgrid-column-md1 {\n    grid-template-columns: 1fr; }\n    .wprig-productgrid-column-md1.wprig-productgrid-layout-5 {\n      column-count: 1; }\n  .wprig-productgrid-column-md2 {\n    grid-template-columns: 1fr 1fr; }\n    .wprig-productgrid-column-md2.wprig-productgrid-layout-5 {\n      column-count: 2; }\n  .wprig-productgrid-column-md3 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md3.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 3; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 3; } }\n\n@media (min-width: 1299px) {\n  .wprig-productgrid-column-md4 {\n    grid-template-columns: 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md4.wprig-productgrid-layout-5 {\n      column-count: 4; }\n  .wprig-productgrid-column-md5 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md5.wprig-productgrid-layout-5 {\n      column-count: 5; }\n  .wprig-productgrid-column-md6 {\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }\n    .wprig-productgrid-column-md6.wprig-productgrid-layout-5 {\n      column-count: 6; } }\n\n.wprig-productgrid-pagination {\n  font-weight: 600;\n  font-size: 16px;\n  color: #363636; }\n  .wprig-productgrid-pagination a,\n  .wprig-productgrid-pagination > span,\n  .wprig-productgrid-pagination button {\n    line-height: 48px;\n    min-width: 50px;\n    text-align: center;\n    background: white;\n    border: 1px solid #BBC0D4;\n    border-radius: 6px;\n    margin-bottom: 10px;\n    display: inline-block;\n    text-decoration: none;\n    color: inherit; }\n    .wprig-productgrid-pagination a:hover,\n    .wprig-productgrid-pagination > span:hover,\n    .wprig-productgrid-pagination button:hover {\n      color: #348EF8; }\n    .wprig-productgrid-pagination a.current, .wprig-productgrid-pagination a.active,\n    .wprig-productgrid-pagination > span.current,\n    .wprig-productgrid-pagination > span.active,\n    .wprig-productgrid-pagination button.current,\n    .wprig-productgrid-pagination button.active {\n      color: #fff;\n      background: #348EF8;\n      border-color: #348EF8; }\n    .wprig-productgrid-pagination a.wprig-pagination-prev span,\n    .wprig-productgrid-pagination > span.wprig-pagination-prev span,\n    .wprig-productgrid-pagination button.wprig-pagination-prev span {\n      margin-right: 4px; }\n    .wprig-productgrid-pagination a.wprig-pagination-next span,\n    .wprig-productgrid-pagination > span.wprig-pagination-next span,\n    .wprig-productgrid-pagination button.wprig-pagination-next span {\n      margin-left: 4px; }\n\n.is-sidebar-opened .wprig-product-carousel-wrapper {\n  max-width: 60.56vw; }\n\n.wprig-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-next {\n      right: 0;\n      z-index: 9; }\n    .wprig-product-carousel-wrapper.slick-initialized .slick-prev {\n      left: 0;\n      z-index: 9; }\n  .wprig-product-carousel-wrapper .wprig-product-carousel {\n    position: relative; }\n    .wprig-product-carousel-wrapper .wprig-product-carousel .onsale {\n      min-height: 3.236em;\n      min-width: 3.236em;\n      padding: .202em;\n      font-size: 1em;\n      font-weight: 700;\n      position: absolute;\n      text-align: center;\n      line-height: 3.236;\n      top: 0;\n      right: 0;\n      margin: 0;\n      border-radius: 100%;\n      background-color: #77a464;\n      color: #fff;\n      font-size: .857em;\n      z-index: 9; }\n    .wprig-product-carousel-wrapper .wprig-product-carousel .wprig-product-carousel-btn {\n      padding: 10px; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -9788,13 +9806,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
 /* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
 /* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9825,6 +9844,7 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/map/block";
 // import "./blocks/pie-progress/block";
 // import "./blocks/pricing/block";
+
 
 
 
@@ -9891,7 +9911,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_9__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_10__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -20437,6 +20457,2174 @@ registerBlockType('wprig/productgrid', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-grid/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/tm-product-carousel/Edit.js":
+/*!************************************************!*\
+  !*** ./src/blocks/tm-product-carousel/Edit.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* eslint-disable react/react-in-jsx-scope */
+var __ = wp.i18n.__;
+var compose = wp.compose.compose;
+var withSelect = wp.data.withSelect;
+var addQueryArgs = wp.url.addQueryArgs;
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component,
+    createRef = _wp$element.createRef;
+var _wp$date = wp.date,
+    dateI18n = _wp$date.dateI18n,
+    __experimentalGetSettings = _wp$date.__experimentalGetSettings;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$components = wp.components,
+    RangeControl = _wp$components.RangeControl,
+    PanelBody = _wp$components.PanelBody,
+    Toolbar = _wp$components.Toolbar,
+    Spinner = _wp$components.Spinner,
+    TextControl = _wp$components.TextControl,
+    SelectControl = _wp$components.SelectControl;
+var _wp$wprigComponents = wp.wprigComponents,
+    Range = _wp$wprigComponents.Range,
+    ButtonGroup = _wp$wprigComponents.ButtonGroup,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    Toggle = _wp$wprigComponents.Toggle,
+    Dropdown = _wp$wprigComponents.Dropdown,
+    Select = _wp$wprigComponents.Select,
+    Separator = _wp$wprigComponents.Separator,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Typography = _wp$wprigComponents.Typography,
+    Color = _wp$wprigComponents.Color,
+    Border = _wp$wprigComponents.Border,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Padding = _wp$wprigComponents.Padding,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    Tabs = _wp$wprigComponents.Tabs,
+    Tab = _wp$wprigComponents.Tab,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    Alignment = _wp$wprigComponents.Alignment,
+    Margin = _wp$wprigComponents.Margin,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+var CATEGORIES_LIST_QUERY = {
+  per_page: -1
+};
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit() {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.apply(this, arguments);
+
+    _defineProperty(_assertThisInitialized(_this), "renderFeaturedImage", function (post) {
+      var _this$props$attribute = _this.props.attributes,
+          layout = _this$props$attribute.layout,
+          style = _this$props$attribute.style,
+          imgSize = _this$props$attribute.imgSize,
+          imageAnimation = _this$props$attribute.imageAnimation,
+          showCategory = _this$props$attribute.showCategory,
+          categoryPosition = _this$props$attribute.categoryPosition;
+      return /*#__PURE__*/React.createElement("div", {
+        className: "".concat(layout === 1 ? 'wprig-post-list-img' : 'wprig-post-grid-img', " wprig-post-img wprig-post-img-").concat(imageAnimation)
+      }, /*#__PURE__*/React.createElement("img", {
+        className: "wprig-post-image",
+        src: post.wprig_featured_image_url && post.wprig_featured_image_url[imgSize][0]
+      }), showCategory == 'badge' && style !== 4 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-cat-position wprig-product-carousel-cat-position-".concat(categoryPosition)
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-product-carousel-category wprig-backend",
+        dangerouslySetInnerHTML: {
+          __html: post.wprig_category
+        }
+      })));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderCardContent", function (post) {
+      var _this$props$attribute2 = _this.props.attributes,
+          layout = _this$props$attribute2.layout,
+          style = _this$props$attribute2.style,
+          cartButtonStyle = _this$props$attribute2.cartButtonStyle,
+          showCategory = _this$props$attribute2.showCategory,
+          categoryPosition = _this$props$attribute2.categoryPosition,
+          showTitle = _this$props$attribute2.showTitle,
+          titlePosition = _this$props$attribute2.titlePosition,
+          showComment = _this$props$attribute2.showComment,
+          showcartButton = _this$props$attribute2.showcartButton,
+          cartButtonText = _this$props$attribute2.cartButtonText,
+          cartButtonSize = _this$props$attribute2.cartButtonSize,
+          enablePrice = _this$props$attribute2.enablePrice,
+          enableRegularPrice = _this$props$attribute2.enableRegularPrice;
+      var title = /*#__PURE__*/React.createElement("h3", {
+        className: "wprig-product-carousel-title"
+      }, /*#__PURE__*/React.createElement("a", null, post.title.rendered));
+      return /*#__PURE__*/React.createElement("div", {
+        className: "".concat(layout === 1 ? 'wprig-post-list-content' : 'wprig-post-grid-content')
+      }, showCategory === 'default' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-product-carousel-category wprig-backend",
+        dangerouslySetInnerHTML: {
+          __html: post.wprig_category
+        }
+      }), showCategory == 'badge' && style === 4 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-cat-position wprig-product-carousel-cat-position-".concat(categoryPosition)
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-product-carousel-category wprig-backend",
+        dangerouslySetInnerHTML: {
+          __html: post.wprig_category
+        }
+      })), showTitle && titlePosition == true && title, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-meta"
+      }, enableRegularPrice && /*#__PURE__*/React.createElement("span", {
+        className: "item-regular-price"
+      }, " ", /*#__PURE__*/React.createElement("strike", null, "$", parseInt(post.product_info.get_regular_price).toFixed(2))), enablePrice && /*#__PURE__*/React.createElement("span", {
+        className: "item-price"
+      }, " $", parseInt(post.product_info.get_price).toFixed(2)), showComment && /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("i", {
+        className: "fas fa-comment"
+      }), " ", post.wprig_comment ? post.wprig_comment : '0')), showTitle && titlePosition == false && title, showcartButton && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-btn-wrapper"
+      }, /*#__PURE__*/React.createElement("a", {
+        className: "wprig-product-carousel-btn wprig-button-".concat(cartButtonStyle, " is-").concat(cartButtonSize)
+      }, cartButtonText)));
+    });
+
+    _this.state = {
+      device: 'md',
+      spacer: true,
+      categoriesList: []
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          uniqueId = _this$props.attributes.uniqueId;
+      this.isStillMounted = true;
+      this.fetchRequest = wp.apiFetch({
+        path: addQueryArgs('/wp/v2/categories', CATEGORIES_LIST_QUERY)
+      }).then(function (categoriesList) {
+        if (_this2.isStillMounted) {
+          _this2.setState({
+            categoriesList: categoriesList
+          });
+        }
+      })["catch"](function () {
+        if (_this2.isStillMounted) {
+          _this2.setState({
+            categoriesList: []
+          });
+        }
+      });
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      // console.log(prevProps,this)
+      if (prevProps.posts != this.posts) {
+        this.loadCarousel();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.isStillMounted = false;
+    }
+  }, {
+    key: "truncate",
+    value: function truncate(value, limit) {
+      if (value.split(' ').length > limit) {
+        return value.split(' ').splice(0, limit).join(' ');
+      }
+
+      return value;
+    }
+  }, {
+    key: "loadCarousel",
+    value: function loadCarousel() {
+      var _this$props2 = this.props,
+          posts = _this$props2.posts,
+          uniqueId = _this$props2.attributes.uniqueId;
+
+      if (posts && posts.length > 0) {
+        if (jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").hasClass("slick-initialized")) {
+          jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick('unslick').slick("reinit");
+        } else {
+          var carouselParams = this.props.carouselParams;
+          setTimeout(function () {
+            jQuery(".wprig-block-" + uniqueId).find(".wprig-product-carousel-wrapper").slick(carouselParams);
+          }, 500, this);
+        }
+      }
+    }
+  }, {
+    key: "getCarouselParams",
+    value: function getCarouselParams() {
+      var _this$props$attribute3 = this.props.attributes,
+          carouselItems = _this$props$attribute3.carouselItems,
+          enableDots = _this$props$attribute3.enableDots,
+          enableArrows = _this$props$attribute3.enableArrows;
+      return {
+        dots: enableDots,
+        slidesToShow: parseInt(carouselItems.md),
+        arrows: enableArrows,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
+        responsive: [{
+          breakpoint: 900,
+          settings: {
+            slidesToShow: parseInt(carouselItems.md)
+          }
+        }, {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: carouselItems.sm
+          }
+        }, {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: carouselItems.xs
+          }
+        }]
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$props3 = this.props,
+          setAttributes = _this$props3.setAttributes,
+          posts = _this$props3.posts,
+          name = _this$props3.name,
+          clientId = _this$props3.clientId,
+          attributes = _this$props3.attributes,
+          taxonomyList = _this$props3.taxonomyList,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          className = _this$props3$attribut.className,
+          carouselItems = _this$props3$attribut.carouselItems,
+          enableDots = _this$props3$attribut.enableDots,
+          dotsColor = _this$props3$attribut.dotsColor,
+          dotsColorActive = _this$props3$attribut.dotsColorActive,
+          enableArrows = _this$props3$attribut.enableArrows,
+          arrowColor = _this$props3$attribut.arrowColor,
+          gutter = _this$props3$attribut.gutter,
+          carouselItemMargin = _this$props3$attribut.carouselItemMargin,
+          taxonomy = _this$props3$attribut.taxonomy,
+          categories = _this$props3$attribut.categories,
+          tags = _this$props3$attribut.tags,
+          order = _this$props3$attribut.order,
+          orderBy = _this$props3$attribut.orderBy,
+          postsToShow = _this$props3$attribut.postsToShow,
+          enablePagination = _this$props3$attribut.enablePagination,
+          page = _this$props3$attribut.page,
+          paginationType = _this$props3$attribut.paginationType,
+          pageAlignment = _this$props3$attribut.pageAlignment,
+          paginationTypography = _this$props3$attribut.paginationTypography,
+          pagesColor = _this$props3$attribut.pagesColor,
+          pagesHoverColor = _this$props3$attribut.pagesHoverColor,
+          pagesActiveColor = _this$props3$attribut.pagesActiveColor,
+          pagesbgColor = _this$props3$attribut.pagesbgColor,
+          pagesbgHoverColor = _this$props3$attribut.pagesbgHoverColor,
+          pagesbgActiveColor = _this$props3$attribut.pagesbgActiveColor,
+          pagesBorder = _this$props3$attribut.pagesBorder,
+          pagesHoverBorder = _this$props3$attribut.pagesHoverBorder,
+          pagesActiveBorder = _this$props3$attribut.pagesActiveBorder,
+          pagesShadow = _this$props3$attribut.pagesShadow,
+          pagesHoverShadow = _this$props3$attribut.pagesHoverShadow,
+          pagesActiveShadow = _this$props3$attribut.pagesActiveShadow,
+          pagesBorderRadius = _this$props3$attribut.pagesBorderRadius,
+          pagePadding = _this$props3$attribut.pagePadding,
+          pageMargin = _this$props3$attribut.pageMargin,
+          showImages = _this$props3$attribut.showImages,
+          imgSize = _this$props3$attribut.imgSize,
+          enableFixedHeight = _this$props3$attribut.enableFixedHeight,
+          fixedHeight = _this$props3$attribut.fixedHeight,
+          imageRadius = _this$props3$attribut.imageRadius,
+          imageAnimation = _this$props3$attribut.imageAnimation,
+          cardBackground = _this$props3$attribut.cardBackground,
+          cardBorder = _this$props3$attribut.cardBorder,
+          cardBorderRadius = _this$props3$attribut.cardBorderRadius,
+          cardPadding = _this$props3$attribut.cardPadding,
+          cardBoxShadow = _this$props3$attribut.cardBoxShadow,
+          cardSpace = _this$props3$attribut.cardSpace,
+          stackBg = _this$props3$attribut.stackBg,
+          stackWidth = _this$props3$attribut.stackWidth,
+          stackSpace = _this$props3$attribut.stackSpace,
+          stackBorderRadius = _this$props3$attribut.stackBorderRadius,
+          stackPadding = _this$props3$attribut.stackPadding,
+          stackBoxShadow = _this$props3$attribut.stackBoxShadow,
+          cartButtonStyle = _this$props3$attribut.cartButtonStyle,
+          cartButtonText = _this$props3$attribut.cartButtonText,
+          cartButtonSize = _this$props3$attribut.cartButtonSize,
+          cartButtonCustomSize = _this$props3$attribut.cartButtonCustomSize,
+          cartButtonTypography = _this$props3$attribut.cartButtonTypography,
+          cartButtonBg = _this$props3$attribut.cartButtonBg,
+          cartButtonHoverBg = _this$props3$attribut.cartButtonHoverBg,
+          cartButtonBorder = _this$props3$attribut.cartButtonBorder,
+          cartButtonBorderRadius = _this$props3$attribut.cartButtonBorderRadius,
+          cartButtonBoxShadow = _this$props3$attribut.cartButtonBoxShadow,
+          cartButtonColor = _this$props3$attribut.cartButtonColor,
+          cartButtonColor2 = _this$props3$attribut.cartButtonColor2,
+          cartButtonHoverColor = _this$props3$attribut.cartButtonHoverColor,
+          layout = _this$props3$attribut.layout,
+          style = _this$props3$attribut.style,
+          column = _this$props3$attribut.column,
+          showComment = _this$props3$attribut.showComment,
+          showCategory = _this$props3$attribut.showCategory,
+          categoryPosition = _this$props3$attribut.categoryPosition,
+          showcartButton = _this$props3$attribut.showcartButton,
+          showTitle = _this$props3$attribut.showTitle,
+          titlePosition = _this$props3$attribut.titlePosition,
+          enablePrice = _this$props3$attribut.enablePrice,
+          enableRegularPrice = _this$props3$attribut.enableRegularPrice,
+          enableOnSale = _this$props3$attribut.enableOnSale,
+          showSeparator = _this$props3$attribut.showSeparator,
+          separatorColor = _this$props3$attribut.separatorColor,
+          separatorHeight = _this$props3$attribut.separatorHeight,
+          separatorSpace = _this$props3$attribut.separatorSpace,
+          titleTypography = _this$props3$attribut.titleTypography,
+          metaTypography = _this$props3$attribut.metaTypography,
+          excerptTypography = _this$props3$attribut.excerptTypography,
+          categoryTypography = _this$props3$attribut.categoryTypography,
+          titleColor = _this$props3$attribut.titleColor,
+          titleOverlayColor = _this$props3$attribut.titleOverlayColor,
+          metaColor = _this$props3$attribut.metaColor,
+          metaOverlayColor = _this$props3$attribut.metaOverlayColor,
+          titleHoverColor = _this$props3$attribut.titleHoverColor,
+          excerptColor = _this$props3$attribut.excerptColor,
+          excerptColor2 = _this$props3$attribut.excerptColor2,
+          categoryColor = _this$props3$attribut.categoryColor,
+          categoryColor2 = _this$props3$attribut.categoryColor2,
+          categoryHoverColor = _this$props3$attribut.categoryHoverColor,
+          categoryHoverColor2 = _this$props3$attribut.categoryHoverColor2,
+          categoryBackground = _this$props3$attribut.categoryBackground,
+          categoryHoverBackground = _this$props3$attribut.categoryHoverBackground,
+          categoryRadius = _this$props3$attribut.categoryRadius,
+          categoryPadding = _this$props3$attribut.categoryPadding,
+          badgePosition = _this$props3$attribut.badgePosition,
+          badgePadding = _this$props3$attribut.badgePadding,
+          bgColor = _this$props3$attribut.bgColor,
+          border = _this$props3$attribut.border,
+          borderRadius = _this$props3$attribut.borderRadius,
+          padding = _this$props3$attribut.padding,
+          boxShadow = _this$props3$attribut.boxShadow,
+          contentPosition = _this$props3$attribut.contentPosition,
+          girdContentPosition = _this$props3$attribut.girdContentPosition,
+          overlayBg = _this$props3$attribut.overlayBg,
+          overlayHoverBg = _this$props3$attribut.overlayHoverBg,
+          overlayBlend = _this$props3$attribut.overlayBlend,
+          overlayHeight = _this$props3$attribut.overlayHeight,
+          overlaySpace = _this$props3$attribut.overlaySpace,
+          overlayBorderRadius = _this$props3$attribut.overlayBorderRadius,
+          columnGap = _this$props3$attribut.columnGap,
+          contentPadding = _this$props3$attribut.contentPadding,
+          titleSpace = _this$props3$attribut.titleSpace,
+          categorySpace = _this$props3$attribut.categorySpace,
+          metaSpace = _this$props3$attribut.metaSpace,
+          excerptSpace = _this$props3$attribut.excerptSpace,
+          animation = _this$props3$attribut.animation,
+          globalZindex = _this$props3$attribut.globalZindex,
+          enablePosition = _this$props3$attribut.enablePosition,
+          selectPosition = _this$props3$attribut.selectPosition,
+          positionXaxis = _this$props3$attribut.positionXaxis,
+          positionYaxis = _this$props3$attribut.positionYaxis,
+          hideTablet = _this$props3$attribut.hideTablet,
+          hideMobile = _this$props3$attribut.hideMobile,
+          globalCss = _this$props3$attribut.globalCss;
+      var device = this.state.device;
+      var pages = Math.ceil(wprig_admin.publishedPosts / postsToShow);
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Post Design'),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Styles, {
+        columns: 4,
+        value: style,
+        onChange: function onChange(val) {
+          return setAttributes({
+            style: val
+          });
+        },
+        options: [{
+          value: 1,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_1
+        }, {
+          value: 2,
+          svg: layout === 1 ? _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_3 : _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_2
+        }, {
+          value: 3,
+          svg: layout === 1 ? _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_5 : _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_4
+        }, {
+          value: 4,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].postgrid_design_6
+        }]
+      }), layout === 2 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Select Column'),
+        value: column,
+        onChange: function onChange(value) {
+          return setAttributes({
+            column: value
+          });
+        },
+        min: 1,
+        step: 1,
+        max: 6,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), (layout === 1 || layout === 2 && (style === 3 || style === 4)) && /*#__PURE__*/React.createElement(ButtonGroup, {
+        label: __('Content Align'),
+        options: layout === 2 && style === 3 ? [[__('Left'), 'left'], [__('Middle'), 'center'], [__('Right'), 'right']] : [[__('Top'), 'top'], [__('Middle'), 'center'], [__('Bottom'), 'bottom']],
+        value: layout === 2 && style === 3 ? contentPosition : girdContentPosition,
+        onChange: function onChange(value) {
+          return setAttributes(layout === 2 && style === 3 ? {
+            contentPosition: value
+          } : {
+            girdContentPosition: value
+          });
+        }
+      }), (layout === 1 && style != 3 || layout === 2 && style != 3) && /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: contentPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            contentPadding: val
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null), (layout === 1 && style === 1 || layout === 2 && style === 1) && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: bgColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: border,
+        onChange: function onChange(val) {
+          return setAttributes({
+            border: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Corner'),
+        value: borderRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            borderRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: padding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            padding: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: boxShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            boxShadow: value
+          });
+        }
+      })), style === 2 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Card Background'),
+        value: cardBackground,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cardBackground: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Card Border'),
+        value: cardBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cardBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Card Corner'),
+        value: cardBorderRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            cardBorderRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), layout === 1 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Card Space'),
+        value: cardSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cardSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Card Padding'),
+        value: cardPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cardPadding: val
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Card Box Shadow'),
+        value: cardBoxShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cardBoxShadow: value
+          });
+        }
+      })), style === 4 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Overlay Height'),
+        value: overlayHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            overlayHeight: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 50,
+        max: 700,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), layout === 1 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Overlay Space'),
+        value: overlaySpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            overlaySpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Overlay Corner'),
+        value: overlayBorderRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            overlayBorderRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Overlay'),
+        value: overlayBg,
+        onChange: function onChange(value) {
+          return setAttributes({
+            overlayBg: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Hover Overlay'),
+        value: overlayHoverBg,
+        onChange: function onChange(value) {
+          return setAttributes({
+            overlayHoverBg: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(Select, {
+        label: __('Blend Mode'),
+        options: [['normal', __('Normal')], ['multiply', __('Multiply')], ['screen', __('Screen')], ['overlay', __('Overlay')], ['darken', __('Darken')], ['lighten', __('Lighten')], ['color-dodge', __('Color Dodge')], ['saturation', __('Saturation')], ['luminosity', __('Luminosity')], ['color', __('Color')], ['color-burn', __('Color Burn')], ['exclusion', __('Exclusion')], ['hue', __('Hue')]],
+        value: overlayBlend,
+        onChange: function onChange(val) {
+          return setAttributes({
+            overlayBlend: val
+          });
+        }
+      })), style === 3 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Stack Background'),
+        value: stackBg,
+        onChange: function onChange(value) {
+          return setAttributes({
+            stackBg: value
+          });
+        }
+      }), layout === 2 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Stack Size'),
+        value: stackWidth,
+        onChange: function onChange(value) {
+          return setAttributes({
+            stackWidth: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 50,
+        max: 600,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), layout === 1 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Stack Space'),
+        value: stackSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            stackSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Stack Corner'),
+        value: stackBorderRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            stackBorderRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Stack Padding'),
+        value: stackPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            stackPadding: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Stack Box Shadow'),
+        value: stackBoxShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            stackBoxShadow: value
+          });
+        }
+      })), layout === 1 && style === 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Separator'),
+        value: showSeparator,
+        onChange: function onChange(value) {
+          return setAttributes({
+            showSeparator: value
+          });
+        }
+      })), layout === 1 && style === 1 && showSeparator === true && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Separator Color'),
+        value: separatorColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            separatorColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Separator Height'),
+        value: separatorHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            separatorHeight: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 30,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Separator Spacing'),
+        value: separatorSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            separatorSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Product Item')
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Price'),
+        value: enablePrice,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enablePrice: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Regular Price'),
+        value: enableRegularPrice,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableRegularPrice: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable On Sale'),
+        value: enableOnSale,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableOnSale: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        initialOpen: false,
+        title: __('Carousel')
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Gutter'),
+        min: 0,
+        max: 100,
+        value: gutter,
+        onChange: function onChange(val) {
+          return setAttributes({
+            gutter: val
+          });
+        },
+        unit: [''],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Items'),
+        value: carouselItems,
+        onChange: function onChange(val) {
+          return setAttributes({
+            carouselItems: val
+          });
+        },
+        min: 1,
+        max: 15,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Arrows'),
+        value: enableArrows,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableArrows: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Dots'),
+        value: enableDots,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableDots: val
+          });
+        }
+      }), enableArrows && /*#__PURE__*/React.createElement(Color, {
+        label: __('Arrow Color'),
+        value: arrowColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            arrowColor: value
+          });
+        }
+      }), enableDots && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color'),
+        value: dotsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Dots Color Active'),
+        value: dotsColorActive,
+        onChange: function onChange(value) {
+          return setAttributes({
+            dotsColorActive: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Margin, {
+        max: 150,
+        min: 0,
+        responsive: true,
+        device: device,
+        value: carouselItemMargin,
+        label: __('Margin'),
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            carouselItemMargin: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Query'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(ButtonGroup, {
+        label: __('Taxonomy'),
+        options: [[__('Categories'), 'product_cat'], [__('Tags'), 'tags']],
+        value: taxonomy,
+        onChange: function onChange(value) {
+          return setAttributes({
+            taxonomy: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Dropdown, {
+        label: taxonomy === 'categories' ? __('Categories') : __('Tags'),
+        enableSearch: true,
+        defaultOptionsLabel: "All",
+        options: [{
+          value: 'all',
+          label: __('All')
+        }].concat(_toConsumableArray(taxonomyList)),
+        value: taxonomy === 'categories' ? categories : tags,
+        onChange: function onChange(value) {
+          return setAttributes(taxonomy === 'categories' ? {
+            categories: value.length && value[value.length - 1].label === 'All' ? [] : value
+          } : {
+            tags: value.length && value[value.length - 1].label === 'All' ? [] : value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Number of Items'),
+        value: postsToShow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            postsToShow: parseInt(value)
+          });
+        },
+        min: 0,
+        max: 15
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Order By'),
+        value: orderBy,
+        options: [{
+          label: __('Date'),
+          value: 'date'
+        }, {
+          label: __('Title'),
+          value: 'title'
+        }, {
+          label: __('Random'),
+          value: 'rand'
+        }, {
+          label: __('Menu Order'),
+          value: 'menu_order'
+        }],
+        onChange: function onChange(value) {
+          return setAttributes({
+            orderBy: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ButtonGroup, {
+        label: __('Order'),
+        options: [[__('Ascending'), 'asc'], [__('Descending'), 'desc']],
+        value: order,
+        onChange: function onChange(value) {
+          return setAttributes({
+            order: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Pagination', 'wprig'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable Pagination'),
+        value: enablePagination,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enablePagination: value
+          });
+        }
+      }), enablePagination && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Alignment, {
+        disableJustify: true,
+        value: pageAlignment,
+        alignmentType: "content",
+        label: __('Alignment'),
+        onChange: function onChange(val) {
+          return setAttributes({
+            pageAlignment: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        device: device,
+        label: __('Typography', 'wprig'),
+        value: paginationTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            paginationTypography: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal', 'wprig')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color', 'wprig'),
+        value: pagesColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background', 'wprig'),
+        value: pagesbgColor,
+        onChange: function onChange(newColor) {
+          return setAttributes({
+            pagesbgColor: newColor
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        label: __('Border', 'wprig'),
+        value: pagesBorder,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            pagesBorder: val
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: pagesShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Active')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color', 'wprig'),
+        value: pagesActiveColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesActiveColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background', 'wprig'),
+        value: pagesbgActiveColor,
+        onChange: function onChange(newColor) {
+          return setAttributes({
+            pagesbgActiveColor: newColor
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        label: __('Border', 'wprig'),
+        value: pagesActiveBorder,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            pagesActiveBorder: val
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: pagesActiveShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesActiveShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color', 'wprig'),
+        value: pagesHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background', 'wprig'),
+        value: pagesbgHoverColor,
+        onChange: function onChange(newColor) {
+          return setAttributes({
+            pagesbgHoverColor: newColor
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        label: __('Border', 'wprig'),
+        value: pagesHoverBorder,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            pagesHoverBorder: val
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: pagesHoverShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesHoverShadow: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Radius'),
+        unit: ['px', 'em', '%'],
+        value: pagesBorderRadius,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        },
+        onChange: function onChange(value) {
+          return setAttributes({
+            pagesBorderRadius: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        min: 0,
+        max: 300,
+        responsive: true,
+        device: device,
+        value: pagePadding,
+        label: __('Padding'),
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            pagePadding: val
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Margin, {
+        max: 150,
+        min: 0,
+        responsive: true,
+        device: device,
+        value: pageMargin,
+        label: __('Margin'),
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            pageMargin: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Image Settings'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Featured Image'),
+        value: showImages,
+        onChange: function onChange(value) {
+          return setAttributes({
+            showImages: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Fixed Image Height'),
+        value: enableFixedHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            enableFixedHeight: value
+          });
+        }
+      }), enableFixedHeight && /*#__PURE__*/React.createElement(Range, {
+        label: __(''),
+        value: fixedHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            fixedHeight: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 10,
+        max: 600,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Image Sizes'),
+        value: imgSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            imgSize: value
+          });
+        },
+        options: wprig_admin.image_sizes
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Image Corner'),
+        value: imageRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            imageRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Select, {
+        label: __('Hover Effect'),
+        options: [['none', __('No Animation')], ['slide-top', __('Slide From Top')], ['slide-right', __('Slide From Right')], ['slide-bottom', __('Slide From Bottom')], ['slide-left', __('Slide From Left')], ['zoom-in', __('Zoom In')], ['zoom-out', __('Zoom Out')]],
+        value: imageAnimation,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imageAnimation: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: "Content",
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Title'),
+        value: showTitle,
+        onChange: function onChange(value) {
+          return setAttributes({
+            showTitle: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Title Below Meta'),
+        value: titlePosition,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titlePosition: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Comment'),
+        value: showComment,
+        onChange: function onChange(value) {
+          return setAttributes({
+            showComment: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Category'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Category'),
+        options: [{
+          icon: 'fas fa-ban',
+          value: 'none',
+          label: __('None')
+        }, {
+          value: 'default',
+          label: __('Default')
+        }, {
+          value: 'badge',
+          label: __('Badge')
+        }],
+        value: showCategory,
+        onChange: function onChange(val) {
+          return setAttributes({
+            showCategory: val
+          });
+        }
+      }), showCategory !== 'none' && /*#__PURE__*/React.createElement(Fragment, null, layout !== 2 && showCategory == 'badge' && style != 4 && /*#__PURE__*/React.createElement(Select, {
+        label: __('Badge Position'),
+        options: [['leftTop', __('Left Top')], ['rightTop', __('Right Top')], ['leftBottom', __('Left Bottom')], ['rightBottom', __('Right Bottom')]],
+        value: categoryPosition,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryPosition: value
+          });
+        }
+      }), layout === 2 && showCategory == 'badge' && style != 4 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Badge Position'),
+        options: [{
+          value: 'default',
+          label: __('default'),
+          title: __('Pre-defined')
+        }, {
+          icon: 'fas fa-cog',
+          value: 'none',
+          title: __('Advanced')
+        }],
+        value: badgePosition,
+        onChange: function onChange(val) {
+          return setAttributes({
+            badgePosition: val
+          });
+        }
+      }), badgePosition === 'default' ? /*#__PURE__*/React.createElement(Select, {
+        label: __(''),
+        options: [['leftTop', __('Left Top')], ['rightTop', __('Right Top')], ['leftBottom', __('Left Bottom')], ['rightBottom', __('Right Bottom')]],
+        value: categoryPosition,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryPosition: value
+          });
+        }
+      }) : /*#__PURE__*/React.createElement(Padding, {
+        label: __('Advanced'),
+        value: badgePadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            badgePadding: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null)), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: categoryTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Category Color'),
+        value: showCategory == 'badge' ? categoryColor2 : categoryColor,
+        onChange: function onChange(value) {
+          return setAttributes(showCategory == 'badge' ? {
+            categoryColor2: value
+          } : {
+            categoryColor: value
+          });
+        }
+      }), showCategory == 'badge' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Category Background'),
+        value: categoryBackground,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryBackground: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Category Hover Color'),
+        value: showCategory == 'badge' ? categoryHoverColor2 : categoryHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes(showCategory == 'badge' ? {
+            categoryHoverColor2: value
+          } : {
+            categoryHoverColor: value
+          });
+        }
+      }), showCategory == 'badge' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Category Background'),
+        value: categoryHoverBackground,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryHoverBackground: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Corner'),
+        value: categoryRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            categoryRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), showCategory == 'badge' && /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: categoryPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            categoryPadding: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Add To Cart Link'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Add To Cart Link'),
+        value: showcartButton,
+        onChange: function onChange(value) {
+          return setAttributes({
+            showcartButton: value
+          });
+        }
+      }), showcartButton && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Styles, {
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].btn_fill,
+          label: __('Fill')
+        }, {
+          value: 'outline',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].btn_outline,
+          label: __('Outline')
+        }],
+        value: cartButtonStyle,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cartButtonStyle: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Button Text'),
+        value: cartButtonText,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cartButtonText: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: cartButtonTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), cartButtonStyle === 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Button Size'),
+        options: [{
+          label: 'S',
+          value: 'small',
+          title: 'Small'
+        }, {
+          label: 'M',
+          value: 'medium',
+          title: 'Medium'
+        }, {
+          label: 'L',
+          value: 'large',
+          title: 'Large'
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: 'Custom'
+        }],
+        value: cartButtonSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonSize: value
+          });
+        }
+      }), cartButtonSize == 'custom' && /*#__PURE__*/React.createElement(Padding, {
+        label: __('Custom Size'),
+        value: cartButtonCustomSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonCustomSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 150,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: cartButtonBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            cartButtonBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), (cartButtonBorder.openBorder || cartButtonStyle === 'fill') && /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Corner'),
+        value: cartButtonBorderRadius,
+        unit: ['px', 'em', '%'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonBorderRadius: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: cartButtonBoxShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonBoxShadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: cartButtonStyle === 'fill' ? cartButtonColor : cartButtonColor2,
+        onChange: function onChange(value) {
+          return setAttributes(cartButtonStyle === 'fill' ? {
+            cartButtonColor: value
+          } : {
+            cartButtonColor2: value
+          });
+        }
+      }), cartButtonStyle === 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: cartButtonBg,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonBg: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: cartButtonHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonHoverColor: value
+          });
+        }
+      }), cartButtonStyle === 'fill' && /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: cartButtonHoverBg,
+        onChange: function onChange(value) {
+          return setAttributes({
+            cartButtonHoverBg: value
+          });
+        }
+      }))))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Spacing'),
+        initialOpen: false
+      }, layout === 2 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Column Gap'),
+        value: columnGap,
+        onChange: function onChange(value) {
+          return setAttributes({
+            columnGap: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), showCategory == 'default' && /*#__PURE__*/React.createElement(Range, {
+        label: __('Category'),
+        value: categorySpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            categorySpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Title'),
+        value: titleSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Meta'),
+        value: metaSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            metaSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Excerpt'),
+        value: excerptSpace,
+        onChange: function onChange(value) {
+          return setAttributes({
+            excerptSpace: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Typography'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Typography, {
+        label: __('Title'),
+        value: titleTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Meta'),
+        value: metaTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            metaTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Excerpt'),
+        value: excerptTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            excerptTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Colors'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Title'),
+        value: style !== 4 ? titleColor : titleOverlayColor,
+        onChange: function onChange(value) {
+          return setAttributes(style !== 4 ? {
+            titleColor: value
+          } : {
+            titleOverlayColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Title Hover'),
+        value: titleHoverColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleHoverColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Meta'),
+        value: style !== 4 ? metaColor : metaOverlayColor,
+        onChange: function onChange(value) {
+          return setAttributes(style !== 4 ? {
+            metaColor: value
+          } : {
+            metaOverlayColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Excerpt'),
+        value: style !== 4 ? excerptColor : excerptColor2,
+        onChange: function onChange(value) {
+          return setAttributes(style !== 4 ? {
+            excerptColor: value
+          } : {
+            excerptColor2: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, posts && posts.length ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+        // onContextMenu={event => handleContextMenu(event, this.wprigContextMenu.current)}
+        className: "wprig-product-carousel-wrapper wprig-product-carousel-layout-".concat(layout, " ").concat(layout === 2 ? 'wprig-product-carousel-column wprig-product-carousel-column-md' + column.md + ' ' + 'wprig-product-carousel-column-sm' + column.sm + ' ' + 'wprig-product-carousel-column-xs' + column.xs : '')
+      }, posts && posts.map(function (post) {
+        if (post) {
+          return /*#__PURE__*/React.createElement("div", {
+            className: "wprig-product-carousel ".concat(layout === 1 ? 'wprig-post-list-view' : 'wprig-post-grid-view', " wprig-product-carousel-style-").concat(style)
+          }, post.product_info.onSale && enableOnSale && /*#__PURE__*/React.createElement("span", {
+            className: "onsale"
+          }, "Sale!"), /*#__PURE__*/React.createElement("div", {
+            className: "".concat(layout === 1 ? "wprig-post-list-wrapper wprig-post-list-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition) : "wprig-post-grid-wrapper wprig-post-grid-".concat(layout === 2 && style === 3 ? contentPosition : girdContentPosition))
+          }, showImages && post.wprig_featured_image_url && _this3.renderFeaturedImage(post), _this3.renderCardContent(post)));
+        } else return null;
+      })), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })), pages > 1 && enablePagination && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-pagination"
+      }, page > 1 && /*#__PURE__*/React.createElement("button", {
+        className: 'wprig-pagination-prev',
+        onClick: function onClick() {
+          return setAttributes({
+            page: page - 1
+          });
+        }
+      }, " ", /*#__PURE__*/React.createElement("span", {
+        className: "fas fa-angle-left"
+      }), " ", __('Prev')), Array(pages).fill(0).map(function (_, index) {
+        return /*#__PURE__*/React.createElement("button", {
+          key: index,
+          className: "pages".concat(page === index + 1 ? ' current' : ''),
+          onClick: function onClick() {
+            return setAttributes({
+              page: index + 1
+            });
+          }
+        }, index + 1);
+      }), page !== pages && /*#__PURE__*/React.createElement("button", {
+        className: 'wprig-pagination-next',
+        onClick: function onClick() {
+          return setAttributes({
+            page: page + 1
+          });
+        }
+      }, __('Next'), " ", /*#__PURE__*/React.createElement("span", {
+        className: "fas fa-angle-right"
+      })))) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-product-carousel-is-loading"
+      }, /*#__PURE__*/React.createElement(Spinner, null))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect(function (select, props) {
+  var _select = select('core'),
+      getEntityRecords = _select.getEntityRecords;
+
+  var _props$attributes = props.attributes,
+      page = _props$attributes.page,
+      taxonomy = _props$attributes.taxonomy,
+      order = _props$attributes.order,
+      orderBy = _props$attributes.orderBy,
+      categories = _props$attributes.categories,
+      tags = _props$attributes.tags,
+      postsToShow = _props$attributes.postsToShow,
+      carouselItems = _props$attributes.carouselItems,
+      enableDots = _props$attributes.enableDots,
+      enableArrows = _props$attributes.enableArrows;
+  var allTaxonomy = wprig_admin.all_taxonomy; // let seletedTaxonomy = taxonomy === 'categories' ? 'categories' : 'tags'
+  // let activeTaxes = taxonomy === 'categories' ? categories : tags
+
+  var tax_query = [];
+  tax_query["relation"] = "AND";
+
+  var _iterator = _createForOfIteratorHelper(categories),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var cat = _step.value;
+      tax_query.push({
+        taxonomy: taxonomy,
+        field: 'slug',
+        terms: cat.value
+      });
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  var query = {
+    order: order,
+    orderby: orderBy,
+    page: page,
+    per_page: postsToShow,
+    taxonomy: taxonomy,
+    tax_query: tax_query
+  };
+  return {
+    posts: getEntityRecords('postType', 'product', query),
+    taxonomyList: wprig_admin.woocommerce_taxonomy,
+    carouselParams: {
+      dots: enableDots,
+      slidesToShow: parseInt(carouselItems.md),
+      arrows: enableArrows,
+      prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
+      responsive: [{
+        breakpoint: 900,
+        settings: {
+          slidesToShow: parseInt(carouselItems.md)
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: carouselItems.sm
+        }
+      }, {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: carouselItems.xs
+        }
+      }]
+    } // taxonomyList: allTaxonomy.product.terms ? allTaxonomy.product.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] ? allTaxonomy.post.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] : [] : [],
+
+  };
+}), withCSSGenerator()])(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/tm-product-carousel/block.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/tm-product-carousel/block.js ***!
+  \*************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/tm-product-carousel/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/tm-product-carousel/Edit.js");
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+registerBlockType('tm_wprig/productcarousel', {
+  title: __('TM Product Carousel'),
+  description: 'Fetch blog posts and display them beautifully in grid or list views with wprig product-carousel Block.',
+  icon: 'universal-access-alt',
+  category: 'wprig-blocks',
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  keywords: [__('Product'), __('Product Crousel'), __('Crousel')],
+  example: {
+    attributes: {
+      layout: 2,
+      column: {
+        md: 1
+      },
+      showExcerpt: false,
+      postsToShow: 1
+    }
+  },
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: function save(props) {
+    return null;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/tm-product-carousel/style.scss":
+/*!***************************************************!*\
+  !*** ./src/blocks/tm-product-carousel/style.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/tm-product-carousel/style.scss");
 
             content = content.__esModule ? content.default : content;
 
