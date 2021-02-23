@@ -16546,13 +16546,14 @@ var Edit = /*#__PURE__*/function (_Component) {
           uniqueId: _client
         });
       }
+
+      this.loadCarousel();
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
-      console.log(prevProps.posts, this.posts);
-
-      if (prevProps.posts && prevProps.posts != this.posts) {
+      // console.log(prevProps.posts , this.props.posts )
+      if (prevProps.posts != this.props.posts) {
         this.loadCarousel();
       }
     }
