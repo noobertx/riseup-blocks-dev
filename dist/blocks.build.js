@@ -18328,6 +18328,8 @@ var Edit = /*#__PURE__*/function (_Component) {
 }(Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (compose([withSelect(function (select, props) {
+  var _ref2;
+
   var _select = select('core'),
       getEntityRecords = _select.getEntityRecords;
 
@@ -18374,34 +18376,38 @@ var Edit = /*#__PURE__*/function (_Component) {
     taxonomy: taxonomy,
     tax_query: tax_query
   };
-  return {
+  var seletedTaxonomy = taxonomy === 'categories' ? 'categories' : 'tags';
+  var activeTaxes = taxonomy === 'categories' ? categories : tags;
+  return _ref2 = {
     posts: getEntityRecords('postType', 'product', query),
-    taxonomyList: wprig_admin.woocommerce_taxonomy,
-    carouselParams: {
-      dots: enableDots,
-      slidesToShow: parseInt(carouselItems.md),
-      arrows: enableArrows,
-      prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
-      nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
-      responsive: [{
-        breakpoint: 900,
-        settings: {
-          slidesToShow: parseInt(carouselItems.md)
-        }
-      }, {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: carouselItems.sm
-        }
-      }, {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: carouselItems.xs
-        }
-      }]
-    } // taxonomyList: allTaxonomy.product.terms ? allTaxonomy.product.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] ? allTaxonomy.post.terms[taxonomy === 'categories' ? 'category' : 'post_tag'] : [] : [],
-
-  };
+    taxonomyList: wprig_admin.woocommerce_taxonomy
+  }, _defineProperty(_ref2, seletedTaxonomy, activeTaxes.map(function (_ref) {
+    var value = _ref.value,
+        label = _ref.label;
+    return value;
+  })), _defineProperty(_ref2, "carouselParams", {
+    dots: enableDots,
+    slidesToShow: parseInt(carouselItems.md),
+    arrows: enableArrows,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""></button>',
+    responsive: [{
+      breakpoint: 900,
+      settings: {
+        slidesToShow: parseInt(carouselItems.md)
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: carouselItems.sm
+      }
+    }, {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: carouselItems.xs
+      }
+    }]
+  }), _ref2;
 }), withCSSGenerator()])(Edit));
 
 /***/ }),
