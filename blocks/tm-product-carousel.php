@@ -26,7 +26,7 @@ class WPRIG_TM_Product_Carousel{
 			return;
 		}
 		register_block_type(
-			'wprig/tm_productcarousel',
+			'wprig/tm-productcarousel',
 			array(
 				'attributes' => array(
 					'uniqueId' => array(

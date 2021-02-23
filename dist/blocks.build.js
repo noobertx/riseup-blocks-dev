@@ -22589,7 +22589,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var __ = wp.i18n.__;
 var registerBlockType = wp.blocks.registerBlockType;
-registerBlockType('tm_wprig/productcarousel', {
+registerBlockType('wprig/tm-productcarousel', {
   title: __('TM Product Carousel'),
   description: 'Fetch blog posts and display them beautifully in grid or list views with wprig product-carousel Block.',
   icon: 'universal-access-alt',
@@ -22597,7 +22597,7 @@ registerBlockType('tm_wprig/productcarousel', {
   supports: {
     align: ['center', 'wide', 'full']
   },
-  keywords: [__('Product'), __('Product Crousel'), __('Crousel')],
+  keywords: [__('TM'), __('Product Crousel'), __('Crousel')],
   example: {
     attributes: {
       layout: 2,
