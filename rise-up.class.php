@@ -382,6 +382,7 @@ class RiseUp_Blocks {
 		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-grid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-carousel.php';
+		require_once WPRIG_DIR_PATH . 'blocks/tm-product-carousel.php';
 	}
 
 	/**
@@ -521,9 +522,9 @@ class RiseUp_Blocks {
 		$options = array();
 
 		foreach ( $post_types as $post_type ) {
-			if ( 'product' === $post_type->name ) {
-				continue;
-			}
+			// if ( 'product' === $post_type->name ) {
+			// 	continue;
+			// }
 
 			$options[] = array(
 				'value' => $post_type->name,
