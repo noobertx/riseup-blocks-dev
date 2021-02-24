@@ -7241,24 +7241,6 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-category/style.scss":
-/*!*****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-category/style.scss ***!
-  \*****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, "", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-grid/style.scss":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-grid/style.scss ***!
@@ -9844,14 +9826,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
 /* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
 /* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_product_category_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/product-category/block */ "./src/blocks/product-category/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9882,7 +9863,6 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/map/block";
 // import "./blocks/pie-progress/block";
 // import "./blocks/pricing/block";
-
 
 
 
@@ -9951,7 +9931,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_12__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_11__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -18246,238 +18226,6 @@ registerBlockType('wprig/productcarousel', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-carousel/style.scss");
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
-
-/***/ }),
-
-/***/ "./src/blocks/product-category/Edit.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/product-category/Edit.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var __ = wp.i18n.__;
-var compose = wp.compose.compose;
-var withSelect = wp.data.withSelect;
-var _wp$element = wp.element,
-    Fragment = _wp$element.Fragment,
-    Component = _wp$element.Component,
-    createRef = _wp$element.createRef;
-var _wp$blockEditor = wp.blockEditor,
-    InspectorControls = _wp$blockEditor.InspectorControls,
-    BlockControls = _wp$blockEditor.BlockControls;
-var _wp$components = wp.components,
-    RangeControl = _wp$components.RangeControl,
-    PanelBody = _wp$components.PanelBody,
-    Toolbar = _wp$components.Toolbar,
-    Spinner = _wp$components.Spinner,
-    TextControl = _wp$components.TextControl,
-    SelectControl = _wp$components.SelectControl;
-var _wp$wprigComponents = wp.wprigComponents,
-    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
-    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
-    animationSettings = _wp$wprigComponents$g.animationSettings,
-    CssGenerator = _wp$wprigComponents.CssGenerator.CssGenerator,
-    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
-    ContextMenu = _wp$wprigComponents$C.ContextMenu,
-    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
-    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
-    InspectorTabs = _wp$wprigComponents.InspectorTabs,
-    InspectorTab = _wp$wprigComponents.InspectorTab;
-
-var Edit = /*#__PURE__*/function (_Component) {
-  _inherits(Edit, _Component);
-
-  var _super = _createSuper(Edit);
-
-  function Edit() {
-    var _this;
-
-    _classCallCheck(this, Edit);
-
-    _this = _super.apply(this, arguments);
-    _this.state = {
-      device: 'md',
-      spacer: true,
-      categoriesList: []
-    };
-    _this.wprigContextMenu = createRef();
-    return _this;
-  }
-
-  _createClass(Edit, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this$props = this.props,
-          setAttributes = _this$props.setAttributes,
-          clientId = _this$props.clientId,
-          uniqueId = _this$props.attributes.uniqueId;
-      this.isStillMounted = true; // this.fetchRequest = wp.apiFetch({
-      // 	path: addQueryArgs('/wp/v2/categories', CATEGORIES_LIST_QUERY),
-      // }).then(
-      // 	(categoriesList) => {
-      // 		if (this.isStillMounted) {
-      // 			this.setState({ categoriesList });
-      // 		}
-      // 	}
-      // ).catch(
-      // 	() => {
-      // 		if (this.isStillMounted) {
-      // 			this.setState({ categoriesList: [] });
-      // 		}
-      // 	}
-      // );
-
-      var _client = clientId.substr(0, 6);
-
-      if (!uniqueId) {
-        setAttributes({
-          uniqueId: _client
-        });
-      } else if (uniqueId && uniqueId != _client) {
-        setAttributes({
-          uniqueId: _client
-        });
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.isStillMounted = false;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          setAttributes = _this$props2.setAttributes,
-          clientId = _this$props2.clientId,
-          _this$props2$attribut = _this$props2.attributes,
-          uniqueId = _this$props2$attribut.uniqueId,
-          className = _this$props2$attribut.className,
-          animation = _this$props2$attribut.animation,
-          globalZindex = _this$props2$attribut.globalZindex,
-          enablePosition = _this$props2$attribut.enablePosition,
-          selectPosition = _this$props2$attribut.selectPosition,
-          positionXaxis = _this$props2$attribut.positionXaxis,
-          positionYaxis = _this$props2$attribut.positionYaxis,
-          hideTablet = _this$props2$attribut.hideTablet,
-          hideMobile = _this$props2$attribut.hideMobile,
-          globalCss = _this$props2$attribut.globalCss;
-      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
-        key: "inspector"
-      }, /*#__PURE__*/React.createElement(InspectorTabs, {
-        tabs: ['content', 'advance']
-      }, /*#__PURE__*/React.createElement(InspectorTab, {
-        key: 'content'
-      }, /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Post Design'),
-        initialOpen: true
-      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
-        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
-      }, "Product Categories Menu Will Appear Here"));
-    }
-  }]);
-
-  return Edit;
-}(Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect(function (select, props) {
-  var _select = select('core'),
-      getEntityRecords = _select.getEntityRecords;
-
-  _objectDestructuringEmpty(props.attributes);
-
-  return {};
-}), withCSSGenerator()])(Edit));
-
-/***/ }),
-
-/***/ "./src/blocks/product-category/block.js":
-/*!**********************************************!*\
-  !*** ./src/blocks/product-category/block.js ***!
-  \**********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/product-category/style.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/product-category/Edit.js");
-
-
-var __ = wp.i18n.__;
-var registerBlockType = wp.blocks.registerBlockType;
-registerBlockType('wprig/product-categories', {
-  title: __('Product Categories'),
-  description: 'Fetch product categoris and display them beautifully with wprig product-categories Block.',
-  icon: 'universal-access-alt',
-  category: 'wprig-blocks',
-  supports: {
-    align: ['center', 'wide', 'full']
-  },
-  keywords: [__('Product Category'), __('Category'), __('Nav')],
-  example: {},
-  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
-  save: function save(props) {
-    return null;
-  }
-});
-
-/***/ }),
-
-/***/ "./src/blocks/product-category/style.scss":
-/*!************************************************!*\
-  !*** ./src/blocks/product-category/style.scss ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/product-category/style.scss");
 
             content = content.__esModule ? content.default : content;
 
