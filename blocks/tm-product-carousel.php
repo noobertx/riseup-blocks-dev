@@ -95,6 +95,27 @@ class WPRIG_TM_Product_Carousel{
 							'selector' => '{{WPRIG}} .wprig-tm-product-carousel.slick-slide'
 						]]
 					),
+					'enableHeading' =>[
+						'type' => 'boolean',
+                        'default' => true
+					],
+					'headingLevel' => [
+						'type' => 'number',
+						'default' => 3
+					],
+					'headingContent' => [
+						'type' => 'string',
+						'default' => 'Title',
+					],
+					'headingColor' => [
+                        'type' => 'string',
+                        'default' => '#333',
+                        'style' => [
+                            [
+                                'selector' => '{{WPRIG}} .wprig-heading-selector{ color:{{headingColor}}!important; }' 
+                            ]
+                        ]
+                    ], 
 					'enablePrice' => [
                         'type' => 'boolean',
                         'default' => true
