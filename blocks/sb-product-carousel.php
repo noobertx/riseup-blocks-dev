@@ -1245,6 +1245,16 @@ class WPRIG_SB_Product_Carousel{
 		$enablePrice 		        = isset($att['enablePrice']) ? $att['enablePrice'] : false;
 		$enableRegularPrice 		        = isset($att['enableRegularPrice']) ? $att['enableRegularPrice'] : false;
 		$enableOnSale 		        = isset($att['enableOnSale']) ? $att['enableOnSale'] : false;
+		$imageType 		        = isset($att['imageType']) ? $att['imageType'] : "external";
+		$image 		        = isset($att['image']) ? $att['image'] : "";
+
+
+		if($imageType == "local"){
+			$image 		        = isset($att['image']) ? $att['image'] : "";
+		}else{
+			$image 		        = isset($att['externalImageUrl']) ? $att['externalImageUrl'] : "";
+		}
+
 		// $html = "";
 		$slickSettings = (object) array(
             "slidesToShow" => $carouselItems['md'],
@@ -1338,7 +1348,9 @@ class WPRIG_SB_Product_Carousel{
 			$html .= "<div class='wprig-title-wrap'><h3 class='wprig-heading-selector'>".$headingContent."</h3></div><div class = 'sb-slider'>";
 		// }
 		//column
-		$html .= "<div class='wprig-banner'>Banner</div>";
+		$html .= "<div class='wprig-banner'>"; 
+		$html .= "<img src = '".$image['url']."' />";
+		$html .= "</div>";
 		if ($layout == 2) {
 			$col = (' wprig-sb-product-carousel wprig-sb-product-carousel-column wprig-sb-product-carousel-column-md' . $column['md'] . ' wprig-sb-product-carousel-column-sm' . $column['sm'] . ' wprig-sb-product-carousel-column-xs' . $column['xs']);
 		} else {
