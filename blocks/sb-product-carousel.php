@@ -118,14 +118,13 @@ class WPRIG_SB_Product_Carousel{
 					'imageUrl' => [
 						'type' => 'object',
 						'default' => [
-							'url' => ''
 						]
 					],
 					'imageSize' => [
 						'type' => 'string',
 						'default' => 'auto',
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-image {width: {{imageSize}};}'
+							['selector' => '{{WPRIG}} .wprig-image-image {width: {{imageSize}};}']
 						]
 					],
 					'imageSizeCustom' => [
@@ -135,7 +134,7 @@ class WPRIG_SB_Product_Carousel{
 							'unit' => 'px'
 						],
 						'style' => [
-							'selector'=> '{{WPRIG}} .wprig-image-image {width: {{imageSizeCustom}};}'
+							['selector'=> '{{WPRIG}} .wprig-image-image {width: {{imageSizeCustom}};}']
 						]
 					],
 					'imgAlt' => [
@@ -146,7 +145,7 @@ class WPRIG_SB_Product_Carousel{
 						'type' => 'number',
 						'default' => 1,
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-image {opacity: {{imageOpacity}};}'
+							['selector' => '{{WPRIG}} .wprig-image-image {opacity: {{imageOpacity}};}']
 						]
 					],
 					'imageBorderRadius' => [
@@ -158,14 +157,14 @@ class WPRIG_SB_Product_Carousel{
 							'unit' => 'px'
 						],
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-container'
+							['selector' => '{{WPRIG}} .wprig-image-container']
 						]
 					],
 					'imageBoxShadow' => [
 						'type' => 'object',
 						'default' => [],
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-media:hover .wprig-image-container'
+							['selector' => '{{WPRIG}} .wprig-image-media:hover .wprig-image-container']
 						]
 					],
 					'enableCaption' =>[
@@ -185,14 +184,14 @@ class WPRIG_SB_Product_Carousel{
 							]
 						],
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-caption'
+							['selector' => '{{WPRIG}} .wprig-image-caption']
 						]
 					],
 					'captionColor' => [
 						'type' => 'string',
 						'default' => ' #566372',
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-caption {color: {{captionColor}};}'
+							['selector' => '{{WPRIG}} .wprig-image-caption {color: {{captionColor}};}']
 						]
 					],
 					'captionSpacing' => [
@@ -202,7 +201,7 @@ class WPRIG_SB_Product_Carousel{
 							'unit' => 'px'
 						],
 						'style' => [
-							'selector' => '{{WPRIG}} .wprig-image-caption {margin-top: {{captionSpacing}};}'
+							['selector' => '{{WPRIG}} .wprig-image-caption {margin-top: {{captionSpacing}};}']
 						]
 					],
 					'enableHeading' =>[
