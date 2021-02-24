@@ -1334,10 +1334,12 @@ class WPRIG_SB_Product_Carousel{
 	
 		$this->enqueue_skin_additional_assets();
 		$html = "";
+		
 		// if($enableHeading){
-			$html .= "<div class='wprig-title-wrap'><h3 class='wprig-heading-selector'>".$headingContent."</h3></div>";
+			$html .= "<div class='wprig-title-wrap'><h3 class='wprig-heading-selector'>".$headingContent."</h3></div><div class = 'sb-slider'>";
 		// }
 		//column
+		$html .= "<div class='wprig-banner'>Banner</div>";
 		if ($layout == 2) {
 			$col = (' wprig-sb-product-carousel wprig-sb-product-carousel-column wprig-sb-product-carousel-column-md' . $column['md'] . ' wprig-sb-product-carousel-column-sm' . $column['sm'] . ' wprig-sb-product-carousel-column-xs' . $column['xs']);
 		} else {
@@ -1466,6 +1468,7 @@ class WPRIG_SB_Product_Carousel{
 					$html .= '</div>'; //wprig-sb-product-carousel
 				}
 			}
+			$html .= '</div>';
 			$html .= '</div>';
 			$html .= '</div>';
 			wp_reset_postdata();

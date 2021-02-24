@@ -24079,7 +24079,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var __ = wp.i18n.__;
 var registerBlockType = wp.blocks.registerBlockType;
-registerBlockType('wprig/tm-productcarousel', {
+registerBlockType('wprig/sb-productcarousel', {
   title: __('SB Product Carousel'),
   description: 'Product Carousel with a banner on the side.',
   icon: 'universal-access-alt',
@@ -26029,7 +26029,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var __ = wp.i18n.__;
 var registerBlockType = wp.blocks.registerBlockType;
-registerBlockType('wprig/sb-productcarousel', {
+registerBlockType('wprig/tm-productcarousel', {
   title: __('TM Product Carousel'),
   description: 'Fetch products and display them beautifully with wprig product-carousel Block.',
   icon: 'universal-access-alt',
