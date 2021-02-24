@@ -10,6 +10,9 @@
         if($(".wprig-tm-product-carousel").length){
             $(".wprig-tm-product-carousel").slick()
         }
+        if($(".wprig-sb-product-carousel").length){
+            $(".wprig-sb-product-carousel").slick()
+        }
 
         
         $('.riseup-gallery').riseupGallery({
