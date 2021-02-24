@@ -20336,7 +20336,7 @@ var _wp$wprigComponents = wp.wprigComponents,
     Tabs = _wp$wprigComponents.Tabs,
     Tab = _wp$wprigComponents.Tab,
     RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
-    Alignment = _wp$wprigComponents.Alignment,
+    Url = _wp$wprigComponents.Url,
     Margin = _wp$wprigComponents.Margin,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
     globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
@@ -20605,6 +20605,23 @@ var Edit = /*#__PURE__*/function (_Component) {
           enableHeading = _this$props3$attribut.enableHeading,
           headingContent = _this$props3$attribut.headingContent,
           headingColor = _this$props3$attribut.headingColor,
+          image = _this$props3$attribut.image,
+          imageType = _this$props3$attribut.imageType,
+          externalImageUrl = _this$props3$attribut.externalImageUrl,
+          image2x = _this$props3$attribut.image2x,
+          imgAlt = _this$props3$attribut.imgAlt,
+          imageUrl = _this$props3$attribut.imageUrl,
+          imageSize = _this$props3$attribut.imageSize,
+          imageSizeCustom = _this$props3$attribut.imageSizeCustom,
+          imageBorderRadius = _this$props3$attribut.imageBorderRadius,
+          imageOpacity = _this$props3$attribut.imageOpacity,
+          imageBoxShadow = _this$props3$attribut.imageBoxShadow,
+          imageBoxShadowHover = _this$props3$attribut.imageBoxShadowHover,
+          enableCaption = _this$props3$attribut.enableCaption,
+          imageCaption = _this$props3$attribut.imageCaption,
+          captionTypography = _this$props3$attribut.captionTypography,
+          captionColor = _this$props3$attribut.captionColor,
+          captionSpacing = _this$props3$attribut.captionSpacing,
           taxonomy = _this$props3$attribut.taxonomy,
           categories = _this$props3$attribut.categories,
           tags = _this$props3$attribut.tags,
@@ -21385,79 +21402,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Image Settings'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Show Featured Image'),
-        value: showImages,
-        onChange: function onChange(value) {
-          return setAttributes({
-            showImages: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Fixed Image Height'),
-        value: enableFixedHeight,
-        onChange: function onChange(value) {
-          return setAttributes({
-            enableFixedHeight: value
-          });
-        }
-      }), enableFixedHeight && /*#__PURE__*/React.createElement(Range, {
-        label: __(''),
-        value: fixedHeight,
-        onChange: function onChange(value) {
-          return setAttributes({
-            fixedHeight: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 10,
-        max: 600,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(SelectControl, {
-        label: __('Image Sizes'),
-        value: imgSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imgSize: value
-          });
-        },
-        options: wprig_admin.image_sizes
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        label: __('Image Corner'),
-        value: imageRadius,
-        unit: ['px', 'em', '%'],
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageRadius: value
-          });
-        },
-        onDeviceChange: function onDeviceChange(value) {
-          return _this4.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Select, {
-        label: __('Hover Effect'),
-        options: [['none', __('No Animation')], ['slide-top', __('Slide From Top')], ['slide-right', __('Slide From Right')], ['slide-bottom', __('Slide From Bottom')], ['slide-left', __('Slide From Left')], ['zoom-in', __('Zoom In')], ['zoom-out', __('Zoom Out')]],
-        value: imageAnimation,
-        onChange: function onChange(val) {
-          return setAttributes({
-            imageAnimation: val
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: "Content",
         initialOpen: false
       }, /*#__PURE__*/React.createElement(Toggle, {
@@ -21484,6 +21428,107 @@ var Edit = /*#__PURE__*/function (_Component) {
             showComment: value
           });
         }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: "Image Settings",
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(ButtonGroup, {
+        label: __('Image Type'),
+        options: [[__('Local'), 'local'], [__('External'), 'external']],
+        value: imageType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            imageType: value
+          });
+        }
+      }), imageType === 'local' ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Media, {
+        label: __('Image'),
+        multiple: false,
+        type: ['image'],
+        panel: true,
+        value: image,
+        onChange: function onChange(val) {
+          return setAttributes({
+            image: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Media, {
+        label: __('Retina Image (@2x)'),
+        multiple: false,
+        type: ['image'],
+        panel: true,
+        value: image2x,
+        onChange: function onChange(val) {
+          return setAttributes({
+            image2x: val
+          });
+        }
+      })) : null // <Url label={__('Image Source')} disableAdvanced value={externalImageUrl} onChange={newUrl => setAttributes({ externalImageUrl: newUrl })} />
+      , /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Alt Text'),
+        value: imgAlt,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imgAlt: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Size'),
+        value: imageSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            imageSize: value
+          });
+        },
+        options: [{
+          label: __('Auto'),
+          value: 'auto',
+          title: __('Auto')
+        }, {
+          label: __('S'),
+          value: '300px',
+          title: __('Small')
+        }, {
+          label: __('M'),
+          value: '600px',
+          title: __('Medium')
+        }, {
+          label: __('L'),
+          value: '800px',
+          title: __('Large')
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: __('Custom')
+        }]
+      }), imageSize == 'custom' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Custom Width'),
+        value: imageSizeCustom,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imageSizeCustom: val
+          });
+        },
+        min: 10,
+        max: 1920,
+        responsive: true,
+        unit: ['px', 'em', '%'],
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this4.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null)), /*#__PURE__*/React.createElement(Range, {
+        label: __('Opacity'),
+        value: imageOpacity,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imageOpacity: parseFloat(val)
+          });
+        },
+        min: 0.1,
+        max: 1,
+        step: .1
       })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Category'),
         initialOpen: false

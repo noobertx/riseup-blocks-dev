@@ -95,6 +95,110 @@ class WPRIG_SB_Product_Carousel{
 							'selector' => '{{WPRIG}} .wprig-sb-product-carousel.slick-slide'
 						]]
 					),
+					'imgSize'	=> [
+						'type' => 'string',
+						'default' => 'full',
+					],
+					'image'	=> [
+						'type' => 'object',
+						'default' => []
+					],
+					'imageType' => [
+						'type' => 'string',
+						'default' => []
+					],
+					'image2x' => [
+						'type' => 'object',
+						'default' => []
+					],
+					'imageUrl' => [
+						'type' => 'object',
+						'default' => []
+					],
+					'imageSize' => [
+						'type' => 'string',
+						'default' => 'auto',
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-image {width: {{imageSize}};}'
+						]
+					],
+					'imageSizeCustom' => [
+						'type' => 'object',
+						'default' => [
+							'md' => 300,
+							'unit' => 'px'
+						],
+						'style' => [
+							'selector'=> '{{WPRIG}} .wprig-image-image {width: {{imageSizeCustom}};}'
+						]
+					],
+					'imgAlt' => [
+						'type' => 'string',
+						'default' => ''
+					],
+					'imageOpacity' => [
+						'type' => 'number',
+						'default' => 1,
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-image {opacity: {{imageOpacity}};}'
+						]
+					],
+					'imageBorderRadius' => [
+						'type' => 'object',
+						'default' => [
+							'openBorderRadius' => 0,
+							'radiusType' => 'global',
+							'global' => [],
+							'unit' => 'px'
+						],
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-container'
+						]
+					],
+					'imageBoxShadow' => [
+						'type' => 'object',
+						'default' => [],
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-media:hover .wprig-image-container'
+						]
+					],
+					'enableCaption' =>[
+						'type' => 'boolean',
+						'default' => false
+					],
+					'imageCaption' => [
+						'type' => 'string',
+						'default' => 'Image Caption'
+					],
+					'captionTypography' => [
+						'default' => [
+							'openTypography' => 1,
+							'size' => [
+								'md' => 16,
+								'unit' => 'px'
+							]
+						],
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-caption'
+						]
+					],
+					'captionColor' => [
+						'type' => 'string',
+						'default' => ' #566372',
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-caption {color: {{captionColor}};}'
+						]
+					],
+					'captionSpacing' => [
+						'type' => 'object',
+						'default' => [
+							'md' => 20,
+							'unit' => 'px'
+						],
+						'style' => [
+							'selector' => '{{WPRIG}} .wprig-image-caption {margin-top: {{captionSpacing}};}'
+						]
+					],
 					'enableHeading' =>[
 						'type' => 'boolean',
                         'default' => true
