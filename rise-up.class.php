@@ -384,6 +384,7 @@ class RiseUp_Blocks {
 		require_once WPRIG_DIR_PATH . 'blocks/product-carousel.php';
 		require_once WPRIG_DIR_PATH . 'blocks/tm-product-carousel.php';
 		require_once WPRIG_DIR_PATH . 'blocks/sb-product-carousel.php';
+		require_once WPRIG_DIR_PATH . 'blocks/product-categories.php';
 	}
 
 	/**
