@@ -107,13 +107,19 @@ class WPRIG_SB_Product_Carousel{
 						'type' => 'string',
 						'default' => []
 					],
+					'externalImageUrl' => [
+						'type' => 'object',
+						'default' => []
+					],
 					'image2x' => [
 						'type' => 'object',
 						'default' => []
 					],
 					'imageUrl' => [
 						'type' => 'object',
-						'default' => []
+						'default' => [
+							'url' => ''
+						]
 					],
 					'imageSize' => [
 						'type' => 'string',
