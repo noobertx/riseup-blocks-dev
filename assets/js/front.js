@@ -7,7 +7,11 @@
         if($(".wprig-product-carousel").length){
             $(".wprig-product-carousel").slick()
         }
+        if($(".wprig-tm-product-carousel").length){
+            $(".wprig-tm-product-carousel").slick()
+        }
 
+        
         $('.riseup-gallery').riseupGallery({
             modalClass: '.wprig-dynamic-modal',
             toggleClass : 'button.wprig-gallery-item'

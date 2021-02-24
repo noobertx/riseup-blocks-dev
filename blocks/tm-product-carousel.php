@@ -1122,6 +1122,9 @@ class WPRIG_TM_Product_Carousel{
 		$tags                   = $att['tags'];
 		$taxonomy               = $att['taxonomy'];
 
+		$enableHeading 		        = isset($att['enableHeading']) ? $att['enableHeading'] : false;
+		$headingContent 		        = isset($att['headingContent']) ? $att['headingContent'] : "";
+
 		$enableDots 		        = isset($att['enableDots']) ? $att['enableDots'] : false;
         $enableArrows 		        = isset($att['enableArrows']) ? $att['enableArrows'] : false;
 		$carouselItems 		    = isset($att['carouselItems']) ? $att['carouselItems'] : array(
@@ -1221,6 +1224,9 @@ class WPRIG_TM_Product_Carousel{
 	
 		$this->enqueue_skin_additional_assets();
 		$html = "";
+		// if($enableHeading){
+			$html .= "<div class='wprig-title-wrap'><h3 class='wprig-heading-selector'>".$headingContent."</h3></div>";
+		// }
 		//column
 		if ($layout == 2) {
 			$col = (' wprig-tm-product-carousel wprig-tm-product-carousel-column wprig-tm-product-carousel-column-md' . $column['md'] . ' wprig-tm-product-carousel-column-sm' . $column['sm'] . ' wprig-tm-product-carousel-column-xs' . $column['xs']);

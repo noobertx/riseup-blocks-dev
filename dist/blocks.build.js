@@ -7270,7 +7270,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "div[data-type=\"wprig/tm-productcarousel\"] .wprig-title-wrap {\n  border-bottom: 2px solid #ccc; }\n\n.is-sidebar-opened .wprig-tm-product-carousel-wrapper {\n  max-width: 60.56vw; }\n\n.wprig-tm-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-tm-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n    .wprig-tm-product-carousel-wrapper.slick-initialized .slick-next {\n      right: 0;\n      top: -50px;\n      z-index: 9; }\n    .wprig-tm-product-carousel-wrapper.slick-initialized .slick-prev {\n      left: unset;\n      right: 35px;\n      top: -50px;\n      z-index: 9; }\n  .wprig-tm-product-carousel-wrapper .wprig-title-wrap {\n    border-bottom: 2px solid;\n    margin: 10px 0; }\n  .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel {\n    position: relative; }\n    .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel .onsale {\n      min-height: 3.236em;\n      min-width: 3.236em;\n      padding: .202em;\n      font-size: 1em;\n      font-weight: 700;\n      position: absolute;\n      text-align: center;\n      line-height: 3.236;\n      top: 0;\n      right: 0;\n      margin: 0;\n      border-radius: 100%;\n      background-color: #77a464;\n      color: #fff;\n      font-size: .857em;\n      z-index: 9; }\n    .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel .wprig-tm-product-carousel-btn {\n      padding: 10px; }\n", ""]);
+exports.push([module.i, "div[data-type=\"wprig/tm-productcarousel\"] .wprig-title-wrap {\n  border-bottom: 2px solid #ccc; }\n  div[data-type=\"wprig/tm-productcarousel\"] .wprig-title-wrap h3.wprig-heading-selector {\n    display: inline;\n    position: relative; }\n  div[data-type=\"wprig/tm-productcarousel\"] .wprig-title-wrap h3.wprig-heading-selector:after {\n    content: '';\n    position: absolute;\n    border: 1px solid red;\n    width: 100%;\n    bottom: -2px;\n    left: 0; }\n  div[data-type=\"wprig/tm-productcarousel\"] .wprig-title-wrap .wprig-title-wrap + div {\n    margin: 20px 0; }\n\n.is-sidebar-opened .wprig-tm-product-carousel-wrapper {\n  max-width: 60.56vw; }\n\n.wprig-tm-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-tm-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n    .wprig-tm-product-carousel-wrapper.slick-initialized .slick-next {\n      right: 0;\n      top: -50px;\n      z-index: 9; }\n    .wprig-tm-product-carousel-wrapper.slick-initialized .slick-prev {\n      left: unset;\n      right: 35px;\n      top: -50px;\n      z-index: 9; }\n  .wprig-tm-product-carousel-wrapper .wprig-title-wrap {\n    border-bottom: 2px solid;\n    margin: 10px 0; }\n  .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel {\n    position: relative; }\n    .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel .onsale {\n      min-height: 3.236em;\n      min-width: 3.236em;\n      padding: .202em;\n      font-size: 1em;\n      font-weight: 700;\n      position: absolute;\n      text-align: center;\n      line-height: 3.236;\n      top: 0;\n      right: 0;\n      margin: 0;\n      border-radius: 100%;\n      background-color: #77a464;\n      color: #fff;\n      font-size: .857em;\n      z-index: 9; }\n    .wprig-tm-product-carousel-wrapper .wprig-tm-product-carousel .wprig-tm-product-carousel-btn {\n      padding: 10px; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -21157,7 +21157,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableHeading: value
           });
         }
-      }), /*#__PURE__*/React.createElement(TextControl, {
+      }), enableHeading && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
         label: __('Title'),
         value: headingContent,
         onChange: function onChange(val) {
@@ -21173,7 +21173,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             headingColor: value
           });
         }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
         initialOpen: false,
         title: __('Product Item')
       }, /*#__PURE__*/React.createElement(Toggle, {
