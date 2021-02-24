@@ -7270,7 +7270,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".edit-post-visual-editor__post-title-wrapper .wprig-title-wrap {\n  position: relative;\n  max-width: 63.56vw; }\n\n.edit-post-visual-editor__post-title-wrapper .wprig-heading-selector {\n  display: inline-block;\n  background: #fff;\n  z-index: 1; }\n\n.edit-post-visual-editor__post-title-wrapper .wprig-title-wrap:before {\n  content: '';\n  position: absolute;\n  left: 10%;\n  width: 80%;\n  height: 1px;\n  background: #ccc;\n  top: 50%;\n  z-index: -1; }\n\n.wprig-title-wrap:before {\n  content: '';\n  position: absolute;\n  left: 0;\n  width: 100%;\n  height: 1px;\n  background: #ccc;\n  top: 50%;\n  z-index: -1; }\n\n.wprig-heading-selector {\n  display: inline-block;\n  background: #eee;\n  z-index: 1;\n  margin: 1em 0;\n  padding: 0 1em 0 0; }\n\n.wprig-title-wrap {\n  position: relative;\n  max-width: 85.87vw !important; }\n\n.is-sidebar-opened .wprig-sb-product-carousel-wrapper {\n  max-width: 63.56vw; }\n\n.wprig-sb-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-sb-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n  .wprig-sb-product-carousel-wrapper .slick-next {\n    right: 0;\n    top: -50px;\n    z-index: 9; }\n  .wprig-sb-product-carousel-wrapper .slick-prev {\n    left: unset;\n    right: 35px;\n    top: -50px;\n    z-index: 9; }\n\n.wprig-sb-product-carousel {\n  position: relative; }\n  .wprig-sb-product-carousel .onsale {\n    min-height: 3.236em;\n    min-width: 3.236em;\n    padding: .202em;\n    font-size: 1em;\n    font-weight: 700;\n    position: absolute;\n    text-align: center;\n    line-height: 3.236;\n    top: 0;\n    right: 0;\n    margin: 0;\n    border-radius: 100%;\n    background-color: #77a464;\n    color: #fff;\n    font-size: .857em;\n    z-index: 9; }\n  .wprig-sb-product-carousel .wprig-sb-product-carousel-btn {\n    padding: 10px; }\n\n.sb-slider {\n  display: flex; }\n\n.sb-slider .wprig-banner {\n  width: 25%; }\n\n.sb-slider .wprig-sb-product-carousel-wrapper {\n  width: 75%; }\n", ""]);
+exports.push([module.i, ".edit-post-visual-editor__post-title-wrapper .wprig-title-wrap {\n  position: relative;\n  max-width: 63.56vw; }\n\n.edit-post-visual-editor__post-title-wrapper .sb-slider {\n  max-width: 63.56vw; }\n\n.edit-post-visual-editor__post-title-wrapper .wprig-heading-selector {\n  display: inline-block;\n  background: #fff;\n  z-index: 1; }\n\n.edit-post-visual-editor__post-title-wrapper .wprig-title-wrap:before {\n  content: '';\n  position: absolute;\n  left: 10%;\n  width: 80%;\n  height: 1px;\n  background: #ccc;\n  top: 50%;\n  z-index: -1; }\n\n.wprig-title-wrap:before {\n  content: '';\n  position: absolute;\n  left: 0;\n  width: 100%;\n  height: 1px;\n  background: #ccc;\n  top: 50%;\n  z-index: -1; }\n\n.wprig-heading-selector {\n  display: inline-block;\n  background: #eee;\n  z-index: 1;\n  margin: 1em 0;\n  padding: 0 1em 0 0; }\n\n.wprig-title-wrap {\n  position: relative;\n  max-width: 85.87vw !important; }\n\n.is-sidebar-opened .wprig-sb-product-carousel-wrapper {\n  max-width: 63.56vw; }\n\n.wprig-sb-product-carousel-wrapper {\n  opacity: 0;\n  max-width: 85.91vw;\n  margin: auto;\n  transition: 0.5s opacity; }\n  .wprig-sb-product-carousel-wrapper.slick-initialized {\n    opacity: 1; }\n  .wprig-sb-product-carousel-wrapper .slick-next {\n    right: 0;\n    top: -50px;\n    z-index: 9; }\n  .wprig-sb-product-carousel-wrapper .slick-prev {\n    left: unset;\n    right: 35px;\n    top: -50px;\n    z-index: 9; }\n\n.wprig-sb-product-carousel {\n  position: relative; }\n  .wprig-sb-product-carousel .onsale {\n    min-height: 3.236em;\n    min-width: 3.236em;\n    padding: .202em;\n    font-size: 1em;\n    font-weight: 700;\n    position: absolute;\n    text-align: center;\n    line-height: 3.236;\n    top: 0;\n    right: 0;\n    margin: 0;\n    border-radius: 100%;\n    background-color: #77a464;\n    color: #fff;\n    font-size: .857em;\n    z-index: 9; }\n  .wprig-sb-product-carousel .wprig-sb-product-carousel-btn {\n    padding: 10px; }\n\n.sb-slider {\n  display: flex; }\n\n.sb-slider .wprig-banner {\n  width: 25%; }\n\n.sb-slider .wprig-sb-product-carousel-wrapper {\n  width: 75%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -22083,7 +22083,28 @@ var Edit = /*#__PURE__*/function (_Component) {
         className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '', " sb-slider")
       }, /*#__PURE__*/React.createElement("div", {
         className: "wprig-banner"
-      }, "Banner"), posts && posts.length ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-media "
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-container"
+      }, imageType === 'local' && image.url != undefined ? /*#__PURE__*/React.createElement(Fragment, null, image2x.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-image-image",
+        src: image.url,
+        srcset: image.url + ' 1x, ' + image2x.url + ' 2x',
+        alt: imgAlt && imgAlt
+      }) : /*#__PURE__*/React.createElement("img", {
+        className: "wprig-image-image",
+        src: image.url,
+        alt: imgAlt && imgAlt
+      })) : imageType === 'external' && externalImageUrl.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-image-image",
+        src: externalImageUrl.url,
+        alt: imgAlt && imgAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-image wprig-image-placeholder"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-image"
+      }))))), posts && posts.length ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
         // onContextMenu={event => handleContextMenu(event, this.wprigContextMenu.current)}
         className: "wprig-sb-product-carousel-wrapper wprig-sb-product-carousel-layout-".concat(layout, " ").concat(layout === 2 ? 'wprig-sb-product-carousel-column wprig-sb-product-carousel-column-md' + column.md + ' ' + 'wprig-sb-product-carousel-column-sm' + column.sm + ' ' + 'wprig-sb-product-carousel-column-xs' + column.xs : '')
       }, posts && this.renderCarouselContent(posts)), /*#__PURE__*/React.createElement("div", {
