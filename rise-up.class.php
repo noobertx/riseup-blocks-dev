@@ -23,7 +23,6 @@ class RiseUp_Blocks {
 	public function __construct() {
 
 		add_action('rest_api_init', array($this,'wprig_register_api_hook'));
-		add_action( 'rest_api_init', array( $this,'query_contents' ));
 		add_action( 'rest_api_init', array( $this,'product_categories' ));
 
 		$this->wprig_api_request_body_default = array(
@@ -159,44 +158,7 @@ class RiseUp_Blocks {
 	  }
 	  return $terms_collected;
 	}
-	public function query_contents(){
-		register_rest_route( 'new/v1', 'item', array(
-			'methods' => WP_REST_SERVER::READABLE,
-			'callback' => array($this, 'somePost')
-			)
-		);
-	}
-
-
-	public function somePost($data){
-		// global $wpdb;
-		// $mainQuery = new \WP_Query(array(
-		// 	'post_id'=> '5',
-		//   'posts_per_page' => 1
-		// ));
-  
-		// $result = array();
-  
-		// while($mainQuery->have_posts()) {
-		//   $mainQuery->the_post();
-		//   array_push($result, array(
-		// 	'ID' => get_the_ID(),
-		// 	'title' => get_the_title(),
-		// 	'permalink' => get_the_permalink(),
-		// 	'excerpt' => get_the_content()
-		//   ));
-		// }
-
-		return do_blocks(get_post(1)->post_content);
-		// $blocks = parse_blocks(get_post(5)->post_content);
-		// return $blocks ;
-		// $str = array();
-		// foreach($blocks  as $block){
-		// 	$str[]= render_block($block);
-		// }
-		// // return json_decode(get_post(5)->post_content);
-		// return join(" ",$str);
-	}
+	
 	
 
 	public function custom_body_open_code( ) { ?>
