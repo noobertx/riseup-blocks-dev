@@ -789,6 +789,8 @@ class Riseup_Gallery_Block{
         $enableViewButton 		        = isset($att['enableViewButton']) ? $att['enableViewButton'] : false;
         $viewIconName 		        = isset($att['viewIconName']) ? $att['viewIconName'] : "";
         $viewButtonLabel 		        = isset($att['viewButtonLabel']) ? $att['viewButtonLabel'] : "";
+        $columns 		        = isset($att['columns']) ? $att['columns'] : "";
+        $gutter 		        = isset($att['gutter']) ? $att['gutter'] : "";
         
         
         $enableShareButton 		        = isset($att['enableShareButton']) ? $att['enableShareButton'] : true;
