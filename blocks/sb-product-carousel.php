@@ -1349,7 +1349,9 @@ class WPRIG_SB_Product_Carousel{
 		// }
 		//column
 		$html .= "<div class='wprig-banner'>"; 
-		$html .= "<img src = '".$image['url']."' />";
+		if(isset($image['url'])){
+			$html .= "<img src = '".$image['url']."' />";
+		}
 		$html .= "</div>";
 		if ($layout == 2) {
 			$col = (' wprig-sb-product-carousel wprig-sb-product-carousel-column wprig-sb-product-carousel-column-md' . $column['md'] . ' wprig-sb-product-carousel-column-sm' . $column['sm'] . ' wprig-sb-product-carousel-column-xs' . $column['xs']);
