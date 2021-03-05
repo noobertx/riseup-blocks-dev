@@ -12617,9 +12617,6 @@ var _wp$components = wp.components,
     FormTokenField = _wp$components.FormTokenField,
     TextControl = _wp$components.TextControl;
 var _wp$wprigComponents = wp.wprigComponents,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
-    Color = _wp$wprigComponents.Color,
-    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
     _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
     ContextMenu = _wp$wprigComponents$C.ContextMenu,
     handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
@@ -12628,8 +12625,6 @@ var _wp$wprigComponents = wp.wprigComponents,
     animationSettings = _wp$wprigComponents$g.animationSettings,
     interactionSettings = _wp$wprigComponents$g.interactionSettings,
     HeadingToolbar = _wp$wprigComponents.HeadingToolbar,
-    Typography = _wp$wprigComponents.Typography,
-    Range = _wp$wprigComponents.Range,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
@@ -12787,14 +12782,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           titleBefore = _this$props3$attribut.titleBefore,
           titleAfter = _this$props3$attribut.titleAfter,
           animationType = _this$props3$attribut.animationType,
-          typography = _this$props3$attribut.typography,
-          color = _this$props3$attribut.color,
-          barColor = _this$props3$attribut.barColor,
-          animatedTextColor = _this$props3$attribut.animatedTextColor,
-          animatedTextBgColor = _this$props3$attribut.animatedTextBgColor,
-          animatedTextPadding = _this$props3$attribut.animatedTextPadding,
-          animatedTextSpacing = _this$props3$attribut.animatedTextSpacing,
-          textBorderRadius = _this$props3$attribut.textBorderRadius,
           animation = _this$props3$attribut.animation,
           interaction = _this$props3$attribut.interaction,
           enablePosition = _this$props3$attribut.enablePosition,
@@ -12887,121 +12874,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         }],
         onChange: function onChange(val) {
           return _this3._handleTypeChange(val);
-        }
-      }), animationType === 'loading-bar' && /*#__PURE__*/React.createElement(Color, {
-        label: __('Bar Color'),
-        value: barColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            barColor: val
-          });
-        }
-      }), gradientTextColor ? /*#__PURE__*/React.createElement(ColorAdvanced, {
-        textColor: true,
-        label: __('Color'),
-        value: animatedTextColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            animatedTextColor: val
-          });
-        }
-      }) : /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: animatedTextColor.color,
-        onChange: function onChange(val) {
-          return setAttributes({
-            animatedTextColor: _objectSpread(_objectSpread({}, animatedTextColor), {}, {
-              color: val
-            })
-          });
-        }
-      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
-        textColor: true,
-        label: __('Background'),
-        value: animatedTextBgColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            animatedTextBgColor: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        label: __('Radius'),
-        value: textBorderRadius,
-        unit: ['px', 'em', '%'],
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        },
-        onChange: function onChange(val) {
-          return setAttributes({
-            textBorderRadius: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Padding X'),
-        value: animatedTextPadding,
-        onChange: function onChange(animatedTextPadding) {
-          return setAttributes({
-            animatedTextPadding: animatedTextPadding
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing X'),
-        value: animatedTextSpacing,
-        onChange: function onChange(animatedTextSpacing) {
-          return setAttributes({
-            animatedTextSpacing: animatedTextSpacing
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Design'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Typography, {
-        device: device,
-        value: typography,
-        label: __('Typography'),
-        onChange: function onChange(value) {
-          return setAttributes({
-            typography: value
-          });
-        },
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: color,
-        onChange: function onChange(val) {
-          return setAttributes({
-            color: val
-          });
         }
       }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
@@ -13264,40 +13136,6 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": 'clip'
   },
-  typography: {
-    type: 'object',
-    "default": {
-      openTypography: false,
-      height: {
-        md: '1.2',
-        unit: 'em'
-      },
-      size: {
-        md: '28',
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text'
-    }]
-  },
-  textBorderRadius: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 0,
-      radiusType: 'global',
-      global: {},
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text'
-    }]
-  },
-  // animatedTextTypography: {
-  //     type: 'object',
-  //     default: {},
-  //     style: [{ selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper' }]
-  // },
   titleBefore: {
     type: 'string',
     "default": 'The power of'
@@ -13305,141 +13143,6 @@ var attributes = _objectSpread(_objectSpread({
   titleAfter: {
     type: 'string',
     "default": 'makes us infinite'
-  },
-  color: {
-    type: 'string',
-    "default": '#000',
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text{ color:{{color}}; }'
-    }]
-  },
-  barColor: {
-    type: 'string',
-    "default": '#22b8f0',
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text.loading-bar .animated-text-words-wrapper::after { background:{{barColor}}; }'
-    }]
-  },
-  animatedTextColor: {
-    type: 'object',
-    "default": {
-      type: 'gradient',
-      textColor: true,
-      openColor: 1,
-      color: 'var(--wprig-color-1)',
-      gradient: {
-        color1: '#1066CC',
-        color2: '#55cd37',
-        direction: 0,
-        start: 0,
-        stop: 100,
-        clip: false,
-        type: 'linear',
-        radial: 'center'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper span'
-    }]
-  },
-  animatedTextBgColor: {
-    type: 'object',
-    "default": {
-      type: 'color',
-      openColor: 0,
-      color: '#eae212',
-      gradient: {
-        color1: '#1066CC',
-        color2: '#55cd37',
-        direction: 0,
-        start: 0,
-        stop: 100,
-        type: 'linear',
-        radial: 'center'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text'
-    }]
-  },
-  // animatedTextPadding: {
-  //     type: 'object',
-  //     default: {
-  //         openPadding: 0,
-  //         paddingType: 'custom',
-  //         global: { md: '5' },
-  //         custom: { },
-  //         unit: 'px'
-  //     },
-  //     style: [{ selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text' }]
-  // },
-  animatedTextPadding: {
-    type: 'object',
-    "default": {
-      md: 0,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text {padding: 0 {{animatedTextPadding}};}'
-    }]
-  },
-  animatedTextSpacing: {
-    type: 'object',
-    "default": {
-      md: 0,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text {margin: 0 {{animatedTextSpacing}};}'
-    }]
-  },
-  animatedTextBorderRadius: {
-    type: 'object',
-    "default": {
-      radiusType: 'global',
-      global: {},
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper'
-    }]
-  },
-  border: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading'
-    }]
-  },
-  bgBorderColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading:hover {border-color: {{bgBorderColorHover}};}'
-    }]
-  },
-  bgShadow: {
-    type: 'object',
-    "default": {
-      openShadow: 0,
-      horizontal: 1,
-      vertical: 1,
-      blur: 2,
-      color: 'rgba(0, 0, 0, .2)',
-      spread: 0
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading'
-    }]
-  },
-  bgShadowHover: {
-    type: 'object',
-    "default": {
-      color: ''
-    },
-    style: [{
-      selector: '{{WPRIG}}.wprig-block-animated-heading:hover'
-    }]
   },
   showGlobalSettings: {
     type: 'boolean',
