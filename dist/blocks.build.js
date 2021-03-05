@@ -7205,6 +7205,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-divider {\n  display: inline-block; }\n  .wprig-block-divider .wprig-block-divider-style-fill {\n    border-top-style: solid; }\n  .wprig-block-divider .wprig-block-divider-style-dot {\n    border-top-style: dotted; }\n  .wprig-block-divider .wprig-block-divider-style-dash {\n    border-top-style: dashed; }\n  .wprig-block-divider > div {\n    margin: 0 auto;\n    display: inline-block; }\n  .wprig-block-divider .divider-options-trigger {\n    display: block;\n    width: 100%;\n    margin: 0px;\n    padding: 0px;\n    color: inherit;\n    background: none;\n    box-shadow: none;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    font: inherit; }\n    .wprig-block-divider .divider-options-trigger:focus {\n      outline: none !important; }\n\n.wprig-divider-picker-options {\n  max-height: 300px; }\n\n.wprig-divider-picker-option:hover {\n  background: #e8eaeb;\n  border-radius: 5px; }\n\n.wprig-divider-picker.backend {\n  display: inline-block; }\n\n.components-panel__body .wprig-divider-picker {\n  width: 100%; }\n  .components-panel__body .wprig-divider-picker button {\n    cursor: pointer;\n    color: inherit; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss":
 /*!*********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss ***!
@@ -9898,18 +9916,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_advance_list_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/advance-list/block */ "./src/blocks/advance-list/block.js");
 /* harmony import */ var _blocks_animated_headline_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animated-headline/block */ "./src/blocks/animated-headline/block.js");
 /* harmony import */ var _blocks_counter_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/counter/block */ "./src/blocks/counter/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_divider_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/divider/block */ "./src/blocks/divider/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9930,8 +9949,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/buttongroup/block";
 // import "./blocks/contact-form/block";
 
- // import "./blocks/divider/block";
-// import "./blocks/icon/block";
+
+ // import "./blocks/icon/block";
 // import "./blocks/iconlist/block";
 // import "./blocks/iconlist-connector/block";
 // import "./blocks/image/block";
@@ -10008,7 +10027,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_16__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_17__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -13651,6 +13670,1020 @@ registerBlockType('wprig/counter', {
   edit: _Edit__WEBPACK_IMPORTED_MODULE_0__["default"],
   save: _Save__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
+
+/***/ }),
+
+/***/ "./src/blocks/divider/Edit.js":
+/*!************************************!*\
+  !*** ./src/blocks/divider/Edit.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./icon */ "./src/blocks/divider/icon.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    Toolbar = _wp$components.Toolbar,
+    Tooltip = _wp$components.Tooltip,
+    Dropdown = _wp$components.Dropdown;
+var _wp$wprigComponents = wp.wprigComponents,
+    Alignment = _wp$wprigComponents.Alignment,
+    Range = _wp$wprigComponents.Range,
+    Color = _wp$wprigComponents.Color,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+var dividerOptions = ['fill', 'dot', 'dash', 'branch', 'dashes', 'leaf', 'line1', 'line2', 'line3', 'line4', 'line5', 'line6', 'line7', 'line8', 'line9', 'line10', 'line11', 'line12', 'line13', 'liner', 'mustache', 'shadow', 'slash', 'spring', 'valla', 'wave1', 'wave2', 'wave3'];
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "renderDividerOptions", function () {
+      var setAttributes = _this.props.setAttributes;
+      return /*#__PURE__*/React.createElement("div", {
+        className: "wprig-divider-picker-options"
+      }, /*#__PURE__*/React.createElement("ul", null, dividerOptions.map(function (item, index) {
+        return /*#__PURE__*/React.createElement("li", {
+          className: "wprig-divider-picker-option ".concat(index),
+          onClick: function onClick() {
+            setAttributes({
+              style: item
+            });
+          }
+        }, _icon__WEBPACK_IMPORTED_MODULE_0__["default"][item]);
+      })));
+    });
+
+    _this.state = {
+      device: 'md',
+      isOpen: false,
+      spacer: true
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          name = _this$props2.name,
+          clientId = _this$props2.clientId,
+          attributes = _this$props2.attributes,
+          isSelected = _this$props2.isSelected,
+          setAttributes = _this$props2.setAttributes,
+          _this$props2$attribut = _this$props2.attributes,
+          uniqueId = _this$props2$attribut.uniqueId,
+          className = _this$props2$attribut.className,
+          color = _this$props2$attribut.color,
+          height = _this$props2$attribut.height,
+          width = _this$props2$attribut.width,
+          alignment = _this$props2$attribut.alignment,
+          style = _this$props2$attribut.style,
+          animation = _this$props2$attribut.animation,
+          globalZindex = _this$props2$attribut.globalZindex,
+          enablePosition = _this$props2$attribut.enablePosition,
+          selectPosition = _this$props2$attribut.selectPosition,
+          positionXaxis = _this$props2$attribut.positionXaxis,
+          positionYaxis = _this$props2$attribut.positionYaxis,
+          hideTablet = _this$props2$attribut.hideTablet,
+          hideMobile = _this$props2$attribut.hideMobile,
+          globalCss = _this$props2$attribut.globalCss,
+          interaction = _this$props2$attribut.interaction;
+      var device = this.state.device;
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Divider Options'),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Dropdown, {
+        className: "wprig-divider-picker",
+        contentClassName: "wprig-divider-picker-content",
+        position: "bottom center",
+        renderToggle: function renderToggle(_ref) {
+          var isOpen = _ref.isOpen,
+              onToggle = _ref.onToggle;
+          return /*#__PURE__*/React.createElement("div", {
+            className: "shape-divider-options"
+          }, /*#__PURE__*/React.createElement("button", {
+            onClick: onToggle,
+            "aria-expanded": isOpen
+          }, /*#__PURE__*/React.createElement(Tooltip, {
+            text: isOpen ? __('Close options') : __('Find more options')
+          }, _icon__WEBPACK_IMPORTED_MODULE_0__["default"][style])));
+        },
+        renderContent: function renderContent() {
+          return _this2.renderDividerOptions();
+        }
+      }), /*#__PURE__*/React.createElement(Alignment, {
+        label: __('Alignment'),
+        alignmentType: "content",
+        disableJustify: true,
+        value: alignment,
+        onChange: function onChange(val) {
+          return setAttributes({
+            alignment: val
+          });
+        },
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Divider Settings', 'wprig'),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: color,
+        onChange: function onChange(val) {
+          return setAttributes({
+            color: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Height'),
+        value: height,
+        onChange: function onChange(val) {
+          return setAttributes({
+            height: val
+          });
+        },
+        min: 0,
+        max: 15,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Width'),
+        value: width,
+        onChange: function onChange(val) {
+          return setAttributes({
+            width: val
+          });
+        },
+        min: 0,
+        max: 1000,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : ''),
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        }
+      }, /*#__PURE__*/React.createElement(Dropdown, {
+        className: "wprig-divider-picker backend",
+        contentClassName: "wprig-divider-picker-content",
+        position: "bottom center",
+        renderToggle: function renderToggle(_ref2) {
+          var isOpen = _ref2.isOpen,
+              onToggle = _ref2.onToggle;
+          return /*#__PURE__*/React.createElement("div", {
+            className: "wprig-block-divider",
+            onClick: onToggle,
+            "aria-expanded": isOpen
+          }, style == 'fill' || style == 'dot' || style == 'dash' ? /*#__PURE__*/React.createElement("div", {
+            className: "wprig-block-divider-style-".concat(style)
+          }) : _icon__WEBPACK_IMPORTED_MODULE_0__["default"][style]);
+        },
+        renderContent: function renderContent() {
+          return _this2.renderDividerOptions();
+        }
+      }), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      }))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/divider/Save.js":
+/*!************************************!*\
+  !*** ./src/blocks/divider/Save.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./icon */ "./src/blocks/divider/icon.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+var Component = wp.element.Component;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          style = _this$props$attribute.style,
+          animation = _this$props$attribute.animation,
+          interaction = _this$props$attribute.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'wprig-block-interaction' : '';
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-divider ".concat(interactionClass)
+      }, style == 'fill' || style == 'dot' || style == 'dash' ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-divider-style-".concat(style)
+      }) : _icon__WEBPACK_IMPORTED_MODULE_0__["default"][style]));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/divider/block.js":
+/*!*************************************!*\
+  !*** ./src/blocks/divider/block.js ***!
+  \*************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/divider/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/divider/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/divider/Save.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+registerBlockType('wprig/divider', {
+  title: __('Divider'),
+  description: 'Use beautiful pre-designed dividers with wprig Divider.',
+  icon: 'universal-access-alt',
+  category: 'wprig-blocks',
+  keywords: [__('Divider'), __('Separator')],
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  example: {
+    attributes: {}
+  },
+  attributes: _objectSpread(_objectSpread({
+    uniqueId: {
+      type: 'string',
+      "default": ''
+    }
+  }, globalAttributes), {}, {
+    spacer: {
+      type: 'object',
+      "default": {
+        spaceTop: {
+          md: '10',
+          unit: "px"
+        },
+        spaceBottom: {
+          md: '10',
+          unit: "px"
+        }
+      },
+      style: [{
+        selector: '{{WPRIG}}'
+      }]
+    },
+    style: {
+      type: 'string',
+      "default": 'slash'
+    },
+    color: {
+      type: 'string',
+      "default": '#252525',
+      style: [{
+        selector: '{{WPRIG}} .wprig-block-divider > div { border-top-color: {{color}}; } {{WPRIG}} .wprig-block-divider path { fill: {{color}}; } {{WPRIG}} .wprig-block-divider circle { stroke: {{color}}; }  {{WPRIG}} .wprig-block-divider ellipse { stroke: {{color}}; fill: {{color}}; }'
+      }]
+    },
+    height: {
+      type: 'object',
+      "default": {
+        md: '2',
+        unit: 'px'
+      },
+      style: [{
+        selector: '{{WPRIG}} .wprig-block-divider > div { border-top-width: {{height}};}'
+      }]
+    },
+    width: {
+      type: 'object',
+      "default": {
+        md: '280',
+        unit: 'px'
+      },
+      style: [{
+        selector: '{{WPRIG}} .wprig-block-divider > div { width: {{width}};} {{WPRIG}} .wprig-block-divider svg { width: {{width}};}'
+      }]
+    },
+    alignment: {
+      type: 'object',
+      "default": {
+        md: 'center'
+      },
+      style: [{
+        selector: '{{WPRIG}} {text-align: {{alignment}};}'
+      }]
+    },
+    sourceOfCopiedStyle: {
+      type: 'boolean',
+      "default": false
+    }
+  }),
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/divider/icon.js":
+/*!************************************!*\
+  !*** ./src/blocks/divider/icon.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var icons = {};
+icons.fill = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M23.6 19h192.7v2H23.6v-2z"
+}));
+icons.dot = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40"
+}, /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "31.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "47.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "35.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "43.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "39.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "51.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "67.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "55.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "63.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "59.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "71.7",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "87.7",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "75.7",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "83.7",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "79.7",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "91.9",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "107.9",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "95.9",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "103.9",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "99.9",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "112",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "128",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "116",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "124",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "120",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "132.1",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "148.1",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "136.1",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "144.1",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "140.1",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "152.3",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "168.3",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "156.3",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "164.3",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "160.3",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "172.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "188.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "176.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "184.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "180.4",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "192.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "208.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "196.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "204.6",
+  cy: "20",
+  r: "1"
+}), /*#__PURE__*/React.createElement("circle", {
+  "class": "st0",
+  cx: "200.6",
+  cy: "20",
+  r: "1"
+}));
+icons.dash = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M48.4 19h2v2h-4v-2h2zm-10 0v2h4v-2h-4zm-8 0v2h4v-2h-4zm32.2 0v2h4v-2h-4zm-8 0v2h4v-2h-4zm32.1 0v2h4v-2h-4zm-16 0v2h4v-2h-4zm8 0v2h4v-2h-4zm16.2 0v2h4v-2h-4zm8 0v2h4v-2h-4zm8.1 0v2h4v-2h-4zm8 0v2h4v-2h-4zm8 0v2h4v-2h-4zm16.1 0v2h4v-2h-4zm-8 0v2h4v-2h-4zm24.2 0v2h4v-2h-4zm8 0v2h4v-2h-4zm-16 0v2h4v-2h-4zm24.1 0v2h4v-2h-4zm8 0v2h4v-2h-4zm16.2 0v2h4v-2h-4zm-8 0v2h4v-2h-4zm18 0h-2v2h4v-2h-2z"
+}));
+icons.branch = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M217.3 15.8c-2.1-.3-4.3-.2-6.3.4.9-2.7 1.2-7.3-2.1-7.7-1.4-.2-2.3.9-2.6 2.1-.4 2 .9 3.9 1.1 5.8 0 .3.6.3.6 0 .4-2-1.4-4-.5-5.9.4-1 1.8-.8 2.3.1.3.6.4 1.3.5 1.9.1 1.4-.2 2.8-.8 4.1v.1c-.2.1-.2.3-.2.5-.3-.6-1-.9-1.6-.3-4 3.9-8.5 5.5-13.3 5.8.8-.4 1.5-.9 2.2-1.5 1.4-1.2 3.3-3.2 2-5-.2-.3-.4-.4-.7-.3-2.8.5-6.3 2.5-6.9 5.6-.1.3.4.7.6.4.9-1 1.5-2.1 2.6-2.9 1-.8 2.3-1.3 3.6-1.6.4 1.4-1.7 2.8-2.6 3.5-1.3 1-2.9 1.8-4.5 1.3-.4-.1-.8.2-.8.5-8.4-.7-17.4-4.2-25.3-5.5.8-.4 1.5-.9 2.2-1.5 1.1-.9 2.9-3 1.9-4.5s-3.8.2-4.8.9c-1.9 1.2-3.4 2.8-4.4 4.7-6.8-.1-13.3 1.4-19.9 3 2.3-2.9 5.7-8.4 1.5-8.6-4.3-.2-6.2 6.1-5.1 9.4v.1c-5.3 1.3-10.6 2.6-16.1 3 2.5-2.3 6.7-6.9 3.4-8.5-1.7-.8-3.5 1-4.4 2.3-1.3 1.8-2.3 4.1-2.4 6.3-5.6-.1-11-1.3-16.3-2.7.1-.1.2-.3.1-.5-.4-1.5-3.9-11.2-6.6-7.7-1 1.3.1 3.6.9 4.7.7 1 1.6 1.9 2.6 2.7-7.5-2-15.1-3.9-23.1-3.1-.3 0-.7.1-1 .1-1.3-3.2-4.5-5.2-7.9-5.2-.3 0-.7.3-.7.6.1 2.3 1.4 4.4 3.4 5.5-6.1 1.3-12.6 3.1-18.9 3.9-1-2.1-2.5-3.9-4.4-5.2-1.1-.8-3.7-2.4-4.9-1-1.1 1.3.1 3.1 1 4 1.4 1.4 3.5 2.4 5.5 2.5-6 .4-11.8-.4-16.9-3.9 2.7-2.3 3.3-6.6 1.2-9.6-.2-.3-.6-.4-.9-.1-1.7 1.8-2.7 4.3-2.4 6.8-1.6-2.3-4.5-3.7-7.2-4.1-.4-.1-.7.4-.6.8 1 2.9 3.6 5.5 6.7 5.6.1 0 .2 0 .2-.1 2.2 2.3 4.7 3.9 7.4 4.9-3.7.2-9.6 1.2-7.4 4.5 1.2 1.8 3.9 1.1 5.6.5 2.2-.8 4.1-2.1 5.6-3.9 6.3 1.2 13.2.2 19.8-1.2-1.1.8-2.1 1.7-3 2.7-1 1.1-3.5 3.6-1.8 5.1 1.5 1.4 4.2-.8 5.4-1.8 1.9-1.6 3.6-4 4-6.5 0-.2 0-.3-.1-.4 2-.5 4-.9 5.8-1.3 4.9-1 9.5-1.3 14.2-1-1.1.4-2.1.9-3 1.5-1.3.9-3.8 2.4-3.6 4.3.2 1.6 2.1 2.2 3.5 1.7 1-.4 1.8-1.2 2.6-1.9 1.3-1.2 2.6-2.4 3.8-3.6.3-.3.2-.7 0-.9.3-.2.6-.4.8-.7 2.9.4 5.8 1 8.8 1.8 4.4 1.2 8.8 2.5 13.2 3.4-3.1.9-6 3.1-7.9 5.7-.3.4.1 1.1.6 1.1 4.1-.2 8.2-2.4 10.2-6.1 0-.1 0-.1.1-.2 2.7.4 5.5.6 8.4.4 2-.1 4.1-.4 6.1-.7 1.5 1.7 3.4 3 5.4 3.9 1.2.5 3.6 1.7 4.7.4.8-1 .1-2.4-.7-3.2-1-1-2.3-1.7-3.6-2.2 3.7-.8 7.4-1.8 11-2.7.5.9 1.4 2 1.6 2.2 2.3 2.1 5.2 3.3 8.3 3.5.5 0 .8-.5.7-.9-.8-2.9-3.2-5.2-6.1-5.9 7.7-1.5 15.2-1.8 23 .1 1.4.3 2.8.7 4.2 1-.2.1-.3.3-.3.5-.8 1.4-.4 3.1.5 4.4 1.2 1.8 3.3 2.6 5.3 3.2.5.2.9-.3.8-.8-.4-2.5-2.1-5.5-4.5-6.8 7.5 1.9 15.5 3.9 22.8 2.5 1.9 1.6 4.1 2.7 6.5 3.2 1.3.3 4.4 1.2 5.4 0 2.2-2.6-3.9-4.1-7.3-4.6 2.1-.9 4.1-2.2 6-4 .1.2.2.3.4.4 2.6 1 5.3 1.4 8 1 1.2-.2 3.9-.4 4-2.2-.3-2-3-2.2-4.2-2.4zM25.6 17.2c-2.2-.9-4-2.2-5-4.3 2.3.5 4 1.9 5.5 3.7-.3.1-.5.3-.5.6zm1.9.3c.1-.2.2-.4.1-.6 0 0 0-.1-.1-.1 0 0 .1-.1.1-.2-.1-2.5.4-4.6 1.9-6.5 1.3 2.6.6 5.7-1.6 7.6-.1 0-.2-.1-.4-.2zm5.3 8.3c-1 .5-3.4 1.5-4.5 1.1-.8.1-1-.4-.6-1.6.4-.1.8-.3 1.1-.4.7-.2 1.3-.4 2-.6 1.6-.3 3.1-.4 4.7-.4h.2c-.8.7-1.8 1.4-2.9 1.9zm14-3.5c.3-.2.3-.6-.1-.6-1.7-.3-3.2-.7-4.5-1.7-.6-.5-1.4-1.2-1.7-1.9-.5-1.2.6-1.4 1.5-1 2.3 1.1 4.1 2.9 5.3 5.2h-.5zm10.8 4c-.4.5-3.9 3.8-4.5 2.3-.3-.8 2.8-3.6 3.4-4.2 1-1 2.1-1.8 3.3-2.6.1 0 .2 0 .3-.1-.7 1.8-1.3 3.3-2.5 4.6zm11.9-8.5c-2-.6-3.6-2.2-4-4.4 2.6.3 4.6 1.8 5.9 4-.7.1-1.3.3-1.9.4zm14.2 2l-.1.1c-.4.4-.8.7-1.1 1.1-.1.1-.1.3 0 .4-.9.8-1.7 1.6-2.6 2.4-.5.4-1.1 1.1-1.7 1.4-2.2 1.2-1.6-1.2-.7-2.1 1.9-1.8 4-2.8 6.4-3.6-.2.1-.2.2-.2.3zM94.3 15c-.1-.3-.1-.6-.1-1 .6-.4 1.1-.4 1.4.2.6.5 1 1.5 1.4 2.2.6 1.2 1.1 2.4 1.5 3.7-1.9-1.5-3.7-2.9-4.2-5.1zm7.5 14.9c1.9-2 4.1-3.3 6.7-4.3-1.7 2.2-3.9 3.8-6.7 4.3zm15.5-6.3c-.1 0-.1 0 0 0h-.3c.4-1.3.8-2.6 1.5-3.9.6-1 1.6-3.2 2.9-3.4 2.7-.4-.4 3.7-.9 4.3-1 1.2-2.1 2.2-3.2 3zm14.1 2.2c.6.3 1.3.7 1.8 1.2.6.4.6.7.1 1-.2.5-.5.6-1 .3-1.2 0-2.7-1-3.7-1.6-1-.6-1.9-1.2-2.7-2 .7-.1 1.4-.3 2.1-.4 1.2.5 2.3.9 3.4 1.5zm5.1-5.5c-.5-2.7.4-7.4 3.7-7.9 2.2-.3 0 3.2-.5 4-.8 1.3-1.8 2.5-2.7 3.7-.2.2-.4.2-.5.2zm14 5.1c-1.4-.2-2.8-.6-4.1-1.3-.3-.2-3.1-2.1-3.9-3.2.4-.1.7-.2 1.1-.2 0 .3.2.6.6.7 2.8.1 5.1 1.5 6.3 4zm10.9-8.6c-.5 0-.9-.1-1.4-.1.6-.9 1.4-1.7 2.2-2.5.7-.6 3.9-3.1 4.7-2.2 1 1.1-2 3.2-2.9 3.6-.8.5-1.7.9-2.6 1.2zm15.2 8.1c.7.8 1.2 1.8 1.5 2.8-2.4-.9-4.7-2.4-4.4-5.1 1 .7 2 1.2 2.9 2.3zm29.1-.4c.7.2 1.8.5 2.2 1 .9 1 .5 1.2-.7 1.1-3-.2-5.6-1.2-8.1-2.7.4-.1.8-.2 1.1-.3.1.1.2.1.4.1 1.7.1 3.4.2 5.1.8zm8.8-5.6c-1.8 0-3.5-.5-5.2-1.1h-.1c0-.2 0-.4-.1-.6.1.2.2.3.4.3.2.2.6.2.8-.1 2.3-.4 8.7-1 8.6.6.1 1-3.4.9-4.4.9z"
+}));
+icons.dashes = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M44.5 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.2.5-.5.5zM61.4 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.2.5-.5.5z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "71.4",
+  cy: "20",
+  r: ".5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M88.2 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.2.5-.5.5zM105.1 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.3.5-.5.5z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "115",
+  cy: "20",
+  r: ".5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M131.8 20.5h-6.8c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.3.5-.6.5zM148.7 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.2.5-.5.5z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "158.7",
+  cy: "20",
+  r: ".5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M175.5 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.2.5-.5.5zM192.4 20.5h-6.9c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h6.9c.3 0 .5.2.5.5s-.3.5-.5.5z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "202.3",
+  cy: "20",
+  r: ".5"
+}));
+icons.leaf = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M201.1 16.2c-2.5-.1-4.8.7-6.9 2.1-1.4.1-2.9.1-4.3.2 2.1-1.4 3.8-3.5 4.6-5.9.2-.5-.4-.9-.8-.8-3.3.7-7.1 3.4-7.7 6.9-1.4.1-2.7.1-4.1.1.5-.4 1-.8 1.3-1.2 1.6-1.7 2.7-3.8 3.2-6 .1-.5-.3-1-.8-.8-3.7.9-7.7 4-8.1 8.1 0 .1-.1.1-.1.2-38.5 1.3-76.9 1.6-115.4 1.5-.2-.2-.5-.2-.7-.2.1-.2.1-.4 0-.6-.9-1.8-3.9-8.8-6.9-6-1.2 1.1-.2 3 .5 4.1.9 1.2 2.1 2.2 3.5 2.7h-5.8c.6-2.4-2.8-7.9-5.7-6.2-1.6.9-.7 3 .1 4.1.6.8 1.4 1.6 2.4 2.1h-3.6c.1-.1 0-.3-.1-.5-1.5-1.6-3.7-2.4-5.9-2.5-1.5-.1-4.1 0-4.7 1.7-1.4 4 8.3 3.3 10.1 2.9.4-.1.6-.5.5-.9 1.5.1 3 .1 4.5.2-1.5.5-2.9 1.4-4.2 2.4-1 .8-2.8 2.5-1.8 3.9 1 1.5 3.5-.1 4.5-.8 1.8-1.2 3.5-2.8 4.5-4.7.1-.2.1-.5 0-.6 1.3.1 2.6.1 3.9.1-1 .7-1.9 1.4-2.7 2.3-.9 1-3 3.1-1.9 4.6 1.2 1.6 3.9-.6 4.9-1.4 1.9-1.4 3.4-3.2 4.5-5.3 38.3 1.3 77 .6 115.3-1.2.7 1.8 1.9 3.5 3.2 4.9.9 1 2.6 2.5 4.1 1.6 1.7-1 .5-3.2-.2-4.4-.5-.9-1.2-1.7-2-2.4 1.3-.1 2.6-.1 4-.2.4 2.1 1.9 4.1 3.6 5.4 1.2.9 3.2 2.2 4.6 1 1.6-1.3.2-3.4-.8-4.4-.8-.8-1.9-1.6-3-2.2 1.5-.1 2.9-.2 4.4-.2.3 0 .5-.2.6-.3 2.2.8 4.7 1.5 6.9 1.1 1.2-.2 3-1.1 2.8-2.7-.5-1.7-3.1-1.7-4.3-1.8zM44.2 20.9c-1.1.1-2.1.2-3.2.1-.5 0-4.1-.3-4.3-.9-.2-.7 2.2-.9 2.4-.9.7 0 1.5 0 2.2.2 1.1.2 2.2.7 3.2 1.2-.2-.1-.3.1-.3.3zm4.7-2.3c-.4-.4-2.3-2.8-1-3 1-.2 2 1.1 2.4 1.8.6.9.7 1.9 1 2.8-.9-.5-1.7-.9-2.4-1.6zm.3 6.2c-.6.5-2.6 2.2-3.4 1.8-.6-.3.4-1 .7-1.3.5-.5 1-1 1.6-1.4 1.1-.8 2.3-1.3 3.5-1.8-.7.9-1.4 1.9-2.4 2.7zm7.3-6.7c-.4-.4-2.6-3.3-.8-3.5 1.1-.1 2.1 2 2.6 2.8.6 1 1.1 2 1.7 3-.2 0-.3.1-.5.1h-.2c.1-.2.1-.5-.1-.6-1-.4-1.9-1-2.7-1.8zm1.3 6.6c-.6.6-1.3 1.2-2 1.7-.3.2-1.9 1.4-2.2 1.2-.5-.3 2.4-3.4 2.8-3.7.9-.8 1.8-1.4 2.8-2h.7c-.5 1-1.2 2-2.1 2.8zm120.5-6.1c.7-1.3 1.3-2.7 2.5-3.8 1.1-1.1 2.4-1.9 3.9-2.4-.4 1.3-1.1 2.6-2.1 3.7-.6.7-1.2 1.2-2 1.7-.3.2-.7.4-1 .6-.1.1-.3.1-.4.2-.3 0-.5 0-.6.1-.1 0-.2-.1-.3-.1zm4 3.9c.4.6 2.3 3.5.8 3.4-1.1-.1-2.3-2-2.8-2.8-.5-.8-1-1.6-1.4-2.4.5 0 1-.1 1.6-.1.6.6 1.2 1.2 1.8 1.9zm7.1-7.2c1-.8 2-1.4 3.2-1.8-1.1 2.3-3.1 4-5.6 4.8.8-1.1 1.4-2.1 2.4-3zm1.3 6.4c.6.4 1.2.9 1.8 1.5.5.5 2.1 2.6 0 2.4-1.1-.1-2.5-1.5-3.2-2.3-.8-.9-1.2-2-1.7-3.1h.3c.9.5 1.9.9 2.8 1.5zm10.6-2.2c-.6 0-1.2 0-1.8-.1-1.2-.1-2.4-.3-3.5-.5 1-.6 2-1 3.2-1.2.8-.1 4.2-.5 4.6.5.2.7-2.2 1.2-2.5 1.3z"
+}));
+icons.line1 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M199 18.7H41c-.6 0-1-.5-1-1 0-.6.5-1 1-1h158c.6 0 1 .5 1 1 0 .6-.5 1-1 1zm0 4.9H41c-.6 0-1-.5-1-1 0-.6.5-1 1-1h158c.6 0 1 .5 1 1s-.5 1-1 1z"
+}));
+icons.line2 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M89.3 19.8c-2.1-.1-4.2-.1-6.3-.1-4.2 0-8.4 0-12.7.1l-12.7.1L45 20l12.7.1 12.7.1c4.2 0 8.4.1 12.7.1 2.1 0 4.2 0 6.3-.1l3.2-.1c1.1 0 2.1-.1 3.2-.1-1.1-.1-2.1-.1-3.2-.1l-3.3-.1z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "120.2",
+  cy: "20",
+  r: "2.5",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-width": "1.5",
+  "stroke-miterlimit": "10"
+}), /*#__PURE__*/React.createElement("ellipse", {
+  transform: "rotate(-4.731 103.392 20)",
+  cx: "103.4",
+  cy: "20",
+  rx: "1.9",
+  ry: "1.9"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M98.6 19c-.5 0-1 .4-1 1 0 .5.4 1 1 1s1-.4 1-1c0-.5-.4-1-1-1zM111.5 19.7c-.7 0-1.4 0-2.1.1-.7.1-1.4.1-2.1.3l2.1.3c.7.1 1.4.1 2.1.1.7 0 1.4 0 2.1-.1.7-.1 1.4-.1 2.1-.3l-2.1-.3c-.7-.1-1.4-.1-2.1-.1zM182.3 19.8l-12.7-.1c-4.2 0-8.4-.1-12.7-.1-2.1 0-4.2 0-6.3.1l-3.2.1c-1.1 0-2.1.1-3.2.1v.1c1.1.1 2.1.1 3.2.1l3.2.1c2.1.1 4.2.1 6.3.1 4.2 0 8.4 0 12.7-.1l12.7-.1L195 20l-12.7-.2zM136.6 18.1c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 1.9 1.9 1.9s1.9-.9 1.9-1.9c0-1.1-.8-1.9-1.9-1.9zM141.4 19c-.5 0-1 .4-1 1 0 .5.4 1 1 1 .5 0 1-.4 1-1 0-.5-.5-1-1-1zM128.5 19.7c-.7 0-1.4 0-2.1.1-.7.1-1.4.1-2.1.3l2.1.3c.7.1 1.4.1 2.1.1.7 0 1.4 0 2.1-.1.7-.1 1.4-.1 2.1-.3l-2.1-.3c-.7-.1-1.4-.1-2.1-.1z"
+}));
+icons.line3 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M171.7 21.4c-4.4-.1-8.9-.1-13.3-.2l-13.3-.1-13-.1-2.3-2.8-.5-.6-.5.6-1.9 2.3-1.9-2.3-.5-.6-.5.6-1.9 2.3-1.8-2.3-.5-.6-.5.6-1.8 2.3-1.9-2.3-.5-.6-.5.6-1.9 2.3-1.9-2.3-.5-.6-.5.6-2.3 2.8-13 .1-13.3.1c-4.4 0-8.9.1-13.3.2s-8.9.1-13.3.2c4.4.1 8.9.2 13.3.2 4.4.1 8.9.1 13.3.2l13.3.1 13.3.1h.3l.2-.2 2-2.4 1.9 2.3.5.6.5-.6 1.9-2.3 1.9 2.3.5.6.5-.6 1.9-2.3 1.9 2.3.5.6.5-.6 1.9-2.3 1.9 2.3.5.6.5-.6 1.9-2.3 2 2.4.2.2h.3l13.3-.1 13.3-.1c4.4 0 8.9-.1 13.3-.2s8.9-.1 13.3-.2c-4.6-.1-9.1-.2-13.5-.2z"
+}));
+icons.line4 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M130.5 24.4l-3.9-5.2-2 2.5-4.6-6.1-4.6 6.1-2-2.5-3.9 5.2 3.9-4.6 1.8 2.1-1.9 2.5 2.1-2.4 2 2.4-1.9-2.5 4.5-5.2 4.5 5.2-1.9 2.5 2-2.4 2.1 2.4-1.9-2.5 1.8-2.1zM99.4 23c-2.6-.1-5.2-.1-7.8-.1-5.2-.1-10.4 0-15.5.1H60.5l-15.5.2v.1l15.5.2 15.5.1c5.2.1 10.4.2 15.5.1 2.6 0 5.2-.1 7.8-.1l3.9-.1c1.3-.1 2.6-.1 3.9-.2v-.1c-1.3-.1-2.6-.1-3.9-.2h-3.8zM179.5 23l-15.5-.1c-5.2-.1-10.4-.2-15.5-.1-2.6 0-5.2.1-7.8.1l-3.9.1c-1.3.1-2.6.1-3.9.2v.1c1.3.1 2.6.1 3.9.2l3.9.1c2.6.1 5.2.1 7.8.1 5.2.1 10.4 0 15.5-.1l15.5-.1 15.5-.2v-.1l-15.5-.2z"
+}));
+icons.line5 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M113.8 20.8H68.2c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8h45.6c.4 0 .8.3.8.8 0 .4-.4.8-.8.8zM172.4 20.8h-45.6c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8h45.6c.4 0 .7.3.7.8.1.4-.3.8-.7.8z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "120.2",
+  cy: "20",
+  r: "2.5",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-width": "1.5",
+  "stroke-miterlimit": "10"
+}));
+icons.line6 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M123.3 20.9l-2.4 2.4c-.5.5-1.4.5-1.9 0l-2.4-2.4c-.5-.5-.5-1.4 0-1.9l2.4-2.4c.5-.5 1.4-.5 1.9 0l2.4 2.4c.5.6.5 1.4 0 1.9z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M169.2 20.8H70.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8h98.5c.4 0 .8.3.8.8-.1.4-.4.8-.9.8z"
+}));
+icons.line7 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M65.9 20.2v-.5c0-.3.2-.5.5-.5h107.2c.3 0 .5.2.5.5v.5c0 .3-.2.5-.5.5H66.4c-.3.1-.5-.2-.5-.5z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M175.2 20.4l-3.7 3.7c-.2.2-.6.2-.9 0-.2-.2-.2-.6 0-.9l3.3-3.3-3.3-3.3c-.2-.2-.2-.6 0-.9.2-.2.6-.2.9 0l3.7 3.7c.1.1.2.3.2.4-.1.4-.1.5-.2.6zM65.1 19.6l3.7-3.7c.2-.2.6-.2.9 0 .2.2.2.6 0 .9L66.4 20l3.3 3.3c.2.2.2.6 0 .9-.2.2-.6.2-.9 0l-3.7-3.7c-.1-.1-.2-.3-.2-.4 0-.3.1-.4.2-.5z"
+}));
+icons.line8 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M117.7 13.5c-.5 0-.9.4-.9.9v4.8H70.3c-.5 0-.9.4-.9.9s.4.9.9.9h46.6v4.8c0 .5.4.9.9.9s.9-.4.9-.9V14.3c-.1-.5-.5-.8-1-.8zM169.7 19.1h-46.6v-4.8c0-.5-.4-.9-.9-.9s-.9.4-.9.9v11.4c0 .5.4.9.9.9s.9-.4.9-.9v-4.8h46.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9z"
+}));
+icons.line9 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M220.6 20.8l.9-.8-.9-.8c-.1-.1-2.6-2.2-5.7-2.2 1.6-2.7 1.1-5.9 1-6l-.2-1.2-1.1.4c-.1 0-3.2 1.2-4.8 3.9-.7 1.1-.9 2.3-1.1 3.3-.5-.4-1.2-.7-1.9-.7-1.4 0-2.6.9-3 2.2H36.5c-.4-1.3-1.6-2.2-3-2.2-.9 0-1.7.4-2.2.9-.1-1.1-.4-2.4-1.1-3.6-1.6-2.7-4.6-3.8-4.8-3.9l-1.1-.4-.2 1.3c0 .1-.5 3.3 1 6-3.1 0-5.6 2.1-5.7 2.2l-1 .8.9.8c.1.1 2.6 2.2 5.7 2.2-1.6 2.7-1.1 5.9-1 6l.2 1.2 1.1-.4c.1 0 3.2-1.2 4.8-3.9.7-1.2 1-2.5 1.1-3.6.6.6 1.4.9 2.2.9 1.4 0 2.6-.9 3-2.2h167.3c.4 1.3 1.6 2.2 3 2.2.7 0 1.4-.3 1.9-.7.1 1 .4 2.2 1.1 3.3 1.6 2.7 4.6 3.8 4.8 3.9l1.1.4.2-1.2c0-.1.5-3.3-1-6 3.2 0 5.7-2 5.8-2.1zM26.8 16.1c-.6-1.1-.8-2.4-.8-3.3.8.5 1.8 1.3 2.4 2.4.6 1 .8 2.2.8 3.1-.3-.1-.6-.3-.9-.4-.5-.6-1.1-1.1-1.5-1.8zm-5 3.9c.8-.4 2-.9 3.3-.9.8 0 1.6.2 2.3.5.2.2.4.3.7.5-.2.1-.4.3-.7.5-.7.3-1.4.5-2.3.5-1.3-.2-2.5-.7-3.3-1.1zm6.6 4.9c-.6 1.1-1.7 1.9-2.5 2.4 0-.9.2-2.2.9-3.3.4-.7 1-1.3 1.5-1.7.3-.1.6-.3.9-.4 0 .8-.2 1.9-.8 3zm5.1-3.7c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.6 1.2-1.2 1.2zM218.2 20c-.8.4-2 .9-3.3.9-.8 0-1.6-.2-2.3-.5-.2-.2-.4-.3-.7-.5.2-.1.4-.3.7-.5.7-.3 1.4-.5 2.3-.5 1.3.2 2.5.7 3.3 1.1zm-6.6-4.9c.6-1.1 1.7-1.9 2.5-2.4 0 .9-.2 2.2-.9 3.3-.4.7-1 1.3-1.5 1.7-.3.1-.6.3-.9.4 0-.8.2-1.9.8-3zm-4.7 6.1c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.6 1.2-1.2 1.2zm6.3 2.7c.6 1.1.8 2.4.9 3.3-.8-.5-1.8-1.3-2.4-2.4-.6-1-.8-2.2-.8-3.1.3.1.6.3.9.4.4.6 1 1.1 1.4 1.8z"
+}));
+icons.line10 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M119.8 23.3c-.4.2-.9 0-1.1-.4l-4.5-10.4c-.2-.4 0-.9.4-1.1.4-.2.9 0 1.1.4l4.5 10.4c.2.4 0 .9-.4 1.1z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M69.3 17.7c0-.5.4-.9.9-.9h46.9c.5 0 .9.4.9.9s-.4.9-.9.9H70.2c-.5-.1-.9-.5-.9-.9zM119.7 11.3c.4-.2.9 0 1.1.4l4.5 10.4c.2.4 0 .9-.4 1.1-.4.2-.9 0-1.1-.4l-4.5-10.4c-.2-.4 0-.9.4-1.1z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M170.2 17c0 .5-.4.9-.9.9h-46.9c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h46.9c.5 0 .9.4.9.9z"
+}));
+icons.line11 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M124.6 14l-4.6 4.6-4.6-4.6-1.4 1.4 4.6 4.6-4.6 4.6 1.4 1.4 4.6-4.6 4.6 4.6 1.4-1.4-4.6-4.6 4.6-4.6zM129.8 19h25v2h-25zM85.2 19h25v2h-25z"
+}));
+icons.line12 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  "class": "st1",
+  d: "M204.2 25.6h-98.8c-3.4 0-6.2-2.9-6.2-6.4 0-1 .4-2 1-2.8 1.3-1.7 3.1-2.3 4.6-1.8 1.4.5 2.3 1.8 2.3 3.3 0 1.5-1.3 2.8-2.8 2.8-1.2 0-2.4-.8-2.4-2.1h2v-.1s.2.1.4.1c.4 0 .8-.4.8-.8 0-.7-.4-1.2-1-1.4-.7-.3-1.6.1-2.4 1.1-.4.5-.6 1-.6 1.6 0 2.3 2 4.4 4.2 4.4h98.8c1.9 0 3.5-1.6 3.5-3.5h2c.2 3.1-2.3 5.6-5.4 5.6z"
+}), /*#__PURE__*/React.createElement("path", {
+  "class": "st1",
+  d: "M134.6 25.6H35.8c-3 0-5.5-2.5-5.5-5.5h2c0 1.9 1.6 3.5 3.5 3.5h98.8c2.2 0 4.2-2 4.2-4.4 0-.6-.2-1.1-.6-1.6-.8-1-1.7-1.4-2.4-1.1-.6.2-1 .8-1 1.4 0 .4.4.8.8.8.2 0 .4-.1.4-.1l2 .1c0 1.3-1.2 2.1-2.4 2.1-1.5 0-2.8-1.3-2.8-2.8 0-1.5.9-2.8 2.3-3.3 1.6-.6 3.3.1 4.7 1.8.7.8 1 1.8 1 2.8 0 3.4-2.9 6.3-6.2 6.3z"
+}), /*#__PURE__*/React.createElement("path", {
+  "class": "st1",
+  d: "M120 25.6c-2.6 0-4.8-2.1-4.8-4.8 0-2.6 2.1-4.8 4.8-4.8s4.8 2.1 4.8 4.8c0 2.6-2.2 4.8-4.8 4.8zm0-7.6c-1.5 0-2.8 1.3-2.8 2.8s1.3 2.8 2.8 2.8 2.8-1.3 2.8-2.8-1.3-2.8-2.8-2.8z"
+}));
+icons.line13 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M234.3 19.3c-1.5-.1-3.1-1.7-3.2-3.2-.1-.9-1.4-.9-1.4 0-.1 1.5-1.7 3.1-3.2 3.2h-89.9c-.4-1.7-1.8-3-3.6-3-1.7 0-3.2 1.3-3.6 2.9-4.3-.4-8.4-4.6-8.8-8.9-.1-.9-1.4-.9-1.4 0-.3 4.3-4.4 8.5-8.8 8.9-.3-1.6-1.8-2.9-3.4-2.9-1.9-.1-3.3 1.2-3.7 3H13.4c-1.5-.1-3.1-1.7-3.2-3.2-.1-.9-1.4-.9-1.4 0-.1 1.5-1.7 3.1-3.2 3.2-.9.1-.9 1.4 0 1.4 1.5.1 3.1 1.7 3.2 3.2 0 .5.3.7.7.7.4 0 .8-.2.7-.7.1-1.5 1.7-3.1 3.2-3.2h89.9c.4 1.7 1.8 3 3.6 3 1.7 0 3.3-1.3 3.6-2.9 4.3.4 8.4 4.6 8.8 8.9 0 .5.3.7.7.7.4 0 .8-.2.7-.7.3-4.3 4.4-8.5 8.8-8.9.3 1.6 1.8 2.9 3.4 2.9 1.9.1 3.3-1.2 3.7-3h89.9c1.5.1 3.1 1.7 3.2 3.2 0 .5.3.7.7.7.4 0 .8-.2.7-.7.1-1.5 1.7-3.1 3.2-3.2a.7.7 0 0 0 0-1.4zM9.6 21.8c-.4-.7-1.1-1.4-1.8-1.8.7-.4 1.4-1.1 1.8-1.8.4.7 1 1.2 1.6 1.7v.2c-.7.5-1.2 1-1.6 1.7zm95.1-1.8c.2-2.9 4.5-2.9 4.5 0s-4.4 2.9-4.5 0zm15.3 6.7c-1.2-3-3.7-5.5-6.7-6.7 3-1.2 5.5-3.7 6.7-6.7 1.2 3 3.7 5.5 6.7 6.7-3 1.2-5.5 3.7-6.7 6.7zm10.8-6.7c0-2.9 4.3-2.9 4.5 0-.1 2.9-4.5 2.9-4.5 0zm99.6 1.8c-.4-.7-1.1-1.4-1.8-1.8.7-.4 1.4-1.1 1.8-1.8.4.7 1.1 1.4 1.8 1.8-.7.4-1.3 1.1-1.8 1.8z"
+}));
+icons.liner = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M32 15.8c2 0 4 .1 6 .5s3.8 1.2 5.7 1.8c3.7 1.4 7.8 1.6 11.7 1.3 2-.2 3.9-.6 5.7-1.2 1.8-.7 3.7-1.5 5.7-2s4-.7 6-.8c2 0 4 0 6.1.4 2 .3 4 1.1 5.8 1.8 1.8.7 3.7 1.2 5.6 1.5 3.9.4 7.9.3 11.6-.9 1.8-.6 3.7-1.4 5.6-2 2-.6 4-.8 6-.9 2-.1 4.1 0 6.1.3s4 1 5.9 1.7c1.9.7 3.7 1.4 5.6 1.6 1.9.3 3.9.4 5.8.3 2-.1 3.9-.3 5.8-.8s3.7-1.4 5.6-2c1.9-.6 4-1 6-1.1 2-.1 4.1-.1 6.1.2 2 .3 4 .8 5.9 1.6 1.9.7 3.7 1.4 5.6 1.8 1.9.4 3.9.5 5.9.5 2 0 3.9-.2 5.8-.7 1.9-.4 3.7-1.2 5.6-1.9 1.9-.7 3.9-1 5.9-1.2 4-.2 8.1.1 11.9 1.6 1.9.7 3.7 1.5 5.6 2 1.9.5 3.9.6 5.9.7-2 0-4-.1-6-.5s-3.8-1.2-5.7-1.8c-3.7-1.4-7.8-1.6-11.7-1.3-2 .2-3.9.6-5.7 1.2-1.8.7-3.7 1.5-5.7 2s-4 .7-6 .8c-2 0-4 0-6.1-.4-2-.3-4-1.1-5.8-1.8-1.8-.7-3.7-1.2-5.6-1.5-3.9-.4-7.9-.3-11.6.9-1.8.6-3.7 1.4-5.6 2-2 .6-4 .8-6 .9-2 .1-4.1 0-6.1-.3s-4-1-5.9-1.7c-1.9-.7-3.7-1.4-5.6-1.6-1.9-.3-3.9-.4-5.8-.3-2 .1-3.9.3-5.8.8s-3.7 1.4-5.6 2c-1.9.6-4 1-6 1.1-2 .1-4.1.1-6.1-.2-2-.3-4-.8-5.9-1.6-1.9-.7-3.7-1.4-5.6-1.8-1.9-.4-3.9-.5-5.9-.5-2 0-3.9.2-5.8.7-1.9.4-3.7 1.2-5.6 1.9-1.9.7-3.9 1-5.9 1.2-4 .2-8.1-.1-11.9-1.6-1.9-.7-3.7-1.5-5.6-2-1.9-.5-3.9-.7-5.9-.7z"
+}));
+icons.mustache = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M143.9 16.8c-4.5-.2-9.8-.2-14.3 1.5-5.1-8.4-23.3-5.1-30.9-3.1-9.3 2.4-18.2 6.2-27.5 8.6-8.2 2.2-31 6.6-33.8-5.5.1-.1.1-.1.1-.2v-.2c3 1.5 7 1.7 8.2-1.1.6-.5.9-1.2.7-2.1-.4-1.5-2.1-2.2-3.5-2.4-2.7-.3-6.1 1.3-6.6 4-.7-.4-1.3-.9-1.7-1.5-.2-.2-.5.1-.4.3.4.7 1.1 1.4 2 2-3.1 12.6 23 11.1 29.5 9.8 9.7-1.9 53.1-20.9 61.9-7.8-1.1.6-2.1 1.3-2.9 2.2-.1 0-.1.1-.2.1-.2.2-.4.4-.5.6-.3.3-.5.6-.7.9-.2.2 0 .4.2.5-.2 1.8 1.2 3.6 3.2 3.8 1.8.2 3.2-.9 3.7-2.4.2-.1.4-.3.4-.7.1-1.7-.1-3.2-.6-4.4 4.2-1.4 8.7-1.5 13.5-1.4 1.3.2 1.3-1.5.2-1.5zm-103.1-3c.9-.2 1.8-.2 2.7 0 .9.2 2.4 1.1 2.1 2.1-.1 0-.2 0-.3.2-1.4 2.3-4.8 2.1-7.5.9.4-1.5 1.3-2.7 3-3.2zm88.6 10.5c0 .1 0 .1.1.2-.5.8-1.3 1.3-2.3 1.3-1.9-.1-2.4-2.2-1.4-3.5.1-.1.1-.1.1-.2.9-.6 1.8-1.1 2.7-1.5.4 1 .7 2.3.8 3.7z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M96.1 18.5c4.9-.1 9.3 0 13.5 1.4-.4 1.3-.7 2.7-.6 4.4 0 .3.2.5.4.7.5 1.5 1.9 2.5 3.7 2.4 2-.2 3.3-2 3.2-3.8.2 0 .4-.2.2-.5s-.5-.6-.7-.9c-.1-.2-.3-.4-.5-.6-.1 0-.1-.1-.2-.1-.9-.9-1.9-1.6-2.9-2.2 8.8-13.1 52.2 5.9 61.9 7.8 6.5 1.2 32.7 2.8 29.5-9.8.9-.6 1.6-1.3 2-2 .1-.2-.2-.5-.4-.3-.4.5-1 1-1.7 1.5-.5-2.7-4-4.3-6.6-4-1.4.2-3.1.9-3.5 2.4-.2.8.1 1.6.7 2.1 1.2 2.9 5.2 2.6 8.2 1.1v.2c0 .1.1.2.1.2-2.7 12.1-25.5 7.7-33.9 5.5-9.3-2.5-18.2-6.2-27.5-8.6-7.5-1.9-25.8-5.3-30.9 3.1-4.4-1.7-9.7-1.7-14.3-1.5-.8-.2-.8 1.5.3 1.5zM202.2 17c-2.7 1.2-6 1.4-7.5-.9-.1-.1-.2-.2-.3-.2-.3-1 1.1-1.9 2.1-2.1.9-.2 1.8-.2 2.7 0 1.7.5 2.6 1.7 3 3.2zm-90.8 3.6c.9.4 1.8.9 2.7 1.5 0 .1 0 .1.1.2 1 1.4.5 3.4-1.4 3.5-1 .1-1.8-.5-2.3-1.3 0-.1 0-.1.1-.2.1-1.4.4-2.7.8-3.7z"
+}));
+icons.shadow = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M56.2 20c5.3-.1 10.6-.2 16-.3l16-.2c10.6-.1 21.3-.1 31.9-.2 10.6.1 21.3 0 31.9.1l16 .2c5.3.1 10.6.2 16 .3-5.3.1-10.6.2-16 .3l-16 .2c-10.6.1-21.3.1-31.9.1-10.6-.1-21.3 0-31.9-.2l-16-.2c-5.4.1-10.7 0-16-.1z"
+}));
+icons.slash = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M3.3 22.1c-.5-.2-.9-.5-1.3-.9-.3-.2-.5-.4-.8-.6.8-.7 1.5-1.3 2.3-2 .9-.7 1.8-1.6 2.4-2.6.1-.1.1-.2 0-.3-.1-.2-.3-.2-.5-.2-1.1.5-2 1.3-2.8 2.2-.8.9-1.7 1.7-2.5 2.5l-.1.1v.1c-.1.2-.1.5.2.6.5.3.9.5 1.4.8.4.3.9.6 1.2 1 .8.7 1.7 1.3 2.6 1.8.1.1.3 0 .4-.1.2-.1.2-.3.1-.5-.8-.8-1.6-1.4-2.6-1.9z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M112.3 20c-4.5-.2-9-.3-13.5-.3-2.2 0-4.5-.1-6.7 0s-4.5.2-6.7.1c-4.5 0-9-.1-13.5-.2-1.1 0-2.2 0-3.4.1-1.1.1-2.2.1-3.4.2-2.2 0-4.5 0-6.7-.1-4.5-.1-9 0-13.5-.2-2.2-.1-4.5-.1-6.7 0s-4.5.3-6.7.3c-4.5.1-9-.1-13.5-.1s-9 0-13.5.2c-.1 0-.2.1-.2.2s.1.3.2.3c4.5.1 9 .2 13.5.2s9-.1 13.5-.1c2.2 0 4.5.2 6.7.3 2.2.1 4.5 0 6.7 0 4.5-.1 9 0 13.5-.2 2.2-.1 4.5-.1 6.7-.1 1.1 0 2.2.1 3.4.2 1.1 0 2.2.1 3.4.1 4.5-.1 9-.1 13.5-.2 2.2 0 4.5 0 6.7.1s4.5.1 6.7 0c4.5 0 9-.1 13.5-.3.1 0 .2-.1.2-.2 0-.2-.1-.3-.2-.3zM239.9 20.3c-.8-.9-1.7-1.7-2.5-2.6-.8-.9-1.7-1.7-2.8-2.2h-.3c-.2.1-.2.3-.1.5.6 1.1 1.4 1.9 2.4 2.6.8.6 1.5 1.3 2.3 2-.2.2-.5.4-.8.6-.4.3-.9.6-1.3.9-.9.5-1.8 1.2-2.5 2-.1.1-.1.2-.1.4.1.2.3.2.5.2 1-.5 1.9-1 2.6-1.8.4-.4.8-.7 1.2-1 .4-.3.9-.6 1.4-.8l.1-.1c0-.3.1-.6-.1-.7z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M235.7 20.2c0-.1-.1-.3-.2-.3-4.5-.1-9-.2-13.5-.2s-9 .1-13.5.1c-2.2 0-4.5-.2-6.7-.3-2.2-.1-4.5 0-6.7 0-4.5.1-9 0-13.5.2-2.2.1-4.5.1-6.7.1-1.1 0-2.2-.1-3.4-.2-1.1 0-2.2-.1-3.4-.1-4.5.1-9 .1-13.5.2-2.2 0-4.5 0-6.7-.1s-4.5-.1-6.7 0c-4.5 0-9 .1-13.5.3-.1 0-.2.1-.2.2s.1.3.2.3c4.5.2 9 .3 13.5.3 2.2 0 4.5.1 6.7 0s4.5-.2 6.7-.1c4.5 0 9 .1 13.5.2 1.1 0 2.2 0 3.4-.1 1.1-.1 2.2-.1 3.4-.2 2.2 0 4.5 0 6.7.1 4.5.1 9 0 13.5.2 2.2.1 4.5.1 6.7 0s4.5-.3 6.7-.3c4.5-.1 9 .1 13.5.1s9 0 13.5-.2c.1 0 .2-.1.2-.2zM118.3 16.1c-.4.6-.8 1.2-1.1 1.8-.4.6-.4 1.3-.8 1.9l-.9 1.8c-.3.6-.5 1.3-.7 2 0 .2 0 .4.2.5.2.2.5.1.7-.1.4-.6.7-1.2 1-1.8.3-.6.5-1.3.8-1.9.2-.6.7-1.2.9-1.9.2-.6.5-1.3.6-2 0-.2 0-.3-.2-.4-.1-.1-.4-.1-.5.1zM124.4 16.1c-.4.6-.8 1.2-1.1 1.8-.4.6-.4 1.3-.8 1.9l-.9 1.8c-.3.6-.5 1.3-.7 2 0 .2 0 .4.2.5.2.2.5.1.7-.1.4-.6.7-1.2 1-1.8.3-.6.5-1.3.8-1.9.2-.6.7-1.2.9-1.9.2-.6.5-1.3.6-2 0-.2 0-.3-.2-.4-.1-.1-.3-.1-.5.1z"
+}));
+icons.spring = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M126.9 15.2c-2.4-7.2-11.6-8.1-15.6-2-.1.2.2.4.3.3 4.8-5.5 14.9-3.4 14.5 4.9-.3 5.9-5.2 9.6-10.5 10.7-.1-.2-.3-.4-.5-.3-3.9 1-7.9.5-11.7-.7-1.6-.5-5.4-2.5-7.3-4.9 0 0 .1 0 .1-.1.1.1.3.2.5.3 2.2.2 4.3-2.1 3.7-4.3-.5-1.9-2.8-2.9-4.6-2-.1.1-.1.2-.1.3-1.8 1-1.8 3.1-1.1 5.1-3 .6-6 1.4-9.2 1.3-2-.1-6.1-1-8.5-2.9 1.8-.4 3-2.6 2.3-4.3-.7-1.6-2.8-2.2-4.3-1.4-.2 0-.3.1-.4.3h-.1c-.1.1-.1.2-.1.2-.9 1.7-.4 3.4.6 4.9-9.5 3.2-22.1 4.2-24.6-8.4-.2-.8-1.5-.6-1.4.2 1.1 13.6 17.2 14 26.7 9 1.1 1.2 2.6 2.1 3.9 2.7 4.8 2.1 10.6 1.3 15.5-.5.6 1.2 1.4 2.2 2.1 2.9 4 3.6 10.8 5.2 16.2 3.9.1.1.2.1.3.1 7.5.1 15.9-7.3 13.3-15.3zm-51.4.8c.1-.1.1-.3 0-.4 1-.2 2.1.2 2.6 1.1.9 1.5-.7 3.1-2.2 3.1-.7-1-1-2.3-.4-3.8zm21.3 1.6s.1-.1 0 0c1.1 0 2.1.6 2.4 1.7.4 1.4-.8 2.6-2.1 2.8h-.4c-.1 0-.2 0-.3.1-.3.1-.6.1-.9.2-1.1-1.7-1-3.4 1.3-4.8z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M126.4 30.5c.1 0 .2-.1.3-.1 5.4 1.4 12.2-.2 16.2-3.9.7-.7 1.5-1.7 2.1-2.9 4.9 1.8 10.7 2.6 15.5.5 1.3-.6 2.8-1.5 3.9-2.7 9.5 5 25.6 4.6 26.7-9 .1-.8-1.3-1-1.4-.2-2.5 12.6-15.1 11.6-24.6 8.4 1.1-1.4 1.5-3.1.6-4.9 0-.1 0-.2-.1-.2h-.1c-.1-.2-.3-.3-.4-.3-1.5-.8-3.6-.3-4.3 1.4-.8 1.7.5 3.9 2.3 4.3-2.4 1.9-6.5 2.8-8.5 2.9-3.1.1-6.1-.6-9.2-1.3.7-2 .7-4.1-1.1-5.1 0-.1 0-.2-.1-.3-1.7-.9-4 .2-4.6 2-.6 2.2 1.5 4.5 3.7 4.3.2 0 .4-.1.5-.3 0 0 .1 0 .1.1-2 2.3-5.7 4.4-7.3 4.9-3.8 1.3-7.8 1.7-11.7.7-.2-.1-.4.1-.5.3-5.3-1.1-10.2-4.9-10.5-10.7-.4-8.3 9.7-10.4 14.5-4.9.2.2.5-.1.3-.3-4-6.2-13.3-5.2-15.6 2-2.6 8 5.8 15.4 13.3 15.3zM164 19.8c-1.5 0-3.1-1.6-2.2-3.1.5-.9 1.7-1.3 2.6-1.1v.4c.7 1.5.4 2.8-.4 3.8zm-19.4 2.5c-.3-.1-.6-.1-.9-.2-.1-.1-.2-.1-.3-.1h-.3-.1c-1.3-.2-2.5-1.3-2.1-2.8.3-1.1 1.3-1.7 2.3-1.8 0 0 0 .1.1.1 2.2 1.5 2.3 3.2 1.3 4.8z"
+}));
+icons.valla = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M210.6 19.2c-.1-.1-3.2-2.6-8.6-2.6-4.5 0-7.4 1.7-8.3 2.4H46.3c-.9-.6-3.8-2.4-8.3-2.4-5.4 0-8.5 2.5-8.6 2.6l-1 .8.9.8c.1.1 3.1 2.6 8.7 2.6 4.6 0 7.4-1.7 8.3-2.4h147.3c.9.6 3.7 2.4 8.3 2.4 5.5 0 8.5-2.5 8.7-2.6l.9-.8-.9-.8zM38 21.4c-2.8 0-4.9-.8-6.1-1.4 1.2-.6 3.3-1.4 6.1-1.4s4.9.8 6.1 1.4c-1.2.6-3.3 1.4-6.1 1.4zm164 0c-2.8 0-4.9-.8-6.1-1.4 1.2-.6 3.3-1.4 6.1-1.4s4.9.8 6.1 1.4c-1.2.6-3.3 1.4-6.1 1.4z"
+}));
+icons.wave1 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M213.6 22c-4.6-3.1-10.9-6.9-16.7-4.6-3.7 1.5-6.1 5.6-10.7 3.4-2.4-1.2-4.4-3.1-7-4-5.2-1.8-9.7 1.1-14.3 3.2-4.7 2.2-8.2 2.1-12.8-.3-2.5-1.2-4.8-2.9-7.6-3.3-6.5-1.1-10.2 5.5-16.4 5.5-6.5.1-11.8-5.3-18.3-5.2-2.6 0-4.9 1-7.2 2.1-4.9 2.3-8.5 3.1-13.5.7-5.7-2.7-9.4-3.8-15.5-1.3-4.6 1.9-8.2 3.4-13.3 1.8-3.6-1.1-6.8-3.3-10.6-3.9-2.4-.4-4.7-.1-7 .9-3.8 1.7-12.5 9.4-15.4 2.1-.3-.7-1.5-.5-1.2.3 1.1 3.6 4.9 4.7 8.3 4 3-.6 5.3-2.8 7.9-4.1 5.4-2.7 9.5-.6 14.6 1.5 5.9 2.5 10.2 2.3 16.1-.2 5.1-2.2 8.8-2.4 13.8 0 2.5 1.2 4.8 2.6 7.6 2.7 2.6.2 4.9-.7 7.3-1.8 4.7-2.2 8.1-3.5 13.2-1.8 5.5 1.8 10.8 5.6 16.8 3.6 2.9-1 5.1-3.2 7.9-4.3 4.9-2 8.6 1.1 12.8 3.1 5.4 2.6 9.8 1.6 14.9-1 4.7-2.3 8.5-4.1 13.5-1.4 2.6 1.4 5 3.7 8 3.9 2.7.2 4.2-1.1 6.2-2.6 6.2-4.5 12.1-1.3 17.7 2.5.9 1 2-.8.9-1.5z",
+  fill: "#1c1c1b"
+}));
+icons.wave2 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40",
+  preserveAspectRatio: "none"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M218.3,19.1c-5,0-7.5-1-10.1-2c-2.6-1-5.3-2-10.6-2c-5.3,0-7.9,1-10.5,2c-2.6,1-5.1,2-10.2,2c-5,0-7.5-0.9-10.1-1.9\r\nc-2.6-1-5.3-2.1-10.6-2.1c-5.3,0-7.9,1-10.5,2c-2.6,1-5.1,2-10.2,2c-5,0-7.5-0.9-10.1-1.9c-2.6-1-5.3-2.1-10.6-2.1 c-5.3,0-7.9,1-10.5,2c-2.6,1-5.1,2-10.2,2c-5,0-7.5-0.9-10.1-1.9c-2.6-1-5.3-2.1-10.6-2.1c-5.3,0-7.9,1-10.5,2c-2.6,1-5.1,2-10.2,2 c-5,0-7.5-0.9-10.1-1.9c-2.6-1-5.3-2.1-10.6-2.1c-0.4,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6c5.1,0,7.6,1,10.2,2c2.6,1,5.3,2,10.5,2 c5.3,0,8-1,10.6-2.1c2.6-1,5-1.9,10.1-1.9c5.1,0,7.6,1,10.2,2c2.6,1,5.3,2,10.5,2c5.3,0,8-1,10.6-2.1c2.6-1,5-1.9,10.1-1.9 c5.1,0,7.6,1,10.2,2c2.6,1,5.3,2,10.5,2c5.3,0,8-1,10.6-2.1c2.6-1,5-1.9,10.1-1.9c5.1,0,7.6,1,10.2,2c2.6,1,5.3,2,10.5,2 c5.3,0,8-1,10.6-2.1c2.6-1,5-1.9,10.1-1.9c5,0,7.5,1,10.1,2c2.6,1,5.3,2,10.6,2c0.4,0,0.7-0.3,0.7-0.6S218.7,19.1,218.3,19.1z"
+}));
+icons.wave3 = /*#__PURE__*/React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 240 40"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M216.4 22.2c-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.1 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6s-3.3-.9-4.3-1.6c-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6s-3.3-.9-4.3-1.6c-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.2 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.1 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.1 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6-2.1 0-3.3-.9-4.3-1.6-.9-.7-1.8-1.4-3.5-1.4s-2.5.6-3.5 1.4c-1 .8-2.1 1.6-4.3 1.6s-3.3-.9-4.3-1.6c-.9-.7-1.7-1.4-3.5-1.4v-1.3c2.1 0 3.3.9 4.3 1.6.9.7 1.7 1.4 3.5 1.4 1.7 0 2.5-.6 3.5-1.4 1-.8 2.1-1.6 4.3-1.6 2.1 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.1 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.1 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.2 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.2 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6s3.3.9 4.3 1.6c.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6s3.3.9 4.3 1.6c.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.1 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6s3.3.9 4.3 1.6c.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6s3.3.9 4.3 1.6c.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.2 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4s2.5-.6 3.5-1.4c1-.8 2.1-1.6 4.3-1.6 2.2 0 3.3.9 4.3 1.6.9.7 1.8 1.4 3.5 1.4v1.3z"
+}));
+/* harmony default export */ __webpack_exports__["default"] = (icons);
+
+/***/ }),
+
+/***/ "./src/blocks/divider/style.scss":
+/*!***************************************!*\
+  !*** ./src/blocks/divider/style.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
