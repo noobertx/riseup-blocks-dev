@@ -7187,6 +7187,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/animated-headline/style.scss":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/animated-headline/style.scss ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-animated-heading .animated-heading-text.has-text-align-left {\n  justify-content: flex-start; }\n\n.wprig-block-animated-heading .animated-heading-text.has-text-align-right {\n  justify-content: flex-end; }\n\n.wprig-block-animated-heading .animated-heading-text.has-text-align-center {\n  justify-content: center; }\n\n.wprig-block-animated-heading .animated-heading-text::before {\n  display: none; }\n\n.wprig-block-animated-heading .animated-heading-text .wprig-animated-text {\n  padding-left: 5px;\n  padding-right: 5px;\n  line-height: inherit; }\n\n.wprig-block-animated-heading.wprig-block-animated-heading-backend .animated-heading-text {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss":
 /*!*********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss ***!
@@ -9878,18 +9896,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_accordion_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/accordion/block */ "./src/blocks/accordion/block.js");
 /* harmony import */ var _blocks_advance_heading_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/advance-heading/block */ "./src/blocks/advance-heading/block.js");
 /* harmony import */ var _blocks_advance_list_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/advance-list/block */ "./src/blocks/advance-list/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_animated_headline_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animated-headline/block */ "./src/blocks/animated-headline/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9905,8 +9924,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import "./blocks/animated-headline/block";
-// import "./blocks/button/block";
+
+ // import "./blocks/button/block";
 // import "./blocks/buttongroup/block";
 // import "./blocks/contact-form/block";
 // import "./blocks/counter/block";
@@ -9988,7 +10007,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_14__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_15__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -12513,6 +12532,972 @@ registerBlockType('wprig/advancedlist', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-list/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/animated-headline/Edit.js":
+/*!**********************************************!*\
+  !*** ./src/blocks/animated-headline/Edit.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    AlignmentToolbar = _wp$blockEditor.AlignmentToolbar,
+    BlockControls = _wp$blockEditor.BlockControls,
+    InspectorControls = _wp$blockEditor.InspectorControls;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    RawHTML = _wp$element.RawHTML,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    SelectControl = _wp$components.SelectControl,
+    FormTokenField = _wp$components.FormTokenField,
+    TextControl = _wp$components.TextControl;
+var _wp$wprigComponents = wp.wprigComponents,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Color = _wp$wprigComponents.Color,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings,
+    HeadingToolbar = _wp$wprigComponents.HeadingToolbar,
+    Typography = _wp$wprigComponents.Typography,
+    Range = _wp$wprigComponents.Range,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+var defaultTexts = ['Demo-one', 'Demo-two'];
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this._getAnimationClass = _this._getAnimationClass.bind(_assertThisInitialized(_this));
+    _this._handleTypeChange = _this._handleTypeChange.bind(_assertThisInitialized(_this));
+    _this.state = {
+      device: 'md',
+      animationClass: _this._getAnimationClass(_this.props.attributes.animationType)
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          name = _this$props.name,
+          clientId = _this$props.clientId,
+          attributes = _this$props.attributes,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+
+      this.anim = new window.animatedHeading({
+        heading: $(this.animatedHeading)
+      });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this2 = this;
+
+      var _this$props$attribute = this.props.attributes,
+          animationType = _this$props$attribute.animationType,
+          animatedText = _this$props$attribute.animatedText,
+          level = _this$props$attribute.level;
+      var attributes = prevProps.attributes;
+
+      if (animationType !== attributes.animationType || animatedText.length !== attributes.animatedText.length || level !== attributes.level) {
+        if (this.anim) {
+          this.anim.destroy();
+          delete this.anim;
+          setTimeout(function () {
+            _this2.anim = new window.animatedHeading({
+              heading: $(_this2.animatedHeading)
+            });
+          }, 100);
+        }
+      }
+    }
+  }, {
+    key: "_handleTypeChange",
+    value: function _handleTypeChange(val) {
+      var _this$props2 = this.props,
+          animatedTextColor = _this$props2.attributes.animatedTextColor,
+          setAttributes = _this$props2.setAttributes;
+      this.setState({
+        animationClass: this._getAnimationClass(val)
+      });
+      setAttributes(!(val === 'clip' || val === 'flip' || val === 'fade-in' || val === 'loading-bar' || val === 'push') ? {
+        animationType: val,
+        animatedTextColor: _objectSpread(_objectSpread({}, animatedTextColor), {}, {
+          type: 'color'
+        })
+      } : {
+        animationType: val
+      });
+    }
+  }, {
+    key: "_getAnimationClass",
+    value: function _getAnimationClass() {
+      var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+      var animationClass = '';
+
+      switch (value) {
+        case 'blinds':
+          animationClass = 'letters animation-blinds';
+          break;
+
+        case 'delete-typing':
+          animationClass = 'letters type';
+          break;
+
+        case 'flip':
+          animationClass = 'text-animation-flip';
+          break;
+
+        case 'fade-in':
+          animationClass = 'zoom';
+          break;
+
+        case 'loading-bar':
+          animationClass = 'loading-bar';
+          break;
+
+        case 'scale':
+          animationClass = 'letters scale';
+          break;
+
+        case 'push':
+          animationClass = 'push';
+          break;
+
+        case 'wave':
+          animationClass = 'letters animation-wave';
+          break;
+
+        default:
+          animationClass = 'text-clip';
+      }
+
+      return animationClass;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$props3 = this.props,
+          name = _this$props3.name,
+          clientId = _this$props3.clientId,
+          className = _this$props3.className,
+          attributes = _this$props3.attributes,
+          setAttributes = _this$props3.setAttributes,
+          _this$props3$attribut = _this$props3.attributes,
+          uniqueId = _this$props3$attribut.uniqueId,
+          align = _this$props3$attribut.align,
+          level = _this$props3$attribut.level,
+          animatedText = _this$props3$attribut.animatedText,
+          titleBefore = _this$props3$attribut.titleBefore,
+          titleAfter = _this$props3$attribut.titleAfter,
+          animationType = _this$props3$attribut.animationType,
+          typography = _this$props3$attribut.typography,
+          color = _this$props3$attribut.color,
+          barColor = _this$props3$attribut.barColor,
+          animatedTextColor = _this$props3$attribut.animatedTextColor,
+          animatedTextBgColor = _this$props3$attribut.animatedTextBgColor,
+          animatedTextPadding = _this$props3$attribut.animatedTextPadding,
+          animatedTextSpacing = _this$props3$attribut.animatedTextSpacing,
+          textBorderRadius = _this$props3$attribut.textBorderRadius,
+          animation = _this$props3$attribut.animation,
+          interaction = _this$props3$attribut.interaction,
+          enablePosition = _this$props3$attribut.enablePosition,
+          selectPosition = _this$props3$attribut.selectPosition,
+          positionXaxis = _this$props3$attribut.positionXaxis,
+          positionYaxis = _this$props3$attribut.positionYaxis,
+          globalZindex = _this$props3$attribut.globalZindex,
+          hideTablet = _this$props3$attribut.hideTablet,
+          hideMobile = _this$props3$attribut.hideMobile,
+          globalCss = _this$props3$attribut.globalCss;
+      var _this$state = this.state,
+          device = _this$state.device,
+          animationClass = _this$state.animationClass;
+      var gradientTextColor = animationType === 'clip' || animationType === 'flip' || animationType === 'fade-in' || animationType === 'loading-bar' || animationType === 'push';
+      var CustomHeadingTag = "h".concat(level);
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Headline level'),
+        opened: true
+      }, /*#__PURE__*/React.createElement(HeadingToolbar, {
+        minLevel: 1,
+        maxLevel: 6,
+        selectedLevel: level,
+        isCollapsed: false,
+        onChange: function onChange(newLevel) {
+          return setAttributes({
+            level: newLevel
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Animated Text')
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Text Before'),
+        value: titleBefore,
+        onChange: function onChange(titleBefore) {
+          return setAttributes({
+            titleBefore: titleBefore
+          });
+        }
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Text After'),
+        value: titleAfter,
+        onChange: function onChange(titleAfter) {
+          return setAttributes({
+            titleAfter: titleAfter
+          });
+        }
+      }), /*#__PURE__*/React.createElement(FormTokenField, {
+        label: __('Animated Texts'),
+        value: animatedText,
+        placeholder: __('Add new text'),
+        onChange: function onChange(tokens) {
+          return setAttributes({
+            animatedText: tokens
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Animation Type'),
+        value: animationType,
+        options: [{
+          label: __('Blinds'),
+          value: 'blinds'
+        }, {
+          label: __('Clip'),
+          value: 'clip'
+        }, {
+          label: __('Delete Typing'),
+          value: 'delete-typing'
+        }, {
+          label: __('Flip'),
+          value: 'flip'
+        }, {
+          label: __('Fade In'),
+          value: 'fade-in'
+        }, {
+          label: __('Loading Bar'),
+          value: 'loading-bar'
+        }, {
+          label: __('Scale'),
+          value: 'scale'
+        }, {
+          label: __('Push'),
+          value: 'push'
+        }, {
+          label: __('Twist/Wave'),
+          value: 'wave'
+        }],
+        onChange: function onChange(val) {
+          return _this3._handleTypeChange(val);
+        }
+      }), animationType === 'loading-bar' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Bar Color'),
+        value: barColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            barColor: val
+          });
+        }
+      }), gradientTextColor ? /*#__PURE__*/React.createElement(ColorAdvanced, {
+        textColor: true,
+        label: __('Color'),
+        value: animatedTextColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            animatedTextColor: val
+          });
+        }
+      }) : /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: animatedTextColor.color,
+        onChange: function onChange(val) {
+          return setAttributes({
+            animatedTextColor: _objectSpread(_objectSpread({}, animatedTextColor), {}, {
+              color: val
+            })
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        textColor: true,
+        label: __('Background'),
+        value: animatedTextBgColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            animatedTextBgColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        label: __('Radius'),
+        value: textBorderRadius,
+        unit: ['px', 'em', '%'],
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        },
+        onChange: function onChange(val) {
+          return setAttributes({
+            textBorderRadius: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Padding X'),
+        value: animatedTextPadding,
+        onChange: function onChange(animatedTextPadding) {
+          return setAttributes({
+            animatedTextPadding: animatedTextPadding
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing X'),
+        value: animatedTextSpacing,
+        onChange: function onChange(animatedTextSpacing) {
+          return setAttributes({
+            animatedTextSpacing: animatedTextSpacing
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Design'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Typography, {
+        device: device,
+        value: typography,
+        label: __('Typography'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            typography: value
+          });
+        },
+        onDeviceChange: function onDeviceChange(value) {
+          return _this3.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: color,
+        onChange: function onChange(val) {
+          return setAttributes({
+            color: val
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(HeadingToolbar, {
+        minLevel: 1,
+        maxLevel: 6,
+        selectedLevel: level,
+        onChange: function onChange(newLevel) {
+          return setAttributes({
+            level: newLevel
+          });
+        }
+      }), /*#__PURE__*/React.createElement(AlignmentToolbar, {
+        value: align,
+        onChange: function onChange(nextAlign) {
+          return setAttributes({
+            align: nextAlign
+          });
+        }
+      })), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId, " wprig-block-animated-heading wprig-block-animated-heading-backend ").concat(className),
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this3.wprigContextMenu.current);
+        }
+      }, /*#__PURE__*/React.createElement(CustomHeadingTag, {
+        className: "animated-heading-text ".concat(animationClass, " ").concat(align ? " has-text-align-".concat(align) : ''),
+        ref: function ref(el) {
+          return _this3.animatedHeading = el;
+        }
+      }, titleBefore, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-animated-text"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "animated-text-words-wrapper"
+      }, _toConsumableArray(animatedText.length > 0 ? animatedText : defaultTexts).map(function (item, index) {
+        var isVisible = index === 0 ? 'is-visible' : 'is-hidden';
+        var className = "animated-text ".concat(isVisible);
+        return /*#__PURE__*/React.createElement("span", {
+          className: className
+        }, item);
+      }))), titleAfter), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      }))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/animated-headline/Save.js":
+/*!**********************************************!*\
+  !*** ./src/blocks/animated-headline/Save.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Component = wp.element.Component;
+var RichText = wp.editor.RichText;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "_getAnimationClass",
+    value: function _getAnimationClass() {
+      var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+      var animationClass = '';
+
+      switch (value) {
+        case 'blinds':
+          animationClass = 'letters animation-blinds';
+          break;
+
+        case 'delete-typing':
+          animationClass = 'letters type';
+          break;
+
+        case 'flip':
+          animationClass = 'text-animation-flip';
+          break;
+
+        case 'fade-in':
+          animationClass = 'zoom';
+          break;
+
+        case 'loading-bar':
+          animationClass = 'loading-bar';
+          break;
+
+        case 'scale':
+        case 'slide':
+          animationClass = 'letters scale';
+          break;
+
+        case 'push':
+          animationClass = 'push';
+          break;
+
+        case 'wave':
+          animationClass = 'letters animation-wave';
+          break;
+
+        default:
+          animationClass = 'text-clip';
+      }
+
+      return animationClass;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      var _this$props = this.props,
+          className = _this$props.className,
+          _this$props$attribute = _this$props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          align = _this$props$attribute.align,
+          level = _this$props$attribute.level,
+          animation = _this$props$attribute.animation,
+          animatedText = _this$props$attribute.animatedText,
+          titleBefore = _this$props$attribute.titleBefore,
+          titleAfter = _this$props$attribute.titleAfter,
+          animationType = _this$props$attribute.animationType,
+          interaction = _this$props$attribute.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      var CustomHeadingTag = "h".concat(level);
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId, " wprig-block-animated-heading ").concat(className ? className : '', " ").concat(interactionClass, " ")
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement(CustomHeadingTag, {
+        className: "animated-heading-text ".concat(this._getAnimationClass(animationType)).concat(align ? " has-text-align-".concat(align) : ''),
+        ref: function ref(el) {
+          return _this.animatedHeading = el;
+        }
+      }, /*#__PURE__*/React.createElement(RichText.Content, {
+        value: titleBefore
+      }), /*#__PURE__*/React.createElement("span", {
+        className: "wprig-animated-text"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "animated-text-words-wrapper"
+      }, animatedText.map(function (item, index) {
+        var isVisible = index === 0 ? 'is-visible' : 'is-hidden';
+        var className = "animated-text ".concat(isVisible);
+        return /*#__PURE__*/React.createElement("span", {
+          className: className
+        }, item);
+      }))), /*#__PURE__*/React.createElement(RichText.Content, {
+        value: titleAfter
+      })));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/animated-headline/attributes.js":
+/*!****************************************************!*\
+  !*** ./src/blocks/animated-headline/attributes.js ***!
+  \****************************************************/
+/*! exports provided: attributes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "attributes", function() { return attributes; });
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+var attributes = _objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), {}, {
+  // Global Settings
+  level: {
+    type: 'number',
+    "default": 4
+  },
+  align: {
+    type: 'string',
+    style: []
+  },
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: 'px'
+      },
+      spaceBottom: {
+        md: '10',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  animatedText: {
+    type: 'array',
+    "default": ['imagination', 'fascination', 'attention', 'passion', 'curiosity']
+  },
+  animationType: {
+    type: 'string',
+    "default": 'clip'
+  },
+  typography: {
+    type: 'object',
+    "default": {
+      openTypography: false,
+      height: {
+        md: '1.2',
+        unit: 'em'
+      },
+      size: {
+        md: '28',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text'
+    }]
+  },
+  textBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 0,
+      radiusType: 'global',
+      global: {},
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text'
+    }]
+  },
+  // animatedTextTypography: {
+  //     type: 'object',
+  //     default: {},
+  //     style: [{ selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper' }]
+  // },
+  titleBefore: {
+    type: 'string',
+    "default": 'The power of'
+  },
+  titleAfter: {
+    type: 'string',
+    "default": 'makes us infinite'
+  },
+  color: {
+    type: 'string',
+    "default": '#000',
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text{ color:{{color}}; }'
+    }]
+  },
+  barColor: {
+    type: 'string',
+    "default": '#22b8f0',
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-heading-text.loading-bar .animated-text-words-wrapper::after { background:{{barColor}}; }'
+    }]
+  },
+  animatedTextColor: {
+    type: 'object',
+    "default": {
+      type: 'gradient',
+      textColor: true,
+      openColor: 1,
+      color: 'var(--wprig-color-1)',
+      gradient: {
+        color1: '#1066CC',
+        color2: '#55cd37',
+        direction: 0,
+        start: 0,
+        stop: 100,
+        clip: false,
+        type: 'linear',
+        radial: 'center'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper span'
+    }]
+  },
+  animatedTextBgColor: {
+    type: 'object',
+    "default": {
+      type: 'color',
+      openColor: 0,
+      color: '#eae212',
+      gradient: {
+        color1: '#1066CC',
+        color2: '#55cd37',
+        direction: 0,
+        start: 0,
+        stop: 100,
+        type: 'linear',
+        radial: 'center'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text'
+    }]
+  },
+  // animatedTextPadding: {
+  //     type: 'object',
+  //     default: {
+  //         openPadding: 0,
+  //         paddingType: 'custom',
+  //         global: { md: '5' },
+  //         custom: { },
+  //         unit: 'px'
+  //     },
+  //     style: [{ selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text' }]
+  // },
+  animatedTextPadding: {
+    type: 'object',
+    "default": {
+      md: 0,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text {padding: 0 {{animatedTextPadding}};}'
+    }]
+  },
+  animatedTextSpacing: {
+    type: 'object',
+    "default": {
+      md: 0,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .wprig-animated-text {margin: 0 {{animatedTextSpacing}};}'
+    }]
+  },
+  animatedTextBorderRadius: {
+    type: 'object',
+    "default": {
+      radiusType: 'global',
+      global: {},
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading .animated-text-words-wrapper'
+    }]
+  },
+  border: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading'
+    }]
+  },
+  bgBorderColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading:hover {border-color: {{bgBorderColorHover}};}'
+    }]
+  },
+  bgShadow: {
+    type: 'object',
+    "default": {
+      openShadow: 0,
+      horizontal: 1,
+      vertical: 1,
+      blur: 2,
+      color: 'rgba(0, 0, 0, .2)',
+      spread: 0
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading'
+    }]
+  },
+  bgShadowHover: {
+    type: 'object',
+    "default": {
+      color: ''
+    },
+    style: [{
+      selector: '{{WPRIG}}.wprig-block-animated-heading:hover'
+    }]
+  },
+  showGlobalSettings: {
+    type: 'boolean',
+    "default": true
+  },
+  showContextMenu: {
+    type: 'boolean',
+    "default": true
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/animated-headline/block.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/animated-headline/block.js ***!
+  \***********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/animated-headline/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/animated-headline/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/animated-headline/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/animated-headline/attributes.js");
+
+
+
+
+var registerBlockType = wp.blocks.registerBlockType;
+var __ = wp.i18n.__;
+registerBlockType('wprig/animatedheadline', {
+  title: __('Animated Headline'),
+  description: 'Grab the attention of your users with animating texts in headlines',
+  category: 'wprig-blocks',
+  icon: 'universal-access-alt',
+  keywords: [__('headline'), __('animated'), __('heading'), __('title')],
+  example: {
+    attributes: {}
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["attributes"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/animated-headline/style.scss":
+/*!*************************************************!*\
+  !*** ./src/blocks/animated-headline/style.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/animated-headline/style.scss");
 
             content = content.__esModule ? content.default : content;
 
