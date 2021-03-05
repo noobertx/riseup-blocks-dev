@@ -7277,6 +7277,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/info-box/style.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/info-box/style.scss ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-info-box {\n  transition: border-color 400ms, background-color 400ms, box-shadow 400ms; }\n  .wprig-block-info-box h1, .wprig-block-info-box h2, .wprig-block-info-box h3, .wprig-block-info-box h4, .wprig-block-info-box h5, .wprig-block-info-box h6 {\n    padding: 0;\n    margin: 0;\n    line-height: 1;\n    position: relative; }\n    .wprig-block-info-box h1::before, .wprig-block-info-box h1::after, .wprig-block-info-box h2::before, .wprig-block-info-box h2::after, .wprig-block-info-box h3::before, .wprig-block-info-box h3::after, .wprig-block-info-box h4::before, .wprig-block-info-box h4::after, .wprig-block-info-box h5::before, .wprig-block-info-box h5::after, .wprig-block-info-box h6::before, .wprig-block-info-box h6::after {\n      display: none !important; }\n    .wprig-block-info-box h1 .wprig-text-has-bgcolor, .wprig-block-info-box h2 .wprig-text-has-bgcolor, .wprig-block-info-box h3 .wprig-text-has-bgcolor, .wprig-block-info-box h4 .wprig-text-has-bgcolor, .wprig-block-info-box h5 .wprig-text-has-bgcolor, .wprig-block-info-box h6 .wprig-text-has-bgcolor {\n      padding-left: 10px;\n      padding-right: 10px; }\n  .wprig-block-info-box .wprig-info-box-media {\n    display: inline-block;\n    line-height: 1;\n    text-align: center;\n    overflow: hidden; }\n    .wprig-block-info-box .wprig-info-box-media i,\n    .wprig-block-info-box .wprig-info-box-media span,\n    .wprig-block-info-box .wprig-info-box-media img {\n      font-style: normal;\n      position: relative;\n      display: block;\n      transition: 400ms; }\n    .wprig-block-info-box .wprig-info-box-media img {\n      max-width: 100%;\n      height: auto; }\n    .wprig-block-info-box .wprig-info-box-media.wprig-media-has-bg i,\n    .wprig-block-info-box .wprig-info-box-media.wprig-media-has-bg .wprig-info-box-number {\n      min-width: 1em;\n      height: 1em;\n      white-space: nowrap; }\n      .wprig-block-info-box .wprig-info-box-media.wprig-media-has-bg i:before,\n      .wprig-block-info-box .wprig-info-box-media.wprig-media-has-bg .wprig-info-box-number:before {\n        position: absolute;\n        left: 50%;\n        transform: translateX(-50%); }\n  .wprig-block-info-box .wprig-info-box-title {\n    margin: 0 !important; }\n  .wprig-block-info-box .wprig-info-box-media,\n  .wprig-block-info-box .wprig-info-box-title,\n  .wprig-block-info-box .wprig-info-box-text {\n    transition: color 400ms, border-color 400ms, background-color 400ms, box-shadow 400ms; }\n  .wprig-block-info-box.wprig-info-box-layout-2, .wprig-block-info-box.wprig-info-box-layout-3 {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n    align-items: center; }\n    .wprig-block-info-box.wprig-info-box-layout-2 .wprig-info-box-body, .wprig-block-info-box.wprig-info-box-layout-3 .wprig-info-box-body {\n      -ms-flex: 1;\n      flex: 1; }\n  .wprig-block-info-box.wprig-info-box-layout-3 {\n    flex-direction: row-reverse; }\n    .wprig-block-info-box.wprig-info-box-layout-3 .wprig-info-box-body {\n      text-align: right; }\n  .wprig-block-info-box .wprig-separator {\n    font-size: 0; }\n    .wprig-block-info-box .wprig-separator .wprig-separator-type-css,\n    .wprig-block-info-box .wprig-separator .wprig-separator-type-svg {\n      display: inline-block; }\n  .wprig-block-info-box .wprig-separator-position-left .wprig-info-box-title-inner,\n  .wprig-block-info-box .wprig-separator-position-right .wprig-info-box-title-inner,\n  .wprig-block-info-box .wprig-separator-position-leftright .wprig-info-box-title-inner {\n    display: inline-flex;\n    align-items: center; }\n    .wprig-block-info-box .wprig-separator-position-left .wprig-info-box-title-inner .wprig-info-box-title,\n    .wprig-block-info-box .wprig-separator-position-left .wprig-info-box-title-inner .wprig-separator,\n    .wprig-block-info-box .wprig-separator-position-right .wprig-info-box-title-inner .wprig-info-box-title,\n    .wprig-block-info-box .wprig-separator-position-right .wprig-info-box-title-inner .wprig-separator,\n    .wprig-block-info-box .wprig-separator-position-leftright .wprig-info-box-title-inner .wprig-info-box-title,\n    .wprig-block-info-box .wprig-separator-position-leftright .wprig-info-box-title-inner .wprig-separator {\n      display: inline-flex; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss":
 /*!******************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss ***!
@@ -9917,18 +9935,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_animated_headline_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animated-headline/block */ "./src/blocks/animated-headline/block.js");
 /* harmony import */ var _blocks_counter_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/counter/block */ "./src/blocks/counter/block.js");
 /* harmony import */ var _blocks_divider_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/divider/block */ "./src/blocks/divider/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_info_box_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/info-box/block */ "./src/blocks/info-box/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9955,8 +9974,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/iconlist-connector/block";
 // import "./blocks/image/block";
 // import "./blocks/image-comparison/block";
-// import './blocks/info-box/block'; 
-// import "./blocks/map/block";
+
+ // import "./blocks/map/block";
 // import "./blocks/pie-progress/block";
 // import "./blocks/pricing/block";
 
@@ -10027,7 +10046,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_17__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_18__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -18282,6 +18301,2420 @@ var Mosaic = /*#__PURE__*/function (_Component) {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/image-grid/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/info-box/Edit.js":
+/*!*************************************!*\
+  !*** ./src/blocks/info-box/Edit.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../advance-heading/separators */ "./src/blocks/advance-heading/separators.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var __ = wp.i18n.__;
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    SelectControl = _wp$components.SelectControl,
+    TextControl = _wp$components.TextControl,
+    Toolbar = _wp$components.Toolbar;
+var _wp$blockEditor = wp.blockEditor,
+    RichText = _wp$blockEditor.RichText,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$wprigComponents = wp.wprigComponents,
+    WPRigButtonEdit = _wp$wprigComponents.WPRigButtonEdit,
+    Background = _wp$wprigComponents.Background,
+    ButtonGroup = _wp$wprigComponents.ButtonGroup,
+    Url = _wp$wprigComponents.Url,
+    Media = _wp$wprigComponents.Media,
+    Tabs = _wp$wprigComponents.Tabs,
+    Tab = _wp$wprigComponents.Tab,
+    Range = _wp$wprigComponents.Range,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    Typography = _wp$wprigComponents.Typography,
+    Toggle = _wp$wprigComponents.Toggle,
+    Styles = _wp$wprigComponents.Styles,
+    Alignment = _wp$wprigComponents.Alignment,
+    IconList = _wp$wprigComponents.IconList,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Color = _wp$wprigComponents.Color,
+    Headings = _wp$wprigComponents.Headings,
+    Border = _wp$wprigComponents.Border,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Padding = _wp$wprigComponents.Padding,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    buttonSettings = _wp$wprigComponents.wprigButton.buttonSettings,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handlePanelOpenings", function (panelName) {
+      _this.setState(_objectSpread(_objectSpread({}, _this.state), {}, {
+        openPanelSetting: panelName
+      }));
+    });
+
+    _this.state = {
+      device: 'md',
+      selector: true,
+      spacer: true,
+      openPanelSetting: ''
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this,
+          _React$createElement;
+
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          className = _this$props$attribute.className,
+          layout = _this$props$attribute.layout,
+          recreateStyles = _this$props$attribute.recreateStyles,
+          mediaType = _this$props$attribute.mediaType,
+          alignment = _this$props$attribute.alignment,
+          titleLevel = _this$props$attribute.titleLevel,
+          enableTitle = _this$props$attribute.enableTitle,
+          title = _this$props$attribute.title,
+          titleTypography = _this$props$attribute.titleTypography,
+          titleColor = _this$props$attribute.titleColor,
+          titleColorHover = _this$props$attribute.titleColorHover,
+          titleSpacing = _this$props$attribute.titleSpacing,
+          subTitle = _this$props$attribute.subTitle,
+          subTitleLevel = _this$props$attribute.subTitleLevel,
+          subTitleContent = _this$props$attribute.subTitleContent,
+          subTitleTypography = _this$props$attribute.subTitleTypography,
+          subTitleColor = _this$props$attribute.subTitleColor,
+          subTitleColorHover = _this$props$attribute.subTitleColorHover,
+          subTitleSpacing = _this$props$attribute.subTitleSpacing,
+          separatorStyle = _this$props$attribute.separatorStyle,
+          separatorColor = _this$props$attribute.separatorColor,
+          separatorColorHover = _this$props$attribute.separatorColorHover,
+          separatorStroke = _this$props$attribute.separatorStroke,
+          separatorPosition = _this$props$attribute.separatorPosition,
+          separatorWidth = _this$props$attribute.separatorWidth,
+          separatorSpacing = _this$props$attribute.separatorSpacing,
+          enableContent = _this$props$attribute.enableContent,
+          content = _this$props$attribute.content,
+          contentTypography = _this$props$attribute.contentTypography,
+          contentColor = _this$props$attribute.contentColor,
+          contentColorHover = _this$props$attribute.contentColorHover,
+          contentPadding = _this$props$attribute.contentPadding,
+          contentSpacing = _this$props$attribute.contentSpacing,
+          iconName = _this$props$attribute.iconName,
+          iconSize = _this$props$attribute.iconSize,
+          iconSizeCustom = _this$props$attribute.iconSizeCustom,
+          iconColor = _this$props$attribute.iconColor,
+          iconHoverColor = _this$props$attribute.iconHoverColor,
+          useMediaBg = _this$props$attribute.useMediaBg,
+          mediaBg = _this$props$attribute.mediaBg,
+          mediaBgHover = _this$props$attribute.mediaBgHover,
+          mediaBorderRadius = _this$props$attribute.mediaBorderRadius,
+          mediaBackgroundSize = _this$props$attribute.mediaBackgroundSize,
+          mediaBorder = _this$props$attribute.mediaBorder,
+          mediaBorderColorHover = _this$props$attribute.mediaBorderColorHover,
+          mediaShadow = _this$props$attribute.mediaShadow,
+          mediaShadowHover = _this$props$attribute.mediaShadowHover,
+          mediaSpacing = _this$props$attribute.mediaSpacing,
+          image = _this$props$attribute.image,
+          image2x = _this$props$attribute.image2x,
+          imgAlt = _this$props$attribute.imgAlt,
+          imageType = _this$props$attribute.imageType,
+          imageWidth = _this$props$attribute.imageWidth,
+          externalImageUrl = _this$props$attribute.externalImageUrl,
+          number = _this$props$attribute.number,
+          numberColor = _this$props$attribute.numberColor,
+          numberColorHover = _this$props$attribute.numberColorHover,
+          numberTypography = _this$props$attribute.numberTypography,
+          bgColor = _this$props$attribute.bgColor,
+          bgColorHover = _this$props$attribute.bgColorHover,
+          bgBorder = _this$props$attribute.bgBorder,
+          bgBorderColorHover = _this$props$attribute.bgBorderColorHover,
+          bgPadding = _this$props$attribute.bgPadding,
+          bgBorderRadius = _this$props$attribute.bgBorderRadius,
+          bgShadow = _this$props$attribute.bgShadow,
+          bgShadowHover = _this$props$attribute.bgShadowHover,
+          enableButton = _this$props$attribute.enableButton,
+          buttonSize = _this$props$attribute.buttonSize,
+          buttonFillType = _this$props$attribute.buttonFillType,
+          buttonText = _this$props$attribute.buttonText,
+          buttonIconName = _this$props$attribute.buttonIconName,
+          buttonIconPosition = _this$props$attribute.buttonIconPosition,
+          buttonUrl = _this$props$attribute.buttonUrl,
+          animation = _this$props$attribute.animation,
+          enablePosition = _this$props$attribute.enablePosition,
+          selectPosition = _this$props$attribute.selectPosition,
+          positionXaxis = _this$props$attribute.positionXaxis,
+          positionYaxis = _this$props$attribute.positionYaxis,
+          globalZindex = _this$props$attribute.globalZindex,
+          hideTablet = _this$props$attribute.hideTablet,
+          hideMobile = _this$props$attribute.hideMobile,
+          globalCss = _this$props$attribute.globalCss,
+          interaction = _this$props$attribute.interaction;
+      var _this$props2 = this.props,
+          name = _this$props2.name,
+          clientId = _this$props2.clientId,
+          attributes = _this$props2.attributes,
+          isSelected = _this$props2.isSelected,
+          setAttributes = _this$props2.setAttributes;
+      var _this$state = this.state,
+          openPanelSetting = _this$state.openPanelSetting,
+          device = _this$state.device;
+      var separators = {
+        solid: {
+          type: 'css',
+          separator: 'solid',
+          width: 300,
+          stroke: 10
+        },
+        "double": {
+          type: 'css',
+          separator: 'double',
+          width: 300,
+          stroke: 10
+        },
+        dotted: {
+          type: 'css',
+          separator: 'dotted',
+          width: 300,
+          stroke: 10
+        },
+        dashed: {
+          type: 'css',
+          separator: 'dashed',
+          width: 300,
+          stroke: 10
+        },
+        pin: {
+          type: 'svg',
+          separator: 'pin',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['pin'],
+          width: 100,
+          stroke: 0
+        },
+        pin_filled: {
+          type: 'svg',
+          separator: 'pin_filled',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['pin_filled'],
+          width: 100,
+          stroke: 0
+        },
+        zigzag: {
+          type: 'svg',
+          separator: 'zigzag',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['zigzag'],
+          style: 'fill',
+          width: 88,
+          stroke: 5
+        },
+        zigzag_large: {
+          type: 'svg',
+          separator: 'zigzag_large',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['zigzag_large'],
+          style: 'fill',
+          width: 161,
+          stroke: 5
+        }
+      };
+      var titleTagName = 'h' + titleLevel;
+      var subTitleTagName = 'h' + subTitleLevel;
+      var renderSeparators = /*#__PURE__*/React.createElement(Fragment, null, separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, separators[separatorStyle].type == 'css' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-css wprig-separator-".concat(separatorStyle)
+      }), separators[separatorStyle].type == 'svg' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-svg wprig-separator-".concat(separatorStyle)
+      }, separators[separatorStyle].svg)));
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Layout'),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Styles, {
+        value: layout,
+        onChange: function onChange(val) {
+          return setAttributes({
+            layout: val
+          });
+        },
+        options: [{
+          value: 1,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].infobox_1,
+          label: __('Layout 1')
+        }, {
+          value: 2,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].infobox_2,
+          label: __('Layout 2')
+        }, {
+          value: 3,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].infobox_3,
+          label: __('Layout 3')
+        }, {
+          value: 4,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].infobox_4,
+          label: __('Layout 4')
+        }]
+      }), (layout == 1 || layout == 4) && /*#__PURE__*/React.createElement(Alignment, (_React$createElement = {
+        label: __('Alignment'),
+        value: alignment,
+        alignmentType: "content",
+        onChange: function onChange(val) {
+          return setAttributes({
+            alignment: val
+          });
+        }
+      }, _defineProperty(_React$createElement, "alignmentType", "content"), _defineProperty(_React$createElement, "disableJustify", true), _defineProperty(_React$createElement, "responsive", true), _defineProperty(_React$createElement, "device", device), _defineProperty(_React$createElement, "onDeviceChange", function onDeviceChange(value) {
+        return _this2.setState({
+          device: value
+        });
+      }), _React$createElement))), layout != 4 && /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Media'),
+        opened: 'Media' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Media' ? 'Media' : '');
+        }
+      }, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Type'),
+        value: mediaType,
+        options: [{
+          label: __('Icon'),
+          value: 'icon',
+          title: __('Icon')
+        }, {
+          label: __('Image'),
+          value: 'image',
+          title: __('Image')
+        }, {
+          label: __('Number'),
+          value: 'number',
+          title: __('Number')
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaType: val,
+            recreateStyles: !recreateStyles
+          });
+        }
+      }), mediaType && /*#__PURE__*/React.createElement(Fragment, null, mediaType == 'icon' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(IconList, {
+        label: __('Icon'),
+        value: iconName,
+        onChange: function onChange(val) {
+          return setAttributes({
+            iconName: val
+          });
+        },
+        disableToggle: true
+      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Icon Size'),
+        value: iconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            iconSize: value
+          });
+        },
+        options: [{
+          label: 'S',
+          value: '36px',
+          title: 'Small'
+        }, {
+          label: 'M',
+          value: '64px',
+          title: 'Medium'
+        }, {
+          label: 'L',
+          value: '128px',
+          title: 'Large'
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: 'Custom'
+        }]
+      }), iconSize == 'custom' && /*#__PURE__*/React.createElement(Range, {
+        label: __('Custom Size'),
+        value: iconSizeCustom,
+        onChange: function onChange(val) {
+          return setAttributes({
+            iconSizeCustom: val
+          });
+        },
+        min: 12,
+        max: 300,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), mediaType == 'image' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ButtonGroup, {
+        label: __('Image Type'),
+        options: [[__('Local'), 'local'], [__('External'), 'external']],
+        value: imageType,
+        onChange: function onChange(value) {
+          return setAttributes({
+            imageType: value
+          });
+        }
+      }), imageType === 'local' ? /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Media, {
+        label: __('Image'),
+        multiple: false,
+        type: ['image'],
+        panel: true,
+        value: image,
+        onChange: function onChange(val) {
+          return setAttributes({
+            image: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Media, {
+        label: __('Retina Image'),
+        multiple: false,
+        type: ['image'],
+        panel: true,
+        value: image2x,
+        onChange: function onChange(val) {
+          return setAttributes({
+            image2x: val
+          });
+        }
+      })) : /*#__PURE__*/React.createElement(Url, {
+        label: __('Image Source'),
+        disableAdvanced: true,
+        value: externalImageUrl,
+        onChange: function onChange(newUrl) {
+          return setAttributes({
+            externalImageUrl: newUrl
+          });
+        }
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Alt Text'),
+        value: imgAlt,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imgAlt: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Image Width'),
+        value: imageWidth,
+        onChange: function onChange(val) {
+          return setAttributes({
+            imageWidth: val
+          });
+        },
+        min: 0,
+        max: 2000,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), mediaType == 'number' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Number'),
+        type: "number",
+        value: number,
+        onChange: function onChange(val) {
+          return setAttributes({
+            number: parseInt(val)
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        value: numberTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberTypography: value
+          });
+        },
+        disableLineHeight: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), mediaType != 'image' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Use Background'),
+        value: useMediaBg,
+        onChange: function onChange(val) {
+          return setAttributes({
+            useMediaBg: val
+          });
+        }
+      }), useMediaBg == 1 && /*#__PURE__*/React.createElement(Range, {
+        label: __('Background Size'),
+        value: mediaBackgroundSize,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaBackgroundSize: val
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, mediaType == 'icon' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: iconColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            iconColor: val
+          });
+        }
+      }), mediaType == 'number' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: numberColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberColor: value
+          });
+        }
+      }), useMediaBg == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background Color'),
+        value: mediaBg,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaBg: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: mediaBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: mediaShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            mediaShadow: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, mediaType == 'icon' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: iconHoverColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            iconHoverColor: val
+          });
+        }
+      }), mediaType == 'number' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: numberColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberColorHover: value
+          });
+        }
+      }), useMediaBg == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background Color'),
+        value: mediaBgHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaBgHover: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: mediaBorderColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            mediaBorderColorHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: mediaShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            mediaShadowHover: value
+          });
+        }
+      }))))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: mediaBorderRadius,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaBorderRadius: val
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: mediaSpacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            mediaSpacing: val
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Title'),
+        opened: 'Title' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Title' ? 'Title' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable'),
+        value: enableTitle,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableTitle: val
+          });
+        }
+      }), subTitle == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Headings, {
+        label: __('Title Tag'),
+        selectedLevel: titleLevel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleLevel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: titleTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: /*#__PURE__*/React.createElement("span", null, "Spacing ", /*#__PURE__*/React.createElement("span", {
+          className: "dashicons dashicons-sort",
+          title: "Y Spacing"
+        })),
+        value: titleSpacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            titleSpacing: val
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: titleColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleColor: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: titleColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            titleColorHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(SelectControl, {
+        label: __('Separator'),
+        value: separatorStyle,
+        options: [{
+          label: '--Select--',
+          value: ''
+        }, {
+          label: 'Line',
+          value: 'solid'
+        }, {
+          label: 'Line Doubled',
+          value: 'double'
+        }, {
+          label: 'Dashed',
+          value: 'dashed'
+        }, {
+          label: 'Dotted',
+          value: 'dotted'
+        }, {
+          label: 'Pin',
+          value: 'pin'
+        }, {
+          label: 'Pin Filled',
+          value: 'pin_filled'
+        }, {
+          label: 'Zigzag',
+          value: 'zigzag'
+        }, {
+          label: 'Zigzag Large',
+          value: 'zigzag_large'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorStyle: val
+          });
+        }
+      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Separator Color'),
+        value: separatorColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorColor: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Separator Color'),
+        value: separatorColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorColorHover: val
+          });
+        }
+      }))), separatorStyle != 'pin' && separatorStyle != 'pin_filled' && /*#__PURE__*/React.createElement(Range, {
+        label: __('Stroke'),
+        value: separatorStroke,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorStroke: val
+          });
+        },
+        min: 1,
+        max: separators[separatorStyle].stroke
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Width'),
+        value: separatorWidth,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorWidth: val
+          });
+        },
+        min: 20,
+        max: separators[separatorStyle].width,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: separatorSpacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorSpacing: val
+          });
+        },
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: "Position",
+        value: separatorPosition,
+        options: [{
+          label: 'Top',
+          value: 'top'
+        }, {
+          label: 'Bottom',
+          value: 'bottom'
+        }, {
+          label: 'Left',
+          value: 'left'
+        }, {
+          label: 'Right',
+          value: 'right'
+        }, {
+          label: 'Left & Right',
+          value: 'leftright'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorPosition: val
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Sub Title'),
+        opened: 'Sub Title' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Sub Title' ? 'Sub Title' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable'),
+        value: subTitle,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subTitle: val
+          });
+        }
+      }), subTitle == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Headings, {
+        label: __('Sub Title Tag'),
+        selectedLevel: subTitleLevel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            subTitleLevel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: subTitleTypography,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subTitleTypography: val
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: subTitleColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subTitleColor: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: subTitleColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subTitleColorHover: val
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: subTitleSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            subTitleSpacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Content'),
+        opened: 'Content' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Content' ? 'Content' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Content'),
+        value: enableContent,
+        onChange: function onChange(val) {
+          return setAttributes({
+            enableContent: val
+          });
+        }
+      }), enableContent && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: contentTypography,
+        onChange: function onChange(value) {
+          return setAttributes({
+            contentTypography: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: contentColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            contentColor: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: contentColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            contentColorHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: contentPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            contentPadding: val
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), enableButton && /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: contentSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            contentSpacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Background'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background Color'),
+        value: bgColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: bgPadding,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgPadding: val
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: bgBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: bgShadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgShadow: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: bgBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background Color'),
+        value: bgColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgColorHover: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: bgShadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgShadowHover: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: bgBorderColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgBorderColorHover: value
+          });
+        }
+      })))), buttonSettings(this.props.attributes, device, function (key, value) {
+        setAttributes(_defineProperty({}, key, value));
+      }, function (key, value) {
+        _this2.setState(_defineProperty({}, key, value));
+      })), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-info-box wprig-info-box-layout-".concat(layout),
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        }
+      }, layout != 4 && mediaType && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-media".concat(useMediaBg && mediaType !== 'image' ? ' wprig-media-has-bg' : ''),
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Media');
+        }
+      }, mediaType == 'icon' && iconName && /*#__PURE__*/React.createElement("i", {
+        className: "wprig-info-box-icon " + iconName
+      }), mediaType == 'image' && /*#__PURE__*/React.createElement(Fragment, null, imageType === 'local' && image.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-info-box-image",
+        src: image.url,
+        srcset: image2x.url != undefined ? image.url + ' 1x, ' + image2x.url + ' 2x' : '',
+        alt: imgAlt && imgAlt
+      }) : imageType === 'external' && externalImageUrl.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-info-box-image",
+        src: externalImageUrl.url,
+        alt: imgAlt && imgAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-image wprig-image-placeholder"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-image"
+      }))), mediaType == 'number' && number && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-info-box-number"
+      }, number)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-body"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-title-container ".concat(separatorStyle ? 'wprig-has-separator' : '', " ").concat(separatorPosition ? 'wprig-separator-position-' + separatorPosition : '')
+      }, enableTitle == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-title-inner"
+      }, separatorStyle && (separatorPosition == 'left' || separatorPosition == 'top' || separatorPosition == 'leftright') ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-before"
+      }, renderSeparators) : '', /*#__PURE__*/React.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Title');
+        }
+      }, /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: titleTagName,
+        className: "wprig-info-box-title",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            title: value
+          });
+        },
+        value: title
+      })), separatorStyle != '' && (separatorPosition == 'right' || separatorPosition == 'bottom' || separatorPosition == 'leftright') ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-after"
+      }, renderSeparators) : ''), subTitle == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-sub-title-container",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Sub Title');
+        }
+      }, /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: subTitleTagName,
+        className: "wprig-info-box-sub-title",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            subTitleContent: value
+          });
+        },
+        value: subTitleContent
+      }))), enableContent && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-content",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Content');
+        }
+      }, /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: "div",
+        className: "wprig-info-box-text",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            content: value
+          });
+        },
+        value: content
+      })), enableButton && /*#__PURE__*/React.createElement(WPRigButtonEdit, {
+        enableButton: enableButton,
+        buttonFillType: buttonFillType,
+        buttonSize: buttonSize,
+        buttonText: buttonText,
+        buttonIconName: buttonIconName,
+        buttonIconPosition: buttonIconPosition,
+        buttonUrl: buttonUrl,
+        onTextChange: function onTextChange(value) {
+          return setAttributes({
+            buttonText: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/info-box/Save.js":
+/*!*************************************!*\
+  !*** ./src/blocks/info-box/Save.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../advance-heading/separators */ "./src/blocks/advance-heading/separators.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component;
+var RichText = wp.blockEditor.RichText;
+
+var WPRigButtonSave = wp.wprigComponents.WPRigButtonSave;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          layout = _this$props$attribute.layout,
+          mediaType = _this$props$attribute.mediaType,
+          enableTitle = _this$props$attribute.enableTitle,
+          titleLevel = _this$props$attribute.titleLevel,
+          title = _this$props$attribute.title,
+          separatorStyle = _this$props$attribute.separatorStyle,
+          separatorPosition = _this$props$attribute.separatorPosition,
+          enableContent = _this$props$attribute.enableContent,
+          content = _this$props$attribute.content,
+          iconName = _this$props$attribute.iconName,
+          image = _this$props$attribute.image,
+          image2x = _this$props$attribute.image2x,
+          imgAlt = _this$props$attribute.imgAlt,
+          imageType = _this$props$attribute.imageType,
+          externalImageUrl = _this$props$attribute.externalImageUrl,
+          number = _this$props$attribute.number,
+          enableButton = _this$props$attribute.enableButton,
+          animation = _this$props$attribute.animation,
+          subTitle = _this$props$attribute.subTitle,
+          subTitleLevel = _this$props$attribute.subTitleLevel,
+          subTitleContent = _this$props$attribute.subTitleContent,
+          buttonFillType = _this$props$attribute.buttonFillType,
+          buttonSize = _this$props$attribute.buttonSize,
+          buttonText = _this$props$attribute.buttonText,
+          buttonUrl = _this$props$attribute.buttonUrl,
+          buttonIconName = _this$props$attribute.buttonIconName,
+          buttonIconPosition = _this$props$attribute.buttonIconPosition,
+          useMediaBg = _this$props$attribute.useMediaBg,
+          interaction = _this$props$attribute.interaction;
+      var separators = {
+        solid: {
+          type: 'css',
+          separator: 'solid',
+          width: 300,
+          stroke: 10
+        },
+        "double": {
+          type: 'css',
+          separator: 'double',
+          width: 300,
+          stroke: 10
+        },
+        dotted: {
+          type: 'css',
+          separator: 'dotted',
+          width: 300,
+          stroke: 10
+        },
+        dashed: {
+          type: 'css',
+          separator: 'dashed',
+          width: 300,
+          stroke: 10
+        },
+        pin: {
+          type: 'svg',
+          separator: 'pin',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin'],
+          width: 100,
+          stroke: 0
+        },
+        pin_filled: {
+          type: 'svg',
+          separator: 'pin_filled',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin_filled'],
+          width: 100,
+          stroke: 0
+        },
+        zigzag: {
+          type: 'svg',
+          separator: 'zigzag',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag'],
+          style: 'fill',
+          width: 88,
+          stroke: 5
+        },
+        zigzag_large: {
+          type: 'svg',
+          separator: 'zigzag_large',
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag_large'],
+          style: 'fill',
+          width: 161,
+          stroke: 5
+        }
+      };
+      var renderSeparators = /*#__PURE__*/React.createElement(Fragment, null, separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, separators[separatorStyle].type == 'css' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-css wprig-separator-".concat(separatorStyle)
+      }), separators[separatorStyle].type == 'svg' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-svg wprig-separator-".concat(separatorStyle)
+      }, separators[separatorStyle].svg)));
+      var titleTagName = 'h' + titleLevel;
+      var subTitleTagName = 'h' + subTitleLevel;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-info-box ".concat(interactionClass, " wprig-info-box-layout-").concat(layout)
+      }, layout != 4 && mediaType && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-media".concat(useMediaBg ? ' wprig-media-has-bg' : '')
+      }, mediaType == 'icon' && iconName && /*#__PURE__*/React.createElement("i", {
+        className: "wprig-info-box-icon " + iconName
+      }), mediaType == 'image' && /*#__PURE__*/React.createElement(Fragment, null, imageType === 'local' && image.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-info-box-image",
+        src: image.url,
+        srcset: image2x.url != undefined ? image.url + ' 1x, ' + image2x.url + ' 2x' : '',
+        alt: imgAlt && imgAlt
+      }) : imageType === 'external' && externalImageUrl.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-info-box-image",
+        src: externalImageUrl.url,
+        alt: imgAlt && imgAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-image wprig-image-placeholder"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-image"
+      }))), mediaType == 'number' && number && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-info-box-number"
+      }, number)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-body"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-title-container ".concat(separatorStyle ? 'wprig-has-separator' : '', " ").concat(separatorPosition ? 'wprig-separator-position-' + separatorPosition : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-title-inner"
+      }, separatorStyle && (separatorPosition == 'left' || separatorPosition == 'top' || separatorPosition == 'leftright') ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-before"
+      }, renderSeparators) : '', enableTitle == 1 && /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: titleTagName,
+        className: "wprig-info-box-title",
+        value: title
+      }), separatorStyle != '' && (separatorPosition == 'right' || separatorPosition == 'bottom' || separatorPosition == 'leftright') ? /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-after"
+      }, renderSeparators) : ''), subTitle == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-sub-title-container"
+      }, /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: subTitleTagName,
+        className: "wprig-info-box-sub-title",
+        value: subTitleContent
+      }))), enableContent && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-info-box-content"
+      }, /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "div",
+        className: "wprig-info-box-text",
+        value: content
+      })), enableButton && /*#__PURE__*/React.createElement(WPRigButtonSave, {
+        buttonFillType: buttonFillType,
+        buttonSize: buttonSize,
+        buttonText: buttonText,
+        buttonIconName: buttonIconName,
+        buttonIconPosition: buttonIconPosition,
+        buttonUrl: buttonUrl,
+        buttonTag: "a"
+      }))));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/info-box/attributes.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/info-box/attributes.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var _wp$wprigComponents = wp.wprigComponents,
+    globalAttributes = _wp$wprigComponents.globalSettings.globalAttributes,
+    buttonAttributes = _wp$wprigComponents.wprigButton.buttonAttributes;
+
+var attributes = _objectSpread(_objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), buttonAttributes), {}, {
+  recreateStyles: {
+    type: 'boolean',
+    "default": true
+  },
+  layout: {
+    type: 'number',
+    "default": 1
+  },
+  alignment: {
+    type: 'object',
+    "default": {
+      md: 'left'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box {text-align: {{alignment}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 4
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box {text-align: {{alignment}};}'
+    }]
+  },
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: 'px'
+      },
+      spaceBottom: {
+        md: '10',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  mediaType: {
+    type: 'string',
+    "default": 'icon'
+  },
+  enableButton: {
+    type: 'boolean',
+    "default": false
+  },
+  buttonToggleOption: {
+    type: 'boolean',
+    "default": true
+  },
+  // Icon
+  iconName: {
+    type: 'string',
+    "default": 'fas fa-rocket'
+  },
+  iconSize: {
+    type: 'string',
+    "default": '36px',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'icon'
+      }, {
+        key: 'iconSize',
+        relation: '!=',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {font-size: {{iconSize}};}'
+    }]
+  },
+  iconSizeCustom: {
+    type: 'object',
+    "default": {
+      md: 64,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'icon'
+      }, {
+        key: 'iconSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {font-size: {{iconSizeCustom}};}'
+    }]
+  },
+  iconColor: {
+    type: 'string',
+    "default": 'var(--wprig-color-1)',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'icon'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media i {color: {{iconColor}};}'
+    }]
+  },
+  iconHoverColor: {
+    type: 'string',
+    "default": 'var(--wprig-color-2)',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'icon'
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media i {color: {{iconHoverColor}};}'
+    }]
+  },
+  // Image
+  image: {
+    type: 'object',
+    "default": {}
+  },
+  image2x: {
+    type: 'object',
+    "default": {}
+  },
+  imgAlt: {
+    type: 'string',
+    "default": ''
+  },
+  imageType: {
+    type: 'string',
+    "default": 'local'
+  },
+  externalImageUrl: {
+    type: 'object',
+    "default": {}
+  },
+  imageWidth: {
+    type: 'object',
+    "default": {},
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'image'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {width: {{imageWidth}};} {{WPRIG}} .wprig-info-box-media img {width: 100%;} {{WPRIG}} .wprig-info-box-media .wprig-image-placeholder {height: {{imageWidth}}; width: {{imageWidth}};}'
+    }]
+  },
+  // Number
+  number: {
+    type: 'number',
+    "default": 1
+  },
+  numberColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'number'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-number {color: {{numberColor}};}'
+    }]
+  },
+  numberColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'number'
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-number {color: {{numberColorHover}};}'
+    }]
+  },
+  numberTypography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 48,
+        unit: 'px'
+      }
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'mediaType',
+        relation: '==',
+        value: 'number'
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media'
+    }]
+  },
+  // Media background
+  useMediaBg: {
+    type: 'boolean',
+    "default": 1
+  },
+  mediaBg: {
+    type: 'object',
+    "default": {
+      openColor: 1,
+      type: 'color',
+      color: '#D6EBFF'
+    },
+    style: [{
+      condition: [{
+        key: 'mediaType',
+        relation: '!=',
+        value: 'image'
+      }, // { key: 'layout', relation: '!=', value: 4 },
+      {
+        key: 'useMediaBg',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media.wprig-media-has-bg'
+    }]
+  },
+  mediaBgHover: {
+    type: 'object',
+    "default": {},
+    style: [{
+      condition: [{
+        key: 'mediaType',
+        relation: '!=',
+        value: 'image'
+      }, // { key: 'layout', relation: '!=', value: 4 },
+      {
+        key: 'useMediaBg',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media'
+    }]
+  },
+  mediaBackgroundSize: {
+    type: 'object',
+    "default": {
+      md: '20',
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'mediaType',
+        relation: '!=',
+        value: 'image'
+      }, // { key: 'layout', relation: '!=', value: 4 },
+      {
+        key: 'useMediaBg',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media { padding: {{mediaBackgroundSize}};}'
+    }]
+  },
+  mediaBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global',
+      global: {
+        md: 5
+      },
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'useMediaBg',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media, {{WPRIG}} .wprig-info-box-media img'
+    }]
+  },
+  // Media Border
+  mediaBorder: {
+    type: 'number',
+    "default": 0,
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'useMediaBg',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media'
+    }]
+  },
+  mediaBorderColorHover: {
+    type: 'string',
+    "default": '#e5e5e5',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'useMediaBg',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media { border-color: {{mediaBorderColorHover}};}'
+    }]
+  },
+  // Media Shadow
+  mediaShadow: {
+    type: 'object',
+    "default": {},
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media'
+    }]
+  },
+  mediaShadowHover: {
+    type: 'object',
+    "default": {},
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '!=',
+        value: 4
+      }, {
+        key: 'useMediaShadow',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media'
+    }]
+  },
+  // Media Spacing
+  mediaSpacing: {
+    type: 'object',
+    "default": {
+      md: 20,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {margin-bottom: {{mediaSpacing}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 2
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {margin-right: {{mediaSpacing}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 3
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-media {margin-left: {{mediaSpacing}};}'
+    }]
+  },
+  // Title
+  enableTitle: {
+    type: 'boolean',
+    "default": 1
+  },
+  title: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-info-box-title',
+    "default": 'This is an infobox'
+  },
+  titleLevel: {
+    type: 'number',
+    "default": 2
+  },
+  titleTypography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 24,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-info-box-title'
+    }]
+  },
+  titleColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-info-box-title {color: {{titleColor}};}'
+    }]
+  },
+  titleColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-title {color: {{titleColorHover}};}'
+    }]
+  },
+  titleSpacing: {
+    type: 'object',
+    "default": {
+      md: 10,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-info-box-title-inner {margin-bottom: {{titleSpacing}};}'
+    }]
+  },
+  subTitle: {
+    type: 'boolean',
+    "default": 0
+  },
+  subTitleLevel: {
+    type: 'number',
+    "default": 3
+  },
+  subTitleContent: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-info-box-sub-title',
+    "default": 'Sub Title'
+  },
+  subTitleTypography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title'
+    }]
+  },
+  subTitleColor: {
+    type: 'string',
+    "default": '#333',
+    style: [{
+      condition: [{
+        key: 'subTitle',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title {color: {{subTitleColor}};}'
+    }]
+  },
+  subTitleColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'subTitle',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-sub-title {color: {{subTitleColorHover}};}'
+    }]
+  },
+  subTitleSpacing: {
+    type: 'object',
+    "default": {
+      md: 15,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'subTitle',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title {margin-bottom: {{subTitleSpacing}};}'
+    }]
+  },
+  // Title separator
+  separatorStyle: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {border-top-style: {{separatorStyle}};}'
+    }]
+  },
+  separatorPosition: {
+    type: 'string',
+    "default": 'top'
+  },
+  separatorColor: {
+    type: 'string',
+    "default": '#5D7FEB',
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-info-box svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
+    }]
+  },
+  separatorColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColorHover}};} {{WPRIG}} .wprig-block-info-box:hover svg .wprig-separator-fill {fill: {{separatorColorHover}};} {{WPRIG}} .wprig-block-info-box:hover .wprig-separator-type-css {border-top-color: {{separatorColorHover}};}'
+    }]
+  },
+  separatorStroke: {
+    type: 'number',
+    "default": 3,
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
+    }]
+  },
+  separatorWidth: {
+    type: 'object',
+    "default": {
+      md: 60
+    },
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}} .wprig-block-info-box .wprig-separator-type-svg svg {width: {{separatorWidth}}px;}'
+    }]
+  },
+  separatorSpacing: {
+    type: 'object',
+    "default": {
+      md: 10
+    },
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }, {
+        key: 'separatorPosition',
+        relation: '==',
+        value: 'left'
+      }],
+      selector: '{{WPRIG}} .wprig-separator {margin-right: {{separatorSpacing}}px;}'
+    }, {
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }, {
+        key: 'separatorPosition',
+        relation: '==',
+        value: 'right'
+      }],
+      selector: '{{WPRIG}} .wprig-separator {margin-left: {{separatorSpacing}}px;}'
+    }, {
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }, {
+        key: 'separatorPosition',
+        relation: '==',
+        value: 'leftright'
+      }],
+      selector: '{{WPRIG}} .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-after {margin-left: {{separatorSpacing}}px;}'
+    }, {
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }, {
+        key: 'separatorPosition',
+        relation: '==',
+        value: 'top'
+      }],
+      selector: '{{WPRIG}} .wprig-separator {margin-bottom: {{separatorSpacing}}px;}'
+    }, {
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }, {
+        key: 'separatorPosition',
+        relation: '==',
+        value: 'bottom'
+      }],
+      selector: '{{WPRIG}} .wprig-separator {margin-top: {{separatorSpacing}}px;}'
+    }]
+  },
+  //Content
+  enableContent: {
+    type: 'boolean',
+    "default": true
+  },
+  content: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-info-box-text',
+    "default": 'wprig blocks are added to the Gutenberg editor as soon as you install the plugin. You can start using it as any other Gutenberg block.'
+  },
+  contentTypography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      condition: [{
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-text'
+    }]
+  },
+  contentColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-text {color: {{contentColor}};}'
+    }]
+  },
+  contentColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-text {color: {{contentColorHover}};}'
+    }]
+  },
+  contentPadding: {
+    type: 'object',
+    "default": {},
+    style: [{
+      condition: [{
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-body'
+    }]
+  },
+  contentSpacing: {
+    type: 'object',
+    "default": {
+      md: 10,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'enableButton',
+        relation: '==',
+        value: true
+      }, {
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-body .wprig-info-box-text {margin-bottom: {{contentSpacing}};}'
+    }, {
+      condition: [{
+        key: 'enableButton',
+        relation: '==',
+        value: false
+      }, {
+        key: 'enableContent',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-info-box-body .wprig-info-box-text {margin-bottom: 0;}'
+    }]
+  },
+  // Body
+  bgColor: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box'
+    }]
+  },
+  bgColorHover: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box:hover'
+    }]
+  },
+  bgPadding: {
+    type: 'object',
+    "default": {
+      paddingType: 'global'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box'
+    }]
+  },
+  bgBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box'
+    }]
+  },
+  bgBorder: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box'
+    }]
+  },
+  bgBorderColorHover: {
+    type: 'string',
+    "default": '#e5e5e5',
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box:hover { border-color: {{bgBorderColorHover}};}'
+    }]
+  },
+  bgShadow: {
+    type: 'object',
+    "default": {
+      color: ''
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box'
+    }]
+  },
+  bgShadowHover: {
+    type: 'object',
+    "default": {
+      color: ''
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-info-box:hover'
+    }]
+  },
+  sourceOfCopiedStyle: {
+    type: 'boolean',
+    "default": false
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/info-box/block.js":
+/*!**************************************!*\
+  !*** ./src/blocks/info-box/block.js ***!
+  \**************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/info-box/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/info-box/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/info-box/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/info-box/attributes.js");
+
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+registerBlockType('wprig/infobox', {
+  title: __('Info Box', 'wprig'),
+  description: 'Be creatively informative with wprig Info Box.',
+  icon: 'universal-access-alt',
+  category: 'wprig-blocks',
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  keywords: [__('service', 'wprig'), __('feature', 'wprig'), __('info', 'wprig')],
+  example: {
+    attributes: {}
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/info-box/style.scss":
+/*!****************************************!*\
+  !*** ./src/blocks/info-box/style.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/info-box/style.scss");
 
             content = content.__esModule ? content.default : content;
 
