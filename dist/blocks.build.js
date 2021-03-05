@@ -13724,8 +13724,6 @@ var _wp$components = wp.components,
     Dropdown = _wp$components.Dropdown;
 var _wp$wprigComponents = wp.wprigComponents,
     Alignment = _wp$wprigComponents.Alignment,
-    Range = _wp$wprigComponents.Range,
-    Color = _wp$wprigComponents.Color,
     _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
     ContextMenu = _wp$wprigComponents$C.ContextMenu,
     handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
@@ -13811,9 +13809,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           _this$props2$attribut = _this$props2.attributes,
           uniqueId = _this$props2$attribut.uniqueId,
           className = _this$props2$attribut.className,
-          color = _this$props2$attribut.color,
-          height = _this$props2$attribut.height,
-          width = _this$props2$attribut.width,
           alignment = _this$props2$attribut.alignment,
           style = _this$props2$attribut.style,
           animation = _this$props2$attribut.animation,
@@ -13865,53 +13860,6 @@ var Edit = /*#__PURE__*/function (_Component) {
             alignment: val
           });
         },
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Divider Settings', 'wprig'),
-        initialOpen: true
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: color,
-        onChange: function onChange(val) {
-          return setAttributes({
-            color: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Height'),
-        value: height,
-        onChange: function onChange(val) {
-          return setAttributes({
-            height: val
-          });
-        },
-        min: 0,
-        max: 15,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Width'),
-        value: width,
-        onChange: function onChange(val) {
-          return setAttributes({
-            width: val
-          });
-        },
-        min: 0,
-        max: 1000,
-        unit: ['px', 'em', '%'],
         responsive: true,
         device: device,
         onDeviceChange: function onDeviceChange(value) {
@@ -14112,13 +14060,6 @@ registerBlockType('wprig/divider', {
     style: {
       type: 'string',
       "default": 'slash'
-    },
-    color: {
-      type: 'string',
-      "default": '#252525',
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-divider > div { border-top-color: {{color}}; } {{WPRIG}} .wprig-block-divider path { fill: {{color}}; } {{WPRIG}} .wprig-block-divider circle { stroke: {{color}}; }  {{WPRIG}} .wprig-block-divider ellipse { stroke: {{color}}; fill: {{color}}; }'
-      }]
     },
     height: {
       type: 'object',
