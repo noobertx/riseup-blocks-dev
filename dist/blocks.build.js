@@ -28187,7 +28187,6 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -28219,7 +28218,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
 var __ = wp.i18n.__;
 var _wp$components = wp.components,
     Toolbar = _wp$components.Toolbar,
@@ -28238,23 +28236,12 @@ var _wp$blockEditor = wp.blockEditor,
     BlockControls = _wp$blockEditor.BlockControls,
     InspectorControls = _wp$blockEditor.InspectorControls;
 var _wp$wprigComponents = wp.wprigComponents,
-    Tab = _wp$wprigComponents.Tab,
-    Tabs = _wp$wprigComponents.Tabs,
-    Color = _wp$wprigComponents.Color,
-    Range = _wp$wprigComponents.Range,
     Select = _wp$wprigComponents.Select,
-    Border = _wp$wprigComponents.Border,
-    Styles = _wp$wprigComponents.Styles,
-    Padding = _wp$wprigComponents.Padding,
     IconList = _wp$wprigComponents.IconList,
-    Separator = _wp$wprigComponents.Separator,
-    BoxShadow = _wp$wprigComponents.BoxShadow,
     Alignment = _wp$wprigComponents.Alignment,
-    Typography = _wp$wprigComponents.Typography,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Separator = _wp$wprigComponents.Separator,
     InspectorTab = _wp$wprigComponents.InspectorTab,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
-    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
@@ -28438,36 +28425,10 @@ var Edit = /*#__PURE__*/function (_Component) {
           uniqueId = _this$props4$attribut.uniqueId,
           className = _this$props4$attribut.className,
           tabs = _this$props4$attribut.tabs,
-          navBg = _this$props4$attribut.navBg,
-          navSize = _this$props4$attribut.navSize,
-          navColor = _this$props4$attribut.navColor,
           tabStyle = _this$props4$attribut.tabStyle,
           tabTitles = _this$props4$attribut.tabTitles,
-          navSpacing = _this$props4$attribut.navSpacing,
-          typography = _this$props4$attribut.typography,
-          navPaddingY = _this$props4$attribut.navPaddingY,
-          navPaddingX = _this$props4$attribut.navPaddingX,
-          navBgActive = _this$props4$attribut.navBgActive,
           navAlignment = _this$props4$attribut.navAlignment,
-          navColorActive = _this$props4$attribut.navColorActive,
-          navBorder = _this$props4$attribut.navBorder,
-          navBorderActive = _this$props4$attribut.navBorderActive,
-          navBorderRadiusTabs = _this$props4$attribut.navBorderRadiusTabs,
-          navBorderRadiusPills = _this$props4$attribut.navBorderRadiusPills,
-          navUnderlineBorderWidth = _this$props4$attribut.navUnderlineBorderWidth,
-          navUnderlineBorderColor = _this$props4$attribut.navUnderlineBorderColor,
-          navUnderlineBorderColorActive = _this$props4$attribut.navUnderlineBorderColorActive,
-          iconGap = _this$props4$attribut.iconGap,
-          iconSize = _this$props4$attribut.iconSize,
           iconPosition = _this$props4$attribut.iconPosition,
-          bodyBg = _this$props4$attribut.bodyBg,
-          bodyBorder = _this$props4$attribut.bodyBorder,
-          bodyShadow = _this$props4$attribut.bodyShadow,
-          bodyPadding = _this$props4$attribut.bodyPadding,
-          bodyTopSpacing = _this$props4$attribut.bodyTopSpacing,
-          bodyBorderRadius = _this$props4$attribut.bodyBorderRadius,
-          bodySeparatorColor = _this$props4$attribut.bodySeparatorColor,
-          bodySeparatorHeight = _this$props4$attribut.bodySeparatorHeight,
           animation = _this$props4$attribut.animation,
           globalCss = _this$props4$attribut.globalCss,
           hideTablet = _this$props4$attribut.hideTablet,
@@ -28513,27 +28474,7 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Styles'),
         initialOpen: true
-      }, /*#__PURE__*/React.createElement(Styles, {
-        value: tabStyle,
-        onChange: function onChange(val) {
-          return setAttributes({
-            tabStyle: val
-          });
-        },
-        options: [{
-          value: 'tabs',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].tab_tabs,
-          label: __('Tabs')
-        }, {
-          value: 'pills',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].tab_pills,
-          label: __('Pills')
-        }, {
-          value: 'underline',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_1__["default"].tab_underline,
-          label: __('Underline')
-        }]
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Alignment, {
+      }, /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Alignment, {
         label: __('Alignment'),
         value: navAlignment,
         alignmentType: "content",
@@ -28543,251 +28484,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         },
         disableJustify: true
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Nav'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Nav Size'),
-        options: [{
-          label: 'S',
-          value: '4px 12px',
-          title: 'Small'
-        }, {
-          label: 'M',
-          value: '6px 15px',
-          title: 'Medium'
-        }, {
-          label: 'L',
-          value: '10px 20px',
-          title: 'Large'
-        }, {
-          icon: 'fas fa-cog',
-          value: 'custom',
-          title: 'Custom'
-        }],
-        value: navSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navSize: value
-          });
-        }
-      }), navSize == 'custom' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-sort",
-          title: "X Spacing"
-        }),
-        value: navPaddingY,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navPaddingY: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-leftright",
-          title: "Y Spacing"
-        }),
-        value: navPaddingX,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navPaddingX: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Range, {
-        label: __('Gap'),
-        value: navSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navSpacing: value
-          });
-        },
-        max: 50,
-        min: 0,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), tabStyle == 'tabs' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: navBorderRadiusTabs,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBorderRadiusTabs: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), tabStyle == 'pills' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: navBorderRadiusPills,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBorderRadiusPills: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), tabStyle == 'underline' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Underline Height'),
-        value: navUnderlineBorderWidth,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navUnderlineBorderWidth: value
-          });
-        },
-        min: 1,
-        max: 10,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: navColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navColor: value
-          });
-        }
-      }), tabStyle != 'underline' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background'),
-        value: navBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: navBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBorder: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), tabStyle == 'underline' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Line Color'),
-        value: navUnderlineBorderColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navUnderlineBorderColor: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Active')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: navColorActive,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navColorActive: value
-          });
-        }
-      }), tabStyle != 'underline' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background'),
-        value: navBgActive,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBgActive: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: navBorderActive,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navBorderActive: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), tabStyle == 'underline' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Line Color'),
-        value: navUnderlineBorderColorActive,
-        onChange: function onChange(value) {
-          return setAttributes({
-            navUnderlineBorderColorActive: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: typography,
-        onChange: function onChange(value) {
-          return setAttributes({
-            typography: value
-          });
-        },
-        disableLineHeight: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
       })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Icon'),
         initialOpen: false
@@ -28808,162 +28504,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             iconPosition: value
           });
         }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Icon Size'),
-        value: iconSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconSize: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 5,
-        max: 48,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Icon Gap'),
-        value: iconGap,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconGap: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 64,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Body'),
-        initialOpen: false
-      }, tabStyle == 'tabs' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background Color'),
-        value: bodyBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: bodyPadding,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyPadding: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), tabStyle == 'underline' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: __('Separator Height'),
-        value: bodySeparatorHeight,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodySeparatorHeight: value
-          });
-        },
-        min: 0,
-        max: 5,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), bodySeparatorHeight.md > 0 && /*#__PURE__*/React.createElement(Color, {
-        label: __('Separator Color'),
-        value: bodySeparatorColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodySeparatorColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null)), tabStyle != 'tabs' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: bodyTopSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyTopSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), tabStyle == 'tabs' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        separator: true,
-        value: bodyBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBorder: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bodyShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyShadow: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        separator: true,
-        value: bodyBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBorderRadius: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -29198,13 +28739,6 @@ var attributes = _objectSpread(_objectSpread({
       title: 'Tab 3'
     }]
   },
-  typography: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title'
-    }]
-  },
   //icons
   iconPosition: {
     type: 'string',
@@ -29227,207 +28761,12 @@ var attributes = _objectSpread(_objectSpread({
       selector: '{{WPRIG}} .wprig-tab-title.wprig-has-icon-left .wprig-tab-icon { margin-right: {{iconGap}}; } {{WPRIG}} .wprig-tab-title.wprig-has-icon-right .wprig-tab-icon  { margin-left: {{iconGap}};} {{WPRIG}} .wprig-tab-title.wprig-has-icon-top .wprig-tab-icon  { margin-bottom: {{iconGap}};}'
     }]
   },
-  // Size
-  navSize: {
-    type: 'string',
-    "default": '6px 15px',
-    style: [{
-      condition: [{
-        key: 'navSize',
-        relation: '!=',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title {padding: {{navSize}};}'
-    }]
-  },
-  navPaddingY: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'navSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title {padding-top: {{navPaddingY}}; padding-bottom: {{navPaddingY}};}'
-    }]
-  },
-  navPaddingX: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'navSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title {padding-left: {{navPaddingX}}; padding-right: {{navPaddingX}};}'
-    }]
-  },
-  // Spacing
-  navSpacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav {margin-left: calc(-{{navSpacing}}/2); margin-right: calc(-{{navSpacing}}/2);} {{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item {margin-left: calc({{navSpacing}}/2); margin-right: calc({{navSpacing}}/2);}'
-    }]
-  },
   //Color
   navColor: {
     type: 'string',
     "default": '#999999',
     style: [{
       selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title { color:{{navColor}}; }'
-    }]
-  },
-  navBg: {
-    type: 'string',
-    "default": '#F5F5F5',
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '!=',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title {background-color: {{navBg}};}'
-    }]
-  },
-  navColorActive: {
-    type: 'string',
-    "default": 'var(--wprig-color-1)',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item.wprig-active .wprig-tab-title { color:{{navColorActive}}; }'
-    }]
-  },
-  navBgActive: {
-    type: 'string',
-    "default": '#e5e5e5',
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '!=',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item.wprig-active .wprig-tab-title {background-color : {{navBgActive}};} {{WPRIG}} .wprig-block-tab.wprig-tab-style-tabs .wprig-tab-nav .wprig-tab-item.wprig-active .wprig-tab-title:after {background-color : {{navBgActive}};}'
-    }]
-  },
-  // Nav Border
-  navBorder: {
-    type: 'object',
-    "default": {
-      widthType: 'global',
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '!=',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title'
-    }]
-  },
-  navBorderActive: {
-    type: 'object',
-    "default": {
-      widthType: 'global',
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '!=',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item.wprig-active .wprig-tab-title'
-    }]
-  },
-  // Underline Border
-  navUnderlineBorderWidth: {
-    type: 'object',
-    "default": {
-      md: 3,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title {border-bottom: {{navUnderlineBorderWidth}} solid transparent;}'
-    }]
-  },
-  navUnderlineBorderColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item .wprig-tab-title { border-bottom-color:{{navUnderlineBorderColor}}; }'
-    }]
-  },
-  navUnderlineBorderColorActive: {
-    type: 'string',
-    "default": 'var(--wprig-color-1)',
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-nav .wprig-tab-item.wprig-active .wprig-tab-title { border-bottom-color:{{navUnderlineBorderColorActive}}; }'
-    }]
-  },
-  // Radius
-  navBorderRadiusTabs: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'custom',
-      custom: {
-        md: '4 4 0 0'
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab.wprig-tab-style-tabs .wprig-tab-nav .wprig-tab-item .wprig-tab-title'
-    }]
-  },
-  navBorderRadiusPills: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'global',
-      global: {
-        md: 4
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'pills'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab.wprig-tab-style-pills .wprig-tab-nav .wprig-tab-item .wprig-tab-title'
     }]
   },
   // Body
@@ -29441,112 +28780,6 @@ var attributes = _objectSpread(_objectSpread({
         value: 'tabs'
       }],
       selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body {background-color: {{bodyBg}};}'
-    }]
-  },
-  bodyPadding: {
-    type: 'object',
-    "default": {
-      openPadding: 1,
-      paddingType: 'global',
-      global: {
-        md: 20
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body'
-    }]
-  },
-  bodyBorder: {
-    type: 'object',
-    "default": {
-      borderType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body'
-    }]
-  },
-  bodyShadow: {
-    type: 'object',
-    "default": {
-      horizontal: 2,
-      vertical: 2,
-      blur: 3,
-      spread: '0'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body'
-    }]
-  },
-  bodyBorderRadius: {
-    type: 'object',
-    "default": {
-      radiusType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body'
-    }]
-  },
-  bodySeparatorHeight: {
-    type: 'object',
-    "default": {
-      md: 1,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body {border-top: {{bodySeparatorHeight}} solid transparent;}'
-    }]
-  },
-  bodySeparatorColor: {
-    type: 'string',
-    "default": '#e5e5e5',
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '==',
-        value: 'underline'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body { border-top-color:{{bodySeparatorColor}}; }'
-    }]
-  },
-  bodyTopSpacing: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'tabStyle',
-        relation: '!=',
-        value: 'tabs'
-      }],
-      selector: '{{WPRIG}} .wprig-block-tab .wprig-tab-body {padding-top: {{bodyTopSpacing}};}'
     }]
   }
 });
