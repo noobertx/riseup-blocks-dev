@@ -7151,6 +7151,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-heading/style.scss":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-heading/style.scss ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-heading {\n  transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out, box-shadow 200ms ease-in-out;\n  position: relative; }\n  .wprig-block-heading h1, .wprig-block-heading h2, .wprig-block-heading h3, .wprig-block-heading h4, .wprig-block-heading h5, .wprig-block-heading h6 {\n    padding: 0;\n    margin: 0;\n    line-height: 1;\n    position: relative; }\n    .wprig-block-heading h1::before, .wprig-block-heading h1::after, .wprig-block-heading h2::before, .wprig-block-heading h2::after, .wprig-block-heading h3::before, .wprig-block-heading h3::after, .wprig-block-heading h4::before, .wprig-block-heading h4::after, .wprig-block-heading h5::before, .wprig-block-heading h5::after, .wprig-block-heading h6::before, .wprig-block-heading h6::after {\n      display: none !important; }\n  .wprig-block-heading .wprig-text-has-bgcolor {\n    padding-left: 10px;\n    padding-right: 10px; }\n  .wprig-block-heading .wprig-separator {\n    font-size: 0; }\n    .wprig-block-heading .wprig-separator .wprig-separator-type-css,\n    .wprig-block-heading .wprig-separator .wprig-separator-type-svg {\n      display: inline-block; }\n  .wprig-block-heading.wprig-separator-position-left .wprig-heading-container, .wprig-block-heading.wprig-separator-position-right .wprig-heading-container, .wprig-block-heading.wprig-separator-position-leftright .wprig-heading-container {\n    display: inline-flex;\n    align-items: center; }\n    .wprig-block-heading.wprig-separator-position-left .wprig-heading-container .wprig-heading-selector,\n    .wprig-block-heading.wprig-separator-position-left .wprig-heading-container .wprig-separator, .wprig-block-heading.wprig-separator-position-right .wprig-heading-container .wprig-heading-selector,\n    .wprig-block-heading.wprig-separator-position-right .wprig-heading-container .wprig-separator, .wprig-block-heading.wprig-separator-position-leftright .wprig-heading-container .wprig-heading-selector,\n    .wprig-block-heading.wprig-separator-position-leftright .wprig-heading-container .wprig-separator {\n      display: inline-flex; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss":
 /*!*********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss ***!
@@ -9840,18 +9858,19 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_renderfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/renderfield */ "./src/components/renderfield.js");
 /* harmony import */ var _blocks_accordion_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/accordion/block */ "./src/blocks/accordion/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_advance_heading_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/advance-heading/block */ "./src/blocks/advance-heading/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9865,8 +9884,8 @@ __webpack_require__.r(__webpack_exports__);
  // import "./blocks/ct/block";
 // import "./blocks/alert/block";
 
- // import "./blocks/advance-heading/block";
-// import "./blocks/advance-list/block";
+
+ // import "./blocks/advance-list/block";
 // import "./blocks/animated-headline/block";
 // import "./blocks/button/block";
 // import "./blocks/buttongroup/block";
@@ -9950,7 +9969,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_12__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_13__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -10816,380 +10835,16 @@ var attributes = {
     type: 'boolean',
     "default": false
   },
-  // Panel
-  panelColor: {
-    type: 'string',
-    "default": '#000',
-    style: [{
-      selector: '{{WPRIG}} .wprig-accordion-panel { color: {{panelColor}}; }'
-    }]
-  },
-  panelColorActive: {
-    type: 'string',
-    "default": '#FFF',
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel { color:{{panelColorActive}}; }'
-    }]
-  },
-  panelColorActive2: {
-    type: 'string',
-    "default": '#222',
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'nofill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel { color:{{panelColorActive2}}; }'
-    }]
-  },
-  panelBg: {
-    type: 'object',
-    "default": {
-      type: 'color',
-      openColor: 1,
-      color: '#EEEEEE',
-      gradient: {
-        color1: '#EEEEEE',
-        color2: '#e5e5e5',
-        direction: 0,
-        start: 0,
-        stop: 100,
-        type: 'linear'
-      }
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelBgActive: {
-    type: 'object',
-    "default": {
-      type: 'color',
-      openColor: 1,
-      color: 'var(--grey-dark-one)',
-      gradient: {
-        color1: '#2476CA',
-        color2: '#1A5FA4',
-        direction: 0,
-        start: 0,
-        stop: 100,
-        type: 'linear'
-      }
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel'
-    }]
-  },
-  panelBorder: {
-    type: 'object',
-    "default": {
-      borderType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelBorderColorActive: {
-    type: 'object',
-    "default": {
-      borderType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel {border-color: {{panelBorderColorActive}};}'
-    }]
-  },
-  panelBoxShadow: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelBoxShadowActive: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel'
-    }]
-  },
-  typography: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelPadding: {
-    type: 'object',
-    "default": {
-      openPadding: 1,
-      paddingType: 'global',
-      global: {
-        md: 15
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelBorderRadius: {
-    type: 'object',
-    "default": {
-      radiusType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel'
-    }]
-  },
-  panelBorderRadiusActive: {
-    type: 'object',
-    "default": {
-      radiusType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel'
-    }]
-  },
-  // Body
-  bodyBg: {
-    type: 'object',
-    "default": {
-      type: 'color',
-      openColor: 1,
-      color: '#fff',
-      gradient: {
-        color1: '#f2f2f2',
-        color2: '#e5e5e5',
-        direction: 0,
-        start: 0,
-        stop: 100,
-        type: 'linear'
-      }
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
-  bodyPadding: {
-    type: 'object',
-    "default": {
-      openPadding: 1,
-      paddingType: 'global',
-      global: {
-        md: 15
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
-  bodyPaddingAlt: {
-    type: 'object',
-    "default": {
-      openPadding: 1,
-      paddingType: 'custom',
-      custom: {
-        md: '15 0 0 0'
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'nofill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
-  bodyBoxShadow: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
-  bodyBorder: {
-    type: 'object',
-    "default": {
-      borderType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
-  borderRadius: {
-    type: 'object',
-    "default": {
-      radiusType: 'global'
-    },
-    style: [{
-      condition: [{
-        key: 'fillType',
-        relation: '==',
-        value: 'fill'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-body'
-    }]
-  },
   // Panel Icon
   panelIcon: {
     type: 'string',
     "default": 'fa fa-plus'
   },
-  iconSize: {
-    type: 'string',
-    "default": '14px',
-    style: [{
-      condition: [{
-        key: 'iconSize',
-        relation: '!=',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel .wprig-accordion-icon { font-size:{{iconSize}}; }'
-    }]
-  },
-  customIconSize: {
-    type: 'string',
-    "default": {
-      md: 16,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'iconSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-accordion-panel .wprig-accordion-icon { font-size:{{customIconSize}}; }'
-    }]
-  },
-  iconColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-accordion-panel .wprig-accordion-icon { color:{{iconColor}}; }'
-    }]
-  },
-  iconColorActive: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-accordion-active .wprig-accordion-panel .wprig-accordion-icon { color:{{iconColorActive}}; }'
-    }]
-  },
   iconPosition: {
     type: 'string',
     "default": 'right'
-  },
-  iconSpacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-accordion-panel.wprig-icon-position-left .wprig-accordion-icon { margin-right:{{iconSpacing}}; } {{WPRIG}} .wprig-accordion-panel.wprig-icon-position-right .wprig-accordion-icon { margin-left:{{iconSpacing}}; }'
-    }]
-  },
-  //Spacing
-  spacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} { margin-bottom: calc( {{spacing}} / 2); padding-bottom: calc( {{spacing}} / 2); }'
-    }]
-  },
-  spacingBorder: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} { border-bottom: {{spacingBorder}}px solid; }'
-    }]
-  },
-  spacingBorderColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} { border-bottom-color: {{spacingBorderColor}}; }'
-    }]
-  }
+  } //Spacing
+
 };
 var accordionItemSettings = {
   title: __('Accordion'),
@@ -11239,6 +10894,1332 @@ registerBlockType('wprig/accordion-item', accordionItemSettings);
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/accordion/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/Edit.js":
+/*!********************************************!*\
+  !*** ./src/blocks/advance-heading/Edit.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _separators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./separators */ "./src/blocks/advance-heading/separators.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    Toolbar = _wp$components.Toolbar,
+    SelectControl = _wp$components.SelectControl;
+var _wp$blockEditor = wp.blockEditor,
+    RichText = _wp$blockEditor.RichText,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$wprigComponents = wp.wprigComponents,
+    Color = _wp$wprigComponents.Color,
+    Typography = _wp$wprigComponents.Typography,
+    Alignment = _wp$wprigComponents.Alignment,
+    Range = _wp$wprigComponents.Range,
+    Toggle = _wp$wprigComponents.Toggle,
+    Headings = _wp$wprigComponents.Headings,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    HeadingToolbar = _wp$wprigComponents.HeadingToolbar,
+    _wp$wprigComponents$I = _wp$wprigComponents.Inline,
+    InlineToolbar = _wp$wprigComponents$I.InlineToolbar,
+    InlineSelector = _wp$wprigComponents$I.InlineSelector,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab,
+    InspectorSections = _wp$wprigComponents.InspectorSections;
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit() {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.apply(this, arguments);
+    _this.state = {
+      device: 'md',
+      selector: true,
+      spacer: true
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          name = _this$props2.name,
+          clientId = _this$props2.clientId,
+          isSelected = _this$props2.isSelected,
+          attributes = _this$props2.attributes,
+          setAttributes = _this$props2.setAttributes,
+          _this$props2$attribut = _this$props2.attributes,
+          uniqueId = _this$props2$attribut.uniqueId,
+          className = _this$props2$attribut.className,
+          recreateStyles = _this$props2$attribut.recreateStyles,
+          content = _this$props2$attribut.content,
+          typography = _this$props2$attribut.typography,
+          alignment = _this$props2$attribut.alignment,
+          selector = _this$props2$attribut.selector,
+          level = _this$props2$attribut.level,
+          textColor = _this$props2$attribut.textColor,
+          separatorStyle = _this$props2$attribut.separatorStyle,
+          separatorColor = _this$props2$attribut.separatorColor,
+          separatorStroke = _this$props2$attribut.separatorStroke,
+          separatorPosition = _this$props2$attribut.separatorPosition,
+          separatorWidth = _this$props2$attribut.separatorWidth,
+          separatorSpacing = _this$props2$attribut.separatorSpacing,
+          separatorNumber = _this$props2$attribut.separatorNumber,
+          subHeading = _this$props2$attribut.subHeading,
+          subHeadingLevel = _this$props2$attribut.subHeadingLevel,
+          subHeadingContent = _this$props2$attribut.subHeadingContent,
+          subHeadingTypography = _this$props2$attribut.subHeadingTypography,
+          subHeadingColor = _this$props2$attribut.subHeadingColor,
+          subHeadingSpacing = _this$props2$attribut.subHeadingSpacing,
+          subHeadingPosition = _this$props2$attribut.subHeadingPosition,
+          animation = _this$props2$attribut.animation,
+          globalZindex = _this$props2$attribut.globalZindex,
+          enablePosition = _this$props2$attribut.enablePosition,
+          selectPosition = _this$props2$attribut.selectPosition,
+          positionXaxis = _this$props2$attribut.positionXaxis,
+          positionYaxis = _this$props2$attribut.positionYaxis,
+          hideTablet = _this$props2$attribut.hideTablet,
+          hideMobile = _this$props2$attribut.hideMobile,
+          globalCss = _this$props2$attribut.globalCss,
+          interaction = _this$props2$attribut.interaction;
+      var device = this.state.device;
+      var separators = {
+        solid: {
+          type: 'css',
+          separator: 'solid',
+          width: 300,
+          stroke: 10
+        },
+        "double": {
+          type: 'css',
+          separator: 'double',
+          width: 300,
+          stroke: 10
+        },
+        dotted: {
+          type: 'css',
+          separator: 'dotted',
+          width: 300,
+          stroke: 10
+        },
+        dashed: {
+          type: 'css',
+          separator: 'dashed',
+          width: 300,
+          stroke: 10
+        },
+        pin: {
+          type: 'svg',
+          separator: 'pin',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin'],
+          width: 100,
+          stroke: 0
+        },
+        pin_filled: {
+          type: 'svg',
+          separator: 'pin_filled',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin_filled'],
+          width: 100,
+          stroke: 0
+        },
+        zigzag: {
+          type: 'svg',
+          separator: 'zigzag',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag'],
+          style: 'fill',
+          width: 88,
+          stroke: 5
+        },
+        zigzag_large: {
+          type: 'svg',
+          separator: 'zigzag_large',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag_large'],
+          style: 'fill',
+          width: 161,
+          stroke: 5
+        }
+      };
+      var subHeadingTagName = 'h' + subHeadingLevel;
+      var renderSeparators = /*#__PURE__*/React.createElement(Fragment, null, separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, console.log(separatorNumber), separators[separatorStyle].type == 'css' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-css wprig-separator-".concat(separatorStyle)
+      }), separators[separatorStyle].type == 'svg' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-svg wprig-separator-".concat(separatorStyle)
+      }, separators[separatorStyle].svg)));
+      var renderMultipleSeparators = /*#__PURE__*/React.createElement(Fragment, null, separatorStyle && console.log(Array(separatorNumber).fill(0).map(function (_, index) {
+        return /*#__PURE__*/React.createElement("div", {
+          className: "wprig-separator wprig-separator-before"
+        }, renderSeparators);
+      })), /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-css wprig-separator-".concat(separatorStyle)
+      }));
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: "",
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Alignment, {
+        label: __('Alignment'),
+        value: alignment,
+        onChange: function onChange(val) {
+          return setAttributes({
+            alignment: val
+          });
+        },
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Heading'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: textColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            textColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: typography,
+        onChange: function onChange(val) {
+          return setAttributes(_objectSpread({
+            typography: val
+          }, val.openTypography !== typography.openTypography && {
+            recreateStyles: !recreateStyles
+          }));
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Sub Heading'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable'),
+        value: subHeading,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subHeading: val
+          });
+        }
+      }), subHeading == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Headings, {
+        selectedLevel: subHeadingLevel,
+        onChange: function onChange(value) {
+          return setAttributes({
+            subHeadingLevel: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: subHeadingTypography,
+        onChange: function onChange(val) {
+          return setAttributes(_objectSpread({
+            subHeadingTypography: val
+          }, val.openTypography !== subHeadingTypography.openTypography && {
+            recreateStyles: !recreateStyles
+          }));
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: subHeadingColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subHeadingColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: subHeadingSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            subHeadingSpacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 60,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Position'),
+        value: subHeadingPosition,
+        onChange: function onChange(val) {
+          return setAttributes({
+            subHeadingPosition: val
+          });
+        },
+        options: [{
+          label: __('After Title'),
+          value: 'after_title',
+          title: __('After Title')
+        }, {
+          label: __('Before Title'),
+          value: 'before_title',
+          title: __('Before Title')
+        }]
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Separator'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(SelectControl, {
+        label: "Style",
+        value: separatorStyle,
+        options: [{
+          label: '--Select--',
+          value: ''
+        }, {
+          label: 'Line',
+          value: 'solid'
+        }, {
+          label: 'Line Doubled',
+          value: 'double'
+        }, {
+          label: 'Dashed',
+          value: 'dashed'
+        }, {
+          label: 'Dotted',
+          value: 'dotted'
+        }, {
+          label: 'Pin',
+          value: 'pin'
+        }, {
+          label: 'Pin Filled',
+          value: 'pin_filled'
+        }, {
+          label: 'Zigzag',
+          value: 'zigzag'
+        }, {
+          label: 'Zigzag Large',
+          value: 'zigzag_large'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorStyle: val
+          });
+        }
+      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Separator Color'),
+        value: separatorColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorColor: val
+          });
+        }
+      }), separatorStyle != 'pin' && separatorStyle != 'pin_filled' && /*#__PURE__*/React.createElement(Range, {
+        label: __('Stroke'),
+        value: separatorStroke,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorStroke: parseInt(val)
+          });
+        },
+        min: 1,
+        max: separators[separatorStyle].stroke
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Width'),
+        value: separatorWidth,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorWidth: val
+          });
+        },
+        min: 20,
+        max: separators[separatorStyle].width,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: separatorSpacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorSpacing: val
+          });
+        },
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(SelectControl, {
+        label: "Position",
+        value: separatorPosition,
+        options: [{
+          label: 'Top',
+          value: 'top'
+        }, {
+          label: 'Bottom',
+          value: 'bottom'
+        }, {
+          label: 'Left',
+          value: 'left'
+        }, {
+          label: 'Right',
+          value: 'right'
+        }, {
+          label: 'Left & Right',
+          value: 'leftright'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            separatorPosition: val
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(HeadingToolbar, {
+        minLevel: 1,
+        maxLevel: 6,
+        selectedLevel: level,
+        onChange: function onChange(newLevel) {
+          return setAttributes({
+            level: newLevel,
+            selector: "h".concat(newLevel)
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        },
+        className: "wprig-block-heading ".concat(separatorStyle ? 'wprig-has-separator wprig-separator-position-' + separatorPosition : '')
+      }, subHeading == 1 && subHeadingPosition == 'before_title' && /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: subHeadingTagName,
+        className: "wprig-sub-heading-selector",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            subHeadingContent: value
+          });
+        },
+        value: subHeadingContent
+      }), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-heading-container"
+      }, separatorStyle !== '' && (separatorPosition == 'left' || separatorPosition == 'top' || separatorPosition == 'leftright') ? {
+        renderMultipleSeparators: renderMultipleSeparators
+      } : '', /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: selector,
+        className: "wprig-heading-selector",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            content: value
+          });
+        },
+        value: content
+      }), separatorStyle != '' && (separatorPosition == 'right' || separatorPosition == 'bottom' || separatorPosition == 'leftright') ? {
+        renderMultipleSeparators: renderMultipleSeparators
+      } : ''), subHeading == 1 && subHeadingPosition == 'after_title' && /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: subHeadingTagName,
+        className: "wprig-sub-heading-selector",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Text...'),
+        onChange: function onChange(value) {
+          return setAttributes({
+            subHeadingContent: value
+          });
+        },
+        value: subHeadingContent
+      }), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/Save.js":
+/*!********************************************!*\
+  !*** ./src/blocks/advance-heading/Save.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _separators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./separators */ "./src/blocks/advance-heading/separators.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component;
+var RichText = wp.blockEditor.RichText;
+
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    var _this;
+
+    _classCallCheck(this, Save);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "renderSeparators", function () {
+      var separatorStyle = _this.props.attributes.separatorStyle;
+      var separators = {
+        solid: {
+          type: 'css',
+          separator: 'solid',
+          width: 300,
+          stroke: 10
+        },
+        "double": {
+          type: 'css',
+          separator: 'double',
+          width: 300,
+          stroke: 10
+        },
+        dotted: {
+          type: 'css',
+          separator: 'dotted',
+          width: 300,
+          stroke: 10
+        },
+        dashed: {
+          type: 'css',
+          separator: 'dashed',
+          width: 300,
+          stroke: 10
+        },
+        pin: {
+          type: 'svg',
+          separator: 'pin',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin'],
+          width: 100,
+          stroke: 0
+        },
+        pin_filled: {
+          type: 'svg',
+          separator: 'pin_filled',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin_filled'],
+          width: 100,
+          stroke: 0
+        },
+        zigzag: {
+          type: 'svg',
+          separator: 'zigzag',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag'],
+          style: 'fill',
+          width: 88,
+          stroke: 5
+        },
+        zigzag_large: {
+          type: 'svg',
+          separator: 'zigzag_large',
+          svg: _separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag_large'],
+          style: 'fill',
+          width: 161,
+          stroke: 5
+        }
+      };
+      return /*#__PURE__*/React.createElement(Fragment, null, separators[separatorStyle].type == 'css' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-css wprig-separator-".concat(separatorStyle)
+      }), separators[separatorStyle].type == 'svg' && /*#__PURE__*/React.createElement("span", {
+        className: "wprig-separator-type-svg wprig-separator-".concat(separatorStyle)
+      }, separators[separatorStyle].svg));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "rendeSubHeading", function () {
+      var _this$props$attribute = _this.props.attributes,
+          subHeading = _this$props$attribute.subHeading,
+          subHeadingLevel = _this$props$attribute.subHeadingLevel,
+          subHeadingContent = _this$props$attribute.subHeadingContent;
+
+      if (subHeading) {
+        var subSubTagName = 'h' + subHeadingLevel;
+        return /*#__PURE__*/React.createElement(RichText.Content, {
+          tagName: subSubTagName,
+          className: "wprig-sub-heading-selector",
+          value: subHeadingContent
+        });
+      } else return null;
+    });
+
+    return _this;
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute2 = this.props.attributes,
+          uniqueId = _this$props$attribute2.uniqueId,
+          content = _this$props$attribute2.content,
+          selector = _this$props$attribute2.selector,
+          separatorStyle = _this$props$attribute2.separatorStyle,
+          separatorPosition = _this$props$attribute2.separatorPosition,
+          subHeadingPosition = _this$props$attribute2.subHeadingPosition,
+          animation = _this$props$attribute2.animation,
+          interaction = _this$props$attribute2.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-heading ".concat(interactionClass, " ").concat(separatorStyle ? 'wprig-has-separator wprig-separator-position-' + separatorPosition : '')
+      }, subHeadingPosition == 'before_title' && this.rendeSubHeading(), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-heading-container"
+      }, separatorStyle && (separatorPosition == 'left' || separatorPosition == 'top' || separatorPosition == 'leftright') && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-before"
+      }, this.renderSeparators()), /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: selector,
+        className: "wprig-heading-selector",
+        value: content
+      }), separatorStyle && (separatorPosition == 'right' || separatorPosition == 'bottom' || separatorPosition == 'leftright') && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-separator wprig-separator-after"
+      }, this.renderSeparators())), subHeadingPosition == 'after_title' && this.rendeSubHeading()));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/attributes.js":
+/*!**************************************************!*\
+  !*** ./src/blocks/advance-heading/attributes.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+
+var attributes = _objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), {}, {
+  recreateStyles: {
+    type: 'boolean',
+    "default": true
+  },
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: "px"
+      },
+      spaceBottom: {
+        md: '10',
+        unit: "px"
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  content: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-heading-selector',
+    "default": 'WPRIG - A Full-fledged Gutenberg Builder'
+  },
+  alignment: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}}{text-align: {{alignment}}; }'
+    }]
+  },
+  typography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 24,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector'
+    }]
+  },
+  separatorNumber: {
+    type: 'number',
+    "default": 1
+  },
+  separatorStyle: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-style: {{separatorStyle}};}'
+    }]
+  },
+  separatorPosition: {
+    type: 'string',
+    "default": 'top'
+  },
+  separatorColor: {
+    type: 'string',
+    "default": '#5D7FEB',
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-heading svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-heading  .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
+    }]
+  },
+  separatorStroke: {
+    type: 'number',
+    "default": 3,
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
+    }]
+  },
+  separatorWidth: {
+    type: 'object',
+    "default": {
+      md: 60
+    },
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg {width: {{separatorWidth}}px;}'
+    }]
+  },
+  separatorSpacing: {
+    type: 'object',
+    "default": {
+      md: 10
+    },
+    style: [{
+      condition: [{
+        key: 'separatorStyle',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-separator-position-left .wprig-separator {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-right .wprig-separator {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-after {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-top .wprig-separator {margin-bottom: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-bottom .wprig-separator {margin-top: {{separatorSpacing}}px;}'
+    }]
+  },
+  subHeading: {
+    type: 'boolean',
+    "default": false
+  },
+  subHeadingLevel: {
+    type: 'number',
+    "default": 3
+  },
+  subHeadingContent: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-sub-heading-selector',
+    "default": 'Sub Heading'
+  },
+  subHeadingTypography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector'
+    }]
+  },
+  subHeadingColor: {
+    type: 'string',
+    "default": '#333',
+    style: [{
+      condition: [{
+        key: 'subHeading',
+        relation: '==',
+        value: 1
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {color: {{subHeadingColor}};}'
+    }]
+  },
+  subHeadingPosition: {
+    type: 'string',
+    "default": 'after_title'
+  },
+  subHeadingSpacing: {
+    type: 'object',
+    "default": {
+      md: 10,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'subHeading',
+        relation: '==',
+        value: 1
+      }, {
+        key: 'subHeadingPosition',
+        relation: '==',
+        value: 'after_title'
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-top: {{subHeadingSpacing}};}'
+    }, {
+      condition: [{
+        key: 'subHeading',
+        relation: '==',
+        value: 1
+      }, {
+        key: 'subHeadingPosition',
+        relation: '==',
+        value: 'before_title'
+      }],
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-bottom: {{subHeadingSpacing}};}'
+    }]
+  },
+  selector: {
+    type: 'string',
+    "default": 'h2'
+  },
+  level: {
+    type: 'number',
+    "default": 2
+  },
+  textColor: {
+    attributes: _objectSpread(_objectSpread({
+      uniqueId: {
+        type: 'string',
+        "default": ''
+      }
+    }, globalAttributes), {}, {
+      recreateStyles: {
+        type: 'boolean',
+        "default": true
+      },
+      spacer: {
+        type: 'object',
+        "default": {
+          spaceTop: {
+            md: '10',
+            unit: "px"
+          },
+          spaceBottom: {
+            md: '10',
+            unit: "px"
+          }
+        },
+        style: [{
+          selector: '{{WPRIG}}'
+        }]
+      },
+      content: {
+        type: 'string',
+        source: 'html',
+        selector: '.wprig-heading-selector',
+        "default": 'WPRIG - A Full-fledged Gutenberg Builder'
+      },
+      alignment: {
+        type: 'object',
+        "default": {},
+        style: [{
+          selector: '{{WPRIG}}{text-align: {{alignment}}; }'
+        }]
+      },
+      typography: {
+        type: 'object',
+        "default": {
+          openTypography: 1,
+          size: {
+            md: 24,
+            unit: 'px'
+          }
+        },
+        style: [{
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector'
+        }]
+      },
+      separatorStyle: {
+        type: 'string',
+        "default": '',
+        style: [{
+          condition: [{
+            key: 'separatorStyle',
+            relation: '!=',
+            value: ''
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-style: {{separatorStyle}};}'
+        }]
+      },
+      separatorPosition: {
+        type: 'string',
+        "default": 'top'
+      },
+      separatorColor: {
+        type: 'string',
+        "default": '#5D7FEB',
+        style: [{
+          condition: [{
+            key: 'separatorStyle',
+            relation: '!=',
+            value: ''
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-heading svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-heading  .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
+        }]
+      },
+      separatorStroke: {
+        type: 'number',
+        "default": 3,
+        style: [{
+          condition: [{
+            key: 'separatorStyle',
+            relation: '!=',
+            value: ''
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
+        }]
+      },
+      separatorWidth: {
+        type: 'object',
+        "default": {
+          md: 60
+        },
+        style: [{
+          condition: [{
+            key: 'separatorStyle',
+            relation: '!=',
+            value: ''
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg {width: {{separatorWidth}}px;}'
+        }]
+      },
+      separatorSpacing: {
+        type: 'object',
+        "default": {
+          md: 10
+        },
+        style: [{
+          condition: [{
+            key: 'separatorStyle',
+            relation: '!=',
+            value: ''
+          }],
+          selector: '{{WPRIG}} .wprig-separator-position-left .wprig-separator {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-right .wprig-separator {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-after {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-top .wprig-separator {margin-bottom: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-bottom .wprig-separator {margin-top: {{separatorSpacing}}px;}'
+        }]
+      },
+      subHeading: {
+        type: 'boolean',
+        "default": false
+      },
+      subHeadingLevel: {
+        type: 'number',
+        "default": 3
+      },
+      subHeadingContent: {
+        type: 'string',
+        source: 'html',
+        selector: '.wprig-sub-heading-selector',
+        "default": 'Sub Heading'
+      },
+      subHeadingTypography: {
+        type: 'object',
+        "default": {
+          openTypography: 1,
+          size: {
+            md: 16,
+            unit: 'px'
+          }
+        },
+        style: [{
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector'
+        }]
+      },
+      subHeadingColor: {
+        type: 'string',
+        "default": '#333',
+        style: [{
+          condition: [{
+            key: 'subHeading',
+            relation: '==',
+            value: 1
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {color: {{subHeadingColor}};}'
+        }]
+      },
+      subHeadingPosition: {
+        type: 'string',
+        "default": 'after_title'
+      },
+      subHeadingSpacing: {
+        type: 'object',
+        "default": {
+          md: 10,
+          unit: 'px'
+        },
+        style: [{
+          condition: [{
+            key: 'subHeading',
+            relation: '==',
+            value: 1
+          }, {
+            key: 'subHeadingPosition',
+            relation: '==',
+            value: 'after_title'
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-top: {{subHeadingSpacing}};}'
+        }, {
+          condition: [{
+            key: 'subHeading',
+            relation: '==',
+            value: 1
+          }, {
+            key: 'subHeadingPosition',
+            relation: '==',
+            value: 'before_title'
+          }],
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-bottom: {{subHeadingSpacing}};}'
+        }]
+      },
+      selector: {
+        type: 'string',
+        "default": 'h2'
+      },
+      level: {
+        type: 'number',
+        "default": 2
+      },
+      textColor: {
+        type: 'string',
+        "default": '',
+        style: [{
+          selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector { color:{{textColor}}; }'
+        }]
+      },
+      sourceOfCopiedStyle: {
+        type: 'boolean',
+        "default": false
+      }
+    }),
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector { color:{{textColor}}; }'
+    }]
+  },
+  sourceOfCopiedStyle: {
+    type: 'boolean',
+    "default": false
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/block.js":
+/*!*********************************************!*\
+  !*** ./src/blocks/advance-heading/block.js ***!
+  \*********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/advance-heading/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/advance-heading/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/advance-heading/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/advance-heading/attributes.js");
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+registerBlockType('wprig/heading', {
+  title: __('Heading'),
+  description: 'Make headlines/titles that attract users with WPRIG Heading.',
+  category: 'wprig-blocks',
+  icon: "universal-access-alt",
+  supports: {
+    align: ['center', 'wide', 'full'],
+    anchor: true
+  },
+  keywords: [__('heading'), __('head'), __('title')],
+  example: {
+    attributes: {
+      content: __('Make headlines/titles that attract users with WPRIG Heading.', 'wprig')
+    }
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/separators.js":
+/*!**************************************************!*\
+  !*** ./src/blocks/advance-heading/separators.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var separators = {};
+separators.zigzag = /*#__PURE__*/React.createElement("svg", {
+  width: "88",
+  height: "11",
+  viewBox: "0 0 88 11",
+  xmlns: "http://www.w3.org/2000/svg"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M87.387 9.066c-7.279 0-7.279-6.787-14.557-6.787-7.28 0-7.28 6.787-14.561 6.787-7.283 0-7.283-6.787-14.565-6.787l-14.562 6.787c-7.286 0-7.286-6.787-14.57-6.787-7.287 0-7.287 6.787-14.571 6.787",
+  "class": "qubely-separator-stroke",
+  fill: "none"
+}));
+separators.zigzag_large = /*#__PURE__*/React.createElement("svg", {
+  width: "161",
+  height: "11",
+  viewBox: "0 0 161 11",
+  xmlns: "http://www.w3.org/2000/svg"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M161 9c-8.05 0-8.05-7-16.099-7-8.043 0-8.043 7-16.088 7-8.047 0-8.047-7-16.095-7-8.05 0-8.05 7-16.097 7-8.045 0-8.045-7-16.095-7-8.05 0-8.05 7-16.099 7-8.047 0-8.047-7-16.092-7-8.05 0-8.05 7-16.104 7-8.059 0-8.059-7-16.116-7s-8.057 7-16.116 7",
+  "class": "qubely-separator-stroke",
+  fill: "none"
+}));
+separators.pin_filled = /*#__PURE__*/React.createElement("svg", {
+  width: "100",
+  height: "20",
+  viewBox: "0 0 100 20",
+  xmlns: "http://www.w3.org/2000/svg"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M18.948 8.5h80.196v3h-80.196c-.719 4.534-4.646 8-9.382 8-5.247 0-9.5-4.253-9.5-9.5s4.253-9.5 9.5-9.5c4.736 0 8.663 3.466 9.382 8z",
+  "class": "qubely-separator-fill",
+  "fill-rule": "nonzero"
+}));
+separators.pin = /*#__PURE__*/React.createElement("svg", {
+  width: "99",
+  height: "19",
+  viewBox: "0 0 99 19",
+  xmlns: "http://www.w3.org/2000/svg"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M18.946 8h79.793v3h-79.793c-.719 4.534-4.646 8-9.382 8-5.247 0-9.5-4.253-9.5-9.5s4.253-9.5 9.5-9.5c4.736 0 8.663 3.466 9.382 8zm-15.882 1.5c0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5-2.91-6.5-6.5-6.5-6.5 2.91-6.5 6.5z",
+  "class": "qubely-separator-fill",
+  "fill-rule": "nonzero"
+}));
+/* harmony default export */ __webpack_exports__["default"] = (separators);
+
+/***/ }),
+
+/***/ "./src/blocks/advance-heading/style.scss":
+/*!***********************************************!*\
+  !*** ./src/blocks/advance-heading/style.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-heading/style.scss");
 
             content = content.__esModule ? content.default : content;
 
