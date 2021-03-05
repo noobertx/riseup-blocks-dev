@@ -13269,10 +13269,7 @@ var _wp$components = wp.components,
     Toolbar = _wp$components.Toolbar;
 var _wp$wprigComponents = wp.wprigComponents,
     Counter = _wp$wprigComponents.Counter,
-    Range = _wp$wprigComponents.Range,
     Alignment = _wp$wprigComponents.Alignment,
-    Typography = _wp$wprigComponents.Typography,
-    Color = _wp$wprigComponents.Color,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
     globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
     animationSettings = _wp$wprigComponents$g.animationSettings,
@@ -13341,13 +13338,8 @@ var Edit = /*#__PURE__*/function (_Component) {
           alignment = _this$props2$attribut.alignment,
           counterLimit = _this$props2$attribut.counterLimit,
           counterDuration = _this$props2$attribut.counterDuration,
-          counterTypo = _this$props2$attribut.counterTypo,
-          counterColor = _this$props2$attribut.counterColor,
           postfix = _this$props2$attribut.postfix,
           prefix = _this$props2$attribut.prefix,
-          prepostTypo = _this$props2$attribut.prepostTypo,
-          prepostSpacing = _this$props2$attribut.prepostSpacing,
-          prepostColor = _this$props2$attribut.prepostColor,
           interaction = _this$props2$attribut.interaction,
           animation = _this$props2$attribut.animation,
           globalZindex = _this$props2$attribut.globalZindex,
@@ -13403,31 +13395,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       }))), counterLimit > 0 && /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Counter'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: counterTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            counterTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: counterColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            counterColor: val
-          });
-        }
-      }))), counterLimit > 0 && /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Prefix & Postfix'),
         initialOpen: false
       }, /*#__PURE__*/React.createElement(TextControl, {
@@ -13448,47 +13415,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             postfix: value
           });
         }
-      }), (prefix || postfix) && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: prepostTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            prepostTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: prepostSpacing,
-        min: 0,
-        max: 50,
-        unit: ['px', 'em', '%'],
-        onChange: function onChange(value) {
-          return setAttributes({
-            prepostSpacing: value
-          });
-        },
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: prepostColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            prepostColor: val
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -13659,14 +13586,7 @@ registerBlockType('wprig/counter', {
   example: {
     attributes: {
       counterLimit: 9999,
-      postfix: '+',
-      counterTypo: {
-        openTypography: 1,
-        size: {
-          md: 82,
-          unit: 'px'
-        }
-      }
+      postfix: '+'
     }
   },
   attributes: _objectSpread(_objectSpread({
@@ -13716,39 +13636,11 @@ registerBlockType('wprig/counter', {
       type: 'string',
       "default": "500"
     },
-    prepostTypo: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-counter-prefix, {{WPRIG}} .wprig-block-counter-postfix'
-      }]
-    },
-    prepostColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-counter-prefix {color: {{prepostColor}};} {{WPRIG}} .wprig-block-counter-postfix {color: {{prepostColor}};}'
-      }]
-    },
     prepostSpacing: {
       type: 'string',
       "default": '',
       style: [{
         selector: '{{WPRIG}} .wprig-block-counter-prefix {margin-right: {{prepostSpacing}};} {{WPRIG}} .wprig-block-counter-postfix {margin-left: {{prepostSpacing}};}'
-      }]
-    },
-    counterTypo: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-counter-content'
-      }]
-    },
-    counterColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-counter-content {color: {{counterColor}};}'
       }]
     },
     sourceOfCopiedStyle: {
