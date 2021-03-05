@@ -7169,6 +7169,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-list/style.scss":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-list/style.scss ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-advanced-list .wprig-action-button {\n  padding: 5px 15px;\n  margin-top: 15px;\n  border-radius: 4px;\n  font-size: 14px;\n  background: #f0f1f3; }\n\n.wprig-block-advanced-list .wprig-list {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n  .wprig-block-advanced-list .wprig-list > li {\n    position: relative;\n    margin: 0;\n    display: block;\n    transition: color 400ms, background-color 400ms, border-color 400ms, box-shadow 400ms; }\n    .wprig-block-advanced-list .wprig-list > li::before, .wprig-block-advanced-list .wprig-list > li::after {\n      font-family: \"Font Awesome 5 Pro\";\n      font-weight: 900;\n      transition: color 400ms, background-color 400ms; }\n    .wprig-block-advanced-list .wprig-list > li > span,\n    .wprig-block-advanced-list .wprig-list > li > div {\n      display: inline-block; }\n    .wprig-block-advanced-list .wprig-list > li .wprig-action-remove {\n      display: none;\n      font-size: 12px;\n      width: 18px;\n      height: 18px;\n      line-height: 20px;\n      text-align: center;\n      background: rgba(0, 0, 0, 0.8);\n      color: #fff;\n      border-radius: 10px;\n      position: absolute;\n      right: 0px;\n      top: 50%;\n      transform: translateY(-50%);\n      cursor: pointer; }\n      .wprig-block-advanced-list .wprig-list > li .wprig-action-remove.alignment-left {\n        right: auto;\n        left: 0; }\n    .wprig-block-advanced-list .wprig-list > li:hover .wprig-action-remove {\n      display: block; }\n  .wprig-block-advanced-list .wprig-list [contenteditable=true]:empty:before {\n    content: attr(placeholder);\n    color: gray;\n    padding: 0px 5px 0px 5px;\n    display: block;\n    /* For Firefox */ }\n  .wprig-block-advanced-list .wprig-list .wprig-action-button {\n    margin-top: 15px; }\n\n.wprig-block-advanced-list.wprig-alignment-left .wprig-list > li::after, .wprig-block-advanced-list.wprig-alignment-center .wprig-list > li::after {\n  display: none; }\n\n.wprig-block-advanced-list.wprig-alignment-center .wprig-list > li {\n  justify-content: center; }\n\n.wprig-block-advanced-list.wprig-alignment-right .wprig-list > li {\n  justify-content: flex-end; }\n  .wprig-block-advanced-list.wprig-alignment-right .wprig-list > li::before {\n    display: none; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check > li::after {\n  content: \"\\f00c\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-square > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-square > li::after {\n  content: \"\\f14a\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-square-outline > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-square-outline > li::after {\n  content: \"\\f14a\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-double > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-double > li::after {\n  content: \"\\f560\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-circle > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-circle > li::after {\n  content: \"\\f058\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-circle-outline > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-check-circle-outline > li::after {\n  content: \"\\f058\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-square > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-square > li::after {\n  content: \"\\f0c8\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-square-outline > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-square-outline > li::after {\n  content: \"\\f0c8\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-circle > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-circle > li::after {\n  content: \"\\f111\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-circle-outline > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-circle-outline > li::after {\n  content: \"\\f111\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-right > li::after {\n  content: \"\\f061\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-left > li::after {\n  content: \"\\f060\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-circle-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-circle-right > li::after {\n  content: \"\\f0a9\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-circle-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-circle-left > li::after {\n  content: \"\\f0a8\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-alt-circle-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-alt-circle-right > li::after {\n  content: \"\\f35a\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-alt-circle-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-arrow-alt-circle-left > li::after {\n  content: \"\\f359\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-long-arrow-alt-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-long-arrow-alt-right > li::after {\n  content: \"\\f30b\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-long-arrow-alt-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-long-arrow-alt-left > li::after {\n  content: \"\\f30a\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-chevron-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-chevron-right > li::after {\n  content: \"\\f054\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-chevron-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-chevron-left > li::after {\n  content: \"\\f053\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-angle-right > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-angle-right > li::after {\n  content: \"\\f105\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-angle-left > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-angle-left > li::after {\n  content: \"\\f104\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-star > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-star > li::after {\n  content: \"\\f005\"; }\n\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-star-outline > li::before,\n.wprig-block-advanced-list .wprig-list-type-unordered.wprig-list-bullet-star-outline > li::after {\n  content: \"\\f005\";\n  font-weight: 400; }\n\n.wprig-block-advanced-list .wprig-list-type-ordered {\n  counter-reset: wprig-ol-counter; }\n  .wprig-block-advanced-list .wprig-list-type-ordered > li {\n    counter-increment: wprig-ol-counter; }\n    .wprig-block-advanced-list .wprig-list-type-ordered > li::before, .wprig-block-advanced-list .wprig-list-type-ordered > li::after {\n      text-align: center;\n      font-size: 1em;\n      content: counter(wprig-ol-counter); }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss":
 /*!*********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss ***!
@@ -9859,18 +9877,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_renderfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/renderfield */ "./src/components/renderfield.js");
 /* harmony import */ var _blocks_accordion_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/accordion/block */ "./src/blocks/accordion/block.js");
 /* harmony import */ var _blocks_advance_heading_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/advance-heading/block */ "./src/blocks/advance-heading/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_advance_list_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/advance-list/block */ "./src/blocks/advance-list/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -9885,8 +9904,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/alert/block";
 
 
- // import "./blocks/advance-list/block";
-// import "./blocks/animated-headline/block";
+
+ // import "./blocks/animated-headline/block";
 // import "./blocks/button/block";
 // import "./blocks/buttongroup/block";
 // import "./blocks/contact-form/block";
@@ -9969,7 +9988,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_13__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_14__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -11754,6 +11773,1389 @@ separators.pin = /*#__PURE__*/React.createElement("svg", {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-heading/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/advance-list/Edit.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/advance-list/Edit.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    Toolbar = _wp$components.Toolbar,
+    Tooltip = _wp$components.Tooltip;
+var _wp$wprigComponents = wp.wprigComponents,
+    Typography = _wp$wprigComponents.Typography,
+    Alignment = _wp$wprigComponents.Alignment,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings,
+    Styles = _wp$wprigComponents.Styles,
+    Range = _wp$wprigComponents.Range,
+    Tabs = _wp$wprigComponents.Tabs,
+    Tab = _wp$wprigComponents.Tab,
+    Border = _wp$wprigComponents.Border,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    Color = _wp$wprigComponents.Color,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Toggle = _wp$wprigComponents.Toggle,
+    Separator = _wp$wprigComponents.Separator,
+    IconSelector = _wp$wprigComponents.IconSelector,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Padding = _wp$wprigComponents.Padding,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handleListItemChanges", function (newValues) {
+      var _this$props = _this.props,
+          listItems = _this$props.attributes.listItems,
+          setAttributes = _this$props.setAttributes;
+      var newItem = newValues.length - listItems.length == 9;
+      var emptyItemIndex = newValues.indexOf("<li></li>");
+
+      if (emptyItemIndex == -1) {
+        setAttributes({
+          listItems: newValues
+        });
+      } else {
+        !newItem && _this.removeEmptyItem(newValues, emptyItemIndex);
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "removeEmptyItem", function (currentList, emptyItemIndex) {
+      var setAttributes = _this.props.setAttributes;
+
+      var newList = _toConsumableArray(currentList);
+
+      newList.splice(emptyItemIndex, 9);
+      newList = newList.join('');
+      setAttributes({
+        listItems: newList
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateListItems", function (index, operation) {
+      var _this$props2 = _this.props,
+          listItems = _this$props2.attributes.listItems,
+          setAttributes = _this$props2.setAttributes;
+      var newList = JSON.parse(JSON.stringify(listItems));
+      operation == 'add' ? newList.splice(index + 1, 0, '') : newList.splice(index, 1);
+      setAttributes({
+        listItems: newList
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "modifySpecificItem", function (value, index) {
+      var _this$props3 = _this.props,
+          listItems = _this$props3.attributes.listItems,
+          setAttributes = _this$props3.setAttributes;
+      var modifiedListItems = listItems.map(function (listItem, currentIndex) {
+        var temp = listItem;
+
+        if (index === currentIndex) {
+          temp = value;
+        }
+
+        return temp;
+      });
+      setAttributes({
+        listItems: modifiedListItems
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderDeleteOption", function (index, alignment) {
+      var focusedItem = _this.state.focusedItem;
+      return /*#__PURE__*/React.createElement(Tooltip, {
+        text: __('Delete this item')
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-action-remove alignment-".concat(alignment == 'right' ? 'left' : 'right'),
+        role: "button",
+        onClick: function onClick() {
+          _this.updateListItems(index, 'delete');
+
+          index == focusedItem ? _this.setState({
+            focusedItem: index > 0 ? index - 1 : index
+          }) : _this.setState({
+            focusedItem: focusedItem > 0 ? focusedItem - 1 : focusedItem
+          });
+        }
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "fas fa-times"
+      })));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderListItems", function () {
+      var _this$props$attribute = _this.props.attributes,
+          listItems = _this$props$attribute.listItems,
+          alignment = _this$props$attribute.alignment,
+          listType = _this$props$attribute.listType,
+          bulletStyle = _this$props$attribute.bulletStyle;
+      var _this$state = _this.state,
+          focusedItem = _this$state.focusedItem,
+          removeItemViaBackSpace = _this$state.removeItemViaBackSpace;
+      var ListTag = listType == 'ordered' ? 'ol' : 'ul';
+      return listItems.length > 0 ? /*#__PURE__*/React.createElement(ListTag, {
+        className: "wprig-list wprig-list-type-".concat(listType, " wprig-list-bullet-").concat(bulletStyle.name)
+      }, listItems.map(function (item, index) {
+        return /*#__PURE__*/React.createElement("li", {
+          className: "wprig-list-item"
+        }, item.length > 0 && alignment == 'right' && _this.renderDeleteOption(index, alignment), /*#__PURE__*/React.createElement("div", {
+          className: "wprig-list-item-text-".concat(index),
+          id: "wprig-list-item-text-".concat(index),
+          contenteditable: "true",
+          placeholder: "Enter new item",
+          onClick: function onClick() {
+            return _this.setState({
+              focusedItem: index
+            });
+          },
+          onBlur: function onBlur(event) {
+            return _this.modifySpecificItem(event.target.innerText, index);
+          },
+          onKeyPress: function onKeyPress(event) {
+            if (event.key == 'Enter') {
+              event.preventDefault();
+
+              _this.updateListItems(index, 'add');
+
+              _this.setState({
+                focusedItem: index + 1 == listItems.length ? listItems.length : focusedItem + 1
+              });
+            }
+          },
+          onKeyUp: function onKeyUp(event) {
+            if (event.key == 'Backspace') {
+              event.target.innerText.length == 0 && _this.setState({
+                removeItemViaBackSpace: index
+              });
+
+              if (removeItemViaBackSpace == index) {
+                _this.updateListItems(index, 'delete');
+
+                _this.setState({
+                  focusedItem: index > 0 ? index - 1 : index
+                });
+              }
+            }
+          }
+        }, item), item.length > 0 && alignment != 'right' && _this.renderDeleteOption(index, alignment));
+      })) : /*#__PURE__*/React.createElement("button", {
+        onClick: function onClick() {
+          _this.setState({
+            focusedItem: listItems.length
+          });
+
+          _this.updateListItems(listItems.length, 'add');
+        },
+        className: "button is-default wprig-action-button",
+        role: "button"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "fas fa-plus"
+      }), " ", __('Add List Item'));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "placeCaretAtEnd", function (el) {
+      el.focus();
+
+      if (typeof window.getSelection != "undefined" && typeof document.createRange != "undefined") {
+        var range = document.createRange();
+        range.selectNodeContents(el);
+        range.collapse(false);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      } else if (typeof document.body.createTextRange != "undefined") {
+        var textRange = document.body.createTextRange();
+        textRange.moveToElementText(el);
+        textRange.collapse(false);
+        textRange.select();
+      }
+    });
+
+    _this.state = {
+      device: 'md',
+      spacer: true,
+      removeItemViaBackSpace: 999,
+      focusedItem: _this.props.attributes.listItems.length - 1
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props4 = this.props,
+          clientId = _this$props4.clientId,
+          isSelected = _this$props4.isSelected,
+          setAttributes = _this$props4.setAttributes,
+          uniqueId = _this$props4.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+
+      isSelected && this.placeCaretAtEnd(document.querySelector(".wprig-block-".concat(uniqueId, " .wprig-list-item-text-").concat(this.state.focusedItem)));
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (this.props.attributes.listItems.length > prevProps.attributes.listItems.length) {
+        var focusedListItem = document.querySelector(".wprig-block-".concat(prevProps.attributes.uniqueId, " .wprig-list-item-text-").concat(this.state.focusedItem));
+        focusedListItem.focus();
+      } else if (this.props.attributes.listItems.length < prevProps.attributes.listItems.length) {
+        var focusedItem = this.state.focusedItem;
+
+        var _focusedListItem = document.querySelector(".wprig-block-".concat(prevProps.attributes.uniqueId, " .wprig-list-item-text-").concat(focusedItem));
+
+        if (this.props.isSelected && _focusedListItem) {
+          this.placeCaretAtEnd(_focusedListItem);
+        }
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props5 = this.props,
+          name = _this$props5.name,
+          clientId = _this$props5.clientId,
+          isSelected = _this$props5.isSelected,
+          attributes = _this$props5.attributes,
+          setAttributes = _this$props5.setAttributes,
+          _this$props5$attribut = _this$props5.attributes,
+          uniqueId = _this$props5$attribut.uniqueId,
+          className = _this$props5$attribut.className,
+          recreateStyles = _this$props5$attribut.recreateStyles,
+          alignment = _this$props5$attribut.alignment,
+          layout = _this$props5$attribut.layout,
+          listType = _this$props5$attribut.listType,
+          typography = _this$props5$attribut.typography,
+          spacing = _this$props5$attribut.spacing,
+          color = _this$props5$attribut.color,
+          colorHover = _this$props5$attribut.colorHover,
+          backgroundSize = _this$props5$attribut.backgroundSize,
+          background = _this$props5$attribut.background,
+          backgroundHover = _this$props5$attribut.backgroundHover,
+          borderRadius = _this$props5$attribut.borderRadius,
+          border = _this$props5$attribut.border,
+          borderColorHover = _this$props5$attribut.borderColorHover,
+          shadow = _this$props5$attribut.shadow,
+          shadowHover = _this$props5$attribut.shadowHover,
+          bulletStyle = _this$props5$attribut.bulletStyle,
+          bulletSize = _this$props5$attribut.bulletSize,
+          bulletSizeCustom = _this$props5$attribut.bulletSizeCustom,
+          bulletColor = _this$props5$attribut.bulletColor,
+          bulletColorHover = _this$props5$attribut.bulletColorHover,
+          bulletSpacing = _this$props5$attribut.bulletSpacing,
+          numberCorner = _this$props5$attribut.numberCorner,
+          numberFontSize = _this$props5$attribut.numberFontSize,
+          numberBgSize = _this$props5$attribut.numberBgSize,
+          useNumberBg = _this$props5$attribut.useNumberBg,
+          numberBg = _this$props5$attribut.numberBg,
+          numberBgHover = _this$props5$attribut.numberBgHover,
+          animation = _this$props5$attribut.animation,
+          globalZindex = _this$props5$attribut.globalZindex,
+          enablePosition = _this$props5$attribut.enablePosition,
+          selectPosition = _this$props5$attribut.selectPosition,
+          positionXaxis = _this$props5$attribut.positionXaxis,
+          positionYaxis = _this$props5$attribut.positionYaxis,
+          hideTablet = _this$props5$attribut.hideTablet,
+          hideMobile = _this$props5$attribut.hideMobile,
+          globalCss = _this$props5$attribut.globalCss,
+          interaction = _this$props5$attribut.interaction;
+      var device = this.state.device;
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Options'),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Styles, {
+        value: layout,
+        onChange: function onChange(val) {
+          return setAttributes({
+            layout: val
+          });
+        },
+        options: [{
+          value: 'fill',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].list_fill,
+          label: __('Fill')
+        }, {
+          value: 'classic',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].list_classic,
+          label: __('Classic')
+        }]
+      }), /*#__PURE__*/React.createElement(Alignment, {
+        label: __('Alignment'),
+        alignmentType: "content",
+        value: alignment,
+        onChange: function onChange(val) {
+          return setAttributes({
+            alignment: val
+          });
+        },
+        disableJustify: true,
+        disableToggle: true
+      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: typography,
+        onChange: function onChange(val) {
+          return setAttributes({
+            typography: val
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: listType == 'unordered' ? __('Bullet') : __('Number'),
+        initialOpen: false
+      }, listType == 'unordered' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(IconSelector, {
+        label: "Icon",
+        value: bulletStyle.name,
+        enableSearch: true,
+        icons: [{
+          name: 'check',
+          value: 'fas fa-check'
+        }, {
+          name: 'check-square',
+          value: 'fas fa-check-square'
+        }, {
+          name: 'check-square-outline',
+          value: 'far fa-check-square'
+        }, {
+          name: 'check-double',
+          value: 'fas fa-check-double'
+        }, {
+          name: 'check-circle',
+          value: 'fas fa-check-circle'
+        }, {
+          name: 'check-circle-outline',
+          value: 'far fa-check-circle'
+        }, {
+          name: 'square',
+          value: 'fas fa-square'
+        }, {
+          name: 'square-outline',
+          value: 'far fa-square'
+        }, {
+          name: 'circle',
+          value: 'fas fa-circle'
+        }, {
+          name: 'circle-outline',
+          value: 'far fa-circle'
+        }, {
+          name: 'arrow-right',
+          value: 'fas fa-arrow-right'
+        }, {
+          name: 'arrow-left',
+          value: 'fas fa-arrow-left'
+        }, {
+          name: 'arrow-circle-right',
+          value: 'fas fa-arrow-circle-right'
+        }, {
+          name: 'arrow-circle-left',
+          value: 'fas fa-arrow-circle-left'
+        }, {
+          name: 'arrow-alt-circle-right',
+          value: 'far fa-arrow-alt-circle-right'
+        }, {
+          name: 'arrow-alt-circle-left',
+          value: 'far fa-arrow-alt-circle-left'
+        }, {
+          name: 'long-arrow-alt-right',
+          value: 'fas fa-long-arrow-alt-right'
+        }, {
+          name: 'long-arrow-alt-left',
+          value: 'fas fa-long-arrow-alt-left'
+        }, {
+          name: 'chevron-right',
+          value: 'fas fa-chevron-right'
+        }, {
+          name: 'chevron-left',
+          value: 'fas fa-chevron-left'
+        }, {
+          name: 'angle-right',
+          value: 'fas fa-angle-right'
+        }, {
+          name: 'angle-left',
+          value: 'fas fa-angle-left'
+        }, {
+          name: 'star',
+          value: 'fas fa-star'
+        }, {
+          name: 'star-outline',
+          value: 'far fa-star'
+        }],
+        onChange: function onChange(val) {
+          return setAttributes({
+            bulletStyle: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Size'),
+        value: bulletSize,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bulletSize: val
+          });
+        },
+        options: [{
+          label: 'S',
+          value: '12px',
+          title: __('Small')
+        }, {
+          label: 'M',
+          value: '16px',
+          title: __('Medium')
+        }, {
+          label: 'L',
+          value: '20px',
+          title: __('Large')
+        }, {
+          label: 'XL',
+          value: '28px',
+          title: __('Extra Large')
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: __('Custom')
+        }]
+      }), bulletSize == 'custom' && /*#__PURE__*/React.createElement(Range, {
+        label: __('Custom Size'),
+        value: bulletSizeCustom,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bulletSizeCustom: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), listType == 'ordered' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Font Size'),
+        value: numberFontSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberFontSize: value
+          });
+        },
+        min: 10,
+        max: 100
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        value: useNumberBg,
+        label: __('Use Background'),
+        onChange: function onChange(val) {
+          return setAttributes({
+            useNumberBg: val,
+            recreateStyles: !recreateStyles
+          });
+        }
+      }), useNumberBg == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Background Size'),
+        value: numberBgSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberBgSize: value
+          });
+        },
+        min: 1,
+        max: 15
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Corner'),
+        value: numberCorner,
+        onChange: function onChange(value) {
+          return setAttributes({
+            numberCorner: value
+          });
+        },
+        min: 0,
+        max: 100
+      }))), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: bulletSpacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bulletSpacing: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        disableAlpha: true,
+        value: bulletColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bulletColor: val
+          });
+        }
+      }), listType == 'ordered' && useNumberBg == 1 && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: numberBg,
+        onChange: function onChange(val) {
+          return setAttributes({
+            numberBg: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        disableAlpha: true,
+        value: bulletColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bulletColorHover: val
+          });
+        }
+      }), listType == 'ordered' && useNumberBg == 1 && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: numberBgHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            numberBgHover: val
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Design'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: spacing,
+        onChange: function onChange(val) {
+          return setAttributes({
+            spacing: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: backgroundSize,
+        onChange: function onChange(val) {
+          return setAttributes({
+            backgroundSize: val
+          });
+        },
+        min: 0,
+        max: 60,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), layout == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: borderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            borderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: color,
+        onChange: function onChange(val) {
+          return setAttributes({
+            color: val
+          });
+        }
+      }), layout == 'fill' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: background,
+        onChange: function onChange(val) {
+          return setAttributes({
+            background: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: border,
+        unit: ['px', 'em'],
+        onChange: function onChange(val) {
+          return setAttributes({
+            border: val
+          });
+        },
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), layout == 'fill' && /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: shadow,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shadow: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: colorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            colorHover: val
+          });
+        }
+      }), layout == 'fill' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: backgroundHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            backgroundHover: val
+          });
+        }
+      }), border.openBorder != undefined && border.openBorder == 1 && /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: borderColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            borderColorHover: value
+          });
+        }
+      }), layout == 'fill' && /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box-Shadow'),
+        value: shadowHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            shadowHover: value
+          });
+        }
+      }))))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      }))), /*#__PURE__*/React.createElement(Toolbar, {
+        controls: [{
+          icon: 'editor-ul',
+          title: 'Convert to unordered list',
+          onClick: function onClick() {
+            return setAttributes({
+              listType: 'unordered',
+              recreateStyles: !recreateStyles
+            });
+          },
+          className: "wprig-action-change-listype ".concat(listType == 'unordered' ? 'is-active' : '')
+        }, {
+          icon: 'editor-ol',
+          title: 'Convert to ordered list',
+          onClick: function onClick() {
+            return setAttributes({
+              listType: 'ordered',
+              recreateStyles: !recreateStyles
+            });
+          },
+          className: "wprig-action-change-listype ".concat(listType == 'ordered' ? 'is-active' : '')
+        }]
+      })), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-advanced-list wprig-alignment-".concat(alignment),
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        }
+      }, this.renderListItems(), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/advance-list/Save.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/advance-list/Save.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var Component = wp.element.Component;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    var _this;
+
+    _classCallCheck(this, Save);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "renderListItems", function () {
+      var listItems = _this.props.attributes.listItems;
+      return listItems.map(function (item) {
+        return /*#__PURE__*/React.createElement("li", null, item);
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          alignment = _this$props$attribute.alignment,
+          bulletStyle = _this$props$attribute.bulletStyle,
+          listType = _this$props$attribute.listType,
+          animation = _this$props$attribute.animation,
+          interaction = _this$props$attribute.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      var ListTag = listType == 'ordered' ? 'ol' : 'ul';
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-advanced-list ".concat(interactionClass, " wprig-alignment-").concat(alignment)
+      }, /*#__PURE__*/React.createElement(ListTag, {
+        className: "wprig-list wprig-list-type-".concat(listType, " wprig-list-bullet-").concat(bulletStyle.name)
+      }, this.renderListItems())));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/advance-list/attributes.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/advance-list/attributes.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+
+var attributes = _objectSpread(_objectSpread({}, globalAttributes), {}, {
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  },
+  recreateStyles: {
+    type: 'boolean',
+    "default": true
+  },
+  listType: {
+    type: 'string',
+    "default": 'unordered'
+  },
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: "px"
+      },
+      spaceBottom: {
+        md: '10',
+        unit: "px"
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  alignment: {
+    type: 'string',
+    "default": 'left',
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-advanced-list {text-align: {{alignment}};}'
+    }]
+  },
+  layout: {
+    type: 'string',
+    "default": 'fill'
+  },
+  listItems: {
+    type: 'array',
+    "default": ['Create advanced list items', 'Options to choose list design', 'Beautiful interaction transitions']
+  },
+  bulletStyle: {
+    type: 'object',
+    "default": {
+      name: 'check-circle-outline',
+      value: 'far fa-check-circle'
+    }
+  },
+  bulletSize: {
+    type: 'string',
+    "default": '16px',
+    style: [{
+      condition: [{
+        key: 'bulletSize',
+        relation: '!=',
+        value: 'custom'
+      }, {
+        key: 'listType',
+        relation: '==',
+        value: 'unordered'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { font-size: {{bulletSize}};}'
+    }]
+  },
+  bulletSizeCustom: {
+    type: 'object',
+    "default": {
+      md: 18,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'bulletSize',
+        relation: '==',
+        value: 'custom'
+      }, {
+        key: 'listType',
+        relation: '==',
+        value: 'unordered'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { font-size: {{bulletSizeCustom}};}'
+    }]
+  },
+  bulletSpacing: {
+    type: 'object',
+    "default": {
+      md: 10,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'alignment',
+        relation: '==',
+        value: 'left'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before { margin-right: {{bulletSpacing}};}'
+    }, {
+      condition: [{
+        key: 'alignment',
+        relation: '==',
+        value: 'center'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before { margin-right: {{bulletSpacing}};}'
+    }, {
+      condition: [{
+        key: 'alignment',
+        relation: '==',
+        value: 'right'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::after { margin-left: {{bulletSpacing}};}'
+    }]
+  },
+  bulletColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after {color: {{bulletColor}};}'
+    }]
+  },
+  bulletColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li:hover::before, {{WPRIG}} .wprig-list li:hover::after {color: {{bulletColorHover}};}'
+    }]
+  },
+  useNumberBg: {
+    type: 'boolean',
+    "default": true
+  },
+  numberFontSize: {
+    type: 'string',
+    "default": '14',
+    style: [{
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { font-size: {{numberFontSize}}px !important;}'
+    }]
+  },
+  numberBgSize: {
+    type: 'string',
+    "default": '5',
+    style: [{
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }, {
+        key: 'useNumberBg',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { padding: {{numberBgSize}}px; }'
+    }]
+  },
+  numberBg: {
+    type: 'string',
+    "default": '#c2e5ff',
+    style: [{
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }, {
+        key: 'useNumberBg',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { background-color: {{numberBg}};}'
+    }]
+  },
+  numberBgHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }, {
+        key: 'useNumberBg',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-list li:hover::before, {{WPRIG}} .wprig-list li:hover::after { background-color: {{numberBgHover}};}'
+    }]
+  },
+  numberCorner: {
+    type: 'string',
+    "default": '50',
+    style: [{
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }, {
+        key: 'useNumberBg',
+        relation: '==',
+        value: true
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after { border-radius: {{numberCorner}}%;}'
+    }]
+  },
+  typography: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li'
+    }, {
+      condition: [{
+        key: 'listType',
+        relation: '==',
+        value: 'ordered'
+      }],
+      selector: '{{WPRIG}} .wprig-list li::before, {{WPRIG}} .wprig-list li::after '
+    }]
+  },
+  color: {
+    type: 'string',
+    "default": '#333',
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li {color: {{color}};}'
+    }]
+  },
+  colorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li:hover {color: {{colorHover}};}'
+    }]
+  },
+  spacing: {
+    type: 'object',
+    "default": {
+      md: 5,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li:not(:last-child) {margin-bottom: {{spacing}};}'
+    }]
+  },
+  backgroundSize: {
+    type: 'object',
+    "default": {
+      openPadding: 1,
+      paddingType: 'global',
+      global: {
+        md: '10',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li'
+    }]
+  },
+  background: {
+    type: 'string',
+    "default": '#f5f5f5',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'fill'
+      }],
+      selector: '{{WPRIG}} .wprig-list li {background-color: {{background}};}'
+    }]
+  },
+  backgroundHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'fill'
+      }],
+      selector: '{{WPRIG}} .wprig-list li:hover {background-color: {{backgroundHover}};}'
+    }]
+  },
+  borderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'fill'
+      }],
+      selector: '{{WPRIG}} .wprig-list li'
+    }]
+  },
+  shadow: {
+    type: 'object',
+    "default": {
+      color: ''
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'fill'
+      }],
+      selector: '{{WPRIG}} .wprig-list li'
+    }]
+  },
+  shadowHover: {
+    type: 'object',
+    "default": {
+      color: ''
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'fill'
+      }],
+      selector: '{{WPRIG}} .wprig-list li:hover'
+    }]
+  },
+  border: {
+    type: 'object',
+    "default": {
+      color: "#006fbf"
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li'
+    }]
+  },
+  borderColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-list li:hover {border-bottom-color: {{borderColorHover}};}'
+    }]
+  },
+  sourceOfCopiedStyle: {
+    type: 'boolean',
+    "default": false
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/advance-list/block.js":
+/*!******************************************!*\
+  !*** ./src/blocks/advance-list/block.js ***!
+  \******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/advance-list/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/advance-list/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/advance-list/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/advance-list/attributes.js");
+
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+registerBlockType('wprig/advancedlist', {
+  title: __('Advanced List'),
+  description: __('Include stylish lists to display in your site with WPRIG Advanced List.'),
+  category: 'wprig-blocks',
+  icon: 'universal-access-alt',
+  keywords: [__('Advanced', 'wprig'), __('list', 'wprig'), __('advanced list', 'wprig'), __('Advanced List', 'wprig')],
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  example: {
+    attributes: {
+      background: '#fff'
+    }
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/advance-list/style.scss":
+/*!********************************************!*\
+  !*** ./src/blocks/advance-list/style.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/advance-list/style.scss");
 
             content = content.__esModule ? content.default : content;
 
