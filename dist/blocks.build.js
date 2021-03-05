@@ -10301,7 +10301,6 @@ registerBlockType('wprig/accordion', {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../helpers/icons */ "./src/helpers/icons.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -10343,23 +10342,11 @@ var _wp$blockEditor = wp.blockEditor,
     InnerBlocks = _wp$blockEditor.InnerBlocks,
     RichText = _wp$blockEditor.RichText;
 var _wp$wprigComponents = wp.wprigComponents,
-    Styles = _wp$wprigComponents.Styles,
-    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
-    Range = _wp$wprigComponents.Range,
-    Typography = _wp$wprigComponents.Typography,
-    BoxShadow = _wp$wprigComponents.BoxShadow,
-    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
-    Tabs = _wp$wprigComponents.Tabs,
-    Tab = _wp$wprigComponents.Tab,
-    Color = _wp$wprigComponents.Color,
     Toggle = _wp$wprigComponents.Toggle,
     Padding = _wp$wprigComponents.Padding,
-    Border = _wp$wprigComponents.Border,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
-    InspectorTab = _wp$wprigComponents.InspectorTab;
-
+    InspectorTab = _wp$wprigComponents.InspectorTab; // import icons from '../../../helpers/icons';
 
 var AccordionItemBlockEdit = /*#__PURE__*/function (_Component) {
   _inherits(AccordionItemBlockEdit, _Component);
@@ -10493,38 +10480,11 @@ var AccordionItemBlockEdit = /*#__PURE__*/function (_Component) {
           defaultText = attributes.defaultText,
           fillType = attributes.fillType,
           heading = attributes.heading,
-          panelColor = attributes.panelColor,
-          panelColorActive = attributes.panelColorActive,
-          iconColor = attributes.iconColor,
-          iconColorActive = attributes.iconColorActive,
-          panelColorActive2 = attributes.panelColorActive2,
-          panelBg = attributes.panelBg,
-          panelBgActive = attributes.panelBgActive,
           active = attributes.active,
           panelIcon = attributes.panelIcon,
-          typography = attributes.typography,
-          bodyBoxShadow = attributes.bodyBoxShadow,
-          spacing = attributes.spacing,
-          spacingBorder = attributes.spacingBorder,
-          spacingBorderColor = attributes.spacingBorderColor,
-          panelPadding = attributes.panelPadding,
-          iconSize = attributes.iconSize,
-          customIconSize = attributes.customIconSize,
           iconPosition = attributes.iconPosition,
-          borderRadius = attributes.borderRadius,
-          bodyBg = attributes.bodyBg,
-          bodyPadding = attributes.bodyPadding,
-          bodyPaddingAlt = attributes.bodyPaddingAlt,
-          iconSpacing = attributes.iconSpacing,
           openFirstItem = attributes.openFirstItem,
-          richSnippet = attributes.richSnippet,
-          panelBorder = attributes.panelBorder,
-          panelBorderColorActive = attributes.panelBorderColorActive,
-          panelBorderRadius = attributes.panelBorderRadius,
-          panelBorderRadiusActive = attributes.panelBorderRadiusActive,
-          panelBoxShadow = attributes.panelBoxShadow,
-          panelBoxShadowActive = attributes.panelBoxShadowActive,
-          bodyBorder = attributes.bodyBorder;
+          richSnippet = attributes.richSnippet;
       var itemToggle = rootBlock.attributes.itemToggle;
       var device = this.state.device;
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, null, /*#__PURE__*/React.createElement(InspectorTabs, {
@@ -10533,21 +10493,7 @@ var AccordionItemBlockEdit = /*#__PURE__*/function (_Component) {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         title: __('')
-      }, /*#__PURE__*/React.createElement(Styles, {
-        value: fillType,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('fillType', val);
-        },
-        options: [{
-          value: 'fill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].accordion_fill,
-          label: __('Fill')
-        }, {
-          value: 'nofill',
-          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].accordion_classic,
-          label: __('Classic')
-        }]
-      }), /*#__PURE__*/React.createElement(Toggle, {
+      }, /*#__PURE__*/React.createElement(Toggle, {
         label: __('Toggle'),
         value: itemToggle,
         onChange: function onChange(val) {
@@ -10568,129 +10514,7 @@ var AccordionItemBlockEdit = /*#__PURE__*/function (_Component) {
       })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Panel'),
         initialOpen: false
-      }, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: panelColor,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('panelColor', val);
-        }
-      }), fillType == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: panelBg,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('panelBg', val);
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: panelBorder,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('panelBorder', val);
-        },
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: panelBoxShadow,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('panelBoxShadow', value);
-        },
-        disableInset: true
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: panelBorderRadius,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('panelBorderRadius', value);
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Active')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: fillType == 'fill' ? panelColorActive : panelColorActive2,
-        onChange: function onChange(val) {
-          return fillType == 'fill' ? _this3.setGlobalSettings('panelColorActive', val) : _this3.setGlobalSettings('panelColorActive2', val);
-        }
-      }), fillType == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: panelBgActive,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('panelBgActive', val);
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Border Color'),
-        value: panelBorderColorActive,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('panelBorderColorActive', val);
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: panelBoxShadowActive,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('panelBoxShadowActive', value);
-        },
-        disableInset: true
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: panelBorderRadiusActive,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('panelBorderRadiusActive', value);
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      })))), fillType == 'fill' && /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: panelPadding,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('panelPadding', value);
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: typography,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('typography', val);
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
+      }), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Panel Icon'),
         initialOpen: false
       }, /*#__PURE__*/React.createElement(SelectControl, {
@@ -10730,185 +10554,7 @@ var AccordionItemBlockEdit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(val) {
           return _this3.setGlobalSettings('panelIcon', val);
         }
-      }), panelIcon && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Size'),
-        options: [{
-          label: 'S',
-          value: '14px',
-          title: __('Small')
-        }, {
-          label: 'M',
-          value: '22px',
-          title: __('Medium')
-        }, {
-          label: 'L',
-          value: '30px',
-          title: __('Large')
-        }, {
-          icon: 'fas fa-cog',
-          value: 'custom',
-          title: __('Custom')
-        }],
-        value: iconSize,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('iconSize', val);
-        }
-      }), iconSize == 'custom' && /*#__PURE__*/React.createElement(Range, {
-        value: customIconSize,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('customIconSize', val);
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Position'),
-        options: [{
-          label: 'Left',
-          value: 'left'
-        }, {
-          label: 'Right',
-          value: 'right'
-        }],
-        value: iconPosition,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('iconPosition', val);
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: iconSpacing,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('iconSpacing', val);
-        },
-        min: 0,
-        max: 30,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Icon Color'),
-        value: iconColor,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('iconColor', val);
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Active')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Icon Color'),
-        value: iconColorActive,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('iconColorActive', val);
-        }
-      }))))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Body'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: fillType == 'fill' ? bodyPadding : bodyPaddingAlt,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings(fillType == 'fill' ? 'bodyPadding' : 'bodyPaddingAlt', value);
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), fillType == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: bodyBg,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('bodyBg', val);
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: bodyBorder,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('bodyBorder', val);
-        },
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bodyBoxShadow,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('bodyBoxShadow', value);
-        },
-        disableInset: true
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: borderRadius,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('borderRadius', value);
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Separator'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: spacing,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('spacing', value);
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this3.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Border Width'),
-        value: spacingBorder,
-        onChange: function onChange(value) {
-          return _this3.setGlobalSettings('spacingBorder', value);
-        },
-        min: 0,
-        max: 10
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Border Color'),
-        value: spacingBorderColor,
-        onChange: function onChange(val) {
-          return _this3.setGlobalSettings('spacingBorderColor', val);
-        }
-      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }), panelIcon && /*#__PURE__*/React.createElement(Fragment, null))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }))), /*#__PURE__*/React.createElement("div", {
         className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
