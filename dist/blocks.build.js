@@ -10928,12 +10928,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -10968,10 +10962,7 @@ var _wp$blockEditor = wp.blockEditor,
     InspectorControls = _wp$blockEditor.InspectorControls,
     BlockControls = _wp$blockEditor.BlockControls;
 var _wp$wprigComponents = wp.wprigComponents,
-    Color = _wp$wprigComponents.Color,
-    Typography = _wp$wprigComponents.Typography,
     Alignment = _wp$wprigComponents.Alignment,
-    Range = _wp$wprigComponents.Range,
     Toggle = _wp$wprigComponents.Toggle,
     Headings = _wp$wprigComponents.Headings,
     RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
@@ -11047,24 +11038,15 @@ var Edit = /*#__PURE__*/function (_Component) {
           className = _this$props2$attribut.className,
           recreateStyles = _this$props2$attribut.recreateStyles,
           content = _this$props2$attribut.content,
-          typography = _this$props2$attribut.typography,
           alignment = _this$props2$attribut.alignment,
           selector = _this$props2$attribut.selector,
           level = _this$props2$attribut.level,
-          textColor = _this$props2$attribut.textColor,
           separatorStyle = _this$props2$attribut.separatorStyle,
-          separatorColor = _this$props2$attribut.separatorColor,
-          separatorStroke = _this$props2$attribut.separatorStroke,
           separatorPosition = _this$props2$attribut.separatorPosition,
-          separatorWidth = _this$props2$attribut.separatorWidth,
-          separatorSpacing = _this$props2$attribut.separatorSpacing,
           separatorNumber = _this$props2$attribut.separatorNumber,
           subHeading = _this$props2$attribut.subHeading,
           subHeadingLevel = _this$props2$attribut.subHeadingLevel,
           subHeadingContent = _this$props2$attribut.subHeadingContent,
-          subHeadingTypography = _this$props2$attribut.subHeadingTypography,
-          subHeadingColor = _this$props2$attribut.subHeadingColor,
-          subHeadingSpacing = _this$props2$attribut.subHeadingSpacing,
           subHeadingPosition = _this$props2$attribut.subHeadingPosition,
           animation = _this$props2$attribut.animation,
           globalZindex = _this$props2$attribut.globalZindex,
@@ -11171,33 +11153,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           });
         }
       })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Heading'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: textColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            textColor: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: typography,
-        onChange: function onChange(val) {
-          return setAttributes(_objectSpread({
-            typography: val
-          }, val.openTypography !== typography.openTypography && {
-            recreateStyles: !recreateStyles
-          }));
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Sub Heading'),
         initialOpen: false
       }, /*#__PURE__*/React.createElement(Toggle, {
@@ -11213,48 +11168,6 @@ var Edit = /*#__PURE__*/function (_Component) {
         onChange: function onChange(value) {
           return setAttributes({
             subHeadingLevel: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: subHeadingTypography,
-        onChange: function onChange(val) {
-          return setAttributes(_objectSpread({
-            subHeadingTypography: val
-          }, val.openTypography !== subHeadingTypography.openTypography && {
-            recreateStyles: !recreateStyles
-          }));
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: subHeadingColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            subHeadingColor: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: subHeadingSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            subHeadingSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 60,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
           });
         }
       }), /*#__PURE__*/React.createElement(RadioAdvanced, {
@@ -11313,59 +11226,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             separatorStyle: val
           });
         }
-      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Separator Color'),
-        value: separatorColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorColor: val
-          });
-        }
-      }), separatorStyle != 'pin' && separatorStyle != 'pin_filled' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Stroke'),
-        value: separatorStroke,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorStroke: parseInt(val)
-          });
-        },
-        min: 1,
-        max: separators[separatorStyle].stroke
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Width'),
-        value: separatorWidth,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorWidth: val
-          });
-        },
-        min: 20,
-        max: separators[separatorStyle].width,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: separatorSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorSpacing: val
-          });
-        },
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(SelectControl, {
+      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(SelectControl, {
         label: "Position",
         value: separatorPosition,
         options: [{
@@ -11751,58 +11612,6 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": 'top'
   },
-  separatorColor: {
-    type: 'string',
-    "default": '#5D7FEB',
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-heading svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-heading  .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
-    }]
-  },
-  separatorStroke: {
-    type: 'number',
-    "default": 3,
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
-    }]
-  },
-  separatorWidth: {
-    type: 'object',
-    "default": {
-      md: 60
-    },
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg {width: {{separatorWidth}}px;}'
-    }]
-  },
-  separatorSpacing: {
-    type: 'object',
-    "default": {
-      md: 10
-    },
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-separator-position-left .wprig-separator {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-right .wprig-separator {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-after {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-top .wprig-separator {margin-bottom: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-bottom .wprig-separator {margin-top: {{separatorSpacing}}px;}'
-    }]
-  },
   subHeading: {
     type: 'boolean',
     "default": false
@@ -11817,64 +11626,9 @@ var attributes = _objectSpread(_objectSpread({
     selector: '.wprig-sub-heading-selector',
     "default": 'Sub Heading'
   },
-  subHeadingTypography: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 16,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector'
-    }]
-  },
-  subHeadingColor: {
-    type: 'string',
-    "default": '#333',
-    style: [{
-      condition: [{
-        key: 'subHeading',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {color: {{subHeadingColor}};}'
-    }]
-  },
   subHeadingPosition: {
     type: 'string',
     "default": 'after_title'
-  },
-  subHeadingSpacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'subHeading',
-        relation: '==',
-        value: 1
-      }, {
-        key: 'subHeadingPosition',
-        relation: '==',
-        value: 'after_title'
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-top: {{subHeadingSpacing}};}'
-    }, {
-      condition: [{
-        key: 'subHeading',
-        relation: '==',
-        value: 1
-      }, {
-        key: 'subHeadingPosition',
-        relation: '==',
-        value: 'before_title'
-      }],
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-bottom: {{subHeadingSpacing}};}'
-    }]
   },
   selector: {
     type: 'string',
@@ -11883,226 +11637,6 @@ var attributes = _objectSpread(_objectSpread({
   level: {
     type: 'number',
     "default": 2
-  },
-  textColor: {
-    attributes: _objectSpread(_objectSpread({
-      uniqueId: {
-        type: 'string',
-        "default": ''
-      }
-    }, globalAttributes), {}, {
-      recreateStyles: {
-        type: 'boolean',
-        "default": true
-      },
-      spacer: {
-        type: 'object',
-        "default": {
-          spaceTop: {
-            md: '10',
-            unit: "px"
-          },
-          spaceBottom: {
-            md: '10',
-            unit: "px"
-          }
-        },
-        style: [{
-          selector: '{{WPRIG}}'
-        }]
-      },
-      content: {
-        type: 'string',
-        source: 'html',
-        selector: '.wprig-heading-selector',
-        "default": 'WPRIG - A Full-fledged Gutenberg Builder'
-      },
-      alignment: {
-        type: 'object',
-        "default": {},
-        style: [{
-          selector: '{{WPRIG}}{text-align: {{alignment}}; }'
-        }]
-      },
-      typography: {
-        type: 'object',
-        "default": {
-          openTypography: 1,
-          size: {
-            md: 24,
-            unit: 'px'
-          }
-        },
-        style: [{
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector'
-        }]
-      },
-      separatorStyle: {
-        type: 'string',
-        "default": '',
-        style: [{
-          condition: [{
-            key: 'separatorStyle',
-            relation: '!=',
-            value: ''
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-style: {{separatorStyle}};}'
-        }]
-      },
-      separatorPosition: {
-        type: 'string',
-        "default": 'top'
-      },
-      separatorColor: {
-        type: 'string',
-        "default": '#5D7FEB',
-        style: [{
-          condition: [{
-            key: 'separatorStyle',
-            relation: '!=',
-            value: ''
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-heading svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-heading  .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
-        }]
-      },
-      separatorStroke: {
-        type: 'number',
-        "default": 3,
-        style: [{
-          condition: [{
-            key: 'separatorStyle',
-            relation: '!=',
-            value: ''
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
-        }]
-      },
-      separatorWidth: {
-        type: 'object',
-        "default": {
-          md: 60
-        },
-        style: [{
-          condition: [{
-            key: 'separatorStyle',
-            relation: '!=',
-            value: ''
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}} .wprig-block-heading .wprig-separator-type-svg svg {width: {{separatorWidth}}px;}'
-        }]
-      },
-      separatorSpacing: {
-        type: 'object',
-        "default": {
-          md: 10
-        },
-        style: [{
-          condition: [{
-            key: 'separatorStyle',
-            relation: '!=',
-            value: ''
-          }],
-          selector: '{{WPRIG}} .wprig-separator-position-left .wprig-separator {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-right .wprig-separator {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-leftright .wprig-separator-after {margin-left: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-top .wprig-separator {margin-bottom: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-position-bottom .wprig-separator {margin-top: {{separatorSpacing}}px;}'
-        }]
-      },
-      subHeading: {
-        type: 'boolean',
-        "default": false
-      },
-      subHeadingLevel: {
-        type: 'number',
-        "default": 3
-      },
-      subHeadingContent: {
-        type: 'string',
-        source: 'html',
-        selector: '.wprig-sub-heading-selector',
-        "default": 'Sub Heading'
-      },
-      subHeadingTypography: {
-        type: 'object',
-        "default": {
-          openTypography: 1,
-          size: {
-            md: 16,
-            unit: 'px'
-          }
-        },
-        style: [{
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector'
-        }]
-      },
-      subHeadingColor: {
-        type: 'string',
-        "default": '#333',
-        style: [{
-          condition: [{
-            key: 'subHeading',
-            relation: '==',
-            value: 1
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {color: {{subHeadingColor}};}'
-        }]
-      },
-      subHeadingPosition: {
-        type: 'string',
-        "default": 'after_title'
-      },
-      subHeadingSpacing: {
-        type: 'object',
-        "default": {
-          md: 10,
-          unit: 'px'
-        },
-        style: [{
-          condition: [{
-            key: 'subHeading',
-            relation: '==',
-            value: 1
-          }, {
-            key: 'subHeadingPosition',
-            relation: '==',
-            value: 'after_title'
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-top: {{subHeadingSpacing}};}'
-        }, {
-          condition: [{
-            key: 'subHeading',
-            relation: '==',
-            value: 1
-          }, {
-            key: 'subHeadingPosition',
-            relation: '==',
-            value: 'before_title'
-          }],
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-sub-heading-selector {margin-bottom: {{subHeadingSpacing}};}'
-        }]
-      },
-      selector: {
-        type: 'string',
-        "default": 'h2'
-      },
-      level: {
-        type: 'number',
-        "default": 2
-      },
-      textColor: {
-        type: 'string',
-        "default": '',
-        style: [{
-          selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector { color:{{textColor}}; }'
-        }]
-      },
-      sourceOfCopiedStyle: {
-        type: 'boolean',
-        "default": false
-      }
-    }),
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-heading .wprig-heading-selector { color:{{textColor}}; }'
-    }]
   },
   sourceOfCopiedStyle: {
     type: 'boolean',
