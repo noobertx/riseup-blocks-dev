@@ -29141,22 +29141,12 @@ var _wp$blockEditor = wp.blockEditor,
     BlockControls = _wp$blockEditor.BlockControls;
 var _wp$wprigComponents = wp.wprigComponents,
     Media = _wp$wprigComponents.Media,
-    Tabs = _wp$wprigComponents.Tabs,
-    Tab = _wp$wprigComponents.Tab,
-    Range = _wp$wprigComponents.Range,
     Separator = _wp$wprigComponents.Separator,
     RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
-    Typography = _wp$wprigComponents.Typography,
     Toggle = _wp$wprigComponents.Toggle,
     Styles = _wp$wprigComponents.Styles,
     Alignment = _wp$wprigComponents.Alignment,
-    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
-    Color = _wp$wprigComponents.Color,
-    Border = _wp$wprigComponents.Border,
     ButtonGroup = _wp$wprigComponents.ButtonGroup,
-    BoxShadow = _wp$wprigComponents.BoxShadow,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
-    Padding = _wp$wprigComponents.Padding,
     Url = _wp$wprigComponents.Url,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
     globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
@@ -29231,39 +29221,18 @@ var Edit = /*#__PURE__*/function (_Component) {
           alignment = _this$props$attribute.alignment,
           alignmentLayout3 = _this$props$attribute.alignmentLayout3,
           name = _this$props$attribute.name,
-          nameTypo = _this$props$attribute.nameTypo,
-          nameColor = _this$props$attribute.nameColor,
-          nameSpacing = _this$props$attribute.nameSpacing,
           enableDesignation = _this$props$attribute.enableDesignation,
           designation = _this$props$attribute.designation,
-          designationTypo = _this$props$attribute.designationTypo,
-          designationColor = _this$props$attribute.designationColor,
-          designationSpacing = _this$props$attribute.designationSpacing,
           imageType = _this$props$attribute.imageType,
           image = _this$props$attribute.image,
           image2x = _this$props$attribute.image2x,
           externalImageUrl = _this$props$attribute.externalImageUrl,
-          imageWidth = _this$props$attribute.imageWidth,
-          imageSpacing = _this$props$attribute.imageSpacing,
-          imageBorder = _this$props$attribute.imageBorder,
-          imageBorderRadius = _this$props$attribute.imageBorderRadius,
-          imageBoxShadow = _this$props$attribute.imageBoxShadow,
           enableDescription = _this$props$attribute.enableDescription,
           description = _this$props$attribute.description,
-          descriptionTypo = _this$props$attribute.descriptionTypo,
-          descriptionColor = _this$props$attribute.descriptionColor,
-          descriptionSpacing = _this$props$attribute.descriptionSpacing,
           phone = _this$props$attribute.phone,
           email = _this$props$attribute.email,
           website = _this$props$attribute.website,
-          infoSpacing = _this$props$attribute.infoSpacing,
           useInfoIcon = _this$props$attribute.useInfoIcon,
-          infoIconSize = _this$props$attribute.infoIconSize,
-          infoIconSizeCustom = _this$props$attribute.infoIconSizeCustom,
-          infoIconSpacing = _this$props$attribute.infoIconSpacing,
-          infoIconColor = _this$props$attribute.infoIconColor,
-          infoTypo = _this$props$attribute.infoTypo,
-          infoColor = _this$props$attribute.infoColor,
           showSociallinks = _this$props$attribute.showSociallinks,
           facebook = _this$props$attribute.facebook,
           twitter = _this$props$attribute.twitter,
@@ -29275,34 +29244,12 @@ var Edit = /*#__PURE__*/function (_Component) {
           pinterest = _this$props$attribute.pinterest,
           dribbble = _this$props$attribute.dribbble,
           behance = _this$props$attribute.behance,
-          iconSize = _this$props$attribute.iconSize,
-          iconSizeCustom = _this$props$attribute.iconSizeCustom,
-          iconGutter = _this$props$attribute.iconGutter,
-          iconSpacing = _this$props$attribute.iconSpacing,
           iconStyle = _this$props$attribute.iconStyle,
           iconUseDefaultStyle = _this$props$attribute.iconUseDefaultStyle,
-          iconBorderRadius = _this$props$attribute.iconBorderRadius,
-          iconColor = _this$props$attribute.iconColor,
-          iconBackground = _this$props$attribute.iconBackground,
-          iconBorder = _this$props$attribute.iconBorder,
-          iconColorHover = _this$props$attribute.iconColorHover,
-          iconBackgroundHover = _this$props$attribute.iconBackgroundHover,
-          iconBorderColorHover = _this$props$attribute.iconBorderColorHover,
           overlayHeight = _this$props$attribute.overlayHeight,
-          overlayBg = _this$props$attribute.overlayBg,
-          overlayPaddingX = _this$props$attribute.overlayPaddingX,
-          overlayPaddingY = _this$props$attribute.overlayPaddingY,
           contentPosition = _this$props$attribute.contentPosition,
           contentAlignment = _this$props$attribute.contentAlignment,
-          contentBg = _this$props$attribute.contentBg,
-          contentPadding = _this$props$attribute.contentPadding,
-          contentBorder = _this$props$attribute.contentBorder,
           overlayAlignment = _this$props$attribute.overlayAlignment,
-          bodyBg = _this$props$attribute.bodyBg,
-          bodyPadding = _this$props$attribute.bodyPadding,
-          bodyBorder = _this$props$attribute.bodyBorder,
-          bodyBorderRadius = _this$props$attribute.bodyBorderRadius,
-          bodyBoxShadow = _this$props$attribute.bodyBoxShadow,
           animation = _this$props$attribute.animation,
           globalZindex = _this$props$attribute.globalZindex,
           enablePosition = _this$props$attribute.enablePosition,
@@ -29422,130 +29369,6 @@ var Edit = /*#__PURE__*/function (_Component) {
             externalImageUrl: newUrl
           });
         }
-      }), layout != 2 && /*#__PURE__*/React.createElement(Range, {
-        min: 32,
-        max: 600,
-        responsive: true,
-        device: device,
-        value: imageWidth,
-        label: __('Image Width'),
-        unit: ['px', 'em', '%'],
-        onChange: function onChange(val) {
-          return setAttributes({
-            imageWidth: val
-          });
-        },
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), (layout == 1 || layout == 3) && /*#__PURE__*/React.createElement(Range, {
-        min: 0,
-        max: 500,
-        responsive: true,
-        device: device,
-        value: imageSpacing,
-        unit: ['px', 'em', '%'],
-        label: __('Image Spacing'),
-        onChange: function onChange(val) {
-          return setAttributes({
-            imageSpacing: val
-          });
-        },
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        responsive: true,
-        device: device,
-        value: imageBorder,
-        unit: ['px', 'em', '%'],
-        label: __('Border'),
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageBorder: value
-          });
-        },
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        unit: ['px', 'em', '%'],
-        value: imageBorderRadius,
-        label: __('Border Radius'),
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        },
-        onChange: function onChange(val) {
-          return setAttributes({
-            imageBorderRadius: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: imageBoxShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            imageBoxShadow: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Name'),
-        opened: 'Name' === openPanelSetting,
-        onToggle: function onToggle() {
-          return _this2.handlePanelOpenings(openPanelSetting !== 'Name' ? 'Name' : '');
-        }
-      }, /*#__PURE__*/React.createElement(Typography, {
-        label: "Typography",
-        value: nameTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            nameTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: nameColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            nameColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: nameSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            nameSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
       })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Designation'),
         opened: 'Designation' === openPanelSetting,
@@ -29560,47 +29383,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableDesignation: val
           });
         }
-      }), enableDesignation == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Typography, {
-        label: "Typography",
-        value: designationTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            designationTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: designationColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            designationColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: designationSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            designationSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
+      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Description'),
         opened: 'Description' === openPanelSetting,
         onToggle: function onToggle() {
@@ -29614,47 +29397,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableDescription: val
           });
         }
-      }), enableDescription == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-        label: "Typography",
-        value: descriptionTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            descriptionTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: descriptionColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            descriptionColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: descriptionSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            descriptionSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
+      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Information'),
         opened: 'Information' === openPanelSetting,
         onToggle: function onToggle() {
@@ -29684,47 +29427,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             website: val
           });
         }
-      }), (phone || email || website) && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-        label: "Typography",
-        value: infoTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            infoTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: infoColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            infoColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: infoSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            infoSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Toggle, {
+      }), (phone || email || website) && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Toggle, {
         label: __('Use Icon'),
         value: useInfoIcon,
         onChange: function onChange(val) {
@@ -29732,76 +29435,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             useInfoIcon: val
           });
         }
-      }), useInfoIcon == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Icon Size'),
-        value: infoIconSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            infoIconSize: value
-          });
-        },
-        options: [{
-          label: 'S',
-          value: '14px',
-          title: 'Small'
-        }, {
-          label: 'M',
-          value: '18px',
-          title: 'Medium'
-        }, {
-          label: 'L',
-          value: '24px',
-          title: 'Large'
-        }, {
-          icon: 'fas fa-cog',
-          value: 'custom',
-          title: 'Custom'
-        }]
-      }), infoIconSize == 'custom' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Custom Size'),
-        value: infoIconSizeCustom,
-        onChange: function onChange(val) {
-          return setAttributes({
-            infoIconSizeCustom: val
-          });
-        },
-        min: 12,
-        max: 300,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: infoIconColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            infoIconColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Icon Spacing'),
-        value: infoIconSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            infoIconSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(PanelBody, {
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Social'),
         opened: 'Social' === openPanelSetting,
         onToggle: function onToggle() {
@@ -29912,164 +29546,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].social_normal,
           label: __('Normal')
         }]
-      }), /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Icon Size'),
-        value: iconSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconSize: value
-          });
-        },
-        options: [{
-          label: 'S',
-          value: '14px',
-          title: 'Small'
-        }, {
-          label: 'M',
-          value: '18px',
-          title: 'Medium'
-        }, {
-          label: 'L',
-          value: '24px',
-          title: 'Large'
-        }, {
-          icon: 'fas fa-cog',
-          value: 'custom',
-          title: 'Custom'
-        }]
-      }), iconSize == 'custom' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Custom Size'),
-        value: iconSizeCustom,
-        onChange: function onChange(val) {
-          return setAttributes({
-            iconSizeCustom: val
-          });
-        },
-        min: 12,
-        max: 300,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), iconStyle == 'fill' && /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Corner Radius'),
-        value: iconBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconBorderRadius: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Gutter'),
-        value: iconGutter,
-        onChange: function onChange(val) {
-          return setAttributes({
-            iconGutter: val
-          });
-        },
-        min: 0,
-        max: 40,
-        unit: ['px', 'em'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: iconSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            iconSpacing: val
-          });
-        },
-        min: 0,
-        max: 60,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Default Styles'),
-        value: iconUseDefaultStyle,
-        onChange: function onChange(val) {
-          return setAttributes({
-            iconUseDefaultStyle: val
-          });
-        }
-      }), !iconUseDefaultStyle && /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: iconColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconColor: value
-          });
-        }
-      }), iconStyle == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background Color'),
-        value: iconBackground,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconBackground: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: iconBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconBorder: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: iconColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconColorHover: value
-          });
-        }
-      }), iconStyle == 'fill' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background Color'),
-        value: iconBackgroundHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconBackgroundHover: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Border Color'),
-        value: iconBorderColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            iconBorderColorHover: value
-          });
-        }
-      })))))), layout == 2 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(PanelBody, {
+      }))), layout == 2 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Overlay'),
         initialOpen: false
       }, /*#__PURE__*/React.createElement(RadioAdvanced, {
@@ -30110,56 +29587,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           value: 'flex-end',
           title: 'Bottom'
         }]
-      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: overlayBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            overlayBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-leftright",
-          title: "X Padding"
-        }),
-        value: overlayPaddingX,
-        onChange: function onChange(val) {
-          return setAttributes({
-            overlayPaddingX: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-sort",
-          title: "Y Padding"
-        }),
-        value: overlayPaddingY,
-        onChange: function onChange(val) {
-          return setAttributes({
-            overlayPaddingY: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
       }))), layout != 2 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Content'),
         initialOpen: false
@@ -30197,113 +29624,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: contentBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            contentBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: contentPadding,
-        onChange: function onChange(val) {
-          return setAttributes({
-            contentPadding: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: contentBorder,
-        onChange: function onChange(val) {
-          return setAttributes({
-            contentBorder: val
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Background'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: bodyBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: bodyPadding,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bodyPadding: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        separator: true,
-        value: bodyBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBorder: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: bodyBorderRadius,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bodyBorderRadius: val
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bodyBoxShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBoxShadow: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -30821,123 +30142,10 @@ registerBlockType('wprig/team', {
       type: 'object',
       "default": {}
     },
-    imageWidth: {
-      type: 'object',
-      "default": {},
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-image-wrapper {width: {{imageWidth}};} {{WPRIG}} .wprig-team-image-wrapper img {width: 100%;}'
-      }, {
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 3
-        }],
-        selector: '{{WPRIG}} .wprig-block-team.wprig-team-layout-3 > div {flex: 0 0 {{imageWidth}}; max-width: {{imageWidth}}} {{WPRIG}} .wprig-team-image-wrapper img {width: 100%;}'
-      }]
-    },
-    imageSpacing: {
-      type: 'object',
-      "default": {
-        md: 20,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-image-wrapper {margin-bottom: {{imageSpacing}};}'
-      }, {
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 3
-        }, {
-          key: 'alignmentLayout3',
-          relation: '==',
-          value: 'left'
-        }],
-        selector: '{{WPRIG}} .wprig-team-image-wrapper {margin-right: {{imageSpacing}};}'
-      }, {
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 3
-        }, {
-          key: 'alignmentLayout3',
-          relation: '==',
-          value: 'right'
-        }],
-        selector: '{{WPRIG}} .wprig-team-image-wrapper {margin-left: {{imageSpacing}};}'
-      }]
-    },
-    imageBorder: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-image-wrapper img, {{WPRIG}} .wprig-team-image-wrapper .wprig-image-placeholder'
-      }]
-    },
-    imageBorderRadius: {
-      type: 'object',
-      "default": {
-        openBorderRadius: 1
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-image-wrapper img, {{WPRIG}} .wprig-team-image-wrapper .wprig-image-placeholder'
-      }]
-    },
-    imageBoxShadow: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-image-wrapper img, {{WPRIG}} .wprig-team-image-wrapper .wprig-image-placeholder'
-      }]
-    },
     // Name
     name: {
       type: 'string',
       "default": 'John Doe'
-    },
-    nameTypo: {
-      type: 'object',
-      "default": {
-        openTypography: 1,
-        size: {
-          md: 28,
-          unit: 'px'
-        },
-        height: {
-          md: 32,
-          unit: 'px'
-        }
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-name'
-      }]
-    },
-    nameColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-name {color: {{nameColor}};}'
-      }]
-    },
-    nameSpacing: {
-      type: 'object',
-      "default": {
-        md: 5,
-        unit: 'px'
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-name {display:block;margin-bottom: {{nameSpacing}};}'
-      }]
     },
     // Designation
     enableDesignation: {
@@ -30956,51 +30164,6 @@ registerBlockType('wprig/team', {
       type: 'string',
       "default": 'CREATIVE DESIGNER'
     },
-    designationTypo: {
-      type: 'object',
-      "default": {
-        openTypography: 1,
-        size: {
-          md: 14,
-          unit: 'px'
-        }
-      },
-      style: [{
-        condition: [{
-          key: 'enableDesignation',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-designation'
-      }]
-    },
-    designationColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'enableDesignation',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-designation {color: {{designationColor}};}'
-      }]
-    },
-    designationSpacing: {
-      type: 'object',
-      "default": {
-        md: 20,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'enableDesignation',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-designation-container {margin-bottom: {{designationSpacing}};}'
-      }]
-    },
     // Description
     enableDescription: {
       type: 'boolean',
@@ -31009,51 +30172,6 @@ registerBlockType('wprig/team', {
     description: {
       type: 'string',
       "default": 'wprig team block is an amazing Gutenberg block to display team member with social and other relevant information.'
-    },
-    descriptionTypo: {
-      type: 'object',
-      "default": {
-        openTypography: 1,
-        size: {
-          md: 14,
-          unit: 'px'
-        }
-      },
-      style: [{
-        condition: [{
-          key: 'enableDescription',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-description'
-      }]
-    },
-    descriptionColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'enableDescription',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-description {color: {{descriptionColor}};}'
-      }]
-    },
-    descriptionSpacing: {
-      type: 'object',
-      "default": {
-        md: 10,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'enableDescription',
-          relation: '==',
-          value: 1
-        }],
-        selector: '{{WPRIG}} .wprig-team-description {margin-bottom: {{descriptionSpacing}};}'
-      }]
     },
     // Social
     showSociallinks: {
@@ -31108,157 +30226,6 @@ registerBlockType('wprig/team', {
       type: 'boolean',
       "default": true
     },
-    iconSize: {
-      type: 'string',
-      "default": '14px',
-      style: [{
-        condition: [{
-          key: 'iconSize',
-          relation: '!=',
-          value: 'custom'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a {font-size: {{iconSize}};}'
-      }]
-    },
-    iconSizeCustom: {
-      type: 'object',
-      "default": {
-        md: 18,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'iconSize',
-          relation: '==',
-          value: 'custom'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a {font-size: {{iconSizeCustom}};}'
-      }]
-    },
-    iconGutter: {
-      type: 'object',
-      "default": {
-        md: 10,
-        unit: 'px'
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-social-links > a {margin: 0 calc({{iconGutter}}/2);}'
-      }]
-    },
-    iconSpacing: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-social-links {margin-top: {{iconSpacing}};}'
-      }]
-    },
-    iconBorderRadius: {
-      type: 'object',
-      "default": {
-        openBorderRadius: 1,
-        radiusType: 'global',
-        global: {
-          md: 4
-        },
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'iconStyle',
-          relation: '==',
-          value: 'fill'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a'
-      }]
-    },
-    iconColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a {color: {{iconColor}};}'
-      }]
-    },
-    iconColorHover: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a:hover {color: {{iconColorHover}};}'
-      }]
-    },
-    iconBackground: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }, {
-          key: 'iconStyle',
-          relation: '==',
-          value: 'fill'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a {background-color: {{iconBackground}};}'
-      }]
-    },
-    iconBackgroundHover: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }, {
-          key: 'iconStyle',
-          relation: '==',
-          value: 'fill'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a:hover {background-color: {{iconBackgroundHover}};}'
-      }]
-    },
-    iconBorder: {
-      type: 'object',
-      "default": {},
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }, {
-          key: 'iconStyle',
-          relation: '==',
-          value: 'fill'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a'
-      }]
-    },
-    iconBorderColorHover: {
-      type: 'string',
-      "default": '',
-      style: [{
-        condition: [{
-          key: 'iconUseDefaultStyle',
-          relation: '==',
-          value: false
-        }, {
-          key: 'iconStyle',
-          relation: '==',
-          value: 'fill'
-        }],
-        selector: '{{WPRIG}} .wprig-team-social-links>a:hover {border-color: {{iconBorderColorHover}};}'
-      }]
-    },
     // Information
     phone: {
       type: 'string',
@@ -31272,91 +30239,9 @@ registerBlockType('wprig/team', {
       type: 'string',
       "default": ''
     },
-    infoSpacing: {
-      type: 'object',
-      "default": {
-        md: 10,
-        unit: 'px'
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-information >div:not(:last-child) {margin-bottom: {{infoSpacing}};}'
-      }]
-    },
     useInfoIcon: {
       type: 'boolean',
       "default": false
-    },
-    infoIconSize: {
-      type: 'string',
-      "default": '14px',
-      style: [{
-        condition: [{
-          key: 'useInfoIcon',
-          relation: '==',
-          value: true
-        }, {
-          key: 'infoIconSize',
-          relation: '!=',
-          value: 'custom'
-        }],
-        selector: '{{WPRIG}} .wprig-team-information .wprig-info-icon {font-size: {{infoIconSize}};}'
-      }]
-    },
-    infoIconSizeCustom: {
-      type: 'object',
-      "default": {
-        md: 10,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'useInfoIcon',
-          relation: '==',
-          value: true
-        }, {
-          key: 'infoIconSize',
-          relation: '==',
-          value: 'custom'
-        }],
-        selector: '{{WPRIG}} .wprig-team-information .wprig-info-icon {font-size: {{infoIconSizeCustom}};}'
-      }]
-    },
-    infoIconSpacing: {
-      type: 'object',
-      "default": {
-        md: 10,
-        unit: 'px'
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-information .wprig-info-icon {margin-right: {{infoIconSpacing}};}'
-      }]
-    },
-    infoIconColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-information .wprig-info-icon {color: {{infoIconColor}};}'
-      }]
-    },
-    infoTypo: {
-      type: 'object',
-      "default": {
-        openTypography: 1,
-        size: {
-          md: 16,
-          unit: 'px'
-        }
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-information'
-      }]
-    },
-    infoColor: {
-      type: 'string',
-      "default": '',
-      style: [{
-        selector: '{{WPRIG}} .wprig-team-information, {{WPRIG}} .wprig-team-information a {color: {{infoColor}};}'
-      }]
     },
     //Overlay
     overlayHeight: {
@@ -31402,52 +30287,6 @@ registerBlockType('wprig/team', {
         selector: '{{WPRIG}} .wprig-team-content {-webkit-box-align: {{overlayAlignment}}; -ms-flex-align: {{overlayAlignment}}; align-items: {{overlayAlignment}};}'
       }]
     },
-    overlayBg: {
-      type: 'object',
-      "default": {
-        type: 'color',
-        openColor: 1,
-        color: 'rgba(255, 255, 255, .9)'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content'
-      }]
-    },
-    overlayPaddingX: {
-      type: 'object',
-      "default": {
-        md: 20,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content {padding-left: {{overlayPaddingX}}; padding-right: {{overlayPaddingX}};}'
-      }]
-    },
-    overlayPaddingY: {
-      type: 'object',
-      "default": {
-        md: 20,
-        unit: 'px'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '==',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content {padding-top: {{overlayPaddingY}}; padding-bottom: {{overlayPaddingY}};}'
-      }]
-    },
     // Content
     contentPosition: {
       type: 'string',
@@ -31477,99 +30316,6 @@ registerBlockType('wprig/team', {
           value: 3
         }],
         selector: '{{WPRIG}} .wprig-team-content {text-align: {{contentAlignment}};}'
-      }]
-    },
-    contentPadding: {
-      type: 'object',
-      "default": {
-        openPadding: 1,
-        paddingType: 'custom',
-        custom: {
-          md: '10 0 10 0'
-        }
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '!=',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content'
-      }]
-    },
-    contentBg: {
-      type: 'object',
-      "default": {
-        type: 'color',
-        openColor: 1,
-        color: '#fff'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '!=',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content'
-      }]
-    },
-    contentBorder: {
-      type: 'object',
-      "default": {
-        openBorder: 1,
-        position: 'all',
-        type: 'solid',
-        width: 1,
-        color: '#e5e5e5'
-      },
-      style: [{
-        condition: [{
-          key: 'layout',
-          relation: '!=',
-          value: 2
-        }],
-        selector: '{{WPRIG}} .wprig-team-content'
-      }]
-    },
-    // Body
-    bodyBg: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-team'
-      }]
-    },
-    bodyPadding: {
-      type: 'object',
-      "default": {
-        paddingType: 'global',
-        global: {}
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-team'
-      }]
-    },
-    bodyBorder: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-team'
-      }]
-    },
-    bodyBorderRadius: {
-      type: 'object',
-      "default": {
-        openBorderRadius: 1
-      },
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-team'
-      }]
-    },
-    bodyBoxShadow: {
-      type: 'object',
-      "default": {},
-      style: [{
-        selector: '{{WPRIG}} .wprig-block-team'
       }]
     },
     sourceOfCopiedStyle: {
