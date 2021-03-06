@@ -7385,6 +7385,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/map/style.scss":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/map/style.scss ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-google-map {\n  position: relative; }\n  .wprig-google-map::before {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    background-color: rgba(0, 0, 0, 0.05);\n    cursor: pointer; }\n  .wprig-google-map .wprig-google-gmap-input {\n    border: 1px solid #E7E8EB !important;\n    border-radius: 4px !important;\n    margin-bottom: 15px;\n    width: 100%;\n    padding: 12px 20px !important; }\n  .wprig-google-map .wprig-google-map-info-box {\n    position: absolute;\n    top: 10%;\n    right: 10%;\n    background: #f5f5f5;\n    padding: 15px; }\n    .wprig-google-map .wprig-google-map-info-box .wprig-google-map-box-title {\n      line-height: 1; }\n      .wprig-google-map .wprig-google-map-info-box .wprig-google-map-box-title i, .wprig-google-map .wprig-google-map-info-box .wprig-google-map-box-title h5 {\n        font-size: 18px;\n        margin: 5px 0; }\n    .wprig-google-map .wprig-google-map-info-box .wprig-google-map-content-item {\n      margin-top: 10px; }\n      .wprig-google-map .wprig-google-map-info-box .wprig-google-map-content-item p {\n        line-height: 1;\n        font-size: 12px; }\n\n.wprig-map-style {\n  max-width: 44%;\n  float: left;\n  margin: 5px; }\n\n.wprig-map-style img {\n  max-width: 100%;\n  border: 2px solid #d6d6d6;\n  border-radius: 5px;\n  cursor: pointer; }\n\n.wprig-map-style.wprig-map-style-active img {\n  border: 2px solid #0073aa; }\n\n.wprig-gmap-hide {\n  display: none; }\n\n.wprig-gmap-marker-window {\n  max-width: 250px; }\n  .wprig-gmap-marker-window .wprig-gmap-marker-place {\n    font-weight: 700;\n    margin-bottom: 10px; }\n  .wprig-gmap-marker-window .wprig-gmap-marker-address {\n    line-height: 1.5;\n    margin-bottom: 10px; }\n  .wprig-gmap-marker-window .wprig-gmap-marker-url a {\n    text-decoration: none; }\n\n.gmap-api-key-control {\n  margin-bottom: 24px; }\n  .gmap-api-key-control .components-base-control {\n    margin-bottom: 6px; }\n\n.api-notice {\n  margin: 0 0 15px;\n  background: rgba(0, 255, 55, 0.15);\n  padding: 8px 12px;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  border-radius: 5px;\n  line-height: 1.6; }\n  .api-notice.warning {\n    background: rgba(229, 195, 52, 0.25); }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss":
 /*!******************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/modal/style.scss ***!
@@ -10080,27 +10098,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_counter_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/counter/block */ "./src/blocks/counter/block.js");
 /* harmony import */ var _blocks_divider_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/divider/block */ "./src/blocks/divider/block.js");
 /* harmony import */ var _blocks_info_box_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/info-box/block */ "./src/blocks/info-box/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_tabs_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/tabs/block */ "./src/blocks/tabs/block.js");
-/* harmony import */ var _blocks_tabs_tab_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/tabs/tab/block */ "./src/blocks/tabs/tab/block.js");
-/* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
-/* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_flipbox_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/flipbox/block */ "./src/blocks/flipbox/block.js");
-/* harmony import */ var _blocks_flipbox_face_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/flipbox/face/block */ "./src/blocks/flipbox/face/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
-/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
-/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_map_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/map/block */ "./src/blocks/map/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_tabs_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/tabs/block */ "./src/blocks/tabs/block.js");
+/* harmony import */ var _blocks_tabs_tab_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/tabs/tab/block */ "./src/blocks/tabs/tab/block.js");
+/* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
+/* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_flipbox_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/flipbox/block */ "./src/blocks/flipbox/block.js");
+/* harmony import */ var _blocks_flipbox_face_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/flipbox/face/block */ "./src/blocks/flipbox/face/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
+/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
+/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -10128,8 +10147,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/image/block";
 // import "./blocks/image-comparison/block";
 
- // import "./blocks/map/block";
-// import "./blocks/pie-progress/block";
+
+ // import "./blocks/pie-progress/block";
 // import "./blocks/pricing/block";
 
 
@@ -10199,7 +10218,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_27__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_28__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -22759,6 +22778,1733 @@ registerBlockType('wprig/interactive-banner', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/interactive-banner/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/map/Edit.js":
+/*!********************************!*\
+  !*** ./src/blocks/map/Edit.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mapStyles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mapStyles */ "./src/blocks/map/mapStyles.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    ToggleControl = _wp$components.ToggleControl,
+    TextControl = _wp$components.TextControl,
+    RangeControl = _wp$components.RangeControl,
+    Toolbar = _wp$components.Toolbar,
+    Button = _wp$components.Button;
+var _wp$wprigComponents = wp.wprigComponents,
+    Media = _wp$wprigComponents.Media,
+    Separator = _wp$wprigComponents.Separator,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this.initMap = _this.initMap.bind(_assertThisInitialized(_this));
+    _this.initSearchBox = _this.initSearchBox.bind(_assertThisInitialized(_this));
+    _this.initMapLibrary = _this.initMapLibrary.bind(_assertThisInitialized(_this));
+    _this.setSettings = _this.setSettings.bind(_assertThisInitialized(_this));
+    _this.getStyles = _this.getStyles.bind(_assertThisInitialized(_this));
+    _this._saveGlobally = _this._saveGlobally.bind(_assertThisInitialized(_this));
+    _this.state = {
+      spacer: true,
+      saved_globally: false
+    };
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          _this$props$attribute = _this$props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          apiKey = _this$props$attribute.apiKey;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId !== _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+
+      var mapIframe = this.refs.wprigGoogleMapIframe;
+
+      if (typeof mapIframe !== 'undefined') {
+        mapIframe.addEventListener('click', function (e) {
+          e.preventDefault();
+        });
+      }
+
+      if (wprig_admin.wprig_gmap_api_key) {
+        setAttributes({
+          apiKey: wprig_admin.wprig_gmap_api_key
+        });
+        this.initMapLibrary(wprig_admin.wprig_gmap_api_key);
+      } else if (apiKey) {
+        this.initMapLibrary(apiKey);
+      } else {
+        this.initMapLibrary('');
+      }
+    }
+  }, {
+    key: "_saveGlobally",
+    value: function () {
+      var _saveGlobally2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(apiKey) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                if (apiKey) {
+                  _context.next = 2;
+                  break;
+                }
+
+                return _context.abrupt("return");
+
+              case 2:
+                _context.prev = 2;
+                _context.next = 5;
+                return wp.apiFetch({
+                  path: 'wprig/v1/add_wprig_options',
+                  method: 'POST',
+                  data: {
+                    key: 'wprig_gmap_api_key',
+                    value: apiKey
+                  }
+                });
+
+              case 5:
+                this.setState({
+                  saved_globally: true
+                });
+                _context.next = 11;
+                break;
+
+              case 8:
+                _context.prev = 8;
+                _context.t0 = _context["catch"](2);
+                // debug
+                console.log(_context.t0);
+
+              case 11:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[2, 8]]);
+      }));
+
+      function _saveGlobally(_x) {
+        return _saveGlobally2.apply(this, arguments);
+      }
+
+      return _saveGlobally;
+    }()
+  }, {
+    key: "initMapLibrary",
+    value: function initMapLibrary(apiKey) {
+      var initMap = this.initMap,
+          initSearchBox = this.initSearchBox,
+          loadScriptAsync = this.loadScriptAsync;
+      this.props.setAttributes({
+        apiKey: apiKey
+      });
+
+      if (apiKey) {
+        var apiURL = "https://maps.googleapis.com/maps/api/js?key=".concat(apiKey, "&libraries=places&callback=initMap");
+        window.initMap = initMap;
+
+        if ((typeof google === "undefined" ? "undefined" : _typeof(google)) === 'object' && _typeof(google.maps) === 'object') {
+          initMap();
+          initSearchBox();
+        } else {
+          loadScriptAsync(apiURL).then(function () {
+            initMap();
+            initSearchBox();
+          });
+        }
+      }
+    }
+  }, {
+    key: "loadScriptAsync",
+    value: function loadScriptAsync(src) {
+      return new Promise(function (resolve, reject) {
+        var tag = document.createElement('script');
+        tag.id = "wprig-gmap";
+        tag.src = src;
+        tag.async = true;
+
+        tag.onload = function () {
+          resolve();
+        };
+
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      });
+    }
+  }, {
+    key: "initSearchBox",
+    value: function initSearchBox() {
+      var setSettings = this.setSettings,
+          _this$props2 = this.props,
+          attributes = _this$props2.attributes,
+          setAttributes = _this$props2.setAttributes;
+      var mapAddress = attributes.mapAddress; // Create the search box and link it to the UI element.
+
+      var input = this.refs.mapAddress;
+      var autocomplete = new google.maps.places.Autocomplete(input);
+      autocomplete.setFields(['place_id', 'geometry', 'formatted_address']);
+      autocomplete.addListener('place_changed', function () {
+        var place = autocomplete.getPlace();
+
+        if (!place.geometry) {
+          return;
+        }
+
+        mapAddress = place.formatted_address;
+        setAttributes({
+          placeID: place.place_id
+        });
+        setSettings('mapAddress', mapAddress);
+        input.value = mapAddress;
+      });
+      input.value = mapAddress;
+    }
+  }, {
+    key: "initMap",
+    value: function initMap() {
+      var getStyles = this.getStyles,
+          _this$props3 = this.props,
+          attributes = _this$props3.attributes,
+          setAttributes = _this$props3.setAttributes;
+      var placeID = attributes.placeID,
+          zoom = attributes.zoom,
+          mapStyle = attributes.mapStyle,
+          showZoomButtons = attributes.showZoomButtons,
+          showMapTypeButtons = attributes.showMapTypeButtons,
+          showStreetViewButton = attributes.showStreetViewButton,
+          showFullscreenButton = attributes.showFullscreenButton,
+          optionDraggable = attributes.optionDraggable,
+          showMarker = attributes.showMarker,
+          iconPointer = attributes.iconPointer;
+      var mapCanvas = this.refs.wprigGoogleMap;
+      var mapOptions = {
+        center: {
+          lat: 11.5024338,
+          lng: 17.7578122
+        },
+        zoom: 1,
+        zoomControl: showZoomButtons,
+        mapTypeControl: showMapTypeButtons,
+        streetViewControl: showStreetViewButton,
+        fullscreenControl: showFullscreenButton,
+        draggable: optionDraggable,
+        styles: mapStyle ? getStyles(mapStyle) : []
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+
+      if (placeID) {
+        var request = {
+          placeId: placeID,
+          fields: ['place_id', 'geometry', 'name', 'formatted_address', 'adr_address', 'website']
+        };
+        var service = new google.maps.places.PlacesService(map);
+        service.getDetails(request, function (place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            if (place.geometry.viewport) {
+              map.fitBounds(place.geometry.viewport);
+            } else {
+              setAttributes({
+                zoom: 16
+              });
+              map.setCenter(place.geometry.location);
+              map.setZoom(zoom);
+            }
+
+            var markerOption = {
+              map: map
+            };
+            if (iconPointer) markerOption.icon = iconPointer;
+            var marker = new google.maps.Marker(markerOption); // Set the position of the marker using the place ID and location.
+
+            marker.setPlace({
+              placeId: place.place_id,
+              location: place.geometry.location
+            });
+            marker.setVisible(showMarker);
+            var contentString = '<div class="wprig-gmap-marker-window"><div class="wprig-gmap-marker-place">' + place.name + '</div><div class="wprig-gmap-marker-address">' + place.adr_address + '</div>' + '<div class="wprig-gmap-marker-url"><a href="' + place.website + '" target="_blank">' + place.website + '</a></div></div>';
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+            marker.addListener('click', function () {
+              infowindow.open(map, marker);
+            });
+          }
+        });
+      }
+    }
+  }, {
+    key: "setSettings",
+    value: function setSettings(type, val) {
+      var _this2 = this;
+
+      var _this$props4 = this.props,
+          apiKey = _this$props4.attributes.apiKey,
+          setAttributes = _this$props4.setAttributes;
+      setAttributes(_defineProperty({}, type, val));
+      if (apiKey) setTimeout(function () {
+        return _this2.initMap();
+      }, 300);
+    }
+  }, {
+    key: "getStyles",
+    value: function getStyles(string) {
+      var result = [];
+
+      try {
+        result = JSON.parse(string);
+      } catch (e) {
+        return [];
+      }
+
+      return result;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$props5 = this.props,
+          setAttributes = _this$props5.setAttributes,
+          _this$props5$attribut = _this$props5.attributes,
+          uniqueId = _this$props5$attribut.uniqueId,
+          className = _this$props5$attribut.className,
+          zoom = _this$props5$attribut.zoom,
+          height = _this$props5$attribut.height,
+          apiKey = _this$props5$attribut.apiKey,
+          mapAddress = _this$props5$attribut.mapAddress,
+          selectedStyle = _this$props5$attribut.selectedStyle,
+          showZoomButtons = _this$props5$attribut.showZoomButtons,
+          showMapTypeButtons = _this$props5$attribut.showMapTypeButtons,
+          showStreetViewButton = _this$props5$attribut.showStreetViewButton,
+          showFullscreenButton = _this$props5$attribut.showFullscreenButton,
+          optionDraggable = _this$props5$attribut.optionDraggable,
+          showMarker = _this$props5$attribut.showMarker,
+          iconPointer = _this$props5$attribut.iconPointer,
+          animation = _this$props5$attribut.animation,
+          enablePosition = _this$props5$attribut.enablePosition,
+          selectPosition = _this$props5$attribut.selectPosition,
+          positionXaxis = _this$props5$attribut.positionXaxis,
+          positionYaxis = _this$props5$attribut.positionYaxis,
+          globalZindex = _this$props5$attribut.globalZindex,
+          hideTablet = _this$props5$attribut.hideTablet,
+          hideMobile = _this$props5$attribut.hideMobile,
+          globalCss = _this$props5$attribut.globalCss;
+      var setting_url = wprig_admin.admin_url + 'admin.php?page=wprig-settings';
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Map Settings', 'wprig')
+      }, wprig_admin.wprig_gmap_api_key || this.state.saved_globally ? /*#__PURE__*/React.createElement("div", {
+        className: "api-notice"
+      }, __('Google map API key successfully added'), ", ", /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
+        href: setting_url
+      }, __('Edit API key here'))) : apiKey ? /*#__PURE__*/React.createElement("div", {
+        className: "gmap-api-key-control"
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('API Key'),
+        value: apiKey,
+        placeholder: __('Enter API Key'),
+        onChange: function onChange(val) {
+          return _this3.initMapLibrary(val);
+        }
+      }), /*#__PURE__*/React.createElement(Button, {
+        onClick: function onClick() {
+          return _this3._saveGlobally(apiKey);
+        },
+        isPrimary: true
+      }, __('Set globally'))) : /*#__PURE__*/React.createElement("div", {
+        className: "api-notice warning"
+      }, __('Some features requires Google map API key'), ", ", /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
+        href: setting_url
+      }, __('Add API key here'))), /*#__PURE__*/React.createElement(RangeControl, {
+        label: __('Zoom'),
+        value: zoom,
+        min: "1",
+        max: "20",
+        onChange: function onChange(val) {
+          return _this3.setSettings('zoom', val);
+        }
+      }), /*#__PURE__*/React.createElement(RangeControl, {
+        label: __('Height'),
+        value: height,
+        min: "1",
+        max: "700",
+        onChange: function onChange(val) {
+          return _this3.setSettings('height', val);
+        }
+      })), !apiKey && /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("i", null, __('Need Google API key extend feature.'))), /*#__PURE__*/React.createElement("div", {
+        className: apiKey ? '' : 'not-clickable'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Map Style')
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          overflow: 'auto'
+        }
+      }, _mapStyles__WEBPACK_IMPORTED_MODULE_0__["default"].map(function (option, index) {
+        return /*#__PURE__*/React.createElement("div", {
+          className: selectedStyle == option.value ? 'wprig-map-style wprig-map-style-active' : 'wprig-map-style'
+        }, /*#__PURE__*/React.createElement("img", {
+          key: index,
+          onClick: function onClick() {
+            _this3.setSettings('selectedStyle', option.value);
+
+            _this3.setSettings('mapStyle', JSON.stringify(option.json));
+          },
+          src: option.image,
+          title: __(option.label),
+          alt: __('Map Style')
+        }), /*#__PURE__*/React.createElement("p", null, __(option.label)));
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Map Option')
+      }, /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Zoom Buttons'),
+        checked: !!showZoomButtons,
+        onChange: function onChange(val) {
+          return _this3.setSettings('showZoomButtons', val);
+        }
+      }), /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Map Type Buttons'),
+        checked: !!showMapTypeButtons,
+        onChange: function onChange(val) {
+          return _this3.setSettings('showMapTypeButtons', val);
+        }
+      }), /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Street View Button'),
+        checked: !!showStreetViewButton,
+        onChange: function onChange(val) {
+          return _this3.setSettings('showStreetViewButton', val);
+        }
+      }), /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Fullscreen Button'),
+        checked: !!showFullscreenButton,
+        onChange: function onChange(val) {
+          return _this3.setSettings('showFullscreenButton', val);
+        }
+      }), /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Draggable'),
+        checked: !!optionDraggable,
+        onChange: function onChange(val) {
+          return _this3.setSettings('optionDraggable', val);
+        }
+      }), /*#__PURE__*/React.createElement(ToggleControl, {
+        label: __('Show Marker'),
+        checked: !!showMarker,
+        onChange: function onChange(val) {
+          return _this3.setSettings('showMarker', val);
+        }
+      }), showMarker && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Separator, {
+        label: __('Add custom marker')
+      }), /*#__PURE__*/React.createElement(Media, {
+        multiple: false,
+        type: ['image'],
+        value: {
+          url: iconPointer
+        },
+        panel: true,
+        onChange: function onChange(val) {
+          return _this3.setSettings('iconPointer', val.url);
+        }
+      }))))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: apiKey ? 'wprig-google-map' : 'wprig-gmap-hide'
+      }, /*#__PURE__*/React.createElement("input", {
+        ref: "mapAddress",
+        type: "text",
+        className: "wprig-google-gmap-input",
+        placeholder: __('Find your location…')
+      }), /*#__PURE__*/React.createElement("div", {
+        ref: "wprigGoogleMap",
+        style: {
+          height: parseInt(height, 10) + 'px',
+          width: '100%'
+        }
+      })), !apiKey && /*#__PURE__*/React.createElement("div", {
+        ref: "wprigGoogleMapIframe"
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __(''),
+        value: mapAddress,
+        placeholder: __('Enter your address'),
+        onChange: function onChange(val) {
+          return _this3.props.setAttributes({
+            mapAddress: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement("iframe", {
+        width: "100%",
+        height: parseInt(height, 10) + 'px',
+        src: "https://maps.google.com/maps?q=".concat(encodeURIComponent(mapAddress), "&t=&z=").concat(parseInt(zoom, 10), "&ie=UTF8&iwloc=&output=embed"),
+        frameborder: "0",
+        scrolling: "no",
+        marginheight: "0",
+        marginwidth: "0"
+      }))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/map/Save.js":
+/*!********************************!*\
+  !*** ./src/blocks/map/Save.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Component = wp.element.Component;
+var animationAttr = wp.wprigComponents.HelperFunction.animationAttr;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          animation = _this$props$attribute.animation,
+          placeID = _this$props$attribute.placeID,
+          mapAddress = _this$props$attribute.mapAddress,
+          zoom = _this$props$attribute.zoom,
+          height = _this$props$attribute.height,
+          apiKey = _this$props$attribute.apiKey,
+          mapStyle = _this$props$attribute.mapStyle,
+          showZoomButtons = _this$props$attribute.showZoomButtons,
+          showMapTypeButtons = _this$props$attribute.showMapTypeButtons,
+          showStreetViewButton = _this$props$attribute.showStreetViewButton,
+          showFullscreenButton = _this$props$attribute.showFullscreenButton,
+          optionDraggable = _this$props$attribute.optionDraggable,
+          showMarker = _this$props$attribute.showMarker,
+          iconPointer = _this$props$attribute.iconPointer;
+      var attrs = {
+        'data-apiKey': apiKey,
+        'data-placeID': placeID,
+        'data-zoom': zoom,
+        'data-show-zoom-buttons': showZoomButtons ? 'true' : 'false',
+        'data-show-map-type-buttons': showMapTypeButtons ? 'true' : 'false',
+        'data-show-street-view-button': showStreetViewButton ? 'true' : 'false',
+        'data-show-fullscreen-button': showFullscreenButton ? 'true' : 'false',
+        'data-option-draggable': optionDraggable ? 'true' : 'false',
+        'data-show-marker': showMarker ? 'true' : 'false',
+        'data-icon-pointer': iconPointer,
+        'data-styles': mapStyle
+      };
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), apiKey ? /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-google-map"
+      }, attrs, {
+        style: {
+          height: parseInt(height, 10) + 'px',
+          width: '100%'
+        }
+      })) : /*#__PURE__*/React.createElement("iframe", {
+        width: "100%",
+        height: parseInt(height, 10) + 'px',
+        src: "https://maps.google.com/maps?q=".concat(encodeURIComponent(mapAddress), "&t=&z=").concat(parseInt(zoom, 10), "&ie=UTF8&iwloc=&output=embed"),
+        frameborder: "0",
+        scrolling: "no",
+        marginheight: "0",
+        marginwidth: "0"
+      }));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/map/block.js":
+/*!*********************************!*\
+  !*** ./src/blocks/map/block.js ***!
+  \*********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/map/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/map/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/map/Save.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+registerBlockType('wprig/map', {
+  title: __('Google Map'),
+  description: 'Embed Google Maps easily with wprig Google Maps.',
+  category: 'wprig-blocks',
+  icon: 'universal-access-alt',
+  keywords: [__('Google Map'), __('Map'), __('Location')],
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  example: {
+    attributes: {}
+  },
+  attributes: _objectSpread(_objectSpread({
+    uniqueId: {
+      type: 'string',
+      "default": ''
+    }
+  }, globalAttributes), {}, {
+    // Global Settings
+    spacer: {
+      type: 'object',
+      "default": {
+        spaceTop: {
+          md: '10',
+          unit: "px"
+        },
+        spaceBottom: {
+          md: '10',
+          unit: "px"
+        }
+      },
+      style: [{
+        selector: '{{WPRIG}}'
+      }]
+    },
+    zoom: {
+      type: 'number',
+      "default": '16'
+    },
+    height: {
+      type: 'number',
+      "default": '350'
+    },
+    placeID: {
+      type: 'string',
+      "default": 'ChIJgWsCh7C4VTcRwgRZ3btjpY8'
+    },
+    mapAddress: {
+      type: 'string',
+      "default": ''
+    },
+    apiKey: {
+      type: 'string',
+      "default": ''
+    },
+    iconPointer: {
+      type: 'string',
+      "default": ''
+    },
+    showZoomButtons: {
+      type: 'boolean',
+      "default": true
+    },
+    showMapTypeButtons: {
+      type: 'boolean',
+      "default": true
+    },
+    showStreetViewButton: {
+      type: 'boolean',
+      "default": true
+    },
+    showFullscreenButton: {
+      type: 'boolean',
+      "default": true
+    },
+    optionScrollWheel: {
+      type: 'boolean',
+      "default": true
+    },
+    optionDraggable: {
+      type: 'boolean',
+      "default": true
+    },
+    showMarker: {
+      type: 'boolean',
+      "default": true
+    },
+    mapStyle: {
+      type: 'string',
+      "default": ''
+    },
+    selectedStyle: {
+      type: 'string',
+      "default": 'default'
+    }
+  }),
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/map/mapStyles.js":
+/*!*************************************!*\
+  !*** ./src/blocks/map/mapStyles.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var __ = wp.i18n.__;
+var base_url = wprig_admin.plugin + 'assets/img/blocks/map/';
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  value: 'default',
+  label: __('Default'),
+  image: base_url + 'style-default.jpg',
+  json: []
+}, {
+  value: 'grey',
+  label: __('Grey'),
+  image: base_url + 'shadow-grey.jpg',
+  json: [{
+    "featureType": "all",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "saturation": 36
+    }, {
+      "color": "#000000"
+    }, {
+      "lightness": 40
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "color": "#000000"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels.icon",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 17
+    }, {
+      "weight": 1.2
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 21
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 17
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 29
+    }, {
+      "weight": 0.2
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 18
+    }]
+  }, {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 19
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 17
+    }]
+  }]
+}, {
+  value: 'ultra_light',
+  label: __('Ultra Light'),
+  image: base_url + 'ultra-light.jpg',
+  json: [{
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#e9e9e9"
+    }, {
+      "lightness": 17
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#f5f5f5"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#ffffff"
+    }, {
+      "lightness": 17
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#ffffff"
+    }, {
+      "lightness": 29
+    }, {
+      "weight": 0.2
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#ffffff"
+    }, {
+      "lightness": 18
+    }]
+  }, {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#ffffff"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#f5f5f5"
+    }, {
+      "lightness": 21
+    }]
+  }, {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#dedede"
+    }, {
+      "lightness": 21
+    }]
+  }, {
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "color": "#ffffff"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "saturation": 36
+    }, {
+      "color": "#333333"
+    }, {
+      "lightness": 40
+    }]
+  }, {
+    "elementType": "labels.icon",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#f2f2f2"
+    }, {
+      "lightness": 19
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#fefefe"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#fefefe"
+    }, {
+      "lightness": 17
+    }, {
+      "weight": 1.2
+    }]
+  }]
+}, {
+  value: 'midnight',
+  label: __('Midnight'),
+  image: base_url + 'midnight.jpg',
+  json: [{
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "lightness": 33
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#f2e5d4"
+    }]
+  }, {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#c5dac6"
+    }]
+  }, {
+    "featureType": "poi.park",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [{
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#c5c6c6"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#e4d7c6"
+    }]
+  }, {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#fbfaf7"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "color": "#acbcc9"
+    }]
+  }]
+}, {
+  value: 'off_aqua_light',
+  label: __('Aqua light'),
+  image: base_url + 'aqua-light.jpg',
+  json: [{
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#444444"
+    }]
+  }, {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#378b90"
+    }]
+  }, {
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#31b9c1"
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#f2f2f2"
+    }]
+  }, {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [{
+      "saturation": -100
+    }, {
+      "lightness": 45
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "labels.icon",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#46bcec"
+    }, {
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#31b9c1"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#31b9c1"
+    }]
+  }]
+}, {
+  value: 'inturlam',
+  label: __('İnturlam'),
+  image: base_url + 'inturlam.jpg',
+  json: [{
+    "featureType": "all",
+    "elementType": "all",
+    "stylers": [{
+      "invert_lightness": true
+    }, {
+      "saturation": 20
+    }, {
+      "lightness": 50
+    }, {
+      "gamma": 0.4
+    }, {
+      "hue": "#00ffee"
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "geometry",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#ffffff"
+    }, {
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#405769"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#232f3a"
+    }]
+  }]
+}, {
+  value: 'lunar',
+  label: __('Lunar'),
+  image: base_url + 'lunar.jpg',
+  json: [{
+    "stylers": [{
+      "hue": "#ff1a00"
+    }, {
+      "invert_lightness": true
+    }, {
+      "saturation": -100
+    }, {
+      "lightness": 33
+    }, {
+      "gamma": 0.5
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#2D333C"
+    }]
+  }]
+}, {
+  value: 'greyscale',
+  label: __('Greyscale'),
+  image: base_url + 'greyscale.jpg',
+  json: [{
+    "featureType": "all",
+    "elementType": "all",
+    "stylers": [{
+      "saturation": -100
+    }, {
+      "gamma": 0.5
+    }]
+  }]
+}, {
+  value: 'multi_brand',
+  label: __('Multi Brand'),
+  image: base_url + 'multi-brand.jpg',
+  json: [{
+    "featureType": "all",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "saturation": 36
+    }, {
+      "color": "#000000"
+    }, {
+      "lightness": 40
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "visibility": "on"
+    }, {
+      "color": "#000000"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "featureType": "all",
+    "elementType": "labels.icon",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 17
+    }, {
+      "weight": 1.2
+    }]
+  }, {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#e5c163"
+    }]
+  }, {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#c4c4c4"
+    }]
+  }, {
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#e5c163"
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 20
+    }]
+  }, {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 21
+    }, {
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "poi.business",
+    "elementType": "geometry",
+    "stylers": [{
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#e5c163"
+    }, {
+      "lightness": "0"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#ffffff"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "color": "#e5c163"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 18
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [{
+      "color": "#575757"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#ffffff"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "color": "#2c2c2c"
+    }]
+  }, {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 16
+    }]
+  }, {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#999999"
+    }]
+  }, {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 19
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#000000"
+    }, {
+      "lightness": 17
+    }]
+  }]
+}, {
+  value: 'purple',
+  label: __('Purple'),
+  image: base_url + 'purple.jpg',
+  json: [{
+    "featureType": "all",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "hue": "#bc00ff"
+    }, {
+      "saturation": "0"
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#e8b8f9"
+    }]
+  }, {
+    "featureType": "administrative.country",
+    "elementType": "labels",
+    "stylers": [{
+      "color": "#ff0000"
+    }]
+  }, {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#3e114e"
+    }, {
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "landscape",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "off"
+    }, {
+      "color": "#a02aca"
+    }]
+  }, {
+    "featureType": "landscape.natural",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "color": "#2e093b"
+    }]
+  }, {
+    "featureType": "landscape.natural",
+    "elementType": "labels.text",
+    "stylers": [{
+      "color": "#9e1010"
+    }, {
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "landscape.natural",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#ff0000"
+    }]
+  }, {
+    "featureType": "landscape.natural.landcover",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "color": "#58176e"
+    }]
+  }, {
+    "featureType": "landscape.natural.landcover",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "poi.business",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [{
+      "saturation": -100
+    }, {
+      "lightness": 45
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "color": "#a02aca"
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#d180ee"
+    }]
+  }, {
+    "featureType": "road",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "color": "#a02aca"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "off"
+    }, {
+      "color": "#ff0000"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels.text",
+    "stylers": [{
+      "color": "#a02aca"
+    }, {
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#cc81e7"
+    }, {
+      "visibility": "simplified"
+    }]
+  }, {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "hue": "#bc00ff"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#6d2388"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [{
+      "color": "#c46ce3"
+    }]
+  }, {
+    "featureType": "road.arterial",
+    "elementType": "labels.icon",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [{
+      "visibility": "off"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "all",
+    "stylers": [{
+      "color": "#b7918f"
+    }, {
+      "visibility": "on"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+      "color": "#280b33"
+    }]
+  }, {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [{
+      "visibility": "simplified"
+    }, {
+      "color": "#a02aca"
+    }]
+  }]
+}]);
+
+/***/ }),
+
+/***/ "./src/blocks/map/style.scss":
+/*!***********************************!*\
+  !*** ./src/blocks/map/style.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/map/style.scss");
 
             content = content.__esModule ? content.default : content;
 
