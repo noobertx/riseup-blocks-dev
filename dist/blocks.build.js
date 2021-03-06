@@ -7223,6 +7223,42 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style-editor.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style-editor.scss ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "div[data-type=\"wprig/flipbox\"] {\n  margin: 0 !important; }\n  div[data-type=\"wprig/flipbox\"] .wprig-tab-body .block-editor-inner-blocks {\n    padding: 0 !important; }\n  div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/face\"] {\n    padding: 10px; }\n    div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/face\"] .wprig-tabs-innerblock {\n      height: inherit; }\n  div[data-type=\"wprig/flipbox\"] .wprig-flipbox > .block-editor-inner-blocks {\n    height: inherit; }\n    div[data-type=\"wprig/flipbox\"] .wprig-flipbox > .block-editor-inner-blocks > .block-editor-block-list__layout {\n      height: inherit; }\n      div[data-type=\"wprig/flipbox\"] .wprig-flipbox > .block-editor-inner-blocks > .block-editor-block-list__layout > div[data-type=\"wprig/face\"] {\n        height: inherit;\n        border: 1px solid #666;\n        overflow: hidden; }\n  div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/face\"],\n  div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/image\"] {\n    margin: 0 !important; }\n    div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/face\"] > div,\n    div[data-type=\"wprig/flipbox\"] div[data-type=\"wprig/image\"] > div {\n      padding: 0 !important;\n      height: inherit;\n      display: flex;\n      align-items: center; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style.scss ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-flipbox-body {\n  position: relative;\n  width: 100%;\n  height: inherit;\n  transform-style: preserve-3d;\n  overflow: hidden; }\n\n.wprig-front, .wprig-back {\n  position: absolute !important;\n  top: 0;\n  left: 0;\n  text-align: center;\n  width: 100%;\n  transition: .5s ease-in-out;\n  backface-visibility: hidden;\n  display: flex;\n  height: inherit;\n  justify-content: center;\n  flex-direction: column; }\n\n.wprig-flipbox-body .wprig-front,\n.wprig-flipbox-body .wprig-back {\n  transition-duration: 500ms; }\n\n.wprig-flipbox-body.wprig-flip--left .wprig-front {\n  transform: perspective(1000px) rotateY(0deg); }\n\n.wprig-flipbox-body.wprig-flip--left .wprig-back {\n  transform: perspective(1000px) rotateY(180deg); }\n\n.wprig-flipbox-body.wprig-flip--left:hover .wprig-front {\n  transform: perspective(1000px) rotateY(-179.9deg); }\n\n.wprig-flipbox-body.wprig-flip--left:hover .wprig-back {\n  transform: perspective(1000px) rotateY(0deg); }\n\n.wprig-block-image figure .wprig-image-container img {\n  width: 100%; }\n\n.wprig-flipbox-body.wprig-flip--right .wprig-front {\n  transform: perspective(1000px) rotateY(0deg); }\n\n.wprig-flipbox-body.wprig-flip--right .wprig-back {\n  transform: perspective(1000px) rotateY(-180deg); }\n\n.wprig-flipbox-body.wprig-flip--right:hover .wprig-front {\n  transform: perspective(1000px) rotateY(179.9deg); }\n\n.wprig-flipbox-body.wprig-flip--right:hover .wprig-back {\n  transform: perspective(1000px) rotateY(0deg); }\n\n.wprig-flipbox-body.wprig-flip--bottom .wprig-front {\n  transform: perspective(1000px) rotateX(0deg); }\n\n.wprig-flipbox-body.wprig-flip--bottom .wprig-back {\n  transform: perspective(1000px) rotateX(-180deg); }\n\n.wprig-flipbox-body.wprig-flip--bottom:hover .wprig-front {\n  transform: perspective(1000px) rotateX(179.9deg); }\n\n.wprig-flipbox-body.wprig-flip--bottom:hover .wprig-back {\n  transform: perspective(1000px) rotateX(0deg); }\n\n.wprig-flipbox-body.wprig-flip--top .wprig-front {\n  transform: perspective(1000px) rotateX(0deg); }\n\n.wprig-flipbox-body.wprig-flip--top .wprig-back {\n  transform: perspective(1000px) rotateX(180deg); }\n\n.wprig-flipbox-body.wprig-flip--top:hover .wprig-front {\n  transform: perspective(1000px) rotateX(-179.9deg); }\n\n.wprig-flipbox-body.wprig-flip--top:hover .wprig-back {\n  transform: perspective(1000px) rotateX(0deg); }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss":
 /*!*********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/highlight-box/style-editor.scss ***!
@@ -10054,15 +10090,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
 /* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
 /* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
-/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
-/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_flipbox_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/flipbox/block */ "./src/blocks/flipbox/block.js");
+/* harmony import */ var _blocks_flipbox_face_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/flipbox/face/block */ "./src/blocks/flipbox/face/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
+/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
+/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -10117,8 +10155,8 @@ __webpack_require__.r(__webpack_exports__);
 // import "./blocks/video-popup/block";
 // import "./blocks/panel/block";
 // import "./blocks/wrapper/block";
-// import "./blocks/flipbox/block";
-// import "./blocks/flipbox/face/block";
+
+
 
 
 
@@ -10161,7 +10199,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_25__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_27__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -14742,6 +14780,973 @@ icons.wave3 = /*#__PURE__*/React.createElement("svg", {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/Edit.js":
+/*!************************************!*\
+  !*** ./src/blocks/flipbox/Edit.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+/* harmony import */ var _style_editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style-editor.scss */ "./src/blocks/flipbox/style-editor.scss");
+/* harmony import */ var _style_editor_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_editor_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var __ = wp.i18n.__;
+var _wp$components = wp.components,
+    Toolbar = _wp$components.Toolbar,
+    Tooltip = _wp$components.Tooltip,
+    PanelBody = _wp$components.PanelBody;
+var compose = wp.compose.compose;
+var _wp$data = wp.data,
+    withSelect = _wp$data.withSelect,
+    withDispatch = _wp$data.withDispatch;
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component;
+var _wp$blockEditor = wp.blockEditor,
+    RichText = _wp$blockEditor.RichText,
+    InnerBlocks = _wp$blockEditor.InnerBlocks,
+    BlockControls = _wp$blockEditor.BlockControls,
+    InspectorControls = _wp$blockEditor.InspectorControls;
+var _wp$wprigComponents = wp.wprigComponents,
+    Range = _wp$wprigComponents.Range,
+    Select = _wp$wprigComponents.Select,
+    InspectorTab = _wp$wprigComponents.InspectorTab,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings;
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "updateTitles", function (value, index) {
+      var _this$props = _this.props,
+          tabTitles = _this$props.attributes.tabTitles,
+          setAttributes = _this$props.setAttributes;
+      var modifiedTitles = tabTitles.map(function (title, thisIndex) {
+        if (index === thisIndex) {
+          title = _objectSpread(_objectSpread({}, title), value);
+        }
+
+        return title;
+      });
+      setAttributes({
+        tabTitles: modifiedTitles
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderTabTitles", function () {
+      var _this$state = _this.state,
+          activeTab = _this$state.activeTab,
+          showIconPicker = _this$state.showIconPicker;
+      var _this$props$attribute = _this.props.attributes,
+          tabTitles = _this$props$attribute.tabTitles,
+          iconPosition = _this$props$attribute.iconPosition;
+
+      var changeActiveTab = function changeActiveTab(index) {
+        _this.setState({
+          initialRender: false,
+          activeTab: index + 1,
+          showIconPicker: !showIconPicker
+        });
+      };
+
+      return tabTitles.map(function (title, index) {
+        var isActiveTab = false;
+
+        if (activeTab === index + 1) {
+          isActiveTab = true;
+        }
+
+        var wrapperClasses = classnames__WEBPACK_IMPORTED_MODULE_0___default()('wprig-tab-item', _defineProperty({}, 'wprig-active', isActiveTab));
+        var titleClasses = classnames__WEBPACK_IMPORTED_MODULE_0___default()('wprig-tab-title', _defineProperty({}, "wprig-has-icon-".concat(iconPosition), typeof title.iconName !== 'undefined'));
+        return /*#__PURE__*/React.createElement("div", {
+          className: wrapperClasses
+        }, /*#__PURE__*/React.createElement("div", {
+          role: "button",
+          className: titleClasses,
+          onClick: function onClick() {
+            return changeActiveTab(index);
+          }
+        }, title.iconName && (iconPosition == 'top' || iconPosition == 'left') && /*#__PURE__*/React.createElement("i", {
+          className: "wprig-tab-icon ".concat(title.iconName)
+        }), /*#__PURE__*/React.createElement("div", null, title.title), title.iconName && iconPosition == 'right' && /*#__PURE__*/React.createElement("i", {
+          className: "wprig-tab-icon ".concat(title.iconName)
+        })));
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "deleteTab", function (tabIndex) {
+      var activeTab = _this.state.activeTab;
+      var _this$props2 = _this.props,
+          block = _this$props2.block,
+          clientId = _this$props2.clientId,
+          setAttributes = _this$props2.setAttributes,
+          replaceInnerBlocks = _this$props2.replaceInnerBlocks,
+          updateBlockAttributes = _this$props2.updateBlockAttributes,
+          _this$props2$attribut = _this$props2.attributes,
+          tabs = _this$props2$attribut.tabs,
+          tabTitles = _this$props2$attribut.tabTitles;
+      var newItems = tabTitles.filter(function (item, index) {
+        return index != tabIndex;
+      });
+      var i = tabIndex + 1;
+      setAttributes({
+        tabTitles: newItems,
+        tabs: tabs - 1
+      });
+
+      while (i < tabs) {
+        updateBlockAttributes(block.innerBlocks[i].clientId, Object.assign(block.innerBlocks[i].attributes, {
+          id: block.innerBlocks[i].attributes.id - 1
+        }));
+        i++;
+      }
+
+      var innerBlocks = JSON.parse(JSON.stringify(block.innerBlocks));
+      innerBlocks.splice(tabIndex, 1);
+      replaceInnerBlocks(clientId, innerBlocks, false);
+
+      _this.setState(function (state) {
+        var newActiveTab = state.activeTab - 1;
+
+        if (tabIndex + 1 === activeTab) {
+          newActiveTab = tabIndex == 0 ? 1 : tabIndex + 1 < tabs ? tabIndex + 1 : tabIndex;
+        }
+
+        return {
+          activeTab: newActiveTab,
+          initialRender: false
+        };
+      });
+    });
+
+    _this.state = {
+      spacer: true,
+      device: 'md',
+      activeTab: 1,
+      initialRender: true,
+      showIconPicker: false
+    };
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props3 = this.props,
+          block = _this$props3.block,
+          clientId = _this$props3.clientId,
+          setAttributes = _this$props3.setAttributes,
+          updateBlockAttributes = _this$props3.updateBlockAttributes,
+          uniqueId = _this$props3.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props4 = this.props,
+          setAttributes = _this$props4.setAttributes,
+          _this$props4$attribut = _this$props4.attributes,
+          uniqueId = _this$props4$attribut.uniqueId,
+          className = _this$props4$attribut.className,
+          tabs = _this$props4$attribut.tabs,
+          tabStyle = _this$props4$attribut.tabStyle,
+          tabTitles = _this$props4$attribut.tabTitles,
+          navAlignment = _this$props4$attribut.navAlignment,
+          flipDirection = _this$props4$attribut.flipDirection,
+          flipboxHeight = _this$props4$attribut.flipboxHeight,
+          animation = _this$props4$attribut.animation,
+          globalCss = _this$props4$attribut.globalCss,
+          hideTablet = _this$props4$attribut.hideTablet,
+          hideMobile = _this$props4$attribut.hideMobile,
+          interaction = _this$props4$attribut.interaction,
+          globalZindex = _this$props4$attribut.globalZindex,
+          positionXaxis = _this$props4$attribut.positionXaxis,
+          positionYaxis = _this$props4$attribut.positionYaxis,
+          enablePosition = _this$props4$attribut.enablePosition,
+          selectPosition = _this$props4$attribut.selectPosition;
+      var _this$state2 = this.state,
+          device = _this$state2.device,
+          activeTab = _this$state2.activeTab;
+
+      var newTitles = function newTitles() {
+        var newTitles = JSON.parse(JSON.stringify(tabTitles));
+        newTitles[tabs] = {
+          title: __("Tab ".concat(tabs + 1)),
+          icon: {}
+        };
+        return newTitles;
+      };
+
+      var getTemplate = function getTemplate(tabs) {
+        // Array(tabs).fill(0).map((_, tabIndex) => (
+        // 	['wprig/face',
+        // 		{
+        // 			id: tabIndex + 1,
+        // 			...(tabIndex === 0 && { customClassName: 'wprig-active' })
+        // 		}
+        // 	])
+        // )
+        return [['wprig/face', {
+          id: 1,
+          customClassName: 'wprig-front'
+        }], ['wprig/face', {
+          id: 2,
+          customClassName: 'wprig-back'
+        }]]; // return [...Array(parseInt(tabs))].map((data, index) => {
+        // 	// const columnWidth = { md: defaultLayout.md[index], sm: defaultLayout.sm[index], xs: defaultLayout.xs[index], unit: '%', device: 'md' }
+        // 	// return ['wprig/face', { colWidth: columnWidth }]
+        // })
+      };
+
+      var addNewTab = function addNewTab() {
+        _this2.setState({
+          activeTab: tabs + 1,
+          initialRender: false
+        });
+
+        setAttributes({
+          tabs: tabs + 1,
+          tabTitles: newTitles()
+        });
+      };
+
+      var blockWrapperClasses = classnames__WEBPACK_IMPORTED_MODULE_0___default()(_defineProperty({}, "wprig-block-".concat(uniqueId), typeof uniqueId !== 'undefined'), _defineProperty({}, className, typeof className !== 'undefined'));
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Flipbox'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Select, {
+        label: __('Flip Direction'),
+        options: [['wprig-flip--left', __('Left')], ['wprig-flip--right', __('Right')], ['wprig-flip--top', __('Top')], ['wprig-flip--bottom', __('Bottom')]],
+        value: flipDirection,
+        onChange: function onChange(value) {
+          return setAttributes({
+            flipDirection: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Height'),
+        value: flipboxHeight || '',
+        onChange: function onChange(val) {
+          return setAttributes({
+            flipboxHeight: val
+          });
+        },
+        min: 40,
+        max: 1200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: this.state.device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: blockWrapperClasses
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-tab wprig-tab-style-".concat(tabStyle, " wprig-active-tab-").concat(activeTab)
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-tab-nav wprig-alignment-".concat(navAlignment)
+      }, this.renderTabTitles()), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-tab-body wprig-flipbox"
+      }, /*#__PURE__*/React.createElement(InnerBlocks, {
+        tagName: "div",
+        templateLock: "all",
+        allowedBlocks: ['wprig/face'] // template={
+        // 	Array(tabs).fill(0).map((_, tabIndex) => (
+        // 		['wprig/face',
+        // 			{
+        // 				id: tabIndex + 1,
+        // 				...(tabIndex === 0 && { customClassName: 'wprig-active' })
+        // 			}
+        // 		])
+        // 	)}
+        ,
+        template: [['wprig/face', {
+          id: 1,
+          customClassName: 'wprig-front'
+        }], ['wprig/face', {
+          id: 2,
+          customClassName: 'wprig-back'
+        }]]
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect(function (select, ownProps) {
+  var clientId = ownProps.clientId;
+
+  var _select = select('core/block-editor'),
+      getBlock = _select.getBlock;
+
+  return {
+    block: getBlock(clientId)
+  };
+}), withDispatch(function (dispatch) {
+  var _dispatch = dispatch('core/block-editor'),
+      getBlocks = _dispatch.getBlocks,
+      insertBlock = _dispatch.insertBlock,
+      removeBlock = _dispatch.removeBlock,
+      replaceInnerBlocks = _dispatch.replaceInnerBlocks,
+      updateBlockAttributes = _dispatch.updateBlockAttributes;
+
+  return {
+    getBlocks: getBlocks,
+    insertBlock: insertBlock,
+    removeBlock: removeBlock,
+    replaceInnerBlocks: replaceInnerBlocks,
+    updateBlockAttributes: updateBlockAttributes
+  };
+}), withCSSGenerator()])(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/Save.js":
+/*!************************************!*\
+  !*** ./src/blocks/flipbox/Save.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Component = wp.element.Component;
+var InnerBlocks = wp.blockEditor.InnerBlocks;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          tabStyle = _this$props$attribute.tabStyle,
+          tabTitles = _this$props$attribute.tabTitles,
+          iconPosition = _this$props$attribute.iconPosition,
+          navAlignment = _this$props$attribute.navAlignment,
+          animation = _this$props$attribute.animation,
+          interaction = _this$props$attribute.interaction,
+          flipDirection = _this$props$attribute.flipDirection;
+      var interactionClass = IsInteraction(interaction) ? 'wprig-block-interaction' : '';
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-flipbox "
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-flipbox-body " + flipDirection
+      }, /*#__PURE__*/React.createElement(InnerBlocks.Content, null))));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/attributes.js":
+/*!******************************************!*\
+  !*** ./src/blocks/flipbox/attributes.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+
+var attributes = _objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), {}, {
+  // Global Settings
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: 'px'
+      },
+      spaceBottom: {
+        md: '10',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  navAlignment: {
+    type: 'string',
+    "default": 'left'
+  },
+  flipDirection: {
+    type: 'string',
+    "default": 'wprig-flip--left'
+  },
+  flipboxHeight: {
+    type: 'object',
+    "default": {
+      md: '300',
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-flipbox {height: {{flipboxHeight}};}'
+    }]
+  },
+  tabs: {
+    type: 'number',
+    "default": 2
+  },
+  tabStyle: {
+    type: 'string',
+    "default": 'pills'
+  },
+  tabTitles: {
+    type: 'array',
+    "default": [{
+      title: 'Front'
+    }, {
+      title: 'Back'
+    }]
+  },
+  testfield: {
+    type: 'object',
+    "default": {
+      url: '#'
+    }
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/block.js":
+/*!*************************************!*\
+  !*** ./src/blocks/flipbox/block.js ***!
+  \*************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/flipbox/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/flipbox/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/flipbox/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/flipbox/attributes.js");
+
+
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+registerBlockType('wprig/flipbox', {
+  title: __('Flipbox'),
+  category: 'wprig-blocks',
+  icon: 'universal-access-alt',
+  description: __('Showcase features in tabs.'),
+  supports: {
+    html: false,
+    className: false,
+    align: ['full', 'wide', 'center']
+  },
+  example: {
+    attributes: {
+      tabTitles: [{
+        title: "Front"
+      }, {
+        title: "Back"
+      }]
+    },
+    innerBlocks: [{
+      name: 'wprig/face',
+      innerBlocks: [{
+        name: 'wprig/image',
+        attributes: {
+          image: {
+            url: 'https://wprig.io/wp-content/uploads/wprig-assets/demo/image8.jpg'
+          }
+        }
+      }]
+    }]
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/face/Edit.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/flipbox/face/Edit.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component;
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    InnerBlocks = _wp$blockEditor.InnerBlocks,
+    InspectorControls = _wp$blockEditor.InspectorControls;
+var compose = wp.compose.compose;
+var PanelBody = wp.components.PanelBody;
+var _wp$wprigComponents = wp.wprigComponents,
+    Color = _wp$wprigComponents.Color,
+    InspectorTab = _wp$wprigComponents.InspectorTab,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings;
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          block = _this$props.block,
+          clientId = _this$props.clientId,
+          setAttributes = _this$props.setAttributes,
+          updateBlockAttributes = _this$props.updateBlockAttributes,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          setAttributes = _this$props2.setAttributes,
+          _this$props2$attribut = _this$props2.attributes,
+          uniqueId = _this$props2$attribut.uniqueId,
+          className = _this$props2$attribut.className,
+          animation = _this$props2$attribut.animation,
+          globalCss = _this$props2$attribut.globalCss,
+          hideTablet = _this$props2$attribut.hideTablet,
+          hideMobile = _this$props2$attribut.hideMobile,
+          interaction = _this$props2$attribut.interaction,
+          globalZindex = _this$props2$attribut.globalZindex,
+          positionXaxis = _this$props2$attribut.positionXaxis,
+          positionYaxis = _this$props2$attribut.positionYaxis,
+          enablePosition = _this$props2$attribut.enablePosition,
+          selectPosition = _this$props2$attribut.selectPosition;
+      var blockWrapperClasses = classnames__WEBPACK_IMPORTED_MODULE_0___default()(_defineProperty({}, "wprig-block-".concat(uniqueId), typeof uniqueId !== 'undefined'), _defineProperty({}, className, typeof className !== 'undefined'));
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "".concat(blockWrapperClasses, " wp-block-wprig-face")
+      }, /*#__PURE__*/React.createElement(InnerBlocks, {
+        templateLock: false,
+        templateInsertUpdatesSelection: false,
+        renderAppender: function renderAppender() {
+          return /*#__PURE__*/React.createElement(InnerBlocks.ButtonBlockAppender, null);
+        }
+      })));
+    }
+  }]);
+
+  return Edit;
+}(Component); // export default Edit
+
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withCSSGenerator()])(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/face/Save.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/flipbox/face/Save.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+var Component = wp.element.Component;
+var InnerBlocks = wp.blockEditor.InnerBlocks;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          id = _this$props$attribute.id,
+          customClassName = _this$props$attribute.customClassName;
+      return /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId, " ").concat(customClassName)
+      }, /*#__PURE__*/React.createElement(InnerBlocks.Content, null));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/face/attributes.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/flipbox/face/attributes.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+
+var attributes = _objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  },
+  id: {
+    type: 'number',
+    "default": 1
+  },
+  customClassName: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes);
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/face/block.js":
+/*!******************************************!*\
+  !*** ./src/blocks/flipbox/face/block.js ***!
+  \******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Save */ "./src/blocks/flipbox/face/Save.js");
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/flipbox/face/Edit.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./attributes */ "./src/blocks/flipbox/face/attributes.js");
+
+
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+
+registerBlockType('wprig/face', {
+  title: __('Face'),
+  category: 'wprig-blocks',
+  parent: ['wprig/flipbox'],
+  supports: {
+    html: false,
+    inserter: false,
+    reusable: false
+  },
+  icon: 'universal-access-alt',
+  getEditWrapperProps: function getEditWrapperProps(attributes) {
+    return {
+      'data-tab': attributes.id,
+      className: "wp-block editor-block-list__block block-editor-block-list__block wprig-tab-content " + attributes.customClassName
+    };
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_2__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_0__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/style-editor.scss":
+/*!**********************************************!*\
+  !*** ./src/blocks/flipbox/style-editor.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style-editor.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style-editor.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/flipbox/style.scss":
+/*!***************************************!*\
+  !*** ./src/blocks/flipbox/style.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/flipbox/style.scss");
 
             content = content.__esModule ? content.default : content;
 
