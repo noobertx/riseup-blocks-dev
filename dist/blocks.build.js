@@ -20648,8 +20648,7 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
-/* harmony import */ var _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../advance-heading/separators */ "./src/blocks/advance-heading/separators.js");
+/* harmony import */ var _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../advance-heading/separators */ "./src/blocks/advance-heading/separators.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -20696,31 +20695,17 @@ var _wp$blockEditor = wp.blockEditor,
     InspectorControls = _wp$blockEditor.InspectorControls,
     BlockControls = _wp$blockEditor.BlockControls;
 var _wp$wprigComponents = wp.wprigComponents,
-    Background = _wp$wprigComponents.Background,
-    Select = _wp$wprigComponents.Select,
     WPRigButtonEdit = _wp$wprigComponents.WPRigButtonEdit,
     ButtonGroup = _wp$wprigComponents.ButtonGroup,
     Url = _wp$wprigComponents.Url,
     Media = _wp$wprigComponents.Media,
-    Tabs = _wp$wprigComponents.Tabs,
-    Tab = _wp$wprigComponents.Tab,
-    Range = _wp$wprigComponents.Range,
-    BoxShadow = _wp$wprigComponents.BoxShadow,
     _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
     ContextMenu = _wp$wprigComponents$C.ContextMenu,
     handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
     RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
-    Typography = _wp$wprigComponents.Typography,
     Toggle = _wp$wprigComponents.Toggle,
-    Styles = _wp$wprigComponents.Styles,
     Alignment = _wp$wprigComponents.Alignment,
-    IconList = _wp$wprigComponents.IconList,
-    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
-    Color = _wp$wprigComponents.Color,
     Headings = _wp$wprigComponents.Headings,
-    Border = _wp$wprigComponents.Border,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
-    Padding = _wp$wprigComponents.Padding,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
     globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
     animationSettings = _wp$wprigComponents$g.animationSettings,
@@ -20730,7 +20715,6 @@ var _wp$wprigComponents = wp.wprigComponents,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     InspectorTab = _wp$wprigComponents.InspectorTab;
-
 
 
 var Edit = /*#__PURE__*/function (_Component) {
@@ -20797,62 +20781,20 @@ var Edit = /*#__PURE__*/function (_Component) {
           titleLevel = _this$props$attribute.titleLevel,
           enableTitle = _this$props$attribute.enableTitle,
           title = _this$props$attribute.title,
-          titleTypography = _this$props$attribute.titleTypography,
-          titleColor = _this$props$attribute.titleColor,
-          titleColorHover = _this$props$attribute.titleColorHover,
-          titleSpacing = _this$props$attribute.titleSpacing,
           subTitle = _this$props$attribute.subTitle,
           subTitleLevel = _this$props$attribute.subTitleLevel,
           subTitleContent = _this$props$attribute.subTitleContent,
-          subTitleTypography = _this$props$attribute.subTitleTypography,
-          subTitleColor = _this$props$attribute.subTitleColor,
-          subTitleColorHover = _this$props$attribute.subTitleColorHover,
-          subTitleSpacing = _this$props$attribute.subTitleSpacing,
           separatorStyle = _this$props$attribute.separatorStyle,
-          separatorColor = _this$props$attribute.separatorColor,
-          separatorColorHover = _this$props$attribute.separatorColorHover,
-          separatorStroke = _this$props$attribute.separatorStroke,
           separatorPosition = _this$props$attribute.separatorPosition,
-          separatorWidth = _this$props$attribute.separatorWidth,
-          separatorSpacing = _this$props$attribute.separatorSpacing,
           enableContent = _this$props$attribute.enableContent,
           content = _this$props$attribute.content,
-          contentTypography = _this$props$attribute.contentTypography,
-          contentColor = _this$props$attribute.contentColor,
-          contentColorHover = _this$props$attribute.contentColorHover,
-          contentPadding = _this$props$attribute.contentPadding,
-          contentSpacing = _this$props$attribute.contentSpacing,
           iconName = _this$props$attribute.iconName,
-          iconSize = _this$props$attribute.iconSize,
-          iconSizeCustom = _this$props$attribute.iconSizeCustom,
-          iconColor = _this$props$attribute.iconColor,
-          iconHoverColor = _this$props$attribute.iconHoverColor,
           useMediaBg = _this$props$attribute.useMediaBg,
-          mediaBg = _this$props$attribute.mediaBg,
-          mediaBgHover = _this$props$attribute.mediaBgHover,
-          mediaBorderRadius = _this$props$attribute.mediaBorderRadius,
-          mediaBackgroundSize = _this$props$attribute.mediaBackgroundSize,
-          mediaBorder = _this$props$attribute.mediaBorder,
-          mediaBorderColorHover = _this$props$attribute.mediaBorderColorHover,
-          mediaShadow = _this$props$attribute.mediaShadow,
-          mediaShadowHover = _this$props$attribute.mediaShadowHover,
-          mediaSpacing = _this$props$attribute.mediaSpacing,
           image = _this$props$attribute.image,
           image2x = _this$props$attribute.image2x,
           imgAlt = _this$props$attribute.imgAlt,
           imageType = _this$props$attribute.imageType,
-          imageWidth = _this$props$attribute.imageWidth,
           externalImageUrl = _this$props$attribute.externalImageUrl,
-          number = _this$props$attribute.number,
-          numberColor = _this$props$attribute.numberColor,
-          numberColorHover = _this$props$attribute.numberColorHover,
-          numberTypography = _this$props$attribute.numberTypography,
-          bgBorder = _this$props$attribute.bgBorder,
-          bgBorderColorHover = _this$props$attribute.bgBorderColorHover,
-          bgPadding = _this$props$attribute.bgPadding,
-          bgBorderRadius = _this$props$attribute.bgBorderRadius,
-          bgShadow = _this$props$attribute.bgShadow,
-          bgShadowHover = _this$props$attribute.bgShadowHover,
           enableButton = _this$props$attribute.enableButton,
           buttonSize = _this$props$attribute.buttonSize,
           buttonFillType = _this$props$attribute.buttonFillType,
@@ -20860,18 +20802,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           buttonIconName = _this$props$attribute.buttonIconName,
           buttonIconPosition = _this$props$attribute.buttonIconPosition,
           buttonUrl = _this$props$attribute.buttonUrl,
-          bannerHeight = _this$props$attribute.bannerHeight,
           effect = _this$props$attribute.effect,
-          bannerBg = _this$props$attribute.bannerBg,
-          enableBannerOverlay = _this$props$attribute.enableBannerOverlay,
-          bannerOverlay = _this$props$attribute.bannerOverlay,
-          bannerBlend = _this$props$attribute.bannerBlend,
-          bannerOpacity = _this$props$attribute.bannerOpacity,
-          bannerBgHover = _this$props$attribute.bannerBgHover,
-          enableBannerOverlayHover = _this$props$attribute.enableBannerOverlayHover,
-          bannerOverlayHover = _this$props$attribute.bannerOverlayHover,
-          bannerBlendHover = _this$props$attribute.bannerBlendHover,
-          bannerOpacityHover = _this$props$attribute.bannerOpacityHover,
           animation = _this$props$attribute.animation,
           enablePosition = _this$props$attribute.enablePosition,
           selectPosition = _this$props$attribute.selectPosition,
@@ -20919,21 +20850,21 @@ var Edit = /*#__PURE__*/function (_Component) {
         pin: {
           type: 'svg',
           separator: 'pin',
-          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['pin'],
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin'],
           width: 100,
           stroke: 0
         },
         pin_filled: {
           type: 'svg',
           separator: 'pin_filled',
-          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['pin_filled'],
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['pin_filled'],
           width: 100,
           stroke: 0
         },
         zigzag: {
           type: 'svg',
           separator: 'zigzag',
-          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['zigzag'],
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag'],
           style: 'fill',
           width: 88,
           stroke: 5
@@ -20941,7 +20872,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         zigzag_large: {
           type: 'svg',
           separator: 'zigzag_large',
-          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_1__["default"]['zigzag_large'],
+          svg: _advance_heading_separators__WEBPACK_IMPORTED_MODULE_0__["default"]['zigzag_large'],
           style: 'fill',
           width: 161,
           stroke: 5
@@ -20963,25 +20894,7 @@ var Edit = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Layout'),
         initialOpen: true
-      }, /*#__PURE__*/React.createElement(Range, {
-        label: __('Banner Height'),
-        value: bannerHeight,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerHeight: val
-          });
-        },
-        min: 170,
-        max: 720,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Alignment, (_React$createElement = {
+      }, /*#__PURE__*/React.createElement(Alignment, (_React$createElement = {
         label: __('Alignment'),
         value: alignment,
         alignmentType: "content",
@@ -21042,109 +20955,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             effect: val
           });
         }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Background, {
-        parallax: true,
-        value: bannerBg,
-        label: __('Background'),
-        externalImage: true,
-        sources: ['image', 'gradient', 'video'],
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerBg: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Enable Overlay'),
-        value: enableBannerOverlay,
-        onChange: function onChange(val) {
-          return setAttributes({
-            enableBannerOverlay: val
-          });
-        }
-      }), enableBannerOverlay == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Background, {
-        label: __('Overlay'),
-        sources: ['image', 'gradient'],
-        value: bannerOverlay,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerOverlay: val
-          });
-        }
-      }), bannerOverlay.openBg == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RangeControl, {
-        beforeIcon: "lightbulb",
-        label: __('Overlay Opacity'),
-        min: .01,
-        max: 1,
-        step: .01,
-        value: bannerOpacity,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerOpacity: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Select, {
-        label: __('Overlay Blend Mode'),
-        options: [['normal', __('Normal')], ['multiply', __('Multiply')], ['screen', __('Screen')], ['overlay', __('Overlay')], ['darken', __('Darken')], ['lighten', __('Lighten')], ['color-dodge', __('Color Dodge')], ['saturation', __('Saturation')], ['luminosity', __('Luminosity')], ['color', __('Color')], ['color-burn', __('Color Burn')], ['exclusion', __('Exclusion')], ['hue', __('Hue')]],
-        value: bannerBlend,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerBlend: val
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Background, {
-        parallax: true,
-        value: bannerBgHover,
-        label: __('Background'),
-        externalImage: true,
-        sources: ['image', 'gradient', 'video'],
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerBgHover: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Toggle, {
-        label: __('Enable Overlay'),
-        value: enableBannerOverlayHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            enableBannerOverlayHover: val
-          });
-        }
-      }), enableBannerOverlayHover == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Background, {
-        label: __('Overlay'),
-        sources: ['image', 'gradient'],
-        value: bannerOverlayHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerOverlayHover: val
-          });
-        }
-      }), bannerOverlayHover.openBg == 1 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(RangeControl, {
-        beforeIcon: "lightbulb",
-        label: __('Overlay Opacity'),
-        min: .01,
-        max: 1,
-        step: .01,
-        value: bannerOpacityHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerOpacityHover: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Select, {
-        label: __('Overlay Blend Mode'),
-        options: [['normal', __('Normal')], ['multiply', __('Multiply')], ['screen', __('Screen')], ['overlay', __('Overlay')], ['darken', __('Darken')], ['lighten', __('Lighten')], ['color-dodge', __('Color Dodge')], ['saturation', __('Saturation')], ['luminosity', __('Luminosity')], ['color', __('Color')], ['color-burn', __('Color Burn')], ['exclusion', __('Exclusion')], ['hue', __('Hue')]],
-        value: bannerBlendHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bannerBlendHover: val
-          });
-        }
-      })))))), layout != 4 && /*#__PURE__*/React.createElement(PanelBody, {
+      })), layout != 4 && /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Media'),
         opened: 'Media' === openPanelSetting,
         onToggle: function onToggle() {
@@ -21212,61 +21023,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             imgAlt: val
           });
         }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Image Width'),
-        value: imageWidth,
-        onChange: function onChange(val) {
-          return setAttributes({
-            imageWidth: val
-          });
-        },
-        min: 0,
-        max: 2000,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: mediaBorderRadius,
-        onChange: function onChange(val) {
-          return setAttributes({
-            mediaBorderRadius: val
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: mediaSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            mediaSpacing: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Title'),
         opened: 'Title' === openPanelSetting,
         onToggle: function onToggle() {
@@ -21288,62 +21045,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             titleLevel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: titleTypography,
-        onChange: function onChange(value) {
-          return setAttributes({
-            titleTypography: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", null, "Spacing ", /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-sort",
-          title: "Y Spacing"
-        })),
-        value: titleSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            titleSpacing: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: titleColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            titleColor: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: titleColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            titleColorHover: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(SelectControl, {
+      }), /*#__PURE__*/React.createElement(SelectControl, {
         label: __('Separator'),
         value: separatorStyle,
         options: [{
@@ -21379,71 +21081,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             separatorStyle: val
           });
         }
-      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Separator Color'),
-        value: separatorColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorColor: val
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Separator Color'),
-        value: separatorColorHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorColorHover: val
-          });
-        }
-      }))), separatorStyle != 'pin' && separatorStyle != 'pin_filled' && /*#__PURE__*/React.createElement(Range, {
-        label: __('Stroke'),
-        value: separatorStroke,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorStroke: val
-          });
-        },
-        min: 1,
-        max: separators[separatorStyle].stroke
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Width'),
-        value: separatorWidth,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorWidth: val
-          });
-        },
-        min: 20,
-        max: separators[separatorStyle].width,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: separatorSpacing,
-        onChange: function onChange(val) {
-          return setAttributes({
-            separatorSpacing: val
-          });
-        },
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(SelectControl, {
+      }), separatorStyle && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(SelectControl, {
         label: "Position",
         value: separatorPosition,
         options: [{
@@ -21489,58 +21127,6 @@ var Edit = /*#__PURE__*/function (_Component) {
             subTitleLevel: value
           });
         }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: subTitleTypography,
-        onChange: function onChange(val) {
-          return setAttributes({
-            subTitleTypography: val
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: subTitleColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            subTitleColor: val
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: subTitleColorHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            subTitleColorHover: val
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: subTitleSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            subTitleSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
       }))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Content'),
         opened: 'Content' === openPanelSetting,
@@ -21555,166 +21141,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             enableContent: val
           });
         }
-      }), enableContent && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: contentTypography,
-        onChange: function onChange(value) {
-          return setAttributes({
-            contentTypography: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: contentColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            contentColor: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: contentColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            contentColorHover: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: contentPadding,
-        onChange: function onChange(val) {
-          return setAttributes({
-            contentPadding: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), enableButton && /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: contentSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            contentSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Background'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: bgPadding,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bgPadding: val
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: bgBorder,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bgBorder: val
-          });
-        },
-        min: 0,
-        max: 10,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bgShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bgShadow: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: bgBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bgBorderRadius: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bgShadowHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bgShadowHover: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Border Color'),
-        value: bgBorderColorHover,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bgBorderColorHover: value
-          });
-        }
-      })))), buttonSettings(this.props.attributes, device, function (key, value) {
-        setAttributes(_defineProperty({}, key, value));
-      }, function (key, value) {
-        _this2.setState(_defineProperty({}, key, value));
-      })), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -22160,81 +21587,6 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     type: 'string',
     "default": 'fas fa-rocket'
   },
-  iconSize: {
-    type: 'string',
-    "default": '36px',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'icon'
-      }, {
-        key: 'iconSize',
-        relation: '!=',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {font-size: {{iconSize}};}'
-    }]
-  },
-  iconSizeCustom: {
-    type: 'object',
-    "default": {
-      md: 64,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'icon'
-      }, {
-        key: 'iconSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {font-size: {{iconSizeCustom}};}'
-    }]
-  },
-  iconColor: {
-    type: 'string',
-    "default": 'var(--wprig-color-1)',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'icon'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media i {color: {{iconColor}};}'
-    }]
-  },
-  iconHoverColor: {
-    type: 'string',
-    "default": 'var(--wprig-color-2)',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'icon'
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media i {color: {{iconHoverColor}};}'
-    }]
-  },
   // Image
   image: {
     type: 'object',
@@ -22256,258 +21608,10 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     type: 'object',
     "default": {}
   },
-  imageWidth: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'image'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {width: {{imageWidth}};} {{WPRIG}} .wprig-info-box-media img {width: 100%;} {{WPRIG}} .wprig-info-box-media .wprig-image-placeholder {height: {{imageWidth}}; width: {{imageWidth}};}'
-    }]
-  },
-  // Number
-  number: {
-    type: 'number',
-    "default": 1
-  },
-  numberColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'number'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-number {color: {{numberColor}};}'
-    }]
-  },
-  numberColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'number'
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-number {color: {{numberColorHover}};}'
-    }]
-  },
-  numberTypography: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 48,
-        unit: 'px'
-      }
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'mediaType',
-        relation: '==',
-        value: 'number'
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media'
-    }]
-  },
   // Media background
   useMediaBg: {
     type: 'boolean',
     "default": 1
-  },
-  mediaBg: {
-    type: 'object',
-    "default": {
-      openColor: 1,
-      type: 'color',
-      color: '#D6EBFF'
-    },
-    style: [{
-      condition: [{
-        key: 'mediaType',
-        relation: '!=',
-        value: 'image'
-      }, // { key: 'layout', relation: '!=', value: 4 },
-      {
-        key: 'useMediaBg',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media.wprig-media-has-bg'
-    }]
-  },
-  mediaBgHover: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'mediaType',
-        relation: '!=',
-        value: 'image'
-      }, // { key: 'layout', relation: '!=', value: 4 },
-      {
-        key: 'useMediaBg',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media'
-    }]
-  },
-  mediaBackgroundSize: {
-    type: 'object',
-    "default": {
-      md: '20',
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'mediaType',
-        relation: '!=',
-        value: 'image'
-      }, // { key: 'layout', relation: '!=', value: 4 },
-      {
-        key: 'useMediaBg',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media { padding: {{mediaBackgroundSize}};}'
-    }]
-  },
-  mediaBorderRadius: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'global',
-      global: {
-        md: 5
-      },
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'useMediaBg',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media, {{WPRIG}} .wprig-info-box-media img'
-    }]
-  },
-  // Media Border
-  mediaBorder: {
-    type: 'number',
-    "default": 0,
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'useMediaBg',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media'
-    }]
-  },
-  mediaBorderColorHover: {
-    type: 'string',
-    "default": '#e5e5e5',
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'useMediaBg',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media { border-color: {{mediaBorderColorHover}};}'
-    }]
-  },
-  // Media Shadow
-  mediaShadow: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media'
-    }]
-  },
-  mediaShadowHover: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '!=',
-        value: 4
-      }, {
-        key: 'useMediaShadow',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-media'
-    }]
-  },
-  // Media Spacing
-  mediaSpacing: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {margin-bottom: {{mediaSpacing}};}'
-    }, {
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: 2
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {margin-right: {{mediaSpacing}};}'
-    }, {
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: 3
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media {margin-left: {{mediaSpacing}};}'
-    }]
   },
   // Title
   enableTitle: {
@@ -22524,43 +21628,6 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     type: 'number',
     "default": 2
   },
-  titleTypography: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 16,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-info-box-title'
-    }]
-  },
-  titleColor: {
-    type: 'string',
-    "default": '#ffffff',
-    style: [{
-      selector: '{{WPRIG}} .wprig-info-box-title {color: {{titleColor}};}'
-    }]
-  },
-  titleColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-title {color: {{titleColorHover}};}'
-    }]
-  },
-  titleSpacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-info-box-title-inner {margin-bottom: {{titleSpacing}};}'
-    }]
-  },
   subTitle: {
     type: 'boolean',
     "default": 0
@@ -22574,58 +21641,6 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     source: 'html',
     selector: '.wprig-info-box-sub-title',
     "default": 'Sub Title'
-  },
-  subTitleTypography: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 14,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title'
-    }]
-  },
-  subTitleColor: {
-    type: 'string',
-    "default": '#ffffff',
-    style: [{
-      condition: [{
-        key: 'subTitle',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title {color: {{subTitleColor}};}'
-    }]
-  },
-  subTitleColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'subTitle',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-sub-title {color: {{subTitleColorHover}};}'
-    }]
-  },
-  subTitleSpacing: {
-    type: 'object',
-    "default": {
-      md: 15,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'subTitle',
-        relation: '==',
-        value: 1
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box .wprig-info-box-sub-title {margin-bottom: {{subTitleSpacing}};}'
-    }]
   },
   // Title separator
   separatorStyle: {
@@ -22644,119 +21659,6 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     type: 'string',
     "default": 'top'
   },
-  separatorColor: {
-    type: 'string',
-    "default": '#5D7FEB',
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColor}};} {{WPRIG}} .wprig-block-info-box svg .wprig-separator-fill {fill: {{separatorColor}};} {{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {border-top-color: {{separatorColor}};}'
-    }]
-  },
-  separatorColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-separator-type-svg svg .wprig-separator-stroke {stroke: {{separatorColorHover}};} {{WPRIG}} .wprig-block-info-box:hover svg .wprig-separator-fill {fill: {{separatorColorHover}};} {{WPRIG}} .wprig-block-info-box:hover .wprig-separator-type-css {border-top-color: {{separatorColorHover}};}'
-    }]
-  },
-  separatorStroke: {
-    type: 'number',
-    "default": 3,
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box .wprig-separator-type-svg svg .wprig-separator-stroke {stroke-width: {{separatorStroke}}px;} {{WPRIG}} .wprig-block-info-box .wprig-separator-type-css {border-top-width: {{separatorStroke}}px;}'
-    }]
-  },
-  separatorWidth: {
-    type: 'object',
-    "default": {
-      md: 60
-    },
-    style: [{
-      //.interactive-banner--effect-2.wprig-block-info-box:hover .wprig-separator-type-css
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}}:hover .wprig-block-info-box .wprig-separator-type-css {width: {{separatorWidth}}px;} {{WPRIG}}:hover .wprig-block-info-box .wprig-separator-type-svg svg {width: {{separatorWidth}}px;} '
-    }]
-  },
-  separatorSpacing: {
-    type: 'object',
-    "default": {
-      md: 10
-    },
-    style: [{
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }, {
-        key: 'separatorPosition',
-        relation: '==',
-        value: 'left'
-      }],
-      selector: '{{WPRIG}} .wprig-separator {margin-right: {{separatorSpacing}}px;}'
-    }, {
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }, {
-        key: 'separatorPosition',
-        relation: '==',
-        value: 'right'
-      }],
-      selector: '{{WPRIG}} .wprig-separator {margin-left: {{separatorSpacing}}px;}'
-    }, {
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }, {
-        key: 'separatorPosition',
-        relation: '==',
-        value: 'leftright'
-      }],
-      selector: '{{WPRIG}} .wprig-separator-before {margin-right: {{separatorSpacing}}px;} {{WPRIG}} .wprig-separator-after {margin-left: {{separatorSpacing}}px;}'
-    }, {
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }, {
-        key: 'separatorPosition',
-        relation: '==',
-        value: 'top'
-      }],
-      selector: '{{WPRIG}} .wprig-separator {margin-bottom: {{separatorSpacing}}px;}'
-    }, {
-      condition: [{
-        key: 'separatorStyle',
-        relation: '!=',
-        value: ''
-      }, {
-        key: 'separatorPosition',
-        relation: '==',
-        value: 'bottom'
-      }],
-      selector: '{{WPRIG}} .wprig-separator {margin-top: {{separatorSpacing}}px;}'
-    }]
-  },
   //Content
   enableContent: {
     type: 'boolean',
@@ -22768,199 +21670,14 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
     selector: '.wprig-info-box-text',
     "default": 'wprig blocks are added to the Gutenberg editor as soon as you install the plugin. You can start using it as any other Gutenberg block.'
   },
-  contentTypography: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 12,
-        unit: 'px'
-      }
-    },
-    style: [{
-      condition: [{
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-text'
-    }]
-  },
-  contentColor: {
-    type: 'string',
-    "default": '#ffffff',
-    style: [{
-      condition: [{
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-text {color: {{contentColor}};}'
-    }]
-  },
-  contentColorHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      condition: [{
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-block-info-box:hover .wprig-info-box-text {color: {{contentColorHover}};}'
-    }]
-  },
-  contentPadding: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-body'
-    }]
-  },
-  contentSpacing: {
-    type: 'object',
-    "default": {
-      md: 10,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'enableButton',
-        relation: '==',
-        value: true
-      }, {
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-body .wprig-info-box-text {margin-bottom: {{contentSpacing}};}'
-    }, {
-      condition: [{
-        key: 'enableButton',
-        relation: '==',
-        value: false
-      }, {
-        key: 'enableContent',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-body .wprig-info-box-text {margin-bottom: 0;}'
-    }]
-  },
   // Body
-  bgPadding: {
-    type: 'object',
-    "default": {
-      paddingType: 'global'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box'
-    }]
-  },
-  bgBorderRadius: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'global'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box'
-    }]
-  },
-  bgBorder: {
-    type: 'object',
-    "default": '#47a3da',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box'
-    }]
-  },
-  bgBorderColorHover: {
-    type: 'string',
-    "default": '#e5e5e5',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box:hover { border-color: {{bgBorderColorHover}};}'
-    }]
-  },
-  bgShadow: {
-    type: 'object',
-    "default": {
-      color: ''
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box'
-    }]
-  },
-  bgShadowHover: {
-    type: 'object',
-    "default": {
-      color: ''
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box:hover'
-    }]
-  },
   sourceOfCopiedStyle: {
     type: 'boolean',
     "default": false
   },
-  bannerHeight: {
-    type: 'object',
-    "default": {
-      md: '180',
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-interactive-banner {height: {{bannerHeight}};} {{WPRIG}} .wprig-interactive-banner .wprig-info-box-media {height: {{bannerHeight}};} '
-    }]
-  },
-  bannerBg: {
-    type: 'object',
-    "default": {
-      bgimgPosition: 'center center',
-      bgimgSize: 'cover',
-      bgimgRepeat: 'no-repeat',
-      bgDefaultColor: '',
-      bgimageSource: 'local',
-      externalImageUrl: {}
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-info-box'
-    }]
-  },
   enableBannerOverlay: {
     type: 'boolean',
     "default": false
-  },
-  bannerOverlay: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'enableBannerOverlay',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}} .wprig-info-box-media-overlay'
-    }]
-  },
-  bannerBlend: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-info-box-media-overlay { mix-blend-mode: {{bannerBlend}}; }'
-    }]
-  },
-  bannerOpacity: {
-    type: 'number',
-    "default": '0.8',
-    style: [{
-      selector: '{{WPRIG}} .wprig-info-box-media-overlay {opacity: {{bannerOpacity}}; }'
-    }]
   },
   bannerBgHover: {
     type: 'object',
@@ -22979,32 +21696,6 @@ var attributes = _objectSpread(_objectSpread(_objectSpread({
   enableBannerOverlayHover: {
     type: 'boolean',
     "default": false
-  },
-  bannerOverlayHover: {
-    type: 'object',
-    "default": {},
-    style: [{
-      condition: [{
-        key: 'enableBannerOverlayHover',
-        relation: '==',
-        value: true
-      }],
-      selector: '{{WPRIG}}:hover .wprig-info-box-media-overlay'
-    }]
-  },
-  bannerBlendHover: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}}:hover .wprig-info-box-media-overlay { mix-blend-mode: {{bannerBlendHover}}; }'
-    }]
-  },
-  bannerOpacityHover: {
-    type: 'number',
-    "default": '0.8',
-    style: [{
-      selector: '{{WPRIG}}:hover .wprig-info-box-media-overlay {opacity: {{bannerOpacityHover}}; }'
-    }]
   },
   effect: {
     type: "string",
