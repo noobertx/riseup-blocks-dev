@@ -7421,6 +7421,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/testimonial/style.scss":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/testimonial/style.scss ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-testimonial {\n  transition: all 400ms; }\n  .wprig-block-testimonial .editor-rich-text .editor-rich-text__tinymce {\n    line-height: inherit; }\n  .wprig-block-testimonial .wprig-testimonial-quote .wprig-quote-icon {\n    line-height: 1;\n    width: auto;\n    height: auto; }\n  .wprig-block-testimonial .wprig-testimonial-quote.wprig-position-bottom .wprig-quote-icon {\n    transform: scaleY(-1); }\n  .wprig-block-testimonial .wprig-testimonial-avatar.wprig-image-placeholder i {\n    font-style: normal;\n    font-size: .5em; }\n  .wprig-block-testimonial .wprig-testimonial-avatar-layout-left,\n  .wprig-block-testimonial .wprig-testimonial-avatar-layout-right {\n    display: inline-flex;\n    align-items: center; }\n    .wprig-block-testimonial .wprig-testimonial-avatar-layout-left .wprig-testimonial-author-info,\n    .wprig-block-testimonial .wprig-testimonial-avatar-layout-right .wprig-testimonial-author-info {\n      text-align: left; }\n  .wprig-block-testimonial .wprig-testimonial-avatar-layout-right .wprig-testimonial-author-info {\n    text-align: right; }\n  .wprig-block-testimonial .wprig-testimonial-ratings {\n    unicode-bidi: bidi-override;\n    display: inline-block;\n    position: relative;\n    letter-spacing: 5px;\n    --wprig-testimonial-rating: 0%;\n    /**\n         * For Backward Compatibility\n         */ }\n    .wprig-block-testimonial .wprig-testimonial-ratings:before, .wprig-block-testimonial .wprig-testimonial-ratings:after {\n      content: \"\\f005\\f005\\f005\\f005\\f005\";\n      font-family: 'Font Awesome\\ 5 Free';\n      font-weight: 400;\n      display: block;\n      white-space: nowrap;\n      z-index: 0; }\n    .wprig-block-testimonial .wprig-testimonial-ratings:before {\n      position: absolute;\n      z-index: 1;\n      left: 0px;\n      overflow: hidden;\n      font-family: 'Font Awesome\\ 5 Free';\n      font-weight: 900;\n      content: \"\\f005\\f005\\f005\\f005\\f005\";\n      width: var(--wprig-testimonial-rating); }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"1\"]:before {\n      width: 20%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"1.5\"]:before {\n      width: 29%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"2\"]:before {\n      width: 40%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"2.5\"]:before {\n      width: 49%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"3\"]:before {\n      width: 60%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"3.5\"]:before {\n      width: 69%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"4\"]:before {\n      width: 80%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"4.5\"]:before {\n      width: 89%; }\n    .wprig-block-testimonial .wprig-testimonial-ratings[data-wprigrating=\"5\"]:before {\n      width: 100%; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/tm-product-carousel/style.scss":
 /*!********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/tm-product-carousel/style.scss ***!
@@ -9980,13 +9998,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_tabs_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/tabs/block */ "./src/blocks/tabs/block.js");
 /* harmony import */ var _blocks_tabs_tab_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/tabs/tab/block */ "./src/blocks/tabs/tab/block.js");
 /* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -10029,8 +10048,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import "./blocks/testimonial/block";
-// import "./blocks/image-carousel/block";
+
+ // import "./blocks/image-carousel/block";
 
  // import "./blocks/mosaic-images/block";
 // import "./blocks/masonry-image-grid/block";
@@ -10085,7 +10104,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_21__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_22__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -30338,6 +30357,1749 @@ registerBlockType('wprig/team', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/team/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/testimonial/Edit.js":
+/*!****************************************!*\
+  !*** ./src/blocks/testimonial/Edit.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var __ = wp.i18n.__;
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    TextControl = _wp$components.TextControl,
+    Toolbar = _wp$components.Toolbar;
+var _wp$blockEditor = wp.blockEditor,
+    RichText = _wp$blockEditor.RichText,
+    BlockControls = _wp$blockEditor.BlockControls,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    AlignmentToolbar = _wp$blockEditor.AlignmentToolbar;
+var _wp$wprigComponents = wp.wprigComponents,
+    Media = _wp$wprigComponents.Media,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    Range = _wp$wprigComponents.Range,
+    Color = _wp$wprigComponents.Color,
+    Typography = _wp$wprigComponents.Typography,
+    Toggle = _wp$wprigComponents.Toggle,
+    Separator = _wp$wprigComponents.Separator,
+    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
+    Border = _wp$wprigComponents.Border,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    BoxShadow = _wp$wprigComponents.BoxShadow,
+    Styles = _wp$wprigComponents.Styles,
+    Alignment = _wp$wprigComponents.Alignment,
+    Padding = _wp$wprigComponents.Padding,
+    Tabs = _wp$wprigComponents.Tabs,
+    Tab = _wp$wprigComponents.Tab,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    interactionSettings = _wp$wprigComponents$g.interactionSettings,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab,
+    InspectorSections = _wp$wprigComponents.InspectorSections;
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "handlePanelOpenings", function (panelName) {
+      _this.setState(_objectSpread(_objectSpread({}, _this.state), {}, {
+        openPanelSetting: panelName
+      }));
+    });
+
+    _this.state = {
+      device: 'md',
+      spacer: true,
+      openPanelSetting: ''
+    };
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          uniqueId = _this$props.attributes.uniqueId;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this,
+          _React$createElement;
+
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          layout = _this$props$attribute.layout,
+          className = _this$props$attribute.className,
+          message = _this$props$attribute.message,
+          messageSpacingTop = _this$props$attribute.messageSpacingTop,
+          messageSpacingBottom = _this$props$attribute.messageSpacingBottom,
+          name = _this$props$attribute.name,
+          nameColor = _this$props$attribute.nameColor,
+          alignment = _this$props$attribute.alignment,
+          designation = _this$props$attribute.designation,
+          designationColor = _this$props$attribute.designationColor,
+          showAvatar = _this$props$attribute.showAvatar,
+          avatar = _this$props$attribute.avatar,
+          avatar2x = _this$props$attribute.avatar2x,
+          avatarAlt = _this$props$attribute.avatarAlt,
+          avatarBorderRadius = _this$props$attribute.avatarBorderRadius,
+          avatarSize = _this$props$attribute.avatarSize,
+          avatarWidth = _this$props$attribute.avatarWidth,
+          avatarHeight = _this$props$attribute.avatarHeight,
+          avatarBorder = _this$props$attribute.avatarBorder,
+          avatarSpacing = _this$props$attribute.avatarSpacing,
+          avatarLayout = _this$props$attribute.avatarLayout,
+          quoteIconColor = _this$props$attribute.quoteIconColor,
+          quoteIconSize = _this$props$attribute.quoteIconSize,
+          quoteIconSpacing = _this$props$attribute.quoteIconSpacing,
+          nameTypo = _this$props$attribute.nameTypo,
+          nameSpacing = _this$props$attribute.nameSpacing,
+          messageTypo = _this$props$attribute.messageTypo,
+          designationTypo = _this$props$attribute.designationTypo,
+          starsSize = _this$props$attribute.starsSize,
+          showRatings = _this$props$attribute.showRatings,
+          ratingsColor = _this$props$attribute.ratingsColor,
+          quoteIcon = _this$props$attribute.quoteIcon,
+          ratings = _this$props$attribute.ratings,
+          ratingsSpacing = _this$props$attribute.ratingsSpacing,
+          bgPadding = _this$props$attribute.bgPadding,
+          textColor = _this$props$attribute.textColor,
+          bgColor = _this$props$attribute.bgColor,
+          bgBorderRadius = _this$props$attribute.bgBorderRadius,
+          border = _this$props$attribute.border,
+          boxShadow = _this$props$attribute.boxShadow,
+          boxShadowHover = _this$props$attribute.boxShadowHover,
+          animation = _this$props$attribute.animation,
+          globalZindex = _this$props$attribute.globalZindex,
+          enablePosition = _this$props$attribute.enablePosition,
+          selectPosition = _this$props$attribute.selectPosition,
+          positionXaxis = _this$props$attribute.positionXaxis,
+          positionYaxis = _this$props$attribute.positionYaxis,
+          hideTablet = _this$props$attribute.hideTablet,
+          hideMobile = _this$props$attribute.hideMobile,
+          globalCss = _this$props$attribute.globalCss,
+          interaction = _this$props$attribute.interaction;
+      var _this$props2 = this.props,
+          clientId = _this$props2.clientId,
+          attributes = _this$props2.attributes,
+          setAttributes = _this$props2.setAttributes,
+          isSelected = _this$props2.isSelected;
+      var _this$state = this.state,
+          openPanelSetting = _this$state.openPanelSetting,
+          device = _this$state.device;
+      var testimonialTitle = /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: "span",
+        keepPlaceholderOnFocus: true,
+        placeholder: __('Add Name...'),
+        allowedFormats: ['bold', 'italic', 'link', 'strikethrough'],
+        onChange: function onChange(value) {
+          return setAttributes({
+            name: value
+          });
+        },
+        value: name
+      });
+      var testimonialDesignation = /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: "span",
+        placeholder: __('Add designation...'),
+        allowedFormats: ['bold', 'italic', 'link', 'strikethrough'],
+        keepPlaceholderOnFocus: true,
+        onChange: function onChange(value) {
+          return setAttributes({
+            designation: value
+          });
+        },
+        value: designation
+      });
+      var testimonialContent = /*#__PURE__*/React.createElement(RichText, {
+        key: "editable",
+        tagName: "div",
+        placeholder: __('Add Message...'),
+        allowedFormats: ['bold', 'italic', 'link', 'strikethrough'],
+        keepPlaceholderOnFocus: true,
+        onChange: function onChange(value) {
+          return setAttributes({
+            message: value
+          });
+        },
+        value: message
+      });
+      var authorInfo = /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: showAvatar ? "wprig-testimonial-avatar-layout-".concat(avatarLayout) : ""
+      }, showAvatar && (avatarLayout == 'left' || avatarLayout == 'top') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt,
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Avatar');
+        }
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Avatar');
+        }
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-info"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-name",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Name');
+        }
+      }, testimonialTitle), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-designation",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Designation');
+        }
+      }, testimonialDesignation)), showAvatar && (avatarLayout == 'right' || avatarLayout == 'bottom') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt,
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Avatar');
+        }
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Avatar');
+        }
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))))));
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, null, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'layout'
+      }, /*#__PURE__*/React.createElement(InspectorSections, {
+        block: 'testimonial'
+      })), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: "",
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Styles, {
+        value: layout,
+        onChange: function onChange(val) {
+          return setAttributes({
+            layout: val
+          });
+        },
+        options: [{
+          value: 1,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].testimonial_1,
+          label: __('Layout 1')
+        }, {
+          value: 2,
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].testimonial_2,
+          label: __('Layout 2')
+        }]
+      }), /*#__PURE__*/React.createElement(Alignment, (_React$createElement = {
+        label: __('Alignment'),
+        value: alignment,
+        alignmentType: "content",
+        onChange: function onChange(val) {
+          return setAttributes({
+            alignment: val
+          });
+        }
+      }, _defineProperty(_React$createElement, "alignmentType", "content"), _defineProperty(_React$createElement, "disableJustify", true), _defineProperty(_React$createElement, "responsive", true), _defineProperty(_React$createElement, "device", device), _defineProperty(_React$createElement, "onDeviceChange", function onDeviceChange(value) {
+        return _this2.setState({
+          device: value
+        });
+      }), _React$createElement))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Message'),
+        opened: 'Message' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Message' ? 'Message' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Top Spacing'),
+        value: messageSpacingTop,
+        onChange: function onChange(value) {
+          return setAttributes({
+            messageSpacingTop: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 300,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Bottom Spacing'),
+        value: messageSpacingBottom,
+        onChange: function onChange(value) {
+          return setAttributes({
+            messageSpacingBottom: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 300,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: messageTypo,
+        onChange: function onChange(value) {
+          return setAttributes({
+            messageTypo: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Name'),
+        opened: 'Name' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Name' ? 'Name' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: nameSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            nameSpacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 300,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: nameColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            nameColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: nameTypo,
+        onChange: function onChange(value) {
+          return setAttributes({
+            nameTypo: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Designation'),
+        className: 'Designation' === openPanelSetting ? 'activePanel' : '',
+        opened: 'Designation' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Designation' ? 'Designation' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: designationColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            designationColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: designationTypo,
+        onChange: function onChange(value) {
+          return setAttributes({
+            designationTypo: value
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Avatar'),
+        opened: 'Avatar' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Avatar' ? 'Avatar' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Avatar'),
+        value: showAvatar,
+        onChange: function onChange(val) {
+          return setAttributes({
+            showAvatar: val
+          });
+        }
+      }), showAvatar && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Media, {
+        label: __('Upload Avatar'),
+        multiple: true,
+        type: ['image'],
+        value: avatar,
+        panel: true,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatar: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Media, {
+        label: __('Upload Avatar @2x'),
+        multiple: false,
+        type: ['image'],
+        value: avatar2x,
+        panel: true,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatar2x: value
+          });
+        }
+      }), avatar.url && /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Alt Text (Alternative Text)'),
+        value: avatarAlt,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarAlt: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Styles, {
+        label: __('Avatar Layout'),
+        value: avatarLayout,
+        onChange: function onChange(val) {
+          return setAttributes({
+            avatarLayout: val
+          });
+        },
+        options: [{
+          value: 'left',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].avatar_left,
+          label: __('Left')
+        }, {
+          value: 'right',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].avatar_right,
+          label: __('Right')
+        }, {
+          value: 'top',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].avatar_top,
+          label: __('Top')
+        }, {
+          value: 'bottom',
+          svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].avatar_bottom,
+          label: __('Bottom')
+        }]
+      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Avatar Size'),
+        options: [{
+          label: 'S',
+          value: '48px',
+          title: 'Small'
+        }, {
+          label: 'M',
+          value: '64px',
+          title: 'Medium'
+        }, {
+          label: 'L',
+          value: '96px',
+          title: 'Large'
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: 'Custom'
+        }],
+        value: avatarSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarSize: value
+          });
+        }
+      }), avatarSize == 'custom' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: /*#__PURE__*/React.createElement("span", {
+          className: "dashicons dashicons-leftright",
+          title: "Width"
+        }),
+        value: avatarWidth,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarWidth: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 300,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: /*#__PURE__*/React.createElement("span", {
+          className: "dashicons dashicons-sort",
+          title: "Height"
+        }),
+        value: avatarHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarHeight: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        max: 300,
+        min: 0,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: avatarBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: avatarBorder,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarBorder: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: avatarSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            avatarSpacing: value
+          });
+        },
+        min: 0,
+        max: 200,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Quote Icon'),
+        opened: 'Quote Icon' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Quote Icon' ? 'Quote Icon' : '');
+        }
+      }, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Icon'),
+        options: [{
+          icon: 'fas fa-ban',
+          value: ''
+        }, {
+          icon: 'fas fa-quote-left',
+          value: 'fas fa-quote-left'
+        }],
+        value: quoteIcon,
+        onChange: function onChange(val) {
+          return setAttributes({
+            quoteIcon: val
+          });
+        }
+      }), quoteIcon && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: quoteIconColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            quoteIconColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Size'),
+        value: quoteIconSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            quoteIconSize: value
+          });
+        },
+        min: 10,
+        max: 150,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: quoteIconSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            quoteIconSpacing: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Ratings'),
+        opened: 'Ratings' === openPanelSetting,
+        onToggle: function onToggle() {
+          return _this2.handlePanelOpenings(openPanelSetting !== 'Ratings' ? 'Ratings' : '');
+        }
+      }, /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Show Ratings'),
+        value: showRatings,
+        onChange: function onChange(val) {
+          return setAttributes({
+            showRatings: val
+          });
+        }
+      }), showRatings && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: __('Ratings'),
+        value: ratings,
+        onChange: function onChange(value) {
+          return setAttributes({
+            ratings: value
+          });
+        },
+        min: 0,
+        max: 5,
+        step: .1
+      }), ratings != 0 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: ratingsColor,
+        onChange: function onChange(value) {
+          return setAttributes({
+            ratingsColor: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Stars Size'),
+        value: starsSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            starsSize: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 10,
+        max: 48,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: ratingsSpacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            ratingsSpacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 200,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })))), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Design'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Text Color'),
+        value: textColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            textColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
+        label: __('Background'),
+        value: bgColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: border,
+        onChange: function onChange(val) {
+          return setAttributes({
+            border: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Padding, {
+        label: __('Padding'),
+        value: bgPadding,
+        onChange: function onChange(value) {
+          return setAttributes({
+            bgPadding: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 100,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Border Radius'),
+        value: bgBorderRadius,
+        onChange: function onChange(val) {
+          return setAttributes({
+            bgBorderRadius: val
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box Shadow'),
+        value: boxShadow,
+        onChange: function onChange(val) {
+          return setAttributes({
+            boxShadow: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(BoxShadow, {
+        label: __('Box Shadow'),
+        value: boxShadowHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            boxShadowHover: val
+          });
+        }
+      }))))), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true
+        }]
+      }, this.props, {
+        prevState: this.state
+      }))), /*#__PURE__*/React.createElement(AlignmentToolbar, {
+        controls: ['left', 'center', 'right'],
+        value: alignment,
+        onChange: function onChange(value) {
+          setAttributes({
+            alignment: value
+          });
+        }
+      })), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-testimonial",
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        }
+      }, layout == 2 && authorInfo, showRatings && ratings > 0 && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-ratings",
+        style: {
+          '--wprig-testimonial-rating': "".concat(ratings * 20, "%")
+        },
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Ratings');
+        }
+      }), quoteIcon && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Quote Icon');
+        }
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-content",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Message');
+        }
+      }, testimonialContent), showRatings && ratings > 0 && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-ratings",
+        style: {
+          '--wprig-testimonial-rating': "".concat(ratings * 20, "%")
+        },
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Ratings');
+        }
+      }), layout == 1 && authorInfo, quoteIcon && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote wprig-position-bottom",
+        onClick: function onClick() {
+          return _this2.handlePanelOpenings('Quote Icon');
+        }
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      })), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: "wprig-context-menu-wraper"
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/testimonial/Save.js":
+/*!****************************************!*\
+  !*** ./src/blocks/testimonial/Save.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var _wp$element = wp.element,
+    Fragment = _wp$element.Fragment,
+    Component = _wp$element.Component;
+var RichText = wp.blockEditor.RichText;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "render",
+    value: function render() {
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          layout = _this$props$attribute.layout,
+          animation = _this$props$attribute.animation,
+          message = _this$props$attribute.message,
+          name = _this$props$attribute.name,
+          designation = _this$props$attribute.designation,
+          showAvatar = _this$props$attribute.showAvatar,
+          avatar = _this$props$attribute.avatar,
+          avatar2x = _this$props$attribute.avatar2x,
+          avatarAlt = _this$props$attribute.avatarAlt,
+          avatarLayout = _this$props$attribute.avatarLayout,
+          quoteIcon = _this$props$attribute.quoteIcon,
+          showRatings = _this$props$attribute.showRatings,
+          ratings = _this$props$attribute.ratings,
+          interaction = _this$props$attribute.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      var testimonialTitle = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "span",
+        value: name
+      });
+      var testimonialDesignation = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "span",
+        value: designation
+      });
+      var testimonialMessage = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "div",
+        value: message
+      });
+      var authorInfo = /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: showAvatar ? "wprig-testimonial-avatar-layout-".concat(avatarLayout) : ""
+      }, showAvatar && (avatarLayout == 'left' || avatarLayout == 'top') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-info"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-name"
+      }, testimonialTitle), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-designation"
+      }, testimonialDesignation)), showAvatar && (avatarLayout == 'right' || avatarLayout == 'bottom') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))))));
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-testimonial ".concat(interactionClass)
+      }, layout == 2 && authorInfo, showRatings && ratings > 0 && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-ratings",
+        style: {
+          '--wprig-testimonial-rating': "".concat(ratings * 20, "%")
+        }
+      }), quoteIcon && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-content"
+      }, testimonialMessage), showRatings && ratings > 0 && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-ratings",
+        style: {
+          '--wprig-testimonial-rating': "".concat(ratings * 20, "%")
+        }
+      }), layout == 1 && authorInfo, quoteIcon && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote wprig-position-bottom"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      }))));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/testimonial/attributes.js":
+/*!**********************************************!*\
+  !*** ./src/blocks/testimonial/attributes.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
+
+var attributes = _objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), {}, {
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: "px"
+      },
+      spaceBottom: {
+        md: '10',
+        unit: "px"
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  alignment: {
+    type: 'object',
+    "default": {
+      md: 'center'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial {text-align: {{alignment}};}'
+    }]
+  },
+  layout: {
+    type: 'number',
+    "default": 1
+  },
+  //Name
+  name: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-testimonial-author-name>span',
+    "default": 'JOHN DOE'
+  },
+  nameColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-author-name { color:{{nameColor}}; }'
+    }]
+  },
+  nameTypo: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      weight: 700,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-author-name'
+    }]
+  },
+  nameSpacing: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-author-name {margin-bottom: {{nameSpacing}};}'
+    }]
+  },
+  //Designation
+  designation: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-testimonial-author-designation>span',
+    "default": 'WordPress Developer'
+  },
+  designationColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-author-designation { color:{{designationColor}}; }'
+    }]
+  },
+  designationTypo: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 14,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-author-designation'
+    }]
+  },
+  //Messsage
+  message: {
+    type: 'string',
+    source: 'html',
+    selector: '.wprig-testimonial-content>div',
+    "default": '“There’s no easier way to add innovative Gutenberg blocks than using wprig Gutenberg Blocks Toolkit. Instantly raise your website appearance with this stylish new plugin.”'
+  },
+  messagePosition: {
+    type: 'string',
+    "default": 'top'
+  },
+  messageTypo: {
+    type: 'object',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 20,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-content'
+    }]
+  },
+  messageSpacingTop: {
+    type: 'object',
+    "default": {
+      md: 0,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-content {margin-top: {{messageSpacingTop}};}'
+    }]
+  },
+  messageSpacingBottom: {
+    type: 'object',
+    "default": {
+      md: 20,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-content {margin-bottom: {{messageSpacingBottom}};}'
+    }]
+  },
+  //Avatar
+  showAvatar: {
+    type: 'boolean',
+    "default": true
+  },
+  avatar: {
+    type: 'object',
+    "default": {}
+  },
+  avatar2x: {
+    type: 'object',
+    "default": {}
+  },
+  avatarLayout: {
+    type: 'string',
+    "default": 'left'
+  },
+  avatarAlt: {
+    type: 'string',
+    "default": ''
+  },
+  avatarSize: {
+    type: 'string',
+    "default": '64px',
+    style: [{
+      condition: [{
+        key: 'avatarSize',
+        relation: '!=',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar { width: {{avatarSize}}; height: {{avatarSize}}; font-size: {{avatarSize}}; }'
+    }]
+  },
+  avatarWidth: {
+    type: 'object',
+    "default": {
+      md: 120,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'avatarSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {width: {{avatarWidth}}; font-size: {{avatarWidth}};}'
+    }]
+  },
+  avatarHeight: {
+    type: 'object',
+    "default": {
+      md: 120,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'avatarSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {height: {{avatarHeight}};}'
+    }]
+  },
+  avatarSpacing: {
+    type: 'object',
+    "default": {
+      md: 20,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'avatarLayout',
+        relation: '==',
+        value: 'left'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-right: {{avatarSpacing}};}'
+    }, {
+      condition: [{
+        key: 'avatarLayout',
+        relation: '==',
+        value: 'right'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-left: {{avatarSpacing}};}'
+    }, {
+      condition: [{
+        key: 'avatarLayout',
+        relation: '==',
+        value: 'top'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-bottom: {{avatarSpacing}};}'
+    }, {
+      condition: [{
+        key: 'avatarLayout',
+        relation: '==',
+        value: 'bottom'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-top: {{avatarSpacing}};}'
+    }]
+  },
+  avatarBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global',
+      global: {
+        md: 100
+      },
+      unit: '%'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-avatar'
+    }]
+  },
+  avatarBorder: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-testimonial-avatar'
+    }]
+  },
+  //Quote
+  quoteIcon: {
+    type: 'string',
+    "default": 'fas fa-quote-left'
+  },
+  quoteIconPosition: {
+    type: 'string',
+    "default": 'top'
+  },
+  quoteIconSize: {
+    type: 'object',
+    "default": {
+      md: 48,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'quoteIcon',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-quote-icon {font-size: {{quoteIconSize}};}'
+    }]
+  },
+  quoteIconColor: {
+    type: 'string',
+    "default": '#E2E2E2',
+    style: [{
+      condition: [{
+        key: 'quoteIcon',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-quote-icon {color: {{quoteIconColor}};}'
+    }]
+  },
+  quoteIconSpacing: {
+    type: 'object',
+    "default": {
+      md: 20,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: '1'
+      }, {
+        key: 'quoteIcon',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-quote {margin-bottom: {{quoteIconSpacing}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: '2'
+      }, {
+        key: 'quoteIcon',
+        relation: '!=',
+        value: ''
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-quote {margin-top: {{quoteIconSpacing}};}'
+    }]
+  },
+  //Ratings
+  showRatings: {
+    type: 'boolean',
+    "default": true
+  },
+  ratings: {
+    type: 'string',
+    "default": 4.5
+  },
+  ratingsPosition: {
+    type: 'string',
+    "default": 'bottom'
+  },
+  ratingsColor: {
+    type: 'string',
+    "default": '#FFB800',
+    style: [{
+      condition: [{
+        key: 'ratings',
+        relation: '!=',
+        value: '0'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-ratings:before {color: {{ratingsColor}};} {{WPRIG}} .wprig-testimonial-ratings {color: {{ratingsColor}};}'
+    }]
+  },
+  starsSize: {
+    type: 'object',
+    "default": {
+      md: 20,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'ratings',
+        relation: '!=',
+        value: '0'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-ratings {font-size:{{starsSize}};}'
+    }]
+  },
+  ratingsSpacing: {
+    type: 'object',
+    "default": {
+      md: 30,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: '1'
+      }, {
+        key: 'ratings',
+        relation: '!=',
+        value: '0'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-ratings {margin-bottom: {{ratingsSpacing}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: '2'
+      }, {
+        key: 'ratings',
+        relation: '!=',
+        value: '0'
+      }],
+      selector: '{{WPRIG}} .wprig-testimonial-ratings {margin-top: {{ratingsSpacing}};}'
+    }]
+  },
+  // Design
+  bgPadding: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial'
+    }]
+  },
+  textColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial { color:{{textColor}}; }'
+    }]
+  },
+  bgColor: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial'
+    }]
+  },
+  bgBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial'
+    }]
+  },
+  border: {
+    type: 'object',
+    "default": {
+      openTy: 0,
+      color: '#3373dc',
+      width: {
+        bottom: '1',
+        left: '1',
+        right: '1',
+        top: '1',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial'
+    }]
+  },
+  boxShadow: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial'
+    }]
+  },
+  boxShadowHover: {
+    type: 'object',
+    "default": {},
+    style: [{
+      selector: '{{WPRIG}} .wprig-block-testimonial:hover'
+    }]
+  },
+  sourceOfCopiedStyle: {
+    type: 'boolean',
+    "default": false
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/testimonial/block.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/testimonial/block.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/testimonial/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit */ "./src/blocks/testimonial/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Save */ "./src/blocks/testimonial/Save.js");
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/testimonial/attributes.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+
+var __ = wp.i18n.__;
+var Fragment = wp.element.Fragment;
+var RichText = wp.blockEditor.RichText;
+var registerBlockType = wp.blocks.registerBlockType;
+var _wp$wprigComponents$H = wp.wprigComponents.HelperFunction,
+    animationAttr = _wp$wprigComponents$H.animationAttr,
+    IsInteraction = _wp$wprigComponents$H.IsInteraction;
+registerBlockType('wprig/testimonial', {
+  title: __('Testimonial', 'wprig'),
+  description: 'Display client feedbacks with wprig Testimonials.',
+  icon: 'universal-access-alt',
+  category: 'wprig-blocks',
+  keywords: [__('testimonial', 'wprig'), __('Quote', 'wprig'), __('Ratings', 'wprig')],
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  example: {
+    attributes: {}
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_2__["default"],
+  deprecated: [{
+    attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+    save: function save(props) {
+      var _this = this;
+
+      var _props$attributes = props.attributes,
+          uniqueId = _props$attributes.uniqueId,
+          layout = _props$attributes.layout,
+          animation = _props$attributes.animation,
+          message = _props$attributes.message,
+          name = _props$attributes.name,
+          designation = _props$attributes.designation,
+          showAvatar = _props$attributes.showAvatar,
+          avatar = _props$attributes.avatar,
+          avatar2x = _props$attributes.avatar2x,
+          avatarAlt = _props$attributes.avatarAlt,
+          avatarLayout = _props$attributes.avatarLayout,
+          quoteIcon = _props$attributes.quoteIcon,
+          showRatings = _props$attributes.showRatings,
+          ratings = _props$attributes.ratings,
+          interaction = _props$attributes.interaction;
+      var interactionClass = IsInteraction(interaction) ? 'qubley-block-interaction' : '';
+      var testimonialTitle = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "span",
+        value: name
+      });
+      var testimonialDesignation = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "span",
+        value: designation
+      });
+      var testimonialMessage = /*#__PURE__*/React.createElement(RichText.Content, {
+        tagName: "div",
+        value: message
+      });
+      var authorInfo = /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: showAvatar ? "wprig-testimonial-avatar-layout-".concat(avatarLayout) : ""
+      }, showAvatar && (avatarLayout == 'left' || avatarLayout == 'top') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-info"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-name"
+      }, testimonialTitle), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-author-designation"
+      }, testimonialDesignation)), showAvatar && (avatarLayout == 'right' || avatarLayout == 'bottom') && /*#__PURE__*/React.createElement(Fragment, null, avatar.url != undefined ? /*#__PURE__*/React.createElement("img", {
+        className: "wprig-testimonial-avatar",
+        src: avatar.url,
+        srcset: avatar2x.url != undefined ? avatar.url + ' 1x, ' + avatar2x.url + ' 2x' : '',
+        alt: avatarAlt
+      }) : /*#__PURE__*/React.createElement("div", {
+        className: "wprig-image-placeholder wprig-testimonial-avatar"
+      }, /*#__PURE__*/React.createElement("i", {
+        className: "far fa-user"
+      }))))));
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-testimonial ".concat(interactionClass)
+      }, layout == 2 && authorInfo, showRatings && ratings > 0 && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        "data-wprigrating": ratings,
+        className: "wprig-testimonial-ratings",
+        onClick: function onClick() {
+          return _this.handlePanelOpenings('Ratings');
+        }
+      }), quoteIcon && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-content"
+      }, testimonialMessage), showRatings && ratings > 0 && layout == 1 && /*#__PURE__*/React.createElement("div", {
+        "data-wprigrating": ratings,
+        className: "wprig-testimonial-ratings",
+        onClick: function onClick() {
+          return _this.handlePanelOpenings('Ratings');
+        }
+      }), layout == 1 && authorInfo, quoteIcon && layout == 2 && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-testimonial-quote wprig-position-bottom"
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "wprig-quote-icon ".concat(quoteIcon)
+      }))));
+    }
+  }]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/testimonial/style.scss":
+/*!*******************************************!*\
+  !*** ./src/blocks/testimonial/style.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/testimonial/style.scss");
 
             content = content.__esModule ? content.default : content;
 
