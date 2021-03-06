@@ -30435,19 +30435,10 @@ var _wp$wprigComponents = wp.wprigComponents,
     Media = _wp$wprigComponents.Media,
     RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
     Range = _wp$wprigComponents.Range,
-    Color = _wp$wprigComponents.Color,
-    Typography = _wp$wprigComponents.Typography,
     Toggle = _wp$wprigComponents.Toggle,
     Separator = _wp$wprigComponents.Separator,
-    ColorAdvanced = _wp$wprigComponents.ColorAdvanced,
-    Border = _wp$wprigComponents.Border,
-    BorderRadius = _wp$wprigComponents.BorderRadius,
-    BoxShadow = _wp$wprigComponents.BoxShadow,
     Styles = _wp$wprigComponents.Styles,
     Alignment = _wp$wprigComponents.Alignment,
-    Padding = _wp$wprigComponents.Padding,
-    Tabs = _wp$wprigComponents.Tabs,
-    Tab = _wp$wprigComponents.Tab,
     _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
     globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
     animationSettings = _wp$wprigComponents$g.animationSettings,
@@ -30520,44 +30511,17 @@ var Edit = /*#__PURE__*/function (_Component) {
           layout = _this$props$attribute.layout,
           className = _this$props$attribute.className,
           message = _this$props$attribute.message,
-          messageSpacingTop = _this$props$attribute.messageSpacingTop,
-          messageSpacingBottom = _this$props$attribute.messageSpacingBottom,
           name = _this$props$attribute.name,
-          nameColor = _this$props$attribute.nameColor,
           alignment = _this$props$attribute.alignment,
           designation = _this$props$attribute.designation,
-          designationColor = _this$props$attribute.designationColor,
           showAvatar = _this$props$attribute.showAvatar,
           avatar = _this$props$attribute.avatar,
           avatar2x = _this$props$attribute.avatar2x,
           avatarAlt = _this$props$attribute.avatarAlt,
-          avatarBorderRadius = _this$props$attribute.avatarBorderRadius,
-          avatarSize = _this$props$attribute.avatarSize,
-          avatarWidth = _this$props$attribute.avatarWidth,
-          avatarHeight = _this$props$attribute.avatarHeight,
-          avatarBorder = _this$props$attribute.avatarBorder,
-          avatarSpacing = _this$props$attribute.avatarSpacing,
           avatarLayout = _this$props$attribute.avatarLayout,
-          quoteIconColor = _this$props$attribute.quoteIconColor,
-          quoteIconSize = _this$props$attribute.quoteIconSize,
-          quoteIconSpacing = _this$props$attribute.quoteIconSpacing,
-          nameTypo = _this$props$attribute.nameTypo,
-          nameSpacing = _this$props$attribute.nameSpacing,
-          messageTypo = _this$props$attribute.messageTypo,
-          designationTypo = _this$props$attribute.designationTypo,
-          starsSize = _this$props$attribute.starsSize,
           showRatings = _this$props$attribute.showRatings,
-          ratingsColor = _this$props$attribute.ratingsColor,
           quoteIcon = _this$props$attribute.quoteIcon,
           ratings = _this$props$attribute.ratings,
-          ratingsSpacing = _this$props$attribute.ratingsSpacing,
-          bgPadding = _this$props$attribute.bgPadding,
-          textColor = _this$props$attribute.textColor,
-          bgColor = _this$props$attribute.bgColor,
-          bgBorderRadius = _this$props$attribute.bgBorderRadius,
-          border = _this$props$attribute.border,
-          boxShadow = _this$props$attribute.boxShadow,
-          boxShadowHover = _this$props$attribute.boxShadowHover,
           animation = _this$props$attribute.animation,
           globalZindex = _this$props$attribute.globalZindex,
           enablePosition = _this$props$attribute.enablePosition,
@@ -30665,10 +30629,6 @@ var Edit = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
         key: "inspector"
       }, /*#__PURE__*/React.createElement(InspectorTabs, null, /*#__PURE__*/React.createElement(InspectorTab, {
-        key: 'layout'
-      }, /*#__PURE__*/React.createElement(InspectorSections, {
-        block: 'testimonial'
-      })), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
       }, /*#__PURE__*/React.createElement(PanelBody, {
         title: "",
@@ -30703,137 +30663,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           device: value
         });
       }), _React$createElement))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Message'),
-        opened: 'Message' === openPanelSetting,
-        onToggle: function onToggle() {
-          return _this2.handlePanelOpenings(openPanelSetting !== 'Message' ? 'Message' : '');
-        }
-      }, /*#__PURE__*/React.createElement(Range, {
-        label: __('Top Spacing'),
-        value: messageSpacingTop,
-        onChange: function onChange(value) {
-          return setAttributes({
-            messageSpacingTop: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 300,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Bottom Spacing'),
-        value: messageSpacingBottom,
-        onChange: function onChange(value) {
-          return setAttributes({
-            messageSpacingBottom: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 300,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: messageTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            messageTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Name'),
-        opened: 'Name' === openPanelSetting,
-        onToggle: function onToggle() {
-          return _this2.handlePanelOpenings(openPanelSetting !== 'Name' ? 'Name' : '');
-        }
-      }, /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: nameSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            nameSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 300,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: nameColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            nameColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: nameTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            nameTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Designation'),
-        className: 'Designation' === openPanelSetting ? 'activePanel' : '',
-        opened: 'Designation' === openPanelSetting,
-        onToggle: function onToggle() {
-          return _this2.handlePanelOpenings(openPanelSetting !== 'Designation' ? 'Designation' : '');
-        }
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: designationColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            designationColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Typography, {
-        label: __('Typography'),
-        value: designationTypo,
-        onChange: function onChange(value) {
-          return setAttributes({
-            designationTypo: value
-          });
-        },
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Avatar'),
         opened: 'Avatar' === openPanelSetting,
         onToggle: function onToggle() {
@@ -30902,126 +30731,7 @@ var Edit = /*#__PURE__*/function (_Component) {
           svg: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].avatar_bottom,
           label: __('Bottom')
         }]
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(RadioAdvanced, {
-        label: __('Avatar Size'),
-        options: [{
-          label: 'S',
-          value: '48px',
-          title: 'Small'
-        }, {
-          label: 'M',
-          value: '64px',
-          title: 'Medium'
-        }, {
-          label: 'L',
-          value: '96px',
-          title: 'Large'
-        }, {
-          icon: 'fas fa-cog',
-          value: 'custom',
-          title: 'Custom'
-        }],
-        value: avatarSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarSize: value
-          });
-        }
-      }), avatarSize == 'custom' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-leftright",
-          title: "Width"
-        }),
-        value: avatarWidth,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarWidth: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 300,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: /*#__PURE__*/React.createElement("span", {
-          className: "dashicons dashicons-sort",
-          title: "Height"
-        }),
-        value: avatarHeight,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarHeight: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 300,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        value: avatarBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarBorderRadius: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: avatarBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarBorder: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: avatarSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            avatarSpacing: value
-          });
-        },
-        min: 0,
-        max: 200,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(PanelBody, {
+      }), /*#__PURE__*/React.createElement(Separator, null))), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Quote Icon'),
         opened: 'Quote Icon' === openPanelSetting,
         onToggle: function onToggle() {
@@ -31042,51 +30752,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             quoteIcon: val
           });
         }
-      }), quoteIcon && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: quoteIconColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            quoteIconColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Size'),
-        value: quoteIconSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            quoteIconSize: value
-          });
-        },
-        min: 10,
-        max: 150,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: quoteIconSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            quoteIconSpacing: value
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(PanelBody, {
+      })), /*#__PURE__*/React.createElement(PanelBody, {
         title: __('Ratings'),
         opened: 'Ratings' === openPanelSetting,
         onToggle: function onToggle() {
@@ -31100,7 +30766,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             showRatings: val
           });
         }
-      }), showRatings && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+      }), showRatings && /*#__PURE__*/React.createElement(Range, {
         label: __('Ratings'),
         value: ratings,
         onChange: function onChange(value) {
@@ -31111,134 +30777,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         min: 0,
         max: 5,
         step: .1
-      }), ratings != 0 && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Color'),
-        value: ratingsColor,
-        onChange: function onChange(value) {
-          return setAttributes({
-            ratingsColor: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Stars Size'),
-        value: starsSize,
-        onChange: function onChange(value) {
-          return setAttributes({
-            starsSize: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 10,
-        max: 48,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Range, {
-        label: __('Spacing'),
-        value: ratingsSpacing,
-        onChange: function onChange(value) {
-          return setAttributes({
-            ratingsSpacing: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 200,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Design'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Text Color'),
-        value: textColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            textColor: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(ColorAdvanced, {
-        label: __('Background'),
-        value: bgColor,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bgColor: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Separator, null), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        value: border,
-        onChange: function onChange(val) {
-          return setAttributes({
-            border: val
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: bgPadding,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bgPadding: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        min: 0,
-        max: 100,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Border Radius'),
-        value: bgBorderRadius,
-        onChange: function onChange(val) {
-          return setAttributes({
-            bgBorderRadius: val
-          });
-        },
-        min: 0,
-        max: 100,
-        unit: ['px', 'em', '%'],
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Normal')
-      }, /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box Shadow'),
-        value: boxShadow,
-        onChange: function onChange(val) {
-          return setAttributes({
-            boxShadow: val
-          });
-        }
-      })), /*#__PURE__*/React.createElement(Tab, {
-        tabTitle: __('Hover')
-      }, /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box Shadow'),
-        value: boxShadowHover,
-        onChange: function onChange(val) {
-          return setAttributes({
-            boxShadowHover: val
-          });
-        }
-      }))))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -31525,60 +31064,12 @@ var attributes = _objectSpread(_objectSpread({
     selector: '.wprig-testimonial-author-name>span',
     "default": 'JOHN DOE'
   },
-  nameColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-author-name { color:{{nameColor}}; }'
-    }]
-  },
-  nameTypo: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      weight: 700,
-      size: {
-        md: 16,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-author-name'
-    }]
-  },
-  nameSpacing: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-author-name {margin-bottom: {{nameSpacing}};}'
-    }]
-  },
   //Designation
   designation: {
     type: 'string',
     source: 'html',
     selector: '.wprig-testimonial-author-designation>span',
     "default": 'WordPress Developer'
-  },
-  designationColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-author-designation { color:{{designationColor}}; }'
-    }]
-  },
-  designationTypo: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 14,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-author-designation'
-    }]
   },
   //Messsage
   message: {
@@ -31590,39 +31081,6 @@ var attributes = _objectSpread(_objectSpread({
   messagePosition: {
     type: 'string',
     "default": 'top'
-  },
-  messageTypo: {
-    type: 'object',
-    "default": {
-      openTypography: 1,
-      size: {
-        md: 20,
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-content'
-    }]
-  },
-  messageSpacingTop: {
-    type: 'object',
-    "default": {
-      md: 0,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-content {margin-top: {{messageSpacingTop}};}'
-    }]
-  },
-  messageSpacingBottom: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-content {margin-bottom: {{messageSpacingBottom}};}'
-    }]
   },
   //Avatar
   showAvatar: {
@@ -31645,98 +31103,6 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": ''
   },
-  avatarSize: {
-    type: 'string',
-    "default": '64px',
-    style: [{
-      condition: [{
-        key: 'avatarSize',
-        relation: '!=',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar { width: {{avatarSize}}; height: {{avatarSize}}; font-size: {{avatarSize}}; }'
-    }]
-  },
-  avatarWidth: {
-    type: 'object',
-    "default": {
-      md: 120,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'avatarSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {width: {{avatarWidth}}; font-size: {{avatarWidth}};}'
-    }]
-  },
-  avatarHeight: {
-    type: 'object',
-    "default": {
-      md: 120,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'avatarSize',
-        relation: '==',
-        value: 'custom'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {height: {{avatarHeight}};}'
-    }]
-  },
-  avatarSpacing: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'avatarLayout',
-        relation: '==',
-        value: 'left'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-right: {{avatarSpacing}};}'
-    }, {
-      condition: [{
-        key: 'avatarLayout',
-        relation: '==',
-        value: 'right'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-left: {{avatarSpacing}};}'
-    }, {
-      condition: [{
-        key: 'avatarLayout',
-        relation: '==',
-        value: 'top'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-bottom: {{avatarSpacing}};}'
-    }, {
-      condition: [{
-        key: 'avatarLayout',
-        relation: '==',
-        value: 'bottom'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-avatar {margin-top: {{avatarSpacing}};}'
-    }]
-  },
-  avatarBorderRadius: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'global',
-      global: {
-        md: 100
-      },
-      unit: '%'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-testimonial-avatar'
-    }]
-  },
   avatarBorder: {
     type: 'object',
     "default": {},
@@ -31753,63 +31119,6 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": 'top'
   },
-  quoteIconSize: {
-    type: 'object',
-    "default": {
-      md: 48,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'quoteIcon',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-quote-icon {font-size: {{quoteIconSize}};}'
-    }]
-  },
-  quoteIconColor: {
-    type: 'string',
-    "default": '#E2E2E2',
-    style: [{
-      condition: [{
-        key: 'quoteIcon',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-quote-icon {color: {{quoteIconColor}};}'
-    }]
-  },
-  quoteIconSpacing: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: '1'
-      }, {
-        key: 'quoteIcon',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-quote {margin-bottom: {{quoteIconSpacing}};}'
-    }, {
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: '2'
-      }, {
-        key: 'quoteIcon',
-        relation: '!=',
-        value: ''
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-quote {margin-top: {{quoteIconSpacing}};}'
-    }]
-  },
   //Ratings
   showRatings: {
     type: 'boolean',
@@ -31823,126 +31132,7 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": 'bottom'
   },
-  ratingsColor: {
-    type: 'string',
-    "default": '#FFB800',
-    style: [{
-      condition: [{
-        key: 'ratings',
-        relation: '!=',
-        value: '0'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-ratings:before {color: {{ratingsColor}};} {{WPRIG}} .wprig-testimonial-ratings {color: {{ratingsColor}};}'
-    }]
-  },
-  starsSize: {
-    type: 'object',
-    "default": {
-      md: 20,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'ratings',
-        relation: '!=',
-        value: '0'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-ratings {font-size:{{starsSize}};}'
-    }]
-  },
-  ratingsSpacing: {
-    type: 'object',
-    "default": {
-      md: 30,
-      unit: 'px'
-    },
-    style: [{
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: '1'
-      }, {
-        key: 'ratings',
-        relation: '!=',
-        value: '0'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-ratings {margin-bottom: {{ratingsSpacing}};}'
-    }, {
-      condition: [{
-        key: 'layout',
-        relation: '==',
-        value: '2'
-      }, {
-        key: 'ratings',
-        relation: '!=',
-        value: '0'
-      }],
-      selector: '{{WPRIG}} .wprig-testimonial-ratings {margin-top: {{ratingsSpacing}};}'
-    }]
-  },
   // Design
-  bgPadding: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial'
-    }]
-  },
-  textColor: {
-    type: 'string',
-    "default": '',
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial { color:{{textColor}}; }'
-    }]
-  },
-  bgColor: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial'
-    }]
-  },
-  bgBorderRadius: {
-    type: 'object',
-    "default": {
-      openBorderRadius: 1,
-      radiusType: 'global'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial'
-    }]
-  },
-  border: {
-    type: 'object',
-    "default": {
-      openTy: 0,
-      color: '#3373dc',
-      width: {
-        bottom: '1',
-        left: '1',
-        right: '1',
-        top: '1',
-        unit: 'px'
-      }
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial'
-    }]
-  },
-  boxShadow: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial'
-    }]
-  },
-  boxShadowHover: {
-    type: 'object',
-    "default": {},
-    style: [{
-      selector: '{{WPRIG}} .wprig-block-testimonial:hover'
-    }]
-  },
   sourceOfCopiedStyle: {
     type: 'boolean',
     "default": false
