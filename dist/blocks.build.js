@@ -7205,6 +7205,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/contact-form/style.scss":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/contact-form/style.scss ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".wprig-block-contact-form .wprig-form {\n  display: flex;\n  flex-wrap: wrap; }\n  .wprig-block-contact-form .wprig-form .wprig-form-group {\n    position: relative; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-group-inner {\n      text-align: left; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-label {\n      margin: 0;\n      line-height: 1; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-control {\n      display: block;\n      width: 100%;\n      background-clip: padding-box;\n      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }\n      .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-control.is-small {\n        padding: 6px 8px; }\n      .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-control.is-medium {\n        padding: 8.5px 12px; }\n      .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-control.is-large {\n        padding: 14.5px 16px; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group textarea.wprig-form-control {\n      resize: none; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-form-control:focus {\n      outline: 0; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group p.wprig-form-required-field {\n      font-size: 14px;\n      color: red;\n      margin: 0; }\n    .wprig-block-contact-form .wprig-form .wprig-form-group .wprig-block-btn-anchor:hover {\n      background-color: transparent; }\n\n.wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-group-inner {\n  position: relative; }\n\n.wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-label {\n  position: absolute;\n  pointer-events: none;\n  top: 0px;\n  transition: 0.2s ease all; }\n\n.wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control {\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  background: none; }\n  .wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control:focus, .wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control:valid {\n    outline: none;\n    color: #333; }\n  .wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control::placeholder {\n    opacity: 0;\n    transition: 400ms; }\n  .wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control:focus::placeholder {\n    opacity: 1; }\n\n.wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control:focus ~ .wprig-form-label,\n.wprig-block-contact-form.wprig-layout-material .wprig-form .wprig-form-group .wprig-form-control:valid ~ .wprig-form-label {\n  top: -20px; }\n\n.api-notice {\n  margin: 0 0 15px;\n  background: rgba(0, 255, 55, 0.15);\n  padding: 8px 12px;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  border-radius: 5px;\n  line-height: 1.6; }\n  .api-notice.warning {\n    background: rgba(229, 195, 52, 0.25); }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss":
 /*!********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/divider/style.scss ***!
@@ -10095,31 +10113,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_advance_heading_block__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/advance-heading/block */ "./src/blocks/advance-heading/block.js");
 /* harmony import */ var _blocks_advance_list_block__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/advance-list/block */ "./src/blocks/advance-list/block.js");
 /* harmony import */ var _blocks_animated_headline_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/animated-headline/block */ "./src/blocks/animated-headline/block.js");
-/* harmony import */ var _blocks_counter_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/counter/block */ "./src/blocks/counter/block.js");
-/* harmony import */ var _blocks_divider_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/divider/block */ "./src/blocks/divider/block.js");
-/* harmony import */ var _blocks_info_box_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/info-box/block */ "./src/blocks/info-box/block.js");
-/* harmony import */ var _blocks_map_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/map/block */ "./src/blocks/map/block.js");
-/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
-/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
-/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
-/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
-/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
-/* harmony import */ var _blocks_tabs_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/tabs/block */ "./src/blocks/tabs/block.js");
-/* harmony import */ var _blocks_tabs_tab_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/tabs/tab/block */ "./src/blocks/tabs/tab/block.js");
-/* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
-/* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
-/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
-/* harmony import */ var _blocks_flipbox_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/flipbox/block */ "./src/blocks/flipbox/block.js");
-/* harmony import */ var _blocks_flipbox_face_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/flipbox/face/block */ "./src/blocks/flipbox/face/block.js");
-/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
-/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
-/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
-/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
-/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
-/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
-/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
+/* harmony import */ var _blocks_contact_form_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/contact-form/block */ "./src/blocks/contact-form/block.js");
+/* harmony import */ var _blocks_counter_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/counter/block */ "./src/blocks/counter/block.js");
+/* harmony import */ var _blocks_divider_block__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/divider/block */ "./src/blocks/divider/block.js");
+/* harmony import */ var _blocks_info_box_block__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/info-box/block */ "./src/blocks/info-box/block.js");
+/* harmony import */ var _blocks_map_block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/map/block */ "./src/blocks/map/block.js");
+/* harmony import */ var _blocks_post_grid_block__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/post-grid/block */ "./src/blocks/post-grid/block.js");
+/* harmony import */ var _blocks_product_grid_block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/product-grid/block */ "./src/blocks/product-grid/block.js");
+/* harmony import */ var _blocks_product_carousel_block__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/product-carousel/block */ "./src/blocks/product-carousel/block.js");
+/* harmony import */ var _blocks_tm_product_carousel_block__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/tm-product-carousel/block */ "./src/blocks/tm-product-carousel/block.js");
+/* harmony import */ var _blocks_sb_product_carousel_block__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/sb-product-carousel/block */ "./src/blocks/sb-product-carousel/block.js");
+/* harmony import */ var _blocks_tabs_block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/tabs/block */ "./src/blocks/tabs/block.js");
+/* harmony import */ var _blocks_tabs_tab_block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/tabs/tab/block */ "./src/blocks/tabs/tab/block.js");
+/* harmony import */ var _blocks_team_block__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/team/block */ "./src/blocks/team/block.js");
+/* harmony import */ var _blocks_testimonial_block__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/testimonial/block */ "./src/blocks/testimonial/block.js");
+/* harmony import */ var _blocks_image_grid_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/image-grid/block */ "./src/blocks/image-grid/block.js");
+/* harmony import */ var _blocks_flipbox_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/flipbox/block */ "./src/blocks/flipbox/block.js");
+/* harmony import */ var _blocks_flipbox_face_block__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/flipbox/face/block */ "./src/blocks/flipbox/face/block.js");
+/* harmony import */ var _blocks_highlight_box_block__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/highlight-box/block */ "./src/blocks/highlight-box/block.js");
+/* harmony import */ var _blocks_highlight_box_face_block__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/highlight-box/face/block */ "./src/blocks/highlight-box/face/block.js");
+/* harmony import */ var _blocks_ihover_block__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/ihover/block */ "./src/blocks/ihover/block.js");
+/* harmony import */ var _blocks_ihover_face_block__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/ihover/face/block */ "./src/blocks/ihover/face/block.js");
+/* harmony import */ var _blocks_interactive_banner_block__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/interactive-banner/block */ "./src/blocks/interactive-banner/block.js");
+/* harmony import */ var _plugins__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./plugins */ "./src/plugins/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./blocks/pagesettings */ "./src/blocks/pagesettings/index.js");
+/* harmony import */ var _blocks_pagesettings__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_blocks_pagesettings__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _helpers_parse_css__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./helpers/parse-css */ "./src/helpers/parse-css.js");
 /**
  * WPRIG Gutenberg Blocks
  *
@@ -10138,7 +10157,7 @@ __webpack_require__.r(__webpack_exports__);
 
  // import "./blocks/button/block";
 // import "./blocks/buttongroup/block";
-// import "./blocks/contact-form/block";
+
 
 
  // import "./blocks/icon/block";
@@ -10218,7 +10237,7 @@ wp.data.subscribe(function () {
   if (isPreviewingPost() || isPublishingPost() || isSavingPost() && !isAutosavingPost()) {
     if (window.bindCss === false) {
       setTimeout(function () {
-        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_28__["default"])(isPreviewingPost() ? false : true);
+        Object(_helpers_parse_css__WEBPACK_IMPORTED_MODULE_29__["default"])(isPreviewingPost() ? false : true);
       }, 600);
     }
   }
@@ -13412,6 +13431,1873 @@ registerBlockType('wprig/animatedheadline', {
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/animated-headline/style.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/blocks/contact-form/Edit.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/contact-form/Edit.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/icons */ "./src/helpers/icons.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+/* eslint-disable react/react-in-jsx-scope */
+var __ = wp.i18n.__;
+var _wp$blockEditor = wp.blockEditor,
+    InspectorControls = _wp$blockEditor.InspectorControls,
+    BlockControls = _wp$blockEditor.BlockControls;
+var _wp$element = wp.element,
+    Component = _wp$element.Component,
+    Fragment = _wp$element.Fragment,
+    createRef = _wp$element.createRef;
+var _wp$components = wp.components,
+    PanelBody = _wp$components.PanelBody,
+    TextControl = _wp$components.TextControl,
+    TextareaControl = _wp$components.TextareaControl,
+    Toolbar = _wp$components.Toolbar,
+    Button = _wp$components.Button,
+    Notice = _wp$components.Notice;
+var _wp$wprigComponents = wp.wprigComponents,
+    Styles = _wp$wprigComponents.Styles,
+    Range = _wp$wprigComponents.Range,
+    Toggle = _wp$wprigComponents.Toggle,
+    Typography = _wp$wprigComponents.Typography,
+    Color = _wp$wprigComponents.Color,
+    Tabs = _wp$wprigComponents.Tabs,
+    Tab = _wp$wprigComponents.Tab,
+    Border = _wp$wprigComponents.Border,
+    RadioAdvanced = _wp$wprigComponents.RadioAdvanced,
+    wprigButtonEdit = _wp$wprigComponents.wprigButtonEdit,
+    BorderRadius = _wp$wprigComponents.BorderRadius,
+    Separator = _wp$wprigComponents.Separator,
+    _wp$wprigComponents$g = _wp$wprigComponents.globalSettings,
+    globalSettingsPanel = _wp$wprigComponents$g.globalSettingsPanel,
+    animationSettings = _wp$wprigComponents$g.animationSettings,
+    InlineToolbar = _wp$wprigComponents.Inline.InlineToolbar,
+    buttonSettings = _wp$wprigComponents.wprigButton.buttonSettings,
+    _wp$wprigComponents$C = _wp$wprigComponents.ContextMenu,
+    ContextMenu = _wp$wprigComponents$C.ContextMenu,
+    handleContextMenu = _wp$wprigComponents$C.handleContextMenu,
+    withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
+    InspectorTabs = _wp$wprigComponents.InspectorTabs,
+    InspectorTab = _wp$wprigComponents.InspectorTab;
+
+
+var Edit = /*#__PURE__*/function (_Component) {
+  _inherits(Edit, _Component);
+
+  var _super = _createSuper(Edit);
+
+  function Edit(props) {
+    var _this;
+
+    _classCallCheck(this, Edit);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      device: 'md',
+      spacer: true,
+      selectedItem: -1,
+      saved_globally: false
+    };
+    _this._saveGlobally = _this._saveGlobally.bind(_assertThisInitialized(_this));
+    _this.wprigContextMenu = createRef();
+    return _this;
+  }
+
+  _createClass(Edit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props = this.props,
+          setAttributes = _this$props.setAttributes,
+          clientId = _this$props.clientId,
+          _this$props$attribute = _this$props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          reCaptchaSiteKey = _this$props$attribute.reCaptchaSiteKey,
+          reCaptchaSecretKey = _this$props$attribute.reCaptchaSecretKey;
+
+      var _client = clientId.substr(0, 6);
+
+      if (!uniqueId) {
+        setAttributes({
+          uniqueId: _client
+        });
+      } else if (uniqueId && uniqueId != _client) {
+        setAttributes({
+          uniqueId: _client
+        });
+      }
+
+      if (wprig_admin.wprig_recaptcha_site_key) {
+        setAttributes({
+          reCaptchaSiteKey: wprig_admin.wprig_recaptcha_site_key
+        });
+      }
+
+      if (wprig_admin.wprig_recaptcha_secret_key) {
+        setAttributes({
+          reCaptchaSecretKey: wprig_admin.wprig_recaptcha_secret_key
+        });
+      }
+    }
+  }, {
+    key: "_saveGlobally",
+    value: function () {
+      var _saveGlobally2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(siteKey, secretKey) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                if (!(!siteKey || !secretKey)) {
+                  _context.next = 2;
+                  break;
+                }
+
+                return _context.abrupt("return");
+
+              case 2:
+                _context.prev = 2;
+                _context.next = 5;
+                return wp.apiFetch({
+                  path: 'wprig/v1/add_wprig_options',
+                  method: 'POST',
+                  data: {
+                    key: 'wprig_recaptcha_site_key',
+                    value: siteKey
+                  }
+                });
+
+              case 5:
+                _context.next = 7;
+                return wp.apiFetch({
+                  path: 'wprig/v1/add_wprig_options',
+                  method: 'POST',
+                  data: {
+                    key: 'wprig_recaptcha_secret_key',
+                    value: secretKey
+                  }
+                });
+
+              case 7:
+                this.setState({
+                  saved_globally: true
+                });
+                _context.next = 13;
+                break;
+
+              case 10:
+                _context.prev = 10;
+                _context.t0 = _context["catch"](2);
+                console.log(_context.t0);
+
+              case 13:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[2, 10]]);
+      }));
+
+      function _saveGlobally(_x, _x2) {
+        return _saveGlobally2.apply(this, arguments);
+      }
+
+      return _saveGlobally;
+    }()
+  }, {
+    key: "setSettings",
+    value: function setSettings(type, val) {
+      var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1;
+      var selectedItem = index !== -1 ? index : this.state.selectedItem;
+      var _this$props2 = this.props,
+          attributes = _this$props2.attributes,
+          setAttributes = _this$props2.setAttributes;
+
+      var formItems = _toConsumableArray(attributes.formItems);
+
+      formItems[selectedItem][type] = val;
+      setAttributes({
+        formItems: formItems
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          selectedItem = _this$state.selectedItem,
+          device = _this$state.device;
+      var _this$props3 = this.props,
+          name = _this$props3.name,
+          clientId = _this$props3.clientId,
+          attributes = _this$props3.attributes,
+          setAttributes = _this$props3.setAttributes;
+      var uniqueId = attributes.uniqueId,
+          className = attributes.className,
+          formItems = attributes.formItems,
+          labelTypography = attributes.labelTypography,
+          labelColor = attributes.labelColor,
+          labelColorFocus = attributes.labelColorFocus,
+          inputTypography = attributes.inputTypography,
+          inputColor = attributes.inputColor,
+          inputColorFocus = attributes.inputColorFocus,
+          inputColorHover = attributes.inputColorHover,
+          inputBg = attributes.inputBg,
+          inputBgFocus = attributes.inputBgFocus,
+          inputBgHover = attributes.inputBgHover,
+          inputBorder = attributes.inputBorder,
+          inputBorderMaterial = attributes.inputBorderMaterial,
+          inputBorderColorFocus = attributes.inputBorderColorFocus,
+          inputBorderColorHover = attributes.inputBorderColorHover,
+          inputBorderRadius = attributes.inputBorderRadius,
+          inputSize = attributes.inputSize,
+          inputPaddingX = attributes.inputPaddingX,
+          inputPaddingY = attributes.inputPaddingY,
+          textareaHeight = attributes.textareaHeight,
+          placeholderColor = attributes.placeholderColor,
+          placeholderColorFocus = attributes.placeholderColorFocus,
+          placeholderColorHover = attributes.placeholderColorHover,
+          enableButton = attributes.enableButton,
+          buttonTag = attributes.buttonTag,
+          buttonSize = attributes.buttonSize,
+          buttonFillType = attributes.buttonFillType,
+          buttonText = attributes.buttonText,
+          buttonIconName = attributes.buttonIconName,
+          buttonIconPosition = attributes.buttonIconPosition,
+          spacing = attributes.spacing,
+          gutter = attributes.gutter,
+          fieldErrorMessage = attributes.fieldErrorMessage,
+          formSuccessMessage = attributes.formSuccessMessage,
+          formErrorMessage = attributes.formErrorMessage,
+          reCaptcha = attributes.reCaptcha,
+          reCaptchaSiteKey = attributes.reCaptchaSiteKey,
+          reCaptchaSecretKey = attributes.reCaptchaSecretKey,
+          emailReceiver = attributes.emailReceiver,
+          emailHeaders = attributes.emailHeaders,
+          emailFrom = attributes.emailFrom,
+          emailSubject = attributes.emailSubject,
+          emailBody = attributes.emailBody,
+          layout = attributes.layout,
+          animation = attributes.animation,
+          enablePosition = attributes.enablePosition,
+          selectPosition = attributes.selectPosition,
+          positionXaxis = attributes.positionXaxis,
+          positionYaxis = attributes.positionYaxis,
+          globalZindex = attributes.globalZindex,
+          hideTablet = attributes.hideTablet,
+          hideMobile = attributes.hideMobile,
+          globalCss = attributes.globalCss;
+      var setting_url = wprig_admin.admin_url + 'admin.php?page=wprig-settings';
+      return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(InspectorControls, {
+        key: "inspector"
+      }, /*#__PURE__*/React.createElement(InspectorTabs, {
+        tabs: ['style', 'advance']
+      }, /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'style'
+      }, /*#__PURE__*/React.createElement(PanelBody, {
+        title: __(''),
+        initialOpen: true
+      }, /*#__PURE__*/React.createElement(Styles, {
+        value: layout,
+        onChange: function onChange(val) {
+          return setAttributes({
+            layout: val
+          });
+        },
+        options: [{
+          value: 'classic',
+          img: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].form_classic,
+          label: __('Classic')
+        }, {
+          value: 'material',
+          img: _helpers_icons__WEBPACK_IMPORTED_MODULE_0__["default"].form_material,
+          label: __('Material')
+        }]
+      })), selectedItem >= 0 && /*#__PURE__*/React.createElement(PanelBody, {
+        title: formItems[selectedItem].label ? formItems[selectedItem].label : __('Input Settings')
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Label'),
+        value: formItems[selectedItem].label,
+        onChange: function onChange(val) {
+          return _this2.setSettings('label', val);
+        },
+        placeholder: __('Enter Label')
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Name'),
+        value: formItems[selectedItem].name,
+        onChange: function onChange(val) {
+          return _this2.setSettings('name', val);
+        },
+        placeholder: __('Enter Name'),
+        help: __('You must write field name with hyphen(-) with lowercase. No space, UPPERCASE, Capitalize is not allowed. This name should match with Form template value. Never keep empty this name.')
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Placeholder'),
+        value: formItems[selectedItem].placeholder,
+        onChange: function onChange(val) {
+          return _this2.setSettings('placeholder', val);
+        },
+        placeholder: __('Enter Placeholder')
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Width'),
+        value: formItems[selectedItem].width,
+        onChange: function onChange(val) {
+          return _this2.setSettings('width', val);
+        },
+        max: 100,
+        min: 33,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Required'),
+        value: formItems[selectedItem].required,
+        onChange: function onChange(val) {
+          return _this2.setSettings('required', val);
+        }
+      }), layout == 'classic' && /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Hide Label'),
+        value: formItems[selectedItem].hideLabel,
+        onChange: function onChange(val) {
+          return _this2.setSettings('hideLabel', val);
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Label'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: labelTypography,
+        onChange: function onChange(val) {
+          return setAttributes({
+            labelTypography: val
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: labelColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            labelColor: val
+          });
+        }
+      }), layout == 'material' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Focus Color'),
+        value: labelColorFocus,
+        onChange: function onChange(val) {
+          return setAttributes({
+            labelColorFocus: val
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Input'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(RadioAdvanced, {
+        label: __('Input Size'),
+        options: [{
+          label: 'S',
+          value: 'small',
+          title: 'Small'
+        }, {
+          label: 'M',
+          value: 'medium',
+          title: 'Medium'
+        }, {
+          label: 'L',
+          value: 'large',
+          title: 'Large'
+        }, {
+          icon: 'fas fa-cog',
+          value: 'custom',
+          title: 'Custom'
+        }],
+        value: inputSize,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputSize: value
+          });
+        }
+      }), inputSize == 'custom' && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Range, {
+        label: /*#__PURE__*/React.createElement("span", {
+          className: "dashicons dashicons-sort",
+          title: "Padding Y"
+        }),
+        value: inputPaddingY,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputPaddingY: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 50,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), layout == 'classic' && /*#__PURE__*/React.createElement(Range, {
+        label: /*#__PURE__*/React.createElement("span", {
+          className: "dashicons dashicons-leftright",
+          title: "X Padding"
+        }),
+        value: inputPaddingX,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputPaddingX: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 50,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null)), /*#__PURE__*/React.createElement(Range, {
+        label: __('Textarea Height'),
+        value: textareaHeight,
+        onChange: function onChange(value) {
+          return setAttributes({
+            textareaHeight: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 100,
+        max: 500,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Spacing'),
+        value: spacing,
+        onChange: function onChange(value) {
+          return setAttributes({
+            spacing: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 60,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Range, {
+        label: __('Gutter'),
+        value: gutter,
+        onChange: function onChange(value) {
+          return setAttributes({
+            gutter: value
+          });
+        },
+        unit: ['px', 'em', '%'],
+        min: 0,
+        max: 60,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Normal')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: inputColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputColor: val
+          });
+        }
+      }), layout == 'classic' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: inputBg,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputBg: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Placeholder Color'),
+        value: placeholderColor,
+        onChange: function onChange(val) {
+          return setAttributes({
+            placeholderColor: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Separator, null), layout == 'classic' && /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: inputBorder,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputBorder: val
+          });
+        },
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), layout == 'material' && /*#__PURE__*/React.createElement(Border, {
+        label: __('Border'),
+        value: inputBorderMaterial,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputBorderMaterial: val
+          });
+        },
+        min: 0,
+        max: 10,
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Focus')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: inputColorFocus,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputColorFocus: val
+          });
+        }
+      }), layout == 'classic' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: inputBgFocus,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputBgFocus: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Placeholder Color'),
+        value: placeholderColorFocus,
+        onChange: function onChange(val) {
+          return setAttributes({
+            placeholderColorFocus: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: inputBorderColorFocus,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputBorderColorFocus: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Hover')
+      }, /*#__PURE__*/React.createElement(Color, {
+        label: __('Color'),
+        value: inputColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputColorHover: val
+          });
+        }
+      }), layout == 'classic' && /*#__PURE__*/React.createElement(Color, {
+        label: __('Background Color'),
+        value: inputBgHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputBgHover: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Placeholder Color'),
+        value: placeholderColorHover,
+        onChange: function onChange(val) {
+          return setAttributes({
+            placeholderColorHover: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Color, {
+        label: __('Border Color'),
+        value: inputBorderColorHover,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputBorderColorHover: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement(BorderRadius, {
+        label: __('Radius'),
+        value: inputBorderRadius,
+        onChange: function onChange(value) {
+          return setAttributes({
+            inputBorderRadius: value
+          });
+        },
+        min: 0,
+        max: 100,
+        unit: ['px', 'em', '%'],
+        responsive: true,
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      }), /*#__PURE__*/React.createElement(Typography, {
+        label: __('Typography'),
+        value: inputTypography,
+        onChange: function onChange(val) {
+          return setAttributes({
+            inputTypography: val
+          });
+        },
+        device: device,
+        onDeviceChange: function onDeviceChange(value) {
+          return _this2.setState({
+            device: value
+          });
+        }
+      })), /*#__PURE__*/React.createElement(PanelBody, {
+        title: __('Settings'),
+        initialOpen: false
+      }, /*#__PURE__*/React.createElement(Tabs, null, /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Form')
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Required Field Error Message'),
+        value: fieldErrorMessage,
+        onChange: function onChange(val) {
+          return setAttributes({
+            fieldErrorMessage: val
+          });
+        },
+        help: __('Set required field error message here. Leave blank for default message.')
+      }), /*#__PURE__*/React.createElement(TextareaControl, {
+        label: __('Form Submit Success Message'),
+        value: formSuccessMessage,
+        onChange: function onChange(val) {
+          return setAttributes({
+            formSuccessMessage: val
+          });
+        },
+        help: __('Set your desired message after successful form submission. Leave blank for default.')
+      }), /*#__PURE__*/React.createElement(TextareaControl, {
+        label: __('Form Submit Failed Message'),
+        value: formErrorMessage,
+        onChange: function onChange(val) {
+          return setAttributes({
+            formErrorMessage: val
+          });
+        },
+        help: __('Set your desired message for form submission error. Leave blank for default.')
+      }), /*#__PURE__*/React.createElement(Toggle, {
+        label: __('Enable reCAPTCHA'),
+        value: reCaptcha,
+        onChange: function onChange(val) {
+          return setAttributes({
+            reCaptcha: val
+          });
+        }
+      }), reCaptcha && (wprig_admin.wprig_recaptcha_site_key && wprig_admin.wprig_recaptcha_site_key || this.state.saved_globally ? /*#__PURE__*/React.createElement("div", {
+        className: "api-notice"
+      }, __('reCaptcha keys added successfully'), ", ", /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
+        href: setting_url
+      }, __('Edit keys here'))) : reCaptchaSiteKey && reCaptchaSecretKey ? /*#__PURE__*/React.createElement("div", {
+        className: "recaptcha-keys"
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Site Key '),
+        value: reCaptchaSiteKey,
+        onChange: function onChange(val) {
+          return setAttributes({
+            reCaptchaSiteKey: val
+          });
+        },
+        placeholder: __('Enter Google Site Key')
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Secret Key '),
+        value: reCaptchaSecretKey,
+        onChange: function onChange(val) {
+          return setAttributes({
+            reCaptchaSecretKey: val
+          });
+        },
+        placeholder: __('Enter Google Secret Key')
+      }), /*#__PURE__*/React.createElement(Button, {
+        isPrimary: true,
+        onClick: function onClick() {
+          return _this2._saveGlobally(reCaptchaSiteKey, reCaptchaSecretKey);
+        }
+      }, __('Set globally'))) : /*#__PURE__*/React.createElement("div", {
+        className: "api-notice warning"
+      }, __('reCaptcha requires site key & secret key'), ", ", /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
+        href: setting_url
+      }, __('Add keys here'))))), /*#__PURE__*/React.createElement(Tab, {
+        tabTitle: __('Email')
+      }, /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Recipient Email'),
+        value: emailReceiver,
+        onChange: function onChange(val) {
+          return setAttributes({
+            emailReceiver: val
+          });
+        },
+        placeholder: __('Enter Recipient Email'),
+        help: __('Enter the recipient email address. This field is mandatory. Without a recipient email, contact form will not work.')
+      }), /*#__PURE__*/React.createElement(TextareaControl, {
+        label: __('Email Headers'),
+        value: emailHeaders,
+        onChange: function onChange(val) {
+          return setAttributes({
+            emailHeaders: val
+          });
+        }
+      }), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('From Email'),
+        value: emailFrom,
+        onChange: function onChange(val) {
+          return setAttributes({
+            emailFrom: val
+          });
+        },
+        placeholder: __('Your Name: admin@example.com')
+      }), /*#__PURE__*/React.createElement(Notice, {
+        status: "warning",
+        isDismissible: false
+      }, __("Please use your site's email, to avoid any error."), /*#__PURE__*/React.createElement("br", null), __("if your site is example.com, the email should be anything@example.com")), /*#__PURE__*/React.createElement(TextControl, {
+        label: __('Subject'),
+        value: emailSubject,
+        onChange: function onChange(val) {
+          return setAttributes({
+            emailSubject: val
+          });
+        },
+        placeholder: __('Enter Subject')
+      }), /*#__PURE__*/React.createElement(TextareaControl, {
+        label: __('Email Body'),
+        value: emailBody,
+        onChange: function onChange(val) {
+          return setAttributes({
+            emailBody: val
+          });
+        },
+        help: __('Set your form email body here. In editor don\'t add any CSS style or others option just add your form field name between double curly braces {{field-name}} as you set in \'Field Name\'.')
+      })))), buttonSettings(this.props.attributes, device, function (key, value) {
+        setAttributes(_defineProperty({}, key, value));
+      }, function (key, value) {
+        _this2.setState(_defineProperty({}, key, value));
+      })), /*#__PURE__*/React.createElement(InspectorTab, {
+        key: 'advance'
+      }, animationSettings(uniqueId, animation, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
+        data: [{
+          name: 'InlineSpacer',
+          key: 'spacer',
+          responsive: true,
+          unit: ['px', 'em', '%']
+        }]
+      }, this.props, {
+        prevState: this.state
+      })))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-".concat(uniqueId).concat(className ? " ".concat(className) : '')
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-contact-form wprig-layout-".concat(layout),
+        onContextMenu: function onContextMenu(event) {
+          return handleContextMenu(event, _this2.wprigContextMenu.current);
+        }
+      }, /*#__PURE__*/React.createElement("form", {
+        className: "wprig-form"
+      }, formItems.map(function (item, index) {
+        return /*#__PURE__*/React.createElement("div", {
+          key: index,
+          className: "wprig-form-group wprig-form-group-index-".concat(index),
+          style: {
+            width: "".concat(item.width.md, "%")
+          }
+        }, /*#__PURE__*/React.createElement("div", {
+          className: "wprig-form-group-inner"
+        }, !item.hideLabel && layout == 'classic' && /*#__PURE__*/React.createElement("label", {
+          className: "wprig-form-label"
+        }, /*#__PURE__*/React.createElement("span", {
+          contenteditable: "true",
+          onBlur: function onBlur(e) {
+            return _this2.setSettings('label', e.target.innerText, index);
+          }
+        }, __(item.label), " "), " ", item.required && '*'), (item.type == 'text' || item.type == 'email') && /*#__PURE__*/React.createElement("input", {
+          className: "wprig-form-control is-".concat(inputSize),
+          type: item.type,
+          placeholder: __(item.placeholder),
+          required: item.required,
+          onClick: function onClick() {
+            return _this2.setState({
+              selectedItem: index
+            });
+          }
+        }), item.type == 'textarea' && /*#__PURE__*/React.createElement("textarea", {
+          className: "wprig-form-control",
+          placeholder: __(item.placeholder),
+          required: item.required,
+          onClick: function onClick() {
+            return _this2.setState({
+              selectedItem: index
+            });
+          }
+        }), layout == 'material' && /*#__PURE__*/React.createElement("label", {
+          className: "wprig-form-label"
+        }, /*#__PURE__*/React.createElement("span", {
+          contenteditable: "true",
+          onBlur: function onBlur(e) {
+            return _this2.setSettings('label', e.target.innerText, index);
+          }
+        }, __(item.label), " "), " ", item.required && '*')));
+      }), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group",
+        style: {
+          width: '100%'
+        }
+      }, /*#__PURE__*/React.createElement("wprigButtonEdit", {
+        enableButton: enableButton,
+        buttonFillType: buttonFillType,
+        buttonSize: buttonSize,
+        buttonText: buttonText,
+        buttonIconName: buttonIconName,
+        buttonIconPosition: buttonIconPosition,
+        buttonTag: buttonTag,
+        onTextChange: function onTextChange(value) {
+          return setAttributes({
+            buttonText: value
+          });
+        }
+      }))), /*#__PURE__*/React.createElement("div", {
+        ref: this.wprigContextMenu,
+        className: 'wprig-context-menu-wraper'
+      }, /*#__PURE__*/React.createElement(ContextMenu, {
+        name: name,
+        clientId: clientId,
+        attributes: attributes,
+        setAttributes: setAttributes,
+        wprigContextMenu: this.wprigContextMenu.current
+      })))));
+    }
+  }]);
+
+  return Edit;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (withCSSGenerator()(Edit));
+
+/***/ }),
+
+/***/ "./src/blocks/contact-form/Save.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/contact-form/Save.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var __ = wp.i18n.__;
+var Component = wp.element.Component;
+var wprigButtonSave = wp.wprigComponents.wprigButtonSave;
+var animationAttr = wp.wprigComponents.HelperFunction.animationAttr;
+
+var Save = /*#__PURE__*/function (_Component) {
+  _inherits(Save, _Component);
+
+  var _super = _createSuper(Save);
+
+  function Save() {
+    _classCallCheck(this, Save);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Save, [{
+    key: "_encrypt",
+    value: function _encrypt(str) {
+      return window.btoa(unescape(encodeURIComponent(str)));
+    }
+  }, {
+    key: "_renderField",
+    value: function _renderField(item, index, inputSize) {
+      var fieldID = "wprig-form-input-".concat(index);
+      var fieldName = "wprig-form-input[".concat(item.name).concat(item.required ? '*' : '', "]");
+      var fieldClass = "wprig-form-control is-".concat(inputSize);
+
+      switch (item.type) {
+        case 'text':
+        case 'email':
+          return /*#__PURE__*/React.createElement("input", {
+            id: fieldID,
+            name: fieldName,
+            className: fieldClass,
+            type: item.type,
+            placeholder: __(item.placeholder),
+            required: item.required
+          });
+
+        case 'textarea':
+          return /*#__PURE__*/React.createElement("textarea", {
+            id: fieldID,
+            name: fieldName,
+            className: fieldClass,
+            placeholder: __(item.placeholder),
+            required: item.required
+          });
+
+        default:
+          return '';
+      }
+    }
+  }, {
+    key: "_renderFormGroupCss",
+    value: function _renderFormGroupCss() {
+      var formItems = this.props.attributes.formItems;
+      var formGroupCss = '';
+      formItems.forEach(function (item, index) {
+        formGroupCss += "".concat(item.width.md ? ".wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.md, "% }") : "", "\n                ").concat(item.width.sm ? "@media (max-width: 991px) { .wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.sm, "% } }") : "", "\n                ").concat(item.width.xs ? "@media (max-width: 767px) { .wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.xs, "% } }") : "");
+      });
+      return formGroupCss;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _encrypt = this._encrypt,
+          _renderField = this._renderField;
+      var _this$props$attribute = this.props.attributes,
+          uniqueId = _this$props$attribute.uniqueId,
+          formItems = _this$props$attribute.formItems,
+          inputSize = _this$props$attribute.inputSize,
+          fieldErrorMessage = _this$props$attribute.fieldErrorMessage,
+          formSuccessMessage = _this$props$attribute.formSuccessMessage,
+          formErrorMessage = _this$props$attribute.formErrorMessage,
+          reCaptcha = _this$props$attribute.reCaptcha,
+          reCaptchaSiteKey = _this$props$attribute.reCaptchaSiteKey,
+          reCaptchaSecretKey = _this$props$attribute.reCaptchaSecretKey,
+          emailReceiver = _this$props$attribute.emailReceiver,
+          emailHeaders = _this$props$attribute.emailHeaders,
+          emailFrom = _this$props$attribute.emailFrom,
+          emailSubject = _this$props$attribute.emailSubject,
+          emailBody = _this$props$attribute.emailBody,
+          layout = _this$props$attribute.layout,
+          buttonFillType = _this$props$attribute.buttonFillType,
+          buttonSize = _this$props$attribute.buttonSize,
+          buttonText = _this$props$attribute.buttonText,
+          buttonIconName = _this$props$attribute.buttonIconName,
+          buttonIconPosition = _this$props$attribute.buttonIconPosition,
+          buttonTag = _this$props$attribute.buttonTag,
+          animation = _this$props$attribute.animation;
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("style", null, this._renderFormGroupCss()), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-contact-form wprig-layout-".concat(layout)
+      }, /*#__PURE__*/React.createElement("form", {
+        className: "wprig-form"
+      }, formItems.map(function (item, index) {
+        return /*#__PURE__*/React.createElement("div", {
+          key: index,
+          className: "wprig-form-group wprig-form-group-index-".concat(index)
+        }, /*#__PURE__*/React.createElement("div", {
+          className: "wprig-form-group-inner"
+        }, !item.hideLabel && layout == 'classic' && /*#__PURE__*/React.createElement("label", {
+          "for": "wprig-form-input-".concat(index),
+          className: "wprig-form-label"
+        }, " ", __(item.label), " ", item.required && '*'), _renderField(item, index, inputSize), layout == 'material' && /*#__PURE__*/React.createElement("label", {
+          className: "wprig-form-label"
+        }, " ", __(item.label), " ", item.required && '*')));
+      }), reCaptcha && reCaptchaSiteKey && reCaptchaSecretKey && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-google-recaptcha"
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group",
+        style: {
+          width: '100%'
+        }
+      }, /*#__PURE__*/React.createElement("wprigButtonSave", {
+        buttonFillType: buttonFillType,
+        buttonSize: buttonSize,
+        buttonText: buttonText,
+        buttonIconName: buttonIconName,
+        buttonIconPosition: buttonIconPosition,
+        buttonTag: buttonTag
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "field-error-message",
+        value: _encrypt(fieldErrorMessage)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "form-success-message",
+        value: _encrypt(formSuccessMessage)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "form-error-message",
+        value: _encrypt(formErrorMessage)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha",
+        value: reCaptcha && reCaptchaSiteKey && reCaptchaSecretKey ? 'true' : 'false'
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha-site-key",
+        value: reCaptchaSiteKey
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha-secret-key",
+        value: reCaptchaSecretKey
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-receiver",
+        value: _encrypt(emailReceiver)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-headers",
+        value: _encrypt(emailHeaders)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-from",
+        value: _encrypt(emailFrom)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-subject",
+        value: _encrypt(emailSubject)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-body",
+        value: _encrypt(emailBody)
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group-inner"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-message"
+      }))))));
+    }
+  }]);
+
+  return Save;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Save);
+
+/***/ }),
+
+/***/ "./src/blocks/contact-form/attributes.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/contact-form/attributes.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var _wp$wprigComponents = wp.wprigComponents,
+    globalAttributes = _wp$wprigComponents.globalSettings.globalAttributes,
+    buttonAttributes = _wp$wprigComponents.wprigButton.buttonAttributes;
+var formItems = [{
+  type: 'text',
+  label: 'Full Name',
+  name: 'full-name ',
+  placeholder: 'Full Name',
+  width: {
+    md: 50
+  },
+  required: true,
+  hideLabel: false
+}, {
+  type: 'email',
+  label: 'Email',
+  name: 'email',
+  placeholder: 'Email',
+  width: {
+    md: 50
+  },
+  required: true,
+  hideLabel: false
+}, {
+  type: 'text',
+  label: 'Subject',
+  name: 'subject',
+  placeholder: 'Subject',
+  width: {
+    md: 100
+  },
+  required: true,
+  hideLabel: false
+}, {
+  type: 'textarea',
+  label: 'Message',
+  name: 'message',
+  placeholder: 'Message',
+  width: {
+    md: 100
+  },
+  required: true,
+  hideLabel: false
+}];
+
+var attributes = _objectSpread(_objectSpread(_objectSpread({
+  uniqueId: {
+    type: 'string',
+    "default": ''
+  }
+}, globalAttributes), buttonAttributes), {}, {
+  layout: {
+    type: 'string',
+    "default": 'classic'
+  },
+  useDefaultStyle: {
+    type: 'boolean',
+    "default": true
+  },
+  spacer: {
+    type: 'object',
+    "default": {
+      spaceTop: {
+        md: '10',
+        unit: 'px'
+      },
+      spaceBottom: {
+        md: '10',
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}}'
+    }]
+  },
+  enableButtonAlignment: {
+    type: 'boolean',
+    "default": true
+  },
+  enableButton: {
+    type: 'boolean',
+    "default": true
+  },
+  buttonTag: {
+    type: 'string',
+    "default": 'button'
+  },
+  buttonText: {
+    type: 'string',
+    "default": 'Submit'
+  },
+  formItems: {
+    type: 'array',
+    "default": formItems
+  },
+  spacing: {
+    type: 'object',
+    "default": {
+      md: 30,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-group:not(:last-child) {margin-bottom: {{spacing}};}'
+    }]
+  },
+  gutter: {
+    type: 'object',
+    "default": {
+      md: 30,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-form {margin: 0 calc(-{{gutter}}/2);} {{WPRIG}} .wprig-form .wprig-form-group {padding: 0 calc({{gutter}}/2);}'
+    }]
+  },
+  labelTypography: {
+    type: 'obejct',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 16,
+        unit: 'px'
+      }
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-label'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-label'
+    }]
+  },
+  labelColor: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-label {color: {{labelColor}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-label {color: {{labelColor}};}'
+    }]
+  },
+  labelColorFocus: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form-control:focus ~ .wprig-form-label, {{WPRIG}} .wprig-form-control:valid ~ .wprig-form-label {color: {{labelColorFocus}};}'
+    }]
+  },
+  inputTypography: {
+    type: 'obejct',
+    "default": {
+      openTypography: 1,
+      size: {
+        md: 14,
+        unit: 'px'
+      }
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control, {{WPRIG}} .wprig-form .wprig-form-control::placeholder'
+    }]
+  },
+  inputColor: {
+    type: 'string',
+    "default": '#495057',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control {color: {{inputColor}};}'
+    }]
+  },
+  // inputColorHover: { type: 'string', default: "#495057", style: [{ selector: '{{WPRIG}} .wprig-form .wprig-form-control:Hover {color: {{inputColorHover}};}' }] },
+  inputColorFocus: {
+    type: 'string',
+    "default": '#495057',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:focus {color: {{inputColorFocus}};}'
+    }]
+  },
+  placeholderColor: {
+    type: 'string',
+    "default": '#818181',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control::placeholder {color: {{placeholderColor}};}'
+    }]
+  },
+  placeholderColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control::placeholder:Hover {color: {{placeholderColorHover}};}'
+    }]
+  },
+  placeholderColorFocus: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control::placeholder:focus {color: {{placeholderColorFocus}};}'
+    }]
+  },
+  inputBg: {
+    type: 'string',
+    "default": '#fff',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control {background-color: {{inputBg}};}'
+    }]
+  },
+  inputBgHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:hover {background-color: {{inputBgHover}};}'
+    }]
+  },
+  inputBgFocus: {
+    type: 'string',
+    "default": '#fff',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:focus {background-color: {{inputBgFocus}};}'
+    }]
+  },
+  inputBorder: {
+    type: 'object',
+    "default": {
+      openBorder: 1,
+      type: 'solid',
+      widthType: 'global',
+      global: {
+        md: 1
+      },
+      custom: {
+        md: '1 1 1 1'
+      },
+      color: '#ced4da'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control'
+    }]
+  },
+  inputBorderMaterial: {
+    type: 'object',
+    "default": {
+      openBorder: 1,
+      type: 'solid',
+      widthType: 'custom',
+      custom: {
+        md: '0 0 2 0'
+      },
+      color: '#ced4da'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control'
+    }]
+  },
+  inputBorderColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:hover {border-color: {{inputBorderColorHover}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:hover {border-bottom-color: {{inputBorderColorHover}};}'
+    }]
+  },
+  inputBorderColorFocus: {
+    type: 'string',
+    "default": 'var(--wprig-color-1)',
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:focus {border-color: {{inputBorderColorFocus}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:focus {border-bottom-color: {{inputBorderColorFocus}};}'
+    }]
+  },
+  inputColorHover: {
+    type: 'string',
+    "default": '',
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control:hover {color: {{inputColorHover}};}'
+    }]
+  },
+  inputBorderRadius: {
+    type: 'object',
+    "default": {
+      openBorderRadius: 1,
+      radiusType: 'global',
+      global: {
+        md: 5
+      },
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control'
+    }]
+  },
+  inputSize: {
+    type: 'string',
+    "default": 'medium'
+  },
+  inputPaddingY: {
+    type: 'object',
+    "default": {
+      md: 10,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }, {
+        key: 'inputSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control {padding-top: {{inputPaddingY}}; padding-bottom: {{inputPaddingY}};}'
+    }, {
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'material'
+      }, {
+        key: 'inputSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control {padding-top: {{inputPaddingY}}; padding-bottom: {{inputPaddingY}};}'
+    }]
+  },
+  inputPaddingX: {
+    type: 'object',
+    "default": {
+      md: 15,
+      unit: 'px'
+    },
+    style: [{
+      condition: [{
+        key: 'layout',
+        relation: '==',
+        value: 'classic'
+      }, {
+        key: 'inputSize',
+        relation: '==',
+        value: 'custom'
+      }],
+      selector: '{{WPRIG}} .wprig-form .wprig-form-control {padding-left: {{inputPaddingX}}; padding-right: {{inputPaddingX}};}'
+    }]
+  },
+  textareaHeight: {
+    type: 'object',
+    "default": {
+      md: 200,
+      unit: 'px'
+    },
+    style: [{
+      selector: '{{WPRIG}} .wprig-form .wprig-form-group textarea.wprig-form-control {height: {{textareaHeight}};}'
+    }]
+  },
+  fieldErrorMessage: {
+    type: 'string',
+    "default": 'Please fill the required field.'
+  },
+  formSuccessMessage: {
+    type: 'string',
+    "default": 'Email successfully sent!'
+  },
+  formErrorMessage: {
+    type: 'string',
+    "default": 'Email sending failed, something went wrong! Please try again.'
+  },
+  reCaptcha: {
+    type: 'boolean',
+    "default": false
+  },
+  reCaptchaSiteKey: {
+    type: 'string',
+    "default": ''
+  },
+  reCaptchaSecretKey: {
+    type: 'string',
+    "default": ''
+  },
+  emailReceiver: {
+    type: 'string',
+    "default": ''
+  },
+  emailHeaders: {
+    type: 'string',
+    "default": 'Reply-To: {{email}}\nReply-name: {{full-name }} \nCc: {{email}}\nBcc: admin@yourcompany.com'
+  },
+  emailFrom: {
+    type: 'string',
+    "default": "Your Company Name: admin@".concat(wprig_admin.actual_url)
+  },
+  emailSubject: {
+    type: 'string',
+    "default": '{{subject}} | {{email}} | {{site-name}}'
+  },
+  emailBody: {
+    type: 'string',
+    "default": '<p><strong>From:</strong> {{full-name }}</p><strong>Email:</strong> {{email}}</p>\n<p><strong>Subject:</strong> {{subject}}</p>\n<p><strong>Message:</strong> {{message}}</p>'
+  },
+  sourceOfCopiedStyle: {
+    type: 'boolean',
+    "default": false
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (attributes);
+
+/***/ }),
+
+/***/ "./src/blocks/contact-form/block.js":
+/*!******************************************!*\
+  !*** ./src/blocks/contact-form/block.js ***!
+  \******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Edit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit */ "./src/blocks/contact-form/Edit.js");
+/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Save */ "./src/blocks/contact-form/Save.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/contact-form/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./attributes */ "./src/blocks/contact-form/attributes.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+/* eslint-disable react/react-in-jsx-scope */
+
+
+
+var __ = wp.i18n.__;
+
+var registerBlockType = wp.blocks.registerBlockType;
+var wprigButtonSave = wp.wprigComponents.wprigButtonSave;
+var animationAttr = wp.wprigComponents.HelperFunction.animationAttr;
+registerBlockType('wprig/contactform', {
+  title: __('Contact Form'),
+  description: __('Encourage site visitor interactions with wprig Contact Form List'),
+  category: 'wprig',
+  icon: 'universal-access-alt',
+  keywords: [__('Contact'), __('Form')],
+  supports: {
+    align: ['center', 'wide', 'full']
+  },
+  example: {
+    attributes: {}
+  },
+  attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _Edit__WEBPACK_IMPORTED_MODULE_0__["default"],
+  save: _Save__WEBPACK_IMPORTED_MODULE_1__["default"],
+  deprecated: [{
+    attributes: _attributes__WEBPACK_IMPORTED_MODULE_3__["default"],
+    save: function save(props) {
+      var _props$attributes = props.attributes,
+          uniqueId = _props$attributes.uniqueId,
+          formItems = _props$attributes.formItems,
+          inputSize = _props$attributes.inputSize,
+          fieldErrorMessage = _props$attributes.fieldErrorMessage,
+          formSuccessMessage = _props$attributes.formSuccessMessage,
+          formErrorMessage = _props$attributes.formErrorMessage,
+          reCaptcha = _props$attributes.reCaptcha,
+          reCaptchaSiteKey = _props$attributes.reCaptchaSiteKey,
+          reCaptchaSecretKey = _props$attributes.reCaptchaSecretKey,
+          emailReceiver = _props$attributes.emailReceiver,
+          emailHeaders = _props$attributes.emailHeaders,
+          emailFrom = _props$attributes.emailFrom,
+          emailSubject = _props$attributes.emailSubject,
+          emailBody = _props$attributes.emailBody,
+          layout = _props$attributes.layout,
+          buttonFillType = _props$attributes.buttonFillType,
+          buttonSize = _props$attributes.buttonSize,
+          buttonText = _props$attributes.buttonText,
+          buttonIconName = _props$attributes.buttonIconName,
+          buttonIconPosition = _props$attributes.buttonIconPosition,
+          buttonTag = _props$attributes.buttonTag,
+          animation = _props$attributes.animation;
+
+      var _encrypt = function _encrypt(str) {
+        return window.btoa(unescape(encodeURIComponent(str)));
+      };
+
+      var _renderField = function _renderField(item, index, inputSize) {
+        var fieldID = "wprig-form-input-".concat(index);
+        var fieldName = "wprig-form-input[".concat(item.name).concat(item.required ? '*' : '', "]");
+        var fieldClass = "wprig-form-control is-".concat(inputSize);
+
+        switch (item.type) {
+          case 'text':
+          case 'email':
+            return /*#__PURE__*/React.createElement("input", {
+              id: fieldID,
+              name: fieldName,
+              className: fieldClass,
+              type: item.type,
+              placeholder: __(item.placeholder),
+              required: item.required
+            });
+
+          case 'textarea':
+            return /*#__PURE__*/React.createElement("textarea", {
+              id: fieldID,
+              name: fieldName,
+              className: fieldClass,
+              placeholder: __(item.placeholder),
+              required: item.required
+            });
+
+          default:
+            return '';
+        }
+      };
+
+      var _renderFormGroupCss = function _renderFormGroupCss() {
+        var formGroupCss = '';
+        formItems.forEach(function (item, index) {
+          formGroupCss += "".concat(item.width.md ? ".wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.md, "% }") : "", "\n                            ").concat(item.width.sm ? "@media (max-width: 991px) { .wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.sm, "% } }") : "", "\n                            ").concat(item.width.xs ? "@media (max-width: 767px) { .wprig-form-group.wprig-form-group-index-".concat(index, " { width: ").concat(item.width.xs, "% } }") : "");
+        });
+        return formGroupCss;
+      };
+
+      return /*#__PURE__*/React.createElement("div", _extends({
+        className: "wprig-block-".concat(uniqueId)
+      }, animationAttr(animation)), /*#__PURE__*/React.createElement("style", null, _renderFormGroupCss()), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-block-contact-form wprig-layout-".concat(layout)
+      }, /*#__PURE__*/React.createElement("form", {
+        className: "wprig-form"
+      }, formItems.map(function (item, index) {
+        return /*#__PURE__*/React.createElement("div", {
+          key: index,
+          className: "wprig-form-group wprig-form-group-index-".concat(index)
+        }, /*#__PURE__*/React.createElement("div", {
+          className: "wprig-form-group-inner"
+        }, !item.hideLabel && layout == 'classic' && /*#__PURE__*/React.createElement("label", {
+          "for": "wprig-form-input-".concat(index),
+          className: "wprig-form-label"
+        }, " ", __(item.label), " ", item.required && '*'), _renderField(item, index, inputSize), layout == 'material' && /*#__PURE__*/React.createElement("label", {
+          className: "wprig-form-label"
+        }, " ", __(item.label), " ", item.required && '*')));
+      }), reCaptcha && reCaptchaSiteKey && reCaptchaSecretKey && /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-google-recaptcha"
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group",
+        style: {
+          width: '100%'
+        }
+      }, /*#__PURE__*/React.createElement("wprigButtonSave", {
+        buttonFillType: buttonFillType,
+        buttonSize: buttonSize,
+        buttonText: buttonText,
+        buttonIconName: buttonIconName,
+        buttonIconPosition: buttonIconPosition,
+        buttonTag: buttonTag
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "field-error-message",
+        value: _encrypt(fieldErrorMessage)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "form-success-message",
+        value: _encrypt(formSuccessMessage)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "form-error-message",
+        value: _encrypt('Email sent failed, fill required field and try again!')
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha",
+        value: reCaptcha && reCaptchaSiteKey && reCaptchaSecretKey ? 'true' : 'false'
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha-site-key",
+        value: reCaptchaSiteKey
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "recaptcha-secret-key",
+        value: reCaptchaSecretKey
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-receiver",
+        value: _encrypt(emailReceiver)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-headers",
+        value: _encrypt(emailHeaders)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-from",
+        value: _encrypt('Your Name: admin@example.com')
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-subject",
+        value: _encrypt(emailSubject)
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "hidden",
+        name: "email-body",
+        value: _encrypt(emailBody)
+      })), /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-group-inner"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "wprig-form-message"
+      }))))));
+    }
+  }]
+});
+
+/***/ }),
+
+/***/ "./src/blocks/contact-form/style.scss":
+/*!********************************************!*\
+  !*** ./src/blocks/contact-form/style.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/blocks/contact-form/style.scss");
 
             content = content.__esModule ? content.default : content;
 
