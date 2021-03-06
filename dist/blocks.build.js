@@ -16488,11 +16488,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           className = _this$props4$attribut.className,
           tabs = _this$props4$attribut.tabs,
           tabTitles = _this$props4$attribut.tabTitles,
-          bodyBg = _this$props4$attribut.bodyBg,
-          bodyBorder = _this$props4$attribut.bodyBorder,
-          bodyShadow = _this$props4$attribut.bodyShadow,
-          bodyPadding = _this$props4$attribut.bodyPadding,
-          bodyBorderRadius = _this$props4$attribut.bodyBorderRadius,
           isLink = _this$props4$attribut.isLink,
           url = _this$props4$attribut.url,
           hoverEffect = _this$props4$attribut.hoverEffect,
@@ -16619,82 +16614,7 @@ var Edit = /*#__PURE__*/function (_Component) {
             device: value
           });
         }
-      })), /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Body'),
-        initialOpen: false
-      }, /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background Color'),
-        value: bodyBg,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBg: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Padding, {
-        label: __('Padding'),
-        value: bodyPadding,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyPadding: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(Border, {
-        label: __('Border'),
-        separator: true,
-        value: bodyBorder,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBorder: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BoxShadow, {
-        label: __('Box-Shadow'),
-        value: bodyShadow,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyShadow: value
-          });
-        }
-      }), /*#__PURE__*/React.createElement(BorderRadius, {
-        label: __('Radius'),
-        separator: true,
-        value: bodyBorderRadius,
-        onChange: function onChange(value) {
-          return setAttributes({
-            bodyBorderRadius: value
-          });
-        },
-        unit: ['px', 'em', '%'],
-        max: 100,
-        min: 0,
-        responsive: true,
-        device: device,
-        onDeviceChange: function onDeviceChange(value) {
-          return _this2.setState({
-            device: value
-          });
-        }
-      })))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }))), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), /*#__PURE__*/React.createElement(BlockControls, null, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(InlineToolbar, _extends({
         data: [{
@@ -16913,57 +16833,6 @@ var attributes = _objectSpread(_objectSpread({
     }]
   },
   // Body
-  bodyBg: {
-    type: 'string',
-    "default": '#F5F5F5',
-    style: [{
-      selector: '{{WPRIG}} .wprig-ihover-body {background-color: {{bodyBg}};}'
-    }]
-  },
-  bodyPadding: {
-    type: 'object',
-    "default": {
-      openPadding: 1,
-      paddingType: 'global',
-      global: {
-        md: 0
-      },
-      unit: 'px'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-ihover-body'
-    }]
-  },
-  bodyBorder: {
-    type: 'object',
-    "default": {
-      borderType: 'global'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-ihover-body'
-    }]
-  },
-  bodyShadow: {
-    type: 'object',
-    "default": {
-      horizontal: 2,
-      vertical: 2,
-      blur: 3,
-      spread: '0'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-ihover-body'
-    }]
-  },
-  bodyBorderRadius: {
-    type: 'object',
-    "default": {
-      radiusType: 'global'
-    },
-    style: [{
-      selector: '{{WPRIG}} .wprig-ihover-body'
-    }]
-  },
   bodySeparatorHeight: {
     type: 'object',
     "default": {
@@ -17118,7 +16987,6 @@ var _wp$blockEditor = wp.blockEditor,
 var compose = wp.compose.compose;
 var PanelBody = wp.components.PanelBody;
 var _wp$wprigComponents = wp.wprigComponents,
-    Color = _wp$wprigComponents.Color,
     InspectorTab = _wp$wprigComponents.InspectorTab,
     InspectorTabs = _wp$wprigComponents.InspectorTabs,
     withCSSGenerator = _wp$wprigComponents.withCSSGenerator,
@@ -17172,7 +17040,6 @@ var Edit = /*#__PURE__*/function (_Component) {
           _this$props2$attribut = _this$props2.attributes,
           uniqueId = _this$props2$attribut.uniqueId,
           className = _this$props2$attribut.className,
-          faceBackground = _this$props2$attribut.faceBackground,
           animation = _this$props2$attribut.animation,
           globalCss = _this$props2$attribut.globalCss,
           hideTablet = _this$props2$attribut.hideTablet,
@@ -17190,18 +17057,7 @@ var Edit = /*#__PURE__*/function (_Component) {
         tabs: ['style', 'advance']
       }, /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'style'
-      }, /*#__PURE__*/React.createElement(PanelBody, {
-        title: __('Face Settings'),
-        initialOpen: true
-      }, /*#__PURE__*/React.createElement(Color, {
-        label: __('Background'),
-        value: faceBackground,
-        onChange: function onChange(value) {
-          return setAttributes({
-            faceBackground: value
-          });
-        }
-      }))), /*#__PURE__*/React.createElement(InspectorTab, {
+      }), /*#__PURE__*/React.createElement(InspectorTab, {
         key: 'advance'
       }, animationSettings(uniqueId, animation, setAttributes), interactionSettings(uniqueId, interaction, setAttributes)))), globalSettingsPanel(enablePosition, selectPosition, positionXaxis, positionYaxis, globalZindex, hideTablet, hideMobile, globalCss, setAttributes), /*#__PURE__*/React.createElement("div", {
         className: "".concat(blockWrapperClasses, " wp-block-wprig-ihover-face")
@@ -17308,7 +17164,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var globalAttributes = wp.wprigComponents.globalSettings.globalAttributes;
 
-var attributes = _objectSpread(_objectSpread({
+var attributes = _objectSpread({
   uniqueId: {
     type: 'string',
     "default": ''
@@ -17321,16 +17177,7 @@ var attributes = _objectSpread(_objectSpread({
     type: 'string',
     "default": ''
   }
-}, globalAttributes), {}, {
-  // Global Settings
-  faceBackground: {
-    type: 'string',
-    "default": '#F5F5F5',
-    style: [{
-      selector: '{{WPRIG}}.wp-block-wprig-ihover-face {background-color: {{faceBackground}};}'
-    }]
-  }
-});
+}, globalAttributes);
 
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
 
