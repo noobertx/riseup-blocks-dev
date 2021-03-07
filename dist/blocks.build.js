@@ -14408,7 +14408,7 @@ var animationAttr = wp.wprigComponents.HelperFunction.animationAttr;
 registerBlockType('wprig/contactform', {
   title: __('Contact Form'),
   description: __('Encourage site visitor interactions with wprig Contact Form List'),
-  category: 'wprig',
+  category: 'wprig-blocks',
   icon: 'universal-access-alt',
   keywords: [__('Contact'), __('Form')],
   supports: {
@@ -36231,7 +36231,7 @@ registerBlockType('wprig/team', {
   title: __('Team'),
   description: 'Display team member with social profiles.',
   icon: 'universal-access-alt',
-  category: 'wprig',
+  category: 'wprig-blocks',
   supports: {
     align: ['center', 'wide', 'full']
   },
