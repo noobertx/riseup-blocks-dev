@@ -624,7 +624,7 @@ class RiseUp_Blocks {
 
 		$blocks_meta_data = get_post_meta( get_the_ID(), '__wprig_available_blocks', true );
 		$blocks_meta_data = unserialize( $blocks_meta_data );
-
+		
 		if ( is_array( $blocks_meta_data ) && count( $blocks_meta_data ) ) {
 			$available_blocks = $blocks_meta_data['available_blocks'];
 			$has_interaction  = $blocks_meta_data['interaction'];
@@ -633,7 +633,6 @@ class RiseUp_Blocks {
 
 			// if ( in_array( 'wprig/image-carousel', $available_blocks ) ) {
 				wp_enqueue_script( 'riseup-gallery', WPRIG_DIR_URL . 'assets/js/riseup-gallery.js', array( 'jquery' ), microtime(), true );
-				wp_enqueue_script( 'gallery-carousel', WPRIG_DIR_URL . 'assets/js/front.js', array( 'jquery' ), microtime(), true );
 			// }
 
 			wp_localize_script( 'gallery-carousel', 'wprig_gallery',
@@ -646,11 +645,11 @@ class RiseUp_Blocks {
 			if ( in_array( 'wprig/imagecomparison', $available_blocks ) ) {
 				wp_enqueue_script( 'wprig-block-image-comparison', WPRIG_DIR_URL . 'assets/js/blocks/image-comparison.js', array(), microtime() );
 			}
-
+			
 			if ( $has_interaction ) {
 				wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 			}
-
+			
 		} else {
 			$post    = null;
 			$wp_post = get_post( $post );
@@ -659,6 +658,7 @@ class RiseUp_Blocks {
 			}
 
 
+			wp_enqueue_script( 'riseup-front-gallery', WPRIG_DIR_URL . 'assets/js/front.js', array( 'jquery' ), microtime(), true );
 			wp_enqueue_script( 'wprig-interaction', WPRIG_DIR_URL . 'assets/js/interaction.js', array( 'jquery' ), microtime(), true );
 		}
 

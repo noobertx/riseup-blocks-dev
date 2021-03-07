@@ -14,11 +14,12 @@
             $(".wprig-sb-product-carousel").slick()
         }
 
-        
-        $('.riseup-gallery').riseupGallery({
-            modalClass: '.wprig-dynamic-modal',
-            toggleClass : 'button.wprig-gallery-item'
-        });
+        if($('.riseup-gallery').length){
+            $('.riseup-gallery').riseupGallery({
+                modalClass: '.wprig-dynamic-modal',
+                toggleClass : 'button.wprig-gallery-item'
+            });
+        }
 
         if($(".wprig-mosaic-gallery").length){
             $(".wprig-mosaic-gallery").Mosaic();
@@ -30,5 +31,7 @@
                 });
             });
         }
+
+        console.log("Accordion is ready")
     });
 })(jQuery)
