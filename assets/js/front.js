@@ -45,5 +45,11 @@
                 
             })
         }
+        if($(".wp-block-wprig-alert").length){
+            $(".wp-block-wprig-alert").on("click",".wprig-alert__control",function(e){
+                e.preventDefault();
+                $(this).closest(".wp-block-wprig-alert").remove();
+            })
+        }
     });
 })(jQuery)
