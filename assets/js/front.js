@@ -32,6 +32,18 @@
             });
         }
 
-        console.log("Accordion is ready")
+
+        if($(".wprig-block-accordion").length){
+            $(".wprig-accordion-item").on("click",function(e){
+                e.preventDefault();
+                $parent = $(this).closest(".wprig-block-accordion")
+                $(this).closest(".wprig-block-accordion")
+                .find(".wprig-accordion-item.wprig-accordion-active")
+                .removeClass("wprig-accordion-active")
+                .find(".wprig-accordion-body").css({"display":"none"});
+                $(this).addClass("wprig-accordion-active").find(".wprig-accordion-body").css({"display":"block"});
+                
+            })
+        }
     });
 })(jQuery)
