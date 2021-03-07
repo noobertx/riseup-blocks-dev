@@ -39,9 +39,9 @@ class RiseUp_Blocks {
 
 		 // Block Categories
 		add_filter( 'block_categories', array( $this, 'wprig_block_categories' ), 1, 2 );
-
+		
 		 // Add Styles and Scripts
-		add_action( 'wp_enqueue_scripts', array( $this, 'wprig_enqueue_style' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'wprig_enqueue_style' ) ,10,1);
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'wprig_enqueue_scripts' ) );
 
@@ -439,7 +439,8 @@ class RiseUp_Blocks {
 	 *
 	 * @since 1.0.0
 	 */
-	public function wprig_admin_assets() {
+	public function wprig_admin_assets($hook) {
+		if($hook == "post.php"){
 		wp_register_script( 'wprig_local_script', '' );
 		wp_localize_script(
 			'wprig_local_script',
@@ -456,7 +457,7 @@ class RiseUp_Blocks {
 		wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
 		wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
 		wp_enqueue_style( 'wprig-editor-fields-min', WPRIG_DIR_URL . 'assets/css/fields.css', false, microtime() );
-		wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/blocks.editor.min.css', false, microtime() );
+		wp_enqueue_style( 'wprig-editor-style-min', WPRIG_DIR_URL . 'dist/blocks.editor.build.css', false, microtime() );
 		#END_REPLACE
 
 		wp_enqueue_style( 'font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, microtime() );
@@ -464,7 +465,7 @@ class RiseUp_Blocks {
 		
 		wp_register_style( 'wprig-options', WPRIG_DIR_URL . 'assets/css/options.css', false, microtime() );
 
-		
+		}
 	}
 
 
@@ -585,7 +586,7 @@ class RiseUp_Blocks {
 	 *
 	 * @since 1.0.0
 	 */
-	public function wprig_enqueue_style() {
+	public function wprig_enqueue_style($hook) {
 		wp_enqueue_style( 'wprig-frontbase', WPRIG_DIR_URL . 'assets/css/frontbase.css', false, microtime() );
 		if ( get_post_meta( get_the_ID(), '_wprig_css', true ) != '' ) {
 
@@ -598,10 +599,13 @@ class RiseUp_Blocks {
 			#START_REPLACE
 			wp_enqueue_style( 'wprig-animated-headline-style', WPRIG_DIR_URL . 'assets/css/wprig.animatedheadline.css', false, microtime() );
 			wp_enqueue_style( 'wprig-animation', WPRIG_DIR_URL . 'assets/css/animation.css', false, microtime() );
-			wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, microtime() );
+			// wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, microtime() );
 			#END_REPLACE
 
 			wp_enqueue_style( 'wprig-font-awesome', WPRIG_DIR_URL . 'assets/css/font-awesome.min.css', false, microtime() );
+		}
+		if(!is_admin() || $screen->parent_base != 'edit'){
+			wp_enqueue_style( 'wprig-style-min', WPRIG_DIR_URL . 'assets/css/style.min.css', false, microtime() );			
 		}
 	}
 
