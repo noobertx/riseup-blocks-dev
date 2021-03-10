@@ -106,7 +106,8 @@ function render_block_el_button($att)
 	$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
 	$url 				    = isset($att['url']) ? $att['url']['url'] : "#";
 	$html = [];
-	$html =  "<div class='".$classname."' {...animationAttr(animation)}>";
+	
+	$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."' {...animationAttr(animation)}>";
 		$html .= "<div class='yani-btn-wrapper  yani-btn-wrapper--".$alignment['md']."'>";			
 			$html .= "<a href = '".$url."' class='yani-btn yani-btn--".$buttonSize." ".$buttonColor." yani-btn--".$buttonWidthType."'>";
 			if($iconPosition=="left"){
