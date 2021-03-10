@@ -107,18 +107,16 @@ function render_block_el_button($att)
 	$url 				    = isset($att['url']) ? $att['url']['url'] : "#";
 	$html = [];
 	$html =  "<div class='".$classname."' {...animationAttr(animation)}>";
-		$html .= "<div class='wprig-block-btn-wrapper  wprig-btn-".$alignment['md']."'>";
-			$html .= "<div class='wprig-block-btn'>";
-			$html .= "<a href = '".$url."' class='wprig-block-btn-anchor is-".$buttonSize." ".$buttonColor." wprig-btn-".$buttonWidthType."'>";
+		$html .= "<div class='yani-btn-wrapper  yani-btn-wrapper--".$alignment['md']."'>";			
+			$html .= "<a href = '".$url."' class='yani-btn yani-btn--".$buttonSize." ".$buttonColor." yani-btn--".$buttonWidthType."'>";
 			if($iconPosition=="left"){
-				$html .= "<i class='wprig-btn-icon ".$iconName."'></i>";
+				$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
 			}
 			$html .=$textField;
 			if($iconPosition=="right"){
-				$html .= "<i class='wprig-btn-icon ".$iconName."'></i>";
+				$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
 			}
 			$html .= "</a>";
-		$html .= "</div>";
 	$html .= "</div>";
 	$html .= "</div>";
 
