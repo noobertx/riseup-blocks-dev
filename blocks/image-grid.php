@@ -717,7 +717,7 @@ class Riseup_Gallery_Block{
                     ],
                     'enableHoverFx' =>[
                         'type' => 'boolean',
-                        'default' => true,
+                        'default' => false,
                     ],
                     'overlayEffect' => [
                         'type'=>'string',
@@ -854,8 +854,8 @@ class Riseup_Gallery_Block{
         $innerGap 		        = isset($att['innerGap']) ? $att['innerGap'] : "";
     
         $hoverParams = "";
-        if( $enableHoverFx ){
-            $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ;
+        if($enableHoverFx==true  ){
+            $hoverParams  =  $hoverEffect[0]." ". $hoverEffectDirection[0] ." box-effect-active"  ;
         }
 
     

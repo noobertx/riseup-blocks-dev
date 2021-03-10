@@ -30,13 +30,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     align-items:center;   
     transition: 0.35s all;
     opacity: 0;
     background:rgba(0,0,0,0.5) ;
+}
+.box-effect-active.wprig-grid-gallery .overlay ,
+.box-effect-active.wprig-gallery.slick-slider  .overlay,
+.box-effect-active.wprig-mosaic-gallery .overlay {
+    display: flex;
 }
 
 .wprig-grid-gallery .overlay-content,
