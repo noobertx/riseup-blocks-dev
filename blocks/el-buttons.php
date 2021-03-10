@@ -60,11 +60,11 @@ function register_block_el_button(){
 				),
 				'interaction' => array(
 					'type' => 'object',
-					'default' => (object) array(),
+					'default' => array(),
 				),
 				'animation' => array(
 					'type' => 'object',
-					'default' => (object) array(),
+					'default' =>  array(),
 				),
 				'globalZindex' => array(
 					'type' => 'string',
@@ -104,10 +104,15 @@ function render_block_el_button($att)
 	$buttonWidthType 		= isset($att['buttonWidthType']) ? $att['buttonWidthType'] : "auto";
 	$iconPosition 		    = isset($att['iconPosition']) ? $att['iconPosition'] : "auto";
 	$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
+	$animation 		   		= isset($att['animation']) ? $att['animation'] : [];
 	$url 				    = isset($att['url']) ? $att['url']['url'] : "#";
 	$html = [];
 	
-	$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."' {...animationAttr(animation)}>";
+	if(!empty($animation)){
+		$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
+	}else{
+		$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."'>";
+	}
 		$html .= "<div class='yani-btn-wrapper  yani-btn-wrapper--".$alignment['md']."'>";			
 			$html .= "<a href = '".$url."' class='yani-btn yani-btn--".$buttonSize." ".$buttonColor." yani-btn--".$buttonWidthType."'>";
 			if($iconPosition=="left"){
@@ -120,20 +125,6 @@ function render_block_el_button($att)
 			$html .= "</a>";
 	$html .= "</div>";
 	$html .= "</div>";
-
-	/*
-	<div className={classNames} {...animationAttr(animation)}>
-				<div className={`wprig-block-btn-wrapper ${interactionClass}`}>
-					<div className={`wprig-block-btn`}>
-						<a className={`wprig-block-btn-anchor is-${buttonSize}`} href={url.url ? url.url : '#'} {...(url.target && { target: '_blank' })} {...(url.nofollow ? { rel: 'nofollow noopener noreferrer' } : {...url.target && { rel: 'noopener noreferrer' }}  )} >
-							{(iconName.trim() != "") && (iconPosition == 'left') && (<i className={`wprig-btn-icon ${iconName}`} />)}
-							<RichText.Content value={(textField == '') ? 'Add Text...' : textField} />
-							{(iconName.trim() != "") && (iconPosition == 'right') && (<i className={`wprig-btn-icon ${iconName}`} />)}
-						</a>
-					</div>
-				</div>
-			</div>
-	*/
 	return $html;
 }
 
