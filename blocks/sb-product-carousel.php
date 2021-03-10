@@ -221,7 +221,7 @@ class WPRIG_SB_Product_Carousel{
                         'default' => '#333',
                         'style' => [
                             [
-                                'selector' => '{{WPRIG}} .wprig-heading-selector{ color:{{headingColor}}!important; }' 
+                                'selector' => '{{WPRIG}} .wprig-heading-selector{ color:{{headingColor}}; }' 
                             ]
                         ]
                     ], 
