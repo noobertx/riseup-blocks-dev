@@ -340,6 +340,7 @@ class RiseUp_Blocks {
 	 * Init dynamic blocks frontend
 	 */
 	public function init_dynamic_blocks() {
+		require_once WPRIG_DIR_PATH . 'blocks/el-buttons.php';
 		require_once WPRIG_DIR_PATH . 'blocks/image-grid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-grid.php';
