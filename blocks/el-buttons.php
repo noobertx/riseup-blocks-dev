@@ -97,8 +97,46 @@ function render_block_el_button($att)
 	$layout 		        = isset($att['layout']) ? $att['layout'] : 3;
 	$uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
 	$className 		        = isset($att['className']) ? $att['className'] : '';
-	
-	$html = "";
+	$textField 		        = isset($att['textField']) ? $att['textField'] : '';
+	$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
+	$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
+	$buttonColor 		    = isset($att['buttonColor']) ? $att['buttonColor'] : "bg-info white";
+	$buttonWidthType 		= isset($att['buttonWidthType']) ? $att['buttonWidthType'] : "auto";
+	$iconPosition 		    = isset($att['iconPosition']) ? $att['iconPosition'] : "auto";
+	$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
+	$url 				    = isset($att['url']) ? $att['url'] : "#";
+
+	$html =  "<div class='".$classname."' {...animationAttr(animation)}>";
+	$html .= "<div class='wprig-block-btn-wrapper  wprig-btn-".$alignment['md']."'>";
+	$html .= "<div class='wprig-block-btn'>";
+	$html .= "<a href = '".$url."' class='wprig-block-btn-anchor is-".$buttonSize." ".$buttonColor." wprig-btn-".$buttonWidthType."'>";
+	if($iconPosition=="left"){
+		$html .= "<i class='wprig-btn-icon ".$iconName."'></i>";
+		
+	}
+	$html .=$textField;
+	if($iconPosition=="right"){
+		$html .= "<i class='wprig-btn-icon ".$iconName."'></i>";
+	}
+
+	$html .= "</a>";
+	$hmtl .= "</div>";
+	$hmtl .= "</div>";
+	$html .= "</div>";
+
+	/*
+	<div className={classNames} {...animationAttr(animation)}>
+				<div className={`wprig-block-btn-wrapper ${interactionClass}`}>
+					<div className={`wprig-block-btn`}>
+						<a className={`wprig-block-btn-anchor is-${buttonSize}`} href={url.url ? url.url : '#'} {...(url.target && { target: '_blank' })} {...(url.nofollow ? { rel: 'nofollow noopener noreferrer' } : {...url.target && { rel: 'noopener noreferrer' }}  )} >
+							{(iconName.trim() != "") && (iconPosition == 'left') && (<i className={`wprig-btn-icon ${iconName}`} />)}
+							<RichText.Content value={(textField == '') ? 'Add Text...' : textField} />
+							{(iconName.trim() != "") && (iconPosition == 'right') && (<i className={`wprig-btn-icon ${iconName}`} />)}
+						</a>
+					</div>
+				</div>
+			</div>
+	*/
 	return $html;
 }
 
