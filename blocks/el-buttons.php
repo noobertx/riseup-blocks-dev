@@ -54,6 +54,10 @@ function register_block_el_button(){
 					'type' => 'string',
 					'default' => 'block'
 				),
+				'recreateStyles' => array(
+					'type' => 'boolean',
+        			'default' => true
+				),
 				'interaction' => array(
 					'type' => 'object',
 					'default' => (object) array(),
