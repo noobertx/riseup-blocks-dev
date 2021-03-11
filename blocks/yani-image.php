@@ -116,22 +116,16 @@ class Yani_Image_Block{
 						'default' => 'dark'
 					),
 					'alignment' => array(
-						'type' => 'object',
-						'default' => [
-							'md' => 'center'
-						],
+						'type' => 'string',
+						'default' => 'center',
 					),
 					'contentAlignment' => array(
-						'type' => 'object',
-						'default' => [
-							'md' => 'center'
-						],
+						'type' => 'string',
+						'default' => 'center',
 					),
 					'contentVerticalAlign' => array(
-						'type' => 'object',
-						'default' => [
-							'md' => 'center'
-						],
+						'type' => 'string',
+						'default' => 'center',
 					),
 					'recreateStyles' => array(
 						'type' => 'boolean',
@@ -185,8 +179,8 @@ class Yani_Image_Block{
 
 		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
 		$contentAnimation 		= isset($att['contentAnimation']) ? $att['contentAnimation'] : false;
-		$contentVerticalAlign 	= isset($att['contentVerticalAlign']) ? $att['contentVerticalAlign'] : ["md"=>"center"];
-		$contentAlignment 		= isset($att['contentAlignment']) ? $att['contentAlignment'] : ["md"=>"center"];
+		$contentVerticalAlign 	= isset($att['contentVerticalAlign']) ? $att['contentVerticalAlign'] : "center";
+		$contentAlignment 		= isset($att['contentAlignment']) ? $att['contentAlignment'] : "center";
 		$enableFrame 			= isset($att['enableFrame']) ? $att['enableFrame'] : false;
 		$animateOnHover 		= isset($att['animateOnHover']) ? $att['animateOnHover'] : false;
 		$frameAnimateOnHover 	= isset($att['frameAnimateOnHover']) ? $att['frameAnimateOnHover'] : false;
@@ -216,8 +210,8 @@ class Yani_Image_Block{
 			$mainClass .= " yani-hover-animation-on ";
 			$mainClass .= " yani-hover-animation-type-".$contentAnimation;
 		}
-		$mainClass .= " yani-vertical-alignment-".$contentVerticalAlign["md"];
-		$mainClass .= " yani-horizontal-alignment-".$contentAlignment["md"];
+		$mainClass .= " yani-vertical-alignment-".$contentVerticalAlign;
+		$mainClass .= " yani-horizontal-alignment-".$contentAlignment;
 
 		if($enableFrame){
 			$mainClass.= " yani-has-frame";
