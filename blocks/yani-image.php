@@ -184,35 +184,82 @@ class Yani_Image_Block{
 		$mainColor 		    	= isset($att['mainColor']) ? $att['mainColor'] : "bg-info white";
 
 		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
+		$contentAnimation 		= isset($att['contentAnimation']) ? $att['contentAnimation'] : false;
+		$contentVerticalAlign 	= isset($att['contentVerticalAlign']) ? $att['contentVerticalAlign'] : ["md"=>"center"];
+		$contentAlignment 		= isset($att['contentAlignment']) ? $att['contentAlignment'] : ["md"=>"center"];
+		$enableFrame 			= isset($att['enableFrame']) ? $att['enableFrame'] : false;
+		$animateOnHover 		= isset($att['animateOnHover']) ? $att['animateOnHover'] : false;
+		$frameAnimateOnHover 	= isset($att['frameAnimateOnHover']) ? $att['frameAnimateOnHover'] : false;
 		$animation 		   		= isset($att['animation']) ? $att['animation'] : [];
+
+		$image	 		   		= isset($att['image']) ? $att['image'] : [];
+		$imgAlt 		   		= isset($att['imgAlt']) ? $att['imgAlt'] : "";
+
+		$titleLevel 		   	= isset($att['titleLevel']) ? $att['titleLevel'] : 3;
+		$title		 		   	= isset($att['title']) ? $att['title'] : "";
+
+		$enableSubtitle 	   	= isset($att['enableSubtitle']) ? $att['enableSubtitle'] : false;
+		$subtitle 	   			= isset($att['subtitle']) ? $att['subtitle'] : "";
+
+		$enableCaption	 	   	= isset($att['enableCaption']) ? $att['enableCaption'] : false;
+		$caption	 	   		= isset($att['caption']) ? $att['caption'] : "";
+
 		$html = [];
-		
-		if(!empty($animation)){
-			$html =  "<div class='".$classname."' id='yani-divider-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
-		}else{
-			$html =  "<div class='".$classname."' id='yani-divider-".$uniqueId ."'>";
+
+		$mainClass = "";
+
+		if($animateOnHover && $layout=="blurb"){
+			$mainClass .= " yani-hover-animation-on ";
+			$mainClass .= " yani-hover-animation-type-".$contentAnimation;
 		}
-			$html .= "<div class='yani-divider-wrapper  yani-divider-wrapper--".$alignment['md']."'>";			
-				$html .= "<div class='yani-divider yani-divider--".$separatorStyle." ".$mainColor."'>";
-				if($enableLeftSeparator){
-					$html .= "<div class='yani-divider-item-wrap yani-divider-item-wrap--left'>";
-					for($i=0;$i<$separatorNumbers;++$i){
-						$html .= "<div class='yani-divider-item'> </div>";
+		$mainClass .= " yani-vertical-alignment-".$contentVerticalAlign["md"];
+		$mainClass .= " yani-horizontal-alignment-".$contentAlignment["md"];
+
+		if($enableFrame){
+			$mainClass.= " yani-has-frame";
+			if($frameAnimateOnHover){
+				$mainClass.= " yani-frame-animate-on-hover";
+			}
+		}
+
+		$titleTagName = "h".$titleLevel;
+
+		if(!empty($animation)){
+			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
+		}else{
+			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."'>";
+		}
+			$html .= "<div class='yani-divider-wrapper  yani-divider-layout--".$layout."'>";
+			
+				$html .= "<div class = '".$mainClass."'>";
+				
+					$html .= "<figure>";
+						$html .= "<div class = 'yani-image-container'>";
+							$html .= "<img class='yani-image-image' src='".$image['url']."' alt='".$imgAlt."' />";
+						$html .= "</div>";
+					$html .= "</figure>";
+
+					if($layout=="blurb"){
+						$html .= "<div class='yani-image-content'>";
+						$html .= "<div class='yani-image-content-inner'>";
+						$html .= "<div class='yani-image-title'>";
+						$html .= "<".$titleTagName.">".$title."</".$titleTagName.">";
+						$html .= "</div>";
+						$html .= "</div>";
+						if($enableSubtitle){
+							$html .= "<div class='yani-image-sub-title'>";
+							$html .= $subtitle;
+							$html .= "</div>";							
+						}
+						$html .= "</div>";
+					}else if($layout=="blurb" && $enableCaption){
+						$html .= "<figcaption class='yani-image-caption'>";
+							$html .= $caption;						
+						$html .= "</figcaption>";
 					}
-					$html .= "</div>";
-				}
-				$html .= "<div class='yani-divider-content'>";
-				$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
-				$html .=$textField;
+					
 				$html .= "</div>";
-				if($enableRightSeparator){
-					$html .= "<div class='yani-divider-item-wrap yani-divider-item-wrap--right'>";
-					for($i=0;$i<$separatorNumbers;++$i){
-						$html .= "<div class='yani-divider-item'> </div>";
-					}
-					$html .= "</div>";
-				}
-				$html .= "</div>";
+				
 		$html .= "</div>";
 		$html .= "</div>";
 		return $html;
