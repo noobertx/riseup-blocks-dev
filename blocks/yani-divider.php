@@ -57,10 +57,6 @@ class Yani_Divider_Block{
 							'md' => 'center'
 						],
 					),
-					'buttonWidthType' => array(
-						'type' => 'string',
-						'default' => 'block'
-					),
 					'recreateStyles' => array(
 						'type' => 'boolean',
 						'default' => true
@@ -104,22 +100,43 @@ class Yani_Divider_Block{
 		$className 		        = isset($att['className']) ? $att['className'] : '';
 		$textField 		        = isset($att['textField']) ? $att['textField'] : '';
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
+
+		$enableLeftSeparator 	= isset($att['enableLeftSeparator']) ? $att['enableLeftSeparator'] : false;
+		$enableRightSeparator 	= isset($att['enableRightSeparator']) ? $att['enableRightSeparator'] : false;
+		$separatorNumbers 		= isset($att['separatorNumbers']) ? $att['separatorNumbers'] : 1;
+		$separatorStyle 		= isset($att['separatorStyle']) ? $att['separatorStyle'] : "style-1";
 		$mainColor 		    	= isset($att['mainColor']) ? $att['mainColor'] : "bg-info white";
-		$buttonWidthType 		= isset($att['buttonWidthType']) ? $att['buttonWidthType'] : "auto";
+
 		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
 		$animation 		   		= isset($att['animation']) ? $att['animation'] : [];
 		$html = [];
 		
 		if(!empty($animation)){
-			$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
+			$html =  "<div class='".$classname."' id='yani-divider-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
 		}else{
-			$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."'>";
+			$html =  "<div class='".$classname."' id='yani-divider-".$uniqueId ."'>";
 		}
-			$html .= "<div class='yani-btn-wrapper  yani-btn-wrapper--".$alignment['md']."'>";			
-				$html .= "<a href = '".$url."' class='yani-btn yani-btn--".$buttonSize." ".$mainColor." yani-btn--".$buttonWidthType."'>";
-		
+			$html .= "<div class='yani-divider-wrapper  yani-divider-wrapper--".$alignment['md']."'>";			
+				$html .= "<div class='yani-divider yani-divider--".$separatorStyle." ".$mainColor."'>";
+				if($enableLeftSeparator){
+					$html .= "<div class='yani-divider-item-wrap yani-divider-item-wrap--left'>";
+					for($i=0;$i<$separatorNumbers;++$i){
+						$html .= "<div class='yani-divider-item'> </div>";
+					}
+					$html .= "</div>";
+				}
+				$html .= "<div class='yani-divider-content'>";
+				$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
 				$html .=$textField;
-				$html .= "</a>";
+				$html .= "</div>";
+				if($enableRightSeparator){
+					$html .= "<div class='yani-divider-item-wrap yani-divider-item-wrap--right'>";
+					for($i=0;$i<$separatorNumbers;++$i){
+						$html .= "<div class='yani-divider-item'> </div>";
+					}
+					$html .= "</div>";
+				}
+				$html .= "</div>";
 		$html .= "</div>";
 		$html .= "</div>";
 		return $html;
