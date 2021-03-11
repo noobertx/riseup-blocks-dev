@@ -342,6 +342,7 @@ class RiseUp_Blocks {
 	public function init_dynamic_blocks() {
 		require_once WPRIG_DIR_PATH . 'blocks/yani-buttons.php';
 		require_once WPRIG_DIR_PATH . 'blocks/yani-divider.php';
+		require_once WPRIG_DIR_PATH . 'blocks/yani-image.php';
 		require_once WPRIG_DIR_PATH . 'blocks/image-grid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-grid.php';
