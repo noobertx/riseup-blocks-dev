@@ -56,7 +56,7 @@ class Yani_Image_Block{
 						'type' => 'boolean',
 						'default' => false
 					),
-					'imgCaption' => array(
+					'caption' => array(
 						'type' => 'string',
 						'default' => 'Image Caption'
 					),
@@ -204,6 +204,10 @@ class Yani_Image_Block{
 		$enableCaption	 	   	= isset($att['enableCaption']) ? $att['enableCaption'] : false;
 		$caption	 	   		= isset($att['caption']) ? $att['caption'] : "";
 
+		$titleColor	 	   		= isset($att['titleColor']) ? $att['titleColor'] : "";
+		$subTitleColor	 	   	= isset($att['subTitleColor']) ? $att['subTitleColor'] : "";
+		$captionColor	 	   	= isset($att['captionColor']) ? $att['captionColor'] : "";
+
 		$html = [];
 
 		$mainClass = "";
@@ -243,17 +247,17 @@ class Yani_Image_Block{
 						$html .= "<div class='yani-image-content'>";
 						$html .= "<div class='yani-image-content-inner'>";
 						$html .= "<div class='yani-image-title'>";
-						$html .= "<".$titleTagName.">".$title."</".$titleTagName.">";
+						$html .= "<".$titleTagName." class='".$titleColor."'>".$title."</".$titleTagName.">";
 						$html .= "</div>";
 						$html .= "</div>";
 						if($enableSubtitle){
-							$html .= "<div class='yani-image-sub-title'>";
+							$html .= "<div class='yani-image-sub-title ".$subTitleColor."'>";
 							$html .= $subtitle;
 							$html .= "</div>";							
 						}
 						$html .= "</div>";
-					}else if($layout=="blurb" && $enableCaption){
-						$html .= "<figcaption class='yani-image-caption'>";
+					}else if($layout=="simple" && $enableCaption){
+						$html .= "<figcaption class='yani-image-caption ".$captionColor."'>";
 							$html .= $caption;						
 						$html .= "</figcaption>";
 					}
