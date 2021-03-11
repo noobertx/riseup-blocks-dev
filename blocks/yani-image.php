@@ -60,7 +60,10 @@ class Yani_Image_Block{
 						'type' => 'string',
 						'default' => 'Image Caption'
 					),
-
+					'enableTitle' => array(
+						'type' => 'boolean',
+						'default' => false
+					),
 					'title' => array(
 						'type' => 'string',
 						'default' => 'Image Block'
@@ -74,7 +77,7 @@ class Yani_Image_Block{
 						'type' => 'boolean',
 						'default' => false
 					),
-					'imgSubtitle' => array(
+					'subtitle' => array(
 						'type' => 'string',
 						'default' => 'Image Subtitle'
 					),
@@ -97,6 +100,18 @@ class Yani_Image_Block{
 						'default' => 'dark'
 					),
 					'alignment' => array(
+						'type' => 'object',
+						'default' => [
+							'md' => 'center'
+						],
+					),
+					'contentAlignment' => array(
+						'type' => 'object',
+						'default' => [
+							'md' => 'center'
+						],
+					),
+					'contentVerticalAlign' => array(
 						'type' => 'object',
 						'default' => [
 							'md' => 'center'
