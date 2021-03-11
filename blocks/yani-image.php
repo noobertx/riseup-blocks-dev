@@ -77,6 +77,22 @@ class Yani_Image_Block{
 						'type' => 'boolean',
 						'default' => false
 					),
+					'animateOnHover' => array(
+						'type' => 'boolean',
+						'default' => false
+					),	  
+					'titleVisibleOnHover' => array(
+						'type' => 'boolean',
+						'default' => false
+					),	
+					'subTitleVisibleOnHover' => array(
+						'type' => 'boolean',
+						'default' => false
+					),	
+					'frameAnimateOnHover' => array(
+						'type' => 'boolean',
+						'default' => false
+					),			 
 					'subtitle' => array(
 						'type' => 'string',
 						'default' => 'Image Subtitle'
