@@ -27,6 +27,14 @@ class Yani_CountDown{
 						'type' => 'string',
 						'default' => 'bottom',
 					),
+					'color' => array(
+						'type' => 'string',
+						'default' => 'bg-info white',
+					),
+					'justify' => array(
+						'type' => 'string',
+						'default' => 'space-around',
+					),
 					'untilDate' => array(
 						'type' => 'string',
 						'default' => date("F j, Y H:i:s"),
