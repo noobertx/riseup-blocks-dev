@@ -16,14 +16,69 @@ class Yani_CountDown{
 			return;
 		}
 		register_block_type(
-			'wprig/elcountdown',
+			'wprig/yanicountdown',
 			array(
 				'attributes' => array(
 					'uniqueId' => array(
 						'type' => 'string',
 						'default' => '',
 					),
-					
+					'layout' => array(
+						'type' => 'string',
+						'default' => 'bottom',
+					),
+					'untilDate' => array(
+						'type' => 'string',
+						'default' => date("F j, Y H:i:s"),
+					),
+					'displayYear' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'displayMonth' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'displayDay' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'displayHour' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'displayMinute' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'displaySeconds' => array(
+						'type' => 'boolean',
+						'default' => true
+					),
+					'yearLabel' => array(
+						'type' => 'string',
+						'default' => 'year',
+					),
+					'monthLabel' => array(
+						'type' => 'string',
+						'default' => 'month',
+					),
+					'dayLabel' => array(
+						'type' => 'string',
+						'default' => 'day',
+					),
+					'hourLabel' => array(
+						'type' => 'string',
+						'default' => 'hour',
+					),
+					'minuteLabel' => array(
+						'type' => 'string',
+						'default' => 'minute',
+					),
+					'secondsLabel' => array(
+						'type' => 'string',
+						'default' => 'second',
+					),
 					'recreateStyles' => array(
 						'type' => 'boolean',
 						'default' => true
