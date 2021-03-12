@@ -27,7 +27,11 @@ class Yani_CountDown{
 						'type' => 'string',
 						'default' => 'bottom',
 					),
-					'color' => array(
+					'style' => array(
+						'type' => 'string',
+						'default' => 'style-1',
+					),
+					'itemColor' => array(
 						'type' => 'string',
 						'default' => 'bg-info white',
 					),
@@ -38,6 +42,10 @@ class Yani_CountDown{
 					'untilDate' => array(
 						'type' => 'string',
 						'default' => date("F j, Y H:i:s"),
+					),
+					'isInverted' => array(
+						'type' => 'boolean',
+						'default' => false
 					),
 					'displayYear' => array(
 						'type' => 'boolean',
