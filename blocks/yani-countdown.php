@@ -193,7 +193,6 @@ class Yani_CountDown{
 			$html .= "<div class='yani-countdown-wrapper  yani-countdown-".$style."'>";
 				$html .= "<div class='countdown__content  yani-countdown-".$style."' data-format='".$dformat."' data-labels='".$dlabels."' data-layout='".$layout."'>";
 					
-				$html .= "Countdown here";
 				$html .= "</div>";
 			$html .= "</div>";
 			$html .= "</div>";

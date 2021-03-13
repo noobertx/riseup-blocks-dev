@@ -17,6 +17,7 @@
             minutes: { singular: 'minute', plural: 'minutes' },
             seconds: { singular: 'second', plural: 'seconds' }
         },
+        amountClass: 'bg-info'
     
     })
     // console.log("delay init");
