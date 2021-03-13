@@ -105,6 +105,11 @@ class Yani_Infobox_Block{
 						'default' => 3
 					),
 
+					'content' => array(
+						'type' => 'string',
+						'default' => ''
+					),
+
 					'recreateStyles' => array(
 						'type' => 'boolean',
 						'default' => true
@@ -146,23 +151,88 @@ class Yani_Infobox_Block{
 		$layout 		        = isset($att['layout']) ? $att['layout'] : 3;
 		$uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
 		$className 		        = isset($att['className']) ? $att['className'] : '';
-		$textField 		        = isset($att['textField']) ? $att['textField'] : '';
+		$mediaType 		        = isset($att['mediaType']) ? $att['mediaType'] : 'icon';
+		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
+		$imageType 		   		= isset($att['imageType']) ? $att['imageType'] : "local";
+		$image 		   			= isset($att['image']) ? $att['image'] : [];
+		$externalImageUrl 		= isset($att['externalImageUrl']) ? $att['externalImageUrl'] : [];
+		$number 				= isset($att['number']) ? $att['number'] : 0;
+
+		$enableTitle 				= isset($att['enableTitle']) ? $att['enableTitle'] : false;
+		$title 						= isset($att['title']) ? $att['title'] : "";
+		$titleLevel 				= isset($att['titleLevel']) ? $att['titleLevel'] : 2;
+
+		$enableSubTitle 			= isset($att['enableSubTitle']) ? $att['enableSubTitle'] : false;
+		$subTitle 					= isset($att['subTitle']) ? $att['subTitle'] : "";
+		$subTitleLevel 				= isset($att['subTitleLevel']) ? $att['subTitleLevel'] : 3;
+		
+		$content 					= isset($att['content']) ? $att['content'] : "";
+
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
 		$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
 		$buttonColor 		    = isset($att['buttonColor']) ? $att['buttonColor'] : "bg-info white";
 		$buttonWidthType 		= isset($att['buttonWidthType']) ? $att['buttonWidthType'] : "auto";
 		$iconPosition 		    = isset($att['iconPosition']) ? $att['iconPosition'] : "auto";
-		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
 		$animation 		   		= isset($att['animation']) ? $att['animation'] : [];
 		$url 				    = isset($att['url']) ? $att['url']['url'] : "#";
 		$html = [];
 		
+
+		$titleTagName = 'h' . $titleLevel;
+        $subTitleTagName = 'h' . $subTitleLevel;
+
 		if(!empty($animation)){
 			$html =  "<div class='".$classname."' id='yani-infobox-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
 		}else{
 			$html =  "<div class='".$classname."' id='yani-infobox-".$uniqueId ."'>";
 		}
-			$html .= "<div class='yani-infobox-wrapper  yani-infobox-wrapper--".$alignment."'>";			
+			$html .= "<div class='yani-block-info-box  yani-info-box-layout-".$layout."'>";			
+
+			if($layout!=4 ){
+				if($mediaType!="image"){
+					$html .="<div class='yani-info-box-media yani-media-has-bg'>";
+				}else{
+					$html .="<div class='yani-info-box-media'>";
+				}
+				if($mediaType=="icon"){
+					$html .= "<i class='yani-info-box-icon ".$iconName."'></i>";
+				}else if($mediaType=="image"){
+					if($imageType=="local" && isset($image["url"])){
+						$html .= "<img class='yani-info-box-image' src='".$image['url']."'/>";						
+					}else if($imageType=="external" && isset($externalImageUrl["url"])){
+						$html .= "<img class='yani-info-box-image' src='".$externalImageUrl['url']."' />";						
+					}
+				}else if($mediaType=="number"){
+					$html .= "<div class='yani-info-box-number '>".$number."</div>";
+				}
+				$html .= "</div>";
+			}
+			
+			$html .= "<div class='yani-info-box-body'>";
+				$html .= "<div class='yani-info-box-title-container'>";
+				if($enableTitle){
+					$html .= "<div class='yani-info-box-title-inner'>";
+						$html .= "<".$titleTagName." class='yani-info-box-title text-".$alignment."'>";
+							$html .= $title;
+						$html .= "</".$titleTagName.">";
+					$html .= "</div>";
+				}
+				if($enableSubTitle){
+					$html .= "<div class='yani-info-box-title-inner'>";
+						$html .= "<".$subTitleTagName." class='yani-info-box-sub-title text-".$alignment."'>";
+							$html .= $subTitle;
+							$html .= "</".$subTitleTagName.">";
+							$html .= "</div>";
+						}
+						$html .= "</div>";
+				$html .= "<div class='yani-info-box-content'>";
+					$html .= "<div class='yani-info-box-text text-".$alignment."'>";
+						$html .= $content;
+					$html .= "</div>";
+				$html .= "</div>";
+			$html .= "</div>";
+
+
 			
 		$html .= "</div>";
 		$html .= "</div>";
