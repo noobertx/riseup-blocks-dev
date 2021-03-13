@@ -86,7 +86,7 @@ class Yani_Infobox_Block{
 						'type' => 'string',
 						'default' => 'Product Title'
 					),
-					'titleNumber' => array(
+					'titleLevel' => array(
 						'type' => 'number',
 						'default' => 2
 					),
@@ -100,7 +100,7 @@ class Yani_Infobox_Block{
 						'type' => 'string',
 						'default' => 'Product Sub Title'
 					),
-					'subTitleNumber' => array(
+					'subTitleLevel' => array(
 						'type' => 'number',
 						'default' => 3
 					),
@@ -162,7 +162,7 @@ class Yani_Infobox_Block{
 		}else{
 			$html =  "<div class='".$classname."' id='yani-infobox-".$uniqueId ."'>";
 		}
-			$html .= "<div class='yani-infobox-wrapper  yani-infobox-wrapper--".$alignment['md']."'>";			
+			$html .= "<div class='yani-infobox-wrapper  yani-infobox-wrapper--".$alignment."'>";			
 			
 		$html .= "</div>";
 		$html .= "</div>";
