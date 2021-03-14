@@ -91,12 +91,18 @@ class Yani_Infobox_Block{
 						'default' => 2
 					),
 
+					
+					'enableContent' => array(
+						'type' => 'boolean',
+						'default' => false
+					),
+					
 					'enableSubTitle' => array(
 						'type' => 'boolean',
 						'default' => true
 					),
 
-					'subTitle' => array(
+						'subTitleContent' => array(
 						'type' => 'string',
 						'default' => 'Product Sub Title'
 					),
@@ -105,7 +111,7 @@ class Yani_Infobox_Block{
 						'default' => 3
 					),
 
-					'content' => array(
+					'textfield' => array(
 						'type' => 'string',
 						'default' => ''
 					),
@@ -166,7 +172,7 @@ class Yani_Infobox_Block{
 		$subTitle 					= isset($att['subTitle']) ? $att['subTitle'] : "";
 		$subTitleLevel 				= isset($att['subTitleLevel']) ? $att['subTitleLevel'] : 3;
 		
-		$content 					= isset($att['content']) ? $att['content'] : "";
+		$textfield 					= isset($att['textfield']) ? $att['textfield'] : "";
 
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
 		$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
@@ -224,10 +230,10 @@ class Yani_Infobox_Block{
 							$html .= "</".$subTitleTagName.">";
 							$html .= "</div>";
 						}
-						$html .= "</div>";
+				$html .= "</div>";
 				$html .= "<div class='yani-info-box-content'>";
 					$html .= "<div class='yani-info-box-text text-".$alignment."'>";
-						$html .= $content;
+						$html .= $textfield;
 					$html .= "</div>";
 				$html .= "</div>";
 			$html .= "</div>";
