@@ -90,12 +90,13 @@ class Yani_Infobox_Block{
 						'type' => 'number',
 						'default' => 2
 					),
+					'titleColor' => array(
+						'type' => 'string',
+						'default' => 'primary'
+					),
+					
 
 					
-					'enableContent' => array(
-						'type' => 'boolean',
-						'default' => false
-					),
 					
 					'enableSubTitle' => array(
 						'type' => 'boolean',
@@ -110,10 +111,22 @@ class Yani_Infobox_Block{
 						'type' => 'number',
 						'default' => 3
 					),
-
+					'subTitleColor' => array(
+						'type' => 'string',
+						'default' => 'secondary'
+					),
+					'enableContent' => array(
+						'type' => 'boolean',
+						'default' => false
+					),
+					
 					'textfield' => array(
 						'type' => 'string',
 						'default' => ''
+					),
+					'textfieldColor' => array(
+						'type' => 'string',
+						'default' => 'dark'
 					),
 
 					'recreateStyles' => array(
@@ -166,13 +179,16 @@ class Yani_Infobox_Block{
 
 		$enableTitle 				= isset($att['enableTitle']) ? $att['enableTitle'] : false;
 		$title 						= isset($att['title']) ? $att['title'] : "";
+		$titleColor 				= isset($att['titleColor']) ? $att['titleColor'] : "primary";
 		$titleLevel 				= isset($att['titleLevel']) ? $att['titleLevel'] : 2;
 
 		$enableSubTitle 			= isset($att['enableSubTitle']) ? $att['enableSubTitle'] : false;
-		$subTitle 					= isset($att['subTitle']) ? $att['subTitle'] : "";
+		$subTitleContent 			= isset($att['subTitleContent']) ? $att['subTitleContent'] : "";
+		$subTitleColor 				= isset($att['subTitleColor']) ? $att['subTitleColor'] : "secondary";
 		$subTitleLevel 				= isset($att['subTitleLevel']) ? $att['subTitleLevel'] : 3;
 		
 		$textfield 					= isset($att['textfield']) ? $att['textfield'] : "";
+		$textfieldColor 			= isset($att['textfieldColor']) ? $att['textfieldColor'] : "";
 
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
 		$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
@@ -218,21 +234,21 @@ class Yani_Infobox_Block{
 				$html .= "<div class='yani-info-box-title-container'>";
 				if($enableTitle){
 					$html .= "<div class='yani-info-box-title-inner'>";
-						$html .= "<".$titleTagName." class='yani-info-box-title text-".$alignment."'>";
+						$html .= "<".$titleTagName." class='yani-info-box-title text-".$alignment." ".$titleColor."'>";
 							$html .= $title;
 						$html .= "</".$titleTagName.">";
 					$html .= "</div>";
 				}
 				if($enableSubTitle){
 					$html .= "<div class='yani-info-box-title-inner'>";
-						$html .= "<".$subTitleTagName." class='yani-info-box-sub-title text-".$alignment."'>";
-							$html .= $subTitle;
+						$html .= "<".$subTitleTagName." class='yani-info-box-sub-title text-".$alignment." ".$subTitleColor."'>";
+							$html .= $subTitleContent;
 							$html .= "</".$subTitleTagName.">";
 							$html .= "</div>";
 						}
 				$html .= "</div>";
 				$html .= "<div class='yani-info-box-content'>";
-					$html .= "<div class='yani-info-box-text text-".$alignment."'>";
+					$html .= "<div class='yani-info-box-text text-".$alignment." ".$textfieldColor."'>";
 						$html .= $textfield;
 					$html .= "</div>";
 				$html .= "</div>";
