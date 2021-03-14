@@ -66,6 +66,10 @@ class Yani_IconList_Block{
 						'type' => 'string',
 						'default' => ''
 					),
+					'textFieldColor' => array(
+						'type' => 'string',
+						'default' => ''
+					),
 					'iconName' => array(
 						'type' => 'string',
 						'default' => ''
