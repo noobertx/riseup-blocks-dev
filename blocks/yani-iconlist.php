@@ -158,7 +158,7 @@ class Yani_IconList_Block{
 			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."'>";
 		}
 				$html .= "<div class='yani-block-icon-list'>";		
-					$html .= "<ul class='yani-list'>";		
+					$html .= "<ul class='yani-list text-".$alignment."'>";		
 						$html .= $this->renderListItems($listItems,$iconPosition,$iconColor,$textFieldColor);
 					$html .= "</ul>";
 				$html .= "</div>";
