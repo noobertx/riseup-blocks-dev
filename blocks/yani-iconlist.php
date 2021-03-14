@@ -112,11 +112,36 @@ class Yani_IconList_Block{
 			)
 		);
 	}
+	public function renderListItems($listItems,$iconPosition,$iconColor,$textFieldColor){
+		$html = "";
+		if(!empty($listItems)){
+			foreach($listItems as $index => $items){
+				$html .= "<li class='yani-list-li'>";
+					$html .= "<div class='yani-list-item yani-list-item-".$index."'>";
+						if($iconPosition=="left"){
+							$html .= "<span class='yani-list-item-icon ".$items['icon']." ".$iconColor."'></span>";
+						}
+						$html .= "<div class='yani-list-item-text ".$textFieldColor."' id='yani-list-item-text-".$index."'>";
+						$html .= $items["text"];
+						$html .= "</div>";
+						if($iconPosition=="right"){
+							$html .= "<span class='yani-list-item-icon ".$items['icon']." ".$iconColor."'></span>";
+						}
+					$html .= "</div>";
+				$html .= "</li>";
+			}
+		}
+		return $html;
+	}
 	public function render_block_el_button($att){
 		$layout 		        = isset($att['layout']) ? $att['layout'] : 3;
 		$uniqueId 		        = isset($att['uniqueId']) ? $att['uniqueId'] : '';
 		$className 		        = isset($att['className']) ? $att['className'] : '';
 		$textField 		        = isset($att['textField']) ? $att['textField'] : '';
+		$listItems 		        = isset($att['listItems']) ? $att['listItems'] : [];
+		$iconColor 		        = isset($att['iconColor']) ? $att['iconColor'] : '';
+		$textFieldColor 		= isset($att['textFieldColor']) ? $att['textFieldColor'] : '';
+		$iconPosition 			= isset($att['iconPosition']) ? $att['iconPosition'] : '';
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
 		$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
 		$buttonColor 		    = isset($att['buttonColor']) ? $att['buttonColor'] : "bg-info white";
@@ -128,22 +153,16 @@ class Yani_IconList_Block{
 		$html = [];
 		
 		if(!empty($animation)){
-			$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
+			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."' data-yani-animation='".json_encode($animation)."'>";	
 		}else{
-			$html =  "<div class='".$classname."' id='yani-btn-".$uniqueId ."'>";
+			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."'>";
 		}
-			$html .= "<div class='yani-btn-wrapper  yani-btn-wrapper--'>";			
-				$html .= "<a href = '".$url."' class='yani-btn yani-btn--".$buttonSize." ".$buttonColor." yani-btn--".$buttonWidthType."'>";
-				if($iconPosition=="left"){
-					$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
-				}
-				$html .=$textField;
-				if($iconPosition=="right"){
-					$html .= "<i class='yani-btn-icon ".$iconName."'></i>";
-				}
-				$html .= "</a>";
-		$html .= "</div>";
-		$html .= "</div>";
+				$html .= "<div class='yani-block-icon-list'>";		
+					$html .= "<ul class='yani-list'>";		
+						$html .= $this->renderListItems($listItems,$iconPosition,$iconColor,$textFieldColor);
+					$html .= "</ul>";
+				$html .= "</div>";
+			$html .= "</div>";
 		return $html;
 	}
 }
