@@ -31,6 +31,10 @@ class Yani_IconList_Connector_Block{
 						'type' => 'boolean',
 						'default' => false
 					),
+					'style' => array(
+						'type' => 'string',
+						'default' => ''
+					),
 					'alignment' => array(
 						'type' => 'string',
 						'default' => 'left'
