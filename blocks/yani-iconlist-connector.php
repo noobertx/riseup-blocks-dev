@@ -147,6 +147,7 @@ class Yani_IconList_Connector_Block{
 		$textFieldColor 		= isset($att['textFieldColor']) ? $att['textFieldColor'] : '';
 		$iconPosition 			= isset($att['iconPosition']) ? $att['iconPosition'] : '';
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
+		$style 		        	= isset($att['style']) ? $att['style'] : "";
 		$buttonSize 		    = isset($att['buttonSize']) ? $att['buttonSize'] : "large";
 		$buttonColor 		    = isset($att['buttonColor']) ? $att['buttonColor'] : "bg-info white";
 		$buttonWidthType 		= isset($att['buttonWidthType']) ? $att['buttonWidthType'] : "auto";
@@ -162,7 +163,7 @@ class Yani_IconList_Connector_Block{
 			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."'>";
 		}
 				$html .= "<div class='yani-block-icon-list'>";		
-					$html .= "<ul class='yani-list'>";		
+					$html .= "<ul class='yani-list yani-icon-list-connector ".$style."'>";		
 						$html .= $this->renderListItems($listItems,$iconPosition,$iconColor,$textFieldColor);
 					$html .= "</ul>";
 				$html .= "</div>";
