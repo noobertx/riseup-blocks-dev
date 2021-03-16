@@ -347,7 +347,6 @@ class RiseUp_Blocks {
 		require_once WPRIG_DIR_PATH . 'blocks/yani-iconlist-connector.php';
 		require_once WPRIG_DIR_PATH . 'blocks/yani-image.php';
 		require_once WPRIG_DIR_PATH . 'blocks/yani-info-box.php';
-		require_once WPRIG_DIR_PATH . 'blocks/yani-tabs.php';
 		require_once WPRIG_DIR_PATH . 'blocks/image-grid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/postgrid.php';
 		require_once WPRIG_DIR_PATH . 'blocks/product-grid.php';

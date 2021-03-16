@@ -27,6 +27,26 @@ class Yani_Tabs_Block{
 						'type' => 'string',
 						'default' => ''
 					),
+					'navAlignment' => array(
+						'type' => 'string',
+						'default' => 'left'
+					),
+					'tabs' => array(
+						'type' => 'number',
+						'default' => 3
+					),
+					'tabStyle' => array(
+						'type'=> 'string',
+						'default'=> 'pills'
+					),
+					'tabTitles' => [
+						'type' => 'array',
+						'default' => [
+							[ 'title' => 'Tab 1'],
+							[ 'title' => 'Tab 2'],
+							[ 'title' => 'Tab 3']
+						]
+					],
 					'iconName' => array(
 						'type' => 'string',
 						'default' => ''
@@ -34,31 +54,7 @@ class Yani_Tabs_Block{
 					'iconPosition' => array(
 						'type' => 'string',
 						'default' => 'left',
-					),
-					'url' => array(
-						'type' => 'object',
-						'default' => [
-							'url' => '#'
-						],
-					),
-					'buttonSize' => array(
-						'type' => 'string',
-						'default' => 'large'
-					),
-					'buttonColor' => array(
-						'type' => 'string',
-						'default' => 'bg-info white'
-					),
-					'alignment' => array(
-						'type' => 'object',
-						'default' => [
-							'md' => 'center'
-						],
-					),
-					'buttonWidthType' => array(
-						'type' => 'string',
-						'default' => 'block'
-					),
+					),				
 					'recreateStyles' => array(
 						'type' => 'boolean',
 						'default' => true
