@@ -92,7 +92,15 @@ class Yani_Image_Block{
 					'frameAnimateOnHover' => array(
 						'type' => 'boolean',
 						'default' => false
-					),			 
+					),			 //
+					'enableOverlay' => array(
+						'type' => 'boolean',
+						'default' => false
+					),
+					'enableFrame' => array(
+						'type' => 'boolean',
+						'default' => false
+					),
 					'subtitle' => array(
 						'type' => 'string',
 						'default' => 'Image Subtitle'
