@@ -138,55 +138,50 @@ class Yani_CountDown{
 		$className 		        = isset($att['className']) ? $att['className'] : '';
 		$textField 		        = isset($att['textField']) ? $att['textField'] : '';
 		$alignment 		        = isset($att['alignment']) ? $att['alignment'] : [];
+		$style 		        	= isset($att['style']) ? $att['style'] : "style-1";
+		$justify 		        = isset($att['justify']) ? $att['justify'] : "space-between";
+		$untilDate 		        = isset($att['untilDate']) ? $att['untilDate'] : new Date();
+		$layout 		        = isset($att['layout']) ? $att['layout'] : "top";
 
-		$enableLeftSeparator 	= isset($att['enableLeftSeparator']) ? $att['enableLeftSeparator'] : false;
-		$enableRightSeparator 	= isset($att['enableRightSeparator']) ? $att['enableRightSeparator'] : false;
-		$separatorNumbers 		= isset($att['separatorNumbers']) ? $att['separatorNumbers'] : 1;
-		$separatorStyle 		= isset($att['separatorStyle']) ? $att['separatorStyle'] : "style-1";
-		$mainColor 		    	= isset($att['mainColor']) ? $att['mainColor'] : "bg-info white";
+		$displayYear 		        = isset($att['displayYear']) ? $att['displayYear'] : false;
+		$displayMonth 		        = isset($att['displayMonth']) ? $att['displayMonth'] : false;
+		$displayDay 		        = isset($att['displayDay']) ? $att['displayDay'] : false;
+		$displayHour 		        = isset($att['displayHour']) ? $att['displayHour'] : false;
+		$displayMinute 		        = isset($att['displayMinute']) ? $att['displayMinute'] : false;
+		$displaySeconds 		    = isset($att['displaySeconds']) ? $att['displaySeconds'] : false;
 
-		$iconName 		   		= isset($att['iconName']) ? $att['iconName'] : "auto";
-		$contentAnimation 		= isset($att['contentAnimation']) ? $att['contentAnimation'] : false;
-		$contentVerticalAlign 	= isset($att['contentVerticalAlign']) ? $att['contentVerticalAlign'] : "center";
-		$contentAlignment 		= isset($att['contentAlignment']) ? $att['contentAlignment'] : "center";
-		$enableFrame 			= isset($att['enableFrame']) ? $att['enableFrame'] : false;
-		$animateOnHover 		= isset($att['animateOnHover']) ? $att['animateOnHover'] : false;
-		$frameAnimateOnHover 	= isset($att['frameAnimateOnHover']) ? $att['frameAnimateOnHover'] : false;
-		$animation 		   		= isset($att['animation']) ? $att['animation'] : [];
+		$yearLabel 		        = isset($att['yearLabel']) ? $att['yearLabel'] : "";
+		$monthLabel 		    = isset($att['monthLabel']) ? $att['monthLabel'] : "";
+		$dayLabel 		        = isset($att['dayLabel']) ? $att['dayLabel'] : "";
+		$hourLabel 		        = isset($att['hourLabel']) ? $att['hourLabel'] : "";
+		$minuteLabel 		    = isset($att['minuteLabel']) ? $att['minuteLabel'] : "";
+		$secondsLabel 		    = isset($att['secondsLabel']) ? $att['secondsLabel'] : "";
 
-		$image	 		   		= isset($att['image']) ? $att['image'] : [];
-		$imgAlt 		   		= isset($att['imgAlt']) ? $att['imgAlt'] : "";
+		$itemColor 		   		= isset($att['itemColor']) ? $att['itemColor'] : false;
+		$isInverted 		   	= isset($att['isInverted']) ? $att['isInverted'] : false;
 
-		$titleLevel 		   	= isset($att['titleLevel']) ? $att['titleLevel'] : 3;
-		$title		 		   	= isset($att['title']) ? $att['title'] : "";
-
-		$enableSubtitle 	   	= isset($att['enableSubtitle']) ? $att['enableSubtitle'] : false;
-		$subtitle 	   			= isset($att['subtitle']) ? $att['subtitle'] : "";
-
-		$enableCaption	 	   	= isset($att['enableCaption']) ? $att['enableCaption'] : false;
-		$caption	 	   		= isset($att['caption']) ? $att['caption'] : "";
-
-		$titleColor	 	   		= isset($att['titleColor']) ? $att['titleColor'] : "";
-		$subTitleColor	 	   	= isset($att['subTitleColor']) ? $att['subTitleColor'] : "";
-		$captionColor	 	   	= isset($att['captionColor']) ? $att['captionColor'] : "";
 
 		$html = [];
 
 		$mainClass = "";
 
-		if($animateOnHover && $layout=="blurb"){
-			$mainClass .= " yani-hover-animation-on ";
-			$mainClass .= " yani-hover-animation-type-".$contentAnimation;
-		}
-		$mainClass .= " yani-vertical-alignment-".$contentVerticalAlign;
-		$mainClass .= " yani-horizontal-alignment-".$contentAlignment;
+		// dformat dLayout
+		$dformat = "";
+        // $dformat.= ($displayYear) ? "Y" : "";
+        // $dformat.= ($displayMonth) ? "O" : "";
+        // $dformat.= ($displayDay) ? "D" : "";
+        // $dformat.= ($displayHour) ? "H" : "";
+        // $dformat.= ($displayMinute) ? "M" : "";
+        // $dformat.= ($displaySeconds) ? "S" : "";
+        
+		$dlabels = "";		
+        // $dlabels .= intval($yearLabel)+"/";
+        // $dlabels .= intval($monthLabel)+"/";
+        // $dlabels .= intval($dayLabel)+"/";
+        // $dlabels .= intval($hourLabel)+"/";
+        // $dlabels .= intval($minuteLabel)+"/";
+        // $dlabels .= intval($secondsLabel)+"/";
 
-		if($enableFrame){
-			$mainClass.= " yani-has-frame";
-			if($frameAnimateOnHover){
-				$mainClass.= " yani-frame-animate-on-hover";
-			}
-		}
 
 		$titleTagName = "h".$titleLevel;
 
@@ -195,39 +190,13 @@ class Yani_CountDown{
 		}else{
 			$html =  "<div class='".$classname."' id='yani-block-".$uniqueId ."'>";
 		}
-			$html .= "<div class='yani-divider-wrapper  yani-divider-layout--".$layout."'>";
-			
-				$html .= "<div class = '".$mainClass."'>";
-				
-					$html .= "<figure>";
-						$html .= "<div class = 'yani-image-container'>";
-							$html .= "<img class='yani-image-image' src='".$image['url']."' alt='".$imgAlt."' />";
-						$html .= "</div>";
-					$html .= "</figure>";
-
-					if($layout=="blurb"){
-						$html .= "<div class='yani-image-content'>";
-						$html .= "<div class='yani-image-content-inner'>";
-						$html .= "<div class='yani-image-title'>";
-						$html .= "<".$titleTagName." class='".$titleColor."'>".$title."</".$titleTagName.">";
-						$html .= "</div>";
-						$html .= "</div>";
-						if($enableSubtitle){
-							$html .= "<div class='yani-image-sub-title ".$subTitleColor."'>";
-							$html .= $subtitle;
-							$html .= "</div>";							
-						}
-						$html .= "</div>";
-					}else if($layout=="simple" && $enableCaption){
-						$html .= "<figcaption class='yani-image-caption ".$captionColor."'>";
-							$html .= $caption;						
-						$html .= "</figcaption>";
-					}
+			$html .= "<div class='yani-countdown-wrapper  yani-countdown-".$style."'>";
+				$html .= "<div class='countdown__content  yani-countdown-".$style."' data-format='".$dformat."' data-labels='".$dlabels."' data-layout='".$layout."'>";
 					
+				$html .= "Countdown here";
 				$html .= "</div>";
-				
-		$html .= "</div>";
-		$html .= "</div>";
+			$html .= "</div>";
+			$html .= "</div>";
 		return $html;
 	}
 }
