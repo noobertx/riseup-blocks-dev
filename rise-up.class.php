@@ -635,6 +635,10 @@ class RiseUp_Blocks {
 			$has_animation    = $blocks_meta_data['animation'];
 			$has_parallax     = $blocks_meta_data['parallax'];
 
+			// if ( in_array( 'wprig/yanicountdown', $available_blocks ) ) {
+				wp_enqueue_script( 'simplyCountdown', WPRIG_DIR_URL . 'vendors/simplyCountdown.min.js', array( 'jquery' ), microtime(), true );
+				wp_enqueue_script( 'yani-countdown', WPRIG_DIR_URL . 'vendors/yani-countdown.js', array( 'jquery' ), microtime(), true );
+			// }
 			// if ( in_array( 'wprig/image-carousel', $available_blocks ) ) {
 				wp_enqueue_script( 'riseup-gallery', WPRIG_DIR_URL . 'assets/js/riseup-gallery.js', array( 'jquery' ), microtime(), true );
 			// }
